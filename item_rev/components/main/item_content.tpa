@@ -396,6 +396,19 @@ COPY ~%source%/AZLAERS_HARP.tpa~ ~%target%~
 COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/HORN_OF_KAZGAROTH.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
+    COPY_EXISTING highhedg.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      LPF buy INT_VAR weap=1 armor=1 rang=1 jewel=1 misc=1 potn=1 END
+      REMOVE_STORE_ITEM
+        misc73    // Horn of Kazgaroth
+	  ADD_STORE_ITEM ~misc73~   AFTER  ~misc72~ #1 #0 #0 ~IDENTIFIED~ #1
+    END
+  END BUT_ONLY
+>>>>>>>>
+COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/MOON_DOG_FIGURINE.tpa
   COPY ~item_rev/itm/moondog.cre~ ~override~
   COPY ~item_rev/itm/mdog1.itm~ ~override~
