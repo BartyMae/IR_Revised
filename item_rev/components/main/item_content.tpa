@@ -396,12 +396,6 @@ COPY ~%source%/AZLAERS_HARP.tpa~ ~%target%~
 COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/HORN_OF_KAZGAROTH.tpa
-  
->>>>>>>>
-COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
-
-
 <<<<<<<< .../item_rev-inlined/item/MOON_DOG_FIGURINE.tpa
   COPY ~item_rev/itm/moondog.cre~ ~override~
   COPY ~item_rev/itm/mdog1.itm~ ~override~
