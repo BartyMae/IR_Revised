@@ -1,0 +1,348 @@
+/*-----------------Bane Effects-----------------*/
+
+COPY ~item_rev/itm/axiom1.eff~ ~override~
+COPY ~item_rev/itm/axiom2.eff~ ~override~
+COPY ~item_rev/itm/axiom3.eff~ ~override~
+COPY ~item_rev/itm/axiom4.eff~ ~override~
+COPY ~item_rev/itm/axiom5.eff~ ~override~
+COPY ~item_rev/itm/axiom6.eff~ ~override~
+
+COPY ~item_rev/itm/disrupt.eff~ ~override~
+COPY ~item_rev/itm/disrtext.eff~ ~override~
+
+COPY ~item_rev/itm/demdam3.eff~ ~override~
+COPY ~item_rev/itm/demdam5.eff~ ~override~
+COPY ~item_rev/itm/demhit3.eff~ ~override~
+
+COPY ~item_rev/itm/doppdam3.eff~ ~override~
+COPY ~item_rev/itm/doppdam5.eff~ ~override~
+COPY ~item_rev/itm/dopphit3.eff~ ~override~
+
+COPY ~item_rev/itm/dragdam3.eff~ ~override~
+COPY ~item_rev/itm/dragdam5.eff~ ~override~
+COPY ~item_rev/itm/draghit3.eff~ ~override~
+
+COPY ~item_rev/itm/elemdam3.eff~ ~override~
+COPY ~item_rev/itm/elemdam5.eff~ ~override~
+COPY ~item_rev/itm/elemhit3.eff~ ~override~
+
+COPY ~item_rev/itm/evildam3.eff~ ~override~
+COPY ~item_rev/itm/evildam5.eff~ ~override~
+COPY ~item_rev/itm/evilhit3.eff~ ~override~
+
+COPY ~item_rev/itm/giandam3.eff~ ~override~
+COPY ~item_rev/itm/giandam5.eff~ ~override~
+COPY ~item_rev/itm/gianhit3.eff~ ~override~
+
+COPY ~item_rev/itm/goledam3.eff~ ~override~
+COPY ~item_rev/itm/goledam5.eff~ ~override~
+COPY ~item_rev/itm/goledie.eff~ ~override~
+COPY ~item_rev/itm/golehit3.eff~ ~override~
+
+COPY ~item_rev/itm/gooddam3.eff~ ~override~
+COPY ~item_rev/itm/gooddam5.eff~ ~override~
+COPY ~item_rev/itm/goodhit3.eff~ ~override~
+
+COPY ~item_rev/itm/humndam3.eff~ ~override~
+COPY ~item_rev/itm/humndam5.eff~ ~override~
+COPY ~item_rev/itm/humnhit3.eff~ ~override~
+
+COPY ~item_rev/itm/lycadam3.eff~ ~override~
+COPY ~item_rev/itm/lycadam5.eff~ ~override~
+COPY ~item_rev/itm/lycahit3.eff~ ~override~
+
+COPY ~item_rev/itm/monsdam3.eff~ ~override~
+COPY ~item_rev/itm/monsdam5.eff~ ~override~
+COPY ~item_rev/itm/monshit3.eff~ ~override~
+
+COPY ~item_rev/itm/orcdam3.eff~ ~override~
+COPY ~item_rev/itm/orcdam5.eff~ ~override~
+COPY ~item_rev/itm/orchit3.eff~ ~override~
+
+COPY ~item_rev/itm/outdam3.eff~ ~override~
+COPY ~item_rev/itm/outdam5.eff~ ~override~
+COPY ~item_rev/itm/outhit3.eff~ ~override~
+
+COPY ~item_rev/itm/raksdam3.eff~ ~override~
+COPY ~item_rev/itm/raksdam5.eff~ ~override~
+COPY ~item_rev/itm/rakshit3.eff~ ~override~
+
+COPY ~item_rev/itm/troldam3.eff~ ~override~
+COPY ~item_rev/itm/troldam5.eff~ ~override~
+COPY ~item_rev/itm/trolhit3.eff~ ~override~
+
+COPY ~item_rev/itm/undedam3.eff~ ~override~
+COPY ~item_rev/itm/undedam5.eff~ ~override~
+COPY ~item_rev/itm/undehit3.eff~ ~override~
+
+COPY ~item_rev/itm/vampdam3.eff~ ~override~
+COPY ~item_rev/itm/vampdam5.eff~ ~override~
+COPY ~item_rev/itm/vamphit3.eff~ ~override~
+
+COPY ~item_rev/itm/wolfhit3.eff~ ~override~
+COPY ~item_rev/itm/wolfdam3.eff~ ~override~
+COPY ~item_rev/itm/wolfdam5.eff~ ~override~
+
+/*-----------------Shared Effects-----------------*/
+
+COPY ~item_rev/itm/dvnatfrm.spl~ ~override~ // Shapeshift Natural Form
+  SAY NAME1 @4108
+
+COPY ~item_rev/itm/dvwinded.spl~ ~override~ // Exhaustion
+
+/*-----------------Weapon Enhancements-----------------*/
+
+COPY ~item_rev/itm/dvafflic.spl~ ~override~ // Affliction
+COPY ~item_rev/itm/dvafflic.eff~ ~override~
+
+COPY ~item_rev/itm/dvbanish.spl~ ~override~ // Banishing
+COPY ~item_rev/itm/dvbanish.eff~ ~override~
+
+COPY ~item_rev/itm/dvbram.spl~ ~override~ // Battering Ram
+COPY ~item_rev/itm/dvbram.eff~ ~override~
+
+COPY ~item_rev/itm/dvbleed2.spl~ ~override~ // Bleeding Damage (2 rounds)
+COPY ~item_rev/itm/dvbleed2.eff~ ~override~
+COPY ~item_rev/itm/dvbleed5.spl~ ~override~ // Bleeding Damage (5 rounds)
+COPY ~item_rev/itm/dvbleed5.eff~ ~override~
+COPY ~item_rev/itm/dvbleed0.spl~ ~override~ // Bleeding Damage (10 rounds)
+COPY ~item_rev/itm/dvbleed0.eff~ ~override~
+
+COPY ~item_rev/itm/dvbonebr.spl~ ~override~ // Bone Breaking
+COPY ~item_rev/itm/dvbonebr.eff~ ~override~
+
+COPY ~item_rev/itm/dvbrnwnd.spl~ ~override~ // Burning Wounds
+COPY ~item_rev/itm/dvbrnwnd.eff~ ~override~
+
+ADD_PROJECTILE ~item_rev/itm/dvflbrst.pro~ // Burst of Flames
+COPY ~item_rev/itm/dvflbrst.spl~ ~override~
+  WRITE_SHORT 0x98 dvflbrst
+
+ADD_PROJECTILE ~item_rev/itm/dvfrbolt.pro~ // Fire Bolt (Firetooth)
+COPY ~item_rev/itm/dvfrbolt.spl~ ~override~
+  WRITE_SHORT 0x98 dvfrbolt
+
+COPY ~item_rev/itm/dvvtrsph.spl~ ~override~ // Burst of Acid
+  WRITE_SHORT 0x98 dvflbrst
+COPY ~item_rev/itm/dvvtrsph.vvc~ ~override~
+COPY ~item_rev/itm/dvvtrsph.bam~ ~override~
+
+COPY ~item_rev/itm/dvchill.spl~ ~override~ // Chilling
+COPY ~item_rev/itm/dvchill.eff~ ~override~
+
+COPY ~item_rev/itm/dvconfus.spl~ ~override~ // Confusing
+COPY ~item_rev/itm/dvconfus.eff~ ~override~
+
+COPY ~item_rev/itm/dvcorros.spl~ ~override~ // Corrosion
+COPY ~item_rev/itm/dvcorros.eff~ ~override~
+
+COPY ~item_rev/itm/dvcrippl.spl~ ~override~ // Crippling
+COPY ~item_rev/itm/dvcrippl.eff~ ~override~
+
+COPY ~item_rev/itm/dvcutthr.spl~ ~override~ // Cutthroating
+COPY ~item_rev/itm/dvcutthr.eff~ ~override~
+
+COPY ~item_rev/itm/dvdarkf1.spl~ ~override~ // Darkfire Shield
+COPY ~item_rev/itm/dvdarkf2.spl~ ~override~
+
+ADD_PROJECTILE ~item_rev/itm/dvdeton.pro~ // Detonation
+COPY ~item_rev/itm/dvdeton.spl~ ~override~
+  WRITE_SHORT 0x98 dvdeton
+
+COPY ~item_rev/itm/dvdispel.spl~ ~override~ // Dispelling
+
+COPY ~item_rev/itm/dvhoples.spl~ ~override~ // Domineering
+COPY ~item_rev/itm/dvhoples.eff~ ~override~
+
+COPY ~item_rev/itm/dvdoom.spl~ ~override~ // Dooming
+COPY ~item_rev/itm/dvdoom.eff~ ~override~
+
+COPY ~item_rev/itm/dvshake.spl~ ~override~ // Earthshaking
+  WRITE_SHORT 0x98 dvflbrst
+COPY ~item_rev/itm/dvshake.eff~ ~override~
+
+COPY ~item_rev/itm/dvenerv.spl~ ~override~ // Enervating
+COPY ~item_rev/itm/dvenerv.eff~ ~override~
+
+COPY ~item_rev/itm/dvenfebl.spl~ ~override~ // Enfeebling
+COPY ~item_rev/itm/dvenfebl.eff~ ~override~
+
+COPY ~item_rev/itm/dventgl.spl~ ~override~ // Entangling
+COPY ~item_rev/itm/dventgl.eff~ ~override~
+
+COPY ~item_rev/itm/dvfearsm.spl~ ~override~ // Fearsome
+COPY ~item_rev/itm/dvfearsm.eff~ ~override~
+
+COPY ~item_rev/itm/dvflwhip.spl~ ~override~ // Flame Whip
+COPY ~item_rev/itm/dvflwhip.eff~ ~override~
+COPY ~item_rev/itm/dvflwhip.vvc~ ~override~
+
+COPY ~item_rev/itm/dvfreeze.spl~ ~override~ // Freezing
+COPY ~item_rev/itm/dvfreeze.eff~ ~override~
+
+COPY ~item_rev/itm/dvholdun.spl~ ~override~ // Halt Undead
+
+COPY ~item_rev/itm/dvhseek.spl~ ~override~ // Heartseeking
+COPY ~item_rev/itm/dvhseek.eff~ ~override~
+
+COPY ~item_rev/itm/dvhsmite.spl~ ~override~ // Holy Smite
+COPY ~item_rev/itm/dvhsmite.eff~ ~override~
+
+COPY ~item_rev/itm/dvillban.spl~ ~override~ // Illusion Bane
+COPY ~item_rev/itm/dvillban.eff~ ~override~
+
+COPY ~item_rev/itm/dvknback.spl~ ~override~ // Knockback
+COPY ~item_rev/itm/dvknback.eff~ ~override~
+
+COPY ~item_rev/itm/dvffire.spl~ ~override~ // Luminous
+COPY ~item_rev/itm/sppr114f.spl~ ~override~
+
+COPY ~item_rev/itm/dvmindbr.spl~ ~override~ // Mindbreaking
+COPY ~item_rev/itm/dvmindbr.eff~ ~override~
+
+COPY ~item_rev/itm/dvtoxic.spl~ ~override~ // Toxins (1 hp/6 seconds)
+COPY ~item_rev/itm/dvvenom.spl~ ~override~ // Venomous (1 hp/12 seconds)
+COPY ~item_rev/itm/dvaspven.spl~ ~override~ // Asp's Venom (1 hp/30 seconds)
+COPY ~item_rev/itm/dvviper.spl~ ~override~ // Viperous (5 hp/12 seconds)
+
+COPY ~item_rev/itm/dvprlyze.spl~ ~override~ // Paralyzing
+COPY ~item_rev/itm/dvprlyze.eff~ ~override~
+
+COPY ~item_rev/itm/dvpin.spl~ ~override~ // Pinning
+COPY ~item_rev/itm/dvpin.eff~ ~override~
+
+ADD_PROJECTILE ~item_rev/itm/dvsburst.pro~ // Resonating
+COPY ~item_rev/itm/dvreson.spl~ ~override~
+  WRITE_SHORT 0x98 dvsburst
+COPY ~item_rev/itm/dvsburst.vvc~ ~override~
+COPY ~item_rev/itm/dvsburst.bam~ ~override~
+
+COPY ~item_rev/itm/dvreaver.spl~ ~override~ // Reaver
+
+COPY ~item_rev/itm/dvrevers.spl~ ~override~ // Reverse Magic
+  SAY NAME1 @4078
+
+COPY ~item_rev/itm/dvscourg.spl~ ~override~ // Scourging
+COPY ~item_rev/itm/dvscourg.eff~ ~override~
+
+COPY ~item_rev/itm/dvslay.spl~ ~override~ // Slaying
+COPY ~item_rev/itm/dvslay.eff~ ~override~
+
+COPY ~item_rev/itm/dvsleep.spl~ ~override~ // Sleeping
+COPY ~item_rev/itm/dvsleep.eff~ ~override~
+
+COPY ~item_rev/itm/dvslow1.spl~ ~override~ // Slow (1 round)
+COPY ~item_rev/itm/dvslow2.spl~ ~override~ // Slow (2 rounds)
+COPY ~item_rev/itm/dvslow5.spl~ ~override~ // Slow (5 rounds)
+
+COPY ~item_rev/itm/dvsburst.spl~ ~override~ // Sonic Blast
+  WRITE_SHORT 0x98 dvsburst
+COPY ~item_rev/itm/dvsburst.eff~ ~override~
+
+COPY ~item_rev/itm/dvspdrnk.eff~ ~override~ // Spell Drinker
+COPY ~item_rev/itm/dvspdrnk.spl~ ~override~ //
+
+COPY ~item_rev/itm/dvspabsr.eff~ ~override~ // Spell Stealer
+COPY ~item_rev/itm/dvspabsr.spl~ ~override~
+
+ADD_PROJECTILE ~item_rev/itm/dvstdust.pro~ // Stardust effect
+COPY ~item_rev/itm/dvstdust.spl~ ~override~
+  WRITE_SHORT 0x98 dvstdust
+
+ADD_PROJECTILE ~item_rev/itm/dvstench.pro~ // Stench effect
+COPY ~item_rev/itm/dvstench.spl~ ~override~
+  WRITE_SHORT 0x98 dvstench
+COPY ~item_rev/itm/dvstench.eff~ ~override~
+
+COPY ~item_rev/itm/dvstnhld.spl~ ~override~ // Stonehold
+COPY ~item_rev/itm/dvstnhld.eff~ ~override~
+
+COPY ~item_rev/itm/dvstorm1.spl~ ~override~ // Storm Star's Chain Lightning
+COPY ~item_rev/itm/dvstorm2.spl~ ~override~ // Storm Star's Call Lightning
+COPY ~item_rev/itm/dvstorm3.spl~ ~override~
+
+COPY ~item_rev/itm/dvstun.spl~ ~override~ // Stunning
+COPY ~item_rev/itm/dvstun.eff~ ~override~
+
+COPY ~item_rev/itm/dvsunder.spl~ ~override~ // Sundering
+COPY ~item_rev/itm/dvsunder.eff~ ~override~
+
+COPY ~item_rev/itm/dvtenchu.spl~ ~override~ // Tenchu
+
+ADD_PROJECTILE ~item_rev/itm/dvthclap.pro~ // Thunderclap
+COPY ~item_rev/itm/dvthclap.spl~ ~override~
+  WRITE_SHORT 0x98 dvthclap
+
+COPY ~item_rev/itm/dvvampir.spl~ ~override~ // Vampiric 1D4
+COPY ~item_rev/itm/dvvampir.eff~ ~override~
+
+COPY ~item_rev/itm/dvvorpal.spl~ ~override~ // Vorpal
+COPY ~item_rev/itm/dvvorpal.eff~ ~override~
+
+COPY ~item_rev/itm/dvwebb.spl~ ~override~ // Webbing
+COPY ~item_rev/itm/dvwebb.eff~ ~override~
+
+/*-----------------Item Special Abilities-----------------*/
+
+COPY ~item_rev/itm/dvdlifea.spl~ ~override~ // Drain Life
+  SAY NAME1 @4050
+COPY ~item_rev/itm/dvdlifeb.spl~ ~override~
+COPY ~item_rev/itm/dvdlife.eff~ ~override~
+
+COPY ~item_rev/itm/dvfball.spl~ ~override~ // Fireball
+  SAY NAME1 @4094
+COPY ~item_rev/itm/dvfball2.spl~ ~override~
+
+COPY ~item_rev/itm/dvginvul.spl~ ~override~ // Globe of Invulnerability
+  SAY NAME1 @4057
+
+COPY ~item_rev/itm/dvhaste.spl~ ~override~ // Haste
+  SAY NAME1 @4068
+
+COPY ~item_rev/itm/dvlightb.spl~ ~override~ // Lightning Bolt
+  SAY NAME1 @4096
+
+ADD_PROJECTILE ~item_rev/itm/dvmcure.pro~ // Mass Cure
+COPY ~item_rev/itm/dvmcure.spl~ ~override~
+  WRITE_SHORT 0x98 dvmcure
+  SAY NAME1 @4054
+
+ADD_PROJECTILE ~item_rev/itm/dvprexpl.pro~ // Prismatic Explosion
+COPY ~item_rev/itm/dvprexpl.spl~ ~override~
+  SAY NAME1 @4014
+  WRITE_SHORT 0x98 dvprexpl
+COPY ~item_rev/itm/dvprexp1.spl~ ~override~
+COPY ~item_rev/itm/dvprexp2.spl~ ~override~
+
+COPY ~item_rev/itm/dvpetri.spl~ ~override~ // Stone to Flesh
+  SAY NAME1 @4064
+COPY ~item_rev/itm/dvpetri.eff~ ~override~
+COPY ~item_rev/itm/dvpetri2.spl~ ~override~
+
+COPY ~item_rev/itm/dvstones.spl~ ~override~ // Stoneskin
+  SAY NAME1 @4008
+
+COPY ~item_rev/itm/dvwhorro.spl~ ~override~ // Wand Horror
+  SAY NAME1 @4091
+COPY ~item_rev/itm/dvwhorro.eff~ ~override~
+
+COPY ~item_rev/itm/dvwparal.spl~ ~override~ // Wand Paralyzation
+  SAY NAME1 @4093
+
+COPY ~item_rev/itm/dvwconec.spl~ ~override~ // Wand Cone of Cold
+  SAY NAME1 @4095
+COPY ~item_rev/itm/dvwcone2.spl~ ~override~
+
+COPY ~item_rev/itm/dvwfball.spl~ ~override~ // Wand Fireball
+  SAY NAME1 @4094
+COPY ~item_rev/itm/dvwfbal2.spl~ ~override~
+
+COPY ~item_rev/itm/dvwlight.spl~ ~override~ // Wand Lightning Bolt
+  SAY NAME1 @4096
+
+ADD_PROJECTILE ~item_rev/itm/dvwckill.pro~
+COPY ~item_rev/itm/dvwckill.spl~     ~override~  // Wand Cloudkill
+  SAY NAME1 @4101
+  WRITE_SHORT 0x98 %dvwckill%
+  SET dvwckill -= 1
+APPEND ~clearair.2da~ ~Cloudkill               %dvwckill%~

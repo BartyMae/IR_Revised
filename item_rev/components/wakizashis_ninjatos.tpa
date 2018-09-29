@@ -1,0 +1,55 @@
+ACTION_IF waki_ninja_animations>0 BEGIN
+ACTION_IF waki_ninja_animations<3 BEGIN
+//fix ~WPMWNINV~ (main hand too far to the left) ~WPMWNOIN~ (off-hand too far to the left)
+ACTION_FOR_EACH paperdoll IN ~WPHWNINV~ ~WPHWNOIN~ ~WPLWNINV~ ~WPLWNOIN~ ~WPMWNINV~ ~WPMWNOIN~ ~WPNWNINV~ ~WPNWNOIN~ ~WPSWNINV~ ~WPSWNOIN~ BEGIN
+  COPY		~item_rev/components/wakizashis_ninjatos/%paperdoll%.bam~ ~override~
+END
+
+ACTION_IF waki_ninja_animations=1 BEGIN
+ACTION_FOR_EACH set IN ~WN~ BEGIN
+  ACTION_FOR_EACH category IN ~L~ ~M~ ~N~ ~S~ BEGIN
+    ACTION_FOR_EACH sequence IN ~A1~ ~A3~ ~A5~ ~A7~ ~A8~ ~A9~ ~G1~ ~OA7~ ~OA8~ ~OA9~ ~OG1~ BEGIN
+        COPY_EXISTING ~WQ%category%SS%sequence%.BAM~ ~override/WQ%category%%set%%sequence%.BAM~
+    END
+  END
+END
+
+ACTION_FOR_EACH set IN ~WN~ BEGIN
+  ACTION_FOR_EACH category IN ~L~ ~M~ ~S~ BEGIN
+    ACTION_FOR_EACH sequence IN ~A1~ ~A1E~ ~A3~ ~A3E~ ~A5~ ~A5E~ ~G1~ ~G1E~ ~W2~ ~W2E~ BEGIN
+      COPY_EXISTING ~WP%category%SS%sequence%.BAM~ ~override/WP%category%%set%%sequence%.BAM~
+    END
+  END
+END
+END
+
+ACTION_IF waki_ninja_animations=2 BEGIN
+ACTION_FOR_EACH set IN ~WN~ BEGIN
+  ACTION_FOR_EACH category IN ~L~ ~M~ ~N~ ~S~ BEGIN
+    ACTION_FOR_EACH sequence IN ~A1~ ~A3~ ~A5~ ~A7~ ~A8~ ~G1~ ~OA7~ ~OA8~ ~OA9~ ~OG1~ BEGIN
+        COPY_EXISTING ~WQ%category%S3%sequence%.BAM~ ~override/WQ%category%%set%%sequence%.BAM~
+    END
+  END
+END
+
+ACTION_FOR_EACH set IN ~WN~ BEGIN
+  ACTION_FOR_EACH category IN ~L~ ~M~ ~S~ BEGIN
+    ACTION_FOR_EACH sequence IN ~A1~ ~A1E~ ~A3~ ~A3E~ ~A5~ ~A5E~ ~G1~ ~G1E~ ~W2~ ~W2E~ BEGIN
+      COPY_EXISTING ~WP%category%S3%sequence%.BAM~ ~override/WP%category%%set%%sequence%.BAM~
+    END
+  END
+END
+END
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
+	LPM identify_item
+	PATCH_IF wakizashi BEGIN // 
+		WRITE_ASCII 0x22 ~WN~
+	END
+	PATCH_IF ninjato BEGIN // 
+		WRITE_ASCII 0x22 ~WN~
+	END
+END
+
+END
+END

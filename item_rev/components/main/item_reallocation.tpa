@@ -1,0 +1,839 @@
+ACTION_IF install_item_reallocation BEGIN // reallocate items to match with SCS
+
+// Remove Shadow Veil and Robe of Larloch from Deidre
+ACTION_IF (FILE_EXISTS_IN_GAME ~wmart2.sto~) BEGIN
+  COPY_EXISTING ~wmart2.sto~ ~override~ // Deidre
+    PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+      REMOVE_STORE_ITEM ~wa2helm~ ~wa2robe~
+    END BUT_ONLY
+END
+
+// Robe of Larloch moved to Azamantes
+ACTION_IF (FILE_EXISTS_IN_GAME ~gorlic01.cre~) BEGIN
+  COPY_EXISTING ~gorlic01.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM ~wa2robe~ #0 #0 #0 ~NONE~ ~ARMOR~
+  END BUT_ONLY
+END
+
+// Shadow Veil moved to Gromnir
+ACTION_IF (FILE_EXISTS_IN_GAME ~gromnir.cre~) BEGIN
+  COPY_EXISTING ~gromnir.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~helmnoan~
+    ADD_CRE_ITEM ~wa2helm~ #1 #0 #0 NONE HELMET
+  END BUT_ONLY
+END
+
+END
+
+// reallocate items for balance/gameplay purposes (non-store revisions)
+
+/////////////////////////////////////
+
+// Increase the difficulty of stealing Ribald's Ring of Regeneration
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~ribald.cre~) BEGIN
+  COPY_EXISTING ribald.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    WRITE_BYTE 0x6a 90
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Belm moved to Ihtafeer
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~trrak01.cre~) BEGIN
+  COPY_EXISTING ~trrak01.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw1h04
+    ADD_CRE_ITEM sw1h30 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+  
+  COPY_EXISTING ar1905.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=sw1h30 END
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Remove Girdle of Frost Giant Strength from Death Knight and properly equip him, also give him Helm of Despair
+// Give Girdle to Shadow Dragon and remove Scroll of Crom Faeyr
+// Place Scroll of Crom Faeyr in Underdark Beholder Lair
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~uddeath2.cre~) BEGIN
+  COPY_EXISTING uddeath2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM plat16 sw2h08 belt08 // he didn't wear that belt anyway
+    PATCH_IF comp_ir=1 && comp_cursed=0 BEGIN
+      ADD_CRE_ITEM helm02 #0 #0 #0 NONE HELMET
+    END
+    ADD_CRE_ITEM plat16 #0 #0 #0 NONE ARMOR
+    ADD_CRE_ITEM sw2h08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+  END BUT_ONLY
+
+  COPY_EXISTING shadra01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM scrlag
+    ADD_CRE_ITEM belt08 #0 #0 #0 NONE INV7
+  END BUT_ONLY
+
+  COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=7 STR_VAR item_to_add=scrlag END
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Equip Skin of the Ghoul, as Yarpen has suggested
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~theshal.cre~) BEGIN
+  COPY_EXISTING theshal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM leat13
+    ADD_CRE_ITEM leat13 #0 #0 #0 NONE ARMOR
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Give Protection from Magic scroll to Lord Argrim (Mage Stronghold)
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~mgket01.cre~) BEGIN
+  COPY_EXISTING mgket01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM scrl07 #1 #0 #0 NONE INV1
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Flame of the North from Ilithid Lair to Tazok
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~ppmind01.cre~) BEGIN
+  COPY_EXISTING ppmind01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw2h12
+  END BUT_ONLY
+
+  COPY_EXISTING tazok.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw2h11
+    ADD_CRE_ITEM sw2h12 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Boots of Phasing from Viekang to House Jae'lat Weaponmaster
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~viekang.cre~) BEGIN
+  COPY_EXISTING viekang.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM boot08
+  END BUT_ONLY
+
+  COPY_EXISTING jael03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    PATCH_IF comp_cursed=0 BEGIN
+      ADD_CRE_ITEM boot08 #0 #0 #0 NONE BOOTS          // Boots of Phasing
+    END
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Give and equip Bala's Axe to Mencar the Pebblecrusher; remove extra copy from UB Planar Sphere
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~sevpat01.cre~) BEGIN
+  COPY_EXISTING sevpat01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Equip
+    REMOVE_CRE_ITEM hamm02
+    ADD_CRE_ITEM ax1h07 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~AR0413.bcs~) BEGIN
+  COPY_EXISTING AR0413.bcs override // Remove extra copy from UB
+  DECOMPILE_BCS_TO_BAF
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ActionOverride("Container 1",CreateItem("AX1H07",0,0,0))~ ~ ~
+  COMPILE_BAF_TO_BCS
+END
+
+/////////////////////////////////////
+
+// Lord Khellon reward change and quest enable
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~trrak01.cre~) BEGIN
+  COPY_EXISTING trevil01.dlg override // Reward change
+  DECOMPILE_DLG_TO_D
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveGoldForce(1000)
+GiveItemCreate("shld25"~
+~GiveGoldForce(5375)
+GiveItemCreate("ring07"~
+  COMPILE_D_TO_DLG
+
+  COPY_EXISTING AR2000.bcs override // Quest enable
+  DECOMPILE_BCS_TO_BAF
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_EVIL)~ ~ ~
+  COMPILE_BAF_TO_BCS
+END
+
+/////////////////////////////////////
+
+// Give Flail of Submission to Captain Haegan, slaver captain in Slums
+// Give him a +1 Medium Shield
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~haegan.cre~) BEGIN
+  COPY_EXISTING haegan.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw2h01
+    ADD_CRE_ITEM dvblun01 #0 #0 #0 NONE WEAPON1 EQUIP
+    ADD_CRE_ITEM shld04 #0 #0 #0 NONE SHIELD
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Give Eagle Bow and UB Boots of the West to Valygar elf ranger
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~valran01.cre~) BEGIN
+  COPY_EXISTING valran01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM misc8j // Remove duplicate if Unfinished Business is installed
+	REMOVE_CRE_ITEM bow03
+	REMOVE_CRE_ITEM bow08
+	REMOVE_CRE_ITEM bow99
+	ADD_CRE_ITEM bow08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+    ADD_CRE_ITEM misc8j #0 #0 #0 NONE BOOTS
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Bands of Focus from Draconis to Thelynn'ss, Sendai's kensai
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~bazdra02.cre~) BEGIN
+  COPY_EXISTING bazdra02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM brac26
+  END BUT_ONLY
+
+  COPY_EXISTING senken01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM brac26 #0 #0 #0 NONE GLOVES
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Girdle of Fire Giant Strength from Yaga-Shura Lair to Berenn
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~hgber01.cre~) BEGIN
+  COPY_EXISTING ar5201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=belt11 END
+  END BUT_ONLY
+
+  COPY_EXISTING hgber01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM belt11 #0 #0 #0 NONE BELT
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Lavender Ioun Stone from Gromnir to Yaga-Shura
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~gromnir.cre~) BEGIN
+  COPY_EXISTING gromnir.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM helm26
+    ADD_CRE_ITEM helmnoan #0 #0 #0 NONE HELMET
+  END BUT_ONLY
+
+  COPY_EXISTING yaga01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM helmnoan
+    ADD_CRE_ITEM helm26 #0 #0 #0 NONE HELMET
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Malakar from Spellhold troll to Samia's party
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~pptroll1.cre~) BEGIN
+  COPY_EXISTING pptroll1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw1h45
+  END BUT_ONLY
+
+  ACTION_IF FILE_EXISTS_IN_GAME pptroll2.cre BEGIN
+  COPY_EXISTING pptroll2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw1h45
+  END BUT_ONLY
+  END
+
+  COPY_EXISTING akae.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw1h43
+    ADD_CRE_ITEM sw1h45 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Cloak of Nature's Wrath from Merella to Shadow Patrick
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~uhrang01.cre~) BEGIN
+  COPY_EXISTING uhrang01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM clck25
+  END BUT_ONLY
+
+  COPY_EXISTING rngsha02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM clck25 #0 #0 #0 NONE CLOAK
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Cloak of the Wolf from dead body to Anath the werewolf
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~shabod01.cre~) BEGIN
+  COPY_EXISTING shabod01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM clck04
+  END BUT_ONLY
+
+  COPY_EXISTING rngwlf03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM clck04 #1 #0 #0 NONE CLOAK
+  END BUT_ONLY
+
+  COPY_EXISTING rngwlf04.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM clck04 #1 #0 #0 NONE CLOAK
+  END BUT_ONLY
+
+  COPY_EXISTING rngwlf05.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM clck04 #1 #0 #0 NONE CLOAK
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Shield of the Order to Jamis Tombelthen the general
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~yaga01.cre~) BEGIN
+  COPY_EXISTING yaga01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM shld32
+  END BUT_ONLY
+
+  COPY_EXISTING amtgen01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw1h73 sw1h77
+    ADD_CRE_ITEM sw1h77 #0 #0 #0 NONE WEAPON1 EQUIP
+    ADD_CRE_ITEM shld32 #0 #0 #0 NONE SHIELD
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Give Life Stealer to Gromnir's assassin - check for UB's Artemis Entereri
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~gromg09.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ubartemi.xxx~) BEGIN
+  END ELSE BEGIN
+    COPY_EXISTING gromg09.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM eler
+      ADD_CRE_ITEM dagg20 #0 #0 #0 NONE WEAPON1 EQUIP
+    END BUT_ONLY
+  END
+END
+
+/////////////////////////////////////
+
+// Equip Shadow Druid Adherent in Druid's Grove with Spear of Unicorn and Protector of the Second
+// Place Dalok's Gnasher in Troll's Mound
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~cefgt01.cre~) BEGIN
+  COPY_EXISTING ar0420.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=leat03 END
+  END BUT_ONLY
+
+  COPY_EXISTING ar1904.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=sper07 END
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=2 STR_VAR item_to_add=blun24 END
+  END BUT_ONLY
+
+  COPY_EXISTING cedruid2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM blun24
+    ADD_CRE_ITEM blun01 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+
+  COPY_EXISTING cefgt01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM chan04 sw1h20
+    ADD_CRE_ITEM sper07 #0 #0 #0 NONE WEAPON1 EQUIP
+    ADD_CRE_ITEM leat03 #0 #0 #0 NONE ARMOR
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Give Full Plate Mail +1 to Prelate Wessalen
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~hprelate.cre~) BEGIN
+  COPY_EXISTING hprelate.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM npplat
+    ADD_CRE_ITEM plat14 #0 #0 #0 NONE ARMOR
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Impaler to Kuo-Toa Prince
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~sahkng02.cre~) BEGIN
+  COPY_EXISTING sahkng02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sper08
+    ADD_CRE_ITEM sper05 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+
+  COPY_EXISTING sahpr2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sper08
+    ADD_CRE_ITEM sper05 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+
+  COPY_EXISTING udprince.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sper01 kuosper
+    ADD_CRE_ITEM sper08 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Move Backbiter from Riti (in Underdark Imprisonment machine) to Baron Ployer: three wizards and Backbiter's insane damage should make it fun
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~udtrap03.cre~) BEGIN
+  COPY_EXISTING udtrap03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sper03
+  END BUT_ONLY
+
+  COPY_EXISTING baronp.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw2h01
+    ADD_CRE_ITEM sper03 #0 #0 #0 NONE WEAPON1 EQUIP
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Remove Boots of the Shifting Sands from Greyhand (Unfinished Business) and have Raevilin Strathi give Boots of the Shifting Sands instead of Albruin
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~greyhand.cre~) BEGIN
+  COPY_EXISTING ~greyhand.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM boot09
+  END BUT_ONLY
+  
+  COPY_EXISTING udtrap02.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("sw1h34",~ ~GiveItemCreate("boot09",~
+  COMPILE_D_TO_DLG
+END
+
+/////////////////////////////////////
+
+// Equip Mail of the Dead and Helm of Balduran on Ilyich
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~duecla01.cre~) BEGIN
+  COPY_EXISTING duecla01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM leat01
+    ADD_CRE_ITEM helm07 #0 #0 #0 NONE HELMET
+    ADD_CRE_ITEM chan03 #0 #0 #0 NONE ARMOR
+  END BUT_ONLY
+
+  COPY_EXISTING ar0602.bcs override
+  DECOMPILE_BCS_TO_BAF
+    REPLACE_EVALUATE ~^\(.+\)$~ BEGIN
+      PATCH_IF (~%MATCH1%~ STRING_CONTAINS_REGEXP ~import0[13]~)=0 BEGIN
+        SPRINT ~MATCH1~ ~~ // remove lines with "IMPORT01" and "IMPORT03"
+      END
+    END ~%MATCH1%~
+  COMPILE_BAF_TO_BCS
+END
+
+/////////////////////////////////////
+
+// Replace Planar Prison Bounty Hunter's Cloak of the Shield with Cloak of Protection +1
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~pbhunt03.cre~) BEGIN
+  COPY_EXISTING pbhunt03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~clck20~ ~clck01~
+  END BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Replace Boots of Stealth with Ring of Night's Embrace in Shadow Thieves Guildhouse
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  COPY_EXISTING ~ar0303.are~ ~override~ // Shadow Thieves Guildhouse
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~boot02~ new_item = ~ring21~ END
+    END
+    BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Add Horn of Kazgaroth to Deril (Demi Lich form) to match ARP
+ACTION_IF (FILE_EXISTS_IN_GAME ~cedelich.cre~) BEGIN
+  COPY_EXISTING cedelich.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM misc73 // Remove duplicate
+	  ADD_CRE_ITEM misc73 #1 #0 #0 NONE INV1  
+    END
+	BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Add Web Sack to Pai'Na if UB's Spider Bane quest is not installed
+ACTION_IF (FILE_EXISTS_IN_GAME ~u!spbane.itm~) BEGIN
+  END ELSE BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~sppain.cre~) BEGIN
+	COPY_EXISTING sppain.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM WAND14 #1 #0 #0 NONE INV1  
+    END BUT_ONLY
+  END
+END
+
+/////////////////////////////////////
+
+// Remove extra Lawgiver in Ulgoth's Beard home
+ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
+  COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~SW1H03~ END
+    END
+    BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Place Fallorain's Plate +1 on Genthore in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~gentho.cre~) BEGIN // Genthore
+  COPY_EXISTING gentho.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat02~ ~dvplat01~
+    END
+	BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Place Telbar's Armor +2 on Sendai in BGT
+ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
+  COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~leat07~
+	ADD_CRE_ITEM ~dvleat01~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Replaces Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard in ToB
+ACTION_IF (FILE_EXISTS_IN_GAME ~sarmag01.cre~) BEGIN // Errard
+  COPY_EXISTING sarmag01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~clck15~ ~clck18~
+    END
+	BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Places a droppable Robe of the Neutral Archmagi on Jaheria assassin
+/*ACTION_IF (FILE_EXISTS_IN_GAME ~jade3.cre~) BEGIN // Genthore
+  COPY_EXISTING jade3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN 
+	  ADD_CRE_ITEM clck16 #0 #0 #0 NONE ARMOR
+    END
+	BUT_ONLY
+END*/
+
+/////////////////////////////////////
+
+// Replace "bad" (unique) copies of items with "good" (generic) copies
+// AX1H03 (Battle Axe +2) -> AX1H11
+// BLUN08 (Flail) -> BLUN02
+// DAGG03 (Dagger +2) -> DAGG15
+// LEAT03 (Leather Armor +2) -> LEAT11
+// PLAT05 (Full Plate Mail +1) -> PLAT14
+// SHLD19 (Large Shield +2) -> SHLD30
+// SW1H09 (Short Sword +2) -> SW1H29
+
+//Replace bad copies of Battle Axe +2
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  COPY_EXISTING ~ar0420.are~ ~override~ // Planer Sphere
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ax1h03~ new_item = ~ax1h11~ END
+    END
+    BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~sengua04.cre~) BEGIN
+  COPY_EXISTING sengua04.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ax1h03~ ~ax1h11~
+  END
+  BUT_ONLY
+END
+
+// Replace bad copies of Flail
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar0602.are~) BEGIN
+    COPY_EXISTING ~ar0602.are~ ~override~ // Irenicus' Dungeon
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun08~ new_item = ~blun02~ END
+      END
+      BUT_ONLY
+	END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~xr0602.are~) BEGIN
+    COPY_EXISTING ~xr0602.are~ ~override~ // Irenicus' Dungeon #2
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun08~ new_item = ~blun02~ END
+      END
+      BUT_ONLY
+	END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~bodfgt01.cre~) BEGIN
+  COPY_EXISTING bodfgt01.cre override
+			    obshal02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
+  END 
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~helmho.cre~) BEGIN // BG1
+  COPY_EXISTING ~helmho.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~brainwa5.cre~) BEGIN // BG1
+  COPY_EXISTING ~brainwa5.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
+  END BUT_ONLY
+END
+
+//Replace bad copies of Dagger +2
+ACTION_IF (FILE_EXISTS_IN_GAME ~VAELASA.cre~) BEGIN
+  COPY_EXISTING VAELASA.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg15~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~C6ARKAN.cre~) BEGIN
+  COPY_EXISTING C6ARKAN.cre override
+			    C6ARKAN3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg15~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~marek.cre~) BEGIN // BG1
+  COPY_EXISTING marek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg02~
+  END
+  BUT_ONLY
+END
+
+//Replace bad copies of Full Plate Mail +1
+ACTION_IF (FILE_EXISTS_IN_GAME ~gromg10.cre~) BEGIN
+  COPY_EXISTING gromg10.cre override
+			    deckwar1.cre override 
+			    yaga03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sarevo2.cre~) BEGIN // BG1
+    COPY_EXISTING ~knight4.cre~ ~override~
+				  ~deathk1.cre~ ~override~
+				  ~sarev1.cre~ ~override~
+				  ~sarevo2.cre~ ~override~
+				  ~deathk.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
+    END
+    BUT_ONLY
+  END
+END
+
+//Replace bad copies of Large Shield +2
+ACTION_IF (FILE_EXISTS_IN_GAME ~chak.cre~) BEGIN
+  COPY_EXISTING chak.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~shld19~ ~shld30~
+  END
+  BUT_ONLY
+END
+
+//Replace bad copies of Short Sword +2
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar0303.are~) BEGIN
+    COPY_EXISTING ~ar0303.are~ ~override~ // Mae'var's Guildhouse
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h09~ new_item = ~sw1h29~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2210.are~) BEGIN
+    COPY_EXISTING ~ar2210.are~ ~override~ // ?
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h09~ new_item = ~sw1h29~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~sarkis02.cre~) BEGIN
+  COPY_EXISTING ~sarkis02.cre~ ~override~
+				~sarkis03.cre~ ~override~
+				~c6alyra.cre~ ~override~
+				~c6natas.cre~ ~override~
+				~c6kach.cre~ ~override~
+				~ammerc07.cre~ ~override~
+				~sargrd05.cre~ ~override~
+				~sargrd09.cre~ ~override~
+				~vvarkan.cre~ ~override~
+				~hlketta.cre~ ~override~
+				~hlketta2.cre~ ~override~
+				~deckass1.cre~ ~override~
+				~calaha.cre~ ~override~
+				~hgskl02.cre~ ~override~
+				~vvcat.cre~ ~override~
+				~sarcpt01.cre~ ~override~
+				~gordeck5.cre~ ~override~
+				~gordeck6.cre~ ~override~
+				~gordeck7.cre~ ~override~
+				~gordeck8.cre~ ~override~
+				~gordeck9.cre~ ~override~
+				~gordecka.cre~ ~override~
+			    ~teltief2.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~ammerc08.cre~) BEGIN
+  COPY_EXISTING ~ammerc08.cre~ ~override~
+				~ammerc09.cre~ ~override~
+				~senorc02.cre~ ~override~
+				~senorc04.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~yaga03.cre~) BEGIN
+  COPY_EXISTING yaga03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~deckwar1.cre~) BEGIN
+  COPY_EXISTING deckwar1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN
+  COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM sw1h09
+    REMOVE_CRE_ITEM sw1h14
+    ADD_CRE_ITEM sw1h09 #0 #0 #0 NONE WEAPON1 EQUIP
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dw#vider.cre~) BEGIN
+  COPY_EXISTING dw#vider.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dw#vime1.cre~) BEGIN
+  COPY_EXISTING dw#vime1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~ribald3.sto~) BEGIN
+  COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~trmer04a.sto~) BEGIN
+  COPY_EXISTING trmer04a.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~bernard5.sto~) BEGIN
+  COPY_EXISTING bernard5.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~type3.sto~) BEGIN
+  COPY_EXISTING type3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+/////////////////////////////////////
+
+//Various fixes
+
+// Yaga cleric shield
+ACTION_IF (FILE_EXISTS_IN_GAME ~yaga04.cre~) BEGIN
+COPY_EXISTING yaga04.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~shdl06~ ~shld06~
+  END
+  BUT_ONLY
+END
+
+// Black Reaver random treasure
+ACTION_IF (FILE_EXISTS_IN_GAME ~zilfgt01.cre~) BEGIN
+COPY_EXISTING zilfgt01.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REMOVE_CRE_ITEM ~rntre04~
+    ADD_CRE_ITEM ~rndtre04~ #1 #0 #0 NONE INV
+  END
+  BUT_ONLY
+END
+
+// Gorion scroll (BG1)
+ACTION_IF (FILE_EXISTS_IN_GAME ~gorion.cre~) BEGIN
+  COPY_EXISTING gorion.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_CRE_ITEM ~scrl3z~ #1 #0 #0 ~unstealable~ ~inv~
+  END
+  BUT_ONLY
+END
+
+// Place both Ring of Sorcery and Ring of Wizardry in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
+  COPY_EXISTING sunin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REMOVE_CRE_ITEM ~ring08~
+	REMOVE_CRE_ITEM ~bgring08~
+	ADD_CRE_ITEM ~ring08~ #0 #0 #0 NONE RING
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
+    COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BG1)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar6800.are~) BEGIN
+    COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BG2)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+    END
+    BUT_ONLY
+  END
+END

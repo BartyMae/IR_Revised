@@ -1,0 +1,1575 @@
+// this file is used to install all of the extra files and patches required by specific items (outside of their main .itm file)
+// this contains one inlined file (named as ITEM_ID.tpa) for each item that has additional content
+// when this file is included, the inlined files will be copied to the item_content folder
+// the main component can then look for a file named ITEM_ID.tpa for each item and include it if it exists
+
+OUTER_TEXT_SPRINT source ~.../item_rev-inlined/item~
+OUTER_TEXT_SPRINT target ~item_rev/components/main/item_content~
+
+
+// first remove any existing .tpa files that may be left over from an incomplete uninstallation
+ACTION_BASH_FOR ~%target%~ ~^.+\.tpa$~ BEGIN
+  DELETE ~%BASH_FOR_FILESPEC%~
+END
+
+
+// start of inlined file list
+
+<<<<<<<< .../item_rev-inlined/item/KALIGUNS_AMULET_OF_MAGIC_RESISTANCE.tpa
+  COPY ~item_rev/itm/amul20.spl~ ~override~ // Magic Resistance
+    SAY NAME1 @4001
+
+  // add charge to item
+  ACTION_IF (FILE_EXISTS_IN_GAME ~uddrow24.sto~) BEGIN
+    COPY_EXISTING ~uddrow24.sto~ ~override~ // store
+      PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
+        READ_LONG 0x34 items_offset
+        READ_LONG 0x38 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x1c) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~AMUL20~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0a) 1 // Magic Resistance
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0c) 0 // none
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0e) 0 // none
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/KALIGUNS_AMULET_OF_MAGIC_RESISTANCE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/AMULET_OF_SPELL_WARDING.tpa
+  COPY ~item_rev/itm/amul25.spl~ ~override~ // Spell Deflection
+    SAY NAME1 @4002
+  COPY ~item_rev/itm/amul25b.spl~ ~override~
+
+  // add charge to item
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2101.are~) BEGIN
+    COPY_EXISTING ~ar2101.are~ ~override~ // Underdark, Beholder Dungeon
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        READ_LONG 0x78 "io" // offset to list of items
+        FOR (READ_SHORT 0x76 "ic"; "ic" > 0x00; "ic" -= 0x01) BEGIN
+          READ_ASCII ("io" + ("ic" * 0x14) - 0x14) ~in~ // item name
+          PATCH_IF (~%in%~ STRING_EQUAL_CASE ~AMUL25~) BEGIN
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x0a) 1 // Spell Turning
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x08) 0 // none
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x06) 0 // none
+            SET "ic" = 0x00
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/AMULET_OF_SPELL_WARDING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/AMULET_OF_CHEETAH_SPEED.tpa
+  COPY ~item_rev/itm/amul26.spl~ ~override~ // Improved Haste
+    SAY NAME1 @4003
+>>>>>>>>
+COPY ~%source%/AMULET_OF_CHEETAH_SPEED.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ARROW_OF_DETONATION.tpa
+  ADD_PROJECTILE ~item_rev/itm/arowex.pro~
+  COPY_EXISTING ~%ARROW_OF_DETONATION%.itm~ ~override~
+    WRITE_SHORT 0x9c arowex
+  ADD_PROJECTILE ~item_rev/itm/arowex2.pro~
+  COPY ~item_rev/itm/arow06.spl~ ~override~ // Explosion
+    WRITE_SHORT 0x98 arowex2
+>>>>>>>>
+COPY ~%source%/ARROW_OF_DETONATION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GIRDLE_OF_GIANT_STRENGTH.tpa
+  // Update Cromwell's references from 'Girdle of Frost Giant Strength' to 'Girdle of Giant Strength'
+  STRING_SET ~41384~ @100
+  STRING_SET ~59725~ @101
+  STRING_SET ~59728~ @102
+  STRING_SET ~59730~ @103
+  STRING_SET ~59731~ @104
+>>>>>>>>
+COPY ~%source%/GIRDLE_OF_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GIRDLE_OF_TROLLISH_FORTITUDE.tpa
+  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
+    SAY NAME1 @4004
+>>>>>>>>
+COPY ~%source%/GIRDLE_OF_TROLLISH_FORTITUDE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BELT_OF_INERTIAL_BARRIER.tpa
+  COPY ~item_rev/itm/belt10a.spl~ ~override~ // Inertial Barrier
+  ADD_PROJECTILE ~item_rev/itm/belt10.pro~
+  COPY ~item_rev/itm/belt10b.spl~ ~override~
+    WRITE_SHORT 0x98 belt10
+>>>>>>>>
+COPY ~%source%/BELT_OF_INERTIAL_BARRIER.tpa~ ~%target%~
+
+<<<<<<<< .../item_rev-inlined/item/HOLY_SYMBOL_OF_HELM#ANOMEN.tpa
+  COPY_EXISTING anomen.bcs override // fix Anomen's Holy Symbol for BG2 Fixpack
+    DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~belt13~ ~j#belt13~
+    COMPILE_BAF_TO_BCS
+
+  COPY_EXISTING anom25.bcs override // fix ToB Anomen's Holy Symbol for BG2 Fixpack
+    DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~belt13~ ~j#belt13~
+    COMPILE_BAF_TO_BCS
+>>>>>>>>
+COPY ~%source%/HOLY_SYMBOL_OF_HELM#ANOMEN.tpa~ ~%target%~
+
+
+
+<<<<<<<< .../item_rev-inlined/item/BOLT_OF_POLYMORPHING_2.tpa
+  COPY ~item_rev/itm/bolt05a.itm~ ~override~ // Polymorph Other
+>>>>>>>>
+COPY ~%source%/BOLT_OF_POLYMORPHING_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BOOTS_OF_ETHEREALNESS.tpa
+  COPY ~item_rev/itm/boot11.spl~ ~override~ // Etherealness
+      SAY NAME1 @4007
+  COPY ~item_rev/itm/boot11.eff~ ~override~
+  COPY ~item_rev/itm/boot11a.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/BOOTS_OF_ETHEREALNESS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/IRON_BOW_OF_GESEN_4.tpa
+  ADD_PROJECTILE ~item_rev/itm/bow19.pro~ // Shocking Arrows
+  COPY_EXISTING ~%IRON_BOW_OF_GESEN_4%.itm~ ~override~
+    WRITE_SHORT 0x9c bow19
+>>>>>>>>
+COPY ~%source%/IRON_BOW_OF_GESEN_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BRACERS_OF_SPEED.tpa
+  COPY ~item_rev/itm/brac11.eff~ ~override~ // Exhausting
+>>>>>>>>
+COPY ~%source%/BRACERS_OF_SPEED.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BLESSED_BRACERS.tpa
+  COPY ~item_rev/itm/brac23.spl~ ~override~ // Righteous Fury
+    SAY NAME1 @4012
+>>>>>>>>
+COPY ~%source%/BLESSED_BRACERS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CRIMSON_CHAIN_5.tpa
+  COPY ~item_rev/itm/chan11.spl~ ~override~ // Blood Rage
+>>>>>>>>
+COPY ~%source%/CRIMSON_CHAIN_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CLOAK_OF_THE_WOLF.tpa
+  COPY ~item_rev/itm/dvwere.spl~ ~override~ // Shapeshifts Wolfwere
+  COPY ~item_rev/itm/dvwere.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/CLOAK_OF_THE_WOLF.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/NYMPH_CLOAK.tpa
+  ADD_PROJECTILE ~item_rev/itm/clck07.pro~ // Blinding Beauty
+  COPY ~item_rev/itm/clck07.spl~ ~override~
+    SAY NAME1 @4016
+    WRITE_SHORT 0x98 clck07
+  COPY ~item_rev/itm/clck07.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/NYMPH_CLOAK.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CLOAK_OF_NATURES_VENGEANCE.tpa
+  COPY ~item_rev/itm/clck25.spl~ ~override~ // Nature's Wrath
+  COPY ~item_rev/itm/clck25a.spl~ ~override~
+  COPY ~item_rev/itm/clck25.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/CLOAK_OF_NATURES_VENGEANCE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CLOAK_OF_MIRRORING.tpa
+  COPY ~item_rev/itm/clck26.spl~ ~override~ // Reflected Image
+>>>>>>>>
+COPY ~%source%/CLOAK_OF_MIRRORING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CLOAK_OF_THE_SEWERS.tpa
+  COPY ~item_rev/itm/dvrat.spl~ ~override~ // Shapeshifts Rat
+  COPY ~item_rev/itm/dvrat.itm~ ~override~
+  COPY ~item_rev/itm/dvjelly.spl~ ~override~ // Shapeshifts Mustard Jelly
+  COPY ~item_rev/itm/dvjelly.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/CLOAK_OF_THE_SEWERS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CLOAK_OF_PROTECTION_3.tpa
+  // Cespenar's dialogue
+  ACTION_IF (FILE_EXISTS_IN_GAME ~botsmith.dlg~) BEGIN
+    COPY_EXISTING ~botsmith.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~OR(2)
+                             !PartyHasItem("scrl90")
+                             !PartyHasItem("scrl7q")~
+                          ~!PartyHasItem("scrl8j")~
+        REPLACE_TEXTUALLY ~PartyHasItem("scrl90")
+                           PartyHasItem("scrl7q")~
+                          ~PartyHasItem("scrl8j")~
+        REPLACE_TEXTUALLY ~TakePartyItemNum("scrl90",1)
+                           DestroyItem("scrl90")
+                           TakePartyItemNum("scrl7q",1)
+                           DestroyItem("scrl7q")~
+                          ~TakePartyItemNum("scrl8j",1)
+                           DestroyItem("scrl8j")~
+      END
+      BUT_ONLY
+
+    STRING_SET ~66933~ @207
+    STRING_SET ~66934~ @208
+  END
+>>>>>>>>
+COPY ~%source%/CLOAK_OF_PROTECTION_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SURYRISS_BLADE_2.tpa
+COPY ~item_rev/itm/halb03.spl~ ~override~ // Staggering
+>>>>>>>>
+COPY ~%source%/SURYRISS_BLADE_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BLACKMIST_4.tpa
+COPY ~item_rev/itm/halb06.spl~ ~override~ // Black Mist
+
+COPY_EXISTING UDDEMON.dlg override // Quest enable
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_EVIL)~ ~ ~
+  COMPILE_D_TO_DLG
+>>>>>>>>
+COPY ~%source%/BLACKMIST_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/THE_WAVE_4.tpa
+  ADD_PROJECTILE ~item_rev/itm/halb09.pro~ // Smashing Wave
+  COPY ~item_rev/itm/halb09.spl~ ~override~
+    WRITE_SHORT 0x98 halb09
+  COPY ~item_rev/itm/halb09.eff~ ~override~
+  COPY ~item_rev/itm/halb09.bam~ ~override~
+  COPY ~item_rev/itm/halb09.vvc~ ~override~
+>>>>>>>>
+COPY ~%source%/THE_WAVE_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RUNEHAMMER_5.tpa
+  COPY ~item_rev/itm/hamm11.spl~ ~override~ // Champion's Strength
+    SAY NAME1 @4023
+>>>>>>>>
+COPY ~%source%/RUNEHAMMER_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SKULL_OF_DEATH.tpa
+  COPY ~item_rev/itm/helm17.spl~ ~override~ // Gaze of Death
+    SAY NAME1 @4027
+>>>>>>>>
+COPY ~%source%/SKULL_OF_DEATH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PEARLY_WHITE_IOUN_STONE.tpa
+  COPY ~item_rev/itm/dvtroll.spl~ ~override~ // Shapeshifts Troll
+  COPY ~item_rev/itm/dvtroll.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/PEARLY_WHITE_IOUN_STONE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/MASTER_THIEFS_HOOD.tpa
+  ADD_PROJECTILE ~item_rev/itm/helm30.pro~ // Shadow Door
+  COPY ~item_rev/itm/helm30.spl~ ~override~
+    SAY NAME1 @4029
+  COPY ~item_rev/itm/helm30a.spl~ ~override~
+    WRITE_SHORT 0x98 helm30
+  COPY ~item_rev/itm/helm30a.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/MASTER_THIEFS_HOOD.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/HORNED_HELM_OF_THE_ROCK.tpa
+  COPY ~item_rev/itm/helm32.spl~ ~override~ // Gaze of Despair
+    SAY NAME1 @4083
+  COPY ~item_rev/itm/helm32.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/HORNED_HELM_OF_THE_ROCK.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ARMOR_OF_MISSILE_ATTRACTION_3.tpa
+  ADD_PROJECTILE ~item_rev/itm/leat06.pro~ // Missile Attraction
+  COPY ~item_rev/itm/leat06.spl~ ~override~
+    WRITE_SHORT 0x98 leat06
+  COPY ~item_rev/itm/leat06.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/ARMOR_OF_MISSILE_ATTRACTION_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/EFREETI_BOTTLE.tpa
+  COPY ~item_rev/itm/misc3c.spl~ ~override~ // Summon Efreeti
+  COPY ~item_rev/itm/misc3c.eff~ ~override~ // Summon Efreeti
+>>>>>>>>
+COPY ~%source%/EFREETI_BOTTLE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GOLDEN_LION_FIGURINE.tpa
+  COPY ~item_rev/itm/catliowp.cre~ ~override~
+  COPY ~item_rev/itm/figlion.eff~ ~override~
+  COPY ~item_rev/itm/figlion.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/GOLDEN_LION_FIGURINE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BLACK_SPIDER_FIGURINE.tpa
+  COPY ~item_rev/itm/spidfgsu.cre~ ~override~
+  COPY ~item_rev/itm/figspid.eff~ ~override~
+  COPY ~item_rev/itm/figspid.itm~ ~override~
+  COPY ~item_rev/itm/spin683.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/BLACK_SPIDER_FIGURINE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/JADE_HOUND_FIGURINE.tpa
+  COPY ~item_rev/itm/dogwawp.cre~ ~override~
+  COPY ~item_rev/itm/dogwawp.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/JADE_HOUND_FIGURINE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SILVER_HORN_OF_VALHALLA.tpa
+  COPY ~item_rev/itm/dvbrsker.bcs~ ~override~
+  COPY ~item_rev/itm/bersersu.cre~ ~override~
+  COPY ~item_rev/itm/horn1.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BRONZE_HORN_OF_VALHALLA.tpa
+  COPY ~item_rev/itm/berser02.cre~ ~override~
+  COPY ~item_rev/itm/horn2.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/BRONZE_HORN_OF_VALHALLA.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/IRON_HORN_OF_VALHALLA.tpa
+  COPY ~item_rev/itm/berser03.cre~ ~override~
+  COPY ~item_rev/itm/horn3.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/IRON_HORN_OF_VALHALLA.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/HORN_OF_SILENCE.tpa
+  ADD_PROJECTILE ~item_rev/itm/misc3l.pro~ // Silence
+  COPY ~item_rev/itm/misc3l.spl~ ~override~
+    WRITE_SHORT 0x98 misc3l
+	SAY NAME1 @4104
+	
+>>>>>>>>
+COPY ~%source%/HORN_OF_SILENCE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/HARP_OF_DISCORD.tpa
+  COPY ~item_rev/itm/misc3m.spl~ ~override~ // Confusion
+    SAY NAME1 @4105
+>>>>>>>>
+COPY ~%source%/HARP_OF_DISCORD.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/AZLAERS_HARP.tpa
+  COPY ~item_rev/itm/misc3n.spl~ ~override~ // Resist Fear
+    SAY NAME1 @4106
+>>>>>>>>
+COPY ~%source%/AZLAERS_HARP.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/METHILDS_HARP.tpa
+  COPY ~item_rev/itm/misc3o.spl~ ~override~ // Break Enchantment
+    SAY NAME1 @4107
+>>>>>>>>
+COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/HORN_OF_KAZGAROTH.tpa
+  
+>>>>>>>>
+COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/MOON_DOG_FIGURINE.tpa
+  COPY ~item_rev/itm/moondog.cre~ ~override~
+  COPY ~item_rev/itm/mdog1.itm~ ~override~
+  COPY ~item_rev/itm/mdog2.itm~ ~override~
+  COPY ~item_rev/itm/figmoond.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/MOON_DOG_FIGURINE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SHAKTI_WARRIOR_FIGURINE.tpa
+  COPY ~item_rev/itm/shakti.cre~ ~override~
+  COPY ~item_rev/itm/shakti.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/SHAKTI_WARRIOR_FIGURINE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_FLESH.tpa
+  COPY ~item_rev/itm/tome01.eff~ ~override~
+  COPY ~item_rev/itm/tomegol1.cre~ ~override~
+  COPY ~item_rev/itm/goltome1.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/GOLEM_MANUAL_FLESH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_CLAY.tpa
+  COPY ~%source%/GOLEM_MANUAL_CLAY.tpa~ ~%target%~
+  COPY ~item_rev/itm/tome02.eff~ ~override~
+  COPY ~item_rev/itm/tomegol2.cre~ ~override~
+  COPY ~item_rev/itm/goltome2.itm~ ~override~
+  COPY ~item_rev/itm/goltome2.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/GOLEM_MANUAL_CLAY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_STONE.tpa
+  COPY ~item_rev/itm/tome03.eff~ ~override~
+  COPY ~item_rev/itm/tomegol3.cre~ ~override~
+  COPY ~item_rev/itm/goltome3.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/GOLEM_MANUAL_STONE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_JUGGERNAUT.tpa
+  COPY ~item_rev/itm/tome04.eff~ ~override~
+  COPY ~item_rev/itm/tomegol4.cre~ ~override~
+  COPY ~item_rev/itm/goltome4.itm~ ~override~
+>>>>>>>>
+COPY ~%source%/GOLEM_MANUAL_JUGGERNAUT.tpa~ ~%target%~
+
+<<<<<<<< .../item_rev-inlined/item/ARMOR_OF_THE_HART_4.tpa
+COPY ~item_rev/itm/plat17.spl~ ~override~ // Heroic Inspiration
+>>>>>>>>
+COPY ~%source%/ARMOR_OF_THE_HART_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ACID.tpa
+  COPY ~item_rev/itm/scrl03.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_ACID.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_COLD.tpa
+  COPY ~item_rev/itm/scrl04.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_COLD.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ELECTRICITY.tpa
+  COPY ~item_rev/itm/scrl05.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_ELECTRICITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_FIRE.tpa
+  COPY ~item_rev/itm/scrl06.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_FIRE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_MAGIC.tpa
+  COPY ~item_rev/itm/scrl07.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_MAGIC.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_AILMENTS.tpa
+  COPY ~item_rev/itm/scrl08.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_AILMENTS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_UNDEAD.tpa
+  COPY ~item_rev/itm/scrl09.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_UNDEAD.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ALTERATIONS.tpa
+  COPY ~item_rev/itm/scrl15.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/PROTECTION_FROM_ALTERATIONS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/FIRECAM_FULL_PLATE_MAIL_2.tpa
+  COPY ~item_rev/itm/npplat.spl~ ~override~ // Retribution
+  COPY ~item_rev/itm/npplata.spl~ ~override~
+  COPY ~item_rev/itm/npplat.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/FIRECAM_FULL_PLATE_MAIL_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/DOOMPLATE_3.tpa
+  ADD_PROJECTILE ~item_rev/itm/plat12.pro~ // Aura of Despair
+  COPY ~item_rev/itm/plat12.spl~ ~override~
+    WRITE_SHORT 0x98 plat12
+  COPY ~item_rev/itm/plat12.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/DOOMPLATE_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CASIELS_SOUL_3.tpa
+  COPY ~item_rev/itm/plat16.spl~ ~override~ // Death Armor
+  COPY ~item_rev/itm/plat16a.spl~ ~override~
+  COPY ~item_rev/itm/plat16.eff~ ~override~
+  COPY ~item_rev/itm/plat16a.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/CASIELS_SOUL_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_INVISIBILITY.tpa
+  COPY ~item_rev/itm/ring05.spl~ ~override~ // Invisibility
+    SAY NAME1 @4035
+>>>>>>>>
+COPY ~%source%/RING_OF_INVISIBILITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_ENERGY.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ribald.sto~) BEGIN
+    COPY_EXISTING ~ribald.sto~ ~override~ // store
+      PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
+        READ_LONG 0x34 items_offset
+        READ_LONG 0x38 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x1c) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~RING20~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0a) 1 // Energy Blast
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0c) 0 // none
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0e) 0 // none
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/RING_OF_ENERGY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_FIRE_CONTROL.tpa
+  COPY ~item_rev/itm/ring27.eff~ ~override~ // Conjure Lesser Fire Elemental
+  COPY ~item_rev/itm/ring27.spl~ ~override~ // Fire Shield
+    SAY NAME1 @4037
+  COPY ~item_rev/itm/ring27a.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/RING_OF_FIRE_CONTROL.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_AIR_CONTROL.tpa
+  COPY ~item_rev/itm/ring28.eff~ ~override~ // Conjure Lesser Air Elemental
+>>>>>>>>
+COPY ~%source%/RING_OF_AIR_CONTROL.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_EARTH_CONTROL.tpa
+  COPY ~item_rev/itm/ring29.eff~ ~override~ // Conjure Lesser Earth Elemental
+>>>>>>>>
+COPY ~%source%/RING_OF_EARTH_CONTROL.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_THE_RAM.tpa
+  // Cespenar's dialogue
+  ACTION_IF (FILE_EXISTS_IN_GAME ~botsmith.dlg~) BEGIN
+    COPY_EXISTING ~botsmith.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~"compon05"~ ~"ring33"~
+      END
+    STRING_SET ~66686~ @205
+    STRING_SET ~66691~ @206
+  END
+
+  COPY ~item_rev/itm/ring33a.eff~ ~override~ // Knockback
+  COPY ~item_rev/itm/ring33b.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/RING_OF_THE_RAM.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_SPELL_TURNING.tpa
+  COPY ~item_rev/itm/ring34.spl~ ~override~ // Spell Turning
+    SAY NAME1 @4045
+>>>>>>>>
+COPY ~%source%/RING_OF_SPELL_TURNING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_KANGAXX.tpa
+  COPY ~item_rev/itm/ring39a.spl~ ~override~ // Larloch's Minor Drain
+    SAY NAME1 @4046
+  COPY ~item_rev/itm/ring39b.spl~ ~override~
+  COPY ~item_rev/itm/ring39a.eff~ ~override~
+  COPY ~item_rev/itm/ring39c.spl~ ~override~ // Finger of Death
+>>>>>>>>
+COPY ~%source%/RING_OF_KANGAXX.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_THE_WRAITH.tpa
+  COPY ~item_rev/itm/ring42.spl~ ~override~ // Improved Invisibility
+    SAY NAME1 @4085
+>>>>>>>>
+COPY ~%source%/RING_OF_THE_WRAITH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RING_OF_LARLOCH.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~amlich01.cre~) BEGIN
+    COPY_EXISTING ~amlich01.cre~ ~override~
+      LPF FJ_CRE_VALIDITY RET valid=valid END
+      PATCH_IF valid BEGIN
+        REMOVE_CRE_ITEM ring46
+        ADD_CRE_ITEM ring46 #0 #0 #0 NONE INV1
+      END
+      BUT_ONLY
+  END
+
+  COPY ~item_rev/itm/ring46a.eff~ ~override~ // Soul Stealing
+  COPY ~item_rev/itm/ring46b.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/RING_OF_LARLOCH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ROD_OF_ABSORPTION.tpa
+  COPY ~item_rev/itm/rods01.spl~ ~override~ // Spell Absorption
+    SAY NAME1 @4086
+  COPY ~item_rev/itm/rods01b.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/ROD_OF_ABSORPTION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SHIELD_OF_THE_FALLING_STARS_2.tpa
+  ADD_PROJECTILE ~item_rev/itm/shld07.pro~ // Shield Others
+  COPY ~item_rev/itm/shld07.spl~ ~override~
+    WRITE_SHORT 0x98 shld07
+  COPY ~item_rev/itm/shld07.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/SHIELD_OF_THE_FALLING_STARS_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SAVING_GRACE_3.tpa
+  COPY ~item_rev/itm/shld27.spl~ ~override~ // Searing Light
+  COPY ~item_rev/itm/shld27a.spl~ ~override~
+  COPY ~item_rev/itm/shld27b.spl~ ~override~
+  COPY ~item_rev/itm/shld27.eff~ ~override~
+  COPY ~item_rev/itm/shld27a.eff~ ~override~
+  COPY ~item_rev/itm/shld27b.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/SAVING_GRACE_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ERINNE_SLING_4.tpa
+  // Cespenar's dialogue
+  ACTION_IF (FILE_EXISTS_IN_GAME ~botsmith.dlg~) BEGIN
+    COPY_EXISTING ~botsmith.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~TakePartyItemNum("slng08",1)~
+                          ~TakePartyItemNum("slng08",1) TakePartyItemNum("ring20",1)~
+        REPLACE_TEXTUALLY ~DestroyItem("slng08")~
+                          ~DestroyItem("slng08") DestroyItem("ring20")~
+      END
+      BUT_ONLY
+
+    STRING_SET ~66871~ @210
+    STRING_SET ~66876~ @211
+
+    COMPILE ~item_rev/components/main/cespy_erinne.d~
+  END
+>>>>>>>>
+COPY ~%source%/ERINNE_SLING_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_COMMAND_3.tpa
+  ADD_PROJECTILE ~item_rev/itm/staf09.pro~ // Aura of Command
+  COPY ~item_rev/itm/staf09.spl~ ~override~
+    WRITE_SHORT 0x98 staf09
+  COPY ~item_rev/itm/staf09.eff~ ~override~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2400.are~) BEGIN
+    COPY_EXISTING ~ar2400.are~ ~override~ // Illithid City
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        READ_LONG 0x78 "io" // offset to list of items
+        FOR (READ_SHORT 0x76 "ic"; "ic" > 0x00; "ic" -= 0x01) BEGIN
+          READ_ASCII ("io" + ("ic" * 0x14) - 0x14) ~in~ // item name
+          PATCH_IF (~%in%~ STRING_EQUAL_CASE ~STAF09~) BEGIN
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x0a) 0 // Melee
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x08) 1 // Domination
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x06) 0 // none
+            SET "ic" = 0x00
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_COMMAND_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_CURING_1.tpa
+  ADD_PROJECTILE ~item_rev/itm/staf10.pro~ // Healing Aura
+  COPY ~item_rev/itm/staf10.spl~ ~override~
+    WRITE_SHORT 0x98 staf10
+  COPY ~item_rev/itm/staf10.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/STAFF_OF_CURING_1.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_THE_MAGI_5.tpa
+  COPY ~item_rev/itm/staf11.spl~ ~override~ // Spell Trap
+    SAY NAME1 @4056
+  COPY ~item_rev/itm/staf11b.spl~ ~override~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hllayen.cre~) BEGIN
+    COPY_EXISTING ~hllayen.cre~ ~override~ // Layene
+      PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+        READ_LONG 0x02bc items_offset
+        READ_LONG 0x02c0 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x014) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF11~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0a) 0 // Melee
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Remove Magic
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Spell Trap
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_POWER_3.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~chsam01.cre~) BEGIN
+    COPY_EXISTING ~chsam01.cre~ ~override~ // Semaj
+      PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+        READ_LONG 0x02bc items_offset
+        READ_LONG 0x02c0 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x014) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF12~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0a) 0 // Melee
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Hold Monster
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Globe of Invulnerability
+          END
+        END
+      END
+      BUT_ONLY
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~chsam02.cre~) BEGIN
+    COPY_EXISTING ~chsam02.cre~ ~override~ // Semaj
+      PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+        READ_LONG 0x02bc items_offset
+        READ_LONG 0x02c0 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x014) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF12~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0a) 0 // Melee
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Hold Monster
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Globe of Invulnerability
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_POWER_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa
+  COPY ~item_rev/itm/staf13.spl~ ~override~ // Thunder and Lightning
+    SAY NAME1 @4060
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar1515.are~) BEGIN
+    COPY_EXISTING ~ar1515.are~ ~override~ // Spellhold
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        READ_LONG 0x78 "io" // offset to list of items
+        FOR (READ_SHORT 0x76 "ic"; "ic" > 0x00; "ic" -= 0x01) BEGIN
+          READ_ASCII ("io" + ("ic" * 0x14) - 0x14) ~in~ // item name
+          PATCH_IF (~%in%~ STRING_EQUAL_CASE ~STAF13~) BEGIN
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x0a) 0 // Melee
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x08) 1 // Lightning Bolt
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x06) 1 // Thunder & Lightning
+            SET "ic" = 0x00
+          END
+        END
+      END
+      BUT_ONLY
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~cechalle.dlg~) BEGIN
+    COPY_EXISTING ~cechalle.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~GiveItemCreate("STAF13",LastTalkedToBy,0,25,25)~
+                          ~GiveItemCreate("STAF13",LastTalkedToBy,0,1,1)~
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_THE_WOODLANDS_4.tpa
+  COPY ~item_rev/itm/staf14.spl~ ~override~ // Animal Empaty
+  COPY ~item_rev/itm/staf14.eff~ ~override~
+
+  COPY ~item_rev/itm/staf14a.spl~ ~override~ // Barkskin
+    SAY NAME1 @4061
+
+  COPY ~item_rev/itm/smound02.cre~ ~override~ // Lesser Shambling Mound
+    SAY NAME1 @2234
+    SAY NAME2 @2234
+  COPY ~item_rev/itm/smound02.itm~ ~override~
+  COPY ~item_rev/itm/smound02.eff~ ~override~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~suavatar.dlg~) BEGIN
+    COPY_EXISTING ~suavatar.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~GiveItemCreate("staf14",Player1,20,20,20)~
+                          ~GiveItemCreate("staf14",Player1,0,1,1)~
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_THE_WOODLANDS_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_AIR_2.tpa
+  ADD_PROJECTILE ~item_rev/itm/staf15.pro~ // Whirlwind Strike
+  COPY ~item_rev/itm/staf15.spl~ ~override~
+    WRITE_SHORT 0x98 staf15
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~pmaster.cre~) BEGIN
+    COPY_EXISTING ~pmaster.cre~ ~override~ // Master of Thralls
+      PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+        READ_LONG 0x02bc items_offset
+        READ_LONG 0x02c0 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x014) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF15~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0a) 0 // Melee
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Cloudkill
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 0 // none
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_AIR_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_EARTH_2.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~uddrow23.sto~) BEGIN
+    COPY_EXISTING ~uddrow23.sto~ ~override~ // store
+      PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
+        READ_LONG 0x34 items_offset
+        READ_LONG 0x38 num_items
+        FOR (i = 0; i < num_items; i += 1) BEGIN
+          READ_ASCII (items_offset + (i*0x1c) + 0x00) filename
+          PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF16~) BEGIN
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0a) 0 // Melee
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0c) 1 // Earth Grasp
+            WRITE_SHORT (items_offset + (i*0x1c) + 0x0e) 0 // none
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_EARTH_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_FIRE_2.tpa
+  COPY ~item_rev/itm/staf17.spl~ ~override~ // Fireball
+    SAY NAME1 @4065
+  COPY ~item_rev/itm/staf17a.spl~ ~override~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar0412.are~) BEGIN
+    COPY_EXISTING ~ar0412.are~ ~override~ // Planar Sphere, Fire Chamber
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        READ_LONG 0x78 "io" // offset to list of items
+        FOR (READ_SHORT 0x76 "ic"; "ic" > 0x00; "ic" -= 0x01) BEGIN
+          READ_ASCII ("io" + ("ic" * 0x14) - 0x14) ~in~ // item name
+          PATCH_IF (~%in%~ STRING_EQUAL_CASE ~STAF17~) BEGIN
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x0a) 0 // Melee
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x08) 1 // Fireball
+            WRITE_SHORT ("io" + ("ic" * 0x14) - 0x06) 0 // none
+            SET "ic" = 0x00
+          END
+        END
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/STAFF_OF_FIRE_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_RYNN_3.tpa
+  COPY ~item_rev/itm/staf20.spl~ ~override~ // Greater Malison
+    SAY NAME1 @4066
+>>>>>>>>
+COPY ~%source%/STAFF_OF_RYNN_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SHORT_SWORD_OF_BACKSTABBING_3.tpa
+  COPY ~item_rev/itm/sw1h10.eff~ ~override~ // Backstabbing
+>>>>>>>>
+COPY ~%source%/SHORT_SWORD_OF_BACKSTABBING_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/THE_VAMPIRES_REVENGE_3.tpa
+  COPY ~item_rev/itm/sw1h19.eff~ ~override~ // Bloodsucking
+>>>>>>>>
+COPY ~%source%/THE_VAMPIRES_REVENGE_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ILBRATHA_1.tpa
+  COPY ~item_rev/itm/sw1h26.spl~ ~override~ // Mirror Image
+    SAY NAME1 @4067
+>>>>>>>>
+COPY ~%source%/ILBRATHA_1.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RAS_2.tpa
+  COPY ~item_rev/itm/sw1h33b.itm~ ~override~ // Creature weapon
+    SAY NAME2 @2101
+  COPY ~item_rev/itm/sword02.cre~ ~override~
+>>>>>>>>
+COPY ~%source%/RAS_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/NAMARRA_2.tpa
+  ADD_PROJECTILE ~item_rev/itm/sw1h36.pro~ // Silence
+  COPY ~item_rev/itm/sw1h36.spl~ ~override~
+    WRITE_SHORT 0x98 sw1h36
+>>>>>>>>
+COPY ~%source%/NAMARRA_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BLADE_OF_ROSES_1.tpa
+ADD_PROJECTILE ~item_rev/itm/sw1h40.pro~ // Singing Sword
+COPY ~item_rev/itm/sw1h40.spl~ ~override~
+  WRITE_SHORT 0x98 sw1h40
+>>>>>>>>
+COPY ~%source%/BLADE_OF_ROSES_1.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/CELESTIAL_FURY_3.tpa
+  ADD_PROJECTILE ~item_rev/itm/sw1h51.pro~ // Batto
+  COPY ~item_rev/itm/sw1h51.spl~ ~override~
+    WRITE_SHORT 0x98 sw1h51
+>>>>>>>>
+COPY ~%source%/CELESTIAL_FURY_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/THE_EQUALIZER_4.tpa
+  COPY ~item_rev/itm/equal01.eff~ ~override~
+  COPY ~item_rev/itm/equal02.eff~ ~override~
+  COPY ~item_rev/itm/equal03.eff~ ~override~
+  COPY ~item_rev/itm/equal04.eff~ ~override~
+  COPY ~item_rev/itm/equal05.eff~ ~override~
+  COPY ~item_rev/itm/equal06.eff~ ~override~
+  COPY ~item_rev/itm/equal07.eff~ ~override~
+  COPY ~item_rev/itm/equal08.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/THE_EQUALIZER_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/PURIFIER_5.tpa
+  COPY ~item_rev/itm/sw1h65.spl~ ~override~ // Draw Upon Holy Might
+    SAY NAME2 @4073
+>>>>>>>>
+COPY ~%source%/PURIFIER_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/YAMATO_3.tpa
+  COPY ~item_rev/itm/sw1h66.spl~ ~override~ // Counterattack
+>>>>>>>>
+COPY ~%source%/YAMATO_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SPECTRAL_BRAND_4.tpa
+  COPY ~item_rev/itm/sw1h68a.itm~ ~override~
+    SAY NAME2 @2166
+  COPY ~item_rev/itm/sword68.cre~ ~override~
+>>>>>>>>
+COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SPECTRAL_BRAND_5.tpa
+  COPY ~item_rev/itm/sw1h69a.itm~ ~override~
+    SAY NAME2 @2168
+  COPY ~item_rev/itm/sword69.cre~ ~override~
+  COPY ~item_rev/itm/sw1h69.spl~ ~override~
+    SAY NAME2 @4089
+>>>>>>>>
+COPY ~%source%/SPECTRAL_BRAND_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/THE_ANSWERER_4.tpa
+  COPY ~item_rev/itm/sw1h77.spl~ ~override~ // Answerer
+>>>>>>>>
+COPY ~%source%/THE_ANSWERER_4.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/UNHOLY_REAVER_5#UNUSABLE.tpa
+  COPY ~item_rev/itm/arow12.itm~ ~override~ // Arrow of Biting, unusable
+    SAY NAME2 @1039
+  COPY ~item_rev/itm/arow16.itm~ ~override~ // Arrow of Ice, unusable
+    SAY NAME2 @1047
+  COPY ~item_rev/itm/arowkc.itm~ ~override~ // Arrow of Fire, unusable
+    SAY NAME2 @1045
+  COPY ~item_rev/itm/aegis.itm~ ~override~ // Wulfgar's Aegis-fang +5, unusable
+  COPY ~item_rev/itm/sw2h05.itm~ ~override~ // Sarevok's BG1 Sword of Chaos +5, unusable
+  COPY ~item_rev/itm/finsrv.itm~ ~override~ // Sarevok's BG2 Sword of Chaos +5, unusable
+  COPY ~item_rev/itm/ohleat50.itm~ ~override~ // temporary armor for Silver Berserker
+>>>>>>>>
+COPY ~%source%/UNHOLY_REAVER_5#UNUSABLE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_FEAR.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~beyn.cre~) BEGIN
+    COPY_EXISTING beyn.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand02~ #10 #0 #0 ~none~ ~qitem2~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_FEAR.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_MAGIC_MISSILES.tpa
+  COPY ~item_rev/itm/wand03.spl~ ~override~ // Magic Missile
+    SAY NAME1 @4092
+
+  // clone an already identified version for Tutu/BGT/BGEE
+  ACTION_IF (GAME_IS ~tutu tutu_totsc bgee bgt~) BEGIN
+    OUTER_TEXT_SPRINT id ~wand12~
+
+    ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
+      OUTER_TEXT_SPRINT id ~_wand12~
+    END
+    ELSE ACTION_IF (GAME_IS ~bgt~) BEGIN
+      OUTER_TEXT_SPRINT id ~bgwand12~
+    END
+    ELSE ACTION_IF (GAME_IS ~eet~) BEGIN
+      OUTER_TEXT_SPRINT id ~wand12_~
+    END
+
+    COPY_EXISTING ~%WAND_OF_MAGIC_MISSILES%.itm~ ~override/%id%.itm~
+      WRITE_SHORT 0x42 0 // lore to identify
+      READ_LONG   0x64 abilities_off
+      READ_SHORT  0x68 num_abilities
+      FOR (ability = 0; ability < num_abilities; ability += 1) BEGIN
+        WRITE_BYTE (abilities_off + 0x38 * ability + 0x01) 0 // no ID requirement
+      END
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
+    COPY_EXISTING tranzi.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand03~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_MAGIC_MISSILES.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_PARALYZATION.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~cuchol.cre~) BEGIN
+    COPY_EXISTING cuchol.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand04~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~resar.cre~) BEGIN
+    COPY_EXISTING resar.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand04~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_PARALYZATION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_FIRE.tpa
+  COPY ~item_rev/itm/wand05.spl~ ~override~ // Fireball
+    SAY NAME1 @4094
+  COPY ~item_rev/itm/wand05a.spl~ ~override~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~niemai.cre~) BEGIN
+    COPY_EXISTING niemai.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand05~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~vayya.cre~) BEGIN
+    COPY_EXISTING vayya.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand05~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_FIRE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_FROST.tpa
+  COPY ~item_rev/itm/wand06.spl~ ~override~ // Cone of Cold
+    SAY NAME1 @4095
+  COPY ~item_rev/itm/wand06a.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/WAND_OF_FROST.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_LIGHTNING.tpa
+  COPY ~item_rev/itm/wand07.spl~ ~override~ // Lightning Bolt
+    SAY NAME1 @4096
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~brevli.cre~) BEGIN
+    COPY_EXISTING brevli.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand07~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_LIGHTNING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_SLEEP.tpa
+  COPY ~item_rev/itm/wand08.spl~ ~override~ // Sleep
+    SAY NAME1 @4097
+  COPY ~item_rev/itm/wand08a.spl~ ~override~ // Sleep
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ulraun.cre~) BEGIN
+    COPY_EXISTING ulraun.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand08~ #10 #0 #0 ~none~ ~qitem1~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_SLEEP.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_POLYMORPHING.tpa
+  COPY ~item_rev/itm/wand09.spl~ ~override~ // Polymorph Other
+    SAY NAME1 @4098
+>>>>>>>>
+COPY ~%source%/WAND_OF_POLYMORPHING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_MONSTER_SUMMONING.tpa
+  COPY ~item_rev/itm/wand10.spl~ ~override~ // Monster Summoning IV
+    SAY NAME1 @4099
+>>>>>>>>
+COPY ~%source%/WAND_OF_MONSTER_SUMMONING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_THE_HEAVENS.tpa
+  ADD_PROJECTILE ~item_rev/itm/wand11.pro~ // Flame Strike
+  COPY ~item_rev/itm/wand11.spl~ ~override~
+    SAY NAME1 @4100
+  COPY ~item_rev/itm/wand11a.spl~ ~override~
+    WRITE_SHORT 0x98 wand11
+  COPY ~item_rev/itm/wand11b.spl~ ~override~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~aasim.cre~) BEGIN
+    COPY_EXISTING aasim.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+      REPLACE_CRE_ITEM ~wand11~ #10 #0 #0 ~none~ ~qitem2~
+    END
+    BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/WAND_OF_THE_HEAVENS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ROD_OF_THE_APPRENTI.tpa
+  ACTION_IF (FILE_EXISTS_IN_GAME ~mgappr02.dlg~) BEGIN
+    COPY_EXISTING ~mgappr02.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~CreateItem("wand15",50,0,0)~
+                          ~CreateItem("wand15",1,1,1)~
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/ROD_OF_THE_APPRENTI.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WEB_SACK.tpa
+  COPY ~item_rev/itm/wand14.spl~     ~override~  // Web
+    SAY NAME1 @4109
+  COPY ~item_rev/itm/wand14.eff~     ~override~
+>>>>>>>>
+COPY ~%source%/WEB_SACK.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/WAND_OF_CURSING.tpa
+  COPY ~item_rev/itm/wand19.spl~ ~override~ // Curse
+    SAY NAME1 @4090
+>>>>>>>>
+COPY ~%source%/WAND_OF_CURSING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SHADOW_VEIL.tpa
+  COPY ~item_rev/itm/wa2helm.spl~ ~override~ // Simulacrum
+    SAY NAME1 @4082
+>>>>>>>>
+COPY ~%source%/SHADOW_VEIL.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/HARP_OF_PANDEMONIUM.tpa
+  COPY ~item_rev/itm/wa2harp.spl~ ~override~ // Pandemonium
+    SAY NAME1 @4088
+>>>>>>>>
+COPY ~%source%/HARP_OF_PANDEMONIUM.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_FIRE_RESISTANCE.tpa
+  COPY ~item_rev/itm/potn02.spl~ ~override~
+    SAY NAME1 @3000
+>>>>>>>>
+COPY ~%source%/POTION_OF_FIRE_RESISTANCE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_HILL_GIANT_STRENGTH.tpa
+  COPY ~item_rev/itm/potn03.spl~ ~override~
+    SAY NAME1 @3002
+>>>>>>>>
+COPY ~%source%/POTION_OF_HILL_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_FROST_GIANT_STRENGTH.tpa
+  COPY ~item_rev/itm/potn04.spl~ ~override~
+    SAY NAME1 @3004
+>>>>>>>>
+COPY ~%source%/POTION_OF_FROST_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_FIRE_GIANT_STRENGTH.tpa
+  COPY ~item_rev/itm/potn05.spl~ ~override~
+    SAY NAME1 @3006
+>>>>>>>>
+COPY ~%source%/POTION_OF_FIRE_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_CLOUD_GIANT_STRENGTH.tpa
+  COPY ~item_rev/itm/potn06.spl~ ~override~
+    SAY NAME1 @3008
+>>>>>>>>
+COPY ~%source%/POTION_OF_CLOUD_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_STORM_GIANT_STRENGTH.tpa
+  COPY ~item_rev/itm/potn07.spl~ ~override~
+    SAY NAME1 @3010
+>>>>>>>>
+COPY ~%source%/POTION_OF_STORM_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_HEALING.tpa
+  COPY ~item_rev/itm/potn08.spl~ ~override~
+    SAY NAME1 @3012
+>>>>>>>>
+COPY ~%source%/POTION_OF_HEALING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_HEROISM.tpa
+  COPY ~item_rev/itm/potn09.spl~ ~override~
+    SAY NAME1 @3014
+>>>>>>>>
+COPY ~%source%/POTION_OF_HEROISM.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_INVISIBILITY.tpa
+  COPY ~item_rev/itm/potn10.spl~ ~override~
+    SAY NAME1 @3016
+>>>>>>>>
+COPY ~%source%/POTION_OF_INVISIBILITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_INVULNERABILITY.tpa
+  COPY ~item_rev/itm/potn11.spl~ ~override~
+    SAY NAME1 @3018
+>>>>>>>>
+COPY ~%source%/POTION_OF_INVULNERABILITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_STONE_GIANT_STRENGTH.tpa
+  COPY ~item_rev/itm/potn12.spl~ ~override~
+    SAY NAME1 @3020
+>>>>>>>>
+COPY ~%source%/POTION_OF_STONE_GIANT_STRENGTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/OIL_OF_FIERY_BURNING.tpa
+  COPY ~item_rev/itm/potn13.spl~ ~override~
+    SAY NAME1 @3022
+  COPY ~item_rev/itm/potn13.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/OIL_OF_FIERY_BURNING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_SPEED.tpa
+  COPY ~item_rev/itm/potn14.spl~ ~override~
+    SAY NAME1 @3024
+>>>>>>>>
+COPY ~%source%/POTION_OF_SPEED.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/RED_POTION.tpa
+  COPY ~item_rev/itm/potn15.spl~ ~override~
+    SAY NAME1 @3026
+>>>>>>>>
+COPY ~%source%/RED_POTION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/VIOLET_POTION.tpa
+  COPY ~item_rev/itm/potn16.spl~ ~override~
+    SAY NAME1 @3028
+>>>>>>>>
+COPY ~%source%/VIOLET_POTION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ELIXIR_OF_HEALTH.tpa
+  COPY ~item_rev/itm/potn17.spl~ ~override~
+    SAY NAME1 @3030
+>>>>>>>>
+COPY ~%source%/ELIXIR_OF_HEALTH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_ABSORPTION.tpa
+  COPY ~item_rev/itm/potn18.spl~ ~override~
+    SAY NAME1 @3032
+>>>>>>>>
+COPY ~%source%/POTION_OF_ABSORPTION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_AGILITY.tpa
+  COPY ~item_rev/itm/potn19.spl~ ~override~
+    SAY NAME1 @3034
+>>>>>>>>
+COPY ~%source%/POTION_OF_AGILITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_ANTIDOTE.tpa
+  COPY ~item_rev/itm/potn20.spl~ ~override~
+    SAY NAME1 @3036
+>>>>>>>>
+COPY ~%source%/POTION_OF_ANTIDOTE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_CLARITY.tpa
+  COPY ~item_rev/itm/potn21.spl~ ~override~
+    SAY NAME1 @3038
+>>>>>>>>
+COPY ~%source%/POTION_OF_CLARITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_COLD_RESISTANCE.tpa
+  COPY ~item_rev/itm/potn22.spl~ ~override~
+    SAY NAME1 @3040
+>>>>>>>>
+COPY ~%source%/POTION_OF_COLD_RESISTANCE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STRANGE_POTION_OF_SPEED.tpa
+  COPY ~item_rev/itm/potn23.spl~ ~override~
+    SAY NAME1 @3042
+>>>>>>>>
+COPY ~%source%/STRANGE_POTION_OF_SPEED.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_DEFENSE.tpa
+  COPY ~item_rev/itm/potn24.spl~ ~override~
+    SAY NAME1 @3044
+>>>>>>>>
+COPY ~%source%/POTION_OF_DEFENSE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STRANGE_POTION_OF_HEALING.tpa
+  COPY ~item_rev/itm/potn25.spl~ ~override~
+    SAY NAME1 @3046
+>>>>>>>>
+COPY ~%source%/STRANGE_POTION_OF_HEALING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_EXPLOSIONS.tpa
+  COPY ~item_rev/itm/potn26.spl~ ~override~
+  COPY ~item_rev/itm/potn26a.spl~ ~override~
+    SAY NAME1 @3048
+>>>>>>>>
+COPY ~%source%/POTION_OF_EXPLOSIONS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_FIREBREATH.tpa
+  COPY ~item_rev/itm/potn27.spl~ ~override~
+    SAY NAME1 @3050
+>>>>>>>>
+COPY ~%source%/POTION_OF_FIREBREATH.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_FORTITUDE.tpa
+  COPY ~item_rev/itm/potn28.spl~ ~override~
+    SAY NAME1 @3052
+>>>>>>>>
+COPY ~%source%/POTION_OF_FORTITUDE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_GENIUS.tpa
+  COPY ~item_rev/itm/potn29.spl~ ~override~
+    SAY NAME1 @3054
+>>>>>>>>
+COPY ~%source%/POTION_OF_GENIUS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_SHARP_EYES.tpa
+  COPY ~item_rev/itm/potn30.spl~ ~override~
+    SAY NAME1 @3056
+  COPY ~item_rev/itm/potn30d.spl~ ~override~
+>>>>>>>>
+COPY ~%source%/POTION_OF_SHARP_EYES.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_INSULATION.tpa
+  COPY ~item_rev/itm/potn31.spl~ ~override~
+    SAY NAME1 @3058
+>>>>>>>>
+COPY ~%source%/POTION_OF_INSULATION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STRANGE_POTION_OF_ANTIDOTE.tpa
+  COPY ~item_rev/itm/potn32.spl~ ~override~
+    SAY NAME1 @3060
+>>>>>>>>
+COPY ~%source%/STRANGE_POTION_OF_ANTIDOTE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_MAGIC_DISPELLING.tpa
+  COPY ~item_rev/itm/potn33.spl~ ~override~
+    SAY NAME1 @3062
+>>>>>>>>
+COPY ~%source%/POTION_OF_MAGIC_DISPELLING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_MAGIC_BLOCKING.tpa
+  COPY ~item_rev/itm/potn34.spl~ ~override~
+    SAY NAME1 @3064
+>>>>>>>>
+COPY ~%source%/POTION_OF_MAGIC_BLOCKING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_ENERGY_SHIELDING.tpa
+  COPY ~item_rev/itm/potn35.spl~ ~override~
+    SAY NAME1 @3066
+>>>>>>>>
+COPY ~%source%/POTION_OF_ENERGY_SHIELDING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_MASTER_THIEVERY.tpa
+  COPY ~item_rev/itm/potn36.spl~ ~override~
+    SAY NAME1 @3068
+>>>>>>>>
+COPY ~%source%/POTION_OF_MASTER_THIEVERY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_MIND_FOCUSING.tpa
+  COPY ~item_rev/itm/potn37.spl~ ~override~
+    SAY NAME1 @3070
+>>>>>>>>
+COPY ~%source%/POTION_OF_MIND_FOCUSING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_MIRRORED_EYES.tpa
+  COPY ~item_rev/itm/potn38.spl~ ~override~
+    SAY NAME1 @3072
+>>>>>>>>
+COPY ~%source%/POTION_OF_MIRRORED_EYES.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_PERCEPTION.tpa
+  COPY ~item_rev/itm/potn39.spl~ ~override~
+    SAY NAME1 @3074
+>>>>>>>>
+COPY ~%source%/POTION_OF_PERCEPTION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/STRANGE_POTION_OF_INVULNERABILITY.tpa
+  COPY ~item_rev/itm/potn40.spl~ ~override~
+    SAY NAME1 @3076
+>>>>>>>>
+COPY ~%source%/STRANGE_POTION_OF_INVULNERABILITY.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_POWER.tpa
+  COPY ~item_rev/itm/potn41.spl~ ~override~
+    SAY NAME1 @3078
+>>>>>>>>
+COPY ~%source%/POTION_OF_POWER.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_REGENERATION.tpa
+  COPY ~item_rev/itm/potn42.spl~ ~override~
+    SAY NAME1 @3080
+>>>>>>>>
+COPY ~%source%/POTION_OF_REGENERATION.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_INSIGHT.tpa
+  COPY ~item_rev/itm/potn43.spl~ ~override~
+    SAY NAME1 @3082
+>>>>>>>>
+COPY ~%source%/POTION_OF_INSIGHT.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_RAGE.tpa
+  COPY ~item_rev/itm/potn44.spl~ ~override~
+    SAY NAME1 @3084
+>>>>>>>>
+COPY ~%source%/POTION_OF_RAGE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_FREEDOM.tpa
+  COPY ~item_rev/itm/potn45.spl~ ~override~
+    SAY NAME1 @3086
+>>>>>>>>
+COPY ~%source%/POTION_OF_FREEDOM.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_STONE_FORM.tpa
+  COPY ~item_rev/itm/potn46.spl~ ~override~
+    SAY NAME1 @3088
+>>>>>>>>
+COPY ~%source%/POTION_OF_STONE_FORM.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/MAREKS_POTION_OF_ANTIDOTE.tpa
+  /* COPY ~item_rev/itm/potn47.spl~ ~override~
+    SAY NAME1 @3090 */
+>>>>>>>>
+COPY ~%source%/MAREKS_POTION_OF_ANTIDOTE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_EXTRA_HEALING.tpa
+  COPY ~item_rev/itm/potn52.spl~ ~override~
+    SAY NAME1 @3094
+>>>>>>>>
+COPY ~%source%/POTION_OF_EXTRA_HEALING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_SUPERIOR_HEALING.tpa
+  COPY ~item_rev/itm/potn55.spl~ ~override~
+    SAY NAME1 @3098
+>>>>>>>>
+COPY ~%source%/POTION_OF_SUPERIOR_HEALING.tpa~ ~%target%~
