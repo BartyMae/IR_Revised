@@ -78,7 +78,7 @@ SET parameter1 = 9 // param1
 SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-SET opcode = 205			// Set opcode
+/*SET opcode = 205			// Set opcode
 SET target = 2			// target type
 SET timing = 0			// timing type
 SET power = 6			// power
@@ -94,7 +94,7 @@ SET savebonus = 0		// saving throw bonus
 SET parameter1 = 0 // param1
 SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
 SET header = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT*/
 END
 BUT_ONLY
 END
@@ -227,8 +227,8 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~scrl18.spl~) THEN BEGIN // Protection from Alterations
-COPY_EXISTING ~scrl18.spl~ ~override~
+/*ACTION_IF (FILE_EXISTS_IN_GAME ~scrl15.spl~) THEN BEGIN // Protection from Alterations
+COPY_EXISTING ~scrl15.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   SET opcode = 205			// Set opcode
 SET target = 2			// target type
@@ -251,7 +251,7 @@ END
 BUT_ONLY
 END
 
-/*ACTION_IF (FILE_EXISTS_IN_GAME ~potn38.spl~) THEN BEGIN // Potion of Mirrored Eyes
+ACTION_IF (FILE_EXISTS_IN_GAME ~potn38.spl~) THEN BEGIN // Potion of Mirrored Eyes
 COPY_EXISTING ~potn38.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   SET opcode = 205			// Set opcode
@@ -273,7 +273,7 @@ SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
 BUT_ONLY
-END*/
+END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~amul24.itm~) THEN BEGIN // Amulet of Form Stability
 COPY_EXISTING ~amul24.itm~ ~override~
@@ -299,8 +299,8 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~amul24.itm~) THEN BEGIN // Shapeshifts Mustard Jelly
-COPY_EXISTING ~amul24.itm~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvjelly.itm~) THEN BEGIN // Shapeshifts Mustard Jelly
+COPY_EXISTING ~dvjelly.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   SET opcode = 205			// Set opcode
 SET target = 1			// target type
@@ -321,7 +321,7 @@ SET header = 1
 LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
 END
 BUT_ONLY
-END
+END*/
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~dvdispel.spl~) THEN BEGIN // dvdispel
 COPY_EXISTING ~dvdispel.spl~ ~override~
