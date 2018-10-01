@@ -403,7 +403,7 @@ COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
         misc73    // Horn of Kazgaroth
 	  ADD_STORE_ITEM ~misc73~   AFTER  ~misc72~ #1 #0 #0 ~IDENTIFIED~ #1
     END
-  END
+  END BUT_ONLY
 >>>>>>>>
 COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
 
@@ -944,6 +944,11 @@ COPY ~%source%/THE_VAMPIRES_REVENGE_3.tpa~ ~%target%~
     SAY NAME1 @4067
 >>>>>>>>
 COPY ~%source%/ILBRATHA_1.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ARBANES_SWORD_2.tpa
+  COPY ~item_rev/itm/sw1h27.spl~ ~override~ // Hastening
+>>>>>>>>
 
 
 <<<<<<<< .../item_rev-inlined/item/RAS_2.tpa
