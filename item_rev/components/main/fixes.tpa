@@ -381,6 +381,13 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~ohringwi.itm~) THEN BEGIN // BG2FP / BG2EE Ring 
 END
 
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~boot02zh.itm~) THEN BEGIN // BGEE Zhurlong's Boots of Stealth
+  ACTION_IF (FILE_EXISTS_IN_GAME ~boot02.itm~) THEN BEGIN // BGEE Zhurlong's Boots of Stealth
+    COPY_EXISTING ~boot02.itm~ ~override/boot02zh.itm~
+  END
+END
+
+
 ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude fix
     SAY NAME1 @1085    SAY NAME2 @1099
