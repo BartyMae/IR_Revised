@@ -1032,7 +1032,7 @@ COPY_EXISTING shop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=175
     buy=25
-    steal=25
+    steal=30
     fence=0
   END
 
@@ -1114,7 +1114,7 @@ COPY_EXISTING shop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=175
     buy=25
-    steal=75
+    steal=70
     fence=0
   END
 
@@ -1355,7 +1355,7 @@ COPY_EXISTING shop05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=175
     buy=25
-    steal=50
+    steal=30
     fence=0
   END
 
@@ -1456,7 +1456,7 @@ COPY_EXISTING shop06.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=175
     buy=25
-    steal=75 // he should be very wary of thieves, else he can't prosper as a jeweler
+    steal=90 // he should be very wary of thieves, else he can't prosper as a jeweler
     fence=0
   END
 
@@ -1679,7 +1679,7 @@ COPY_EXISTING shop08.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=200
     buy=25
-    steal=25
+    steal=30
     fence=0
   END
 
@@ -1828,7 +1828,7 @@ COPY_EXISTING trcar04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=25
-    steal=25
+    steal=30
     fence=0
   END
 
@@ -1916,7 +1916,7 @@ COPY_EXISTING trmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=25
-    steal=75
+    steal=90
     fence=0
   END
 
@@ -2236,7 +2236,7 @@ COPY_EXISTING trmer04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=25
-    steal=50
+    steal=70
     fence=0
   END
 
@@ -2318,7 +2318,7 @@ COPY_EXISTING wallace.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=175
     buy=25
-    steal=25
+    steal=30
     fence=0
   END
 
@@ -2449,7 +2449,7 @@ COPY_EXISTING dshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=25
-    steal=75
+    steal=0
     fence=0
   END
 
@@ -2809,7 +2809,7 @@ COPY_EXISTING murcrag.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=25
-    steal=50
+    steal=30
     fence=0
   END
 
@@ -4470,7 +4470,7 @@ COPY_EXISTING binnkeep.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=20
-    steal=25
+    steal=30
     fence=0
   END
 
@@ -7249,7 +7249,7 @@ COPY_EXISTING udduer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=175
     buy=20
-    steal=75
+    steal=70
     fence=0
   END
 
@@ -7492,7 +7492,7 @@ COPY_EXISTING udsvir05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=25
-    steal=75
+    steal=70
     fence=0
   END
 
@@ -8284,7 +8284,7 @@ COPY_EXISTING ambar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=15
-    steal=25
+    steal=30
     fence=0
   END
 
@@ -9130,7 +9130,7 @@ COPY_EXISTING hgkar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF store INT_VAR
     sell=150
     buy=20
-    steal=75
+    steal=70
     fence=0
   END
 
