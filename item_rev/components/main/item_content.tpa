@@ -403,7 +403,7 @@ COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
         misc73    // Horn of Kazgaroth
 	  ADD_STORE_ITEM ~misc73~   AFTER  ~misc72~ #1 #0 #0 ~IDENTIFIED~ #1
     END
-  END BUT_ONLY
+  END
 >>>>>>>>
 COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
 
