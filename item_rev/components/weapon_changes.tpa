@@ -788,7 +788,10 @@ DEFINE_PATCH_MACRO special BEGIN
   // Paralytic Bolt - they'll have normal damage (1d10) with this component, so increase it
   // imo quite resonable, seeing how heavy these things are (1 lb each)
   PATCH_IF
-    ~%SOURCE_RES%~ STRING_EQUAL ~sahbolt~
+    ~%SOURCE_RES%~ STRING_EQUAL ~sahbolt~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~kuobolt~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~kuobolt2~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~kuobolt3~
   BEGIN
     iden_new_dice = 1
     iden_new_size = 12
