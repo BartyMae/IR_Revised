@@ -948,7 +948,9 @@ COPY ~%source%/ILBRATHA_1.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/ARBANES_SWORD_2.tpa
   COPY ~item_rev/itm/sw1h27.spl~ ~override~ // Hastening
+    SAY NAME1 @4068
 >>>>>>>>
+COPY ~%source%/ARBANES_SWORD_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/RAS_2.tpa
