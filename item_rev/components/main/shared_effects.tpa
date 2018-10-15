@@ -322,6 +322,10 @@ COPY ~item_rev/itm/dvpetri2.spl~ ~override~
 COPY ~item_rev/itm/dvstones.spl~ ~override~ // Stoneskin
   SAY NAME1 @4008
 
+COPY ~item_rev/itm/dvterrif.spl~ ~override~ // Terrify
+  SAY NAME1 @4048
+COPY ~item_rev/itm/dvterrif.eff~ ~override~
+
 COPY ~item_rev/itm/dvwhorro.spl~ ~override~ // Wand Horror
   SAY NAME1 @4091
 COPY ~item_rev/itm/dvwhorro.eff~ ~override~
