@@ -5,7 +5,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised 1.2.1)~
+VERSION ~V4 Beta 10 (Revised 1.2.0)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -81,15 +81,15 @@ ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/store_revisions.tra~
   INCLUDE ~item_rev/components/store_revisions.tpa~
   INCLUDE ~item_rev/components/item_reallocation.tpa~
-  COPY_EXISTING_REGEXP GLOB ~.*\.sto~ override
+  /*COPY_EXISTING_REGEXP GLOB ~.*\.sto~ override
     LPF items_to_order END
-  BUT_ONLY
+  BUT_ONLY*/
 END ELSE BEGIN
   INCLUDE ~item_rev/lib/identify_item.tpa~
   INCLUDE ~item_rev/lib/store_rev_macros.tpa~
-  COPY_EXISTING_REGEXP GLOB ~.*\.sto~ override
+  /*COPY_EXISTING_REGEXP GLOB ~.*\.sto~ override
     LPF items_to_order END
-  BUT_ONLY
+  BUT_ONLY*/
 END
 
 ACTION_IF install_masterwork_weapons BEGIN
