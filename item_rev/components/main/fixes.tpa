@@ -5168,7 +5168,7 @@ BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
 	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
-      WRITE_SHORT 0x38 0x28
+      WRITE_SHORT 0x38 0x50
 	END
   END
 END
@@ -5182,7 +5182,7 @@ BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
 	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
-      WRITE_SHORT 0x38 0x50
+      WRITE_SHORT 0x38 0x28
 	END
   END
 END
