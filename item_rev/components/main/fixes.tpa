@@ -5120,3 +5120,129 @@ BEGIN
 	END
   END
 END
+
+
+//EE quantity fixes
+ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN // EE fixes
+
+//Arrows, Bolts, Bullets, and Darts
+ACTION_FOR_EACH resource IN
+  ~arow01~
+  ~arow02~
+  ~arow03~
+  ~arow04~
+  ~arow05~
+  ~arow06~
+  ~arow07~
+  ~arow08~
+  ~arow09~
+  ~arow10~
+  ~arow11~
+  ~arow14~
+  ~arow15~
+  ~bolt01~
+  ~bolt02~
+  ~bolt03~
+  ~bolt04~
+  ~bolt05~
+  ~bolt06~
+  ~bolt07~
+  ~bolt08~
+  ~bolt09~
+  ~sahbolt~
+  ~kuobolt~
+  ~kuobolt2~
+  ~kuobolt3~
+  ~bull01~
+  ~bull02~
+  ~bull03~
+  ~bull04~
+  ~bull05~
+  ~bull06~
+  ~dart01~
+  ~dart02~
+  ~dart03~
+  ~dart04~
+  ~dart05~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      WRITE_SHORT 0x38 0x28
+	END
+  END
+END
+
+//Throwing Daggers and Throwing Axes
+ACTION_FOR_EACH resource IN
+  ~dagg05~
+  ~dagg16~
+  ~ax1h04~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      WRITE_SHORT 0x38 0x50
+	END
+  END
+END
+
+//Potions
+ACTION_FOR_EACH resource IN
+  ~potn02~
+  ~potn03~
+  ~potn04~
+  ~potn05~
+  ~potn06~
+  ~potn07~
+  ~potn08~
+  ~potn09~
+  ~potn10~
+  ~potn11~
+  ~potn12~
+  ~potn13~
+  ~potn14~
+  ~potn15~
+  ~potn16~
+  ~potn17~
+  ~potn18~
+  ~potn19~
+  ~potn20~
+  ~potn21~
+  ~potn22~
+  ~potn23~
+  ~potn24~
+  ~potn25~
+  ~potn26~
+  ~potn27~
+  ~potn28~
+  ~potn29~
+  ~potn30~
+  ~potn31~
+  ~potn32~
+  ~potn33~
+  ~potn34~
+  ~potn35~
+  ~potn36~
+  ~potn37~
+  ~potn38~
+  ~potn39~
+  ~potn40~
+  ~potn41~
+  ~potn42~
+  ~potn43~
+  ~potn44~
+  ~potn45~
+  ~potn46~
+  ~potn52~
+  ~potn55~  
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      WRITE_SHORT 0x38 0x18
+	END
+  END
+END
+
+END
