@@ -4356,7 +4356,7 @@ Equipped Abilities:
  Blind Fighting: wielder fights without penalties even if unable to see and cannot be backstabbed
 
 Combat Abilities:
- Paralyzing: 33% chance target is held for 2 rounds (save vs. paralyzation neg.)
+ Weakening: target suffers a cumulative -1 penalty to THAC0 and damage for 2 rounds
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -10325,7 +10325,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Pierce Magic: target suffers a -5% penalty to magic resistance for 5 rounds
- Sundering: target's AC is cumulatively reduced by 1 for 2 rounds
+ Sundering: target suffers a cumulative -1 penalty to AC for 2 rounds
 
 THAC0: +4 bonus
 Damage: 1D8 + 4
