@@ -686,6 +686,15 @@ DEFINE_PATCH_MACRO special BEGIN
 
   PATCH_IF comp_ir=1 BEGIN
 
+  PATCH_IF
+    ~%SOURCE_RES%~ STRING_EQUAL ~xbow15~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~xbow16~
+  BEGIN
+    iden_new_dice = new_bolt_dice
+    iden_new_size = new_bolt_size
+    iden_delta_damage += new_bolt_damage - old_bolt_damage
+  END
+  
   // Heartseeker +3, Water's Edge +3, Spectral Brand +4, Spectral Brand +5, Gram the Sword of Grief +4, Gram the Sword of Grief +5, Heavy Crossbow of Accuracy +1 - special +3 THAC0 bonus
   PATCH_IF
   ~%SOURCE_RES%~ STRING_EQUAL ~bow10~ ||
