@@ -6,7 +6,7 @@ ADD_SECTYPE ~k1#Petrify~ @1
 ADD_SECTYPE ~k1#Dispel~ @1
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~potn14.spl~) THEN BEGIN // Potion of Speed
-COPY_EXISTING ~potn14.spl~ ~override~ // Wraithform
+COPY_EXISTING ~potn14.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   WRITE_BYTE 0x27 "%k1#Haste%"  
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
@@ -99,8 +99,8 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.spl~) THEN BEGIN // Potion of Speed
-COPY_EXISTING ~sw1h27.spl~ ~override~ // Wraithform
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.spl~) THEN BEGIN // Arbane's Sword
+COPY_EXISTING ~sw1h27.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   WRITE_BYTE 0x27 "%k1#Haste%"  
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
