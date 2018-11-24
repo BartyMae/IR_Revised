@@ -4092,8 +4092,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -5677,8 +5677,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6676,8 +6676,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6696,8 +6696,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6714,8 +6714,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6733,8 +6733,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6778,8 +6778,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6799,8 +6799,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6818,8 +6818,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6840,8 +6840,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6865,8 +6865,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6889,8 +6889,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6929,8 +6929,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6952,8 +6952,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -6973,8 +6973,8 @@ Requires: 8 Strength
 Not Usable By:
  Bard
  Mage
- Thief
  Monk
+ Thief
  Avenger
  Barbarian
  Beast Master
@@ -6993,8 +6993,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -7014,8 +7014,8 @@ Requires: 12 Strength
 Not Usable By:
  Bard
  Mage
- Thief
  Monk
+ Thief
  Avenger
  Barbarian
  Beast Master
@@ -7028,6 +7028,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
+ Saving Throws: +1 bonus
  Protects Against: Backstabs and Critical Hits
 
 Armor Class: -3
@@ -7037,17 +7038,17 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
  Kensai
  Stalker~
-@1860 = ~Shuruppak's Plate +5~
+@1860 = ~Shuruppak's Mail +5~
 @1861 = ~Shuruppak, the infamous right hand of the now dead god Gilgeam, earned the title of "Reaper" for his savage butchery of any who opposed him... an identity the bloodthirsty madman eagerly embraced. Before Gilgeam's destruction, the god presented Shuruppak with an enchanted suit of armor, to better enable the Reaper to slaughter his foes.
 
-Shuruppak's mithral plate mail is surprisingly light and allows the wearer an unnatural quickness and grace for a heavy armor. It is not known how Shuruppak lost this treasured item, but one could safely assume he is still looking for it...
+Shuruppak's mithral splint mail is surprisingly light and allows the wearer an unnatural quickness and grace for a heavy armor. It is not known how Shuruppak lost this treasured item, but one could safely assume he is still looking for it...
 
 STATISTICS:
 
@@ -7055,17 +7056,16 @@ Equipped Abilities:
  Spell: Free Action
  Mithral: +1 bonus to AC
 
-Armor Class: -2
-Weight: 30
-Requires: 10 Strength
+Armor Class: -1
+Weight: 25
+Requires: 6 Strength
 Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
- Barbarian
  Beast Master
  Kensai
  Stalker~
@@ -7080,8 +7080,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -10872,8 +10872,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -13594,8 +13594,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -13613,8 +13613,8 @@ Not Usable By:
  Bard
  Druid
  Mage
- Thief
  Monk
+ Thief
  Archer
  Barbarian
  Beast Master
@@ -13643,6 +13643,7 @@ STATISTICS:
 
 Equipped Abilities:
  Magic Resistance: +5% bonus
+ Casting Speed: +1 bonus
  Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Usable By:
@@ -13654,6 +13655,7 @@ STATISTICS:
 
 Equipped Abilities:
  Magic Resistance: +5% bonus
+ Casting Speed: +1 bonus
  Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Usable By:
@@ -13665,6 +13667,7 @@ STATISTICS:
 
 Equipped Abilities:
  Magic Resistance: +5% bonus
+ Casting Speed: +1 bonus
  Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Usable By:
@@ -13676,6 +13679,7 @@ STATISTICS:
 
 Equipped Abilities:
  Magic Resistance: +5% bonus
+ Casting Speed: +1 bonus
  Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Usable By:
@@ -13687,6 +13691,7 @@ STATISTICS:
 
 Equipped Abilities:
  Magic Resistance: +5% bonus
+ Casting Speed: +1 bonus
  Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Usable By:
