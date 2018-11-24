@@ -16,7 +16,7 @@ PERIAPT_OF_FORM_STABILITY                  AMULET   amul24   1        1        0
 AMULET_OF_SPELL_WARDING                    AMULET   amul25   1        1        0        1        1        1        @1000    @1024    @1002    @1025    @4002    *        *        * 
 AMULET_OF_CHEETAH_SPEED                    AMULET   amul26   1        1        0        0        1        1        @1000    @1026    @1002    @1027    @4003    *        *        *
 AMULET_OF_SELDARINE                        AMULET   amul27   1        1        0        0        1        1        @1000    @1028    @1002    @1029    *        *        *        *
-AMULET_OF_THE_MASTER                       AMULET   amul28   1        1        0        0        1        1        @1000    @1030    @1002    @1031    *        *        *        *
+AMULET_OF_THE_MASTER_HARPER                AMULET   amul28   1        1        0        0        1        1        @1000    @1030    @1002    @1031    *        *        *        *
 
 ARROW                                      ARROW    arow01   1        1        1        1        1        1        @1032    @1032    @1033    @1033    *        *        *        *
 ARROW_1                                    ARROW    arow02   1        1        1        1        1        1        @1032    @1034    @1035    @1036    *        *        *        *
