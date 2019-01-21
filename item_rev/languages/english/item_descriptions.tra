@@ -3918,7 +3918,7 @@ A drowcraft weapon is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Combat Abilities:
- Drowcraft: +2 bonus to THAC0 and minimum damage
+ Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +3 bonus
 Damage: 1D6 + 4
@@ -3944,6 +3944,7 @@ STATISTICS:
 
 Combat Abilities:
  Sleeping: target falls asleep for 2 rounds (save vs. spell neg.)
+ Drowcraft: +1 bonus to THAC0 and damage
 
 THAC0: +1 bonus
 Damage: 1D8
@@ -3957,6 +3958,7 @@ STATISTICS:
 
 Combat Abilities:
  Stunning: target is stunned for 1 round (save vs. spell neg.)
+ Drowcraft: +1 bonus to THAC0 and damage
 
 THAC0: +2 bonus
 Damage: 1D8
@@ -3967,6 +3969,9 @@ Launcher: Crossbow~
 @1486 = ~Drowcraft ammunition will dissolve to dust if exposed to sunlight and shouldn't be removed from the Underdark.
 
 STATISTICS:
+
+Combat Abilities:
+ Drowcraft: +1 bonus to THAC0 and damage
 
 THAC0: +3 bonus
 Damage: 1D8
@@ -4051,7 +4056,7 @@ A drowcraft weapon is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Combat Abilities:
- Drowcraft: +2 bonus to THAC0 and minimum damage
+ Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +3 bonus
 Damage: 1D10 + 3
@@ -4135,7 +4140,7 @@ A drowcraft weapon is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Combat Abilities:
- Drowcraft: +2 bonus to THAC0 and minimum damage
+ Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
@@ -4163,7 +4168,7 @@ A drowcraft weapon is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Combat Abilities:
- Drowcraft: +2 bonus to THAC0 and minimum damage
+ Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +3 bonus
 Damage: 1D8 + 3
@@ -4189,7 +4194,7 @@ A drowcraft weapon is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Combat Abilities:
- Drowcraft: +2 bonus to THAC0 and minimum damage
+ Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +3 bonus
 Damage: 1D8 + 3
@@ -4217,7 +4222,7 @@ STATISTICS:
 
 Combat Abilities:
  Rapid Reload: +1 Attack per Round
- Drowcraft: +2 bonus to THAC0 and minimum damage
+ Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +1 bonus
 Damage: +1 bonus
@@ -5102,7 +5107,7 @@ Equipped Abilities:
  Fire Resistance: +25% bonus
  Protects Against: Sleep and Unconsciousness
 
-Armor Class Bonus: 2
+Armor Class Bonus: 1
 Protects Against Critical Hits
 Weight: 3
 Not Usable By:
@@ -5251,7 +5256,7 @@ Special Abilities:
 Equipped Abilities:
  Damage Resistance: +10% bonus
 
-Armor Class Bonus: 2
+Armor Class Bonus: 1
 Protects Against Critical Hits
 Weight: 3
 Usable By:
