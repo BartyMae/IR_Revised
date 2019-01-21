@@ -768,6 +768,29 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_bonus_thaco -=2
 	iden_bonus_damage =4
   END
+  
+  // Drowcraft Weapons - special +2 THAC0 and damage bonuses
+  PATCH_IF
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwblun01~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwhalb01~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwsper01~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwsw1h01~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwsw1h02~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwxbow01~
+  BEGIN
+    iden_bonus_thaco +=2
+	iden_bonus_damage =2
+  END
+  
+  // Drowcraft Ammunition - special +1 THAC0 and damage bonuses
+  PATCH_IF
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwbolt01~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwbolt02~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~dwbolt03~
+  BEGIN
+    iden_bonus_thaco +=1
+	iden_bonus_damage =1
+  END
 
   // Ripper +2 - broken if not set
   PATCH_IF
