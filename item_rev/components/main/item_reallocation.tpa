@@ -158,7 +158,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~trrak01.cre~) BEGIN
   REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveGoldForce(1000)
 GiveItemCreate("shld25"~
 ~GiveGoldForce(5375)
-GiveItemCreate("ring07"~
+GiveItemCreate("shld25"~
   COMPILE_D_TO_DLG
 
   COPY_EXISTING AR2000.bcs override // Quest enable
@@ -298,7 +298,7 @@ END
 
 /////////////////////////////////////
 
-// Move Shield of the Order to Jamis Tombelthen the general
+// Move Shield of the Order from Yaga-Shura to Jamis Tombelthen the general
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~yaga01.cre~) BEGIN
   COPY_EXISTING yaga01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
