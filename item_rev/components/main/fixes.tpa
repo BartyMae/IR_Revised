@@ -418,6 +418,8 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude fix
     SAY NAME1 @1085    SAY NAME2 @1099
     SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
+  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
+    SAY NAME1 @4004
   COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet fix
     SAY NAME1 @1780    SAY NAME2 @1780
     SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
