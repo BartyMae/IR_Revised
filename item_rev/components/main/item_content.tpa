@@ -167,6 +167,12 @@ COPY ~%source%/BLESSED_BRACERS.tpa~ ~%target%~
 COPY ~%source%/CRIMSON_CHAIN_5.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/CLOAK_OF_DISPLACEMENT.tpa
+  COPY ~item_rev/itm/clck03.spl~ ~override~ // Blur
+>>>>>>>>
+COPY ~%source%/CLOAK_OF_DISPLACEMENT.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/CLOAK_OF_THE_WOLF.tpa
   COPY ~item_rev/itm/dvwere.spl~ ~override~ // Shapeshifts Wolfwere
   COPY ~item_rev/itm/dvwere.itm~ ~override~
