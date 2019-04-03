@@ -1,5 +1,5 @@
 @3000=~Potion of Fire Resistance~
-@3001=~The drinker of this potion gains a +50% bonus to fire resistance, whether magical or non-magical in origin. This is in addition to any other fire resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
+@3001=~The drinker of this potion gains a +50% bonus to fire resistance, protecting against such attacks whether magical or non-magical in origin. This is in addition to any other fire resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 Usable By:
  All~
@@ -100,7 +100,7 @@ Usable By:
 Usable By:
  All~
 @3040=~Potion of Cold Resistance~
-@3041=~The drinker of this potion gains a +50% bonus to cold resistance, whether magical or non-magical in origin. This is in addition to any other cold resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
+@3041=~The drinker of this potion gains a +50% bonus to cold resistance, protecting against such attacks whether magical or non-magical in origin. This is in addition to any other cold resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 Usable By:
  All~
@@ -145,7 +145,7 @@ Usable By:
 Usable By:
  All~
 @3058=~Potion of Insulation~
-@3059=~The drinker of this potion gains a +50% bonus to electric resistance, whether magical or non-magical in origin. This is in addition to any other electricity resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
+@3059=~The drinker of this potion gains a +50% bonus to electricity resistance, protecting against such attacks whether magical or non-magical in origin. This is in addition to any other electricity resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 Not Usable By:
  Wizard Slayer~
@@ -154,18 +154,18 @@ Not Usable By:
 
 Usable By:
  All~
-@3062=~Potion of Magic Dispelling~
-@3063=~This rare concoction is an incredibly potent anti-magic elixir which dispels all magical effects current affecting the user, whether beneficial in origin or not. The effect is instantaneous and the potion is destroyed in the process.
+@3062=~Potion of Energy Resistance~
+@3063=~The drinker of this potion gains a +50% bonus to energy resistance, protecting against such attacks whether magical or non-magical in origin. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 Usable By:
  All~
-@3064=~Potion of Magic Blocking~
+@3064=~Potion of Magic Protection~
 @3065=~The drinker of this potion gains a +20% bonus to magic resistance. This is in addition to any other magic resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 Not Usable By:
  Wizard Slayer~
 @3066=~Potion of Energy Shielding~
-@3067=~The drinker of this powerful elixir gains a +50% bonus to energy resistance, and guarantees that the user will always be successful when rolling saving throws against spells or spell-like effects. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
+@3067=~The drinker of this powerful elixir is guaranteed to always be successful when rolling saving throws against spells and abilities. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 Usable By:
  All~
@@ -197,7 +197,7 @@ Usable By:
 Usable By:
  Warrior~
 @3078=~Potion of Power~
-@3079=~This elixir is a more powerful version of the Potion of Heroism. This potion is desired by adventurers everywhere, whether they be wizards or warriors, as it blesses the user with a +2 bonus to THAC0, damage, and morale, as well as a +20% bonus thieving skills. Additionally, any spells cast after drinking this potion will be cast as if the caster were two levels higher. Finally, the potion also provides the user a +20% bonus to hit points, and these bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
+@3079=~This elixir is a more powerful version of the Potion of Heroism. This potion is desired by adventurers everywhere, whether they be wizards or warriors, as it blesses the user with a +2 bonus to THAC0, damage, and morale, as well as a +20% bonus to thieving skills. Additionally, any spells cast after drinking this potion will be cast as if the caster were two levels higher. Finally, the potion also provides the user a +20% bonus to hit points, and these bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 Usable By:
  All~
