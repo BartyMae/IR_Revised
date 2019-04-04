@@ -1475,11 +1475,11 @@ COPY ~%source%/POTION_OF_INSULATION.tpa~ ~%target%~
 COPY ~%source%/STRANGE_POTION_OF_ANTIDOTE.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/POTION_OF_MAGIC_DISPELLING.tpa
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_ENERGY_PROTECTION.tpa
   COPY ~item_rev/itm/potn33.spl~ ~override~
     SAY NAME1 @3062
 >>>>>>>>
-COPY ~%source%/POTION_OF_MAGIC_DISPELLING.tpa~ ~%target%~
+COPY ~%source%/POTION_OF_ENERGY_PROTECTION.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_MAGIC_BLOCKING.tpa
