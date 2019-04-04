@@ -6745,16 +6745,16 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1833 = ~Ankheg Plate Mail +1~
-@1834 = ~This magical plate mail has been expertly crafted. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg mail is its light weight and low encumbrance. Monsters come and go but fatigue is a constant enemy.
+@1833 = ~Ankheg Plate Mail +2~
+@1834 = ~This magical plate mail has been expertly crafted. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg mail is its light weight and low encumbrance. Monsters come and go, but fatigue is a constant enemy.
 
 STATISTICS:
 
 Equipped Abilities:
  Acid Resistance: +50% bonus
 
-Armor Class: 2
-Weight: 35
+Armor Class: 1
+Weight: 25
 Requires: 8 Strength
 Not Usable By:
  Bard
@@ -7209,7 +7209,7 @@ Usable By:
  Cleric
  Paladin~
 @1883 = ~Ring of Djinni Summoning~
-@1884 = ~An item out of fables, the Djinni ring is highly sought after. Once a day the wearer of this beautiful ring can summon a Djinni who will perform a Limited Wish as desired.
+@1884 = ~An item out of fables, the Ring of Djinni Summoning is highly sought after. Once a day, the wearer of this beautiful ring can summon a djinni who will perform a Limited Wish as desired.
 
 STATISTICS:
 
@@ -13641,8 +13641,29 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2581 = ~Holy Symbol of Lathander~
-@2582 = ~Only the most worthy and devoted servants of the Dawnbringer are granted these powerful holy symbols.
+@2581 = ~Ankheg Plate Mail +1~
+@2582 = ~This plate mail has been expertly crafted by Taerom Fuiruim of Beregost, then masterfully enspelled for strength and durability (perhaps by Beregost's local archmage, the conjurer Thalantyr). Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the most appreciated aspect of ankheg mail is its light weight and low encumbrance, being only half the weight of normal plate mail. Monsters come and go, but fatigue is a constant enemy.
+
+STATISTICS:
+
+Equipped Abilities:
+ Acid Resistance: +50% bonus
+
+Armor Class: 2
+Weight: 25
+Requires: 8 Strength
+Not Usable By:
+ Bard
+ Mage
+ Thief
+ Stalker
+ Barbarian
+ Monk
+ Avenger
+ Kensai
+ Shapeshifter~
+@2583 = ~Holy Symbol of Lathander~
+@2584 = ~Only the most worthy and devoted servants of the Dawnbringer are granted these powerful holy symbols.
 
 STATISTICS:
 
@@ -13653,8 +13674,8 @@ Equipped Abilities:
 
 Usable By:
  Good-aligned clerics~
-@2583 = ~Holy Symbol of Helm~
-@2584 = ~Only the most worthy and devoted servants of the Watcher are granted these powerful holy symbols.
+@2585 = ~Holy Symbol of Helm~
+@2586 = ~Only the most worthy and devoted servants of the Watcher are granted these powerful holy symbols.
 
 STATISTICS:
 
@@ -13665,8 +13686,8 @@ Equipped Abilities:
 
 Usable By:
  Neutral-aligned clerics~
-@2585 = ~Holy Symbol of Talos~
-@2586 = ~Only the most worthy and devoted servants of the Storm Lord are granted these powerful holy symbols.
+@2587 = ~Holy Symbol of Talos~
+@2588 = ~Only the most worthy and devoted servants of the Storm Lord are granted these powerful holy symbols.
 
 STATISTICS:
 
@@ -13677,8 +13698,8 @@ Equipped Abilities:
 
 Usable By:
  Evil-aligned clerics~
-@2587 = ~Holy Symbol of Baervan~
-@2588 = ~Only the most worthy and devoted servants of the Masked Leaf are granted these powerful holy symbols.
+@2589 = ~Holy Symbol of Baervan~
+@2590 = ~Only the most worthy and devoted servants of the Masked Leaf are granted these powerful holy symbols.
 
 STATISTICS:
 
@@ -13689,8 +13710,8 @@ Equipped Abilities:
 
 Usable By:
  Good-aligned clerics~
-@2589 = ~Holy Symbol of Shar~
-@2590 = ~Only the most worthy and devoted servants of the Nightsinger are granted these powerful holy symbols.
+@2591 = ~Holy Symbol of Shar~
+@2592 = ~Only the most worthy and devoted servants of the Nightsinger are granted these powerful holy symbols.
 
 STATISTICS:
 
@@ -13701,8 +13722,8 @@ Equipped Abilities:
 
 Usable By:
  Evil-aligned clerics~
-@2591 = ~Rhyte's Last Arrow +2~
-@2592 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
+@3000 = ~Rhyte's Last Arrow +2~
+@3001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
  
 "Oh, shocked from the strike of his powerful bow,
 The slain game sought by Adaniss falls.
@@ -13798,8 +13819,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2593 = ~Bereul's Retort +1~
-@2594 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
+@3002 = ~Bereul's Retort +1~
+@3003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
 
 STATISTICS:
 
@@ -13819,8 +13840,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2595 = ~Golden Axe +1~
-@2596 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
+@3004 = ~Golden Axe +1~
+@3005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
 
 STATISTICS:
 
@@ -13842,8 +13863,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2597 = ~Big-Fisted Belt~
-@2598 = ~Cursed Girdle of Giant Strength
+@3006 = ~Big-Fisted Belt~
+@3007 = ~Cursed Girdle of Giant Strength
 A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodstains on the leather hint at unspeakable carnage, but the misspelled graffiti scratched into its surface suggests that the girdle's former owners were none too bright.
 
 STATISTICS:
@@ -13857,8 +13878,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@2599 = ~Belt of Antipode~
-@2600 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
+@3008 = ~Belt of Antipode~
+@3009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
 
 STATISTICS:
 
@@ -13869,8 +13890,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@2601 = ~Club +1~
-@2602 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
+@3010 = ~Club +1~
+@3011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
 
 STATISTICS:
 
@@ -13884,8 +13905,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@2603 = ~Mighty Oak +2~
-@2604 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
+@3012 = ~Mighty Oak +2~
+@3013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
 
 STATISTICS:
 
@@ -13899,8 +13920,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@2605 = ~Night Club +1~
-@2606 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
+@3014 = ~Night Club +1~
+@3015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
 
 STATISTICS:
 
@@ -13917,8 +13938,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@2607 = ~The Thresher +2~
-@2608 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
+@3016 = ~The Thresher +2~
+@3017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
 
 STATISTICS:
 
@@ -13936,8 +13957,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2609 = ~Chanserv's Fish +2~
-@2610 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
+@3018 = ~Chanserv's Fish +2~
+@3019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
 
 STATISTICS:
 
@@ -13954,8 +13975,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@2611 = ~The Stupefier +1~
-@2612 = ~Mace of Stunning
+@3020 = ~The Stupefier +1~
+@3021 = ~Mace of Stunning
 This mace isn't just sleek and elegant, it's stunning. With a hit to just the right spot, it can render a foe completely paralyzed.
 
 STATISTICS:
@@ -13977,8 +13998,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2613 = ~The Chesley Crusher +2~
-@2614 = ~Heavy Halberd
+@3022 = ~The Chesley Crusher +2~
+@3023 = ~Heavy Halberd
 First wielded by the much-maligned Ensign Chesley of the first exploratory fleet of Waterdeep, this famous halberd has been passed around for generations, but only to those strong enough to carry its considerable weight. The iron haft of this heavy polearm makes the weapon slow and unwieldy, but its sheer mass smashes skulls and shatters limbs.
 
 STATISTICS:
@@ -14002,8 +14023,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2615 = ~Hammer of Dawn +1~
-@2616 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
+@3024 = ~Hammer of Dawn +1~
+@3025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
 
 STATISTICS:
 
@@ -14027,8 +14048,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2617 = ~Rugged Leathers +2~
-@2618 = ~Squeaky Leather Armor
+@3026 = ~Rugged Leathers +2~
+@3027 = ~Squeaky Leather Armor
 This rigid suit of leather armor squeaks like a new pair of shoes. What it lacks in stealth it makes up for in toughness, protecting its wearer against the most punishing blows.
 
 STATISTICS:
@@ -14044,8 +14065,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@2619 = ~Adoy's Belt~
-@2620 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
+@3028 = ~Adoy's Belt~
+@3029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
 
 STATISTICS:
 
@@ -14055,8 +14076,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@2621 = ~The Magma Bulwark +2~
-@2622 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
+@3030 = ~The Magma Bulwark +2~
+@3031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
 
 STATISTICS:
 
@@ -14074,8 +14095,8 @@ Not Usable By:
  Barbarian
  Beast Master
  Kensai~
-@2623 = ~Iron Thorn Ring~
-@2624 = ~Cursed Ring of Slight Monsterism
+@3032 = ~Iron Thorn Ring~
+@3033 = ~Cursed Ring of Slight Monsterism
 This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
 
 STATISTICS:
@@ -14088,8 +14109,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2625 = ~Moonlight Walkers~
-@2626 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
+@3034 = ~Moonlight Walkers~
+@3035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
 
 STATISTICS:
 
@@ -14099,8 +14120,8 @@ Equipped Abilities:
 Weight: 2
 Usable By:
  Rasaad yn Bashir~
-@2627 = ~Glimmering Bands~
-@2628 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
+@3036 = ~Glimmering Bands~
+@3037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
 
 STATISTICS:
 
@@ -14110,8 +14131,8 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Rasaad yn Bashir~
-@2629 = ~Buckley's Buckler~
-@2630 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
+@3038 = ~Buckley's Buckler~
+@3039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
 
 STATISTICS:
 
@@ -14126,8 +14147,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@2631 = ~Sling of Unerring Accuracy +1~
-@2632 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
+@3040 = ~Sling of Unerring Accuracy +1~
+@3041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
 
 STATISTICS:
 
@@ -14144,8 +14165,8 @@ Requires: 3 Strength
 Not Usable By:
  Cavalier
  Kensai~
-@2633 = ~The Ossifier +1~
-@2634 = ~Cursed Staff of Petrification
+@3042 = ~The Ossifier +1~
+@3043 = ~Cursed Staff of Petrification
 The surface of this seven-foot shaft more resembles stone than wood, but in the hands of a skilled wielder it weighs little more than a staff of oak. Along its length appear the ghost-like images of various foes caught in defensive postures, appearing almost as thought they had been suddenly turned to stone.
 
 STATISTICS:
@@ -14165,8 +14186,8 @@ Type: 2-handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@2635 = ~Neera's Staff +1~
-@2636 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
+@3044 = ~Neera's Staff +1~
+@3045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
 
 STATISTICS:
 
@@ -14183,8 +14204,8 @@ Type: 2-handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@2637 = ~The Harrower +1~
-@2638 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
+@3046 = ~The Harrower +1~
+@3047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
 
 STATISTICS:
 
@@ -14205,8 +14226,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2639 = ~The Gold Digger +1~
-@2640 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
+@3048 = ~The Gold Digger +1~
+@3049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
 
 STATISTICS:
 
@@ -14229,8 +14250,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2641 = ~Rancor +1~
-@2642 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
+@3050 = ~Rancor +1~
+@3051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
 
 STATISTICS:
 
