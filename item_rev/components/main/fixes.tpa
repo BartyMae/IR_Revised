@@ -617,6 +617,33 @@ END
     END
   END
   
+  	ACTION_FOR_EACH resource IN // fix BG1 creature bows
+      ~compb05~
+	  ~compb06~
+	  ~compb08~
+	  ~compb18~
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+        COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+          WRITE_ASCII 0x22 ~BW~
+        END
+      END
+	END
+	ACTION_FOR_EACH resource IN // fix BG1 creature swords
+      ~comps01~
+      ~comps02~
+      ~comps03~
+      ~comps42~
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+        COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+          WRITE_ASCII 0x22 ~S1~
+        END
+      END
+	END
+  
   LAUNCH_ACTION_MACRO ~Locations~
   
   // Flame Sword fixes
