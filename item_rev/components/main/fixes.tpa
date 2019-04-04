@@ -1,5 +1,6 @@
 //SR haste/slow/petrification sectype fixes
 ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) THEN BEGIN // SR check
+
 ADD_SECTYPE ~k1#Haste~ @1
 ADD_SECTYPE ~k1#Slow~ @1
 ADD_SECTYPE ~k1#Petrify~ @1
@@ -349,7 +350,7 @@ END
 BUT_ONLY
 END*/
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvdispel.spl~) THEN BEGIN // dvdispel
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvdispel.spl~) THEN BEGIN // Dispelling
 COPY_EXISTING ~dvdispel.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   SET opcode = 221			// Set opcode
@@ -397,8 +398,23 @@ END
 BUT_ONLY
 END
 
+// Carsomyr +4 Dispel Magic
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h10.itm~) THEN BEGIN
+    COPY_EXISTING ~sw2h10.itm~ ~override~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
+  END
 END
 
+// Carsomyr +5 Dispel Magic
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h19.itm~) THEN BEGIN
+    COPY_EXISTING ~sw2h19.itm~ ~override~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
+  END
+END
+
+END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~ohringwi.itm~) THEN BEGIN // BG2FP / BG2EE Ring of Wizardry fix
   ACTION_IF (FILE_EXISTS_IN_GAME ~ring08.itm~) THEN BEGIN
@@ -408,7 +424,7 @@ END
 
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~boot02zh.itm~) THEN BEGIN // BGEE Zhurlong's Boots of Stealth
-  ACTION_IF (FILE_EXISTS_IN_GAME ~boot02.itm~) THEN BEGIN // BGEE Zhurlong's Boots of Stealth
+  ACTION_IF (FILE_EXISTS_IN_GAME ~boot02.itm~) THEN BEGIN
     COPY_EXISTING ~boot02.itm~ ~override/boot02zh.itm~
   END
 END
@@ -429,7 +445,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
   COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge fix
     SAY NAME1 @1760    SAY NAME2 @2426
     SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-  COPY ~item_rev/itm/dvleat01.itm~ ~override/leat07.itm~ // Telbar's Armor fix
+  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor fix
     SAY NAME1 @1636    SAY NAME2 @2573
     SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
 END
@@ -5248,4 +5264,28 @@ BEGIN
   END
 END
 
+END
+
+ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~) BEGIN // EET fixes
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) THEN BEGIN
+    COPY_EXISTING ~helm01.itm~ ~override/helm15_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~misc89_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgmisc89.itm~ ~override/misc89_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ring08_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgring08.itm~ ~override/ring08_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08_.itm~) THEN BEGIN
+    COPY_EXISTING ~staf08.itm~ ~override/staf08_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h09_.itm~) THEN BEGIN
+    COPY_EXISTING ~sw1h09.itm~ ~override/sw1h09_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h07_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgsw2h07.itm~ ~override/sw2h07_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wand12_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgwand12.itm~ ~override/wand12_.itm~
+  END
 END
