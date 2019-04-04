@@ -410,7 +410,6 @@ HUMAN_FLESH_4                              LEATHER  leat21   1        1        0
 HUMAN_FLESH                                LEATHER  leat22   1        1        0        0        1        1        @1629    @1675    @1632    @1676    *        *        *        *
 TROLLHIDE_ARMOR_4                          HIDE     leat23   1        1        0        0        1        1        @1651    @1677    @1671    @1678    *        *        *        *
 GRANDMASTERS_ARMOR_5                       LEATHER  leat24   1        1        0        0        1        1        @1629    @1679    @1632    @1680    *        *        *        *
-TELBARS_ARMOR_2                            LEATHERS dvleat01 1        1        0        0        1        1        @1636    @2573    @1640    @2574    *        *        *        *
 
 AEGIS_FANG_3                               HAMMER   aegis2   1        1        0        0        1        1        @1544    @1681    @1545    @1682    @4052    @4051    @2504    *
 AEGIS_FANG_3#A                             HAMMER   aegis2a  1        1        0        0        1        1        @1544    @1681    @1545    @1682    @1681    @2504    *        *
@@ -530,7 +529,7 @@ PLATE_MAIL                                 PLATE    plat01   1        1        1
 PLATE_MAIL_1                               PLATE    plat02   1        1        1        1        1        1        @1825    @1827    @1828    @1829    *        *        *        *
 FULL_PLATE_MAIL                            PLATEF   plat04   1        1        1        1        1        1        @1497    @1497    @1830    @1830    *        *        *        *
 PLATE_OF_THE_DARK_1                        PLATEF   plat05   1        1        1        1        1        1        @1497    @2577    @1499    @2578    *        *        *        *
-ANKHEG_PLATE_MAIL_1                        PLATE    plat06   1        1        1        1        1        1        @1825    @1833    @1828    @1834    *        *        *        *
+ANKHEG_PLATE_MAIL_2                        PLATE    plat06   1        1        1        1        1        1        @1825    @1833    @1828    @1834    *        *        *        *
 RADIANT_PLATE_2                            PLATE    plat08   1        1        1        1        1        1        @1825    @1835    @1828    @1836    *        *        *        *
 MITHRAL_FULL_PLATE_MAIL_2                  PLATEF   plat09   1        1        0        0        1        1        @1825    @1683    @1828    @1837    *        *        *        *
 PLATE_MAIL_2                               PLATE    plat10   1        1        0        0        1        1        @1825    @1838    @1828    @1839    *        *        *        *
@@ -547,11 +546,15 @@ BLUE_DRAGONPLATE_ARMOR_5                   PLATEF   plat20   1        1        0
 ENKIDUS_FULL_PLATE_4                       PLATEF   plat21   1        1        0        0        1        1        @1497    @1858    @1499    @1859    *        *        *        *
 SHURUPPAKS_MAIL_5                          SPLINT   plat22   1        1        0        0        1        1        @1825    @1860    @1828    @1861    *        *        *        *
 FULL_PLATE_MAIL_3                          PLATEF   plat23   1        1        0        0        1        1        @1497    @2370    @1499    @1862    *        *        *        *
-FALLORAINS_PLATE_1                         PLATE    dvplat01 1        1        1        1        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 
-EDWINS_AMULET_BG1                          AMULET   bgmisc89 1        1        0        0        1        1        @1780    @1780    @1781    @1781    *        *        *        *
-RING_OF_SORCERY_BG1                        RING     bgring08 1        1        1        1        1        1        @1800    @2424    @1802    @2425    *        *        *        *
-THE_WORLDS_EDGE_3_BG1                      SWORD2H  bgsw2h07 1        1        0        0        1        1        @1760    @2426    @1762    @2427    *        *        *        *
+TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0        0        1        1        @1636    @2573    @1640    @2574    *        *        *        *
+FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        1        1        1        1        @1825    @2575    @1828    @2576    *        *        *        *
+ANKHEG_PLATE_MAIL_1                        PLATE    plat06_  1        1        1        1        1        1        @1825    @2581    @1828    @2582    *        *        *        *
+
+EDWINS_AMULET#BGT                          AMULET   bgmisc89 1        1        0        0        1        1        @1780    @1780    @1781    @1781    *        *        *        *
+RING_OF_SORCERY#BGT                        RING     bgring08 1        1        1        1        1        1        @1800    @2424    @1802    @2425    *        *        *        *
+THE_WORLDS_EDGE_3#BGT                      SWORD2H  bgsw2h07 1        1        0        0        1        1        @1760    @2426    @1762    @2427    *        *        *        *
+WAND_OF_MAGIC_MISSILES#BGT                 WAND     bgwand12 1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
 
 RING_OF_FIRE_RESISTANCE                    RING     ring02   1        1        1        1        1        1        @1800    @1863    @1802    @1864    *        *        *        *
 RING_OF_THE_FOREST                         RING     ring03   1        1        1        1        1        1        @1800    @1865    @1802    @1866    *        *        *        *
@@ -586,12 +589,12 @@ OAKEN_RING                                 RING     ring43   1        1        0
 HEARTWOOD_RING                             RING     ring44   1        1        0        0        1        1        @1800    @1911    @1802    @1912    *        *        *        *
 DELRYN_FAMILY_RING                         RING     ring45   1        1        0        0        1        1        @2491    @2491    @2492    @2492    *        *        *        *
 RING_OF_LARLOCH                            RING     ring46   1        1        0        0        1        1        @1800    @1913    @1802    @1914    *        *        *        * 
-HOLY_SYMBOL_OF_LATHANDER                   RING     belt12   1        1        0        0        1        1        @2581    @2581    @2582    @2582    *        *        *        *
-HOLY_SYMBOL_OF_HELM                        RING     belt13   1        1        0        0        1        1        @2583    @2583    @2584    @2584    *        *        *        *
-HOLY_SYMBOL_OF_TALOS                       RING     belt14   1        1        0        0        1        1        @2585    @2585    @2586    @2586    *        *        *        *
-HOLY_SYMBOL_OF_BAERVAN                     RING     j#belt12 1        1        0        0        1        1        @2587    @2587    @2588    @2588    *        *        *        *
-HOLY_SYMBOL_OF_HELM#ANOMEN                 RING     j#belt13 1        1        0        0        1        1        @2583    @2583    @2584    @2584    *        *        *        *
-HOLY_SYMBOL_OF_SHAR                        RING     j#belt14 1        1        0        0        1        1        @2589    @2589    @2590    @2590    *        *        *        *
+HOLY_SYMBOL_OF_LATHANDER                   RING     belt12   1        1        0        0        1        1        @2583    @2583    @2584    @2584    *        *        *        *
+HOLY_SYMBOL_OF_HELM                        RING     belt13   1        1        0        0        1        1        @2585    @2585    @2586    @2586    *        *        *        *
+HOLY_SYMBOL_OF_TALOS                       RING     belt14   1        1        0        0        1        1        @2587    @2587    @2588    @2588    *        *        *        *
+HOLY_SYMBOL_OF_BAERVAN                     RING     j#belt12 1        1        0        0        1        1        @2589    @2589    @2590    @2590    *        *        *        *
+HOLY_SYMBOL_OF_HELM#ANOMEN                 RING     j#belt13 1        1        0        0        1        1        @2585    @2585    @2586    @2586    *        *        *        *
+HOLY_SYMBOL_OF_SHAR                        RING     j#belt14 1        1        0        0        1        1        @2591    @2591    @2592    @2592    *        *        *        *
 
 ROD_OF_ABSORPTION                          ROD      rods01   1        1        0        0        1        1        @1915    @2387    @1917    @2388    *        *        *        * 
 ROD_OF_LORDLY_MIGHT_3                      ROD      rods02   1        1        0        0        1        1        @1915    @2389    @1917    @2390    @2389    @2389    @2389    * 
@@ -785,7 +788,7 @@ GRAM_THE_SWORD_OF_GRIEF_5                  SWORD2H  sw2h18   1        1        0
 CARSOMYR_5                                 SWORD2H  sw2h19   1        1        0        0        1        1        @1760    @2215    @1762    @2216    @2215    @4055    *        *
 TWO-HANDED_SWORD_3                         SWORD2H  sw2h20   1        1        0        0        1        1        @1760    @2217    @1762    @2218    *        *        *        *
 PSIONS_BLADE_3                             SWORD2H  sw2h21   1        1        0        0        1        1        @1760    @2219    @1762    @2220    *        *        *        *
-UNHOLY_REAVER_5#UNUSABLE                   SWORD2H  reaver   1        1        0        0        1        1        @1760    @1761    @1762    @1763    *        *        *        *
+UNHOLY_REAVER_5#UNUSABLE                   SWORD2H  reaver   1        1        1        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *
 
 WAND_OF_FEAR                               WAND     wand02   1        1        1        1        1        1        @2239    @2240    @2241    @2242    *        *        *        *
 WAND_OF_MAGIC_MISSILES                     WAND     wand03   1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
@@ -842,32 +845,32 @@ QUARTERSTAFF_OF_ARUNDEL_3                  STAFF    wastaff  1        1        0
 EVERARDS_MORNING_STAR_3                    MORNSTAR wastar   1        1        0        0        1        1        @1117    @2471    @1120    @2472    *        *        *        *
 MALAKARS_COMPANION_2                       WAKI     wawak    1        1        0        0        1        1        @2127    @2381    @2130    @2382    *        *        *        *
 
-RHYTES_LAST_ARROW_2                        AXEH     ax1h06   0        0        0        0        0        0        @1062    @2591    @1067    @2592    @4052    @4051    @2504    *
-BERUELS_RETORT_1                           AXEH     ax1h18   0        0        0        1        1        1        @1062    @2593    @1067    @2594    @4052    @4051    *        *
-GOLDEN_AXE_1                               AXE      ax1h19   0        0        0        1        1        1        @1055    @2595    @1058    @2596    *        *        *        *
-BIG_FISTED_BELT                            BELT     belt15   0        0        0        1        1        1        @1085    @2597    @1087    @2598    *        *        *        *
-BELT_OF_ANTIPODE                           BELT     belt16   0        0        0        1        1        1        @1085    @2599    @1087    @2600    *        *        *        *
-CLUB_1                                     CLUB     blun36   0        0        0        1        1        1        @1105    @2601    @1125    @2602    *        *        *        *
-MIGHTY_OAK_2                               CLUB     blun37   0        0        0        1        1        1        @1105    @2603    @1125    @2604    *        *        *        *
-NIGHT_CLUB_1                               CLUB     blun38   0        0        0        1        1        1        @1105    @2605    @1125    @2606    *        *        *        *
-THE_THRESHER_2                             FLAIL    blun39   0        0        0        1        1        1        @1107    @2607    @1110    @2608    *        *        *        *
-CHANSERVS_FISH_2                           CLUB     blun40   0        0        0        1        1        1        @1105    @2609    @1125    @2610    *        *        *        *
-THE_STUPEFIER_1                            MACE     blun41   0        0        0        1        1        1        @1112    @2611    @1115    @2612    *        *        *        *
-THE_CHESLEY_CRUSHER_2                      HALBERD  halb13   0        0        0        1        1        1        @1493    @2613    @1495    @2614    *        *        *        *
-HAMMER_OF_DAWN_1                           HAMMER   hamm13   0        0        0        1        1        1        @1544    @2615    @1545    @2616    *        *        *        *
-RUGGED_LEATHERS_2                          LEATHER  leat25   0        0        0        1        1        1        @1629    @2617    @1632    @2618    *        *        *        *
-ADOYS_BELT                                 BELT     nebelt01 0        0        0        1        1        1        @1085    @2619    @1087    @2620    *        *        *        *
-THE_MAGMA_BULWARK_2                        PLATE    plat24   0        0        0        1        1        1        @1497    @2621    @1499    @2622    *        *        *        *
-IRON_THORN_RING                            RING     ring47   0        0        0        1        1        1        @1800    @2623    @1802    @2624    *        *        *        *
-MOONLIGHT_WALKERS                          BOOTS    rsboot   0        0        0        1        1        1        @1192    @2625    @1194    @2626    *        *        *        *
-GLIMMERING_BANDS                           BRACER   rsbrac   0        0        0        1        1        1        @1267    @2627    @1269    @2628    *        *        *        *
-BUCKLEYS_BUCKLER                           BUCKLER  shld33   0        0        0        1        1        1        @1955    @2629    @1958    @2630    *        *        *        *
-SLING_OF_UNERRING_ACCURACY_1               SLING    slng11   0        0        0        1        1        1        @1920    @2631    @1923    @2632    *        *        *        *
-THE_OSSIFIER_1                             STAFF    staf25   0        0        0        1        1        1        @2009    @2633    @2012    @2634    *        *        *        *
-NEERAS_STAFF_1                             STAFF    stafn1   0        0        0        1        1        1        @2009    @2635    @2012    @2636    *        *        *        *
-THE_HARROWER_1                             SWORDL   sw1h79   0        0        0        1        1        1        @1513    @2637    @1515    @2638    *        *        *        *
-THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @2639    @1762    @2640    *        *        *        *
-RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @2641    @1762    @2642    *        *        *        *
+RHYTES_LAST_ARROW_2                        AXEH     ax1h06   0        0        0        0        0        0        @1062    @3000    @1067    @3001    @4052    @4051    @2504    *
+BERUELS_RETORT_1                           AXEH     ax1h18   0        0        0        1        1        1        @1062    @3002    @1067    @3003    @4052    @4051    *        *
+GOLDEN_AXE_1                               AXE      ax1h19   0        0        0        1        1        1        @1055    @3004    @1058    @3005    *        *        *        *
+BIG_FISTED_BELT                            BELT     belt15   0        0        0        1        1        1        @1085    @3006    @1087    @3007    *        *        *        *
+BELT_OF_ANTIPODE                           BELT     belt16   0        0        0        1        1        1        @1085    @3008    @1087    @3009    *        *        *        *
+CLUB_1                                     CLUB     blun36   0        0        0        1        1        1        @1105    @3010    @1125    @3011    *        *        *        *
+MIGHTY_OAK_2                               CLUB     blun37   0        0        0        1        1        1        @1105    @3012    @1125    @3013    *        *        *        *
+NIGHT_CLUB_1                               CLUB     blun38   0        0        0        1        1        1        @1105    @3014    @1125    @3015    *        *        *        *
+THE_THRESHER_2                             FLAIL    blun39   0        0        0        1        1        1        @1107    @3016    @1110    @3017    *        *        *        *
+CHANSERVS_FISH_2                           CLUB     blun40   0        0        0        1        1        1        @1105    @3018    @1125    @3019    *        *        *        *
+THE_STUPEFIER_1                            MACE     blun41   0        0        0        1        1        1        @1112    @3020    @1115    @3021    *        *        *        *
+THE_CHESLEY_CRUSHER_2                      HALBERD  halb13   0        0        0        1        1        1        @1493    @3022    @1495    @3023    *        *        *        *
+HAMMER_OF_DAWN_1                           HAMMER   hamm13   0        0        0        1        1        1        @1544    @3024    @1545    @3025    *        *        *        *
+RUGGED_LEATHERS_2                          LEATHER  leat25   0        0        0        1        1        1        @1629    @3026    @1632    @3027    *        *        *        *
+ADOYS_BELT                                 BELT     nebelt01 0        0        0        1        1        1        @1085    @3028    @1087    @3029    *        *        *        *
+THE_MAGMA_BULWARK_2                        PLATE    plat24   0        0        0        1        1        1        @1497    @3030    @1499    @3031    *        *        *        *
+IRON_THORN_RING                            RING     ring47   0        0        0        1        1        1        @1800    @3032    @1802    @3033    *        *        *        *
+MOONLIGHT_WALKERS                          BOOTS    rsboot   0        0        0        1        1        1        @1192    @3034    @1194    @3035    *        *        *        *
+GLIMMERING_BANDS                           BRACER   rsbrac   0        0        0        1        1        1        @1267    @3036    @1269    @3037    *        *        *        *
+BUCKLEYS_BUCKLER                           BUCKLER  shld33   0        0        0        1        1        1        @1955    @3038    @1958    @3039    *        *        *        *
+SLING_OF_UNERRING_ACCURACY_1               SLING    slng11   0        0        0        1        1        1        @1920    @3040    @1923    @3041    *        *        *        *
+THE_OSSIFIER_1                             STAFF    staf25   0        0        0        1        1        1        @2009    @3042    @2012    @3043    *        *        *        *
+NEERAS_STAFF_1                             STAFF    stafn1   0        0        0        1        1        1        @2009    @3044    @2012    @3045    *        *        *        *
+THE_HARROWER_1                             SWORDL   sw1h79   0        0        0        1        1        1        @1513    @3046    @1515    @3047    *        *        *        *
+THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @3048    @1762    @3049    *        *        *        *
+RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @3050    @1762    @3051    *        *        *        *
 
 POTION_OF_FIRE_RESISTANCE                  POTION   potn02   1        1        1        1        1        1        #6976    @3000    #16264   @3001    *        *        *        * 
 POTION_OF_HILL_GIANT_STRENGTH              POTION   potn03   1        1        1        1        1        1        #6976    @3002    #16264   @3003    *        *        *        * 
