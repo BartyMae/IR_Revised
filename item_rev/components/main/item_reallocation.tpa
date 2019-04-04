@@ -455,38 +455,6 @@ END
 
 /////////////////////////////////////
 
-// Remove extra Lawgiver in Ulgoth's Beard home
-ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
-  COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~SW1H03~ END
-    END
-    BUT_ONLY
-END
-
-/////////////////////////////////////
-
-// Place Fallorain's Plate +1 on Genthore in BG1
-ACTION_IF (FILE_EXISTS_IN_GAME ~gentho.cre~) BEGIN // Genthore
-  COPY_EXISTING gentho.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat02~ ~dvplat01~
-    END
-	BUT_ONLY
-END
-
-/////////////////////////////////////
-
-// Place Telbar's Armor +2 on Sendai in BGT
-ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
-  COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~leat07~
-	ADD_CRE_ITEM ~dvleat01~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
-END
-
-/////////////////////////////////////
-
 // Replaces Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard in ToB
 ACTION_IF (FILE_EXISTS_IN_GAME ~sarmag01.cre~) BEGIN // Errard
   COPY_EXISTING sarmag01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
@@ -757,6 +725,108 @@ END
 
 //Various fixes
 
+// Remove extra Lawgiver in Ulgoth's Beard home
+ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
+  COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~SW1H03~ END
+    END
+    BUT_ONLY
+END
+
+// Place Telbar's Armor +2 on Sendai in BGT
+ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
+  COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~leat07~
+	REMOVE_CRE_ITEM ~leat07_~
+	ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+
+// Place Fallorain's Plate +1 on Genthore in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~gentho.cre~) BEGIN // Genthore
+  COPY_EXISTING gentho.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~plat02~
+	REMOVE_CRE_ITEM ~plat02_~
+	ADD_CRE_ITEM ~plat02_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+
+// Place both Ring of Sorcery and Ring of Wizardry in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
+  COPY_EXISTING sunin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REMOVE_CRE_ITEM ~ring08~
+	REMOVE_CRE_ITEM ~bgring08~
+	REMOVE_CRE_ITEM ~ring08_~
+	REMOVE_CRE_ITEM ~ohringwi~
+	ADD_CRE_ITEM ~ring08~ #0 #0 #0 NONE RING
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
+    COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BG1)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar6800.are~) BEGIN
+    COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BG2)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
+    END
+    BUT_ONLY
+  END
+END
+
+// Place Ankheg Plate Mail +1 in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN
+    COPY_EXISTING ~ar4800.are~ ~override~ // Nashkel (BG1)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN
+    COPY_EXISTING ~ar3700.are~ ~override~ // Nashkel (BG2)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~taerom.dlg~) BEGIN
+  COPY_EXISTING taerom.dlg override
+    DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06_~ ~plat06~
+	  REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06~ ~plat06_~
+	COMPILE_D_TO_DLG
+  BUT_ONLY
+END
+
+// Make Gorion scroll unstealable
+ACTION_IF (FILE_EXISTS_IN_GAME ~gorion.cre~) BEGIN
+  COPY_EXISTING gorion.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_CRE_ITEM ~scrl3z~ #1 #0 #0 ~unstealable~ ~inv~
+  END
+  BUT_ONLY
+END
+
 // Yaga cleric shield
 ACTION_IF (FILE_EXISTS_IN_GAME ~yaga04.cre~) BEGIN
 COPY_EXISTING yaga04.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -772,43 +842,6 @@ COPY_EXISTING zilfgt01.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_CRE_ITEM ~rndtre04~ #1 #0 #0 NONE INV
   END
   BUT_ONLY
-END
-
-// Gorion scroll (BG1)
-ACTION_IF (FILE_EXISTS_IN_GAME ~gorion.cre~) BEGIN
-  COPY_EXISTING gorion.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_CRE_ITEM ~scrl3z~ #1 #0 #0 ~unstealable~ ~inv~
-  END
-  BUT_ONLY
-END
-
-// Place both Ring of Sorcery and Ring of Wizardry in BG1
-ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
-  COPY_EXISTING sunin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REMOVE_CRE_ITEM ~ring08~
-	REMOVE_CRE_ITEM ~bgring08~
-	ADD_CRE_ITEM ~ring08~ #0 #0 #0 NONE RING
-  END
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
-    COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BG1)
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar6800.are~) BEGIN
-    COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BG2)
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-    END
-    BUT_ONLY
-  END
 END
 
 /////////////////////////////////////
