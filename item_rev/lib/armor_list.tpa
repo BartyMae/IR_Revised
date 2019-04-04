@@ -161,9 +161,10 @@ visplat1 => 6  // Plate Mail Armor
 visplat2 => 7  // Mithral Field Plate Armor +2
 wa2plat  => 7  // Plate of Balduran
 
-// IR armors
-dvleat01 => 2  // Telbar's Armor +2
-dvplat01 => 6  // Fallorain's Plate +1
+// IRR armors
+leat07_  => 2  // Telbar's Armor +2
+plat02_  => 6  // Fallorain's Plate +1
+plat06_  => 6  // Ankheg Plate Mail +1
 
 // BG:EE armors
 leat25 => 1 // Rugged Leathers +2
