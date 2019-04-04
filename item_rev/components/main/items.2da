@@ -545,7 +545,7 @@ RED_DRAGONPLATE_ARMOR_5                    PLATE    plat18   1        1        0
 FULL_PLATE_MAIL_2                          PLATEF   plat19   1        1        0        0        1        1        @1497    @1854    @1499    @1855    *        *        *        *
 BLUE_DRAGONPLATE_ARMOR_5                   PLATEF   plat20   1        1        0        0        1        1        @1497    @1856    @1499    @1857    *        *        *        *
 ENKIDUS_FULL_PLATE_4                       PLATEF   plat21   1        1        0        0        1        1        @1497    @1858    @1499    @1859    *        *        *        *
-SHURUPPAKS_PLATE_5                         PLATE    plat22   1        1        0        0        1        1        @1825    @1860    @1828    @1861    *        *        *        *
+SHURUPPAKS_MAIL_5                          SPLINT   plat22   1        1        0        0        1        1        @1825    @1860    @1828    @1861    *        *        *        *
 FULL_PLATE_MAIL_3                          PLATEF   plat23   1        1        0        0        1        1        @1497    @2370    @1499    @1862    *        *        *        *
 FALLORAINS_PLATE_1                         PLATE    dvplat01 1        1        1        1        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 
@@ -900,7 +900,7 @@ POTION_OF_GENIUS                           POTION   potn29   1        1        1
 POTION_OF_SHARP_EYES                       POTION   potn30   1        1        1        1        1        1        #6976    @3056    #16264   @3057    *        *        *        * 
 POTION_OF_INSULATION                       POTION   potn31   1        1        1        1        1        1        #6976    @3058    #16264   @3059    *        *        *        * 
 STRANGE_POTION_OF_ANTIDOTE                 POTION   potn32   1        1        1        1        1        1        #6976    @3060    #16264   @3061    *        *        *        cursed
-POTION_OF_MAGIC_DISPELLING                 POTION   potn33   1        1        1        1        1        1        #6976    @3062    #16264   @3063    *        *        *        * 
+POTION_OF_ENERGY_PROTECTION                POTION   potn33   1        1        1        1        1        1        #6976    @3062    #16264   @3063    *        *        *        * 
 POTION_OF_MAGIC_BLOCKING                   POTION   potn34   1        1        1        1        1        1        #6976    @3064    #16264   @3065    *        *        *        * 
 POTION_OF_ENERGY_SHIELDING                 POTION   potn35   1        1        1        1        1        1        #6976    @3066    #16264   @3067    *        *        *        * 
 POTION_OF_MASTER_THIEVERY                  POTION   potn36   1        1        1        1        1        1        #6976    @3068    #16264   @3069    *        *        *        * 
