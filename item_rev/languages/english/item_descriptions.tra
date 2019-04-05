@@ -13832,8 +13832,8 @@ Usable By:
 @4107 = ~Break Enchantment~
 @4108 = ~Shapeshifts Natural Form~
 @4109 = ~Web~
-@5000 = ~Rhyte's Last Arrow +2~
-@5001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
+@60000 = ~Rhyte's Last Arrow +2~
+@60001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
  
 "Oh, shocked from the strike of his powerful bow,
 The slain game sought by Adaniss falls.
@@ -13929,8 +13929,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5002 = ~Bereul's Retort +1~
-@5003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
+@60002 = ~Bereul's Retort +1~
+@60003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
 
 STATISTICS:
 
@@ -13950,8 +13950,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5004 = ~Golden Axe +1~
-@5005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
+@60004 = ~Golden Axe +1~
+@60005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
 
 STATISTICS:
 
@@ -13973,8 +13973,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5006 = ~Big-Fisted Belt~
-@5007 = ~Cursed Girdle of Giant Strength
+@60006 = ~Big-Fisted Belt~
+@60007 = ~Cursed Girdle of Giant Strength
 A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodstains on the leather hint at unspeakable carnage, but the misspelled graffiti scratched into its surface suggests that the girdle's former owners were none too bright.
 
 STATISTICS:
@@ -13988,8 +13988,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@5008 = ~Belt of Antipode~
-@5009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
+@60008 = ~Belt of Antipode~
+@60009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
 
 STATISTICS:
 
@@ -14000,8 +14000,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@5010 = ~Club +1~
-@5011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
+@60010 = ~Club +1~
+@60011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
 
 STATISTICS:
 
@@ -14015,8 +14015,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@5012 = ~Mighty Oak +2~
-@5013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
+@60012 = ~Mighty Oak +2~
+@60013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
 
 STATISTICS:
 
@@ -14030,8 +14030,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@5014 = ~Night Club +1~
-@5015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
+@60014 = ~Night Club +1~
+@60015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
 
 STATISTICS:
 
@@ -14048,8 +14048,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@5016 = ~The Thresher +2~
-@5017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
+@60016 = ~The Thresher +2~
+@60017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
 
 STATISTICS:
 
@@ -14067,8 +14067,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5018 = ~Chanserv's Fish +2~
-@5019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
+@60018 = ~Chanserv's Fish +2~
+@60019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
 
 STATISTICS:
 
@@ -14085,8 +14085,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@5020 = ~The Stupefier +1~
-@5021 = ~Mace of Stunning
+@60020 = ~The Stupefier +1~
+@60021 = ~Mace of Stunning
 This mace isn't just sleek and elegant, it's stunning. With a hit to just the right spot, it can render a foe completely paralyzed.
 
 STATISTICS:
@@ -14108,8 +14108,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5022 = ~The Chesley Crusher +2~
-@5023 = ~Heavy Halberd
+@60022 = ~The Chesley Crusher +2~
+@60023 = ~Heavy Halberd
 First wielded by the much-maligned Ensign Chesley of the first exploratory fleet of Waterdeep, this famous halberd has been passed around for generations, but only to those strong enough to carry its considerable weight. The iron haft of this heavy polearm makes the weapon slow and unwieldy, but its sheer mass smashes skulls and shatters limbs.
 
 STATISTICS:
@@ -14133,8 +14133,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5024 = ~Hammer of Dawn +1~
-@5025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
+@60024 = ~Hammer of Dawn +1~
+@60025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
 
 STATISTICS:
 
@@ -14158,8 +14158,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5026 = ~Rugged Leathers +2~
-@5027 = ~Squeaky Leather Armor
+@60026 = ~Rugged Leathers +2~
+@60027 = ~Squeaky Leather Armor
 This rigid suit of leather armor squeaks like a new pair of shoes. What it lacks in stealth it makes up for in toughness, protecting its wearer against the most punishing blows.
 
 STATISTICS:
@@ -14175,8 +14175,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@5028 = ~Adoy's Belt~
-@5029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
+@60028 = ~Adoy's Belt~
+@60029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
 
 STATISTICS:
 
@@ -14186,8 +14186,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@5030 = ~The Magma Bulwark +2~
-@5031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
+@60030 = ~The Magma Bulwark +2~
+@60031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
 
 STATISTICS:
 
@@ -14205,8 +14205,8 @@ Not Usable By:
  Barbarian
  Beast Master
  Kensai~
-@5032 = ~Iron Thorn Ring~
-@5033 = ~Cursed Ring of Slight Monsterism
+@60032 = ~Iron Thorn Ring~
+@60033 = ~Cursed Ring of Slight Monsterism
 This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
 
 STATISTICS:
@@ -14219,8 +14219,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@5034 = ~Moonlight Walkers~
-@5035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
+@60034 = ~Moonlight Walkers~
+@60035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
 
 STATISTICS:
 
@@ -14230,8 +14230,8 @@ Equipped Abilities:
 Weight: 2
 Usable By:
  Rasaad yn Bashir~
-@5036 = ~Glimmering Bands~
-@5037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
+@60036 = ~Glimmering Bands~
+@60037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
 
 STATISTICS:
 
@@ -14241,8 +14241,8 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Rasaad yn Bashir~
-@5038 = ~Buckley's Buckler~
-@5039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
+@60038 = ~Buckley's Buckler~
+@60039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
 
 STATISTICS:
 
@@ -14257,8 +14257,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@5040 = ~Sling of Unerring Accuracy +1~
-@5041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
+@60040 = ~Sling of Unerring Accuracy +1~
+@60041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
 
 STATISTICS:
 
@@ -14275,8 +14275,8 @@ Requires: 3 Strength
 Not Usable By:
  Cavalier
  Kensai~
-@5042 = ~The Ossifier +1~
-@5043 = ~Cursed Staff of Petrification
+@60042 = ~The Ossifier +1~
+@60043 = ~Cursed Staff of Petrification
 The surface of this seven-foot shaft more resembles stone than wood, but in the hands of a skilled wielder it weighs little more than a staff of oak. Along its length appear the ghost-like images of various foes caught in defensive postures, appearing almost as thought they had been suddenly turned to stone.
 
 STATISTICS:
@@ -14296,8 +14296,8 @@ Type: 2-handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@5044 = ~Neera's Staff +1~
-@5045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
+@60044 = ~Neera's Staff +1~
+@60045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
 
 STATISTICS:
 
@@ -14314,8 +14314,8 @@ Type: 2-handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@5046 = ~The Harrower +1~
-@5047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
+@60046 = ~The Harrower +1~
+@60047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
 
 STATISTICS:
 
@@ -14336,8 +14336,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@5048 = ~The Gold Digger +1~
-@5049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
+@60048 = ~The Gold Digger +1~
+@60049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
 
 STATISTICS:
 
@@ -14360,8 +14360,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@5050 = ~Rancor +1~
-@5051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
+@60050 = ~Rancor +1~
+@60051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
 
 STATISTICS:
 
