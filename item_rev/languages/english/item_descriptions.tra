@@ -40,7 +40,7 @@ Usable By:
  Mage
  Paladin
  Ranger~
-@1008 = ~Greenstone Amulet~
+@1008 = ~Greenstone Amulet~ //NOTE: This amulet does not confer complete immunity to psionics.
 @1009 = ~Creatures that attack the mind are the stuff of nightmares, so it is not surprising that items protecting against them might acquire some of their disrepute. Greenstone amulets, for example, have been linked to a claim that when the drow first retreated underground they fed on intellect devourers, and that eating such a creature without wearing a greenstone amulet produced a mind flayer. This is all, of course, nothing more than superstitious tavern talk. Nonetheless these mind shielding amulets are indeed used by drows who have to deal with the illithids, as they call them, being it a peaceful deal, or a not so peaceful one.
 
 These highly prized items are fist-sized green stone worked into some kind of smooth shape, usually like a flattened egg, but sometimes like a shield or helmet. When worn, the greenstone protects the wearer from all forms of mind attacks, including psionics.
@@ -48,9 +48,7 @@ These highly prized items are fist-sized green stone worked into some kind of sm
 STATISTICS:
 
 Equipped Abilities:
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
-
-NOTE: This amulet does not confer complete immunity to psionics.
+ Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
 
 Not Usable By:
  Wizard Slayer~
@@ -3418,7 +3416,7 @@ Mustard Jelly (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, Poison, and Stun
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
  Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
 
@@ -5062,7 +5060,7 @@ Troll (7 HD):
 
 Special Characteristics:
  Regeneration: 1 hp/second
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
 
 Equipped Abilities:
  Regeneration: 1 hp/round
@@ -6090,7 +6088,7 @@ Type: 1-handed
 Not Usable By:
  Cleric
  Beast Master~
-@1741 = ~Blackrazor +3~
+@1741 = ~Blackrazor +4~
 @1742 = ~This sword radiates evil like a sour odor, and the owner never knows if he wields the weapon, or if it wields him. Its special purpose is to steal life essence, and when the sword manages to drain a victim's essence, it temporarily grants them to the wielder. In addition to its combat abilities, Blackrazor slowly regenerates its owner with the drained strength of opponents.
 
 STATISTICS:
@@ -6102,11 +6100,11 @@ Equipped Abilities:
 Combat Abilities:
  Soul Drinking: 15% chance target is drained one level, granting the wielder a +5 bonus to maximum hit points, a +1 bonus to strength, and hasting them for 1 turn
 
-THAC0: +3 bonus
-Damage: 1D8 + 3
+THAC0: +4 bonus
+Damage: 1D8 + 4
 Damage type: slashing
 Weight: 4
-Speed Factor: 2
+Speed Factor: 1
 Proficiency Type: Long Sword
 Type: 1-handed
 Requires: 6 Strength
@@ -6614,7 +6612,7 @@ STATISTICS:
 
 Combat Abilities:
  Lacerating: target suffers 1 bleeding damage every round for 2 rounds
- Chaos: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
 
 THAC0: +2 bonus
 Damage: 1D6 + 2
@@ -9276,7 +9274,7 @@ Ras (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
 
 THAC0: +2 bonus
 Damage: 1D8 + 2
@@ -9780,6 +9778,7 @@ STATISTICS:
 
 Combat Abilities:
  Poisonous: target suffers 1D6 poison damage
+ Stealthblade: 15% chance that the wielder becomes invisible for 5 rounds
 
 THAC0: +4 bonus
 Damage: 1D6 + 4
@@ -10092,7 +10091,7 @@ Spectral Brand (10 HD):
 
 Special Characteristics:
  Protected Against: Backstabs and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
 
 Combat Abilities:
  Icy: target suffers 1D6 cold damage
@@ -10132,7 +10131,7 @@ Spectral Brand (12 HD):
 
 Special Characteristics:
  Protected Against: Backstabs and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
 
 Equipped Abilities:
  Spell: Negative Plane Protection
@@ -10165,7 +10164,7 @@ Shadow (5 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Normal Weapons, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
  Chill Touch: target suffers a -2 penalty to strength for 1 turn
 */
 
@@ -12812,7 +12811,7 @@ STATISTICS:
 
 Combat Abilities:
  Fiery: target suffers 1D6 fire damage
- Chaos: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D10 + 3
@@ -12932,7 +12931,7 @@ Flesh Golem (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal Weapons, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
  
 Requires: 16 Intelligence
 Usable By:
@@ -12956,7 +12955,7 @@ Clay Golem (9 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal Weapons, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
  Cursing: target is cursed and cannot recover from their wounds permanently
  
 Requires: 16 Intelligence
@@ -12981,7 +12980,7 @@ Stone Golem (12 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal/+1 Weapons, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
  
 Requires: 16 Intelligence
 Usable By:
@@ -13005,7 +13004,7 @@ Juggernaut Golem (14 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal/+1/+2 Weapons, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
  Stunning: target is stunned for 1 round (save vs. spell neg.)
  
 Requires: 16 Intelligence
@@ -13079,7 +13078,8 @@ Special Abilities:
 
 Combat Abilities:
  Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
- Chaos: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D8 + 3
@@ -13846,7 +13846,7 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Dispelling: 25% chance of removing all magical effects from the target (save vs. spell neg.)
+ Dispelling: 33% chance of removing all magical effects from the target (save vs. spell neg.)
 
 THAC0: +1 bonus
 Damage: 1D8 + 1
@@ -13982,7 +13982,7 @@ This mace isn't just sleek and elegant, it's stunning. With a hit to just the ri
 STATISTICS:
 
 Combat Abilities:
- Stunning: 25% chance target is stunned for 1 rounds (save vs. spell neg.)
+ Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 2
@@ -14032,7 +14032,7 @@ Equipped Abilities:
  Spell: Non-Detection
 
 Combat Abilities:
- Knockback: 25% chance creatures struck by the wielder in melee are knocked away from the wielder
+ Knockback: 33% chance creatures struck by the wielder in melee are knocked away from the wielder
 
 THAC0: +1 bonus
 Damage: 1D4 + 2
