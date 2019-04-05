@@ -13722,557 +13722,6 @@ Equipped Abilities:
 
 Usable By:
  Evil-aligned clerics~
-@3000 = ~Rhyte's Last Arrow +2~
-@3001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
- 
-"Oh, shocked from the strike of his powerful bow,
-The slain game sought by Adaniss falls.
-Long ago in the time of the Quiet Earth,
-The hunt from the famed High Forest calls.
-
-The Duke of Everlund known for his boast 
-Of the trophies held in his pride as dear. 
-Intensely enraged at his rival hunter
-Whose bounty by far surpassed his one year. 
-
-One morn tragedy befell the land
-With the misconceived death of the Duke's prized hound.
-Fallen at the base of a great elm tree 
-A bow's shot death in its heart was found. 
-
-With skill so great targets in his eyes were at the mercy of his arrow's flight.
-His hands sure and still,
-Never missing a kill,
-None could match the marksmanship of Adaniss Rhyte.
-
-The same eve Adaniss called on the Duke,
-His solemn mistake he wished to repay.
-But the noble's rage claimed ten pounds of flesh
-And an archer's arm hit the ground that day.
-
-The evil lord demanded justice unjust
-The most vile curse on his arm to be cast.
-Vengeance he sought for the price he had paid
-Rhyte vowed the hound's arrow not to be his last.
-
-In sorrow the town helped him forge an axe
-Blessed to honor his most glorious day.
-With the mark of Rhyte's arrow to guide its strike
-And reputed to kill in the very same way.
-
-With skill so great targets in his eyes were at the mercy of his arrow's flight.
-His hands sure and still,
-Never missing a kill,
-None could match the marksmanship of Adaniss Rhyte.
-
-Again called the forest with its precious game,
-And a prize Adaniss with thrill did he seek. 
-But none could be finer than the great clawed falcon 
-Sought by all amidst the forest's Lost Peaks.
-
-Once more the rivalry of the Duke did stir,
-For he thought of his skills with Rhyte's bow to be best.
-And set his sights on the glorious bird 
-To emerge as the holder of its sainted crest.
-
-The two climbed the peaks and searched days on end,
-Each of their wills set as strong as the stone.
-They found each other at a cliff by chance;
-Both of their hatreds ran as deep as the bone.
-
-With skill so great targets in his eyes were at the mercy of his arrow's flight.
-His hands sure and still,
-Never missing a kill,
-None could match the marksmanship of Adaniss Rhyte.
-
-The Duke drew the bow and pulled the string taut,
-But first flew Adaniss's axe with its blow.
-Cleaved, the lord stumbled to cliff's edge and off,
-Defeated by Rhyte's last arrow...
-
-With skill so great targets in his eyes were at the mercy of his arrow's flight.
-His hands sure and still,
-Never missing a kill,
-None could match the marksmanship of Adaniss Rhyte,
-None could match the marksmanship of Adaniss Rhyte."
-
-STATISTICS:
-
-Combat Abilities:
- Keen: +5% chance to score critical hits
- Returning: returns to the wielder's hand instantly after an attack is made
- Frenzy: the wielder gains a +5 bonus to THAC0 for 2 rounds upon a critical hit
-
-THAC0: +2 bonus
-Damage: 1D6 + 3
-Damage type (melee): slashing
-Damage type (thrown): missile
-Weight: 3
-Speed Factor: 2
-Proficiency Type: Axe
-Type: 1-handed
-Requires: 4 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3002 = ~Bereul's Retort +1~
-@3003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
-
-STATISTICS:
-
-THAC0: +1 bonus
-Damage: 1D6 + 2
-Damage type (melee): slashing
-Damage type (thrown): missile
-Weight: 3
-Speed Factor: 3
-Proficiency Type: Axe
-Type: 1-handed
-Requires: 4 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3004 = ~Golden Axe +1~
-@3005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
-
-STATISTICS:
-
-Combat Abilities:
- Dispelling: 33% chance of removing all magical effects from the target (save vs. spell neg.)
-
-THAC0: +1 bonus
-Damage: 1D8 + 1
-Damage type: slashing
-Weight: 6
-Speed Factor: 6
-Proficiency Type: Axe
-Type: 1-handed
-Requires: 10 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3006 = ~Big-Fisted Belt~
-@3007 = ~Cursed Girdle of Giant Strength
-A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodstains on the leather hint at unspeakable carnage, but the misspelled graffiti scratched into its surface suggests that the girdle's former owners were none too bright.
-
-STATISTICS:
-
-*CURSED*
-
-Equipped Abilities:
- Strength: +3 bonus
- Intelligence: -3 penalty
-
-Weight: 1
-Not Usable By:
- Wizard Slayer~
-@3008 = ~Belt of Antipode~
-@3009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
-
-STATISTICS:
-
-Equipped Abilities:
- Cold Resistance: +100% bonus
- Fire Resistance: -100% penalty 
-
-Weight: 1
-Not Usable By:
- Wizard Slayer~
-@3010 = ~Club +1~
-@3011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
-
-STATISTICS:
-
-THAC0: +1 bonus
-Damage: 1D6 + 1
-Damage type: crushing
-Weight: 3
-Speed Factor: 3
-Proficiency Type: Club
-Type: 1-handed
-Requires: 5 Strength
-Not Usable By:
- Mage~
-@3012 = ~Mighty Oak +2~
-@3013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
-
-STATISTICS:
-
-THAC0: +2 bonus
-Damage: 1D6 + 2
-Damage type: crushing
-Weight: 3
-Speed Factor: 2
-Proficiency Type: Club
-Type: 1-handed
-Requires: 5 Strength
-Not Usable By:
- Mage~
-@3014 = ~Night Club +1~
-@3015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
-
-STATISTICS:
-
-Combat Abilities:
- Night Club: +2 bonus to THAC0 at night
-
-THAC0: +1 bonus
-Damage: 1D6 + 1
-Damage type: crushing
-Weight: 3
-Speed Factor: 3
-Proficiency Type: Club
-Type: 1-handed
-Requires: 5 Strength
-Not Usable By:
- Mage~
-@3016 = ~The Thresher +2~
-@3017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
-
-STATISTICS:
-
-THAC0: +2 bonus
-Damage: 1D6 + 3
-Damage type: crushing
-Weight: 10
-Speed Factor: 5
-Proficiency Type: Flail/Morning Star
-Type: 1-handed
-Requires: 13 Strength
-Not Usable By:
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3018 = ~Chanserv's Fish +2~
-@3019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
-
-STATISTICS:
-
-Combat Abilities:
- Icy: target suffers 1D4 cold damage
-
-THAC0: +2 bonus
-Damage: 1D6 + 2
-Damage type: crushing
-Weight: 2
-Speed Factor: 2
-Proficiency Type: Club
-Type: 1-handed
-Requires: 5 Strength
-Not Usable By:
- Mage~
-@3020 = ~The Stupefier +1~
-@3021 = ~Mace of Stunning
-This mace isn't just sleek and elegant, it's stunning. With a hit to just the right spot, it can render a foe completely paralyzed.
-
-STATISTICS:
-
-Combat Abilities:
- Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
-
-THAC0: +1 bonus
-Damage: 1D6 + 2
-Damage type: crushing
-Weight: 8
-Speed Factor: 6
-Proficiency Type: Mace
-Type: 1-handed
-Requires: 10 Strength
-Not Usable By:
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3022 = ~The Chesley Crusher +2~
-@3023 = ~Heavy Halberd
-First wielded by the much-maligned Ensign Chesley of the first exploratory fleet of Waterdeep, this famous halberd has been passed around for generations, but only to those strong enough to carry its considerable weight. The iron haft of this heavy polearm makes the weapon slow and unwieldy, but its sheer mass smashes skulls and shatters limbs.
-
-STATISTICS:
-
-Combat Abilities:
- Powerful Weapon: +2 bonus to damage
- Unwieldy: -1/2 Attack per Round
-
-THAC0: +2 bonus
-Damage: 1D10 + 2
-Damage type: piercing
-Weight: 14
-Speed Factor: 7
-Proficiency Type: Halberd
-Type: 2-handed
-Requires: 16 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3024 = ~Hammer of Dawn +1~
-@3025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
-
-STATISTICS:
-
-Equipped Abilities:
- Spell: Non-Detection
-
-Combat Abilities:
- Knockback: 33% chance creatures struck by the wielder in melee are knocked away from the wielder
-
-THAC0: +1 bonus
-Damage: 1D4 + 2
-Damage type: crushing
-Weight: 5
-Speed Factor: 3
-Proficiency Type: War Hammer
-Type: 1-handed
-Requires: 10 Strength
-Not Usable By:
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3026 = ~Rugged Leathers +2~
-@3027 = ~Squeaky Leather Armor
-This rigid suit of leather armor squeaks like a new pair of shoes. What it lacks in stealth it makes up for in toughness, protecting its wearer against the most punishing blows.
-
-STATISTICS:
-
-Equipped Abilities:
- Move Silently: -20% penalty
-
-Armor Class: 6
-Weight: 15
-Requires: 4 Strength
-Not Usable By:
- Mage
- Monk
- Kensai
- Shapeshifter~
-@3028 = ~Adoy's Belt~
-@3029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
-
-STATISTICS:
-
-Equipped Abilities:
- Saving Throws: +5 bous vs. polymorph
-
-Weight: 1
-Not Usable By:
- Wizard Slayer~
-@3030 = ~The Magma Bulwark +2~
-@3031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
-
-STATISTICS:
-
-Armor Class: 1
-Weight: 30
-Requires: 10 Strength
-Not Usable By:
- Bard
- Druid
- Mage
- Monk
- Thief
- Archer
- Stalker
- Barbarian
- Beast Master
- Kensai~
-@3032 = ~Iron Thorn Ring~
-@3033 = ~Cursed Ring of Slight Monsterism
-This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
-
-STATISTICS:
-
-*CURSED*
-
-Equipped Abilities:
- Zombification: wearer's appearance is set to that of a zombie
- Charisma: -4 penalty
-
-Not Usable By:
- Wizard Slayer~
-@3034 = ~Moonlight Walkers~
-@3035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
-
-STATISTICS:
-
-Equipped Abilities:
- Armor Class: +2 bonus
-
-Weight: 2
-Usable By:
- Rasaad yn Bashir~
-@3036 = ~Glimmering Bands~
-@3037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
-
-STATISTICS:
-
-Equipped Abilities:
- THAC0: +2 bonus
-
-Weight: 1
-Usable By:
- Rasaad yn Bashir~
-@3038 = ~Buckley's Buckler~
-@3039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
-
-STATISTICS:
-
-Equipped Abilities:
- Constitution: +1 bonus
-
-Armor Class Bonus: 1
-Special: No Missile/Piercing Attack Protection
-Weight: 4
-Requires: 4 Strength
-Not Usable By:
- Mage
- Monk
- Kensai~
-@3040 = ~Sling of Unerring Accuracy +1~
-@3041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
-
-STATISTICS:
-
-Equipped Abilities:
- Accuracy: +1 bonus to THAC0
-
-THAC0: +1 bonus
-Damage: +1 bonus
-Weight: 0
-Speed Factor: 5
-Proficiency Type: Sling
-Type: 1-handed
-Requires: 3 Strength
-Not Usable By:
- Cavalier
- Kensai~
-@3042 = ~The Ossifier +1~
-@3043 = ~Cursed Staff of Petrification
-The surface of this seven-foot shaft more resembles stone than wood, but in the hands of a skilled wielder it weighs little more than a staff of oak. Along its length appear the ghost-like images of various foes caught in defensive postures, appearing almost as thought they had been suddenly turned to stone.
-
-STATISTICS:
-
-*CURSED*
-
-Combat Abilities:
- Ossifying: upon each successful hit, Barkskin is cast on the target
-
-THAC0: +1 bonus
-Damage: 1D6 + 1
-Damage type: crushing
-Weight: 4
-Speed Factor: 3
-Proficiency Type: Quarterstaff
-Type: 2-handed
-Requires: 5 Strength
-Not Usable By:
- Monk~
-@3044 = ~Neera's Staff +1~
-@3045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
-
-STATISTICS:
-
-Combat Abilities:
- Touch of Fire: 50% chance upon each successful hit that either the target or the wielder will suffer 1 fire damage
-
-THAC0: +1 bonus
-Damage: 1D6 + 1
-Damage type: crushing
-Weight: 4
-Speed Factor: 3
-Proficiency Type: Quarterstaff
-Type: 2-handed
-Requires: 5 Strength
-Not Usable By:
- Monk~
-@3046 = ~The Harrower +1~
-@3047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
-
-STATISTICS:
-
-Combat Abilities:
- Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
- The Harrower: +2 bonus to enchantment level against undead
-
-THAC0: +1 bonus
-Damage: 1D8 + 1
-Damage type: slashing
-Weight: 4
-Speed Factor: 4
-Proficiency Type: Long Sword
-Type: 1-handed
-Requires: 6 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Beast Master~
-@3048 = ~The Gold Digger +1~
-@3049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
-
-STATISTICS:
-
-Combat Abilities:
- Gold Digging: upon each successful hit, 10 gold is consumed
- Powerful Weapon: +2 bonus to damage
-
-THAC0: +1 bonus
-Damage: 1D10 + 1
-Damage type: slashing
-Weight: 10
-Speed Factor: 9
-Proficiency Type: Two-Handed Sword
-Type: 2-handed
-Requires: 16 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Monk
- Thief
- Beast Master~
-@3050 = ~Rancor +1~
-@3051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
-
-STATISTICS:
-
-Combat Abilities:
- Bloodthirsty: when Dorn holds this blade, any death that Rancor causes grants Dorn a +1 bonus to THAC0 for 24 hours
-
-THAC0: +1 bonus
-Damage: 1D10 + 1
-Damage type: slashing
-Weight: 8
-Speed Factor: 9
-Proficiency Type: Two-Handed Sword
-Type: 2-handed
-Requires: 14 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Monk
- Thief
- Beast Master~
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
@@ -14383,3 +13832,554 @@ Not Usable By:
 @4107 = ~Break Enchantment~
 @4108 = ~Shapeshifts Natural Form~
 @4109 = ~Web~
+@5000 = ~Rhyte's Last Arrow +2~
+@5001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
+ 
+"Oh, shocked from the strike of his powerful bow,
+The slain game sought by Adaniss falls.
+Long ago in the time of the Quiet Earth,
+The hunt from the famed High Forest calls.
+
+The Duke of Everlund known for his boast 
+Of the trophies held in his pride as dear. 
+Intensely enraged at his rival hunter
+Whose bounty by far surpassed his one year. 
+
+One morn tragedy befell the land
+With the misconceived death of the Duke's prized hound.
+Fallen at the base of a great elm tree 
+A bow's shot death in its heart was found. 
+
+With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+The same eve Adaniss called on the Duke,
+His solemn mistake he wished to repay.
+But the noble's rage claimed ten pounds of flesh
+And an archer's arm hit the ground that day.
+
+The evil lord demanded justice unjust
+The most vile curse on his arm to be cast.
+Vengeance he sought for the price he had paid
+Rhyte vowed the hound's arrow not to be his last.
+
+In sorrow the town helped him forge an axe
+Blessed to honor his most glorious day.
+With the mark of Rhyte's arrow to guide its strike
+And reputed to kill in the very same way.
+
+With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+Again called the forest with its precious game,
+And a prize Adaniss with thrill did he seek. 
+But none could be finer than the great clawed falcon 
+Sought by all amidst the forest's Lost Peaks.
+
+Once more the rivalry of the Duke did stir,
+For he thought of his skills with Rhyte's bow to be best.
+And set his sights on the glorious bird 
+To emerge as the holder of its sainted crest.
+
+The two climbed the peaks and searched days on end,
+Each of their wills set as strong as the stone.
+They found each other at a cliff by chance;
+Both of their hatreds ran as deep as the bone.
+
+With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte.
+
+The Duke drew the bow and pulled the string taut,
+But first flew Adaniss's axe with its blow.
+Cleaved, the lord stumbled to cliff's edge and off,
+Defeated by Rhyte's last arrow...
+
+With skill so great targets in his eyes were at the mercy of his arrow's flight.
+His hands sure and still,
+Never missing a kill,
+None could match the marksmanship of Adaniss Rhyte,
+None could match the marksmanship of Adaniss Rhyte."
+
+STATISTICS:
+
+Combat Abilities:
+ Keen: +5% chance to score critical hits
+ Returning: returns to the wielder's hand instantly after an attack is made
+ Frenzy: the wielder gains a +5 bonus to THAC0 for 2 rounds upon a critical hit
+
+THAC0: +2 bonus
+Damage: 1D6 + 3
+Damage type (melee): slashing
+Damage type (thrown): missile
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Axe
+Type: 1-handed
+Requires: 4 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5002 = ~Bereul's Retort +1~
+@5003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
+
+STATISTICS:
+
+THAC0: +1 bonus
+Damage: 1D6 + 2
+Damage type (melee): slashing
+Damage type (thrown): missile
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Axe
+Type: 1-handed
+Requires: 4 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5004 = ~Golden Axe +1~
+@5005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
+
+STATISTICS:
+
+Combat Abilities:
+ Dispelling: 33% chance of removing all magical effects from the target (save vs. spell neg.)
+
+THAC0: +1 bonus
+Damage: 1D8 + 1
+Damage type: slashing
+Weight: 6
+Speed Factor: 6
+Proficiency Type: Axe
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5006 = ~Big-Fisted Belt~
+@5007 = ~Cursed Girdle of Giant Strength
+A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodstains on the leather hint at unspeakable carnage, but the misspelled graffiti scratched into its surface suggests that the girdle's former owners were none too bright.
+
+STATISTICS:
+
+*CURSED*
+
+Equipped Abilities:
+ Strength: +3 bonus
+ Intelligence: -3 penalty
+
+Weight: 1
+Not Usable By:
+ Wizard Slayer~
+@5008 = ~Belt of Antipode~
+@5009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
+
+STATISTICS:
+
+Equipped Abilities:
+ Cold Resistance: +100% bonus
+ Fire Resistance: -100% penalty 
+
+Weight: 1
+Not Usable By:
+ Wizard Slayer~
+@5010 = ~Club +1~
+@5011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
+
+STATISTICS:
+
+THAC0: +1 bonus
+Damage: 1D6 + 1
+Damage type: crushing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Club
+Type: 1-handed
+Requires: 5 Strength
+Not Usable By:
+ Mage~
+@5012 = ~Mighty Oak +2~
+@5013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
+
+STATISTICS:
+
+THAC0: +2 bonus
+Damage: 1D6 + 2
+Damage type: crushing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Club
+Type: 1-handed
+Requires: 5 Strength
+Not Usable By:
+ Mage~
+@5014 = ~Night Club +1~
+@5015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
+
+STATISTICS:
+
+Combat Abilities:
+ Night Club: +2 bonus to THAC0 at night
+
+THAC0: +1 bonus
+Damage: 1D6 + 1
+Damage type: crushing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Club
+Type: 1-handed
+Requires: 5 Strength
+Not Usable By:
+ Mage~
+@5016 = ~The Thresher +2~
+@5017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
+
+STATISTICS:
+
+THAC0: +2 bonus
+Damage: 1D6 + 3
+Damage type: crushing
+Weight: 10
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: 1-handed
+Requires: 13 Strength
+Not Usable By:
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5018 = ~Chanserv's Fish +2~
+@5019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
+
+STATISTICS:
+
+Combat Abilities:
+ Icy: target suffers 1D4 cold damage
+
+THAC0: +2 bonus
+Damage: 1D6 + 2
+Damage type: crushing
+Weight: 2
+Speed Factor: 2
+Proficiency Type: Club
+Type: 1-handed
+Requires: 5 Strength
+Not Usable By:
+ Mage~
+@5020 = ~The Stupefier +1~
+@5021 = ~Mace of Stunning
+This mace isn't just sleek and elegant, it's stunning. With a hit to just the right spot, it can render a foe completely paralyzed.
+
+STATISTICS:
+
+Combat Abilities:
+ Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
+
+THAC0: +1 bonus
+Damage: 1D6 + 2
+Damage type: crushing
+Weight: 8
+Speed Factor: 6
+Proficiency Type: Mace
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5022 = ~The Chesley Crusher +2~
+@5023 = ~Heavy Halberd
+First wielded by the much-maligned Ensign Chesley of the first exploratory fleet of Waterdeep, this famous halberd has been passed around for generations, but only to those strong enough to carry its considerable weight. The iron haft of this heavy polearm makes the weapon slow and unwieldy, but its sheer mass smashes skulls and shatters limbs.
+
+STATISTICS:
+
+Combat Abilities:
+ Powerful Weapon: +2 bonus to damage
+ Unwieldy: -1/2 Attack per Round
+
+THAC0: +2 bonus
+Damage: 1D10 + 2
+Damage type: piercing
+Weight: 14
+Speed Factor: 7
+Proficiency Type: Halberd
+Type: 2-handed
+Requires: 16 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5024 = ~Hammer of Dawn +1~
+@5025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
+
+STATISTICS:
+
+Equipped Abilities:
+ Spell: Non-Detection
+
+Combat Abilities:
+ Knockback: 33% chance creatures struck by the wielder in melee are knocked away from the wielder
+
+THAC0: +1 bonus
+Damage: 1D4 + 2
+Damage type: crushing
+Weight: 5
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5026 = ~Rugged Leathers +2~
+@5027 = ~Squeaky Leather Armor
+This rigid suit of leather armor squeaks like a new pair of shoes. What it lacks in stealth it makes up for in toughness, protecting its wearer against the most punishing blows.
+
+STATISTICS:
+
+Equipped Abilities:
+ Move Silently: -20% penalty
+
+Armor Class: 6
+Weight: 15
+Requires: 4 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai
+ Shapeshifter~
+@5028 = ~Adoy's Belt~
+@5029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
+
+STATISTICS:
+
+Equipped Abilities:
+ Saving Throws: +5 bous vs. polymorph
+
+Weight: 1
+Not Usable By:
+ Wizard Slayer~
+@5030 = ~The Magma Bulwark +2~
+@5031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
+
+STATISTICS:
+
+Armor Class: 1
+Weight: 30
+Requires: 10 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Monk
+ Thief
+ Archer
+ Stalker
+ Barbarian
+ Beast Master
+ Kensai~
+@5032 = ~Iron Thorn Ring~
+@5033 = ~Cursed Ring of Slight Monsterism
+This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
+
+STATISTICS:
+
+*CURSED*
+
+Equipped Abilities:
+ Zombification: wearer's appearance is set to that of a zombie
+ Charisma: -4 penalty
+
+Not Usable By:
+ Wizard Slayer~
+@5034 = ~Moonlight Walkers~
+@5035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armor Class: +2 bonus
+
+Weight: 2
+Usable By:
+ Rasaad yn Bashir~
+@5036 = ~Glimmering Bands~
+@5037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
+
+STATISTICS:
+
+Equipped Abilities:
+ THAC0: +2 bonus
+
+Weight: 1
+Usable By:
+ Rasaad yn Bashir~
+@5038 = ~Buckley's Buckler~
+@5039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
+
+STATISTICS:
+
+Equipped Abilities:
+ Constitution: +1 bonus
+
+Armor Class Bonus: 1
+Special: No Missile/Piercing Attack Protection
+Weight: 4
+Requires: 4 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai~
+@5040 = ~Sling of Unerring Accuracy +1~
+@5041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
+
+STATISTICS:
+
+Equipped Abilities:
+ Accuracy: +1 bonus to THAC0
+
+THAC0: +1 bonus
+Damage: +1 bonus
+Weight: 0
+Speed Factor: 5
+Proficiency Type: Sling
+Type: 1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cavalier
+ Kensai~
+@5042 = ~The Ossifier +1~
+@5043 = ~Cursed Staff of Petrification
+The surface of this seven-foot shaft more resembles stone than wood, but in the hands of a skilled wielder it weighs little more than a staff of oak. Along its length appear the ghost-like images of various foes caught in defensive postures, appearing almost as thought they had been suddenly turned to stone.
+
+STATISTICS:
+
+*CURSED*
+
+Combat Abilities:
+ Ossifying: upon each successful hit, Barkskin is cast on the target
+
+THAC0: +1 bonus
+Damage: 1D6 + 1
+Damage type: crushing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: 2-handed
+Requires: 5 Strength
+Not Usable By:
+ Monk~
+@5044 = ~Neera's Staff +1~
+@5045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
+
+STATISTICS:
+
+Combat Abilities:
+ Touch of Fire: 50% chance upon each successful hit that either the target or the wielder will suffer 1 fire damage
+
+THAC0: +1 bonus
+Damage: 1D6 + 1
+Damage type: crushing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: 2-handed
+Requires: 5 Strength
+Not Usable By:
+ Monk~
+@5046 = ~The Harrower +1~
+@5047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
+
+STATISTICS:
+
+Combat Abilities:
+ Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ The Harrower: +2 bonus to enchantment level against undead
+
+THAC0: +1 bonus
+Damage: 1D8 + 1
+Damage type: slashing
+Weight: 4
+Speed Factor: 4
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
+@5048 = ~The Gold Digger +1~
+@5049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
+
+STATISTICS:
+
+Combat Abilities:
+ Gold Digging: upon each successful hit, 10 gold is consumed
+ Powerful Weapon: +2 bonus to damage
+
+THAC0: +1 bonus
+Damage: 1D10 + 1
+Damage type: slashing
+Weight: 10
+Speed Factor: 9
+Proficiency Type: Two-Handed Sword
+Type: 2-handed
+Requires: 16 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@5050 = ~Rancor +1~
+@5051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
+
+STATISTICS:
+
+Combat Abilities:
+ Bloodthirsty: when Dorn holds this blade, any death that Rancor causes grants Dorn a +1 bonus to THAC0 for 24 hours
+
+THAC0: +1 bonus
+Damage: 1D10 + 1
+Damage type: slashing
+Weight: 8
+Speed Factor: 9
+Proficiency Type: Two-Handed Sword
+Type: 2-handed
+Requires: 14 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
