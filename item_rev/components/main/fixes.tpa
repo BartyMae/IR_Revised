@@ -5318,5 +5318,5 @@ ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~X#RINGRO.itm~) THEN BEGIN // BG1 NPC Project Ring of Human Influence fix
-    COPY_EXISTING ~ring30.itm~ ~override/X#RINGRO.itm~
+  COPY_EXISTING ~ring30.itm~ ~override/X#RINGRO.itm~
 END
