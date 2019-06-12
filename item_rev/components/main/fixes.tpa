@@ -5295,7 +5295,7 @@ END
 
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~) BEGIN // EET fixes
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) THEN BEGIN
-    COPY_EXISTING ~helm01.itm~ ~override/helm15_.itm~
+    COPY_EXISTING ~helm15.itm~ ~override/helm15_.itm~
   END
   ACTION_IF (FILE_EXISTS_IN_GAME ~misc89_.itm~) THEN BEGIN
     COPY_EXISTING ~bgmisc89.itm~ ~override/misc89_.itm~
@@ -5318,5 +5318,7 @@ ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~X#RINGRO.itm~) THEN BEGIN // BG1 NPC Project Ring of Human Influence fix
-  COPY_EXISTING ~ring30.itm~ ~override/X#RINGRO.itm~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ring30.itm~) THEN BEGIN
+    COPY_EXISTING ~ring30.itm~ ~override/X#RINGRO.itm~
+  END
 END
