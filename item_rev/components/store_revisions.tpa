@@ -1925,7 +1925,7 @@ COPY_EXISTING trmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
   ADD_STORE_ITEM amul13   LAST #0 #0 #0 IDENTIFIED #2   // Bloodstone
   ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
-  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMTIED  // Silver, #10
+  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver, #10
   ADD_STORE_ITEM ring12   LAST #0 #0 #0 IDENTIFIED #3   // Onyx
   ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #2   // Flamedance
   ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
@@ -5926,6 +5926,7 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL1O    // Slow
     SCRL1P    // Skull Trap
     SCRL1Q    // Vampiric Touch
+	SCRL1R    // Wraithform
     SCRL1T    // Ghost Armor
     SCRL1U    // Confusion
     SCRL1Y    // Improved Invisibility
