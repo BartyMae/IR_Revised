@@ -617,10 +617,10 @@ END
 // Add an additional 4 Mithral Coins to Spellhold for the time being
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   COPY_EXISTING ~ar1514.are~ ~override~ // Spellhold Dungeon
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~ADD_AREA_ITEM~ INT_VAR charges1=~4~ container_to_add_to = ~9~ STR_VAR item_to_add = ~miscal~ END
-    END
-    BUT_ONLY
+  PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+    LAUNCH_PATCH_FUNCTION ~ADD_AREA_ITEM~ INT_VAR charges1=~4~ container_to_add_to = ~9~ STR_VAR item_to_add = ~miscal~ END
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -646,10 +646,10 @@ END
 // Remove extra Lawgiver in Ulgoth's Beard home
 ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
   COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~SW1H03~ END
-    END
-    BUT_ONLY
+  PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+    LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~SW1H03~ END
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -657,10 +657,10 @@ END
 // Remove extra Rod of Resurrection from Mekrath's Lair
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   COPY_EXISTING ~ar0705.are~ ~override~ // Mekrath's Lair
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~rods03~ END
-    END
-    BUT_ONLY
+  PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+    LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~rods03~ END
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -668,16 +668,16 @@ END
 // Remove Boots of Blinding Speed from Habib
 ACTION_IF (FILE_EXISTS_IN_GAME ~habib.cre~) BEGIN
   COPY_EXISTING habib.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REMOVE_CRE_ITEM boot10
-    END
-	BUT_ONLY
+    REMOVE_CRE_ITEM boot10
+  END
+  BUT_ONLY
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~habib2.cre~) BEGIN
   COPY_EXISTING habib2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REMOVE_CRE_ITEM boot10
-    END
-	BUT_ONLY
+    REMOVE_CRE_ITEM boot10
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -685,33 +685,20 @@ END
 // Replace Kaol's Bracers of Defense AC 4 with Bracers of Defense AC 6
 ACTION_IF (FILE_EXISTS_IN_GAME ~kaol.cre~) BEGIN // Genthore
   COPY_EXISTING kaol.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~brac14~ ~brac03~
-    END
-	BUT_ONLY
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~brac14~ ~brac03~
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
 
-// Remove extra Boots of Speed from Renal Bloodscalp, Drizzt Do'Urden, and Lothander
-ACTION_IF (FILE_EXISTS_IN_GAME ~renal.cre~) BEGIN // Renal Bloodscalp
-  COPY_EXISTING renal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~boot01~ ~bootdriz~
-    END
-	BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~drizzt.cre~) BEGIN // Drizzt
-  COPY_EXISTING drizzt.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~boot01~ ~bootdriz~
-    END
-	BUT_ONLY
-END
-
+// Remove extra Boots of Speed from Lothander
 ACTION_IF (FILE_EXISTS_IN_GAME ~lothan.cre~) BEGIN // Lothander
   COPY_EXISTING lothan.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~boot01~ ~bootdriz~
-    END
-	BUT_ONLY
+    REMOVE_CRE_ITEM boot01
+    ADD_CRE_ITEM bootdriz #1 #0 #0 IDENTIFIED BOOTS
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
