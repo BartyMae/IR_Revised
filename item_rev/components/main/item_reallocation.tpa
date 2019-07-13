@@ -822,7 +822,7 @@ END
 
 // Replace Spellhold's bad copy of Ray of Enfeeblement with good copy
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar1513.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar1513.are~) BEGIN
     COPY_EXISTING ~ar1513.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~scrlai~ new_item = ~scrl6f~ END
