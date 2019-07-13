@@ -792,8 +792,8 @@ END
 
 // Place Ankheg Plate Mail +1 in BG1
 ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN
-    COPY_EXISTING ~ar4800.are~ ~override~ // Nashkel (BG1)
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN // Nashkel (BG1)
+    COPY_EXISTING ~ar4800.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
     END
@@ -802,8 +802,8 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN
-    COPY_EXISTING ~ar3700.are~ ~override~ // Nashkel (BG2)
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN // Nashkel (BG2)
+    COPY_EXISTING ~ar3700.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
     END
@@ -818,6 +818,17 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~taerom.dlg~) BEGIN
 	  REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06~ ~plat06_~
 	COMPILE_D_TO_DLG
   BUT_ONLY
+END
+
+// Replace Spellhold's bad copy of Ray of Enfeeblement with good copy
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar1513.cre~) BEGIN
+    COPY_EXISTING ~ar1513.are~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~scrlai~ new_item = ~scrl6f~ END
+    END
+    BUT_ONLY
+  END
 END
 
 // Make Gorion scroll unstealable
