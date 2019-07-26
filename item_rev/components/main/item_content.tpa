@@ -320,7 +320,7 @@ COPY ~%source%/ARMOR_OF_MISSILE_ATTRACTION_3.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/EFREETI_BOTTLE.tpa
   COPY ~item_rev/itm/misc3c.spl~ ~override~ // Summon Efreeti
-  COPY ~item_rev/itm/misc3c.eff~ ~override~ // Summon Efreeti
+  COPY ~item_rev/itm/misc3c.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/EFREETI_BOTTLE.tpa~ ~%target%~
 

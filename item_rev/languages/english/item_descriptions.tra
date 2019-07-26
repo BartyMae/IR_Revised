@@ -5823,12 +5823,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Lightning Bolt.
+The spell on this page is Animate Dead.
 
 STATISTICS:
 
 Special Abilities:
- Lightning Bolt (1x per day)
+ Animate Dead (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -13819,6 +13819,18 @@ Usable By:
 @4107 = ~Break Enchantment~
 @4108 = ~Shapeshifts Natural Form~
 @4109 = ~Web~
+@4110 = ~Turn a page~
+@4111 = ~Fireball~
+@4112 = ~Improved Invisibility~
+@4113 = ~Stoneskin~
+@4114 = ~True Seeing~
+@4115 = ~Dispel Magic~
+@4116 = ~Cone of Cold~
+@4117 = ~Invisible Stalker~
+@4118 = ~Cloudkill~
+@4119 = ~Animate Dead~
+@4120 = ~Breach~
+@4121 = ~Hold Monster~
 @60000 = ~Rhyte's Last Arrow +2~
 @60001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
  

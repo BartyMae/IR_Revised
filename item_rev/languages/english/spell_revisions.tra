@@ -17,6 +17,19 @@ Weight: 1
 Usable By:
  Cleric
  Paladin~
+@1699 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Summon Shadow.
+
+STATISTICS:
+
+Special Abilities:
+ Summon Shadow (1x per day)
+
+Not Usable By:
+ Wizard Slayer
 @1723 = ~When this odd horn is blown no sound issues forth, making most people discard it as useless. However, if the proper command word is known, the horn is capable of silencing all within its area of effect, providing that they fail a saving throw versus breath weapons. This horn may be used three times a day. The most common use of the Horn of Silence is as a weapon against mages. Fighters often employ the horn, silencing enemy mages and drastically improving their own chances of success against the frail magic users.
 
 STATISTICS:
@@ -54,7 +67,7 @@ With the Eye of Tyr set into its pommel, Purifier is perhaps the greatest single
 STATISTICS:
 
 Special Abilities:
- Draw Upon Holy Might (1x per day)
+ Draw Upon Divine Might (1x per day)
  Greater Restoration (1x per day)
 
 Equipped Abilities:
@@ -91,3 +104,4 @@ Not Usable By:
 @4033 = ~Protection from Missiles~
 @4073 = ~Draw Upon Divine Might~
 @4104 = ~Silence~
+@4119 = ~Summon Shadow~
