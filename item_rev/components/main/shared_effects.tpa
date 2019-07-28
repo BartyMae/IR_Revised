@@ -1,18 +1,25 @@
-/*-----------------Bane Effects-----------------*/
+/*----------------Scripts----------------*/
 
-COPY ~item_rev/itm/axiom1.eff~ ~override~
-COPY ~item_rev/itm/axiom2.eff~ ~override~
-COPY ~item_rev/itm/axiom3.eff~ ~override~
-COPY ~item_rev/itm/axiom4.eff~ ~override~
-COPY ~item_rev/itm/axiom5.eff~ ~override~
-COPY ~item_rev/itm/axiom6.eff~ ~override~
+COPY ~item_rev\itm\dvmelee.bcs~      ~override~  // Summons' melee AI
+COPY ~item_rev\itm\dvmelews.bcs~     ~override~  // Summons' melee + random weapon switching AI
+COPY ~item_rev\itm\dvranged.bcs~     ~override~  // Summons' ranged AI
+COPY ~item_rev\itm\dvbrsker.bcs~     ~override~  // Summons' melee + berserking AI
 
-COPY ~item_rev/itm/disrupt.eff~ ~override~
+/*----------------Bane Effects----------------*/
+
+COPY ~item_rev/itm/axiom1.eff~   ~override~
+COPY ~item_rev/itm/axiom2.eff~   ~override~
+COPY ~item_rev/itm/axiom3.eff~   ~override~
+COPY ~item_rev/itm/axiom4.eff~   ~override~
+COPY ~item_rev/itm/axiom5.eff~   ~override~
+COPY ~item_rev/itm/axiom6.eff~   ~override~
+
+COPY ~item_rev/itm/disrupt.eff~  ~override~
 COPY ~item_rev/itm/disrtext.eff~ ~override~
 
-COPY ~item_rev/itm/demdam3.eff~ ~override~
-COPY ~item_rev/itm/demdam5.eff~ ~override~
-COPY ~item_rev/itm/demhit3.eff~ ~override~
+COPY ~item_rev/itm/demdam3.eff~  ~override~
+COPY ~item_rev/itm/demdam5.eff~  ~override~
+COPY ~item_rev/itm/demhit3.eff~  ~override~
 
 COPY ~item_rev/itm/doppdam3.eff~ ~override~
 COPY ~item_rev/itm/doppdam5.eff~ ~override~
@@ -36,7 +43,7 @@ COPY ~item_rev/itm/gianhit3.eff~ ~override~
 
 COPY ~item_rev/itm/goledam3.eff~ ~override~
 COPY ~item_rev/itm/goledam5.eff~ ~override~
-COPY ~item_rev/itm/goledie.eff~ ~override~
+COPY ~item_rev/itm/goledie.eff~  ~override~
 COPY ~item_rev/itm/golehit3.eff~ ~override~
 
 COPY ~item_rev/itm/gooddam3.eff~ ~override~
@@ -55,13 +62,13 @@ COPY ~item_rev/itm/monsdam3.eff~ ~override~
 COPY ~item_rev/itm/monsdam5.eff~ ~override~
 COPY ~item_rev/itm/monshit3.eff~ ~override~
 
-COPY ~item_rev/itm/orcdam3.eff~ ~override~
-COPY ~item_rev/itm/orcdam5.eff~ ~override~
-COPY ~item_rev/itm/orchit3.eff~ ~override~
+COPY ~item_rev/itm/orcdam3.eff~  ~override~
+COPY ~item_rev/itm/orcdam5.eff~  ~override~
+COPY ~item_rev/itm/orchit3.eff~  ~override~
 
-COPY ~item_rev/itm/outdam3.eff~ ~override~
-COPY ~item_rev/itm/outdam5.eff~ ~override~
-COPY ~item_rev/itm/outhit3.eff~ ~override~
+COPY ~item_rev/itm/outdam3.eff~  ~override~
+COPY ~item_rev/itm/outdam5.eff~  ~override~
+COPY ~item_rev/itm/outhit3.eff~  ~override~
 
 COPY ~item_rev/itm/raksdam3.eff~ ~override~
 COPY ~item_rev/itm/raksdam5.eff~ ~override~
@@ -83,14 +90,14 @@ COPY ~item_rev/itm/wolfhit3.eff~ ~override~
 COPY ~item_rev/itm/wolfdam3.eff~ ~override~
 COPY ~item_rev/itm/wolfdam5.eff~ ~override~
 
-/*-----------------Shared Effects-----------------*/
+/*----------------Shared Effects----------------*/
 
 COPY ~item_rev/itm/dvnatfrm.spl~ ~override~ // Shapeshift Natural Form
   SAY NAME1 @4108
 
 COPY ~item_rev/itm/dvwinded.spl~ ~override~ // Exhaustion
 
-/*-----------------Weapon Enhancements-----------------*/
+/*----------------Weapon Enhancements----------------*/
 
 COPY ~item_rev/itm/dvafflic.spl~ ~override~ // Affliction
 COPY ~item_rev/itm/dvafflic.eff~ ~override~
@@ -279,13 +286,10 @@ COPY ~item_rev/itm/dvvampir.eff~ ~override~
 COPY ~item_rev/itm/dvvorpal.spl~ ~override~ // Vorpal
 COPY ~item_rev/itm/dvvorpal.eff~ ~override~
 
-COPY ~item_rev/itm/dvweaken.spl~ ~override~ // Weakening
-COPY ~item_rev/itm/dvweaken.eff~ ~override~
-
 COPY ~item_rev/itm/dvwebb.spl~ ~override~ // Webbing
 COPY ~item_rev/itm/dvwebb.eff~ ~override~
 
-/*-----------------Item Special Abilities-----------------*/
+/*----------------Item Special Abilities----------------*/
 
 COPY ~item_rev/itm/dvdlifea.spl~ ~override~ // Drain Life
   SAY NAME1 @4050
