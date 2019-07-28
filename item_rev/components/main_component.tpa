@@ -34,7 +34,7 @@ INCLUDE ~item_rev/components/main/shared_effects.tpa~ // new effects that multip
 INCLUDE ~item_rev/components/main/demon_patch.tpa~ // remove an unusual weapon immunity from underdark demon lord
 
 COPY ~item_rev/components/main/new_bams~ ~override~ // item icons borrowed from 1PP
-COPY ~item_rev/extra/ir_mc.mrk~ ~override~ // main component mark file
+COPY ~item_rev/itm/ir_mc.mrk~ ~override~ // main component mark file
 
 /*------------------Items-----------------*/
 
