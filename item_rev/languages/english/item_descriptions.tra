@@ -12306,9 +12306,8 @@ Special Abilities:
 
 Weight: 3
 Requires: 10 Intelligence, 15 Wisdom
-Usable By:
- Cleric
- Druid~
+Not Usable By:
+ Wizard Slayer~
 @2393 = ~Rod of Terror +3~
 @2394 = ~These twisted rods emanate an aura of evil even while inactive, and fill all who gaze upon them with unease. They are capable of projecting a wave of unspeakable horror upon a single foe, filling even the hardiest soul with acute dread, and were certainly created for nefarious use.
 
