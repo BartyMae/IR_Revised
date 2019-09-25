@@ -161,8 +161,10 @@ visplat1 => 6  // Plate Mail Armor
 visplat2 => 7  // Mithral Field Plate Armor +2
 wa2plat  => 7  // Plate of Balduran
 
-// IRR armors
-plat02_  => 6  // Fallorain's Plate +1
+// IRR / EET armors
+leat07_  => 2  // Telbar's Studded Leather +2 (Studded Leather Armor +2)
+plat02_  => 6  // Fallorain's Plate +1 (Plate Mail +1)
+plat06_  => 22 // Ankheg Plate Mail +1 (crafted by Taerom Fuiruim of Beregost)
 
 // BG:EE armors
 leat25 => 1 // Rugged Leathers +2
@@ -629,11 +631,6 @@ bdleat08 => 3 // Hide +1 (hide)
 bdplat01 => 7 // Daeros full plate
 bdplat03 => 6 // Bone plate
 bdplat04 => 6 // Beetle plate
-
-// EET
-
-leat07_   => 2  // Telbar's Studded Leather +2 (Studded Leather Armor +2)
-plat06_   => 22 // Ankheg Plate Mail (crafted by Taerom Fuiruim of Beregost)
 
 
 /////////////////////////////////////////////////
