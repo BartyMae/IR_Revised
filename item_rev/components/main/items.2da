@@ -37,7 +37,7 @@ QUIVER_OF_PLENTY_3                         ARROW    quiver03 1        1        0
 BATTLE_AXE                                 AXE      ax1h01   1        1        1        1        1        1        @1055    @1055    @1056    @1056    *        *        *        *
 BATTLE_AXE_1                               AXE      ax1h02   1        1        1        1        1        1        @1055    @1057    @1058    @1059    *        *        *        *
 BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03   1        1        1        1        1        1        @1055    @2569    @1058    @2570    *        *        *        *
-THROWING_AXE                               AXEH     ax1h04   1        1        1        1        1        1        @1062    @1062    @1063    @1063    *        *        *        *
+THROWING_AXE                               AXEH     ax1h04   1        1        1        1        1        1        @1062    @1062    @1063    @1063    @4052    @4051    *        *
 THROWING_AXE_1                             AXEH     ax1h05   1        1        1        1        1        1        @1062    @2311    @1067    @2312    @4052    @4051    @2504    *
 THROWING_AXE_1#A                           AXEH     ax1h05a  1        1        1        1        1        1        @1062    @2311    @1067    @2312    @2311    @2504    *        *
 THROWING_AXE_1#B                           AXEH     ax1h05b  1        1        1        1        1        1        @1062    @2311    @1067    @2312    @4052    @4051    @2504    *
