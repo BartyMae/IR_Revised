@@ -614,7 +614,7 @@ END
 
 /////////////////////////////////////
 
-// Add an additional 4 Mithral Coins to Spellhold for the time being
+// Add an additional 5 Mithral Tokens to Spellhold for the time being
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   COPY_EXISTING ~ar1514.are~ ~override~ // Spellhold Dungeon
   PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
