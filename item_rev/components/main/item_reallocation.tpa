@@ -726,11 +726,11 @@ END
 
 //Various fixes
 
-// Remove extra Lawgiver in Ulgoth's Beard home
+// Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
 ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
   COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~DELETE_AREA_ITEM~ STR_VAR item_to_delete = ~SW1H03~ END
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
     END
     BUT_ONLY
 END
@@ -780,7 +780,19 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar6800.are~) BEGIN
-    COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BG2)
+    COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BGT)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~bg2300.are~) BEGIN
+    COPY_EXISTING ~bg2300.are~ ~override~ // Friendly Arm Inn (EET)
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
 	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
@@ -802,8 +814,18 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN // Nashkel (BG2)
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN // Nashkel (BGT)
     COPY_EXISTING ~ar3700.are~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~bg4800.are~) BEGIN // Nashkel (EET)
+    COPY_EXISTING ~bg4800.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
     END
