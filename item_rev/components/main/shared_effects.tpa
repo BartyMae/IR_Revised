@@ -201,6 +201,9 @@ COPY ~item_rev/itm/dvillban.eff~ ~override~
 COPY ~item_rev/itm/dvknback.spl~ ~override~ // Knockback
 COPY ~item_rev/itm/dvknback.eff~ ~override~
 
+COPY ~item_rev/itm/dvkndown.spl~ ~override~ // Knockdown
+COPY ~item_rev/itm/dvkndown.eff~ ~override~
+
 COPY ~item_rev/itm/dvffire.spl~ ~override~ // Luminous
 COPY ~item_rev/itm/sppr114f.spl~ ~override~
 
