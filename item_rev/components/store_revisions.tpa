@@ -623,7 +623,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL9G   LAST #1 #0 #0 IDENTIFIED #1   // Abi Dalzim's Horrid Wilting
   ADD_STORE_ITEM SCRLB1   LAST #1 #0 #0 IDENTIFIED #1   // Bigby's Clenched Fist
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL03 LAST #1 #0 #0 IDENTIFIED #1   // Ghost Form
+    ADD_STORE_ITEM DVSCRL04 LAST #1 #0 #0 IDENTIFIED #1   // Ghost Form
   END
   ADD_STORE_ITEM SCRL9E   LAST #1 #0 #0 IDENTIFIED #1   // Incendiary Cloud
   ADD_STORE_ITEM SCRL9H   LAST #1 #0 #0 IDENTIFIED #1   // Maze
@@ -631,7 +631,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM SCRL8D   LAST #1 #0 #0 IDENTIFIED #1   // Spell Turning / Mind Blank
   END
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL04 LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning VIII
+    ADD_STORE_ITEM DVSCRL05 LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning VIII
   END
   ADD_STORE_ITEM SCRL9A   LAST #1 #0 #0 IDENTIFIED #1   // Pierce Shield
   ADD_STORE_ITEM SCRL9J   LAST #1 #0 #0 IDENTIFIED #1   // Power Word: Blind
@@ -649,7 +649,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL9W   LAST #1 #0 #0 IDENTIFIED #1   // Energy Drain
   ADD_STORE_ITEM SCRL9Z   LAST #1 #0 #0 IDENTIFIED #1   // Freedom
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL05   LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning IX
+    ADD_STORE_ITEM DVSCRL06   LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning IX
   END
   ADD_STORE_ITEM SCRL9U   LAST #1 #0 #0 IDENTIFIED #1   // Power Word: Kill
   ADD_STORE_ITEM SCRL9Y   LAST #1 #0 #0 IDENTIFIED #1   // Shapechange
@@ -749,7 +749,7 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #5   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #5   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
+	ADD_STORE_ITEM dvscrl03.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
   END
   PATCH_IF comp_sr=1 BEGIN
     ADD_STORE_ITEM SCRL1V   LAST #1 #0 #0 IDENTIFIED #5   // Dimension Door / Dimension Jump
@@ -766,6 +766,9 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL77   LAST #1 #0 #0 IDENTIFIED #5   // Magic Missile
   ADD_STORE_ITEM SCRL72   LAST #1 #0 #0 IDENTIFIED #5   // Friends / Monster Summoning I
   ADD_STORE_ITEM SCRL78   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Evil
+  PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
+    ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Petrification
+  END
   ADD_STORE_ITEM SCRL5U   LAST #1 #0 #0 IDENTIFIED #5   // Reflected Image
   ADD_STORE_ITEM SCRL79   LAST #1 #0 #0 IDENTIFIED #5   // Shield
   ADD_STORE_ITEM SCRL80   LAST #1 #0 #0 IDENTIFIED #5   // Shocking Grasp
@@ -959,12 +962,12 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 //Cacofiend, Control Undead, Efreeti, Khelben's Warding Whip, Chaos, Delayed Blast Fireball, Finger of Death, Hakeashar
 
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL03 LAST #1 #0 #0 IDENTIFIED #1   // Ghost Form
+    ADD_STORE_ITEM DVSCRL04 LAST #1 #0 #0 IDENTIFIED #1   // Ghost Form
   END
   ADD_STORE_ITEM SCRL9G   LAST #1 #0 #0 IDENTIFIED #1   // Abi Dalzim's Horrid Wilting
   ADD_STORE_ITEM SCRL9H   LAST #1 #0 #0 IDENTIFIED #1   // Maze
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL04 LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning VIII
+    ADD_STORE_ITEM DVSCRL05 LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning VIII
   END
   PATCH_IF comp_sr=1 BEGIN
     ADD_STORE_ITEM SCRL8D   LAST #1 #0 #0 IDENTIFIED #1   // Spell Turning / Mind Blank
@@ -1685,7 +1688,7 @@ COPY_EXISTING shop08.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #2   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #2   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
+	ADD_STORE_ITEM dvscrl03.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
   END
   ADD_STORE_ITEM SCRL73   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Petrification / Expeditious Retreat
   ADD_STORE_ITEM SCRL66   LAST #1 #0 #0 IDENTIFIED #2   // Grease
@@ -1698,6 +1701,9 @@ COPY_EXISTING shop08.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL77   LAST #1 #0 #0 IDENTIFIED #2   // Magic Missile
   ADD_STORE_ITEM SCRL72   LAST #1 #0 #0 IDENTIFIED #2   // Friends / Monster Summoning I
   ADD_STORE_ITEM SCRL78   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Evil
+  PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
+    ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Petrification
+  END
   ADD_STORE_ITEM SCRL79   LAST #1 #0 #0 IDENTIFIED #2   // Shield
   ADD_STORE_ITEM SCRL81   LAST #1 #0 #0 IDENTIFIED #2   // Sleep
   ADD_STORE_ITEM SCRL76   LAST #1 #0 #0 IDENTIFIED #2   // Infravision / True Strike
@@ -2343,7 +2349,7 @@ COPY_EXISTING wallace.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #2   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #2   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
+	ADD_STORE_ITEM dvscrl03.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
   END
   ADD_STORE_ITEM SCRL73   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Petrification / Expeditious Retreat
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
@@ -2353,6 +2359,9 @@ COPY_EXISTING wallace.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL75   LAST #1 #0 #0 IDENTIFIED #2   // Identify
   ADD_STORE_ITEM SCRL67   LAST #1 #0 #0 IDENTIFIED #2   // Mage Armor
   ADD_STORE_ITEM SCRL78   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Evil
+  PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
+    ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Petrification
+  END
   ADD_STORE_ITEM SCRL79   LAST #1 #0 #0 IDENTIFIED #2   // Shield
   ADD_STORE_ITEM SCRL81   LAST #1 #0 #0 IDENTIFIED #2   // Sleep
 
@@ -5971,7 +5980,7 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL82   LAST #1 #0 #0 IDENTIFIED #2   // Chill Touch
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #2   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
+	ADD_STORE_ITEM dvscrl03.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
 	ADD_STORE_ITEM dvscrl01.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
   END
   ADD_STORE_ITEM SCRL66   LAST #1 #0 #0 IDENTIFIED #2   // Grease
@@ -5980,6 +5989,9 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL67   LAST #1 #0 #0 IDENTIFIED #2   // Mage Armor
   ADD_STORE_ITEM SCRL72   LAST #1 #0 #0 IDENTIFIED #2   // Friends / Monster Summoning I
   ADD_STORE_ITEM SCRL78   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Evil
+  PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
+    ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Petrification
+  END
   ADD_STORE_ITEM SCRL80   LAST #1 #0 #0 IDENTIFIED #2   // Shocking Grasp
   ADD_STORE_ITEM SCRL76   LAST #1 #0 #0 IDENTIFIED #2   // Infravision / True Strike
 
@@ -7203,7 +7215,7 @@ COPY_EXISTING uddrow25.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL8S   LAST #1 #0 #0 IDENTIFIED #1   // Summon Efreet
 
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL03 LAST #1 #0 #0 IDENTIFIED #1   // Ghost Form
+    ADD_STORE_ITEM DVSCRL04 LAST #1 #0 #0 IDENTIFIED #1   // Ghost Form
   END
   ADD_STORE_ITEM SCRL9E   LAST #1 #0 #0 IDENTIFIED #1   // Incendiary Cloud
   ADD_STORE_ITEM SCRL9H   LAST #1 #0 #0 IDENTIFIED #1   // Maze
@@ -7954,7 +7966,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #5   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #5   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
+	ADD_STORE_ITEM dvscrl03.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
   END
   PATCH_IF comp_sr=1 BEGIN
     ADD_STORE_ITEM SCRL1V   LAST #1 #0 #0 IDENTIFIED #5   // Dimension Door / Dimension Jump
@@ -7971,6 +7983,9 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL77   LAST #1 #0 #0 IDENTIFIED #5   // Magic Missile
   ADD_STORE_ITEM SCRL72   LAST #1 #0 #0 IDENTIFIED #5   // Friends / Monster Summoning I
   ADD_STORE_ITEM SCRL78   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Evil
+  PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
+    ADD_STORE_ITEM dvscrl02.itm   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Petrification
+  END
   ADD_STORE_ITEM SCRL5U   LAST #1 #0 #0 IDENTIFIED #5   // Reflected Image
   ADD_STORE_ITEM SCRL79   LAST #1 #0 #0 IDENTIFIED #5   // Shield
   ADD_STORE_ITEM SCRL80   LAST #1 #0 #0 IDENTIFIED #5   // Shocking Grasp
@@ -8170,7 +8185,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL9G   LAST #1 #0 #0 IDENTIFIED #2   // Abi Dalzim's Horrid Wilting
   ADD_STORE_ITEM SCRLB1   LAST #1 #0 #0 IDENTIFIED #2   // Bigby's Clenched Fist
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL03 LAST #1 #0 #0 IDENTIFIED #2   // Ghost Form
+    ADD_STORE_ITEM DVSCRL04 LAST #1 #0 #0 IDENTIFIED #2   // Ghost Form
   END
   ADD_STORE_ITEM SCRL9E   LAST #1 #0 #0 IDENTIFIED #2   // Incendiary Cloud
   ADD_STORE_ITEM SCRL9H   LAST #1 #0 #0 IDENTIFIED #2   // Maze
@@ -8178,7 +8193,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM SCRL8D   LAST #1 #0 #0 IDENTIFIED #2   // Spell Turning / Mind Blank
   END
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL04   LAST #1 #0 #0 IDENTIFIED #2   // Monster Summoning VIII
+    ADD_STORE_ITEM DVSCRL05   LAST #1 #0 #0 IDENTIFIED #2   // Monster Summoning VIII
   END
   ADD_STORE_ITEM SCRL9A   LAST #1 #0 #0 IDENTIFIED #2   // Pierce Shield
   ADD_STORE_ITEM SCRL9J   LAST #1 #0 #0 IDENTIFIED #2   // Power Word: Blind
@@ -8201,7 +8216,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL9S   LAST #1 #0 #0 IDENTIFIED #2   // Imprisonment
   ADD_STORE_ITEM SCRL9T   LAST #1 #0 #0 IDENTIFIED #2   // Meteor Swarm
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM DVSCRL05   LAST #1 #0 #0 IDENTIFIED #2   // Monster Summoning IX
+    ADD_STORE_ITEM DVSCRL06   LAST #1 #0 #0 IDENTIFIED #2   // Monster Summoning IX
   END
   ADD_STORE_ITEM SCRL9U   LAST #1 #0 #0 IDENTIFIED #2   // Power Word: Kill
   ADD_STORE_ITEM SCRL9Y   LAST #1 #0 #0 IDENTIFIED #2   // Shapechange
