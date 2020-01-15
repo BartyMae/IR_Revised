@@ -1072,7 +1072,7 @@ COPY ~%source%/WAND_OF_FEAR.tpa~ ~%target%~
     SAY NAME1 @4092
 
   // clone an already identified version for Tutu/BGT/BGEE
-  ACTION_IF (GAME_IS ~tutu tutu_totsc bgee bgt~) BEGIN
+  ACTION_IF (GAME_IS ~tutu tutu_totsc bgee bgt eet~) BEGIN
     OUTER_TEXT_SPRINT id ~wand12~
 
     ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
