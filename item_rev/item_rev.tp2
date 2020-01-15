@@ -331,7 +331,7 @@ INCLUDE ~item_rev/components/multiclass_divine.tpa~
 // Druids Only
 
 BEGIN @51
-DESIGNATED 1091
+DESIGNATED 1094
 SUBCOMPONENT @17
 //REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~ /* || ENGINE_IS ~iwdee~ */) @9002 // implicit
 
@@ -344,7 +344,7 @@ INCLUDE ~item_rev/components/multiclass_divine.tpa~
 // Clerics and Druids
 
 BEGIN @40
-DESIGNATED 1092
+DESIGNATED 1091
 SUBCOMPONENT @17
 //REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~ /* || ENGINE_IS ~iwdee~ */) @9002 // implicit
 
@@ -357,7 +357,7 @@ INCLUDE ~item_rev/components/multiclass_divine.tpa~
 // Clerics Only, With Halved Specialization
 
 BEGIN @41
-DESIGNATED 1093
+DESIGNATED 1092
 SUBCOMPONENT @17
 //REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~ /* || ENGINE_IS ~iwdee~ */) @9002 // implicit
 
@@ -370,7 +370,7 @@ INCLUDE ~item_rev/components/multiclass_divine.tpa~
 // Druids Only, With Halved Specialization
 
 BEGIN @52
-DESIGNATED 1094
+DESIGNATED 1095
 SUBCOMPONENT @17
 //REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~ /* || ENGINE_IS ~iwdee~ */) @9002 // implicit
 
@@ -383,7 +383,7 @@ INCLUDE ~item_rev/components/multiclass_divine.tpa~
 // Clerics and Druids, With Halved Specialization
 
 BEGIN @42
-DESIGNATED 1095
+DESIGNATED 1093
 SUBCOMPONENT @17
 //REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~ /* || ENGINE_IS ~iwdee~ */) @9002 // implicit
 
