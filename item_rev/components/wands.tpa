@@ -54,26 +54,27 @@ END
 //  patching
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY wand BEGIN
-  wand02 => 11 // fear
-  wand03 => 10 // magic missiles
-  wand04 => 14 // paralyzation
-  wand05 => 12 // fire
+  wand02 => 12 // fear
+  wand03 => 11 // magic missiles
+  wand04 => 13 // paralyzation
+  wand05 => 13 // fire
   wand06 => 13 // frost
-  wand07 => 12 // lightning
-  wand08 => 10 // sleep
-  wand09 => 13 // polymorphing
+  wand07 => 13 // lightning
+  wand08 => 11 // sleep
+  wand09 => 14 // polymorphing
   wand10 => 14 // monster summoning
   wand12 => 10 // wonder
-  wand13 => 14 // cloudkill
+  wand13 => 15 // cloudkill
   wand14 => 11 // web
-  wand15 => 14 // apprenti
-  wand18 => 15 // spell striking
-  wand19 => 13 // cursing
-  wand99 => 10 // magic missile
+  wand15 => 15 // apprenti
+  wand18 => 16 // spell striking
+  wand19 => 12 // cursing
+  wand99 => 11 // magic missile
   ohdwand1 => 11 // glitterdust
   ohnwand1 => 14 // whips
   o#llwa => 14 // from sellswords
-  bgwand12 => 10 // from bgt
+  bgwand12 => 11 // from bgt
+  wand12_ => 11 // from bgt
 END
 
 ACTION_PHP_EACH wand AS ind => res BEGIN
