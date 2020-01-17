@@ -49,7 +49,7 @@ OUTER_SET is_bgee = 0
 OUTER_SET is_bg2ee = 0
 OUTER_SET is_eet = 0
 
-ACTION_IF (GAME_IS ~tob bg2ee~ AND NOT GAME_IS ~bgt~) BEGIN
+ACTION_IF (GAME_IS ~tob~ AND NOT GAME_IS ~bgt~) BEGIN
   OUTER_SET is_bg2 = 1
 END
 ELSE ACTION_IF (GAME_IS ~bgt~) BEGIN
