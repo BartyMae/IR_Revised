@@ -1574,8 +1574,8 @@ COPY ~%source%/POTION_OF_STONE_FORM.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/MAREKS_POTION_OF_ANTIDOTE.tpa
-  /* COPY ~item_rev/itm/potn47.spl~ ~override~
-    SAY NAME1 @3090 */
+  COPY ~item_rev/itm/potn47.spl~ ~override~
+    SAY NAME1 @3060
 >>>>>>>>
 COPY ~%source%/MAREKS_POTION_OF_ANTIDOTE.tpa~ ~%target%~
 
