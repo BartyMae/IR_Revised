@@ -467,6 +467,8 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
 
   COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override
     LPF DELETE_SPELL_EFFECT
+      INT_VAR opcode_to_delete = 321
+    LPF DELETE_SPELL_EFFECT
       INT_VAR opcode_to_delete = 328
     END
   BUT_ONLY
@@ -474,8 +476,74 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
 END
 
 
-ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN // EE fixes
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob tutu tutu_totsc bgt bg2ee eet~) BEGIN // BGEE shield fixes
+  COPY ~item_rev/itm/shld01a.itm~ ~override/shld01.itm~
+    SAY NAME1 @1939    SAY NAME2 @1939
+    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
+  COPY ~item_rev/itm/shld02a.itm~ ~override/shld02.itm~
+    SAY NAME1 @1939    SAY NAME2 @1941
+    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1943
+  COPY ~item_rev/itm/shld03a.itm~ ~override/shld03.itm~
+    SAY NAME1 @1501    SAY NAME2 @1501
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
+  COPY ~item_rev/itm/shld04a.itm~ ~override/shld04.itm~
+    SAY NAME1 @1501    SAY NAME2 @1945
+    SAY UNIDENTIFIED_DESC @1503 SAY IDENTIFIED_DESC @1946
+  COPY ~item_rev/itm/shld05a.itm~ ~override/shld05.itm~
+    SAY NAME1 @1947    SAY NAME2 @1947
+    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
+  COPY ~item_rev/itm/shld06a.itm~ ~override/shld06.itm~
+    SAY NAME1 @1947    SAY NAME2 @1949
+    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1951
+  COPY ~item_rev/itm/shld07a.itm~ ~override/shld07.itm~
+    SAY NAME1 @1947    SAY NAME2 @1953
+    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1954
+  COPY ~item_rev/itm/shld08a.itm~ ~override/shld08.itm~
+    SAY NAME1 @1955    SAY NAME2 @1955
+    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
+  COPY ~item_rev/itm/shld09a.itm~ ~override/shld09.itm~
+    SAY NAME1 @1955    SAY NAME2 @1955
+    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
+  COPY ~item_rev/itm/shld10a.itm~ ~override/shld10.itm~
+    SAY NAME1 @1955    SAY NAME2 @1955
+    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
+  COPY ~item_rev/itm/shld11a.itm~ ~override/shld11.itm~
+    SAY NAME1 @1939    SAY NAME2 @1939
+    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
+  COPY ~item_rev/itm/shld12a.itm~ ~override/shld12.itm~
+    SAY NAME1 @1939    SAY NAME2 @1939
+    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
+  COPY ~item_rev/itm/shld13a.itm~ ~override/shld13.itm~
+    SAY NAME1 @1501    SAY NAME2 @1501
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
+  COPY ~item_rev/itm/shld14a.itm~ ~override/shld14.itm~
+    SAY NAME1 @1501    SAY NAME2 @1501
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
+  COPY ~item_rev/itm/shld15a.itm~ ~override/shld15.itm~
+    SAY NAME1 @1947    SAY NAME2 @1947
+    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
+  COPY ~item_rev/itm/shld16a.itm~ ~override/shld16.itm~
+    SAY NAME1 @1947    SAY NAME2 @1947
+    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
+  COPY ~item_rev/itm/shld17a.itm~ ~override/shld17.itm~
+    SAY NAME1 @1955    SAY NAME2 @1957
+    SAY UNIDENTIFIED_DESC @1958 SAY IDENTIFIED_DESC @1959
+  COPY ~item_rev/itm/shld19a.itm~ ~override/shld19.itm~
+    SAY NAME1 @1501    SAY NAME2 @1960
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1961
+  COPY ~item_rev/itm/shld28a.itm~ ~override/shld28.itm~
+    SAY NAME1 @1939    SAY NAME2 @1978
+    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
+  COPY ~item_rev/itm/shld29a.itm~ ~override/shld29.itm~
+    SAY NAME1 @1501    SAY NAME2 @1980
+    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
+  COPY ~item_rev/itm/shld30a.itm~ ~override/shld30.itm~
+    SAY NAME1 @1947    SAY NAME2 @1982
+    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1983
+END
+	
 
+ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN // EE fixes
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // fix Shaman usabilities
   PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
     READ_SHORT 0x1c type
