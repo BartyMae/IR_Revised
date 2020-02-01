@@ -436,7 +436,7 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~cedelich.cre~) BEGIN
   COPY_EXISTING cedelich.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM misc73 // Remove duplicate
-	  ADD_CRE_ITEM misc73 #1 #0 #0 NONE INV1  
+	  ADD_CRE_ITEM misc73 #1 #0 #0 NONE INV1
     END
 	BUT_ONLY
 END

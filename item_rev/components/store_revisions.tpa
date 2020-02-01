@@ -4010,6 +4010,7 @@ COPY_EXISTING grtomb01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATC
   END
 END BUT_ONLY
 
+/*
 COPY_EXISTING tokcre01.dlg override
   DECOMPILE_DLG_TO_D
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~OR(4)
@@ -4033,6 +4034,7 @@ DestroySelf()~
 ~Global("Item1","AR1514",1)
 Global("Item4","AR1514",1)~
   COMPILE_D_TO_DLG
+*/
 
 COPY_EXISTING temtalos.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy END
