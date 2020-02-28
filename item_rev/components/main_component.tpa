@@ -195,5 +195,5 @@ COPY - ~item_rev/components/main/items.2da~ ~item_rev/components/main~
 /*------------------Iron Crisis-----------------*/
 INCLUDE ~item_rev/lib/iron_crisis.tpa~
 
-/*-------------------EE Fixes-------------------*/
+/*------------------IRR Fixes-------------------*/
 INCLUDE ~item_rev/components/main/fixes.tpa~
