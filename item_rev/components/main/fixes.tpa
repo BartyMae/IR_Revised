@@ -1,4 +1,4 @@
-//SR haste/slow/petrification sectype fixes
+// SR haste/slow/petrification sectype fixes
 ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) THEN BEGIN // SR check
 
 ADD_SECTYPE ~k1#Haste~ @1
@@ -398,17 +398,12 @@ END
 BUT_ONLY
 END
 
-// Carsomyr +4 Dispel Magic
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN // Carsomyr +4 Dispel Magic
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h10.itm~) THEN BEGIN
     COPY_EXISTING ~sw2h10.itm~ ~override~
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
   END
-END
-
-// Carsomyr +5 Dispel Magic
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h19.itm~) THEN BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h19.itm~) THEN BEGIN // Carsomyr +5 Dispel Magic
     COPY_EXISTING ~sw2h19.itm~ ~override~
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
   END
@@ -416,190 +411,9 @@ END
 
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~ohringwi.itm~) THEN BEGIN // BG2FP / BG2EE Ring of Wizardry fix
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ring08.itm~) THEN BEGIN
-    COPY_EXISTING ~ring08.itm~ ~override/ohringwi.itm~
-  END
-END
 
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~boot02zh.itm~) THEN BEGIN // BGEE Zhurlong's Boots of Stealth
-  ACTION_IF (FILE_EXISTS_IN_GAME ~boot02.itm~) THEN BEGIN
-    COPY_EXISTING ~boot02.itm~ ~override/boot02zh.itm~
-  END
-END
-
-ACTION_IF (GAME_IS ~tutu tutu_totsc~ AND NOT GAME_IS ~bg2 tob bgt bgee bg2ee eet~) BEGIN // BG1 fixes
-  COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude fix
-    SAY NAME1 @1085    SAY NAME2 @1099
-    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
-  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
-    SAY NAME1 @4004
-  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet fix
-    SAY NAME1 @1780    SAY NAME2 @1780
-    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
-  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane fix
-    SAY NAME1 @1920    SAY NAME2 @1929
-    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
-  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge fix
-    SAY NAME1 @1760    SAY NAME2 @2426
-    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor fix
-    SAY NAME1 @1636    SAY NAME2 @2573
-    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
-END
-
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_tostc bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
-  COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude fix
-    SAY NAME1 @1085    SAY NAME2 @1099
-    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
-    SAY NAME1 @4004
-  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet fix
-    SAY NAME1 @1780    SAY NAME2 @1780
-    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane fix
-    SAY NAME1 @1920    SAY NAME2 @1929
-    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge fix
-    SAY NAME1 @1760    SAY NAME2 @2426
-    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor fix
-    SAY NAME1 @1636    SAY NAME2 @2573
-    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
-	LPF update_item_descriptions_to_bgee END
-END
-
-ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN // non-EE fixes
-  COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override // remove spellstates
-    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
-    PHP_EACH ab_array AS int => ab_off BEGIN
-      GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
-      PHP_EACH fx_array AS int => fx_off BEGIN
-        READ_SHORT fx_off fx_type
-        PATCH_IF fx_type > 318 BEGIN
-          //PATCH_PRINT "%SOURCE_RES%.spl has invalid opcode %fx_type%"
-        END
-      END
-    END
-  BUT_ONLY
-
-  COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override
-    LPF DELETE_SPELL_EFFECT
-      INT_VAR opcode_to_delete = 321
-	END
-    LPF DELETE_SPELL_EFFECT
-      INT_VAR opcode_to_delete = 328
-    END
-  BUT_ONLY
-  //PRINT "All invalid opcodes 328 successfully removed!"
-END
-
-
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
-  COPY ~item_rev/itm/shld01a.itm~ ~override/shld01.itm~
-    SAY NAME1 @1939    SAY NAME2 @1939
-    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld02a.itm~ ~override/shld02.itm~
-    SAY NAME1 @1939    SAY NAME2 @1941
-    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1943
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld03a.itm~ ~override/shld03.itm~
-    SAY NAME1 @1501    SAY NAME2 @1501
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld04a.itm~ ~override/shld04.itm~
-    SAY NAME1 @1501    SAY NAME2 @1945
-    SAY UNIDENTIFIED_DESC @1503 SAY IDENTIFIED_DESC @1946
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld05a.itm~ ~override/shld05.itm~
-    SAY NAME1 @1947    SAY NAME2 @1947
-    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld06a.itm~ ~override/shld06.itm~
-    SAY NAME1 @1947    SAY NAME2 @1949
-    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1951
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld07a.itm~ ~override/shld07.itm~
-    SAY NAME1 @1947    SAY NAME2 @1953
-    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1954
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld08a.itm~ ~override/shld08.itm~
-    SAY NAME1 @1955    SAY NAME2 @1955
-    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld09a.itm~ ~override/shld09.itm~
-    SAY NAME1 @1955    SAY NAME2 @1955
-    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld10a.itm~ ~override/shld10.itm~
-    SAY NAME1 @1955    SAY NAME2 @1955
-    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld11a.itm~ ~override/shld11.itm~
-    SAY NAME1 @1939    SAY NAME2 @1939
-    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld12a.itm~ ~override/shld12.itm~
-    SAY NAME1 @1939    SAY NAME2 @1939
-    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld13a.itm~ ~override/shld13.itm~
-    SAY NAME1 @1501    SAY NAME2 @1501
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld14a.itm~ ~override/shld14.itm~
-    SAY NAME1 @1501    SAY NAME2 @1501
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld15a.itm~ ~override/shld15.itm~
-    SAY NAME1 @1947    SAY NAME2 @1947
-    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld16a.itm~ ~override/shld16.itm~
-    SAY NAME1 @1947    SAY NAME2 @1947
-    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld17a.itm~ ~override/shld17.itm~
-    SAY NAME1 @1955    SAY NAME2 @1957
-    SAY UNIDENTIFIED_DESC @1958 SAY IDENTIFIED_DESC @1959
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld19a.itm~ ~override/shld19.itm~
-    SAY NAME1 @1501    SAY NAME2 @1960
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1961
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld28a.itm~ ~override/shld28.itm~
-    SAY NAME1 @1939    SAY NAME2 @1978
-    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld29a.itm~ ~override/shld29.itm~
-    SAY NAME1 @1501    SAY NAME2 @1980
-    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
-	LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld30a.itm~ ~override/shld30.itm~
-    SAY NAME1 @1947    SAY NAME2 @1982
-    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1983
-	LPF update_item_descriptions_to_bgee END
-END
-	
-
-ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN // EE fixes
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // fix Shaman usabilities
-  PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
-    READ_SHORT 0x1c type
-    READ_BYTE 0x31 prof
-    PATCH_IF (%prof% = 92) OR (%prof% = 105) OR (%type% = 5) BEGIN   // axes or shortbows or arrows
-      WRITE_BYTE 0x21 (THIS BAND 0b10111111)
-      LPF DELETE_EFFECT INT_VAR silent = 1 match_opcode  = 319 match_target = 1 match_power = 0 match_parameter2 = 5 match_parameter1 = 11 match_timing = 2 END
-      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 power = 0 parameter2 = 5 parameter1 = 11 timing = 2 END
-    END
-  END
-BUT_ONLY
+// EE fixes
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 
 INCLUDE ~item_rev/lib/identify_fix.tpa~
 INCLUDE ~item_rev/lib/identify_item.tpa~
@@ -2803,160 +2617,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   END
   BUT_ONLY_IF_IT_CHANGES
   END
-  
-  // Staff fixes
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf01.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf01.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf02.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf02.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf03.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf03.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf04.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf04.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf05.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf05.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf08.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf09.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf09.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf10.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf10.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf11.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf11.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~GS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf12.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf12.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf13.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf13.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf14.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf14.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf15.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf15.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf16.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf16.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf17.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf17.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf18.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf18.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf19.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf19.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf20.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf20.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf21.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf21.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~GS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf22.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf22.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~GS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf23.itm~) THEN BEGIN //
-    COPY_EXISTING ~staf23.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~wastaff.itm~) THEN BEGIN //
-    COPY_EXISTING ~wastaff.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~npstaf.itm~) THEN BEGIN //
-    COPY_EXISTING ~npstaf.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ //animation type
-    END
-  END
-  
-  //Drowcraft fixes
-  ACTION_IF (FILE_EXISTS_IN_GAME ~dwblun01.itm~) THEN BEGIN //
-    COPY_EXISTING ~dwblun01.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~F0~ //animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~dwshld01.itm~) THEN BEGIN //
-    COPY_EXISTING ~dwshld01.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~C7~ //animation type
-    END
-  END
 
   //Projectiles fixes
 
@@ -3955,1217 +3615,890 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) THEN BEGIN
       END
     BUT_ONLY_IF_IT_CHANGES
   END
+
+  // Staff fixes
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf01.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf01.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~QS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf02.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf02.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q2~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf03.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf03.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~QS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf04.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf04.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~QS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf05.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf05.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q2~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf08.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q2~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf09.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf09.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q4~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf10.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf10.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q4~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf11.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf11.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~GS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf12.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf12.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q2~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf13.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf13.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q4~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf14.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf14.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q3~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf15.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf15.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q4~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf16.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf16.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~QS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf17.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf17.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q4~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf18.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf18.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q3~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf19.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf19.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q3~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf20.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf20.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q3~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf21.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf21.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~GS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf22.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf22.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~GS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf23.itm~) THEN BEGIN //
+    COPY_EXISTING ~staf23.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~Q3~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wastaff.itm~) THEN BEGIN //
+    COPY_EXISTING ~wastaff.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~QS~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~npstaf.itm~) THEN BEGIN //
+    COPY_EXISTING ~npstaf.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~QS~ //animation type
+    END
+  END
+  
+  //Drowcraft fixes
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dwblun01.itm~) THEN BEGIN //
+    COPY_EXISTING ~dwblun01.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~F0~ //animation type
+    END
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dwshld01.itm~) THEN BEGIN //
+    COPY_EXISTING ~dwshld01.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      WRITE_ASCII 0x22 ~C7~ //animation type
+    END
+  END
+
+// EE projectile fixes
+
+ACTION_FOR_EACH resource IN
+  ~brac18~   // Gloves of Missile Snaring
+  ~shld24~   // Reflection Shield
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = 55 // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow01% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT  
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow07% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow10% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow11% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow15% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe08% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe09% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe10% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe16% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt01% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt06% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt09% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull06% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg11% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg12% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg16% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart01% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number 
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus 
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart08% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+	END	BUT_ONLY_IF_IT_CHANGES
+  END
 END
 
 
-//EE projectile fixes
-ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN // Gloves of Missile Snaring fix
-ACTION_IF (FILE_EXISTS_IN_GAME ~BRAC18.ITM~) THEN BEGIN
-COPY_EXISTING ~BRAC18.ITM~ ~override~
-  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-  SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 55 // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow01% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT  
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow07% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow10% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow11% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow15% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe08% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe09% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe10% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe16% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt01% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt06% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt09% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull06% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg11% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg12% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg16% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart01% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart08% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+// EE quantity fixes
 
+// Arrows, Bolts, Bullets, and Darts
+ACTION_FOR_EACH resource IN
+  ~arow01~
+  ~arow02~
+  ~arow03~
+  ~arow04~
+  ~arow05~
+  ~arow06~
+  ~arow07~
+  ~arow08~
+  ~arow09~
+  ~arow10~
+  ~arow11~
+  ~arow14~
+  ~arow15~
+  ~bolt01~
+  ~bolt02~
+  ~bolt03~
+  ~bolt04~
+  ~bolt05~
+  ~bolt06~
+  ~bolt07~
+  ~bolt08~
+  ~bolt09~
+  ~sahbolt~
+  ~kuobolt~
+  ~kuobolt2~
+  ~kuobolt3~
+  ~bull01~
+  ~bull02~
+  ~bull03~
+  ~bull04~
+  ~bull05~
+  ~bull06~
+  ~dart01~
+  ~dart02~
+  ~dart03~
+  ~dart04~
+  ~dart05~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      WRITE_SHORT 0x38 0x50
+	END
   END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  END
+END
 
-ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee~) BEGIN // Gloves of Missile Snaring fix
-ACTION_IF (FILE_EXISTS_IN_GAME ~SHLD24.ITM~) THEN BEGIN
-COPY_EXISTING ~SHLD24.ITM~ ~override~
-  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-  SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = 55 // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow01% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT  
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow07% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow10% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow11% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1arow15% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe08% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe09% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe10% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1axe16% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt01% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt06% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bolt09% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT 
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1bull06% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg11% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg12% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dagg16% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart01% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart02% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart03% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart04% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart05% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-SET opcode = 83			// Set opcode
-SET target = 1			// target type
-SET timing = 2			// timing type
-SET power = 0			// power
-SET resist_dispel = 0	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number 
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus 
-SET parameter1 = 0 // param1
-SET parameter2 = (%1dart08% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+// Throwing Daggers and Throwing Axes
+ACTION_FOR_EACH resource IN
+  ~dagg05~
+  ~dagg16~
+  ~ax1h04~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      WRITE_SHORT 0x38 0x28
+	END
+  END
+END
 
+// Potions
+ACTION_FOR_EACH resource IN
+  ~potn02~
+  ~potn03~
+  ~potn04~
+  ~potn05~
+  ~potn06~
+  ~potn07~
+  ~potn08~
+  ~potn09~
+  ~potn10~
+  ~potn11~
+  ~potn12~
+  ~potn13~
+  ~potn14~
+  ~potn15~
+  ~potn16~
+  ~potn17~
+  ~potn18~
+  ~potn19~
+  ~potn20~
+  ~potn21~
+  ~potn22~
+  ~potn23~
+  ~potn24~
+  ~potn25~
+  ~potn26~
+  ~potn27~
+  ~potn28~
+  ~potn29~
+  ~potn30~
+  ~potn31~
+  ~potn32~
+  ~potn33~
+  ~potn34~
+  ~potn35~
+  ~potn36~
+  ~potn37~
+  ~potn38~
+  ~potn39~
+  ~potn40~
+  ~potn41~
+  ~potn42~
+  ~potn43~
+  ~potn44~
+  ~potn45~
+  ~potn46~
+  ~potn52~
+  ~potn55~  
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      WRITE_SHORT 0x38 0x18
+	END
   END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-  END
-
+END
 
 // Spell Protections fixes for EEs
-ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~amul25.spl~) THEN BEGIN // Amulet of Spell Warding's Spell Deflection
 COPY_EXISTING ~amul25.spl~ ~override~
@@ -5236,11 +4569,205 @@ LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
 END
 
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_tostc bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
+  COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
+    SAY NAME1 @1085    SAY NAME2 @1099
+    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
+    SAY NAME1 @4004
+  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
+    SAY NAME1 @1780    SAY NAME2 @1780
+    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane
+    SAY NAME1 @1920    SAY NAME2 @1929
+    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
+    SAY NAME1 @1760    SAY NAME2 @2426
+    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor
+    SAY NAME1 @1636    SAY NAME2 @2573
+    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
+	LPF update_item_descriptions_to_bgee END
+  // Shields
+  COPY ~item_rev/itm/shld01a.itm~ ~override/shld01.itm~
+    SAY NAME1 @1939    SAY NAME2 @1939
+    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld02a.itm~ ~override/shld02.itm~
+    SAY NAME1 @1939    SAY NAME2 @1941
+    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1943
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld03a.itm~ ~override/shld03.itm~
+    SAY NAME1 @1501    SAY NAME2 @1501
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld04a.itm~ ~override/shld04.itm~
+    SAY NAME1 @1501    SAY NAME2 @1945
+    SAY UNIDENTIFIED_DESC @1503 SAY IDENTIFIED_DESC @1946
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld05a.itm~ ~override/shld05.itm~
+    SAY NAME1 @1947    SAY NAME2 @1947
+    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld06a.itm~ ~override/shld06.itm~
+    SAY NAME1 @1947    SAY NAME2 @1949
+    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1951
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld07a.itm~ ~override/shld07.itm~
+    SAY NAME1 @1947    SAY NAME2 @1953
+    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1954
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld08a.itm~ ~override/shld08.itm~
+    SAY NAME1 @1955    SAY NAME2 @1955
+    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld09a.itm~ ~override/shld09.itm~
+    SAY NAME1 @1955    SAY NAME2 @1955
+    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld10a.itm~ ~override/shld10.itm~
+    SAY NAME1 @1955    SAY NAME2 @1955
+    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld11a.itm~ ~override/shld11.itm~
+    SAY NAME1 @1939    SAY NAME2 @1939
+    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld12a.itm~ ~override/shld12.itm~
+    SAY NAME1 @1939    SAY NAME2 @1939
+    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld13a.itm~ ~override/shld13.itm~
+    SAY NAME1 @1501    SAY NAME2 @1501
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld14a.itm~ ~override/shld14.itm~
+    SAY NAME1 @1501    SAY NAME2 @1501
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld15a.itm~ ~override/shld15.itm~
+    SAY NAME1 @1947    SAY NAME2 @1947
+    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld16a.itm~ ~override/shld16.itm~
+    SAY NAME1 @1947    SAY NAME2 @1947
+    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld17a.itm~ ~override/shld17.itm~
+    SAY NAME1 @1955    SAY NAME2 @1957
+    SAY UNIDENTIFIED_DESC @1958 SAY IDENTIFIED_DESC @1959
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld19a.itm~ ~override/shld19.itm~
+    SAY NAME1 @1501    SAY NAME2 @1960
+    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1961
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld28a.itm~ ~override/shld28.itm~
+    SAY NAME1 @1939    SAY NAME2 @1978
+    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld29a.itm~ ~override/shld29.itm~
+    SAY NAME1 @1501    SAY NAME2 @1980
+    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
+	LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/shld30a.itm~ ~override/shld30.itm~
+    SAY NAME1 @1947    SAY NAME2 @1982
+    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1983
+	LPF update_item_descriptions_to_bgee END
+END
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // Fix Shaman usabilities
+  PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
+    READ_SHORT 0x1c type
+    READ_BYTE 0x31 prof
+    PATCH_IF (%prof% = 92) OR (%prof% = 105) OR (%type% = 5) BEGIN // axes or shortbows or arrows
+      WRITE_BYTE 0x21 (THIS BAND 0b10111111)
+      LPF DELETE_EFFECT INT_VAR silent = 1 match_opcode  = 319 match_target = 1 match_power = 0 match_parameter2 = 5 match_parameter1 = 11 match_timing = 2 END
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 power = 0 parameter2 = 5 parameter1 = 11 timing = 2 END
+    END
+  END
+BUT_ONLY
+
+ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~) BEGIN // EET fixes
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) THEN BEGIN
+    COPY_EXISTING ~helm15.itm~ ~override/helm15_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~misc89_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgmisc89.itm~ ~override/misc89_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ring08_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgring08.itm~ ~override/ring08_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08_.itm~) THEN BEGIN
+    COPY_EXISTING ~staf08.itm~ ~override/staf08_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h09_.itm~) THEN BEGIN
+    COPY_EXISTING ~sw1h09.itm~ ~override/sw1h09_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h07_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgsw2h07.itm~ ~override/sw2h07_.itm~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wand12_.itm~) THEN BEGIN
+    COPY_EXISTING ~bgwand12.itm~ ~override/wand12_.itm~
+  END
+END
+
 END
 
 
-//Stacking fixes
-DEFINE_PATCH_MACRO ~nostack~ BEGIN
+// Non-EE fixes
+
+ACTION_IF (GAME_IS ~tutu tutu_totsc~ AND NOT GAME_IS ~bg2 tob bgt bgee bg2ee eet~) BEGIN // BG1 fixes
+  COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
+    SAY NAME1 @1085    SAY NAME2 @1099
+    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
+  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
+    SAY NAME1 @4004
+  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
+    SAY NAME1 @1780    SAY NAME2 @1780
+    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
+  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane
+    SAY NAME1 @1920    SAY NAME2 @1929
+    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
+  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
+    SAY NAME1 @1760    SAY NAME2 @2426
+    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
+  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor
+    SAY NAME1 @1636    SAY NAME2 @2573
+    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
+END
+
+ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN // Invalid opcodes fix
+  COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override // remove spellstates
+    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
+    PHP_EACH ab_array AS int => ab_off BEGIN
+      GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
+      PHP_EACH fx_array AS int => fx_off BEGIN
+        READ_SHORT fx_off fx_type
+        PATCH_IF fx_type > 318 BEGIN
+          //PATCH_PRINT "%SOURCE_RES%.spl has invalid opcode %fx_type%"
+        END
+      END
+    END
+  BUT_ONLY
+  COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override
+    LPF DELETE_SPELL_EFFECT
+      INT_VAR opcode_to_delete = 321
+	END
+    LPF DELETE_SPELL_EFFECT
+      INT_VAR opcode_to_delete = 328
+    END
+  BUT_ONLY
+  //PRINT "All invalid opcodes 321 and 328 successfully removed!"
+END
+
+
+// All games
+
+DEFINE_PATCH_MACRO ~nostack~ BEGIN // Stacking fixes
 SET opcode = 0      // Set opcode
 SET target = 0      // target type
 SET timing = 2      // timing type
@@ -5280,156 +4807,134 @@ BEGIN
   END
 END
 
-
-//EE quantity fixes
-ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN // EE fixes
-
-//Arrows, Bolts, Bullets, and Darts
-ACTION_FOR_EACH resource IN
-  ~arow01~
-  ~arow02~
-  ~arow03~
-  ~arow04~
-  ~arow05~
-  ~arow06~
-  ~arow07~
-  ~arow08~
-  ~arow09~
-  ~arow10~
-  ~arow11~
-  ~arow14~
-  ~arow15~
-  ~bolt01~
-  ~bolt02~
-  ~bolt03~
-  ~bolt04~
-  ~bolt05~
-  ~bolt06~
-  ~bolt07~
-  ~bolt08~
-  ~bolt09~
-  ~sahbolt~
-  ~kuobolt~
-  ~kuobolt2~
-  ~kuobolt3~
-  ~bull01~
-  ~bull02~
-  ~bull03~
-  ~bull04~
-  ~bull05~
-  ~bull06~
-  ~dart01~
-  ~dart02~
-  ~dart03~
-  ~dart04~
-  ~dart05~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
-    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
-      WRITE_SHORT 0x38 0x50
-	END
-  END
+// BG2 broken areas fix
+ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) THEN BEGIN
+  COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
+  COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
 END
 
-//Throwing Daggers and Throwing Axes
-ACTION_FOR_EACH resource IN
-  ~dagg05~
-  ~dagg16~
-  ~ax1h04~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
-    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
-      WRITE_SHORT 0x38 0x28
-	END
-  END
-END
+// Wand charges fixes
 
-//Potions
-ACTION_FOR_EACH resource IN
-  ~potn02~
-  ~potn03~
-  ~potn04~
-  ~potn05~
-  ~potn06~
-  ~potn07~
-  ~potn08~
-  ~potn09~
-  ~potn10~
-  ~potn11~
-  ~potn12~
-  ~potn13~
-  ~potn14~
-  ~potn15~
-  ~potn16~
-  ~potn17~
-  ~potn18~
-  ~potn19~
-  ~potn20~
-  ~potn21~
-  ~potn22~
-  ~potn23~
-  ~potn24~
-  ~potn25~
-  ~potn26~
-  ~potn27~
-  ~potn28~
-  ~potn29~
-  ~potn30~
-  ~potn31~
-  ~potn32~
-  ~potn33~
-  ~potn34~
-  ~potn35~
-  ~potn36~
-  ~potn37~
-  ~potn38~
-  ~potn39~
-  ~potn40~
-  ~potn41~
-  ~potn42~
-  ~potn43~
-  ~potn44~
-  ~potn45~
-  ~potn46~
-  ~potn52~
-  ~potn55~  
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
-    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
-      WRITE_SHORT 0x38 0x18
-	END
+COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+    PATCH_FOR_EACH ~wand~ IN
+      ~WAND02~   // Wand of Fear
+      ~WAND03~   // Wand of Magic Missile
+      ~WAND04~   // Wand of Paralyzation
+      ~WAND05~   // Wand of Fire
+      ~WAND06~   // Wand of Frost
+      ~WAND07~   // Wand of Lightning
+      ~WAND08~   // Wand of Sleep
+      ~WAND09~   // Wand of Polymorphing
+      ~WAND10~   // Wand of Monster Summoning
+      ~WAND11~   // Wand of the Heavens
+      ~WAND12~   // Wand of Magic Missiles (BGEE)
+      ~BGWAND12~ // Wand of Magic Missiles (BGT)
+      ~WAND12_~  // Wand of Magic Missiles (EET)
+      ~WAND13~   // Wand of Cloudkill
+      ~WAND18~   // Wand of Spell Striking
+      ~WAND19~   // Wand of Cursing
+      ~BDWAND01~ // Wand of Water Elemental Summoning (BGSOD)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%wand%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%wand%~) BEGIN
+            READ_SHORT (itm_offset + 0xa) charges_1
+            PATCH_IF (charges_1 > 10) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%wand%.itm~, primary charges: %charges_1% => setting them to 10..."
+              WRITE_SHORT (itm_offset + 0xa) 10
+            END
+          END
+        END
+      END
+    END
   END
-END
+BUT_ONLY
 
-END
+COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+    PATCH_FOR_EACH ~wand~ IN
+      ~WAND02~   // Wand of Fear
+      ~WAND03~   // Wand of Magic Missile
+      ~WAND04~   // Wand of Paralyzation
+      ~WAND05~   // Wand of Fire
+      ~WAND06~   // Wand of Frost
+      ~WAND07~   // Wand of Lightning
+      ~WAND08~   // Wand of Sleep
+      ~WAND09~   // Wand of Polymorphing
+      ~WAND10~   // Wand of Monster Summoning
+      ~WAND11~   // Wand of the Heavens
+      ~WAND12~   // Wand of Magic Missiles (BGEE)
+      ~BGWAND12~ // Wand of Magic Missiles (BGT)
+      ~WAND12_~  // Wand of Magic Missiles (EET)
+      ~WAND13~   // Wand of Cloudkill
+      ~WAND18~   // Wand of Spell Striking
+      ~WAND19~   // Wand of Cursing
+      ~BDWAND01~ // Wand of Water Elemental Summoning (BGSOD)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%wand%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%wand%~) BEGIN
+            READ_SHORT (itm_offset + 0xa) charges_1
+            PATCH_IF (charges_1 > 10) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%wand%.itm~, primary charges: %charges_1% => setting them to 10..."
+              WRITE_SHORT (itm_offset + 0xa) 10
+            END
+          END
+        END
+      END
+    END
+  END
+BUT_ONLY
 
-ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~) BEGIN // EET fixes
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) THEN BEGIN
-    COPY_EXISTING ~helm15.itm~ ~override/helm15_.itm~
+COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN
+    PATCH_FOR_EACH ~wand~ IN
+      ~WAND02~   // Wand of Fear
+      ~WAND03~   // Wand of Magic Missile
+      ~WAND04~   // Wand of Paralyzation
+      ~WAND05~   // Wand of Fire
+      ~WAND06~   // Wand of Frost
+      ~WAND07~   // Wand of Lightning
+      ~WAND08~   // Wand of Sleep
+      ~WAND09~   // Wand of Polymorphing
+      ~WAND10~   // Wand of Monster Summoning
+      ~WAND11~   // Wand of the Heavens
+      ~WAND12~   // Wand of Magic Missiles (BGEE)
+      ~BGWAND12~ // Wand of Magic Missiles (BGT)
+      ~WAND12_~  // Wand of Magic Missiles (EET)
+      ~WAND13~   // Wand of Cloudkill
+      ~WAND18~   // Wand of Spell Striking
+      ~WAND19~   // Wand of Cursing
+      ~BDWAND01~ // Wand of Water Elemental Summoning (BGSOD)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%wand%.itm~) BEGIN
+        GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
+        PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
+          GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
+          PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+            READ_ASCII (itm_offset + 0x0) resref
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%wand%~) BEGIN
+              READ_ASCII (container_offset + 0x0) container_name (32) NULL
+              READ_SHORT (itm_offset + 0xa) charges_1
+              PATCH_IF (charges_1 > 10) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%wand%.itm~, primary charges: %charges_1% => setting them to 10..."
+                WRITE_SHORT (itm_offset + 0xa) 10
+              END
+            END
+          END
+        END
+      END
+    END
   END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~misc89_.itm~) THEN BEGIN
-    COPY_EXISTING ~bgmisc89.itm~ ~override/misc89_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ring08_.itm~) THEN BEGIN
-    COPY_EXISTING ~bgring08.itm~ ~override/ring08_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08_.itm~) THEN BEGIN
-    COPY_EXISTING ~staf08.itm~ ~override/staf08_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h09_.itm~) THEN BEGIN
-    COPY_EXISTING ~sw1h09.itm~ ~override/sw1h09_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h07_.itm~) THEN BEGIN
-    COPY_EXISTING ~bgsw2h07.itm~ ~override/sw2h07_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~wand12_.itm~) THEN BEGIN
-    COPY_EXISTING ~bgwand12.itm~ ~override/wand12_.itm~
-  END
-END
+BUT_ONLY
 
+
+// Fixes for other mods
 ACTION_IF (FILE_EXISTS_IN_GAME ~X#RINGRO.itm~) THEN BEGIN // BG1 NPC Project Ring of Human Influence fix
   ACTION_IF (FILE_EXISTS_IN_GAME ~ring30.itm~) THEN BEGIN
     COPY_EXISTING ~ring30.itm~ ~override/X#RINGRO.itm~
