@@ -5371,7 +5371,7 @@ Weight: 0
 Usable By:
  Thief~
 @1648 = ~Karajah's Leather Armor +3~ // Karajah's Leather Armor +3: Karajah was Calimshan's undisputed champion of pit fighting for a decade. Wearing only a thin leather armor and spiked gauntlets, he would pummel his foes to the ground, seemingly impervious to their blows. Eventually, it was revealed that his armor was heavily enchanted at which point angry spectators threw him into the pit with a club-wielding ogre. The beast managed to break all of Karajah's bones while the armor remained as good as new...
-@1649 = ~Unused~
+@1649 = ~Edwin's Amulet~
 @1650 = ~Karajah's Life and Death
 Karajah was Calimshan's champion of pit fighting for a full decade, and seemingly unbeatable. His success, or so he claimed, was due to the mobility that his light armor afforded him. He may well have been unaware of the suit's magical qualities, but his peers ignored his claims of ignorance when enchantments were discovered. The armor survived the subsequent beating, whereas Karajah did not.
 
@@ -6293,7 +6293,16 @@ Not Usable By:
 Requires: 10 Intelligence
 Not Usable By:
  Wizard Slayer~
-@1780 = ~Edwin's Amulet~
+@1780 = ~This is Edwin's birthright, inlaid with his family stone.
+
+STATISTICS:
+
+Equipped Abilities:
+ Saving Throws: +3 bonus vs. death
+ Spell Memorization: arcane spellcasters can memorize two extra spells of each level from 1st to 9th
+
+Usable By:
+ Edwin~
 @1781 = ~This is Edwin's birthright, inlaid with his family stone.
 
 STATISTICS:
@@ -8310,8 +8319,8 @@ Not Usable By:
 
 STATISTICS:
 
-Combat Abilities:
- Striking: target suffers 5 crushing damage
+Combat Abilities (consumes charges):
+ Striking: target suffers 6 crushing damage
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
@@ -10716,7 +10725,7 @@ Even a Holy Relic as powerful as Carsomyr is made even greater when combined wit
 STATISTICS:
 
 Special Abilities:
- Dispel Magic (3x day)
+ Dispel Magic (3x per day)
 
 Equipped Abilities:
  Magic Resistance: +20% bonus
