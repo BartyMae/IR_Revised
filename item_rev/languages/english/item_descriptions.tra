@@ -6225,9 +6225,10 @@ Damage type: missile
 Weight: 2
 Launcher: Sling~
 @1760 = ~Two-Handed Sword~
-@1761 = ~Unholy Reaver +5~
+@1761 = ~Unholy Reaver +5~ //This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
 @1762 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
-@1763 = ~This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
+@1763 = ~Ir'revrykal
+This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god know only as "the One in the Void." To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possess such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as "Pain-Servant."
 
 STATISTICS:
 
@@ -10518,7 +10519,7 @@ Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever for
 STATISTICS:
 
 Special Abilities:
- Dispel Magic (1x per day)
+ Dispel Magic (3x per day)
 
 Equipped Abilities:
  Magic Resistance: +10% bonus
