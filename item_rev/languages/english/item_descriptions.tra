@@ -6449,12 +6449,12 @@ Requires: 5 Strength
 Usable By:
  Druid (single-class)~
 @1798 = ~Firecam Full Plate Mail +2~
-@1799 = ~This armor belonged to the Firecam House for generations but it never had seen such glory before passing to Keldorn's possession. Keldorn had proven himself to be one of the mightiest and more devoted champion of Torm, and the god himself blessed the suit bestowing his protection in the form of a magical shield. The armor can absorb a high amount of magical damage and any who dares to strike Torm's favourite suffers proper retribution as the god's shield damages the unfaithful ones with its magical energy.
+@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before passing to Keldorn. Keldorn had proven himself to be one of the mightiest and more devoted champion of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical shield. Anyone who dares attack Torm's favored suffers proper retribution as the god's shield strikes back with its magical energy.
 
 STATISTICS:
 
 Equipped Abilities:
- Magic Damage Resistance: +50% bonus
+ Saving Throws: +3 bonus vs. death
  Retribution: creatures who strike the wearer in melee suffer 1D4 magic damage
 
 Armor Class: -1
