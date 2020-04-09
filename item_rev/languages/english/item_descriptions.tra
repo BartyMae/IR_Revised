@@ -14028,14 +14028,17 @@ Not Usable By:
 
 STATISTICS:
 
+Equipped Abilities:
+ Oversized: +2 bonus to damage, -1 penalty to THAC0
+
 THAC0: +2 bonus
 Damage: 1D6 + 2
 Damage type: crushing
-Weight: 3
+Weight: 5
 Speed Factor: 2
 Proficiency Type: Club
 Type: 1-handed
-Requires: 5 Strength
+Requires: 8 Strength
 Not Usable By:
  Mage~
 @60014 = ~Night Club +1~

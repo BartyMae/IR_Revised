@@ -760,6 +760,14 @@ DEFINE_PATCH_MACRO special BEGIN
 	iden_bonus_damage =2
   END
 
+  // Mighty Oak +2 - special +2 damage and +1 THAC0 penalty
+  PATCH_IF
+    ~%SOURCE_RES%~ STRING_EQUAL ~blun37~
+  BEGIN
+    iden_bonus_thaco -=1
+	iden_bonus_damage =2
+  END
+
   // Warblade +3, Giant Hair Crossbow +3 - special +4 damage bonus and -2 THAC0 penalty
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h09~ ||
