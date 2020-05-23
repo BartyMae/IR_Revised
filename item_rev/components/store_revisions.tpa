@@ -843,7 +843,7 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
 
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
+    //ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
   END
   ADD_STORE_ITEM SCRL5G   LAST #1 #0 #0 IDENTIFIED #3   // Remove Curse / Break Enchantment
   ADD_STORE_ITEM SCRL1U   LAST #1 #0 #0 IDENTIFIED #3   // Confusion
@@ -904,7 +904,7 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL6Z   LAST #0 #0 #0 IDENTIFIED #2   // Phantom Blade
   PATCH_IF comp_sr=0 BEGIN
     ADD_STORE_ITEM SCRL6Y   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Acid / Vitriolic Sphere
-	ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
+	//ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
   END
   ADD_STORE_ITEM SCRL6T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Normal Weapons
   ADD_STORE_ITEM SCRL2H   LAST #1 #0 #0 IDENTIFIED #2   // Shadow Door
@@ -7157,7 +7157,7 @@ COPY_EXISTING uddrow25.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
 
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
+    //ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
   END
   ADD_STORE_ITEM SCRL6U   LAST #1 #0 #0 IDENTIFIED #2   // Breach
   ADD_STORE_ITEM SCRL5P   LAST #1 #0 #0 IDENTIFIED #2   // Chaos
@@ -8096,7 +8096,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRLA1   LAST #1 #0 #0 IDENTIFIED #5   // Wizard Eye
 
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #3   // Protection from Electricity / Ball Lightning
+    //ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #3   // Protection from Electricity / Ball Lightning
   END
   ADD_STORE_ITEM SCRL6U   LAST #1 #0 #0 IDENTIFIED #3   // Breach
   ADD_STORE_ITEM SCRL5P   LAST #1 #0 #0 IDENTIFIED #3   // Chaos
@@ -9410,7 +9410,7 @@ COPY_EXISTING garlena.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL1Z   LAST #1 #0 #0 IDENTIFIED #1   // Minor Globe of Invulnerability
   ADD_STORE_ITEM SCRL2B   LAST #1 #0 #0 IDENTIFIED #1   // Stoneskin
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-    ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Electricity / Ball Lightning
+    //ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Electricity / Ball Lightning
   END
   ADD_STORE_ITEM SCRL6U   LAST #1 #0 #0 IDENTIFIED #1   // Breach
   ADD_STORE_ITEM SCRL7L   LAST #1 #0 #0 IDENTIFIED #1   // Pierce Magic
