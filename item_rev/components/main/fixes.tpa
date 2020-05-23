@@ -546,13 +546,13 @@ END
   
   	ACTION_FOR_EACH resource IN // fix BG1 creature bows
       ~compb05~
-	  ~compb06~
-	  ~compb08~
-	  ~compb18~
+      ~compb06~
+      ~compb08~
+      ~compb18~
     BEGIN
       ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
         COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+        PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
           WRITE_ASCII 0x22 ~BW~
         END
       END
@@ -565,7 +565,7 @@ END
     BEGIN
       ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
         COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+        PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
           WRITE_ASCII 0x22 ~S1~
         END
       END
@@ -4569,6 +4569,33 @@ LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
 END
 
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // Fix Shaman usabilities
+  PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
+    READ_SHORT 0x1c type
+    READ_BYTE 0x31 prof
+    PATCH_IF (%prof% = 92) OR (%prof% = 105) OR (%type% = 5) BEGIN // axes or shortbows or arrows
+      WRITE_BYTE 0x21 (THIS BAND 0b10111111)
+      LPF DELETE_EFFECT INT_VAR silent = 1 match_opcode  = 319 match_target = 1 match_power = 0 match_parameter2 = 5 match_parameter1 = 11 match_timing = 2 END
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 power = 0 parameter2 = 5 parameter1 = 11 timing = 2 END
+    END
+  END
+BUT_ONLY
+
+ACTION_FOR_EACH resource IN // Add two-handed flag for shapeshifts/polymorphs
+  ~dvjelly~
+  ~dvrat~
+  ~dvtroll~
+  ~dvwere~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      READ_BYTE 0x18 flags
+      WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
+	END
+  END
+END
+
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_tostc bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
     SAY NAME1 @1085    SAY NAME2 @1099
@@ -4678,18 +4705,6 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_tostc bg2 tob bgt bg2ee eet
     SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1983
 	LPF update_item_descriptions_to_bgee END
 END
-
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // Fix Shaman usabilities
-  PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
-    READ_SHORT 0x1c type
-    READ_BYTE 0x31 prof
-    PATCH_IF (%prof% = 92) OR (%prof% = 105) OR (%type% = 5) BEGIN // axes or shortbows or arrows
-      WRITE_BYTE 0x21 (THIS BAND 0b10111111)
-      LPF DELETE_EFFECT INT_VAR silent = 1 match_opcode  = 319 match_target = 1 match_power = 0 match_parameter2 = 5 match_parameter1 = 11 match_timing = 2 END
-      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 power = 0 parameter2 = 5 parameter1 = 11 timing = 2 END
-    END
-  END
-BUT_ONLY
 
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~) BEGIN // EET fixes
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) THEN BEGIN
@@ -4813,11 +4828,13 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) THEN BEGIN
   COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
 END
 
-// Wand charges fixes
+// Item charges fixes
+
+// Wands
 
 COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
-    PATCH_FOR_EACH ~wand~ IN
+    PATCH_FOR_EACH ~item~ IN // Wands
       ~WAND02~   // Wand of Fear
       ~WAND03~   // Wand of Magic Missile
       ~WAND04~   // Wand of Paralyzation
@@ -4836,16 +4853,165 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       ~WAND19~   // Wand of Cursing
       ~BDWAND01~ // Wand of Water Elemental Summoning (BGSOD)
     BEGIN
-      PATCH_IF (FILE_EXISTS_IN_GAME ~%wand%.itm~) BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
         GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
-          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%wand%~) BEGIN
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
             READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 10) BEGIN
-              PATCH_PRINT "~%SOURCE_FILE%~: ~%wand%.itm~, primary charges: %charges_1% => setting them to 10..."
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 10..."
               WRITE_SHORT (itm_offset + 0xa) 10
             END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 1 charge
+      ~AMUL20~   // Kaligum's Amulet of Magic Resistance
+      ~AMUL25~   // Amulet of Spell Warding
+      ~AMUL26~   // Amulet of Cheetah Speed
+      ~BELT09~   // Girdle of Trollish Fortitude
+      //~BLUN27~   // Club of Detonation +5 (2nd)
+      ~BOOT09~   // Boots of the Shifting Sands
+      ~BOOT11~   // Boots of Etherealness
+      //~BOW20~   // Darkfire Bow +4 (2nd)
+      //~BOW21~   // Darkfire Bow +5 (2nd)
+      ~BRAC16~   // Bracers of the Blinding Strike
+      ~BRAC20~   // Gauntlets of Healing
+      ~BRAC23~   // Blessed Bracers
+      //~BRAC23~   // Blessed Bracers (2nd)
+      ~CHAN10~   // Prismatic Chain +4
+      ~CLCK04~   // Cloak of the Wolf
+      ~CLCK07~   // Cloak of the Nymph
+      ~CCLCK08~   // Algernon's Cloak
+      ~CLCK27~   // Cloak of the Sewers
+      //~CLCK27~   // Cloak of the Sewers (2nd)
+      //~HALB10~   // Ravager +4 (2nd)
+      //~HAMM11~   // Runehammer +5 (2nd)
+      //~HAMM11~   // Runehammer +5 (3rd)
+      ~HELM16~   // Helm of Brilliance
+      //~HELM16~   // Helm of Brilliance (2nd)
+      //~HELM16~   // Helm of Brilliance (3rd)
+      ~HELM17~   // Skull of Death
+      ~HELM18~   // Pearly White Ioun Stone
+      ~HELM30~   // Master Thief's Hood
+      ~LEAT18~   // Armor of the Viper +4
+      ~MISC2P~   // Greagan's Harp
+      ~MISC3A~   // Book of Infinite Spells
+      ~MISC3C~   // Efreeti Bottle
+      ~MISC3D~   // Golden Lion Figurine
+      ~MISC3E~   // Black Spider Figurine
+      ~MISC3F~   // Jade Hound Figurine
+      ~MISC3I~   // Silver Horn of Valhalla
+      ~MISC3J~   // Bronze Horn of Valhalla
+      ~MISC3K~   // Iron Horn of Valhalla
+      ~MISC73~   // The Horn of Kazgaroth
+      //~MISC5T~   // Shaman's Staff (2nd)
+      ~MISC7T~   // Moon Dog Figurine
+      ~MISC7Y~   // Thrall Collar
+      ~FIGURE01~   // Shakti Figurine
+      ~TOME01~   // Flesh Golem Manual
+      ~TOME02~   // Clay Golem Manual
+      ~TOME03~   // Stone Golem Manual
+      ~TOME04~   // Juggernaut Golem Manual
+      ~NPMISC1~   // Jansen Spectroscopes
+      ~NPSHLD~   // Delryn Family Shield +2
+      ~VICARM~   // Shar's Blessing +5
+      ~RING20~   // Ring of Energy
+      ~RING26~   // Ring of Djinni Summoning
+      ~RING27~   // Ring of Fire Control
+      //~RING27~   // Ring of Fire Control (2nd)
+      ~RING28~   // Ring of Air Control
+      //~RING28~   // Ring of Air Control (2nd)
+      ~RING29~   // Ring of Earth Control
+      //~RING29~   // Ring of Earth Control (2nd)
+      ~RING30~   // Ring of Human Influence
+      ~RING34~   // Ring of Spell Turning
+      //~RING39~   // Ring of Kangaxx (2nd)
+      ~RING42~   // Ring of the Wraith
+      ~RODS01~   // Rod of Absorption
+      ~RODS03~   // Rod of Resurrection
+      ~RODS06~   // Rod of Reversal
+      //~STAF09~   // Staff of Command +3 (2nd)
+      //~STAF10~   // Staff of Curing +1 (2nd)
+      //~STAF11~   // Staff of the Magi +5 (2nd)
+      //~STAF11~   // Staff of the Magi +5 (3rd)
+      //~STAF12~   // Staff of Power +3 (2nd)
+      //~STAF12~   // Staff of Power +3 (3rd)
+      //~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
+      //~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
+      //~STAF14~   // Staff of the Woodlands (2nd)
+      //~STAF14~   // Staff of the Woodlands (3rd)
+      //~STAF15~   // Staff of Air +2 (2nd)
+      //~STAF16~   // Staff of Earth +2 (2nd)
+      //~STAF17~   // Staff of Fire +2 (2nd)
+      //~STAF20~   // Staff of Rynn +3 (2nd)
+      //~SW1H26~   // Ilbratha +1 (2nd)
+      //~SW1H31~   // Daystar +4 (2nd)
+      //~SW1H33~   // Ras +2 (2nd)
+      //~SW1H51~   // Celestial Fury (3rd)
+      //~SW1H64~   // Purifier +5 (2nd)
+      //~SW1H65~   // Purifier +5 (3rd)
+      //~SW1H68~   // Spectral Brand +4 (2nd)
+      //~SW1H69~   // Spectral Brand +5 (2nd)
+      //~SW1H69~   // Spectral Brand +5 (3rd)
+      //~SW1H70~   // Hindo's Doom +4 (2nd)
+      //~SW1H70~   // Hindo's Doom +5 (3rd)
+      //~SW2H10~   // Carsomyr +4 (2nd)
+      ~WA2HELM~   // Shadow Veil
+      ~WAND14~   // Web Sack
+      ~WAND15~   // Rod of the Apprenti
+      //~WAND15~   // Rod of the Apprenti (2nd)
+      //~WAND15~   // Rod of the Apprenti (3rd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            PATCH_IF (charges_1 > 1) BEGIN
+              PATCH_IF (charges_1 < 1) BEGIN
+                READ_SHORT (itm_offset + 0xa) charges_1
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xa) 1
+              END
+			END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges
+      ~BOOT12~   // Gargoyle Boots
+      //~HALB06~   // Blackmist +4 (2nd)
+      //~HALB11~   // Ravager +5 (2nd)
+      ~HELM31~   // Horned Helm of the Rock
+      ~MISC3H~   // Horn of Blasting
+      ~MISC3L~   // Horn of Silence
+      ~MISC3M~   // Harp of Discord
+      ~MISC3N~   // Azlaer's Harp
+      ~MISC3O~   // Methild's Harp
+      ~MISC3P~   // Glasses of Identification
+      ~RING05~   // Ring of Invisibility
+      ~RING33~   // Ring of the Ram
+      ~RING39~   // Ring of Kangaxx
+      //~SW1H51~   // Celestial Fury (2nd)
+      ~WAND12~   // Rod of Wonder
+      ~REGISAMU~ // Ruby Pendant of Beguiling
+      ~WA2HARP~  // Harp of Pandemonium
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            PATCH_IF (charges_1 > 3) BEGIN
+              PATCH_IF (charges_1 < 3) BEGIN
+                READ_SHORT (itm_offset + 0xa) charges_1
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+                WRITE_SHORT (itm_offset + 0xa) 3
+              END
+			END
           END
         END
       END
@@ -4853,9 +5019,9 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
   END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+/*COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
-    PATCH_FOR_EACH ~wand~ IN
+    PATCH_FOR_EACH ~item~ IN // Wands
       ~WAND02~   // Wand of Fear
       ~WAND03~   // Wand of Magic Missile
       ~WAND04~   // Wand of Paralyzation
@@ -4874,16 +5040,164 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       ~WAND19~   // Wand of Cursing
       ~BDWAND01~ // Wand of Water Elemental Summoning (BGSOD)
     BEGIN
-      PATCH_IF (FILE_EXISTS_IN_GAME ~%wand%.itm~) BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
         GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
-          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%wand%~) BEGIN
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
             READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 10) BEGIN
-              PATCH_PRINT "~%SOURCE_FILE%~: ~%wand%.itm~, primary charges: %charges_1% => setting them to 10..."
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 10..."
               WRITE_SHORT (itm_offset + 0xa) 10
             END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 1 charge
+      ~AMUL20~   // Kaligum's Amulet of Magic Resistance
+      ~AMUL25~   // Amulet of Spell Warding
+      ~AMUL26~   // Amulet of Cheetah Speed
+      ~BELT09~   // Girdle of Trollish Fortitude
+      //~BLUN27~   // Club of Detonation +5 (2nd)
+      ~BOOT09~   // Boots of the Shifting Sands
+      ~BOOT11~   // Boots of Etherealness
+      //~BOW20~   // Darkfire Bow +4 (2nd)
+      //~BOW21~   // Darkfire Bow +5 (2nd)
+      ~BRAC16~   // Bracers of the Blinding Strike
+      ~BRAC20~   // Gauntlets of Healing
+      ~BRAC23~   // Blessed Bracers
+      //~BRAC23~   // Blessed Bracers (2nd)
+      ~CHAN10~   // Prismatic Chain +4
+      ~CLCK04~   // Cloak of the Wolf
+      ~CLCK07~   // Cloak of the Nymph
+      ~CCLCK08~   // Algernon's Cloak
+      ~CLCK27~   // Cloak of the Sewers
+      //~CLCK27~   // Cloak of the Sewers (2nd)
+      //~HALB10~   // Ravager +4 (2nd)
+      //~HAMM11~   // Runehammer +5 (2nd)
+      //~HAMM11~   // Runehammer +5 (3rd)
+      ~HELM16~   // Helm of Brilliance
+      //~HELM16~   // Helm of Brilliance (2nd)
+      //~HELM16~   // Helm of Brilliance (3rd)
+      ~HELM17~   // Skull of Death
+      ~HELM18~   // Pearly White Ioun Stone
+      ~HELM30~   // Master Thief's Hood
+      ~LEAT18~   // Armor of the Viper +4
+      ~MISC2P~   // Greagan's Harp
+      ~MISC3A~   // Book of Infinite Spells
+      ~MISC3C~   // Efreeti Bottle
+      ~MISC3D~   // Golden Lion Figurine
+      ~MISC3E~   // Black Spider Figurine
+      ~MISC3F~   // Jade Hound Figurine
+      ~MISC3I~   // Silver Horn of Valhalla
+      ~MISC3J~   // Bronze Horn of Valhalla
+      ~MISC3K~   // Iron Horn of Valhalla
+      ~MISC73~   // The Horn of Kazgaroth
+      //~MISC5T~   // Shaman's Staff (2nd)
+      ~MISC7T~   // Moon Dog Figurine
+      ~MISC7Y~   // Thrall Collar
+      ~FIGURE01~   // Shakti Figurine
+      ~TOME01~   // Flesh Golem Manual
+      ~TOME02~   // Clay Golem Manual
+      ~TOME03~   // Stone Golem Manual
+      ~TOME04~   // Juggernaut Golem Manual
+      ~NPMISC1~   // Jansen Spectroscopes
+      ~NPSHLD~   // Delryn Family Shield +2
+      ~VICARM~   // Shar's Blessing +5
+      ~RING20~   // Ring of Energy
+      ~RING26~   // Ring of Djinni Summoning
+      ~RING27~   // Ring of Fire Control
+      //~RING27~   // Ring of Fire Control (2nd)
+      ~RING28~   // Ring of Air Control
+      //~RING28~   // Ring of Air Control (2nd)
+      ~RING29~   // Ring of Earth Control
+      //~RING29~   // Ring of Earth Control (2nd)
+      ~RING30~   // Ring of Human Influence
+      ~RING34~   // Ring of Spell Turning
+      //~RING39~   // Ring of Kangaxx (2nd)
+      ~RING42~   // Ring of the Wraith
+      ~RODS01~   // Rod of Absorption
+      ~RODS03~   // Rod of Resurrection
+      ~RODS06~   // Rod of Reversal
+      //~STAF09~   // Staff of Command +3 (2nd)
+      //~STAF10~   // Staff of Curing +1 (2nd)
+      //~STAF11~   // Staff of the Magi +5 (2nd)
+      //~STAF11~   // Staff of the Magi +5 (3rd)
+      //~STAF12~   // Staff of Power +3 (2nd)
+      //~STAF12~   // Staff of Power +3 (3rd)
+      //~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
+      //~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
+      //~STAF14~   // Staff of the Woodlands (2nd)
+      //~STAF14~   // Staff of the Woodlands (3rd)
+      //~STAF15~   // Staff of Air +2 (2nd)
+      //~STAF16~   // Staff of Earth +2 (2nd)
+      //~STAF17~   // Staff of Fire +2 (2nd)
+      //~STAF20~   // Staff of Rynn +3 (2nd)
+      //~SW1H26~   // Ilbratha +1 (2nd)
+      //~SW1H31~   // Daystar +4 (2nd)
+      //~SW1H33~   // Ras +2 (2nd)
+      //~SW1H51~   // Celestial Fury (3rd)
+      //~SW1H64~   // Purifier +5 (2nd)
+      //~SW1H65~   // Purifier +5 (3rd)
+      //~SW1H68~   // Spectral Brand +4 (2nd)
+      //~SW1H69~   // Spectral Brand +5 (2nd)
+      //~SW1H69~   // Spectral Brand +5 (3rd)
+      //~SW1H70~   // Hindo's Doom +4 (2nd)
+      //~SW1H70~   // Hindo's Doom +5 (3rd)
+      //~SW2H10~   // Carsomyr +4 (2nd)
+      ~WA2HELM~   // Shadow Veil
+      ~WAND14~   // Web Sack
+      ~WAND15~   // Rod of the Apprenti
+      //~WAND15~   // Rod of the Apprenti (2nd)
+      //~WAND15~   // Rod of the Apprenti (3rd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            PATCH_IF (charges_1 > 1) BEGIN
+              PATCH_IF (charges_1 < 1) BEGIN
+                READ_SHORT (itm_offset + 0xa) charges_1
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xa) 1
+              END
+			END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges
+      ~BOOT12~   // Gargoyle Boots
+      //~HALB06~   // Blackmist +4 (2nd)
+      //~HALB11~   // Ravager +5 (2nd)
+      ~HELM31~   // Horned Helm of the Rock
+      ~MISC3H~   // Horn of Blasting
+      ~MISC3L~   // Horn of Silence
+      ~MISC3M~   // Harp of Discord
+      ~MISC3N~   // Azlaer's Harp
+      ~MISC3O~   // Methild's Harp
+      ~MISC3P~   // Glasses of Identification
+      ~RING05~   // Ring of Invisibility
+      ~RING33~   // Ring of the Ram
+      ~RING39~   // Ring of Kangaxx
+      //~SW1H51~   // Celestial Fury (2nd)
+      ~WAND12~   // Rod of Wonder
+      ~REGISAMU~ // Ruby Pendant of Beguiling
+      ~WA2HARP~  // Harp of Pandemonium
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (charges_1 > 3) BEGIN
+              PATCH_IF (charges_1 < 3) BEGIN
+                READ_SHORT (itm_offset + 0xa) charges_1
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+                WRITE_SHORT (itm_offset + 0xa) 3
+              END
+			END
           END
         END
       END
@@ -4893,7 +5207,7 @@ BUT_ONLY
 
 COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN
-    PATCH_FOR_EACH ~wand~ IN
+    PATCH_FOR_EACH ~item~ IN // Wands
       ~WAND02~   // Wand of Fear
       ~WAND03~   // Wand of Magic Missile
       ~WAND04~   // Wand of Paralyzation
@@ -4912,17 +5226,17 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       ~WAND19~   // Wand of Cursing
       ~BDWAND01~ // Wand of Water Elemental Summoning (BGSOD)
     BEGIN
-      PATCH_IF (FILE_EXISTS_IN_GAME ~%wand%.itm~) BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
         GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
         PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
           GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
           PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
             READ_ASCII (itm_offset + 0x0) resref
-            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%wand%~) BEGIN
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
               READ_ASCII (container_offset + 0x0) container_name (32) NULL
               READ_SHORT (itm_offset + 0xa) charges_1
               PATCH_IF (charges_1 > 10) BEGIN
-                PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%wand%.itm~, primary charges: %charges_1% => setting them to 10..."
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%item%.itm~, primary charges: %charges_1% => setting them to 10..."
                 WRITE_SHORT (itm_offset + 0xa) 10
               END
             END
@@ -4930,8 +5244,165 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
         END
       END
     END
+    PATCH_FOR_EACH ~item~ IN // 1 charge
+      ~AMUL20~   // Kaligum's Amulet of Magic Resistance
+      ~AMUL25~   // Amulet of Spell Warding
+      ~AMUL26~   // Amulet of Cheetah Speed
+      ~BELT09~   // Girdle of Trollish Fortitude
+      //~BLUN27~   // Club of Detonation +5 (2nd)
+      ~BOOT09~   // Boots of the Shifting Sands
+      ~BOOT11~   // Boots of Etherealness
+      //~BOW20~   // Darkfire Bow +4 (2nd)
+      //~BOW21~   // Darkfire Bow +5 (2nd)
+      ~BRAC16~   // Bracers of the Blinding Strike
+      ~BRAC20~   // Gauntlets of Healing
+      ~BRAC23~   // Blessed Bracers
+      //~BRAC23~   // Blessed Bracers (2nd)
+      ~CHAN10~   // Prismatic Chain +4
+      ~CLCK04~   // Cloak of the Wolf
+      ~CLCK07~   // Cloak of the Nymph
+      ~CCLCK08~   // Algernon's Cloak
+      ~CLCK27~   // Cloak of the Sewers
+      //~CLCK27~   // Cloak of the Sewers (2nd)
+      //~HALB10~   // Ravager +4 (2nd)
+      //~HAMM11~   // Runehammer +5 (2nd)
+      //~HAMM11~   // Runehammer +5 (3rd)
+      ~HELM16~   // Helm of Brilliance
+      //~HELM16~   // Helm of Brilliance (2nd)
+      //~HELM16~   // Helm of Brilliance (3rd)
+      ~HELM17~   // Skull of Death
+      ~HELM18~   // Pearly White Ioun Stone
+      ~HELM30~   // Master Thief's Hood
+      ~LEAT18~   // Armor of the Viper +4
+      ~MISC2P~   // Greagan's Harp
+      ~MISC3A~   // Book of Infinite Spells
+      ~MISC3C~   // Efreeti Bottle
+      ~MISC3D~   // Golden Lion Figurine
+      ~MISC3E~   // Black Spider Figurine
+      ~MISC3F~   // Jade Hound Figurine
+      ~MISC3I~   // Silver Horn of Valhalla
+      ~MISC3J~   // Bronze Horn of Valhalla
+      ~MISC3K~   // Iron Horn of Valhalla
+      ~MISC73~   // The Horn of Kazgaroth
+      //~MISC5T~   // Shaman's Staff (2nd)
+      ~MISC7T~   // Moon Dog Figurine
+      ~MISC7Y~   // Thrall Collar
+      ~FIGURE01~   // Shakti Figurine
+      ~TOME01~   // Flesh Golem Manual
+      ~TOME02~   // Clay Golem Manual
+      ~TOME03~   // Stone Golem Manual
+      ~TOME04~   // Juggernaut Golem Manual
+      ~NPMISC1~   // Jansen Spectroscopes
+      ~NPSHLD~   // Delryn Family Shield +2
+      ~VICARM~   // Shar's Blessing +5
+      ~RING20~   // Ring of Energy
+      ~RING26~   // Ring of Djinni Summoning
+      ~RING27~   // Ring of Fire Control
+      //~RING27~   // Ring of Fire Control (2nd)
+      ~RING28~   // Ring of Air Control
+      //~RING28~   // Ring of Air Control (2nd)
+      ~RING29~   // Ring of Earth Control
+      //~RING29~   // Ring of Earth Control (2nd)
+      ~RING30~   // Ring of Human Influence
+      ~RING34~   // Ring of Spell Turning
+      //~RING39~   // Ring of Kangaxx (2nd)
+      ~RING42~   // Ring of the Wraith
+      ~RODS01~   // Rod of Absorption
+      ~RODS03~   // Rod of Resurrection
+      ~RODS06~   // Rod of Reversal
+      //~STAF09~   // Staff of Command +3 (2nd)
+      //~STAF10~   // Staff of Curing +1 (2nd)
+      //~STAF11~   // Staff of the Magi +5 (2nd)
+      //~STAF11~   // Staff of the Magi +5 (3rd)
+      //~STAF12~   // Staff of Power +3 (2nd)
+      //~STAF12~   // Staff of Power +3 (3rd)
+      //~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
+      //~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
+      //~STAF14~   // Staff of the Woodlands (2nd)
+      //~STAF14~   // Staff of the Woodlands (3rd)
+      //~STAF15~   // Staff of Air +2 (2nd)
+      //~STAF16~   // Staff of Earth +2 (2nd)
+      //~STAF17~   // Staff of Fire +2 (2nd)
+      //~STAF20~   // Staff of Rynn +3 (2nd)
+      //~SW1H26~   // Ilbratha +1 (2nd)
+      //~SW1H31~   // Daystar +4 (2nd)
+      //~SW1H33~   // Ras +2 (2nd)
+      //~SW1H51~   // Celestial Fury (3rd)
+      //~SW1H64~   // Purifier +5 (2nd)
+      //~SW1H65~   // Purifier +5 (3rd)
+      //~SW1H68~   // Spectral Brand +4 (2nd)
+      //~SW1H69~   // Spectral Brand +5 (2nd)
+      //~SW1H69~   // Spectral Brand +5 (3rd)
+      //~SW1H70~   // Hindo's Doom +4 (2nd)
+      //~SW1H70~   // Hindo's Doom +5 (3rd)
+      //~SW2H10~   // Carsomyr +4 (2nd)
+      ~WA2HELM~   // Shadow Veil
+      ~WAND14~   // Web Sack
+      ~WAND15~   // Rod of the Apprenti
+      //~WAND15~   // Rod of the Apprenti (2nd)
+      //~WAND15~   // Rod of the Apprenti (3rd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
+        PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
+          GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
+          PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+            READ_ASCII (itm_offset + 0x0) resref
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+              READ_ASCII (container_offset + 0x0) container_name (32) NULL
+              READ_SHORT (itm_offset + 0xa) charges_1
+              PATCH_IF (charges_1 > 1) BEGIN
+                PATCH_IF (charges_1 < 1) BEGIN
+                  PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+                  WRITE_SHORT (itm_offset + 0xa) 1
+				END
+              END
+            END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges
+      ~BOOT12~   // Gargoyle Boots
+      //~HALB06~   // Blackmist +4 (2nd)
+      //~HALB11~   // Ravager +5 (2nd)
+      ~HELM31~   // Horned Helm of the Rock
+      ~MISC3H~   // Horn of Blasting
+      ~MISC3L~   // Horn of Silence
+      ~MISC3M~   // Harp of Discord
+      ~MISC3N~   // Azlaer's Harp
+      ~MISC3O~   // Methild's Harp
+      ~MISC3P~   // Glasses of Identification
+      ~RING05~   // Ring of Invisibility
+      ~RING33~   // Ring of the Ram
+      ~RING39~   // Ring of Kangaxx
+      //~SW1H51~   // Celestial Fury (2nd)
+      ~WAND12~   // Rod of Wonder
+      ~REGISAMU~ // Ruby Pendant of Beguiling
+      ~WA2HARP~  // Harp of Pandemonium
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
+        PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
+          GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
+          PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+            READ_ASCII (itm_offset + 0x0) resref
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+              READ_ASCII (container_offset + 0x0) container_name (32) NULL
+              READ_SHORT (itm_offset + 0xa) charges_1
+              PATCH_IF (charges_1 > 3) BEGIN
+                PATCH_IF (charges_1 < 3) BEGIN
+                  PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+                  WRITE_SHORT (itm_offset + 0xa) 3
+				END
+              END
+            END
+          END
+        END
+      END
+    END
   END
-BUT_ONLY
+BUT_ONLY*/
 
 
 // Fixes for other mods
