@@ -1,7 +1,7 @@
 @1000 = ~Amulet~
 @1001 = ~Amulet of Protection +1~
 @1002 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
-@1003 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
+@1003 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
 
 STATISTICS:
 
@@ -513,7 +513,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1073 = ~Stonefire +2~
-@1074 = ~The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately the Stonefires were decimated in 1150DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in the hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
+@1074 = ~The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, the Stonefires were decimated in 1150DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in the hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
 
 STATISTICS:
 
@@ -2972,7 +2972,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1359 = ~Melodic Chain +2~
-@1360 = ~The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately the Bards of Melody were disbanded hundreds of years ago, and the secret of 'playing' the armor faded with them.
+@1360 = ~The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately, the Bards of Melody were disbanded hundreds of years ago, and the secret of 'playing' the armor faded with them.
 
 STATISTICS:
 
@@ -3097,7 +3097,7 @@ Not Usable By:
 @1372 = ~Cloak~
 @1373 = ~Cloak of Protection +1~
 @1374 = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
-@1375 = ~Amulets, cloaks, and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this cloak.
+@1375 = ~Amulets, cloaks, and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this cloak.
 
 STATISTICS:
 
@@ -4422,7 +4422,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1536 = ~The Wave +4~
-@1537 = ~Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving an even more powerful holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately The Wave disappeared along with them. It was eventually found by the adventurer Arganon of the Long Reach, who found it extremely useful during his planar travels, and The Wave soon became known on the Elemental Plane of Fire as "Clisirick", or "Fire Eater". Whether The Bitch Queen was hungry to retrieve the holy weapon or just took pleasure in unleashing her wrath, Arganon's ship was sunk during a great storm in the Sea of Swords and The Wave has been lost ever since.
+@1537 = ~Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving an even more powerful holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately, The Wave disappeared along with them. It was eventually found by the adventurer Arganon of the Long Reach, who found it extremely useful during his planar travels, and The Wave soon became known on the Elemental Plane of Fire as "Clisirick", or "Fire Eater". Whether The Bitch Queen was hungry to retrieve the holy weapon or just took pleasure in unleashing her wrath, Arganon's ship was sunk during a great storm in the Sea of Swords and The Wave has been lost ever since.
 
 STATISTICS:
 
@@ -4657,7 +4657,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1557 = ~Hammer of Thunderbolts +3~
-@1558 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of giant strength and gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
+@1558 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of giant strength and gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
 
 STATISTICS:
 
@@ -4698,7 +4698,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1561 = ~Crom Faeyr +4~
-@1562 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of giant strength and gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
+@1562 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of giant strength and gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
 
 Alone, the Hammer of Thunderbolts is a powerful magical weapon, but when merged with a pair of Gauntlets of Ogre Power and a Girdle of Giant Strength, it can be used to full effect. Crom Faeyr gifts its users with all the powers of the original recipients, effectively becoming one of the most fearsome weapon in the Realms.
 
@@ -5503,7 +5503,7 @@ Not Usable By:
 @1665 = ~Armor of the Viper +4~
 @1666 = ~This armor's namesake is a serpent only in manner, referring to the Drow assassin Raroh. Poison was his trademark, and he had this suit enchanted consequently without revealing its properties to anyone.
 
-Raroh taught everything he knew about the art of killing and the secrets to create the most lethal of poisons to Avlorm, the most promising novice assassin within his own guild. But when Avlorm's power eventually threatened his own, Raroh had to teach his pupil the last lesson of his life. Avlorm and a few trained assassins planned to kill their master within his own house, with the aid of the night and the best poison they could brew. Unfortunately for them Raroh was well aware of this, and thanks to this suit's immunity to venom, their poisoned darts and blades couldn't harm him. Subsequentely he easily dispatched all of them entwisting them in a poisonous cloud of ghastly, green vapors, and landing the killing blows with bare hands.
+Raroh taught everything he knew about the art of killing and the secrets to create the most lethal of poisons to Avlorm, the most promising novice assassin within his own guild. But when Avlorm's power eventually threatened his own, Raroh had to teach his pupil the last lesson of his life. Avlorm and a few trained assassins planned to kill their master within his own house, with the aid of the night and the best poison they could brew. Unfortunately for them, Raroh was well aware of this, and thanks to this suit's immunity to venom, their poisoned darts and blades couldn't harm him. Subsequentely he easily dispatched all of them entwisting them in a poisonous cloud of ghastly, green vapors, and landing the killing blows with bare hands.
 
 STATISTICS:
 
@@ -7124,7 +7124,7 @@ Special Abilities:
 Not Usable By:
  Wizard Slayer~
 @1869 = ~Ring of Protection +1~
-@1870 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this ring.
+@1870 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this ring.
 
 STATISTICS:
 
@@ -7258,7 +7258,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1891 = ~Ring of Human Influence~
-@1892 = ~For seven years Count Fisfnilt searched the Realms for a suitable bride for his son Ewnin. Unfortunately all the women that Fisfnilt found were not up to the standards set by Ewnin, an impossibly spoiled man. Desiring an heir and impatient with his son, the Count had the court mage fashion this ring. He gifted the ring to a woman of no small courtly influence and Ewnin was instantly smitten. They wed three weeks later.
+@1892 = ~For seven years Count Fisfnilt searched the Realms for a suitable bride for his son Ewnin. Unfortunately, all the women that Fisfnilt found were not up to the standards set by Ewnin, an impossibly spoiled man. Desiring an heir and impatient with his son, the Count had the court mage fashion this ring. He gifted the ring to a woman of no small courtly influence and Ewnin was instantly smitten. They wed three weeks later.
 
 STATISTICS:
 
