@@ -4970,9 +4970,9 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+          READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 1) BEGIN
               PATCH_IF (charges_1 < 1) BEGIN
-                READ_SHORT (itm_offset + 0xa) charges_1
                 PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
                 WRITE_SHORT (itm_offset + 0xa) 1
               END
@@ -5005,9 +5005,9 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 3) BEGIN
               PATCH_IF (charges_1 < 3) BEGIN
-                READ_SHORT (itm_offset + 0xa) charges_1
                 PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
                 WRITE_SHORT (itm_offset + 0xa) 3
               END
@@ -5019,7 +5019,7 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
   END
 BUT_ONLY
 
-/*COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
     PATCH_FOR_EACH ~item~ IN // Wands
       ~WAND02~   // Wand of Fear
@@ -5157,9 +5157,9 @@ BUT_ONLY
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 1) BEGIN
               PATCH_IF (charges_1 < 1) BEGIN
-                READ_SHORT (itm_offset + 0xa) charges_1
                 PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
                 WRITE_SHORT (itm_offset + 0xa) 1
               END
@@ -5191,9 +5191,10 @@ BUT_ONLY
         GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
-          PATCH_IF (charges_1 > 3) BEGIN
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xa) charges_1
+            PATCH_IF (charges_1 > 3) BEGIN
               PATCH_IF (charges_1 < 3) BEGIN
-                READ_SHORT (itm_offset + 0xa) charges_1
                 PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
                 WRITE_SHORT (itm_offset + 0xa) 3
               END
@@ -5402,7 +5403,7 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       END
     END
   END
-BUT_ONLY*/
+BUT_ONLY
 
 
 // Fixes for other mods
