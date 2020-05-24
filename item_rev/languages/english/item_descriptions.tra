@@ -460,7 +460,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1069 = ~Rifthome Axe +2~
-@1070 = ~These items are vexing to modern sages, since their creator remains completely unknown. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the mysterious smith, and further investigations are met with gruff explanations and eventually stony silence. This has caused some to speculate that it may not be the product of a terrestrial dwarven hand, but rather of some extra-planar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosey scholars.
+@1070 = ~These items are vexing to modern sages, since their creator remains completely unknown. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the mysterious smith, and further investigations are met with gruff explanations and eventually stony silence. This has caused some to speculate that it may not be the product of a terrestrial dwarven hand, but rather of some extraplanar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosey scholars.
 
 STATISTICS:
 
@@ -3162,9 +3162,9 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @1382 = ~Cloak of Balduran~
-@1383 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail of Anchorome again and has never been seen again. His money was well spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
+@1383 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail of Anchorome again and has never been seen again. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
-This cloak was reputedly worn by Balduran, and like most of his equipment, it holds powerful enchantments.
+This cloak was reputedly worn by Balduran, the founder of Baldur's Gate. Though it was never used in combat, it provides protection worthy of any great leader.
 
 STATISTICS:
 
@@ -4919,7 +4919,7 @@ Not Usable By:
  Kensai~
 @1584 = ~Helm of Balduran~
 @1585 = ~This sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.~
-@1586 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
+@1586 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
 The fabled helm of Balduran has long been rumored to wield powerful protective magic. The exact nature of this magic, however, has not yet been determined.
 
@@ -7815,9 +7815,9 @@ Not Usable By:
  Thief
  Kensai~
 @1966 = ~Shield of Balduran +2~
-@1967 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then, he set sail of Anchorome again and has never been seen again. His money was well spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
+@1967 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then, he set sail of Anchorome again and has never been seen again. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
-This shield was reputedly worn by Balduran, and like most of his equipment, it holds powerful enchantments.
+This shield was worn by the hero Balduran. It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate.
 
 STATISTICS:
 
@@ -9896,7 +9896,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Vampiric: target is drained 1D4 hit points and transfers them to the wielder
- Foe Bane: +3 bonus to THAC0 and +5 bonus to damage against undead, shapeshifters, and extra-planar beings
+ Foe Bane: +3 bonus to THAC0 and +5 bonus to damage against undead, shapeshifters, and extraplanar beings
 
 THAC0: +2 bonus
 Damage: 2D4 + 2
@@ -9932,7 +9932,7 @@ Equipped Abilities:
 Combat Abilities:
  Vampiric: target is drained 1D4 hit points and transfers them to the wielder
  Holy: +5 bonus to damage against evil creatures
- Foe Bane: +3 bonus to THAC0 and +5 bonus to damage against undead, shapeshifters, and extra-planar beings
+ Foe Bane: +3 bonus to THAC0 and +5 bonus to damage against undead, shapeshifters, and extraplanar beings
 
 THAC0: +3 bonus
 Damage: 2D4 + 3
@@ -10858,9 +10858,9 @@ Not Usable By:
  Thief
  Kensai~
 @2227 = ~Plate of Balduran +2~
-@2228 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
+@2228 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
-No one really knows what fate befell Balduran, the founder of Baldur's Gate, but people never grow tired of speculating. When his personal armor was found on the Sword Coast - supposedly recovered and sold by a group of adventurers - it only served to spark interest in him once again, and several copies of the suit were made to accommodate collectors and historians. In this way, it could be said, Balduran obtained a measure of immortality.
+This plate was worn by the famous hero Balduran. It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate. No one really knows what fate befell Balduran, the founder of Baldur's Gate, but people never grow tired of speculating. When his personal armor was found on the Sword Coast - supposedly recovered and sold by a group of adventurers - it only served to spark interest in him once again, and several copies of the suit were made to accommodate collectors and historians. In this way, it could be said, Balduran obtained a measure of immortality.
 
 STATISTICS:
 
@@ -10914,7 +10914,7 @@ Usable By:
  Mage~
 @2234 = ~Lesser Shambling Mound~
 @2235 = ~Sword of Balduran +2~
-@2236 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
+@2236 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
 The Sword of Balduran was the favored weapon of the famous adventurer who founded the city of Baldur's Gate. It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate.
 
@@ -11737,10 +11737,10 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2317 = ~Sword of Balduran +2~
-@2318 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail of Anchorome again and has never been seen again. His money was well spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
+@2317 = ~Sword of Balduran +2~ // Sword of Balduran +2: This ornate but poorly balanced weapon was found beside Balduran's remains.
+@2318 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail of Anchorome again and has never been seen again. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
-This ornate but poorly balanced weapon was found beside Balduran's remains, and like most of his equipment, it holds powerful enchantments.
+This ornate but poorly balanced weapon was found within the wreck of Balduran's ship. Gold weapons are not known to be useful in combat, but legends say that only weapons forged of gold can harm such dread creatures as the loup garou.
 
 STATISTICS:
 
@@ -11854,7 +11854,7 @@ Damage type: missile
 Weight: 0
 Launcher: Crossbow~
 @2333 = ~Boots of the Shifting Sands~
-@2334 = ~The most infamous halfling bard in Faerûn, Stompin' Con Tommers, claimed that entire tribes of goblins would quiver in fear when they heard he was coming. Strangely enough, the boasts of this halfling might have had some basis in truth, as the magical boots he wore really could cause earthquakes. He claimed to have pilfered the boots from an extra-planar bard whose voice could destroy entire cities. Con's career was cut short when he miscalculated a leap over a gorge he created and the earth swallowed him.
+@2334 = ~The most infamous halfling bard in Faerûn, Stompin' Con Tommers, claimed that entire tribes of goblins would quiver in fear when they heard he was coming. Strangely enough, the boasts of this halfling might have had some basis in truth, as the magical boots he wore really could cause earthquakes. He claimed to have pilfered the boots from an extraplanar bard whose voice could destroy entire cities. Con's career was cut short when he miscalculated a leap over a gorge he created and the earth swallowed him.
 
 STATISTICS:
 

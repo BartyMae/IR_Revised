@@ -17,6 +17,10 @@ COPY ~item_rev/itm/axiom6.eff~   ~override~
 COPY ~item_rev/itm/disrupt.eff~  ~override~
 COPY ~item_rev/itm/disrtext.eff~ ~override~
 
+COPY ~item_rev/itm/asoldam3.eff~  ~override~
+COPY ~item_rev/itm/asoldam5.eff~  ~override~
+COPY ~item_rev/itm/asolhit3.eff~  ~override~
+
 COPY ~item_rev/itm/demdam3.eff~  ~override~
 COPY ~item_rev/itm/demdam5.eff~  ~override~
 COPY ~item_rev/itm/demhit3.eff~  ~override~
@@ -24,6 +28,10 @@ COPY ~item_rev/itm/demhit3.eff~  ~override~
 COPY ~item_rev/itm/doppdam3.eff~ ~override~
 COPY ~item_rev/itm/doppdam5.eff~ ~override~
 COPY ~item_rev/itm/dopphit3.eff~ ~override~
+
+COPY ~item_rev/itm/dpladam3.eff~  ~override~
+COPY ~item_rev/itm/dpladam5.eff~  ~override~
+COPY ~item_rev/itm/dplahit3.eff~  ~override~
 
 COPY ~item_rev/itm/dragdam3.eff~ ~override~
 COPY ~item_rev/itm/dragdam5.eff~ ~override~
@@ -37,9 +45,17 @@ COPY ~item_rev/itm/evildam3.eff~ ~override~
 COPY ~item_rev/itm/evildam5.eff~ ~override~
 COPY ~item_rev/itm/evilhit3.eff~ ~override~
 
+COPY ~item_rev/itm/genidam3.eff~  ~override~
+COPY ~item_rev/itm/genidam5.eff~  ~override~
+COPY ~item_rev/itm/genihit3.eff~  ~override~
+
 COPY ~item_rev/itm/giandam3.eff~ ~override~
 COPY ~item_rev/itm/giandam5.eff~ ~override~
 COPY ~item_rev/itm/gianhit3.eff~ ~override~
+
+COPY ~item_rev/itm/githdam3.eff~  ~override~
+COPY ~item_rev/itm/githdam5.eff~  ~override~
+COPY ~item_rev/itm/githhit3.eff~  ~override~
 
 COPY ~item_rev/itm/goledam3.eff~ ~override~
 COPY ~item_rev/itm/goledam5.eff~ ~override~
@@ -54,9 +70,17 @@ COPY ~item_rev/itm/humndam3.eff~ ~override~
 COPY ~item_rev/itm/humndam5.eff~ ~override~
 COPY ~item_rev/itm/humnhit3.eff~ ~override~
 
+COPY ~item_rev/itm/impdam3.eff~  ~override~
+COPY ~item_rev/itm/impdam5.eff~  ~override~
+COPY ~item_rev/itm/imphit3.eff~  ~override~
+
 COPY ~item_rev/itm/lycadam3.eff~ ~override~
 COPY ~item_rev/itm/lycadam5.eff~ ~override~
 COPY ~item_rev/itm/lycahit3.eff~ ~override~
+
+COPY ~item_rev/itm/mephdam3.eff~  ~override~
+COPY ~item_rev/itm/mephdam5.eff~  ~override~
+COPY ~item_rev/itm/mephhit3.eff~  ~override~
 
 COPY ~item_rev/itm/monsdam3.eff~ ~override~
 COPY ~item_rev/itm/monsdam5.eff~ ~override~
@@ -66,13 +90,21 @@ COPY ~item_rev/itm/orcdam3.eff~  ~override~
 COPY ~item_rev/itm/orcdam5.eff~  ~override~
 COPY ~item_rev/itm/orchit3.eff~  ~override~
 
-COPY ~item_rev/itm/outdam3.eff~  ~override~
-COPY ~item_rev/itm/outdam5.eff~  ~override~
-COPY ~item_rev/itm/outhit3.eff~  ~override~
+COPY ~item_rev/itm/plandam3.eff~  ~override~
+COPY ~item_rev/itm/plandam5.eff~  ~override~
+COPY ~item_rev/itm/planhit3.eff~  ~override~
 
 COPY ~item_rev/itm/raksdam3.eff~ ~override~
 COPY ~item_rev/itm/raksdam5.eff~ ~override~
 COPY ~item_rev/itm/rakshit3.eff~ ~override~
+
+COPY ~item_rev/itm/soladam3.eff~  ~override~
+COPY ~item_rev/itm/soladam5.eff~  ~override~
+COPY ~item_rev/itm/solahit3.eff~  ~override~
+
+COPY ~item_rev/itm/tiefdam3.eff~  ~override~
+COPY ~item_rev/itm/tiefdam5.eff~  ~override~
+COPY ~item_rev/itm/tiefhit3.eff~  ~override~
 
 COPY ~item_rev/itm/troldam3.eff~ ~override~
 COPY ~item_rev/itm/troldam5.eff~ ~override~
