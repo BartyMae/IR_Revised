@@ -5958,6 +5958,7 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRLAI    // Ray of Enfeeblement
     SCRLAJ    // Farsight
     SCRLAK    // Remove Curse / Break Enchantment
+	SCRL5G    // Remove Curse / Break Enchantment
     SCRLAL    // Sunfire
     SCRLAM    // Symbol of Death
     SCRLAN    // Symbol of Stun
