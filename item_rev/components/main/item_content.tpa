@@ -15,6 +15,20 @@ END
 
 // start of inlined file list
 
+<<<<<<<< .../item_rev-inlined/item/AMULET_OF_HEALTH.tpa
+  COPY ~item_rev/itm/arow12.itm~ ~override~ // Arrow of Biting, unusable
+    SAY NAME2 @1039
+  COPY ~item_rev/itm/arow16.itm~ ~override~ // Arrow of Ice, unusable
+    SAY NAME2 @1047
+  COPY ~item_rev/itm/arowkc.itm~ ~override~ // Arrow of Fire, unusable
+    SAY NAME2 @1045
+  COPY ~item_rev/itm/aegis.itm~ ~override~ // Wulfgar's Aegis-fang +5, unusable
+  COPY ~item_rev/itm/sw2h05.itm~ ~override~ // Sarevok's BG1 Sword of Chaos +5, unusable
+  COPY ~item_rev/itm/finsrv.itm~ ~override~ // Sarevok's BG2 Sword of Chaos +5, unusable
+>>>>>>>>
+COPY ~%source%/AMULET_OF_HEALTH.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/KALIGUNS_AMULET_OF_MAGIC_RESISTANCE.tpa
   COPY ~item_rev/itm/amul20.spl~ ~override~ // Magic Resistance
     SAY NAME1 @4001
@@ -1041,32 +1055,6 @@ COPY ~%source%/SPECTRAL_BRAND_5.tpa~ ~%target%~
 COPY ~%source%/THE_ANSWERER_4.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/UNHOLY_REAVER_5#UNUSABLE.tpa
-  COPY ~item_rev/itm/arow12.itm~ ~override~ // Arrow of Biting, unusable
-    SAY NAME2 @1039
-  COPY ~item_rev/itm/arow16.itm~ ~override~ // Arrow of Ice, unusable
-    SAY NAME2 @1047
-  COPY ~item_rev/itm/arowkc.itm~ ~override~ // Arrow of Fire, unusable
-    SAY NAME2 @1045
-  COPY ~item_rev/itm/aegis.itm~ ~override~ // Wulfgar's Aegis-fang +5, unusable
-  COPY ~item_rev/itm/sw2h05.itm~ ~override~ // Sarevok's BG1 Sword of Chaos +5, unusable
-  COPY ~item_rev/itm/finsrv.itm~ ~override~ // Sarevok's BG2 Sword of Chaos +5, unusable
-  COPY ~item_rev/itm/ohleat50.itm~ ~override~ // temporary armor for Silver Berserker
->>>>>>>>
-COPY ~%source%/UNHOLY_REAVER_5#UNUSABLE.tpa~ ~%target%~
-
-
-<<<<<<<< .../item_rev-inlined/item/WAND_OF_FEAR.tpa
-  ACTION_IF (FILE_EXISTS_IN_GAME ~beyn.cre~) BEGIN
-    COPY_EXISTING beyn.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand02~ #10 #0 #0 ~none~ ~qitem2~
-    END
-    BUT_ONLY
-  END
->>>>>>>>
-COPY ~%source%/WAND_OF_FEAR.tpa~ ~%target%~
-
-
 <<<<<<<< .../item_rev-inlined/item/WAND_OF_MAGIC_MISSILES.tpa
   COPY ~item_rev/itm/wand03.spl~ ~override~ // Magic Missile
     SAY NAME1 @4092
@@ -1094,52 +1082,14 @@ COPY ~%source%/WAND_OF_FEAR.tpa~ ~%target%~
       END
   END
 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
-    COPY_EXISTING tranzi.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand03~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
 >>>>>>>>
 COPY ~%source%/WAND_OF_MAGIC_MISSILES.tpa~ ~%target%~
-
-
-<<<<<<<< .../item_rev-inlined/item/WAND_OF_PARALYZATION.tpa
-  ACTION_IF (FILE_EXISTS_IN_GAME ~cuchol.cre~) BEGIN
-    COPY_EXISTING cuchol.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand04~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~resar.cre~) BEGIN
-    COPY_EXISTING resar.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand04~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
->>>>>>>>
-COPY ~%source%/WAND_OF_PARALYZATION.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/WAND_OF_FIRE.tpa
   COPY ~item_rev/itm/wand05.spl~ ~override~ // Fireball
     SAY NAME1 @4094
   COPY ~item_rev/itm/wand05a.spl~ ~override~
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~niemai.cre~) BEGIN
-    COPY_EXISTING niemai.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand05~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~vayya.cre~) BEGIN
-    COPY_EXISTING vayya.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand05~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
 >>>>>>>>
 COPY ~%source%/WAND_OF_FIRE.tpa~ ~%target%~
 
@@ -1155,13 +1105,6 @@ COPY ~%source%/WAND_OF_FROST.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/WAND_OF_LIGHTNING.tpa
   COPY ~item_rev/itm/wand07.spl~ ~override~ // Lightning Bolt
     SAY NAME1 @4096
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~brevli.cre~) BEGIN
-    COPY_EXISTING brevli.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand07~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
 >>>>>>>>
 COPY ~%source%/WAND_OF_LIGHTNING.tpa~ ~%target%~
 
@@ -1170,13 +1113,6 @@ COPY ~%source%/WAND_OF_LIGHTNING.tpa~ ~%target%~
   COPY ~item_rev/itm/wand08.spl~ ~override~ // Sleep
     SAY NAME1 @4097
   COPY ~item_rev/itm/wand08a.spl~ ~override~ // Sleep
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ulraun.cre~) BEGIN
-    COPY_EXISTING ulraun.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand08~ #10 #0 #0 ~none~ ~qitem1~
-    END
-    BUT_ONLY
-  END
 >>>>>>>>
 COPY ~%source%/WAND_OF_SLEEP.tpa~ ~%target%~
 
@@ -1202,13 +1138,6 @@ COPY ~%source%/WAND_OF_MONSTER_SUMMONING.tpa~ ~%target%~
   COPY ~item_rev/itm/wand11a.spl~ ~override~
     WRITE_SHORT 0x98 wand11
   COPY ~item_rev/itm/wand11b.spl~ ~override~
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~aasim.cre~) BEGIN
-    COPY_EXISTING aasim.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-      REPLACE_CRE_ITEM ~wand11~ #10 #0 #0 ~none~ ~qitem2~
-    END
-    BUT_ONLY
-  END
 >>>>>>>>
 COPY ~%source%/WAND_OF_THE_HEAVENS.tpa~ ~%target%~
 
@@ -1592,3 +1521,25 @@ COPY ~%source%/POTION_OF_EXTRA_HEALING.tpa~ ~%target%~
     SAY NAME1 @3098
 >>>>>>>>
 COPY ~%source%/POTION_OF_SUPERIOR_HEALING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/UNHOLY_REAVER_5.tpa
+  COPY ~item_rev/itm/ohreaver.itm~ ~override/reaver.itm~
+    SAY NAME1 @1085    SAY NAME2 @1099
+    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      READ_BYTE 0x18 flags
+      WRITE_BYTE 0x18 (%flags% BXOR 0b00100000) // Add unusable flag
+	END
+  ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~ohgith03.cre~) BEGIN
+      COPY_EXISTING ohgith03.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+        REMOVE_CRE_ITEM ohreaver
+	    ADD_CRE_ITEM reaver #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ WEAPON1 EQUIP TWOHANDED
+	    ADD_CRE_ITEM sw2h01 #0 #0 #0 NONE INV
+      END
+      BUT_ONLY
+    END
+  END
+>>>>>>>>
+COPY ~%source%/UNHOLY_REAVER_5.tpa~ ~%target%~

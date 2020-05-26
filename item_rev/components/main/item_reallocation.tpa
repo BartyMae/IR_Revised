@@ -1,4 +1,4 @@
-// reallocate items for balance/gameplay purposes (non-store revisions)
+// Reallocate items for balance/gameplay purposes (non-Store Revisions)
 
 /////////////////////////////////////
 
@@ -18,6 +18,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~trrak01.cre~) BEGIN
   COPY_EXISTING ~trrak01.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sw1h04
     ADD_CRE_ITEM sw1h30 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=95 END
   END BUT_ONLY
   
   COPY_EXISTING ar1905.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
@@ -33,17 +34,18 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~uddeath2.cre~) BEGIN
   COPY_EXISTING uddeath2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM plat16 sw2h08 belt08 // he didn't wear that belt anyway
+    REMOVE_CRE_ITEM plat16 sw2h08 belt08
     PATCH_IF comp_ir=1 && comp_cursed=0 BEGIN
       ADD_CRE_ITEM helm02 #0 #0 #0 NONE HELMET
     END
     ADD_CRE_ITEM plat16 #0 #0 #0 NONE ARMOR
     ADD_CRE_ITEM sw2h08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=93 END
   END BUT_ONLY
 
   COPY_EXISTING shadra01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM scrlag
-    ADD_CRE_ITEM belt08 #0 #0 #0 NONE INV7
+    ADD_CRE_ITEM belt08 #0 #0 #0 NONE INV
   END BUT_ONLY
 
   COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
@@ -68,7 +70,7 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~mgket01.cre~) BEGIN
   COPY_EXISTING mgket01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    ADD_CRE_ITEM scrl07 #1 #0 #0 NONE INV1
+    ADD_CRE_ITEM scrl07 #1 #0 #0 NONE INV
   END BUT_ONLY
 END
 
@@ -84,6 +86,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~ppmind01.cre~) BEGIN
   COPY_EXISTING tazok.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sw2h11
     ADD_CRE_ITEM sw2h12 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=93 END
   END BUT_ONLY
 END
 
@@ -99,6 +102,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~viekang.cre~) BEGIN
   COPY_EXISTING jael03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     PATCH_IF comp_cursed=0 BEGIN
       ADD_CRE_ITEM boot08 #0 #0 #0 NONE BOOTS          // Boots of Phasing
+	  LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=90 END
     END
   END BUT_ONLY
 END
@@ -111,6 +115,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sevpat01.cre~) BEGIN
   COPY_EXISTING sevpat01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Equip
     REMOVE_CRE_ITEM hamm02
     ADD_CRE_ITEM ax1h07 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=92 END
   END BUT_ONLY
 END
 
@@ -150,6 +155,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~haegan.cre~) BEGIN
     REMOVE_CRE_ITEM sw2h01
     ADD_CRE_ITEM dvblun01 #0 #0 #0 NONE WEAPON1 EQUIP
     ADD_CRE_ITEM shld04 #0 #0 #0 NONE SHIELD
+    LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=100 END
   END BUT_ONLY
 END
 
@@ -165,6 +171,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~valran01.cre~) BEGIN
 	REMOVE_CRE_ITEM bow99
 	ADD_CRE_ITEM bow08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
     ADD_CRE_ITEM misc8j #0 #0 #0 NONE BOOTS
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=105 END
   END BUT_ONLY
 END
 
@@ -193,6 +200,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~hgber01.cre~) BEGIN
 
   COPY_EXISTING hgber01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     ADD_CRE_ITEM belt11 #0 #0 #0 NONE BELT
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=93 END
   END BUT_ONLY
 END
 
@@ -244,6 +252,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~uhrang01.cre~) BEGIN
 
   COPY_EXISTING rngsha02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     ADD_CRE_ITEM clck25 #0 #0 #0 NONE CLOAK
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=5 parameter2=99 END
   END BUT_ONLY
 END
 
@@ -295,6 +304,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~gromg09.cre~) BEGIN
     COPY_EXISTING gromg09.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM eler
       ADD_CRE_ITEM dagg20 #0 #0 #0 NONE WEAPON1 EQUIP
+      LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=96 END
     END BUT_ONLY
   END
 END
@@ -317,12 +327,14 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~cefgt01.cre~) BEGIN
   COPY_EXISTING cedruid2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM blun24
     ADD_CRE_ITEM blun01 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=1 parameter2=115 END
   END BUT_ONLY
 
   COPY_EXISTING cefgt01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM chan04 sw1h20
     ADD_CRE_ITEM sper07 #0 #0 #0 NONE WEAPON1 EQUIP
     ADD_CRE_ITEM leat03 #0 #0 #0 NONE ARMOR
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=98 END
   END BUT_ONLY
 END
 
@@ -334,6 +346,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~hprelate.cre~) BEGIN
   COPY_EXISTING hprelate.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM npplat
     ADD_CRE_ITEM plat14 #0 #0 #0 NONE ARMOR
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=93 END
   END BUT_ONLY
 END
 
@@ -345,16 +358,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sahkng02.cre~) BEGIN
   COPY_EXISTING sahkng02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sper08
     ADD_CRE_ITEM sper05 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=98 END
   END BUT_ONLY
 
   COPY_EXISTING sahpr2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sper08
     ADD_CRE_ITEM sper05 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=98 END
   END BUT_ONLY
 
   COPY_EXISTING udprince.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sper01 kuosper
     ADD_CRE_ITEM sper08 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=98 END
   END BUT_ONLY
 END
 
@@ -370,6 +386,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~udtrap03.cre~) BEGIN
   COPY_EXISTING baronp.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sw2h01
     ADD_CRE_ITEM sper03 #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=98 END
   END BUT_ONLY
 END
 
@@ -397,6 +414,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~duecla01.cre~) BEGIN
     REMOVE_CRE_ITEM leat01
     ADD_CRE_ITEM helm07 #0 #0 #0 NONE HELMET
     ADD_CRE_ITEM chan03 #0 #0 #0 NONE ARMOR
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=92 END
   END BUT_ONLY
 
   COPY_EXISTING ar0602.bcs override
@@ -436,7 +454,7 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~cedelich.cre~) BEGIN
   COPY_EXISTING cedelich.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM misc73 // Remove duplicate
-	  ADD_CRE_ITEM misc73 #1 #0 #0 NONE INV1
+	  ADD_CRE_ITEM misc73 #1 #0 #0 NONE INV
     END
 	BUT_ONLY
 END
@@ -448,19 +466,43 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~u!spbane.itm~) BEGIN
   END ELSE BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~sppain.cre~) BEGIN
 	COPY_EXISTING sppain.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM WAND14 #1 #0 #0 NONE INV1  
+	  ADD_CRE_ITEM WAND14 #1 #0 #0 NONE INV
     END BUT_ONLY
   END
 END
 
 /////////////////////////////////////
 
-// Replaces Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard in ToB
+// Replaces Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard
 ACTION_IF (FILE_EXISTS_IN_GAME ~sarmag01.cre~) BEGIN // Errard
   COPY_EXISTING sarmag01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REPLACE_TEXTUALLY CASE_INSENSITIVE ~clck15~ ~clck18~
     END
 	BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Replaces Angurvadal +4 with Unholy Reaver on Watcher's Keep Githyanki Captain
+ACTION_IF (FILE_EXISTS_IN_GAME ~gorgit.cre~) BEGIN
+  COPY_EXISTING gorgit.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REMOVE_CRE_ITEM ~sw1h60~
+    ADD_CRE_ITEM ~ohreaver~ #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+    LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=93 END
+  END
+  BUT_ONLY
+END
+
+/////////////////////////////////////
+
+// Places Angurvadal +4 on Watcher's Keep Y'tossi
+ACTION_IF (FILE_EXISTS_IN_GAME ~gorwom03.cre~) BEGIN
+  COPY_EXISTING gorwom03.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REMOVE_CRE_ITEM ~marili~
+	ADD_CRE_ITEM ~sw1h60~ #0 #0 #0 NONE WEAPON1 EQUIP
+	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=90 END
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -726,6 +768,37 @@ END
 
 //Various fixes
 
+// Elminster fixes
+ACTION_IF (FILE_EXISTS_IN_GAME ~amelm01.cre~) BEGIN
+  COPY_EXISTING amelm01.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
+	REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
+	REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
+	REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~merlin.cre~) BEGIN
+  COPY_EXISTING merlin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
+	REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
+	REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
+	REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~jatermin.cre~) BEGIN
+  COPY_EXISTING jatermin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
+	REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
+	REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
+	REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
+  END
+  BUT_ONLY
+END
+
 // Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
 ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
   COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
@@ -856,7 +929,7 @@ END
 // Make Gorion scroll unstealable
 ACTION_IF (FILE_EXISTS_IN_GAME ~gorion.cre~) BEGIN
   COPY_EXISTING gorion.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_CRE_ITEM ~scrl3z~ #1 #0 #0 ~unstealable~ ~inv~
+    REPLACE_CRE_ITEM scrl3z #1 #0 #0 UNSTEALABLE INV
   END
   BUT_ONLY
 END
@@ -874,6 +947,14 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~zilfgt01.cre~) BEGIN
 COPY_EXISTING zilfgt01.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     REMOVE_CRE_ITEM ~rntre04~
     ADD_CRE_ITEM ~rndtre04~ #1 #0 #0 NONE INV
+  END
+  BUT_ONLY
+END
+
+// Add Two-Handed Sword to Githyanki anti-paladins
+ACTION_IF (FILE_EXISTS_IN_GAME ~gith03.cre~) BEGIN
+  COPY_EXISTING gith03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    ADD_CRE_ITEM sw2h01 #0 #0 #0 NONE INV
   END
   BUT_ONLY
 END

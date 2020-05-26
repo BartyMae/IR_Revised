@@ -715,14 +715,15 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_bonus_thaco=5
   END
 
-  // The Chesley Crusher +2, Unholy Reaver +5, Soul Reaver +4, Carsomyr +4, Carsomyr +5, The Gold Digger +1 - special +2 damage bonus
+  // The Chesley Crusher +2, Unholy Reaver +5, Soul Reaver +4, Carsomyr +4, Carsomyr +5, The Gold Digger +1, Unholy Reaver - special +2 damage bonus
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~halb13~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~reaver~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h08~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h10~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h19~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~sw2h22~
+	~%SOURCE_RES%~ STRING_EQUAL ~sw2h22~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~ohreaver~
   BEGIN
 	iden_bonus_damage =2
   END

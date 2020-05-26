@@ -783,7 +783,6 @@ GRAM_THE_SWORD_OF_GRIEF_5                  SWORD2H  sw2h18   1        1        0
 CARSOMYR_5                                 SWORD2H  sw2h19   1        1        0        0        1        1        @1760    @2215    @1762    @2216    @2215    @4055    *        *
 TWO-HANDED_SWORD_3                         SWORD2H  sw2h20   1        1        0        0        1        1        @1760    @2217    @1762    @2218    *        *        *        *
 PSIONS_BLADE_3                             SWORD2H  sw2h21   1        1        0        0        1        1        @1760    @2219    @1762    @2220    *        *        *        *
-UNHOLY_REAVER_5#UNUSABLE                   SWORD2H  reaver   1        1        1        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *
 
 WAND_OF_FEAR                               WAND     wand02   1        1        1        1        1        1        @2239    @2240    @2241    @2242    *        *        *        *
 WAND_OF_MAGIC_MISSILES                     WAND     wand03   1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
@@ -923,6 +922,9 @@ NEERAS_STAFF_1                             STAFF    stafn1   0        0        0
 THE_HARROWER_1                             SWORDL   sw1h79   0        0        0        1        1        1        @1513    @60046   @1515    @60047   *        *        *        *
 THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @60048   @1762    @60049   *        *        *        *
 RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @60050   @1762    @60051   *        *        *        *
+
+HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70000   @1671    @70001   *        *        *        *
+UNHOLY_REAVER_5                            SWORD2H  ohreaver 1        1        0        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *
 
 SMALL_SHIELD#EE                            SHIELDS  shld01a  0        0        0        0        1        1        @1939    @1939    @1940    @1940    *        *        *        *
 SMALL_SHIELD_1#EE                          SHIELDS  shld02a  0        0        0        0        1        1        @1939    @1941    @1942    @1943    *        *        *        *

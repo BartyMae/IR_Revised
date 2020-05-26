@@ -48,7 +48,7 @@ These highly prized items are fist-sized green stone worked into some kind of sm
 STATISTICS:
 
 Equipped Abilities:
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Not Usable By:
  Wizard Slayer~
@@ -68,7 +68,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Energy Resistance: +15% bonus
+ Energy Resistance: +25% bonus
 
 Not Usable By:
  Wizard Slayer~
@@ -2451,7 +2451,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1289 = ~Bracers of Defense AC 4~
-@1290 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits -- thinking them easy targets for they wore no armor -- would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+@1290 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
 
 STATISTICS:
 
@@ -2461,7 +2461,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1291 = ~Bracers of Defense AC 3~
-@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado -- no man other than he would joust without armor -- he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -3416,7 +3416,7 @@ Mustard Jelly (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, Poison, and Stun
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
 
@@ -4030,7 +4030,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1491 = ~Drow Piwafwi Cloak~
-@1492 = ~The magically enhanced drow piwafi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light -- the effect of which will turn the cloak to dust.
+@1492 = ~The magically enhanced drow piwafi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
 
 STATISTICS:
 
@@ -4526,7 +4526,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1544 = ~War Hammer~
-@1545 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this -- the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.
+@1545 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.
 
 STATISTICS:
 
@@ -4544,7 +4544,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1546 = ~War Hammer +1~
-@1547 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this -- the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.~
+@1547 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.~
 @1548 = ~Like others of its type, this war hammer is made entirely of steel, with a bone-crushing hammer mounted upon an 18" shaft. This warhammer is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -4679,7 +4679,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1559 = ~War Hammer +2~
-@1560 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this -- the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
+@1560 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
 
 STATISTICS:
 
@@ -4787,7 +4787,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1567 = ~War Hammer +3~
-@1568 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this -- the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
+@1568 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
 
 STATISTICS:
 
@@ -5060,7 +5060,7 @@ Troll (7 HD):
 
 Special Characteristics:
  Regeneration: 1 hp/second
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Equipped Abilities:
  Regeneration: 1 hp/round
@@ -5571,8 +5571,7 @@ Armor Class: 4
 Weight: 15
 Requires: 4 Strength
 Not Usable By:
- Good-aligned characters
- Neutral-aligned characters
+ Good or neutral-aligned characters
  Mage
  Monk
  Kensai
@@ -5586,8 +5585,7 @@ Armor Class: 8
 Weight: 15
 Requires: 4 Strength
 Not Usable By:
- Good-aligned characters
- Neutral-aligned characters
+ Good or neutral-aligned characters
  Mage
  Monk
  Kensai
@@ -6120,8 +6118,7 @@ Speed Factor: 1
 Proficiency Type: Dagger
 Type: 1-handed
 Not Usable By:
- Good-aligned characters
- Neutral-aligned characters
+ Good or neutral-aligned characters
  Cleric
  Beast Master~
 @1745 = ~Quiver~
@@ -6233,8 +6230,7 @@ This dark, two-handed sword radiates evil from a distance. The weapon is not jus
 STATISTICS:
 
 Equipped Abilities:
- Magic Resistance: +10% bonus
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Combat Abilities:
  Powerful Weapon: +2 bonus to damage
@@ -6250,7 +6246,7 @@ Proficiency Type: Two-Handed Sword
 Type: 2-handed
 Requires: 16 Strength
 Usable By:
- Anti-paladin~
+ Neutral or evil-aligned paladin~
 @1764 = ~Protection Scroll~
 @1765 = ~Protection from Acid~
 @1766 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud the protective magic is released upon the reader. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
@@ -6347,8 +6343,7 @@ Proficiency Type: Short Bow
 Type: 2-handed
 Requires: 3 Strength
 Not Usable By:
- Evil-aligned characters
- Neutral-aligned characters
+ Neutral or evil-aligned characters
  Cleric
  Druid
  Mage
@@ -6514,8 +6509,7 @@ Proficiency Type: Short Sword
 Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
- Evil-aligned characters
- Neutral-aligned characters
+ Neutral or evil-aligned characters
  Cleric
  Druid
  Mage
@@ -6606,7 +6600,7 @@ Not Usable By:
  Mage
  Beast Master~
 @1818 = ~Chaos +2~
-@1819 = ~This Tanar'ri red steel blade is one of Haer'Dalis' favorite weapons. This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar'ri. Red steel is also known as bloodsteel. Besides being the color of fresh blood, weapons made from red steel have a tendency to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner -- Entropy. When dual-wielding these two blades, Haer'Dalis surely is a dangerous opponent.
+@1819 = ~This Tanar'ri red steel blade is one of Haer'Dalis' favorite weapons. This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar'ri. Red steel is also known as bloodsteel. Besides being the color of fresh blood, weapons made from red steel have a tendency to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual-wielding these two blades, Haer'Dalis surely is a dangerous opponent.
 
 STATISTICS:
 
@@ -8317,7 +8311,7 @@ Requires: 5 Strength
 Not Usable By:
  Monk~
 @2014 = ~Staff of Striking +3~
-@2015 = ~Staves of Striking are made by the Gold Elves of Drelagara on Evermeet. Such staves seem to have a life of their own, and jump to attack in their bearer's hands. The elven craftsmen rarely sell them to other races, but these powerful melee weapons do surface occasionally in Faerûn. This weapon can deal tremendous damage, but each attack made with it partially consumes the energy of the staff, causing it to destroy itself when no charges remain. If it's not destroyed, the staff fully recharges itself each morning.
+@2015 = ~Staves of Striking are made by the Gold Elves of Drelagara on Evermeet. Such staves seem to have a life of their own, and jump to attack in their bearer's hands. The elven craftsmen rarely sell them to other races, but these powerful melee weapons do surface occasionally in Faerûn. This weapon can deal tremendous damage, but each attack made with it partially consumes the energy of the staff, causing it to destroy itself when none of its 25 charges remain. If it's not destroyed, the staff fully recharges itself each morning.
 
 STATISTICS:
 
@@ -9274,7 +9268,7 @@ Ras (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 THAC0: +2 bonus
 Damage: 1D8 + 2
@@ -9537,7 +9531,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2125 = ~Malakar +2~
-@2126 = ~Malakar, or 'Dueling Steel', is a finely craft katana belonged to the renowed swordsman Viromoto, a weapon master from the East who fought a hundred duels before finally dying. The keen blade shatters through any opponents's defenses and, as if of its own volition, it will swoop down and deflect the incoming attacks of other weapons. This radiant katana is perfect for the warrior concerned about defense as well as offense but it is so sharp and light that it is difficult for even a master to wield. Viromoto gradually became overconfident and for his final duel he favored a different weapon -- only to fall in battle, his first and only defeat.
+@2126 = ~Malakar, or 'Dueling Steel', is a finely craft katana belonged to the renowed swordsman Viromoto, a weapon master from the East who fought a hundred duels before finally dying. The keen blade shatters through any opponents's defenses and, as if of its own volition, it will swoop down and deflect the incoming attacks of other weapons. This radiant katana is perfect for the warrior concerned about defense as well as offense but it is so sharp and light that it is difficult for even a master to wield. Viromoto gradually became overconfident, and for his final duel, he favored a different weapon - only to fall in battle, his first and only defeat.
 
 STATISTICS:
 
@@ -9828,7 +9822,8 @@ Not Usable By:
  Mage
  Beast Master~
 @2151 = ~Angurvadal +4~
-@2152 = ~There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough -- it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself -- but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
+@2152 = ~The Burning Earth
+There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough - it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself - but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
 
 STATISTICS:
 
@@ -9852,7 +9847,8 @@ Not Usable By:
  Mage
  Beast Master~
 @2153 = ~Angurvadal +5~
-@2154 = ~There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough -- it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself -- but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
+@2154 = ~The Burning Earth
+There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough - it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself - but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
 
 The true power of this burning sword has been unleashed by the Liquid Mercury.
 
@@ -9977,8 +9973,7 @@ Proficiency Type: Bastard Sword
 Type: 1-handed
 Requires: 11 Strength
 Not Usable By:
- Evil-aligned characters
- Neutral-aligned characters
+ Neutral or evil-aligned characters
  Cleric
  Druid
  Mage
@@ -10018,8 +10013,7 @@ Proficiency Type: Bastard Sword
 Type: 1-handed
 Requires: 11 Strength
 Not Usable By:
- Evil-aligned characters
- Neutral-aligned characters
+ Neutral or evil-aligned characters
  Cleric
  Druid
  Mage
@@ -10091,7 +10085,7 @@ Spectral Brand (10 HD):
 
 Special Characteristics:
  Protected Against: Backstabs and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Combat Abilities:
  Icy: target suffers 1D6 cold damage
@@ -10131,7 +10125,7 @@ Spectral Brand (12 HD):
 
 Special Characteristics:
  Protected Against: Backstabs and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Equipped Abilities:
  Spell: Negative Plane Protection
@@ -10164,7 +10158,7 @@ Shadow (5 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Normal Weapons, Petrification, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Chill Touch: target suffers a -2 penalty to strength for 1 turn
 */
 
@@ -12214,7 +12208,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2381 = ~Malakar's Companion +2~
-@2382 = ~Malakar's Companion belonged to the renowed swordsman Viromoto, a weapon master from the East who fought a hundred duels before finally dying. The keen blade shatters through any opponents's defenses and, as if of its own volition, it will swoop down and deflect the incoming attacks of other weapons. This blade is perfect for the warrior concerned about defense as well as offense but it is so sharp and light that it is difficult for even a master to wield. Viromoto gradually became overconfident and for his final duel he favored a different weapon -- only to fall in battle, his first and only defeat.
+@2382 = ~Malakar's Companion belonged to the renowed swordsman Viromoto, a weapon master from the East who fought a hundred duels before finally dying. The keen blade shatters through any opponents's defenses and, as if of its own volition, it will swoop down and deflect the incoming attacks of other weapons. This blade is perfect for the warrior concerned about defense as well as offense but it is so sharp and light that it is difficult for even a master to wield. Viromoto gradually became overconfident, and for his final duel, he favored a different weapon - only to fall in battle, his first and only defeat.
 
 STATISTICS:
 
@@ -12928,7 +12922,7 @@ Flesh Golem (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal Weapons, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  
 Requires: 16 Intelligence
 Usable By:
@@ -12952,7 +12946,7 @@ Clay Golem (9 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal Weapons, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Cursing: target is cursed and cannot recover from their wounds permanently
  
 Requires: 16 Intelligence
@@ -12977,7 +12971,7 @@ Stone Golem (12 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal/+1 Weapons, Petrification, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  
 Requires: 16 Intelligence
 Usable By:
@@ -13001,7 +12995,7 @@ Juggernaut Golem (14 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal/+1/+2 Weapons, Petrification, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionic stunning, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Stunning: target is stunned for 1 round (save vs. spell neg.)
  
 Requires: 16 Intelligence
@@ -13219,19 +13213,8 @@ Not Usable By:
  Cleric
  Beast Master~
 @2504 = ~Melee/Thrown Switch~
-@2505 = ~Hide Armor +1~
-@2506 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
-
-STATISTICS:
-
-Armor Class: 5
-Weight: 25
-Requires: 6 Strength
-Not Usable By:
- Mage
- Monk
- Kensai
- Shapeshifter~
+@2505 = ~Unused~
+@2506 = ~Unused~
 @2507 = ~Poisoned Arrow~
 @2508 = ~These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows.
 
@@ -13245,7 +13228,7 @@ Damage type: missile
 Weight: 0
 Launcher: Bow~
 @2509 = ~Solaufein's Piwafwi Cloak~
-@2510 = ~This cloak belongs to Solaufein, the drow warrior. It increases the wearer's hide in shadows and move silently abilities. Talented drow weavers have woven strands of adamantine into this cloak, thus rendering it useless if exposed to the light -- the effect of which will turn the cloak to dust.
+@2510 = ~This cloak belongs to Solaufein, the drow warrior. It increases the wearer's hide in shadows and move silently abilities. Talented drow weavers have woven strands of adamantine into this cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
 
 STATISTICS:
 
@@ -14395,3 +14378,16 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
+@70000 = ~Hide Armor +1~
+@70001 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+
+STATISTICS:
+
+Armor Class: 5
+Weight: 25
+Requires: 6 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai
+ Shapeshifter~
