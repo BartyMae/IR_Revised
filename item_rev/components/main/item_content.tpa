@@ -189,7 +189,9 @@ COPY ~%source%/CLOAK_OF_DISPLACEMENT.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/CLOAK_OF_THE_WOLF.tpa
   COPY ~item_rev/itm/dvwere.spl~ ~override~ // Shapeshifts Wolfwere
+    SAY NAME1 @4500
   COPY ~item_rev/itm/dvwere.itm~ ~override~
+    SAY NAME1 @4501   SAY NAME2 @4501
 >>>>>>>>
 COPY ~%source%/CLOAK_OF_THE_WOLF.tpa~ ~%target%~
 
@@ -220,9 +222,13 @@ COPY ~%source%/CLOAK_OF_MIRRORING.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/CLOAK_OF_THE_SEWERS.tpa
   COPY ~item_rev/itm/dvrat.spl~ ~override~ // Shapeshifts Rat
+    SAY NAME1 @4502
   COPY ~item_rev/itm/dvrat.itm~ ~override~
+    SAY NAME1 @4503   SAY NAME2 @4503
   COPY ~item_rev/itm/dvjelly.spl~ ~override~ // Shapeshifts Mustard Jelly
+    SAY NAME1 @4504
   COPY ~item_rev/itm/dvjelly.itm~ ~override~
+    SAY NAME1 @4505   SAY NAME2 @4505
 >>>>>>>>
 COPY ~%source%/CLOAK_OF_THE_SEWERS.tpa~ ~%target%~
 
@@ -299,7 +305,9 @@ COPY ~%source%/SKULL_OF_DEATH.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/PEARLY_WHITE_IOUN_STONE.tpa
   COPY ~item_rev/itm/dvtroll.spl~ ~override~ // Shapeshifts Troll
+    SAY NAME1 @4506
   COPY ~item_rev/itm/dvtroll.itm~ ~override~
+    SAY NAME1 @4507   SAY NAME2 @4507
 >>>>>>>>
 COPY ~%source%/PEARLY_WHITE_IOUN_STONE.tpa~ ~%target%~
 
@@ -341,16 +349,20 @@ COPY ~%source%/EFREETI_BOTTLE.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/GOLDEN_LION_FIGURINE.tpa
   COPY ~item_rev/itm/catliowp.cre~ ~override~
+    SAY NAME1 @4508   SAY NAME2 @4508
   COPY ~item_rev/itm/figlion.eff~ ~override~
   COPY ~item_rev/itm/figlion.itm~ ~override~
+    SAY NAME1 @4509   SAY NAME2 @4509
 >>>>>>>>
 COPY ~%source%/GOLDEN_LION_FIGURINE.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/BLACK_SPIDER_FIGURINE.tpa
   COPY ~item_rev/itm/spidfgsu.cre~ ~override~
+    SAY NAME1 @4510   SAY NAME2 @4510
   COPY ~item_rev/itm/figspid.eff~ ~override~
   COPY ~item_rev/itm/figspid.itm~ ~override~
+    SAY NAME1 @4511   SAY NAME2 @4511
   COPY ~item_rev/itm/spin683.spl~ ~override~
 >>>>>>>>
 COPY ~%source%/BLACK_SPIDER_FIGURINE.tpa~ ~%target%~
@@ -358,7 +370,9 @@ COPY ~%source%/BLACK_SPIDER_FIGURINE.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/JADE_HOUND_FIGURINE.tpa
   COPY ~item_rev/itm/dogwawp.cre~ ~override~
+    SAY NAME1 @4528   SAY NAME2 @4528
   COPY ~item_rev/itm/dogwawp.itm~ ~override~
+    SAY NAME1 @4529   SAY NAME2 @4529
 >>>>>>>>
 COPY ~%source%/JADE_HOUND_FIGURINE.tpa~ ~%target%~
 
@@ -366,6 +380,7 @@ COPY ~%source%/JADE_HOUND_FIGURINE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/SILVER_HORN_OF_VALHALLA.tpa
   COPY ~item_rev/itm/dvbrsker.bcs~ ~override~
   COPY ~item_rev/itm/bersersu.cre~ ~override~
+    SAY NAME1 @4512   SAY NAME2 @4512
   COPY ~item_rev/itm/horn1.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
@@ -373,6 +388,7 @@ COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/BRONZE_HORN_OF_VALHALLA.tpa
   COPY ~item_rev/itm/berser02.cre~ ~override~
+    SAY NAME1 @4514   SAY NAME2 @4514
   COPY ~item_rev/itm/horn2.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/BRONZE_HORN_OF_VALHALLA.tpa~ ~%target%~
@@ -380,6 +396,7 @@ COPY ~%source%/BRONZE_HORN_OF_VALHALLA.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/IRON_HORN_OF_VALHALLA.tpa
   COPY ~item_rev/itm/berser03.cre~ ~override~
+    SAY NAME1 @4516   SAY NAME2 @4516
   COPY ~item_rev/itm/horn3.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/IRON_HORN_OF_VALHALLA.tpa~ ~%target%~
@@ -430,8 +447,10 @@ COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/MOON_DOG_FIGURINE.tpa
   COPY ~item_rev/itm/moondog.cre~ ~override~
+    SAY NAME1 @4530   SAY NAME2 @4530
   COPY ~item_rev/itm/mdog1.itm~ ~override~
   COPY ~item_rev/itm/mdog2.itm~ ~override~
+    SAY NAME1 @4531   SAY NAME2 @4531
   COPY ~item_rev/itm/figmoond.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/MOON_DOG_FIGURINE.tpa~ ~%target%~
@@ -439,6 +458,7 @@ COPY ~%source%/MOON_DOG_FIGURINE.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/SHAKTI_WARRIOR_FIGURINE.tpa
   COPY ~item_rev/itm/shakti.cre~ ~override~
+    SAY NAME1 @4540   SAY NAME2 @4540
   COPY ~item_rev/itm/shakti.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/SHAKTI_WARRIOR_FIGURINE.tpa~ ~%target%~
@@ -447,7 +467,9 @@ COPY ~%source%/SHAKTI_WARRIOR_FIGURINE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_FLESH.tpa
   COPY ~item_rev/itm/tome01.eff~ ~override~
   COPY ~item_rev/itm/tomegol1.cre~ ~override~
+    SAY NAME1 @4532   SAY NAME2 @4532
   COPY ~item_rev/itm/goltome1.itm~ ~override~
+    SAY NAME1 @4533   SAY NAME2 @4533
 >>>>>>>>
 COPY ~%source%/GOLEM_MANUAL_FLESH.tpa~ ~%target%~
 
@@ -456,7 +478,9 @@ COPY ~%source%/GOLEM_MANUAL_FLESH.tpa~ ~%target%~
   COPY ~%source%/GOLEM_MANUAL_CLAY.tpa~ ~%target%~
   COPY ~item_rev/itm/tome02.eff~ ~override~
   COPY ~item_rev/itm/tomegol2.cre~ ~override~
+    SAY NAME1 @4534   SAY NAME2 @4534
   COPY ~item_rev/itm/goltome2.itm~ ~override~
+    SAY NAME1 @4535   SAY NAME2 @4535
   COPY ~item_rev/itm/goltome2.spl~ ~override~
 >>>>>>>>
 COPY ~%source%/GOLEM_MANUAL_CLAY.tpa~ ~%target%~
@@ -465,7 +489,9 @@ COPY ~%source%/GOLEM_MANUAL_CLAY.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_STONE.tpa
   COPY ~item_rev/itm/tome03.eff~ ~override~
   COPY ~item_rev/itm/tomegol3.cre~ ~override~
+    SAY NAME1 @4536   SAY NAME2 @4536
   COPY ~item_rev/itm/goltome3.itm~ ~override~
+    SAY NAME1 @4537   SAY NAME2 @4537
 >>>>>>>>
 COPY ~%source%/GOLEM_MANUAL_STONE.tpa~ ~%target%~
 
@@ -473,7 +499,9 @@ COPY ~%source%/GOLEM_MANUAL_STONE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/GOLEM_MANUAL_JUGGERNAUT.tpa
   COPY ~item_rev/itm/tome04.eff~ ~override~
   COPY ~item_rev/itm/tomegol4.cre~ ~override~
+    SAY NAME1 @4538   SAY NAME2 @4538
   COPY ~item_rev/itm/goltome4.itm~ ~override~
+    SAY NAME1 @4539   SAY NAME2 @4539
 >>>>>>>>
 COPY ~%source%/GOLEM_MANUAL_JUGGERNAUT.tpa~ ~%target%~
 
@@ -852,9 +880,9 @@ COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
     SAY NAME1 @4061
 
   COPY ~item_rev/itm/smound02.cre~ ~override~ // Lesser Shambling Mound
-    SAY NAME1 @2234
-    SAY NAME2 @2234
+    SAY NAME1 @4518   SAY NAME2 @4518
   COPY ~item_rev/itm/smound02.itm~ ~override~
+    SAY NAME1 @4519   SAY NAME2 @4519
   COPY ~item_rev/itm/smound02.eff~ ~override~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~suavatar.dlg~) BEGIN
