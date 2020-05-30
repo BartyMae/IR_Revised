@@ -1,4 +1,3 @@
-
 /*
 Type:
  other   = 0
@@ -28,18 +27,15 @@ Spellcasting:
  no  = 0
  yes = 1
 
-
 End value:
  type + 8 * material + 32 * elven + 64 * thieving + 128 * spellcasting
 
-
-Yes, that's bitwise:
+Bitwise:
  base type    = value & 7 
  material     = ( value >> 3 ) & 3
  elven        = ( value >> 5 ) & 1
  thieving     = ( value >> 6 ) & 1
  spellcasting = ( value >> 7 ) & 1
-
 
 Elven (-30% penalty, can cast) Mithral (penalty reduced by 2 category) Fullplate = 47
 */
@@ -631,6 +627,23 @@ bdleat08 => 3 // Hide +1 (hide)
 bdplat01 => 7 // Daeros full plate
 bdplat03 => 6 // Bone plate
 bdplat04 => 6 // Beetle plate
+
+// SoD to BG2EE Item Upgrade (added by Cahir 2020-05-10)
+
+dtklea02 => 1 // The Night's Embrace +6
+dtklea1a => 21 // Chromatic Shadow Dragonscale (red)
+dtklea1b => 21 // Chromatic Shadow Dragonscale (blue)
+dtklea1c => 21 // Chromatic Shadow Dragonscale (white)
+dtklea1d => 21 // Chromatic Shadow Dragonscale (silver)
+dtklea1e => 21 // Umbral Viridian Dragonscale
+dtkleat1 => 21 // Verdant Shadow Dragonscale
+dtkleat2 => 21 // Green Dragonscale +4
+dtkplat1 => 22 // Verdant Crimson Dragon Plate (red
+dtkplt1a => 22 // Verdant Crimson Dragon Plate (shadow)
+dtkplt1b => 22 // Verdant Crimson Dragon Plate (blue)
+dtkplt1c => 22 // Verdant Crimson Dragon Plate (white)
+dtkplt1d => 22 // Verdant Crimson Dragon Plate (silver)
+dtkplt1e => 22 // Carmine Viridian Dragon Plate
 
 
 /////////////////////////////////////////////////
