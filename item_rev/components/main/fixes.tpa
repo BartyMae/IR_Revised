@@ -4581,8 +4581,8 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // Fix Shaman usabilities
   END
 BUT_ONLY
 
-ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
-  ACTION_FOR_EACH resource IN // Add two-handed flag for shapeshifts/polymorphs
+ACTION_IF ee_two_handed_shapeshifts=1 BEGIN // Add two-handed flag for shapeshifts/polymorphs
+  ACTION_FOR_EACH resource IN
     ~dvjelly~
     ~dvrat~
     ~dvtroll~
