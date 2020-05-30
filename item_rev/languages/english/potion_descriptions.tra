@@ -79,12 +79,12 @@ Usable By:
 Usable By:
  All~
 @3032=~Potion of Absorption~
-@3033=~There exist terrifying creatures in the wilderness that are a match for even the fiercest Rashemi berserker, so the Witches of Rashemen create these magical flasks to bolster their warriors' endurance. The drinker of this potion will be cushioned from physical attacks made against them, so that only the strongest will be felt. The user gains a +20% bonus to to their physical resistances. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
+@3033=~There exist terrifying creatures in the wilderness that are a match for even the fiercest Rashemi berserker, so the Witches of Rashemen create these magical flasks to bolster their warriors' endurance. The drinker of this potion will be cushioned from physical attacks made against them, so that only the strongest will be felt. The user gains a +20% bonus to to their physical resistances. Multiple uses of this potion are not cumulative. The effect lasts for 1 turn and cannot be dispelled.
 
 Usable By:
  All~
-@3034=~Potion of Evasion~
-@3035=~This potion bestows superior reflexes and extraordinary agility upon the user, who, through nearly superhuman effort, can position themselves out of harm's way a mere instant before an energy discharge reaches them. After drinking this potion, the user can evade the effects of the following spells: Burning Hands, Fireball, Lightning Bolt, Call Lightning, Flame Strike, Cone of Cold, Sunfire, Chain Lightning, and Delayed Blast Fireball, as well as all forms of dragon breath. The effect lasts for 1 turn and cannot be dispelled.
+@3034=~Potion of Agility~
+@3035=~This potion bestows extraordinary reflexes upon the user, who, through nearly superhuman effort, can position themselves out of harm's way a mere instant before an energy discharge reaches them. After drinking this potion, the user can evade the effects of the following spells: Burning Hands, Fireball, Lightning Bolt, Call Lightning, Flame Strike, Cone of Cold, Sunfire, Chain Lightning, and Delayed Blast Fireball, as well as all forms of dragon breath. The effect lasts for 1 turn and cannot be dispelled.
 
 Usable By:
  Monk
@@ -129,13 +129,13 @@ Usable By:
 
 Usable By:
  All~
-@3052=~Potion of Toughness~
+@3052=~Potion of Fortitude~
 @3053=~Once consumed, this potion will cause a surge of energy to travel through the body of the user, providing a +20% bonus to hit points. These bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 Usable By:
  All~
 @3054=~Potion of Vocalize~
-@3055=~The drinker of this potion can cast spells with a verbal component without needing to speak. This potion effectively cures the user of the effect of silence and makes them immune to it. The effect lasts for 1 turn and cannot be dispelled.
+@3055=~The drinker of this potion can cast spells with a verbal component without needing to speak. This potion effectively cures the user of the effect of silence and makes them immune to it. The effect lasts for 5 turns and cannot be dispelled.
 
 Usable By:
  All~
@@ -186,7 +186,7 @@ Usable By:
 Usable By:
  All~
 @3074=~Potion of Perception~
-@3075=~This potion heightens the sensory perception of the user, gaining a +20% bonus to Find Traps and Detect Illusions. The drinker of this potion also cannot be backstabbed. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
+@3075=~This potion heightens the perception of the user, gaining a +2 bonus to Intelligence and Wisdom as well as a +20% bonus to Find Traps and Detect Illusions. The drinker of this potion also cannot be backstabbed. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 Usable By:
  Monk

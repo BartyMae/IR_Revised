@@ -1375,19 +1375,19 @@ COPY ~%source%/POTION_OF_FIREBREATH.tpa~ ~%target%~
 COPY ~%source%/POTION_OF_FORTITUDE.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/POTION_OF_GENIUS.tpa
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_VOCALIZE.tpa
   COPY ~item_rev/itm/potn29.spl~ ~override~
     SAY NAME1 @3054
 >>>>>>>>
-COPY ~%source%/POTION_OF_GENIUS.tpa~ ~%target%~
+COPY ~%source%/POTION_OF_VOCALIZE.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/POTION_OF_SHARP_EYES.tpa
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_SIGHT.tpa
   COPY ~item_rev/itm/potn30.spl~ ~override~
     SAY NAME1 @3056
   COPY ~item_rev/itm/potn30d.spl~ ~override~
 >>>>>>>>
-COPY ~%source%/POTION_OF_SHARP_EYES.tpa~ ~%target%~
+COPY ~%source%/POTION_OF_SIGHT.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_INSULATION.tpa
@@ -1432,11 +1432,11 @@ COPY ~%source%/POTION_OF_ENERGY_SHIELDING.tpa~ ~%target%~
 COPY ~%source%/POTION_OF_MASTER_THIEVERY.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/POTION_OF_MIND_FOCUSING.tpa
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_RESTORATION.tpa
   COPY ~item_rev/itm/potn37.spl~ ~override~
     SAY NAME1 @3070
 >>>>>>>>
-COPY ~%source%/POTION_OF_MIND_FOCUSING.tpa~ ~%target%~
+COPY ~%source%/POTION_OF_RESTORATION.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_MIRRORED_EYES.tpa
@@ -1474,11 +1474,11 @@ COPY ~%source%/POTION_OF_POWER.tpa~ ~%target%~
 COPY ~%source%/POTION_OF_REGENERATION.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/POTION_OF_INSIGHT.tpa
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_MEMORY.tpa
   COPY ~item_rev/itm/potn43.spl~ ~override~
     SAY NAME1 @3082
 >>>>>>>>
-COPY ~%source%/POTION_OF_INSIGHT.tpa~ ~%target%~
+COPY ~%source%/POTION_OF_MEMORY.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_RAGE.tpa
