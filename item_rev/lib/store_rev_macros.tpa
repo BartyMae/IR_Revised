@@ -140,6 +140,10 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
 	  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_SERIOUS_WOUNDS~ RET spell_res END
 	  OUTER_SPRINT $temple("cure_critical_wounds") ~%spell_res%~
 	END
+	ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_TRUE_DISPEL_MAGIC[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+	  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CLERIC_TRUE_DISPEL_MAGIC~ RET spell_res END
+	  OUTER_SPRINT $temple("dispel_magic") ~%spell_res%~
+	END
   END
 
   COPY_EXISTING speldesc.2da override
