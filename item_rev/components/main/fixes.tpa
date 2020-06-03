@@ -413,6 +413,10 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~dvmirror.mrk~) THEN BEGIN // SR Mirror Image Fix
   INCLUDE ~item_rev/lib/mirror_image_vs_aoe.tpa~    
 END
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsdbaoe.mrk~) THEN BEGIN // SR Spell Deflection Blocks AoE Spells check
+  INCLUDE ~item_rev/lib/nwn_spell_deflection.tpa~    
+END
+
 END
 
 
