@@ -152,7 +152,7 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvslow1.spl~) THEN BEGIN // dvslow1
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvslow1.spl~) THEN BEGIN // Slowing (1 round)
 COPY_EXISTING ~dvslow1.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   WRITE_BYTE 0x27 "%k1#Slow%"  
@@ -178,7 +178,7 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvslow2.spl~) THEN BEGIN // dvslow2
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvslow2.spl~) THEN BEGIN // Slowing (2 rounds)
 COPY_EXISTING ~dvslow2.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   WRITE_BYTE 0x27 "%k1#Slow%"  
@@ -204,7 +204,7 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvslow5.spl~) THEN BEGIN // dvslow5
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvslow5.spl~) THEN BEGIN // Slowing (5 rounds)
 COPY_EXISTING ~dvslow5.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files  
   WRITE_BYTE 0x27 "%k1#Slow%"  
@@ -398,8 +398,8 @@ END
 BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN // Carsomyr +4 Dispel Magic
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h10.itm~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN // SR Revised check
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h10.itm~) THEN BEGIN // Carsomyr +4 Dispel Magic
     COPY_EXISTING ~sw2h10.itm~ ~override~
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
   END
@@ -407,6 +407,10 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN // Carsomyr +4 Dispel Mag
     COPY_EXISTING ~sw2h19.itm~ ~override~
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
   END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvmirror.mrk~) THEN BEGIN // SR Mirror Image Fix check
+  INCLUDE ~item_rev/lib/mirror_image_vs_aoe.tpa~    
 END
 
 END
