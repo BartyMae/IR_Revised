@@ -321,6 +321,9 @@ COPY ~item_rev/itm/dvvampir.eff~ ~override~
 COPY ~item_rev/itm/dvvorpal.spl~ ~override~ // Vorpal
 COPY ~item_rev/itm/dvvorpal.eff~ ~override~
 
+COPY ~item_rev/itm/dvweaken.spl~ ~override~ // Weakening
+COPY ~item_rev/itm/dvweaken.eff~ ~override~
+
 COPY ~item_rev/itm/dvwebb.spl~ ~override~ // Webbing
 COPY ~item_rev/itm/dvwebb.eff~ ~override~
 
