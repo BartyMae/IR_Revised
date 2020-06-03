@@ -331,10 +331,6 @@ COPY ~item_rev/itm/dvdlifea.spl~ ~override~ // Drain Life
 COPY ~item_rev/itm/dvdlifeb.spl~ ~override~
 COPY ~item_rev/itm/dvdlife.eff~ ~override~
 
-COPY ~item_rev/itm/dvfball.spl~ ~override~ // Fireball
-  SAY NAME1 @4094
-COPY ~item_rev/itm/dvfball2.spl~ ~override~
-
 COPY ~item_rev/itm/dvginvul.spl~ ~override~ // Globe of Invulnerability
   SAY NAME1 @4057
 
@@ -349,14 +345,14 @@ COPY ~item_rev/itm/dvmcure.spl~ ~override~
   WRITE_SHORT 0x98 dvmcure
   SAY NAME1 @4054
 
-ADD_PROJECTILE ~item_rev/itm/dvprexpl.pro~ // Prismatic Explosion
-COPY ~item_rev/itm/dvprexpl.spl~ ~override~
+ADD_PROJECTILE ~item_rev/itm/dvpexpl.pro~ // Prismatic Explosion
+COPY ~item_rev/itm/dvpexpl.spl~ ~override~
   SAY NAME1 @4014
-  WRITE_SHORT 0x98 dvprexpl
-COPY ~item_rev/itm/dvprexp1.spl~ ~override~
-COPY ~item_rev/itm/dvprexp2.spl~ ~override~
+  WRITE_SHORT 0x98 dvpexpl
+COPY ~item_rev/itm/dvpexpl1.spl~ ~override~
+COPY ~item_rev/itm/dvpexpl2.spl~ ~override~
 
-COPY ~item_rev/itm/dvpetri.spl~ ~override~ // Stone to Flesh
+COPY ~item_rev/itm/dvpetri.spl~ ~override~ // Flesh to Stone
   SAY NAME1 @4064
 COPY ~item_rev/itm/dvpetri.eff~ ~override~
 COPY ~item_rev/itm/dvpetri2.spl~ ~override~
@@ -364,31 +360,30 @@ COPY ~item_rev/itm/dvpetri2.spl~ ~override~
 COPY ~item_rev/itm/dvstones.spl~ ~override~ // Stoneskin
   SAY NAME1 @4008
 
-COPY ~item_rev/itm/dvterrif.spl~ ~override~ // Terrify
+COPY ~item_rev/itm/dvterri.spl~ ~override~ // Terrify
   SAY NAME1 @4048
-COPY ~item_rev/itm/dvterrif.eff~ ~override~
+COPY ~item_rev/itm/dvterri.eff~ ~override~
 
-COPY ~item_rev/itm/dvwhorro.spl~ ~override~ // Wand Horror
+COPY ~item_rev/itm/dvhorro.spl~ ~override~ // Horror
   SAY NAME1 @4091
-COPY ~item_rev/itm/dvwhorro.eff~ ~override~
+COPY ~item_rev/itm/dvhorro.eff~ ~override~
 
-COPY ~item_rev/itm/dvwparal.spl~ ~override~ // Wand Paralyzation
+COPY ~item_rev/itm/dvparal.spl~ ~override~ // Paralyzation
   SAY NAME1 @4093
 
-COPY ~item_rev/itm/dvwconec.spl~ ~override~ // Wand Cone of Cold
+COPY ~item_rev/itm/dvconec.spl~ ~override~ // Cone of Cold
   SAY NAME1 @4095
-COPY ~item_rev/itm/dvwcone2.spl~ ~override~
 
-COPY ~item_rev/itm/dvwfball.spl~ ~override~ // Wand Fireball
+COPY ~item_rev/itm/dvfball.spl~ ~override~ // Fireball
   SAY NAME1 @4094
-COPY ~item_rev/itm/dvwfbal2.spl~ ~override~
 
-COPY ~item_rev/itm/dvwlight.spl~ ~override~ // Wand Lightning Bolt
+COPY ~item_rev/itm/dvlight.spl~ ~override~ // Lightning Bolt
   SAY NAME1 @4096
 
-ADD_PROJECTILE ~item_rev/itm/dvwckill.pro~
-COPY ~item_rev/itm/dvwckill.spl~     ~override~  // Wand Cloudkill
+ADD_PROJECTILE ~item_rev/itm/dvckill.pro~
+COPY ~item_rev/itm/dvckill.spl~ ~override~  // Cloudkill
   SAY NAME1 @4101
-  WRITE_SHORT 0x98 %dvwckill%
-  SET dvwckill -= 1
-APPEND ~clearair.2da~ ~Cloudkill               %dvwckill%~
+  WRITE_SHORT 0x98 %dvckill%
+  SET dvckill -= 1
+COPY ~item_rev/itm/dvckill.eff~ ~override~
+APPEND ~clearair.2da~ ~Cloudkill               %dvckill%~

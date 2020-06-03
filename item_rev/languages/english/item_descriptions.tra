@@ -3707,7 +3707,7 @@ STATISTICS:
 
 Equipped Abilities:
  Armor Class: +1 bonus
- Intelligence: +1 bonus
+ Saving Throws: +1 bonus
 
 THAC0: +1 bonus
 Damage: 1D4 + 1
@@ -11955,7 +11955,7 @@ STATISTICS:
 Equipped Abilities:
  Intelligence: +1 bonus
 
-Armor Class: 5
+Armor Class: 3
 Weight: 3
 Usable By:
  Mage~

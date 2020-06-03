@@ -124,6 +124,7 @@ COPY ~%source%/GIRDLE_OF_TROLLISH_FORTITUDE.tpa~ ~%target%~
 >>>>>>>>
 COPY ~%source%/BELT_OF_INERTIAL_BARRIER.tpa~ ~%target%~
 
+
 <<<<<<<< .../item_rev-inlined/item/HOLY_SYMBOL_OF_HELM#ANOMEN.tpa
   COPY_EXISTING anomen.bcs override // fix Anomen's Holy Symbol for BG2 Fixpack
     DECOMPILE_BCS_TO_BAF
@@ -136,7 +137,6 @@ COPY ~%source%/BELT_OF_INERTIAL_BARRIER.tpa~ ~%target%~
     COMPILE_BAF_TO_BCS
 >>>>>>>>
 COPY ~%source%/HOLY_SYMBOL_OF_HELM#ANOMEN.tpa~ ~%target%~
-
 
 
 <<<<<<<< .../item_rev-inlined/item/BOLT_OF_POLYMORPHING_2.tpa
@@ -294,6 +294,13 @@ COPY ~%source%/THE_WAVE_4.tpa~ ~%target%~
     SAY NAME1 @4023
 >>>>>>>>
 COPY ~%source%/RUNEHAMMER_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/HELM_OF_BRILLIANCE.tpa
+  COPY ~item_rev/itm/helm16.spl~ ~override~ // Fireball
+    SAY NAME1 @4024
+>>>>>>>>
+COPY ~%source%/HELM_OF_BRILLIANCE.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/SKULL_OF_DEATH.tpa
@@ -946,7 +953,6 @@ COPY ~%source%/STAFF_OF_EARTH_2.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_FIRE_2.tpa
   COPY ~item_rev/itm/staf17.spl~ ~override~ // Fireball
     SAY NAME1 @4065
-  COPY ~item_rev/itm/staf17a.spl~ ~override~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar0412.are~) BEGIN
     COPY_EXISTING ~ar0412.are~ ~override~ // Planar Sphere, Fire Chamber
@@ -1002,7 +1008,7 @@ COPY ~%source%/ARBANES_SWORD_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/RAS_2.tpa
-  COPY ~item_rev/itm/sw1h33b.itm~ ~override~ // Creature weapon
+  COPY ~item_rev/itm/sw1h33b.itm~ ~override~
     SAY NAME2 @2101
   COPY ~item_rev/itm/sword02.cre~ ~override~
 >>>>>>>>
@@ -1117,7 +1123,6 @@ COPY ~%source%/WAND_OF_MAGIC_MISSILES.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/WAND_OF_FIRE.tpa
   COPY ~item_rev/itm/wand05.spl~ ~override~ // Fireball
     SAY NAME1 @4094
-  COPY ~item_rev/itm/wand05a.spl~ ~override~
 >>>>>>>>
 COPY ~%source%/WAND_OF_FIRE.tpa~ ~%target%~
 
@@ -1125,7 +1130,6 @@ COPY ~%source%/WAND_OF_FIRE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/WAND_OF_FROST.tpa
   COPY ~item_rev/itm/wand06.spl~ ~override~ // Cone of Cold
     SAY NAME1 @4095
-  COPY ~item_rev/itm/wand06a.spl~ ~override~
 >>>>>>>>
 COPY ~%source%/WAND_OF_FROST.tpa~ ~%target%~
 
@@ -1140,7 +1144,7 @@ COPY ~%source%/WAND_OF_LIGHTNING.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/WAND_OF_SLEEP.tpa
   COPY ~item_rev/itm/wand08.spl~ ~override~ // Sleep
     SAY NAME1 @4097
-  COPY ~item_rev/itm/wand08a.spl~ ~override~ // Sleep
+  COPY ~item_rev/itm/wand08a.spl~ ~override~
 >>>>>>>>
 COPY ~%source%/WAND_OF_SLEEP.tpa~ ~%target%~
 
@@ -1163,9 +1167,7 @@ COPY ~%source%/WAND_OF_MONSTER_SUMMONING.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/wand11.pro~ // Flame Strike
   COPY ~item_rev/itm/wand11.spl~ ~override~
     SAY NAME1 @4100
-  COPY ~item_rev/itm/wand11a.spl~ ~override~
-    WRITE_SHORT 0x98 wand11
-  COPY ~item_rev/itm/wand11b.spl~ ~override~
+	WRITE_SHORT 0x98 wand11
 >>>>>>>>
 COPY ~%source%/WAND_OF_THE_HEAVENS.tpa~ ~%target%~
 
@@ -1383,7 +1385,6 @@ COPY ~%source%/STRANGE_POTION_OF_HEALING.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_EXPLOSIONS.tpa
   COPY ~item_rev/itm/potn26.spl~ ~override~
-  COPY ~item_rev/itm/potn26a.spl~ ~override~
     SAY NAME1 @3048
 >>>>>>>>
 COPY ~%source%/POTION_OF_EXPLOSIONS.tpa~ ~%target%~
@@ -1557,7 +1558,7 @@ COPY ~%source%/POTION_OF_SUPERIOR_HEALING.tpa~ ~%target%~
     SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
     PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
       READ_BYTE 0x18 flags
-      WRITE_BYTE 0x18 (%flags% BXOR 0b00100000) // Add unusable flag
+      // WRITE_BYTE 0x18 (%flags% BXOR 0b00100000) // Add unusable flag
 	END
   ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~ohgith03.cre~) BEGIN
