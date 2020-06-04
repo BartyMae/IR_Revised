@@ -9348,7 +9348,7 @@ Equipped Abilities:
  Wall of Silence: wielder is immune to sound-based spells or attacks such as Command, Holy Word, Unholy Word, Power Word, Wail of the Banshee, and other similar effects
 
 Combat Abilities:
- Silencing: opponents within 15' are silenced for 2 rounds (save vs. spell neg.)
+ Silencing: opponents within 20' are silenced for 2 rounds (save vs. spell neg.)
 
 THAC0: +2 bonus
 Damage: 1D8 + 2
@@ -12704,7 +12704,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Pandemonium (3x per day): opponents within 30' are pushed away and confused for 5 rounds (save vs. spell at -2 neg.)
+ Pandemonium (3x per day): opponents within 30' are pushed away and confused for 5 rounds (save vs. spell at -2 neg. confusion)
 
 Usable By:
  Bard~

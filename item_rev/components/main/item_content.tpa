@@ -296,13 +296,6 @@ COPY ~%source%/THE_WAVE_4.tpa~ ~%target%~
 COPY ~%source%/RUNEHAMMER_5.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/HELM_OF_BRILLIANCE.tpa
-  COPY ~item_rev/itm/helm16.spl~ ~override~ // Fireball
-    SAY NAME1 @4024
->>>>>>>>
-COPY ~%source%/HELM_OF_BRILLIANCE.tpa~ ~%target%~
-
-
 <<<<<<<< .../item_rev-inlined/item/SKULL_OF_DEATH.tpa
   COPY ~item_rev/itm/helm17.spl~ ~override~ // Gaze of Death
     SAY NAME1 @4027
@@ -414,7 +407,6 @@ COPY ~%source%/IRON_HORN_OF_VALHALLA.tpa~ ~%target%~
   COPY ~item_rev/itm/misc3l.spl~ ~override~
     WRITE_SHORT 0x98 misc3l
 	SAY NAME1 @4104
-	
 >>>>>>>>
 COPY ~%source%/HORN_OF_SILENCE.tpa~ ~%target%~
 
@@ -951,9 +943,6 @@ COPY ~%source%/STAFF_OF_EARTH_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_FIRE_2.tpa
-  COPY ~item_rev/itm/staf17.spl~ ~override~ // Fireball
-    SAY NAME1 @4065
-
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar0412.are~) BEGIN
     COPY_EXISTING ~ar0412.are~ ~override~ // Planar Sphere, Fire Chamber
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN

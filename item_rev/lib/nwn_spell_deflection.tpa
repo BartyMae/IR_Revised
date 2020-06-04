@@ -4,24 +4,21 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 
 // AoE spells
 
-~clck07~  => 1 // Nymph Cloak
-~helm16~  => 1 // Helm of Brilliance
-~misc31~  => 1 // Horn of Silence
-~misc3m~  => 1 // Harp of Discord
-~staf17~  => 1 // Staff of Fire
-~staf20~  => 1 // Staff of Rhynn
-~sw1h36~  => 1 // Namarra
-~wand05~  => 1 // Wand of Fire
-~wand06~  => 1 // Wand of Cold
-~wand08~  => 1 // Wand of Sleep
-~wand11~  => 1 // Wand of Fire
-~wa2harp~ => 1 // Pandemonium
 ~dvfball~ => 1 // Fireball
 ~dvpexpl~ => 1 // Prismatic Explosion
 ~dvterri~ => 1 // Terrify
 ~dvhorro~ => 1 // Horror
 ~dvconec~ => 1 // Cone of Cold
 //~dvckill~ => 1 // Cloudkill (stationary)
+~clck07~  => 1 // Nymph Cloak's Blinding Beauty
+~misc3l~  => 1 // Horn of Silence' Silence
+~misc3m~  => 1 // Harp of Discord' Confusion
+~staf20~  => 1 // Staff of Rhynn's Greater Malison
+~wand05~  => 1 // Wand of Fire's Fireball
+~wand06~  => 1 // Wand of Cold's Cone of Cold
+~wand08~  => 1 // Wand of Sleep's Sleep
+~wand11~  => 1 // Wand of the Heavens' Flame Strike
+~wa2harp~ => 1 // Harp of Pandemonium's Pandemonium
 
 
 END
