@@ -1782,8 +1782,8 @@ Not Usable By:
  Cavalier
  Kensai~
 @1214 = ~Composite Long Bow +1~
-@1215 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. Wielding such a powerful bow requires a strength of 16.~
-@1216 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength.
+@1215 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. Wielding such a powerful bow requires great strength.~
+@1216 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
 
@@ -2090,8 +2090,8 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1245 = ~Composite Long Bow +2~
-@1246 = ~This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This bow requires a strength of 16 to use.
+@1245 = ~Composite Long Bow +2~ //This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
+@1246 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
 
@@ -2282,8 +2282,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1261 = ~Composite Long Bow +3~
-@1262 = ~This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
+@1261 = ~Composite Long Bow +3~ //This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
+@1262 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
 
@@ -3658,7 +3658,7 @@ Weight: 1
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: 1-handed
-Require: 3 Strength
+Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
@@ -3794,7 +3794,7 @@ Weight: 1
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: 1-handed
-Require: 3 Strength
+Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
@@ -4657,7 +4657,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1557 = ~Hammer of Thunderbolts +3~
-@1558 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of giant strength and gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
+@1558 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a Girdle of Giant Strength and a Gauntlets of Ogre Power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief, Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
 
 STATISTICS:
 
@@ -4698,7 +4698,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1561 = ~Crom Faeyr +4~
-@1562 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a girdle of giant strength and gauntlets of ogre power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
+@1562 = ~@1558 = ~A dwarven smith, Silverblade, forged this hammer and two other items: a Girdle of Giant Strength and a Gauntlets of Ogre Power. His intention was to gift them to his son, who was then a high officer in the dwarven armies, fighting the giant and ogre tribes of the area. Unfortunately, Silverblade's son died just after the completion of the three items, and before they could be gifted to him. In his grief, Silverblade himself donned the girdle and the gauntlets. Taking up the Hammer of Thunderbolts, he went to battle against the giant folk, and died valiantly.
 
 Alone, the Hammer of Thunderbolts is a powerful magical weapon, but when merged with a pair of Gauntlets of Ogre Power and a Girdle of Giant Strength, it can be used to full effect. Crom Faeyr gifts its users with all the powers of the original recipients, effectively becoming one of the most fearsome weapon in the Realms.
 
@@ -6085,7 +6085,7 @@ Equipped Abilities:
  Protects Against: Charm and Fear
 
 Combat Abilities:
- Soul Drinking: 15% chance target is drained one level, granting the wielder a +5 bonus to maximum hit points, a +1 bonus to strength, and hasting them for 1 turn
+ Soul Drinking: 15% chance target is drained one level, granting the wielder a +5 bonus to maximum hit points, a +1 bonus to Strength, and hasting them for 1 turn
 
 THAC0: +4 bonus
 Damage: 1D8 + 4
@@ -7535,12 +7535,12 @@ Not Usable By:
 @1933 = ~Sling of Force +2~
 @1934 = ~The gnomes who invented this device based its design on one they supposedly saw a fire giant use, reportedly "big enough to throw a donkey 300 paces." Questioning the accuracy of this account brings the predictable retort that "you'll be sorry when a giant puts YOUR ass in a sling."
 
-Unlike most other slings, the Sling of Force is capable of throwing stones and allowing a strength bonus to be applied to the damage it deals. Although the sling is magical, giving it a bonus to hit and to damage, it is also capable of dealing strength damage due to its design, and not due to enchantment.
+Unlike most other slings, the Sling of Force is capable of throwing stones and allowing a Strength bonus to be applied to the damage it deals. Although the sling is magical, giving it a bonus to hit and to damage, it is capable of dealing Strength damage due to its design, and not due to enchantment.
 
 STATISTICS:
 
 Combat Abilities:
- Sling of Force: wielder's strength bonus is applied to damage
+ Sling of Force: wielder's Strength bonus is applied to damage
 
 THAC0: +2 bonus
 Damage: +2 bonus
@@ -12567,7 +12567,7 @@ Special Abilities (consumes charge):
 Not Usable By:
  Wizard Slayer~
 @2439 = ~Tome of Leadership and Influence~
-@2440 = ~One of the most popular recent tomes of leadership and influence is the cynically entitled book "How to Win Friends and Influence People." Like others of its ilk, it peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's charisma by a single point. In truth, such increases in personal charisma are the product of magical spells placed on the text as it is in the writing process. These same spells also cause the tome to disappear after their first use. An excellent marketing strategy, you must concede...
+@2440 = ~One of the most popular recent tomes of leadership and influence is the cynically entitled book "How to Win Friends and Influence People." Like others of its ilk, it peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's Charisma by a single point. In truth, such increases in personal charisma are the product of magical spells placed on the text as it is in the writing process. These same spells also cause the tome to disappear after their first use. An excellent marketing strategy, you must concede...
 
 STATISTICS:
 
