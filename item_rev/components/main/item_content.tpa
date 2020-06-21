@@ -1403,7 +1403,8 @@ COPY ~%source%/POTION_OF_VOCALIZE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_SIGHT.tpa
   COPY ~item_rev/itm/potn30.spl~ ~override~
     SAY NAME1 @3056
-  COPY ~item_rev/itm/potn30d.spl~ ~override~
+  COPY ~item_rev/itm/potn30a.spl~ ~override~
+  COPY ~item_rev/itm/potn30b.spl~ ~override~
 >>>>>>>>
 COPY ~%source%/POTION_OF_SIGHT.tpa~ ~%target%~
 
