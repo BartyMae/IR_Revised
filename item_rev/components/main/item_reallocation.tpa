@@ -222,7 +222,18 @@ END
 
 /////////////////////////////////////
 
-// Move Malakar from Spellhold troll to Samia's party
+// Place Plate of the Dark +1 on Samia
+// Move Malakar from Spellhold troll to Samia kensai
+// Place Silver Charm on Samia cleric
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~samia.cre~) BEGIN
+  COPY_EXISTING samia.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~plat05~
+	REMOVE_CRE_ITEM ~plat10~
+	ADD_CRE_ITEM ~plat05~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~pptroll1.cre~) BEGIN
   COPY_EXISTING pptroll1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
@@ -239,6 +250,13 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~pptroll1.cre~) BEGIN
     REMOVE_CRE_ITEM sw1h43
     ADD_CRE_ITEM sw1h45 #0 #0 #0 NONE WEAPON1 EQUIP
   END BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~legdor.cre~) BEGIN
+  COPY_EXISTING legdor.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	ADD_CRE_ITEM ~amul18~ #0 #0 #0 NONE AMULET
+  END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -340,7 +358,7 @@ END
 
 /////////////////////////////////////
 
-// Give Full Plate Mail +1 to Prelate Wessalen
+// Place Full Plate Mail +1 on Prelate Wessalen
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~hprelate.cre~) BEGIN
   COPY_EXISTING hprelate.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
@@ -507,6 +525,18 @@ END
 
 /////////////////////////////////////
 
+// Place Fallorain's Plate +1 on Reynald de Chatillion in BG2
+ACTION_IF (FILE_EXISTS_IN_GAME ~kaypal02.cre~) BEGIN
+  COPY_EXISTING kaypal02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~plat01~
+	REMOVE_CRE_ITEM ~plat02_~
+	ADD_CRE_ITEM ~plat02_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+
+/////////////////////////////////////
+
 // Places a droppable Robe of the Neutral Archmagi on Jaheria assassin
 /*ACTION_IF (FILE_EXISTS_IN_GAME ~jade3.cre~) BEGIN // Genthore
   COPY_EXISTING jade3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN 
@@ -610,7 +640,7 @@ END
 //Replace bad copies of Full Plate Mail +1
 ACTION_IF (FILE_EXISTS_IN_GAME ~gromg10.cre~) BEGIN
   COPY_EXISTING gromg10.cre override
-			    deckwar1.cre override 
+			    deckwar1.cre override
 			    yaga03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
   END
@@ -620,10 +650,10 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~sarevo2.cre~) BEGIN // BG1
     COPY_EXISTING ~knight4.cre~ ~override~
+                  ~deathk.cre~ ~override~
 				  ~deathk1.cre~ ~override~
 				  ~sarev1.cre~ ~override~
-				  ~sarevo2.cre~ ~override~
-				  ~deathk.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+				  ~sarevo2.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
         REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
     END
     BUT_ONLY
@@ -808,7 +838,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
     BUT_ONLY
 END
 
-// Place Telbar's Armor +2 on Sendai in BGT
+// Place Telbar's Armor +2 on Sendai in BG1
 ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
   COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~leat07~
