@@ -4716,7 +4716,7 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_tostc bg2 tob bgt bg2ee eet
 	LPF update_item_descriptions_to_bgee END
 END
 
-ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~) BEGIN // EET fixes
+ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee~) BEGIN // EET fixes
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) THEN BEGIN
     COPY_EXISTING ~helm15.itm~ ~override/helm15_.itm~
   END
