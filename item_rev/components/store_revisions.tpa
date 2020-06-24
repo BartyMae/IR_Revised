@@ -26,41 +26,22 @@ BEGIN
 END
 
 
-///////////////////////////////////////////////////////////////////
-
-// stores buy items at % of their real price:
-//   innkeepers - 15
-//   fences - 10
-//   temples - don't buy
-//   normal stores - 25
-// 
-// stores sell items at % of their real price:
-//   innkeepers - 155
-//   fences - 145
-//   temples - 145
-//   official city stores - 165
-//   normal stores - 155
-//   spell stores, artifact dealers, jewellers - plus 10-20%
-//   countryside stores - minus 10-20%
-// 
-// and about 10-15 exceptions to the rule, but it pains me to make a detailed list. Will only do upon request
-
-// temple services:
-//   call_lightning       =5
-//   cure_light_wounds    =25
-//   dispel_magic         =200
-//   remove_curse         =500
-//   cure_medium_wounds   =50
-//   cure_disease         =300
-//   cure_serious_wounds  =75
-//   neutralize_poison    =300
-//   lesser_restoration   =750
-//   cure_critical_wounds =100
-//   raise_dead           =1000
-//   mass_cure            =1000
-//   heal                 =1000
-//   resurrection         =2000
-//   greater_restoration  =2000
+// Temple services:
+//   call_lightning       = 5
+//   cure_light_wounds    = 25
+//   dispel_magic         = 200
+//   remove_curse         = 500
+//   cure_medium_wounds   = 50
+//   cure_disease         = 300
+//   cure_serious_wounds  = 75
+//   neutralize_poison    = 300
+//   lesser_restoration   = 750
+//   cure_critical_wounds = 100
+//   raise_dead           = 1000
+//   mass_cure            = 1000
+//   heal                 = 1000
+//   resurrection         = 2000
+//   greater_restoration  = 2000
 
 
 /////////////////////////
@@ -257,10 +238,10 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM HALB07   LAST #0 #0 #0 IDENTIFIED #1   // Halberd +2
   ADD_STORE_ITEM SPER05   LAST #0 #0 #0 IDENTIFIED #1   // Spear +2
   ADD_STORE_ITEM STAF18   LAST #0 #0 #0 IDENTIFIED #1   // Quarter Staff +2
-  ADD_STORE_ITEM BOW02    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +1
+  ADD_STORE_ITEM BOW16    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +2
   ADD_STORE_ITEM BOW17    LAST #0 #0 #0 IDENTIFIED #1   // Long Bow +2
   PATCH_IF comp_rr_equip BEGIN
-    ADD_STORE_ITEM ~RR#BOW03~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +1
+    ADD_STORE_ITEM ~RR#BOW04~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +2
   END
   ADD_STORE_ITEM BOW18    LAST #0 #0 #0 IDENTIFIED #1   // Short Bow +2
   ADD_STORE_ITEM XBOW07   LAST #0 #0 #0 IDENTIFIED #1   // Heavy Crossbow +2
@@ -268,11 +249,15 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SLNG04   LAST #0 #0 #0 IDENTIFIED #1   // Sling +2
   ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
   ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHLEAT51   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +2
+  END
   ADD_STORE_ITEM CHAN08   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +2
   ADD_STORE_ITEM PLAT10   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +2
   ADD_STORE_ITEM PLAT14   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail +1
-  PATCH_IF comp_rr_equip BEGIN
-    ADD_STORE_ITEM ~RR#BUC03~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +2
+  
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD50 LAST #0 #0 #0 IDENTIFIED #1   // Buckler +2
   END
   ADD_STORE_ITEM SHLD28   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +2
   ADD_STORE_ITEM SHLD29   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +2
@@ -293,9 +278,11 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM CLCK18   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
   END
 
-  ADD_STORE_ITEM SW1H06   LAST #0 #0 #0 IDENTIFIED #1   // Varscona
-  ADD_STORE_ITEM HAMM05   LAST #0 #0 #0 IDENTIFIED #1   // Borok's Fist / Tersyus
-  ADD_STORE_ITEM HALB03   LAST #0 #0 #0 IDENTIFIED #1   // Suryris's Blade
+  ADD_STORE_ITEM SW1H06   LAST #0 #0 #0 IDENTIFIED #1   // Varscona +2 
+  ADD_STORE_ITEM SW1H09   LAST #0 #0 #0 IDENTIFIED #1   // The Whistling Sword +2
+  ADD_STORE_ITEM WA2DAK   LAST #0 #0 #0 IDENTIFIED #1   // Dak'kon's Zerth Blade +2
+  ADD_STORE_ITEM HAMM05   LAST #0 #0 #0 IDENTIFIED #1   // Borok's Fist +2 / Tersyus +2
+  ADD_STORE_ITEM HALB03   LAST #0 #0 #0 IDENTIFIED #1   // Suryris's Blade +2
 
   ADD_STORE_ITEM BOW11    LAST #0 #0 #0 IDENTIFIED #1   // Strong Arm +2
   ADD_STORE_ITEM XBOW14   LAST #0 #0 #0 IDENTIFIED #1   // Heavy Crossbow of Searing +2
@@ -314,25 +301,22 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
   ADD_STORE_ITEM RING27   LAST #1 #1 #0 IDENTIFIED #1   // Ring of Fire Control
 
-  ADD_STORE_ITEM WA2DAK   LAST #0 #0 #0 IDENTIFIED #1   // Dak'kon's Zerth Blade
-  
   PATCH_IF comp_ir BEGIN
-    ADD_STORE_ITEM sw1h18   LAST #0 #0 #0 IDENTIFIED #1   // Sword of Balduran
+    ADD_STORE_ITEM WA2S1H   LAST #1 #0 #0 IDENTIFIED #1   // Sword of Balduran +2
   END
-  ADD_STORE_ITEM WA2PLAT  LAST #0 #0 #0 IDENTIFIED #1   // Plate of Balduran
+  ADD_STORE_ITEM WA2PLAT  LAST #0 #0 #0 IDENTIFIED #1   // Plate of Balduran +2
   PATCH_IF comp_ir BEGIN
-    ADD_STORE_ITEM WA2SHIEL   LAST #0 #0 #0 IDENTIFIED #1   // Sentinel +4 -> Shield of Balduran
+    ADD_STORE_ITEM WA2SHIEL   LAST #0 #0 #0 IDENTIFIED #1   // Sentinel +4 -> Shield of Balduran +2
   END ELSE BEGIN
-    ADD_STORE_ITEM SHLD22 LAST #0 #0 #0 IDENTIFIED #1   // Shield of Balduran -> Mirror Shield
+    ADD_STORE_ITEM SHLD22 LAST #0 #0 #0 IDENTIFIED #1   // Shield of Balduran +2 -> Mirror Shield +3
   END
 
-  ADD_STORE_ITEM BAG06D   LAST #0 #0 #0 IDENTIFIED #1   // Potion Case
-  ADD_STORE_ITEM BAG31    LAST #0 #0 #0 IDENTIFIED #1   // Bag of Holding - from Lazarus the Librarian
+  ADD_STORE_ITEM BAG31    LAST #0 #0 #0 IDENTIFIED #1   // Bag of Holding
   ADD_STORE_ITEM CLCK15   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Good Archmagi / Robe of the Weave
   ADD_STORE_ITEM CLCK16   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Neutral Archmagi / Robe of the Battlemage
   ADD_STORE_ITEM CLCK17   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Evil Archmagi / Robe of Arcane Might
 
-  // potions moved here, previously they were assigned to Joluv
+  // Potions moved here, previously they were assigned to Joluv
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #100 // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #25  // Potion of Extra Healing
   ADD_STORE_ITEM POTN55   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Superior Healing
@@ -437,9 +421,9 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     DAGG15    // Dagger +2
     HALB07    // Halberd +2
     DART01    // Dart
-    DART03    // Dart of Stunning
+    DART03    // Dart of Stunning +1
     DART04    // Dart of Wounding
-    DART05    // Asp's Nest
+    DART05    // Asp's Nest +2
     BOW10     // Heartseeker +3
     BOW16     // Composite Long Bow +2
     BOW17     // Long Bow +2
@@ -487,7 +471,11 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H73   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +3
   ADD_STORE_ITEM SW1H74   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +3
   ADD_STORE_ITEM SW1H76   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +3
-  ADD_STORE_ITEM SW1H55   LAST #0 #0 #0 IDENTIFIED #1   // Katana +2
+  ADD_STORE_ITEM SW1H75   LAST #0 #0 #0 IDENTIFIED #1   // Katana +3
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H52   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +3
+    ADD_STORE_ITEM OHSW1H54   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +3
+  END
   ADD_STORE_ITEM DAGG24   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +3
   ADD_STORE_ITEM AX1H17   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +3
   ADD_STORE_ITEM BLUN32   LAST #0 #0 #0 IDENTIFIED #1   // Flail +3
@@ -499,27 +487,28 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM HALB12   LAST #0 #0 #0 IDENTIFIED #1   // Halberd +3
   ADD_STORE_ITEM SPER06   LAST #0 #0 #0 IDENTIFIED #1   // Spear +3
   ADD_STORE_ITEM STAF24   LAST #0 #0 #0 IDENTIFIED #1   // Quarter Staff +3
-  ADD_STORE_ITEM BOW16    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +2
+  ADD_STORE_ITEM BOW24    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +3
   ADD_STORE_ITEM BOW25    LAST #0 #0 #0 IDENTIFIED #1   // Long Bow +3
   PATCH_IF comp_rr_equip BEGIN
-    ADD_STORE_ITEM ~RR#BOW04~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +2
+    ADD_STORE_ITEM ~RR#BOW05~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +3
   END
   ADD_STORE_ITEM BOW26    LAST #0 #0 #0 IDENTIFIED #1   // Short Bow +3
   ADD_STORE_ITEM XBOW17   LAST #0 #0 #0 IDENTIFIED #1   // Heavy Crossbow +3
   ADD_STORE_ITEM XBOW18   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +3
   ADD_STORE_ITEM SLNG10   LAST #0 #0 #0 IDENTIFIED #1   // Sling +3
-  PATCH_IF comp_rr_equip BEGIN
-    ADD_STORE_ITEM ~RR#BUC04~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +3
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD51 LAST #0 #0 #0 IDENTIFIED #1   // Buckler +3
   END
   ADD_STORE_ITEM LEAT12   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +3
   ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +3
   PATCH_IF comp_ir BEGIN
+    ADD_STORE_ITEM OHLEAT52   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +3
     ADD_STORE_ITEM CHAN07   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +3
   END
   PATCH_IF comp_ir BEGIN
     ADD_STORE_ITEM PLAT19   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail +2
   END ELSE BEGIN
-    ADD_STORE_ITEM PLAT23   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail +2 - it is +3 in IR
+    ADD_STORE_ITEM PLAT23   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail +2 (+3 in IR)
   END
 
   ADD_STORE_ITEM AROW11   LAST #40 #0 #0 IDENTIFIED #2  // Arrow +2
@@ -541,20 +530,20 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BOLT04   LAST #40 #0 #0 IDENTIFIED #3  // Bolt of Biting 
   PATCH_IF comp_ir BEGIN
     ADD_STORE_ITEM BOLT05   LAST #5  #0 #0 IDENTIFIED #1  // Bolt of Polymorphing
-    ADD_STORE_ITEM BOLT08   LAST #40 #0 #0 IDENTIFIED #1  // Blessed Bolt
+    ADD_STORE_ITEM BOLT08   LAST #20 #0 #0 IDENTIFIED #1  // Blessed Bolt
   END
 
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #2  // Bullet +2
   ADD_STORE_ITEM BULL05   LAST #40 #0 #0 IDENTIFIED #1  // Bullet +3
-  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet
+  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet +2
 
   PATCH_IF comp_ir BEGIN
-    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting (Bullet +4)
+    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting +3 (Bullet +4)
   END
 
-  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Stunning
+  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Wounding
-  ADD_STORE_ITEM DART05   LAST #20 #0 #0 IDENTIFIED #5  // Asp's Nest
+  ADD_STORE_ITEM DART05   LAST #20 #0 #0 IDENTIFIED #2  // Asp's Nest +2
 
   PATCH_IF comp_cursed=0 BEGIN
     ADD_STORE_ITEM PLAT17   LAST #0 #0 #0 IDENTIFIED #1   // T'rahcie's Plate +5 / Armor of the Hart +3
@@ -1018,6 +1007,8 @@ COPY_EXISTING shop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   SAY 0xc @200109 // Potion Store
 
+  ADD_STORE_ITEM BAG06D   LAST #0 #0 #0 IDENTIFIED #1   // Potion Case
+
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #25  // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Extra Healing
   ADD_STORE_ITEM POTN20   LAST #1 #0 #0 IDENTIFIED #3   // Antidote
@@ -1102,9 +1093,9 @@ COPY_EXISTING shop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM AX1H01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Battle Axe
   ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
-  ADD_STORE_ITEM AX1H04   LAST #10 #0 #0 IDENTIFIED #1 UNLIMITED  // Throwing Axe
   ADD_STORE_ITEM HAMM01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // War Hammer
   ADD_STORE_ITEM HAMM02   LAST #0 #0 #0 IDENTIFIED #1   // War Hammer +1
+  ADD_STORE_ITEM AX1H04   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED  // Throwing Axe
 
   ADD_STORE_ITEM CHAN01   LAST #0 #0 #0 IDENTIFIED #5   // Chain Mail
   ADD_STORE_ITEM CHAN02   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +1
@@ -1218,6 +1209,9 @@ COPY_EXISTING shop03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #5   // Studded Leather Armor
   ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
   ADD_STORE_ITEM LEAT10   LAST #0 #0 #0 IDENTIFIED #3   // Hide Armor
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHLEAT50   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +1
+  END
 
   ADD_STORE_ITEM LEAT20   LAST #0 #0 #0 IDENTIFIED #1   // Aeger's Hide +3
 
@@ -1284,9 +1278,9 @@ COPY_EXISTING shop04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM STAF02   LAST #0 #0 #0 IDENTIFIED #1   // Quarterstaff +1
   ADD_STORE_ITEM DART01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED  // Dart
   ADD_STORE_ITEM DART02   LAST #40 #0 #0 IDENTIFIED #5  // Dart +1
-  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Stunning
+  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Wounding
-  ADD_STORE_ITEM DART05   LAST #20 #0 #0 IDENTIFIED #2  // Asp's Nest
+  ADD_STORE_ITEM DART05   LAST #20 #0 #0 IDENTIFIED #2  // Asp's Nest +2
 
   ADD_STORE_ITEM wawak    LAST #0 #0 #0 IDENTIFIED #1   // Malakar's Companion +2
 
@@ -1367,7 +1361,9 @@ COPY_EXISTING shop05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM AROW07   LAST #5 #0 #0 IDENTIFIED #1   // Arrow of Dispelling +1
   END
   ADD_STORE_ITEM AROW06   LAST #5 #0 #0 IDENTIFIED #1   // Arrow of Detonation
-  ADD_STORE_ITEM AROW03   LAST #5 #0 #0 IDENTIFIED #1   // Arrow of Slaying +2
+  PATCH_IF comp_ir BEGIN
+    ADD_STORE_ITEM AROW03   LAST #5 #0 #0 IDENTIFIED #1   // Arrow of Slaying +2
+  END
 
   ADD_STORE_ITEM BOLT01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED // Bolt
   ADD_STORE_ITEM BOLT02   LAST #40 #0 #0 IDENTIFIED #10 // Bolt +1
@@ -1376,15 +1372,15 @@ COPY_EXISTING shop05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BOLT03   LAST #40 #0 #0 IDENTIFIED #3  // Bolt of Lightning +1
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM BOLT05   LAST #5  #0 #0 IDENTIFIED #1  // Bolt of Polymorphing
-    ADD_STORE_ITEM BOLT08   LAST #40 #0 #0 IDENTIFIED #1  // Blessed Bolt
+    ADD_STORE_ITEM BOLT08   LAST #20 #0 #0 IDENTIFIED #1  // Blessed Bolt
   END
 
   ADD_STORE_ITEM BULL01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED // Bullet
   ADD_STORE_ITEM BULL02   LAST #40 #0 #0 IDENTIFIED #10 // Bullet +1
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #5  // Bullet +2
-  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet
+  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet +2
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting (Bullet +4)
+    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting +3 (Bullet +4)
   END
 
 END BUT_ONLY
@@ -1902,12 +1898,12 @@ COPY_EXISTING trmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM amul05   LAST #0 #0 #0 IDENTIFIED #3   // Bluestone
   ADD_STORE_ITEM amul07   LAST #0 #0 #0 IDENTIFIED #5   // Rainbow Obsidian
-  ADD_STORE_ITEM amul09   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver, #10
+  ADD_STORE_ITEM amul09   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
   ADD_STORE_ITEM amul13   LAST #0 #0 #0 IDENTIFIED #2   // Bloodstone
   ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
-  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver, #10
+  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver
   ADD_STORE_ITEM RING12   LAST #0 #0 #0 IDENTIFIED #3   // Onyx
   ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #2   // Flamedance
   ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
@@ -2008,20 +2004,25 @@ COPY_EXISTING trmer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   SAY 0xc @200119 // Artifact Dealer
 
-  ADD_STORE_ITEM SW1H41   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +2
-  ADD_STORE_ITEM DAGG15   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +2
-  ADD_STORE_ITEM BLUN13   LAST #0 #0 #0 IDENTIFIED #1   // Flail +2
-  ADD_STORE_ITEM BOW02    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +1
-  PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BOW03~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +1
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H55   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +2
   END
+  ADD_STORE_ITEM SW1H55   LAST #0 #0 #0 IDENTIFIED #1   // Katana +2
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H51   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +2
+    ADD_STORE_ITEM OHSW1H53   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +2
+  END
+  ADD_STORE_ITEM BLUN15   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +2
+  ADD_STORE_ITEM BLUN13   LAST #0 #0 #0 IDENTIFIED #1   // Flail +2
+  ADD_STORE_ITEM SW2H11   LAST #0 #0 #0 IDENTIFIED #1   // Two Handed Sword +2
+  ADD_STORE_ITEM BOW16    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +2
   ADD_STORE_ITEM BOW18    LAST #0 #0 #0 IDENTIFIED #1   // Short Bow +2
   ADD_STORE_ITEM XBOW09   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +2
   ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
   ADD_STORE_ITEM CHAN08   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +2
   ADD_STORE_ITEM PLAT10   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +2
-  PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BUC03~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +2
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD50 LAST #0 #0 #0 IDENTIFIED #1   // Buckler +2
   END
   ADD_STORE_ITEM SHLD28   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +2
   ADD_STORE_ITEM SHLD29   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +2
@@ -2111,9 +2112,9 @@ COPY_EXISTING trmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BULL01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED  // Bullet
   ADD_STORE_ITEM BULL02   LAST #40 #0 #0 IDENTIFIED #10 // Bullet +1
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #5  // Bullet +2
-  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet
+  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet +2
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting (Bullet +4)
+    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting +3 (Bullet +4)
   END
 
   ADD_STORE_ITEM BOW07    LAST #0 #0 #0 IDENTIFIED #1   // Long Bow of Marksmanship
@@ -2246,6 +2247,7 @@ COPY_EXISTING trmer04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM CHAN05   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail +1
   ADD_STORE_ITEM PLAT01   LAST #0 #0 #0 IDENTIFIED #3   // Plate Mail
   ADD_STORE_ITEM PLAT02   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +1
+  ADD_STORE_ITEM PLAT10   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +2
   ADD_STORE_ITEM PLAT04   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail
   ADD_STORE_ITEM PLAT14   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail +1
   ADD_STORE_ITEM SHLD01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Small Shield
@@ -2260,7 +2262,7 @@ COPY_EXISTING trmer04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM SW1H33   LAST #0 #0 #0 IDENTIFIED #1   // Ras +2
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM bgsw2h07 LAST #0 #0 #0 IDENTIFIED #1   // World's Edge +3
+    ADD_STORE_ITEM BGSW2H07 LAST #0 #0 #0 IDENTIFIED #1   // World's Edge +3
   END
   ADD_STORE_ITEM STAF07   LAST #0 #0 #0 IDENTIFIED #1   // Staff Spear +2
 
@@ -2474,7 +2476,7 @@ END BUT_ONLY
 
 // Robbing Dalok of Flametongue
 COPY_EXISTING cedruid2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-  REMOVE_CRE_ITEM sw1h24
+  REMOVE_CRE_ITEM SW1H24
 END BUT_ONLY
 
 // Swapping Ikert and elf-on-the-bridge, dialog and scripts remain tied to original area
@@ -2663,7 +2665,6 @@ COPY_EXISTING bshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM AROW04   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Acid +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Wounding
 
-  ADD_STORE_ITEM SW1H09   LAST #0 #0 #0 IDENTIFIED #1   // The Whistling Sword +2
   ADD_STORE_ITEM CLCK10   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Fire Resistance
 
   ADD_STORE_ITEM POTN10   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Invisibility
@@ -2750,6 +2751,9 @@ COPY_EXISTING merchant.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #5   // Studded Leather Armor
   ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
   ADD_STORE_ITEM LEAT10   LAST #0 #0 #0 IDENTIFIED #3   // Hide Armor
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHLEAT50   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +1
+  END
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Healing
   ADD_STORE_ITEM POTN03   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Hill Giant Strength
@@ -3023,7 +3027,7 @@ COPY_EXISTING uhmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     fence=0
   END
 
-  WRITE_BYTE 0x10 BYTE_AT 0x10 |32 // enable the temple menu. could have been put into 'store', but for two places only?
+  WRITE_BYTE 0x10 BYTE_AT 0x10 |32 // Enable the temple menu, could have been put into 'store', but for two places only?
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_medium_wounds=50
@@ -3078,7 +3082,7 @@ END BUT_ONLY
 // 100% stock overwrite
 
 COPY_EXISTING ar2209.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // take Water Edge from Ust'Natha
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=sw1h52 END
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=SW1H52 END
 END BUT_ONLY
 
 COPY_EXISTING ppstor01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -3182,18 +3186,18 @@ COPY_EXISTING ppstor01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM DART01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED // Dart
   ADD_STORE_ITEM DART02   LAST #40 #0 #0 IDENTIFIED #5   // Dart +1
 
-  ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #3  // Studded Leather Armor
+  ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #3   // Studded Leather Armor
   ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
   ADD_STORE_ITEM LEAT07   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
 
-  ADD_STORE_ITEM SHLD01   LAST #0 #0 #0 IDENTIFIED #3  // Small Shield
+  ADD_STORE_ITEM SHLD08   LAST #0 #0 #0 IDENTIFIED #5   // Buckler
+  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #3   // Buckler +1
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD50 LAST #0 #0 #0 IDENTIFIED #1   // Buckler +2
+  END
+  ADD_STORE_ITEM SHLD01   LAST #0 #0 #0 IDENTIFIED #3   // Small Shield
   ADD_STORE_ITEM SHLD02   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +1
   ADD_STORE_ITEM SHLD28   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +2
-  ADD_STORE_ITEM SHLD08   LAST #0 #0 #0 IDENTIFIED #5  // Buckler
-  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #3   // Buckler +1
-  PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BUC03~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +2
-  END
 
   ADD_STORE_ITEM SW1H52   LAST #0 #0 #0 IDENTIFIED #1   // Water's Edge +3
 
@@ -3398,7 +3402,6 @@ COPY_EXISTING govwau01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     raise_dead=1000
   END
 
-  ADD_STORE_ITEM STAF19   LAST #0 #0 #0 IDENTIFIED #1   // Cleric's Staff +3
   ADD_STORE_ITEM CLCK14   LAST #0 #0 #0 IDENTIFIED #1   // Adventurer's Robe
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
@@ -3678,6 +3681,9 @@ COPY_EXISTING kpchap01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #5   // Studded Leather Armor
   ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
   ADD_STORE_ITEM LEAT10   LAST #0 #0 #0 IDENTIFIED #3   // Hide Armor
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHLEAT51   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +2
+  END
   ADD_STORE_ITEM CHAN01   LAST #0 #0 #0 IDENTIFIED #3   // Chain Mail
   ADD_STORE_ITEM CHAN08   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +2
 
@@ -3806,7 +3812,7 @@ COPY_EXISTING temhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM HELM10   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Helmet
   ADD_STORE_ITEM HELM11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Helmet
-  ADD_STORE_ITEM HELM05   LAST #0 #0 #0 IDENTIFIED #1   // Helm of Infravision/Watcher's Helm
+  ADD_STORE_ITEM HELM05   LAST #0 #0 #0 IDENTIFIED #1   // Helm of Infravision / Watcher's Helm
 
   ADD_STORE_ITEM RING22   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Holiness
 
@@ -3864,9 +3870,9 @@ END BUT_ONLY
 
 // 100% stock overwrite
 
-COPY_EXISTING blpool.bcs override // put Vampire's Revenge into pool of blood instead of Mace of Disruption
+COPY_EXISTING blpool.bcs override // Put Vampire's Revenge into pool of blood instead of Mace of Disruption
   DECOMPILE_BCS_TO_BAF
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("blun12"~ ~GiveItemCreate("sw1h19"~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("blun12"~ ~GiveItemCreate("SW1H19"~
   COMPILE_BAF_TO_BCS
 
 COPY_EXISTING temlath.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -4143,6 +4149,7 @@ COPY_EXISTING temsup.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Extra Healing
 
+  ADD_STORE_ITEM SCRL06   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Fire
   ADD_STORE_ITEM SCRL04   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Cold
   ADD_STORE_ITEM STAF19   LAST #0 #0 #0 IDENTIFIED #1   // Cleric's Staff +3
 
@@ -4207,7 +4214,7 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
 
   LPF temple INT_VAR
-    call_lightning=5      // and yes, it CAN be used for healing - just get 127% electrical res
+    call_lightning=5      // Yes, it CAN be used for healing - just get 127% electrical res
     cure_light_wounds=50
     dispel_magic=400
     remove_curse=1000
@@ -4373,7 +4380,8 @@ COPY_EXISTING gorch.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     fence=1
   END
 
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
+  ADD_STORE_ITEM DAGG05   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED // Throwing Dagger
+  ADD_STORE_ITEM DAGG16   LAST #20 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Healing
   ADD_STORE_ITEM POTN19   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Agility
   ADD_STORE_ITEM POTN36   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Master Thievery
@@ -4463,8 +4471,9 @@ COPY_EXISTING binnkeep.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     fence=0
   END
 
+  ADD_STORE_ITEM SW1H08   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +1
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
-  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Stunning
+  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Stunning +1
 
   ADD_STORE_ITEM SCRL59   LAST #1 #0 #0 IDENTIFIED #1   // Neutralize Poison
   ADD_STORE_ITEM amul07   LAST #0 #0 #0 IDENTIFIED #1   // Rainbow Obsidian
@@ -4817,16 +4826,15 @@ COPY_EXISTING jayes.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   WRITE_LONG 0xc 17727
 
-  ADD_STORE_ITEM SW1H08   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +1
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #2  // Poisoned Throwing Dagger
+  ADD_STORE_ITEM DAGG05   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED // Throwing Dagger
+  ADD_STORE_ITEM DAGG16   LAST #20 #0 #0 IDENTIFIED #2  // Poisoned Throwing Dagger
+  ADD_STORE_ITEM SW1H29   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +2
   ADD_STORE_ITEM HAMM08   LAST #0 #0 #0 IDENTIFIED #1   // War Hammer +2
-    PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BOW03~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +1
-  END
+  ADD_STORE_ITEM BOW17    LAST #0 #0 #0 IDENTIFIED #1   // Long Bow +2
 
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #2  // Arrow +1
   ADD_STORE_ITEM AROW06   LAST #5 #0 #0 IDENTIFIED #1   // Arrow of Detonation
-  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #2  // Dart of Stunning
+  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #2  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #2  // Dart of Wounding
 
   ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
@@ -4900,8 +4908,9 @@ COPY_EXISTING dmark.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM MISC29   LAST #0 #0 #0 IDENTIFIED #1   // Ziose
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
 
+  ADD_STORE_ITEM DAGG05   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED // Throwing Dagger
+  ADD_STORE_ITEM DAGG16   LAST #20 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
   ADD_STORE_ITEM SW1H05   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +1
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
   ADD_STORE_ITEM DAGG02   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +1
   ADD_STORE_ITEM BOW04    LAST #0 #0 #0 IDENTIFIED #1   // Long Bow +1
 
@@ -4996,16 +5005,18 @@ COPY_EXISTING bshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   SAY 0xc @200129 // Halfling Cutpurse
 
-  ADD_STORE_ITEM amul02   LAST #0 #0 #0 IDENTIFIED #1   // Necklace
   ADD_STORE_ITEM amul05   LAST #0 #0 #0 IDENTIFIED #2   // Bluestone
   ADD_STORE_ITEM RING16   LAST #0 #0 #0 IDENTIFIED #2   // Angel Skin
   ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
   ADD_STORE_ITEM MISC21   LAST #0 #0 #0 IDENTIFIED #3   // Skydrop
   ADD_STORE_ITEM MISC42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
 
-  ADD_STORE_ITEM SW1H22   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +1
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
+  ADD_STORE_ITEM DAGG05   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED // Throwing Dagger
+  ADD_STORE_ITEM DAGG16   LAST #20 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
+  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
   ADD_STORE_ITEM STAF02   LAST #0 #0 #0 IDENTIFIED #1   // Quarterstaff +1
+  ADD_STORE_ITEM HALB02   LAST #0 #0 #0 IDENTIFIED #1   // Halberd +1
   ADD_STORE_ITEM BOW02    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +1
 
   ADD_STORE_ITEM AROW08   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Fire +1
@@ -5023,8 +5034,8 @@ COPY_EXISTING bshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
   ADD_STORE_ITEM SCRL05   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Electricity
 
-  ADD_STORE_ITEM POTN43   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Insight 
   ADD_STORE_ITEM POTN20   LAST #1 #0 #0 IDENTIFIED #1   // Antidote
+  ADD_STORE_ITEM POTN43   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Insight
   ADD_STORE_ITEM POTN36   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Master Thievery
   ADD_STORE_ITEM POTN38   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Mirrored Eyes
 
@@ -5124,23 +5135,21 @@ COPY_EXISTING arled.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H22   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +1
   ADD_STORE_ITEM SW1H44   LAST #0 #0 #0 IDENTIFIED #1   // Katana +1
   ADD_STORE_ITEM DAGG02   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +1
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #3  // Poisoned Throwing Dagger
   ADD_STORE_ITEM DART02   LAST #40 #0 #0 IDENTIFIED #3  // Dart +1
-  ADD_STORE_ITEM BOW02    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +1
-  PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BOW03~ LAST #0 #0 #0 IDENTIFIED #1  // Composite Short Bow +1
-  END
+  ADD_STORE_ITEM BOW06    LAST #0 #0 #0 IDENTIFIED #1   // Short Bow +1
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
 
+  ADD_STORE_ITEM DAGG16   LAST #20 #0 #0 IDENTIFIED #3  // Poisoned Throwing Dagger
   ADD_STORE_ITEM MISC75   LAST #0 #0 #0  IDENTIFIED #1  // Dagger of Venom
 
+  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +1
+  ADD_STORE_ITEM SHLD02   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +1
+  ADD_STORE_ITEM AMUL14   LAST #0 #0 #0 IDENTIFIED #1   // Amulet of Protection +1
+  
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #3  // Arrow +1
   ADD_STORE_ITEM AROW04   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Acid +1
   ADD_STORE_ITEM AROW05   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Biting
   ADD_STORE_ITEM AROW10   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Piercing +3
-
-  ADD_STORE_ITEM SHLD04   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +1
-  ADD_STORE_ITEM AMUL14   LAST #0 #0 #0 IDENTIFIED #1   // Amulet of Protection +1
 
   PATCH_IF comp_rr_equip=1 BEGIN
     ADD_STORE_ITEM ~RR#SAP01~ LAST #0 #0 #0 IDENTIFIED #3  // Sap
@@ -5234,9 +5243,9 @@ COPY_EXISTING slshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM DAGG15   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +2
   ADD_STORE_ITEM BLUN21   LAST #0 #0 #0 IDENTIFIED #1   // Mace +2
   ADD_STORE_ITEM BOW18    LAST #0 #0 #0 IDENTIFIED #1   // Short Bow +2
-  ADD_STORE_ITEM LEAT12   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +3
-  PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BUC03~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +2
+  ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD50 LAST #0 #0 #0 IDENTIFIED #1   // Buckler +2
   END
 
   ADD_STORE_ITEM AROW05   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Biting
@@ -5249,9 +5258,9 @@ COPY_EXISTING slshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BOLT04   LAST #40 #0 #0 IDENTIFIED #1  // Bolt of Biting 
   ADD_STORE_ITEM BOLT03   LAST #40 #0 #0 IDENTIFIED #1  // Bolt of Lightning +1
 
-  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet
+  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet +2
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting (Bullet +4)
+    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting +3 (Bullet +4)
   END
 
   PATCH_IF comp_ir=1 BEGIN
@@ -5340,13 +5349,13 @@ COPY_EXISTING slshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   SAY 0xc @200131 // Half-Orc Fence
 
   ADD_STORE_ITEM SW1H05   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +1
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #3  // Poisoned Throwing Dagger
   ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
-  ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Wounding
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
   ADD_STORE_ITEM LEAT02   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +1
 
-  ADD_STORE_ITEM AROW04   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Acid +1
+  ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Wounding
+
+  ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #1  // Arrow +1
   ADD_STORE_ITEM BOLT02   LAST #40 #0 #0 IDENTIFIED #1  // Bolt +1
 
   ADD_STORE_ITEM POTN29   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Genius
@@ -5452,12 +5461,14 @@ COPY_EXISTING trthf02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   WRITE_LONG 0xc 39143
 
   ADD_STORE_ITEM SW1H47   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +1
-  ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
+  ADD_STORE_ITEM AX1H05   LAST #0 #0 #0 IDENTIFIED #1   // Throwing Axe +1
+  ADD_STORE_ITEM CHAN05   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail +1
+  ADD_STORE_ITEM SHLD04   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +1
 
+  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Stunning +1
   ADD_STORE_ITEM AROW09   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Ice +1
-  ADD_STORE_ITEM BULL02   LAST #20 #0 #0 IDENTIFIED #1  // Bullet +1
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting (Bullet +4)
+    ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting +3 (Bullet +4)
   END
 
   ADD_STORE_ITEM SW1H36   LAST #0 #1 #0 IDENTIFIED #1   // Namarra +2
@@ -5612,8 +5623,8 @@ COPY_EXISTING bmthief.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H47   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +1
   ADD_STORE_ITEM SW1H48   LAST #0 #0 #0 IDENTIFIED #3   // Ninja-To
   ADD_STORE_ITEM SW1H49   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +1
-  ADD_STORE_ITEM DAGG05   LAST #10 #0 #0 IDENTIFIED #1 UNLIMITED // Throwing Dagger
-  ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #10 // Poisoned Throwing Dagger
+  ADD_STORE_ITEM DAGG05   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED // Throwing Dagger
+  ADD_STORE_ITEM DAGG16   LAST #20 #0 #0 IDENTIFIED #10 // Poisoned Throwing Dagger
   ADD_STORE_ITEM XBOW04   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Light Crossbow
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
 
@@ -5625,6 +5636,9 @@ COPY_EXISTING bmthief.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM SHLD08   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Buckler
   ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +1
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD50   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +2
+  END
 
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM WAND10   LAST #10 #0 #0 IDENTIFIED #1  // Monster
@@ -5746,8 +5760,13 @@ COPY_EXISTING shthstor.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
   ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
+  PATCH_IF comp_ir BEGIN
+    ADD_STORE_ITEM OHLEAT51   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +3
+  END
 
-  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +1
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD50   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +2
+  END
   ADD_STORE_ITEM SHLD28   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +2
 
   ADD_STORE_ITEM BAG02E   LAST #0 #0 #0 IDENTIFIED #1   // Gem Bag
@@ -5760,8 +5779,8 @@ COPY_EXISTING shthstor.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END ELSE BEGIN
     ADD_STORE_ITEM WAND06   LAST #50 #0 #0 IDENTIFIED #1  // Frost
   END
-  ADD_STORE_ITEM SCRL09   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Undead
   ADD_STORE_ITEM RING06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
+  ADD_STORE_ITEM SCRL09   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Undead
 
   ADD_STORE_ITEM amul11   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
@@ -6134,7 +6153,7 @@ COPY_EXISTING bernard2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM DAGG02   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +1
 
   ADD_STORE_ITEM DART02   LAST #40 #0 #0 IDENTIFIED #2  // Dart +1
-  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Stunning
+  ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Wounding
 
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #2  // Arrow +1
@@ -6152,6 +6171,7 @@ COPY_EXISTING bernard2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #1  // Bullet +2
 
   ADD_STORE_ITEM PLAT04   LAST #0 #0 #0 IDENTIFIED #1   // Full Plate Mail
+  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #1   // Bucker +1
   ADD_STORE_ITEM SHLD02   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +1
   ADD_STORE_ITEM SHLD04   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +1
   ADD_STORE_ITEM SHLD06   LAST #0 #0 #0 IDENTIFIED #1   // Large Shield +1
@@ -6241,12 +6261,15 @@ COPY_EXISTING ppstor01.sto ~override/%extortion_store%.sto~ PATCH_IF SOURCE_SIZE
   ADD_STORE_ITEM BOLT06   LAST #40 #0 #0 IDENTIFIED #1  // Bolt +2
   ADD_STORE_ITEM BOLT03   LAST #40 #0 #0 IDENTIFIED #1  // Bolt of Lightning +1
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM BOLT08   LAST #40 #0 #0 IDENTIFIED #1  // Blessed Bolt
+    ADD_STORE_ITEM BOLT08   LAST #20 #0 #0 IDENTIFIED #1  // Blessed Bolt
   END
 
   ADD_STORE_ITEM BULL02   LAST #40 #0 #0 IDENTIFIED #2  // Bullet +1
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #1  // Bullet +2
-  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet
+  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #1  // Sunstone Bullet +2
+  
+  ADD_STORE_ITEM POTN15   LAST #1 #0 #0 IDENTIFIED #3  // Red Potion
+  ADD_STORE_ITEM POTN16   LAST #1 #0 #0 IDENTIFIED #3  // Violet Potion
 
 END BUT_ONLY
 
@@ -6349,6 +6372,9 @@ COPY_EXISTING trgeni01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM LEAT02   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +1
   ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
+  PATCH_IF comp_ir BEGIN
+    ADD_STORE_ITEM OHLEAT50   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +1
+  END
   ADD_STORE_ITEM CHAN02   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +1
   ADD_STORE_ITEM CHAN05   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail +1
   ADD_STORE_ITEM PLAT02   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +1
@@ -6803,7 +6829,7 @@ END BUT_ONLY
 
 // Take Psion's Blade for Yaga-Shura's temple
 COPY_EXISTING ar5201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=sw2h21 END
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=SW2H21 END
 END BUT_ONLY
 
 // Take Azamantes' Serpent Shaft
@@ -6885,8 +6911,8 @@ COPY_EXISTING uddrow23.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   SAY 0xc @200134 // Drow Weapon Dealer
 
-  ADD_STORE_ITEM dwsw1h02 LAST #0 #0 #0 IDENTIFIED #3   // Long Sword
-  ADD_STORE_ITEM dwsw1h01 LAST #0 #0 #0 IDENTIFIED #3   // Scimitar
+  ADD_STORE_ITEM dwSW1H02 LAST #0 #0 #0 IDENTIFIED #3   // Long Sword
+  ADD_STORE_ITEM dwSW1H01 LAST #0 #0 #0 IDENTIFIED #3   // Scimitar
   ADD_STORE_ITEM dwblun01 LAST #0 #0 #0 IDENTIFIED #3   // Flail
   ADD_STORE_ITEM dwhalb01 LAST #0 #0 #0 IDENTIFIED #3   // Halberd
   ADD_STORE_ITEM dwsper01 LAST #0 #0 #0 IDENTIFIED #3   // Lance
@@ -7215,7 +7241,7 @@ COPY_EXISTING uddrow25.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END ELSE BEGIN
     ADD_STORE_ITEM AMUL17   LAST #50 #0 #0 IDENTIFIED #1  // Greenstone Amulet
   END
-  ADD_STORE_ITEM RODS04   LAST #20 #0 #0 IDENTIFIED #1  // Rod of Smiting
+  ADD_STORE_ITEM RODS04   LAST #1 #0 #0 IDENTIFIED #1  // Rod of Smiting
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM AMUL20   LAST #1 #0 #0 IDENTIFIED #1   // Kaligun's Amulet of Magic Resistance
   END ELSE BEGIN
@@ -7404,6 +7430,19 @@ COPY_EXISTING udduer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
   ADD_STORE_ITEM SLNG02   LAST #0 #0 #0 IDENTIFIED #1   // Sling +1
 
+  ADD_STORE_ITEM LEAT02   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +1
+  ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
+  PATCH_IF comp_ir BEGIN
+    ADD_STORE_ITEM OHLEAT50   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +1
+  END
+  ADD_STORE_ITEM CHAN02   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +1
+  ADD_STORE_ITEM CHAN05   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail +1
+  ADD_STORE_ITEM PLAT02   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +1
+  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +1
+  ADD_STORE_ITEM SHLD02   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +1
+  ADD_STORE_ITEM SHLD04   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +1
+  ADD_STORE_ITEM SHLD06   LAST #0 #0 #0 IDENTIFIED #1   // Large Shield +1
+
   ADD_STORE_ITEM AROW01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED // Arrow
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #3  // Arrow +1
   ADD_STORE_ITEM AROW11   LAST #40 #0 #0 IDENTIFIED #2  // Arrow +2
@@ -7413,16 +7452,6 @@ COPY_EXISTING udduer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BULL01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED // Bullet
   ADD_STORE_ITEM BULL02   LAST #40 #0 #0 IDENTIFIED #3  // Bullet +1
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #2  // Bullet +2
-
-  ADD_STORE_ITEM LEAT02   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +1
-  ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
-  ADD_STORE_ITEM CHAN02   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +1
-  ADD_STORE_ITEM CHAN05   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail +1
-  ADD_STORE_ITEM PLAT02   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +1
-  ADD_STORE_ITEM SHLD17   LAST #0 #0 #0 IDENTIFIED #1   // Buckler +1
-  ADD_STORE_ITEM SHLD02   LAST #0 #0 #0 IDENTIFIED #1   // Small Shield +1
-  ADD_STORE_ITEM SHLD04   LAST #0 #0 #0 IDENTIFIED #1   // Medium Shield +1
-  ADD_STORE_ITEM SHLD06   LAST #0 #0 #0 IDENTIFIED #1   // Large Shield +1
 
   ADD_STORE_ITEM SCRL7G   LAST #1 #0 #0 IDENTIFIED #1   // Tenser's Transformation
 
@@ -8451,8 +8480,14 @@ COPY_EXISTING amsmug01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H55   LAST #0 #0 #0 IDENTIFIED #1   // Katana +2
   ADD_STORE_ITEM SW1H46   LAST #0 #0 #0 IDENTIFIED #3   // Wakizashi
   ADD_STORE_ITEM SW1H47   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +1
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H51   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +2
+  END
   ADD_STORE_ITEM SW1H48   LAST #0 #0 #0 IDENTIFIED #5   // Ninja-To
   ADD_STORE_ITEM SW1H49   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +1
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H53   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +2
+  END
 
   ADD_STORE_ITEM AROW01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED // Arrow
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #5  // Arrow +1
@@ -8635,7 +8670,12 @@ COPY_EXISTING amsmug02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H72   LAST #0 #0 #0 IDENTIFIED #1   // Bastard Sword +3
   ADD_STORE_ITEM SW1H73   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +3
   ADD_STORE_ITEM SW1H74   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +3
+  ADD_STORE_ITEM SW1H76   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +3
   ADD_STORE_ITEM SW1H75   LAST #0 #0 #0 IDENTIFIED #1   // Katana +3
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H52   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +3
+    ADD_STORE_ITEM OHSW1H54   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +3
+  END
   ADD_STORE_ITEM DAGG24   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +3
   ADD_STORE_ITEM AX1H17   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +3
   ADD_STORE_ITEM BLUN32   LAST #0 #0 #0 IDENTIFIED #1   // Flail +3
@@ -8658,11 +8698,11 @@ COPY_EXISTING amsmug02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM XBOW18   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +3
   ADD_STORE_ITEM SLNG10   LAST #0 #0 #0 IDENTIFIED #1   // Sling +3
 
-  PATCH_IF comp_rr_equip=1 BEGIN
-    ADD_STORE_ITEM ~RR#BUC04~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +3
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSHLD51 LAST #0 #0 #0 IDENTIFIED #1   // Buckler +3
   END
 
-  ADD_STORE_ITEM DART05   LAST #20 #0 #0 IDENTIFIED #2  // Asp's Nest
+  ADD_STORE_ITEM DART05   LAST #20 #0 #0 IDENTIFIED #2  // Asp's Nest +2
 
   ADD_STORE_ITEM AROW11   LAST #40 #0 #0 IDENTIFIED #5   // Arrow +2
   ADD_STORE_ITEM AROW15   LAST #40 #0 #0 IDENTIFIED #3   // Arrow +3
@@ -8684,11 +8724,11 @@ COPY_EXISTING amsmug02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM BULL03   LAST #40 #0 #0 IDENTIFIED #5   // Bullet +2
   ADD_STORE_ITEM BULL05   LAST #40 #0 #0 IDENTIFIED #3   // Bullet +3
-  ADD_STORE_ITEM BULL06   LAST #10 #0 #0 IDENTIFIED #2   // Bullet +4
-  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #2   // Sunstone Bullet
+  ADD_STORE_ITEM BULL04   LAST #20 #0 #0 IDENTIFIED #2   // Sunstone Bullet +2
+  ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #2   // Bullet of Smiting +3 (Bullet +4)
 
   ADD_STORE_ITEM AX1H16   LAST #0 #0 #0 IDENTIFIED #1   // K'logarath +4
-  ADD_STORE_ITEM LEAT23   LAST #0 #0 #0 IDENTIFIED #1   // Trollhide Armor
+  ADD_STORE_ITEM LEAT23   LAST #0 #0 #0 IDENTIFIED #1   // Trollhide Armor +4
   ADD_STORE_ITEM PLAT21   LAST #0 #0 #0 IDENTIFIED #1   // Enkidu's Full Plate +3
   ADD_STORE_ITEM BOOT12   LAST #2 #0 #0 IDENTIFIED #1   // Gargoyle Boots
   ADD_STORE_ITEM RODS06   LAST #1 #0 #0 IDENTIFIED #1   // Rod of Reversal
@@ -8900,7 +8940,7 @@ COPY_EXISTING sarbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BULL02    // Bullet +1
     BULL03    // Bullet +2
     BULL05    // Bullet +3
-    BULL06    // Bullet +4
+    BULL06    // Bullet of Smiting +3 (Bullet +4)
     DART01    // Dart
     DART02    // Dart +1
     LEAT01    // Leather Armor
@@ -8987,6 +9027,9 @@ COPY_EXISTING sarbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM LEAT02   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +1
   ADD_STORE_ITEM LEAT05   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +1
+  PATCH_IF comp_ir BEGIN
+    ADD_STORE_ITEM OHLEAT50   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +1
+  END
   ADD_STORE_ITEM CHAN02   LAST #0 #0 #0 IDENTIFIED #1   // Chain Mail +1
   ADD_STORE_ITEM CHAN05   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail +1
   ADD_STORE_ITEM PLAT02   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +1
@@ -9138,7 +9181,7 @@ COPY_EXISTING hgkar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BULL02    // Bullet +1
     BULL03    // Bullet +2
     BULL05    // Bullet +3
-    BULL06    // Bullet +4
+    BULL06    // Bullet of Smiting +3 (Bullet +4)
     DART02    // Dart +1
     POTN02    // Potion of Fire Resistance
     POTN03    // Potion of Hill Giant Strength
@@ -9178,7 +9221,12 @@ COPY_EXISTING hgkar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H72   LAST #0 #0 #0 IDENTIFIED #1   // Bastard Sword +3
   ADD_STORE_ITEM SW1H73   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +3
   ADD_STORE_ITEM SW1H74   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +3
+  ADD_STORE_ITEM SW1H76   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +3
   ADD_STORE_ITEM SW1H75   LAST #0 #0 #0 IDENTIFIED #1   // Katana +3
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM OHSW1H52   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +3
+    ADD_STORE_ITEM OHSW1H54   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +3
+  END
   ADD_STORE_ITEM DAGG24   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +3
   ADD_STORE_ITEM BOW24    LAST #0 #0 #0 IDENTIFIED #1   // Composite Long Bow +3
   ADD_STORE_ITEM BOW25    LAST #0 #0 #0 IDENTIFIED #1   // Long Bow +3
@@ -9600,27 +9648,10 @@ COPY_EXISTING wmart1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     steal=0
   END
 
-  ADD_STORE_ITEM WA2S1H   LAST #1 #0 #0 IDENTIFIED #1   // Sword of Balduran +2
+  ADD_STORE_ITEM SW1H18   LAST #0 #0 #0 IDENTIFIED #1   // Sword of Balduran +2
   ADD_STORE_ITEM WA2HALB  LAST #1 #0 #0 IDENTIFIED #1   // Harmonium Halberd +3
   ADD_STORE_ITEM WA2RING  LAST #1 #0 #0 IDENTIFIED #1   // Mercykiller Ring
   ADD_STORE_ITEM WA2AMU   LAST #1 #0 #0 IDENTIFIED #1   // Sensate Amulet
   ADD_STORE_ITEM WA2HARP  LAST #3 #0 #0 IDENTIFIED #1   // Harp of Pandemonium
 
 END BUT_ONLY
-
-///////////////////////////////////////////////////////////////////
-
-// Gul Dukeem
-//
-// Waukeen's Promenade (EE)
-
-/*PATCH_IF (FILE_EXISTS_IN_GAME ~ohngduke.sto~) BEGIN
-COPY_EXISTING ohngduke.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-  REMOVE_STORE_ITEM
-
-  LPF store INT_VAR
-    sell=200
-    buy=25
-    steal=0
-    fence=0
-  END*/

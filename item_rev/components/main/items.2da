@@ -592,12 +592,12 @@ HOLY_SYMBOL_OF_HELM#ANOMEN                 RING     j#belt13 1        1        0
 HOLY_SYMBOL_OF_SHAR                        RING     j#belt14 1        1        0        0        1        1        @2591    @2591    @2592    @2592    *        *        *        *
 
 ROD_OF_ABSORPTION                          ROD      rods01   1        1        0        0        1        1        @1915    @2387    @1917    @2388    *        *        *        * 
-ROD_OF_LORDLY_MIGHT_3                      ROD      rods02   1        1        0        0        1        1        @1915    @2389    @1917    @2390    @2389    @2389    @2389    * 
-ROD_OF_LORDLY_MIGHT_3#A                    ROD      rods02a  1        1        0        0        1        1        @1915    @2389    @1917    @2390    @2389    @2389    @2389    * 
-ROD_OF_LORDLY_MIGHT_3#B                    MORNSTAR rodmace  1        1        0        0        1        1        @1915    @2389    @1917    @2481    @2389    @2389    @2389    * 
-ROD_OF_LORDLY_MIGHT_3#C                    SWORDL   rodsword 1        1        0        0        1        1        @1915    @2389    @1917    @2482    @2389    @2389    @2389    * 
-ROD_OF_LORDLY_MIGHT_3#D                    AXE      rodaxe   1        1        0        0        1        1        @1915    @2389    @1917    @2483    @2389    @2389    @2389    * 
-ROD_OF_LORDLY_MIGHT_3#E                    SPEAR    rodspear 1        1        0        0        1        1        @1915    @2389    @1917    @2484    @2389    @2389    @2389    * 
+ROD_OF_LORDLY_MIGHT_3                      ROD      rods02   1        1        0        0        1        1        @1915    @2389    @1917    @2390    @2389    *        *        * 
+ROD_OF_LORDLY_MIGHT_3#A                    ROD      rods02a  1        1        0        0        1        1        @1915    @2389    @1917    @2390    @2389    *        *        * 
+ROD_OF_LORDLY_MIGHT_3#B                    FLAIL    rodmace  1        1        0        0        1        1        @1915    @2389    @1917    @2481    @2389    *        *        * 
+ROD_OF_LORDLY_MIGHT_3#C                    SWORDL   rodsword 1        1        0        0        1        1        @1915    @2389    @1917    @2482    @2389    *        *        * 
+ROD_OF_LORDLY_MIGHT_3#D                    AXE      rodaxe   1        1        0        0        1        1        @1915    @2389    @1917    @2483    @2389    *        *        * 
+ROD_OF_LORDLY_MIGHT_3#E                    SPEAR    rodspear 1        1        0        0        1        1        @1915    @2389    @1917    @2484    @4052    @4051    *        * 
 ROD_OF_RESURRECTION                        ROD      rods03   1        1        0        0        1        1        @1915    @2391    @1917    @2392    *        *        *        *
 ROD_OF_SMITING_4                           ROD      rods04   1        1        0        0        1        1        @1915    @1916    @1917    @1918    *        *        *        *
 ROD_OF_TERROR_3                            ROD      rods05   1        1        0        0        1        1        @1915    @2393    @1917    @2394    *        *        *        *
@@ -927,13 +927,14 @@ DART_2                                     DART     ohdart50 1        1        0
 DART_3                                     DART     ohdart51 1        1        0        1        1        1        @1466    @70002   @1469    @70003   *        *        *        *
 HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70004   @1671    @70005   *        *        *        *
 HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70006   @1671    @70007   *        *        *        *
-HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70008   @1671    @70009   *        *        *        *
+HIDE_ARMOR_3                               HIDE     ohleat52 1        1        0        1        1        1        @1651    @70008   @1671    @70009   *        *        *        *
 BUCKLER_2                                  SHIELDB  ohshld50 1        1        0        1        1        1        @1955    @70010   @1958    @70011   *        *        *        *
 BUCKLER_3                                  SHIELDB  ohshld51 1        1        0        1        1        1        @1955    @70012   @1958    @70013   *        *        *        *
 WAKIZASHI_2                                WAKI     ohsw1h51 1        1        0        1        1        1        @2127    @70014   @2130    @70015   *        *        *        *
 WAKIZASHI_3                                WAKI     ohsw1h52 1        1        0        1        1        1        @2127    @70016   @2130    @70017   *        *        *        *
 NINJA-TO_2                                 NINJATO  ohsw1h53 1        1        0        1        1        1        @2132    @70018   @2135    @70019   *        *        *        *
 NINJA-TO_3                                 NINJATO  ohsw1h54 1        1        0        1        1        1        @2132    @70020   @2135    @70021   *        *        *        *
+SCIMITAR_2                                 SCIMITAR ohsw1h55 1        1        0        1        1        1        @1509    @70022   @1511    @70023   *        *        *        *
 UNHOLY_REAVER_5                            SWORD2H  ohreaver 1        1        0        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *
 
 SMALL_SHIELD#EE                            SHIELDS  shld01a  0        0        0        0        1        1        @1939    @1939    @1940    @1940    *        *        *        *
