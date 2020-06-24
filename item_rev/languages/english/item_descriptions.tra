@@ -208,9 +208,9 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1034 = ~Arrow +1~
+@1034 = ~Arrow +1~ //BG1: The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. These enchanted arrows will fly truer, thus having a greater chance of striking their target and doing more damage, and have the ability to strike opponents that are immune to normal weapons.
 @1035 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long.~
-@1036 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. Minor enchantments guarantee magical arrows improved accuracy.
+@1036 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. Magical enchantments guarantee these arrows improved accuracy and damage.
 
 STATISTICS:
 
@@ -219,8 +219,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1037 = ~Arrow of Acid +2~
-@1038 = ~This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
+@1037 = ~Arrow of Acid +2~ //BG1: This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
+@1038 = ~This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
 
 STATISTICS:
 
@@ -232,8 +232,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1039 = ~Arrow of Biting~
-@1040 = ~The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
+@1039 = ~Arrow of Biting~ //BG1: The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
+@1040 = ~The Arrow of Biting was designed as a deadly compliment to the archer. Poison smeared on the barbed arrowhead infiltrates the bloodstream of its victims, causing agony and often death.
 
 STATISTICS:
 
@@ -256,7 +256,7 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1043 = ~Arrow of Dispelling +1~
+@1043 = ~Arrow of Dispelling +1~ //BG1: The arrow of dispelling will remove the magical enchantments that its victim is surrounded by. //BG2: This arrow will remove the magical enchantments that its victim is surrounded by.
 @1044 = ~The Arrow of Dispelling will remove all magical enchantments affecting its target.
 
 STATISTICS:
@@ -269,7 +269,7 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1045 = ~Arrow of Fire +1~
+@1045 = ~Arrow of Fire +1~ //BG2: This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
 @1046 = ~The Arrow of Fire is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set aflame.
 
 STATISTICS:
@@ -282,7 +282,7 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1047 = ~Arrow of Ice +1~
+@1047 = ~Arrow of Ice +1~ //BG2: This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 @1048 = ~The Arrow of Ice is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 
 STATISTICS:
@@ -295,8 +295,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1049 = ~Arrow of Piercing +3~
-@1050 = ~The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
+@1049 = ~Arrow of Piercing +3~ //BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
+@1050 = ~This arrow is long and thin, imbued with magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
 
 STATISTICS:
 
@@ -308,8 +308,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1051 = ~Arrow +2~
-@1052 = ~These arrows were enhanced through magical means when they were created. They appear slightly straighter than the average arrow, and almost alive as they effortlessly leave your bow and streak towards their target with deadly accuracy.
+@1051 = ~Arrow +2~ //These arrows were enhanced through magical means when they were created. They appear slightly straighter than the average arrow, and almost alive as they effortlessly leave your bow and streak towards their target with deadly accuracy.
+@1052 = ~This arrow was enhanced through magical means when it was created. It appears slightly straighter than the average arrow, and almost alive as it effortlessly leaves your bow and streaks towards its target with deadly accuracy.
 
 STATISTICS:
 
@@ -318,8 +318,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@1053 = ~Arrow +3~
-@1054 = ~These arrows were enhanced through magical means when they were created. They appear slightly straighter than the average arrow, and almost alive as they effortlessly leave your bow and streak towards their target with deadly accuracy.
+@1053 = ~Arrow +3~ //These enchanted missiles far surpass the craftsmanship of any arrow, magical or otherwise, you have ever seen.
+@1054 = ~This enchanted missile far surpasses the craftsmanship of any arrow, magical or otherwise, you have ever seen.
 
 STATISTICS:
 
@@ -846,7 +846,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1114 = ~Mace +1~
-@1115 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies; some being spiked, others flanged, and still others have pyramidal knobs.~
+@1115 = ~The mace is a direct descendent of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The design of the head varies: some are spiked, others flanged, and still others have pyramidal knobs.~
 @1116 = ~The mace is a direct descendent of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The design of the head varies: some are spiked, others flanged, and still others have pyramidal knobs. This mace is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -1583,7 +1583,7 @@ Weight: 0
 Launcher: Crossbow~
 @1181 = ~Bolt +1~
 @1182 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size.~
-@1183 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size. These bolts have been imbued with a small amount of magic which enhances performance in flight, almost as if the bolts were guided towards their target.
+@1183 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size. However, this bolt has been imbued with a small amount of magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
 
 STATISTICS:
 
@@ -1605,8 +1605,8 @@ Damage: 1D8
 Damage type: missile
 Weight: 0
 Launcher: Crossbow~
-@1186 = ~Bolt of Biting~
-@1187 = ~The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
+@1186 = ~Bolt of Biting~ //BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. //BG2: This bolt was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. //BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
+@1187 = ~The Bolt of Biting was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. 
 
 STATISTICS:
 
@@ -1617,8 +1617,8 @@ Damage: 1D8
 Damage type: missile
 Weight: 0
 Launcher: Crossbow~
-@1188 = ~Bolt +2~
-@1189 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size. These bolts have been imbued with a good amount of magic which enhances performance in flight, almost as if the bolts were guided towards their target.
+@1188 = ~Bolt +2~ //BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. It will strike its target more easily and do more damage, and can strike opponents that are immune to normal weapons. //BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
+@1189 = ~This bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
 
 STATISTICS:
 
@@ -1627,8 +1627,8 @@ Damage: 1D8
 Damage type: missile
 Weight: 0
 Launcher: Crossbow~
-@1190 = ~Bolt +3~
-@1191 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size. These bolts have been imbued with a high amount of magic which enhances performance in flight, almost as if the bolts were guided towards their target.
+@1190 = ~Bolt +3~ //These enchanted missiles far surpass the craftsmanship of any bolt, magical or otherwise, you have ever seen.
+@1191 = ~This enchanted missile far surpasses the craftsmanship of any bolt, magical or otherwise, you have ever seen.
 
 STATISTICS:
 
@@ -2648,7 +2648,7 @@ Weight: 0
 Launcher: Sling~
 @1317 = ~Bullet +1~
 @1318 = ~A bullet is simply a rounded, well-balanced stone.~
-@1319 = ~Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent.
+@1319 = ~A bullet is simply a rounded, well-balanced stone. Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent.
 
 STATISTICS:
 
@@ -2668,7 +2668,7 @@ Damage type: missile
 Weight: 0
 Launcher: Sling~
 @1322 = ~Sunstone Bullet +2~
-@1323 = ~Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent. When the bullet strikes an opponent, it explodes in a flash of fire.
+@1323 = ~When the bullet strikes an opponent, it explodes in a flash of fire.
 
 STATISTICS:
 
@@ -2681,7 +2681,7 @@ Damage type: missile
 Weight: 0
 Launcher: Sling~
 @1324 = ~Bullet +3~
-@1325 = ~Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent.
+@1325 = ~This enchanted missile far surpasses the craftsmanship of any bullet, magical or otherwise, you have ever seen.
 
 STATISTICS:
 
@@ -2690,8 +2690,8 @@ Damage: 1D4 + 4
 Damage type: missile
 Weight: 0
 Launcher: Sling~
-@1326 = ~Bullet of Smiting +3~
-@1327 = ~These bullets are especially dense and weigh twice as much as ordinary specimens. When launched, they seem to accumulate even more mass on their way to the target, finally smashing into the unlucky victim with the force of a swung mace.
+@1326 = ~Bullet of Smiting +3~ //These bullets are especially dense and weigh twice as much as ordinary specimens. When launched, they seem to accumulate even more mass on their way to the target, finally smashing into the unlucky victim with the force of a swung mace.
+@1327 = ~This bullet is especially dense and weighs twice as much as an ordinary specimen. When launched, it seems to accumulate even more mass on its way to the target, finally smashing into the unlucky victim with the force of a swung mace.
 
 STATISTICS:
 
@@ -3488,8 +3488,8 @@ Not Usable By:
  Cleric
  Beast Master~
 @1430 = ~Dagger +1~
-@1431 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.~
-@1432 = ~The typical dagger has a pointed, double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. This dagger is particularly good at its job, as it has been enchanted with a few magical properties.
+@1431 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.~
+@1432 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. This dagger is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -3525,8 +3525,8 @@ Requires: 6 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1435 = ~Throwing Dagger~
-@1436 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+@1435 = ~Throwing Dagger~ //The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+@1436 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
 STATISTICS:
 
@@ -3563,7 +3563,7 @@ Not Usable By:
  Cleric
  Beast Master~
 @1441 = ~Boomerang Dagger +2~
-@1442 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.~
+@1442 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced differently.~
 @1443 = ~Fullen Woolspinner, an ambitious halfling from a well-to-do family, left his home to spend several years adventuring. During his travels, he ended up staying with a family of dwarven weaponsmiths. Much impressed by their throwing axes, which always returned to the hands of their wielder, Fullen sought to make a dagger that could do the same. With the help of his dwarven friends he succeeded, creating several of the famous Fullen Boomerang daggers.
 
 STATISTICS:
@@ -3663,8 +3663,8 @@ Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1452 = ~Poisoned Throwing Dagger~
-@1453 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
+@1452 = ~Poisoned Throwing Dagger~ //The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
+@1453 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 
 STATISTICS:
 
@@ -3816,7 +3816,7 @@ Not Usable By:
  Kensai~
 @1468 = ~Dart +1~
 @1469 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher.~
-@1470 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+@1470 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts, such as this one, are sought after by thieves and mages.
 
 STATISTICS:
 
@@ -3832,7 +3832,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1471 = ~Dart of Stunning +1~
-@1472 = ~The Dart of Stunning looks like any other dart other than the fact that it seems to pulse slightly when held in the hand. The true effects can be seen when one strikes an opponent and they fall to the ground stunned.
+@1472 = ~The Dart of Stunning looks like any other dart, other than the fact that it seems to pulse slightly when held in the hand. The true effects can be seen when one strikes an opponent and they fall to the ground stunned.
 
 STATISTICS:
 
@@ -3850,7 +3850,7 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@1473 = ~Dart of Wounding~
+@1473 = ~Dart of Wounding~ //This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
 @1474 = ~The barbed tip of this dart inflicts upon its target wounds so deep that they will continue to bleed for some time, with very deadly results.
 
 STATISTICS:
@@ -4045,7 +4045,7 @@ Not Usable By:
  Wizard Slayer~
 @1493 = ~Halberd~
 @1494 = ~Drowcraft Halberd +3~
-@1495 = ~Consisting of a cleaver-like axe blade mounted on a staff averaging six feet in length, the halberd is the oldest and most often used polearm. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd is best described as a cross between a spear and an axe.~
+@1495 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.~
 @1496 = ~Many parts of the Underdark of Faerûn are suffused with a magical radiation that the drow call faerzress. A remnant of the mighty forces that originally shaped the terrain of the Underdark, faerzress distorts and interferes with certain types of magic.
 
 The drow have long sought out places of powerful faerzress in which to raise their cities, since the magical radiation helps to frustrate spying and protect against enemy assaults. The magical energy can also be used in the construction of various powerful magic items.
@@ -4237,7 +4237,7 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1521 = ~Consisting of a cleaver-like axe blade mounted on a staff averaging six feet in length, the halberd is the oldest and most often used polearm. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd is best described as a cross between a spear and an axe.
+@1521 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
 
 STATISTICS:
 
@@ -4255,8 +4255,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1522 = ~Halberd +1~
-@1523 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
+@1522 = ~Halberd +1~ //Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
+@1523 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. This halberd is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -4379,7 +4379,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1532 = ~Halberd +2~
-@1533 = ~Consisting of a cleaver-like axe blade mounted on a staff averaging six feet in length, the halberd is the oldest and most often used polearm. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd is best described as a cross between a spear and an axe. This particular halberd is enchanted, gifted with an enhanced ability to slaughter foes.
+@1533 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. This particular halberd is enchanted, gifted with an enhanced ability to slaughter foes.
 
 STATISTICS:
 
@@ -4507,7 +4507,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1542 = ~Halberd +3~
-@1543 = ~Consisting of a cleaver-like axe blade mounted on a staff averaging six feet in length, the halberd is the oldest and most often used polearm. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd is best described as a cross between a spear and an axe. This particular halberd is enchanted, gifted with an enhanced ability to slaughter foes.
+@1543 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. This particular halberd is enchanted, gifted with an enhanced ability to slaughter foes.
 
 STATISTICS:
 
@@ -5920,7 +5920,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1715 = ~Long Sword +1~
+@1715 = ~Unused~
 @1716 = ~Silver Horn of Valhalla~
 @1717 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a fifth level warrior who will fight for the summoner for five turns.
 
@@ -8037,7 +8037,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1989 = ~Spear +1~
-@1990 = ~Among mankind's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks that had been sharpened at one end. Upon mastering the use of metals, weaponsmiths forged spear heads from iron and steel, and began experimenting with different types of spear heads, thus leading to the development of certain types of polearms. This particular weapon is magical, having special bonuses to its speed, accuracy, and damage it causes.
+@1990 = ~Among mankind's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks that had been sharpened at one end. Upon mastering the use of metals, weaponsmiths forged spear heads from iron and steel, and began experimenting with different types of spear heads, thus leading to the development of certain types of polearms. This spear is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -8297,7 +8297,7 @@ Not Usable By:
  Monk~
 @2011 = ~Quarterstaff +1~
 @2012 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.~
-@2013 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. This one is particularly special as it has been imbued with magical properties.
+@2013 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands. This quarterstaff is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -8822,7 +8822,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2062 = ~Long Sword +1~
-@2063 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. This long sword is particularly good at its job, as it has been enchanted with a few magical properties.
+@2063 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
 
 STATISTICS:
 
@@ -9608,10 +9608,9 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2134 = ~Ninja-To +1~
+@2134 = ~Ninja-To +1~ //Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 @2135 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.~
-@2136 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.
-Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@2136 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used. This particular ninja-to has been enhanced magically to complement the skill of the wielder.
 
 STATISTICS:
 
@@ -11758,8 +11757,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2323 = ~Arrow of Slaying +2~
-@2324 = ~This arrow is twisted and black, and almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Material Plane, and its power doesn't seem to work on outsiders, elementals or undead creatures.
+@2323 = ~Arrow of Slaying +2~ //This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
+@2324 = ~This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Prime Material Plane, and its power doesn't seem to work on outsiders, elementals, or undead creatures.
 
 STATISTICS:
 
@@ -11821,7 +11820,7 @@ Damage: 1D4 + 1
 Damage type: missile
 Weight: 0
 Launcher: Crossbow~
-@2331 = ~Blessed Bolt +3~
+@2331 = ~Blessed Bolt +3~ //This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
 @2332 = ~This is a crossbow bolt that has been permanently enchanted with a powerful blessing. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade.
 
 STATISTICS:
@@ -12265,7 +12264,9 @@ Usable By:
  Bard
  Mage~
 @2389 = ~Rod of Lordly Might +3~
-@2390 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a morning star of regeneration, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2390 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+
+The rod is currently untransformed.
 
 STATISTICS:
 
@@ -12987,9 +12988,9 @@ Special Characteristics:
 Requires: 16 Intelligence
 Usable By:
  Mage~
-@2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a morning star of regeneration, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
-The rod is currently transformed into a morning star.
+The rod is currently transformed into a flail.
 
 STATISTICS:
 
@@ -12998,8 +12999,8 @@ Special Abilities:
  Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. rod at -2 neg.)
  Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
 
-Equipped Abilities:
- Regeneration: 1 hp/round
+Combat Abilities:
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 2D4 + 3
@@ -13008,14 +13009,14 @@ Weight: 10
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: 1-handed
-Requires: 11 Strength, 10 Intelligence
+Requires: 13 Strength, 10 Intelligence
 Not Usable By:
  Druid
  Mage
  Monk
  Thief
  Beast Master~
-@2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a morning star of regeneration, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a long sword.
 
@@ -13042,7 +13043,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a morning star of regeneration, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a battle axe.
 
@@ -13073,7 +13074,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a morning star of regeneration, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of quickness. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a spear.
 
@@ -13085,11 +13086,13 @@ Special Abilities:
  Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
 
 Combat Abilities:
+ Returning: returns to the wielder's hand instantly after an attack is made
  Quickness: +1/2 Attack per Round
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
-Damage type: piercing
+Damage type (melee): piercing
+Damage type (thrown): missile
 Weight: 10
 Speed Factor: 3
 Proficiency Type: Spear
@@ -13201,7 +13204,7 @@ Not Usable By:
 @2504 = ~Melee/Thrown Switch~
 @2505 = ~Unused~
 @2506 = ~Unused~
-@2507 = ~Poisoned Arrow~
+@2507 = ~Poisoned Arrow~ //He is the only person who can safely handle them.
 @2508 = ~These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows.
 
 STATISTICS:
@@ -14530,7 +14533,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70016 = ~Ninja-To +3~
+@70016 = ~Wakizashi +3~
 @70017 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
 
 STATISTICS:
@@ -14582,5 +14585,22 @@ Requires: 6 Strength
 Not Usable By:
  Cleric
  Druid
+ Mage
+ Beast Master~
+@70022 = ~Scimitar +2~
+@70023 = ~The long, curved, single-edged blade is characteristic of both the sabre and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the sabre was intended mainly for horsemen due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. Thus, it is slightly slower, but tends to be more effective and deadly in combat. This scimitar is particularly good at its job, as it has been enchanted with a few magical properties.
+
+STATISTICS:
+
+THAC0: +2 bonus
+Damage: 1D8 + 2
+Damage type: slashing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: 1-handed
+Requires: 8 Strength
+Not Usable By:
+ Cleric
  Mage
  Beast Master~
