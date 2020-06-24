@@ -53,12 +53,12 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1010 = ~Silver Charm~
-@1011 = ~Amulets are necklaces with some form of large decoration or symbol. Most are ornamental, but some such as this one are potent magic items. Lore holds that shapeshifters and some fiends are especially vulnerable to the bite of silver weaponry, and this amulet containing powdered silver seems to protect the wearer from the attacks of those creatures.
+@1011 = ~Lore holds that some shapeshifters and fiends are especially vulnerable to the bite of silver weaponry. This amulet contains powdered silver and seems to protect the wearer from the attacks of those creatures.
 
 STATISTICS:
 
 Equipped Abilities:
- Silver Glow: +2 bonus to AC and saving throws vs. werewolves and vampires
+ Silver Glow: +2 bonus to AC and saving throws vs. vampires and werewolves
 
 Not Usable By:
  Wizard Slayer~
@@ -3171,6 +3171,7 @@ STATISTICS:
 Equipped Abilities:
  Armor Class: +1 bonus
  Magic Resistance: +10% bonus
+ Regeneration: 1 hp/2 rounds
 
 Weight: 3
 Not Usable By:
@@ -7731,7 +7732,7 @@ Not Usable By:
  Thief
  Kensai~
 @1955 = ~Buckler~
-@1956 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size it is light and can be worn with very little restriction to movement.
+@1956 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.
 
 STATISTICS:
 
@@ -7744,8 +7745,8 @@ Not Usable By:
  Monk
  Kensai~
 @1957 = ~Buckler +1~
-@1958 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size it is light and can be worn with very little restriction to movement.~
-@1959 = ~A buckler is a small shield of wood or metal that fastens to the forearm. Because of its size it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+@1958 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.~
+@1959 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
 
 STATISTICS:
 
@@ -9609,7 +9610,8 @@ Not Usable By:
  Beast Master~
 @2134 = ~Ninja-To +1~
 @2135 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.~
-@2136 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@2136 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.
+Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 
@@ -13575,6 +13577,9 @@ Not Usable By:
 
 STATISTICS:
 
+Equipped Abilities:
+ Protection from Good: +2 bonus to AC and saving throws vs. good creatures
+
 Armor Class: 0
 Weight: 60
 Requires: 15 Strength
@@ -13590,7 +13595,10 @@ Not Usable By:
  Kensai
  Stalker~
 @2579 = ~The Whistling Sword +2~
-@2580 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
+@2580 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left, he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
+
+Combat Abilities:
+ Whistling Sword: wielder and allies within 20' are immune to fear
 
 THAC0: +2 bonus
 Damage: 1D6 + 2
@@ -14407,8 +14415,40 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@70000 = ~Hide Armor +1~
-@70001 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@70000 = ~Dart +2~
+@70001 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+
+STATISTICS:
+
+THAC0: +2 bonus
+Damage: 1D3 + 2
+Damage type: missile
+Weight: 0
+Speed Factor: 1
+Proficiency Type: Dart
+Type: 1-handed
+Not Usable By:
+ Cleric
+ Cavalier
+ Kensai~
+@70002 = ~Dart +3~
+@70003 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+
+STATISTICS:
+
+THAC0: +3 bonus
+Damage: 1D3 + 3
+Damage type: missile
+Weight: 0
+Speed Factor: 1
+Proficiency Type: Dart
+Type: 1-handed
+Not Usable By:
+ Cleric
+ Cavalier
+ Kensai~
+@70004 = ~Hide Armor +1~
+@70005 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -14420,3 +14460,127 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
+@70006 = ~Hide Armor +2~
+@70007 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+
+STATISTICS:
+
+Armor Class: 4
+Weight: 25
+Requires: 6 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai
+ Shapeshifter~
+@70008 = ~Hide Armor +3~
+@70009 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+
+STATISTICS:
+
+Armor Class: 3
+Weight: 25
+Requires: 6 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai
+ Shapeshifter~
+@70010 = ~Buckler +2~
+@70011 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+
+STATISTICS:
+
+Armor Class Bonus: 3
+Special: No Missile/Piercing Attack Protection
+Weight: 4
+Requires: 4 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai~
+@70012 = ~Buckler +3~
+@70013 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+
+STATISTICS:
+
+Armor Class Bonus: 4
+Special: No Missile/Piercing Attack Protection
+Weight: 4
+Requires: 4 Strength
+Not Usable By:
+ Mage
+ Monk
+ Kensai~
+@70014 = ~Wakizashi +2~
+@70015 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
+
+STATISTICS:
+
+THAC0: +2 bonus
+Damage: 1D8 + 2
+Damage type: piercing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: 1-handed
+Requires: 5 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
+@70016 = ~Ninja-To +3~
+@70017 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
+
+STATISTICS:
+
+THAC0: +3 bonus
+Damage: 1D8 + 3
+Damage type: piercing
+Weight: 3
+Speed Factor: 0
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: 1-handed
+Requires: 5 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
+@70018 = ~Ninja-To +2~
+@70019 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+
+STATISTICS:
+
+THAC0: +2 bonus
+Damage: 1D8 + 2
+Damage type: slashing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
+@70020 = ~Ninja-To +2~
+@70021 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+
+STATISTICS:
+
+THAC0: +3 bonus
+Damage: 1D8 + 3
+Damage type: slashing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
