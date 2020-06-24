@@ -11757,7 +11757,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2323 = ~Arrow of Slaying +2~ //This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
+@2323 = ~Arrow of Slaying +1~ //This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
 @2324 = ~This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Prime Material Plane, and its power doesn't seem to work on outsiders, elementals, or undead creatures.
 
 STATISTICS:
@@ -11765,7 +11765,7 @@ STATISTICS:
 Combat Abilities:
  Slaying: target dies (save vs. death at -2 neg.)
 
-THAC0: +2 bonus
+THAC0: +1 bonus
 Damage: 1D6
 Damage type: missile
 Weight: 0
