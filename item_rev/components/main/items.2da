@@ -20,7 +20,7 @@ AMULET_OF_THE_MASTER_HARPER                AMULET   amul28   1        1        0
 
 ARROW                                      ARROW    arow01   1        1        1        1        1        1        @1032    @1032    @1033    @1033    *        *        *        *
 ARROW_1                                    ARROW    arow02   1        1        1        1        1        1        @1032    @1034    @1035    @1036    *        *        *        *
-ARROW_OF_SLAYING_2                         ARROW    arow03   1        1        1        1        1        1        @1032    @2323    @1035    @2324    *        *        *        *
+ARROW_OF_SLAYING_1                         ARROW    arow03   1        1        1        1        1        1        @1032    @2323    @1035    @2324    *        *        *        *
 ARROW_OF_ACID_2                            ARROW    arow04   1        1        1        1        1        1        @1032    @1037    @1035    @1038    *        *        *        *
 ARROW_OF_BITING                            ARROW    arow05   1        1        1        1        1        1        @1032    @1039    @1035    @1040    *        *        *        *
 ARROW_OF_DETONATION                        ARROW    arow06   1        1        1        1        1        1        @1032    @1041    @1035    @1042    *        *        *        *
