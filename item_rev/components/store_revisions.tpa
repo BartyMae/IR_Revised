@@ -26,20 +26,6 @@ BEGIN
 END
 
 
-/*
-//anybody tell me why I've been making them sellable?
-
-COPY_EXISTING fireseed.itm override PATCH_IF SOURCE_SIZE>0x71 BEGIN
-  WRITE_BYTE 0x18 (BYTE_AT 0x18)|1
-  WRITE_LONG 0x34 75
-END
-
-COPY_EXISTING gberry.itm override PATCH_IF SOURCE_SIZE>0x71 BEGIN
-  WRITE_BYTE 0x18 (BYTE_AT 0x18)|1
-  WRITE_LONG 0x34 3
-END
-*/
-
 ///////////////////////////////////////////////////////////////////
 
 // stores buy items at % of their real price:
@@ -85,21 +71,18 @@ END
 
 // RIBALD - Ribald
 //
-// loses scrolls, potions and mundane armor/weapons, and about half of his artifacts
-// instead gains few uniques from Deidre/Joluv, and some other stuff
-
-// receives potions back from Joluv, the latter is excluded from this component and is reserved for dumping mod-added items there
+// Loses scrolls, potions and mundane armor/weapons, and about half of his artifacts; instead gains few uniques from Deidre/Joluv, and some other stuff; receives potions back from Joluv, the latter is excluded from this component and is reserved for dumping additional artifacts and mod-added items there
 
 // 100% stock overwite
 
 // Varscona
 COPY_EXISTING ribald.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-  REMOVE_CRE_ITEM sw1h06
+  REMOVE_CRE_ITEM SW1H06
 END BUT_ONLY
 
 // Ring of Fire Control
 COPY_EXISTING uddwarf.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-  REMOVE_CRE_ITEM ring27
+  REMOVE_CRE_ITEM RING27
 END BUT_ONLY
 
 COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -244,7 +227,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BELT06    // Girdle of Hill Giant Strength
     CLCK12    // Knave's Robe
 	HALB07    // Halberd +2
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
     ~RR#BOW03~  // Composite Short Bow +1
     ~RR#BOW04~  // Composite Short Bow +2
@@ -409,7 +392,7 @@ END BUT_ONLY
 
 // RIBALD3 - Ribald's special stock
 // 
-// give him some more expendable stuff, also few uniques
+// Give him some more expendable stuff, also few uniques
 
 // 100% stock overwrite
 
@@ -488,7 +471,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL9A    // Pierce Shield
     SCRL9J    // Power Word: Blind
     SCRL8Y    // Protection from Energy
- // these are RR's additions
+ // RR additions
     ~RR#BOW04~  // Composite Short Bow +2
     ~RR#BUC02~  // Buckler +1
     ~RR#BUC03~  // Buckler +2
@@ -659,16 +642,16 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL9V   LAST #1 #0 #0 IDENTIFIED #1   // Wail of the Banshee
 
 //Gate, Absolute Immunity, Imprisonment, Meteor Swarm, Bigby's Crushing Hand, Wish
-  
+
   ADD_STORE_ITEM SW2H09   LAST #0 #0 #0 IDENTIFIED #1   // Warblade +3
   ADD_STORE_ITEM BOW13    LAST #0 #0 #0 IDENTIFIED #1   // Mana Bow +4
   ADD_STORE_ITEM XBOW08   LAST #0 #0 #0 IDENTIFIED #1   // Giant Hair Crossbow +3
   ADD_STORE_ITEM SLNG06   LAST #0 #0 #0 IDENTIFIED #1   // Sling of Arvoreen +2
-  ADD_STORE_ITEM BRAC15   LAST #0 #0 #0 IDENTIFIED #1   // Bracers of Defense AC 3
   ADD_STORE_ITEM LEAT17   LAST #0 #0 #0 IDENTIFIED #1   // Armor of Deep Night +5
   ADD_STORE_ITEM CHAN11   LAST #0 #0 #0 IDENTIFIED #1   // Crimson Chain +5
   ADD_STORE_ITEM HELM16   LAST #1 #1 #1 IDENTIFIED #1   // Helm of Brilliance
   ADD_STORE_ITEM CLCK05   LAST #0 #0 #0 IDENTIFIED #1   // Cloak of Balduran
+  ADD_STORE_ITEM BRAC15   LAST #0 #0 #0 IDENTIFIED #1   // Bracers of Defense AC 3
 
 END BUT_ONLY
 
@@ -676,9 +659,7 @@ END BUT_ONLY
 
 // WMART2 - Deidre
 // 
-// she says about being a member of magic emporium and how she's got lots of magical treasure to
-// trade, hence she sells damn lots of magic. Deidre has every single spell you could buy prior
-// to Spellhold, but her prices are topping themselves
+// She says about being a member of magic emporium and how she's got lots of magical treasure to trade, hence she sells damn lots of magic. Deidre has every single spell you could buy prior to Spellhold, but her prices are topping themselves
 
 // 100% stock overwrite
 
@@ -984,9 +965,7 @@ END BUT_ONLY
 
 // SHOP01 - Mira
 // 
-// fat woman, resides near the circus tent. Aurora's Boots and Shoes mod makes an interjection
-// here, which may result in Mira selling a unique potion, so why not to keep the direction and
-// make her a lesser potionmistress
+// Fat woman, resides near the circus tent; Aurora's Boots and Shoes mod makes an interjection here, which may result in Mira selling a unique potion, so why not to keep the direction and make her a lesser potionmistress
 
 // 100% stock overwrite
 
@@ -1027,7 +1006,7 @@ COPY_EXISTING shop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BULL02    // Bullet +1
     POTN08    // Potion of Healing
     POTN09    // Potion of Heroism
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -1073,7 +1052,7 @@ END BUT_ONLY
 
 // SHOP02 - Arnolinus
 // 
-// dwarf, claims to be an armorer
+// Dwarf, claims to be an armorer
 
 // 100% stock overwrite
 
@@ -1108,7 +1087,7 @@ COPY_EXISTING shop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD30    // Large Shield +2
     HELM13    // Helmet
     HELM01    // Helmet
- // these are RR's additions
+ // RR additions
     ~RR#BUC02~  // Buckler +1
     ~RR#BUC03~  // Buckler +2
 
@@ -1145,7 +1124,7 @@ COPY_EXISTING shop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SHLD06   LAST #0 #0 #0 IDENTIFIED #1   // Large Shield +1
 
   ADD_STORE_ITEM HAMM06   LAST #0 #0 #0 IDENTIFIED #1   // Dwarven Thrower +3
-  ADD_STORE_ITEM SHLD20   LAST #0 #0 #0 IDENTIFIED #1   // Kiel's Buckler
+  ADD_STORE_ITEM SHLD20   LAST #0 #0 #0 IDENTIFIED #1   // Kiel's Buckler +1
   ADD_STORE_ITEM SHLD19   LAST #0 #0 #0 IDENTIFIED #1   // Dwarven Large Shield +2
 
   ADD_STORE_ITEM HELM01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Helmet
@@ -1164,8 +1143,7 @@ END BUT_ONLY
 
 // SHOP03 - Storekeep
 // 
-// calls himself Maheer, talks about weaponry, will trade mainly in blunt and leather
-// iirc he can also make a special cloak for Tashia
+// Calls himself Maheer, talks about weaponry, will trade mainly in blunt and leather; IIRC, he can also make a special cloak for Tashia
 
 // 100% stock overwrite
 
@@ -1247,9 +1225,9 @@ END BUT_ONLY
 
 /////////////////
 
-// SHOP04    Enge
+// SHOP04 - Enge
 // 
-// seemingly foreign dude, give him foreign stuff - in our case that can only be orient. some darts too
+// Seemingly foreign dude, give him foreign stuff - in our case, that can only be orient, some darts too
 
 // 100% stock overwrite
 
@@ -1318,7 +1296,7 @@ END BUT_ONLY
 
 // SHOP05 - Perter
 // 
-// fletcher
+// Fletcher
 
 // 100% stock overwrite
 
@@ -1348,7 +1326,7 @@ COPY_EXISTING shop05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD08    // Buckler
     POTN30    // Potion of Infravision
     POTN44    // Potion of Strength
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -1415,7 +1393,7 @@ END BUT_ONLY
 
 // SHOP06 - Hes
 // 
-// stands near Galoomp, jeweler
+// Stands near Galoomp, jeweler
 
 // 100% stock overwrite
 
@@ -1449,13 +1427,13 @@ COPY_EXISTING shop06.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SW2H01    // Two Handed Sword
     XBOW01    // Heavy Crossbow
     XBOW04    // Light Crossbow
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
     sell=175
     buy=25
-    steal=90 // he should be very wary of thieves, else he can't prosper as a jeweler
+    steal=90 // He should be very wary of thieves, else he can't prosper as a jeweler
     fence=0
   END
 
@@ -1469,27 +1447,27 @@ COPY_EXISTING shop06.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM amul11   LAST #0 #0 #0 IDENTIFIED #7   // Pearl
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #3   // Larael's Tear
   ADD_STORE_ITEM amul13   LAST #0 #0 #0 IDENTIFIED #5   // Bloodstone
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #15  // Gold
-  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #10  // Silver
-  ADD_STORE_ITEM ring12   LAST #0 #0 #0 IDENTIFIED #5   // Onyx
-  ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #3   // Flamedance
-  ADD_STORE_ITEM ring18   LAST #0 #0 #0 IDENTIFIED #1   // Fire Opal
-  ADD_STORE_ITEM ring19   LAST #0 #0 #0 IDENTIFIED #1   // Ruby
-  ADD_STORE_ITEM misc18   LAST #0 #0 #0 IDENTIFIED #1   // Sunstone
-  ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
-  ADD_STORE_ITEM misc25   LAST #0 #0 #0 IDENTIFIED #5   // Zircone
-  ADD_STORE_ITEM misc27   LAST #0 #0 #0 IDENTIFIED #10  // Moonstone
-  ADD_STORE_ITEM misc29   LAST #0 #0 #0 IDENTIFIED #7   // Ziose
-  ADD_STORE_ITEM misc33   LAST #0 #0 #0 IDENTIFIED #1   // Aquamarine
-  ADD_STORE_ITEM misc35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
-  ADD_STORE_ITEM misc36   LAST #0 #0 #0 IDENTIFIED #3   // Pearl
-  ADD_STORE_ITEM misc41   LAST #0 #0 #0 IDENTIFIED #1   // Star Sapphire
-  ADD_STORE_ITEM misc42   LAST #0 #0 #0 IDENTIFIED #3   // Diamond
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #2   // Emerald
-  ADD_STORE_ITEM misc44   LAST #0 #0 #0 IDENTIFIED #1   // King's Tears
-  ADD_STORE_ITEM misc45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #15  // Gold
+  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #10  // Silver
+  ADD_STORE_ITEM RING12   LAST #0 #0 #0 IDENTIFIED #5   // Onyx
+  ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #3   // Flamedance
+  ADD_STORE_ITEM RING18   LAST #0 #0 #0 IDENTIFIED #1   // Fire Opal
+  ADD_STORE_ITEM RING19   LAST #0 #0 #0 IDENTIFIED #1   // Ruby
+  ADD_STORE_ITEM MISC18   LAST #0 #0 #0 IDENTIFIED #1   // Sunstone
+  ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
+  ADD_STORE_ITEM MISC25   LAST #0 #0 #0 IDENTIFIED #5   // Zircone
+  ADD_STORE_ITEM MISC27   LAST #0 #0 #0 IDENTIFIED #10  // Moonstone
+  ADD_STORE_ITEM MISC29   LAST #0 #0 #0 IDENTIFIED #7   // Ziose
+  ADD_STORE_ITEM MISC33   LAST #0 #0 #0 IDENTIFIED #1   // Aquamarine
+  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
+  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #3   // Pearl
+  ADD_STORE_ITEM MISC41   LAST #0 #0 #0 IDENTIFIED #1   // Star Sapphire
+  ADD_STORE_ITEM MISC42   LAST #0 #0 #0 IDENTIFIED #3   // Diamond
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #2   // Emerald
+  ADD_STORE_ITEM MISC44   LAST #0 #0 #0 IDENTIFIED #1   // King's Tears
+  ADD_STORE_ITEM MISC45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
 
-  ADD_STORE_ITEM ring06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
+  ADD_STORE_ITEM RING06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
 
   ADD_STORE_ITEM BAG02    LAST  #0 #0 #0 IDENTIFIED #1   // Gem Bag
   ADD_STORE_ITEM BAG02D   LAST  #0 #0 #0 IDENTIFIED #1   // Gem Bag
@@ -1501,7 +1479,7 @@ END BUT_ONLY
 
 // SHOP07 - Storekeep
 // 
-// fatman weaponsmith somewhere in the midst, give him bladed non-exotic weapons
+// Fatman weaponsmith somewhere in the midst, give him bladed non-exotic weapons
 
 // 100% stock overwrite
 
@@ -1552,7 +1530,7 @@ COPY_EXISTING shop07.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD08    // Buckler
     POTN44    // Potion of Strength
     POTN09    // Potion of Heroism
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -1583,9 +1561,7 @@ END BUT_ONLY
 
 // SHOP08 - Galoomp the Bookkeeper
 // 
-// map note says 'spellstore'
-// Questpack has a quest for him, halfling stealing scrolls of 'Friends'
-// make him a librarian, with books and non-violent spell selection
+// Map note says 'spell store'; Questpack has a quest for him, halfling stealing scrolls of 'Friends'; make him a librarian, with books and non-violent spell selection
 
 // 100% stock overwrite
 
@@ -1770,7 +1746,7 @@ END BUT_ONLY
 
 // TRCAR04 - Caravan Merchant
 // 
-// potions
+// Potions
 
 // 100% stock overwrite
 
@@ -1823,7 +1799,7 @@ COPY_EXISTING trcar04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7Q    // Improved Haste
     SCRL7R    // Death Fog / Acid Fog
     RESTORE   // Restoration
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
     ~RR#BOW03~  // Composite Short Bow +1
 
@@ -1879,7 +1855,7 @@ END BUT_ONLY
 
 // TRMER01 - Peddler
 // 
-// jewelry
+// Jewelry
 
 // 100% stock overwrite
 
@@ -1912,7 +1888,7 @@ COPY_EXISTING trmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     POTN09    // Potion of Heroism
     POTN30    // Potion of Infravision
     POTN44    // Potion of Strength
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -1930,19 +1906,19 @@ COPY_EXISTING trmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
   ADD_STORE_ITEM amul13   LAST #0 #0 #0 IDENTIFIED #2   // Bloodstone
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
-  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver, #10
-  ADD_STORE_ITEM ring12   LAST #0 #0 #0 IDENTIFIED #3   // Onyx
-  ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #2   // Flamedance
-  ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
-  ADD_STORE_ITEM misc25   LAST #0 #0 #0 IDENTIFIED #5   // Zircone
-  ADD_STORE_ITEM misc27   LAST #0 #0 #0 IDENTIFIED #5   // Moonstone
-  ADD_STORE_ITEM misc29   LAST #0 #0 #0 IDENTIFIED #5   // Ziose
-  ADD_STORE_ITEM misc35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
-  ADD_STORE_ITEM misc36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
-  ADD_STORE_ITEM misc42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
-  ADD_STORE_ITEM misc45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
+  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Silver, #10
+  ADD_STORE_ITEM RING12   LAST #0 #0 #0 IDENTIFIED #3   // Onyx
+  ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #2   // Flamedance
+  ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
+  ADD_STORE_ITEM MISC25   LAST #0 #0 #0 IDENTIFIED #5   // Zircone
+  ADD_STORE_ITEM MISC27   LAST #0 #0 #0 IDENTIFIED #5   // Moonstone
+  ADD_STORE_ITEM MISC29   LAST #0 #0 #0 IDENTIFIED #5   // Ziose
+  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
+  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
+  ADD_STORE_ITEM MISC42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
+  ADD_STORE_ITEM MISC45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
 
   ADD_STORE_ITEM amul14   LAST #0 #0 #0 IDENTIFIED #1   // Amulet of Protection +1
 
@@ -1954,7 +1930,7 @@ END BUT_ONLY
 
 // TRMER02 - Merchant
 // 
-// nobleman, sells artifacts
+// Nobleman, sells artifacts
 
 // 100% stock overwrite
 
@@ -2017,7 +1993,7 @@ COPY_EXISTING trmer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     POTN08    // Potion of Healing
     CLCK03    // Cloak of Displacement
     BELT10    // Belt of Inertial Barrier
- // these are RR's additions
+ // RR additions
     ~RR#BOW03~  // Composite Short Bow +1
     ~RR#BOW04~  // Composite Short Bow +2
     ~RR#BUC02~  // Buckler +1
@@ -2057,8 +2033,8 @@ COPY_EXISTING trmer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM LEAT09   LAST #0 #0 #0 IDENTIFIED #1   // Karajah's Armor +3
   ADD_STORE_ITEM CLCK03   LAST #0 #0 #0 IDENTIFIED #1   // Cloak of Displacement
   ADD_STORE_ITEM BELT10   LAST #0 #0 #0 IDENTIFIED #1   // Belt of Inertial Barrier
-
   ADD_STORE_ITEM AMUL01   LAST #25 #0 #0 IDENTIFIED #1  // Necklace of Missiles / Amulet of Health
+
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM WAND05   LAST #10 #0 #0 IDENTIFIED #1  // Wand of Fire
   END ELSE BEGIN
@@ -2071,7 +2047,7 @@ END BUT_ONLY
 
 // TRMER03 - Fletcher
 // 
-// was cut from the game, as it would seem
+// Was cut from the game, as it would seem
 
 // 100% stock overwrite
 
@@ -2172,7 +2148,7 @@ END BUT_ONLY
 
 // TRMER04 - Blacksmith
 // 
-// spell scrolls go away from a BLACKSMITH
+// Spell scrolls go away from a BLACKSMITH
 
 // 100% stock overwrite
 
@@ -2231,7 +2207,7 @@ COPY_EXISTING trmer04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7L    // Pierce Magic
     SCRL7M    // True Seeing
     CLCK15    // Robe of the Good Archmagi
- // these are RR's additions
+ // RR additions
     ~RR#BOW03~  // Composite Short Bow +1
     ~RR#BUC02~  // Buckler +1
 
@@ -2294,7 +2270,7 @@ END BUT_ONLY
 
 // WALLACE - Wallace
 // 
-// dwarf
+// Dwarf
 
 // 100% stock overwrite
 
@@ -2411,15 +2387,14 @@ COPY_EXISTING wallace.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 END BUT_ONLY
 
 /////////////////////
-// other merchants //
+// Other merchants //
 /////////////////////
 
 /////////////////////
 
 // DSHOP02 - Jahaboam
 // 
-// sells a necklace for Jaheira, which makes him a jeweler
-// being in the center of district full of thieves running around stealing things makes him immune to theft
+// Sells a necklace for Jaheira, which makes him a jeweler; being in the center of district full of thieves running around stealing things makes him immune to theft
 
 // 100% stock overwrite
 
@@ -2467,15 +2442,15 @@ COPY_EXISTING dshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #5   // Gold
   ADD_STORE_ITEM amul11   LAST #0 #0 #0 IDENTIFIED #2   // Pearl
   ADD_STORE_ITEM amul13   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #15  // Gold
-  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #10  // Silver
-  ADD_STORE_ITEM ring12   LAST #0 #0 #0 IDENTIFIED #1   // Onyx
-  ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
-  ADD_STORE_ITEM misc25   LAST #0 #0 #0 IDENTIFIED #2   // Zircone
-  ADD_STORE_ITEM misc27   LAST #0 #0 #0 IDENTIFIED #10  // Moonstone
-  ADD_STORE_ITEM misc29   LAST #0 #0 #0 IDENTIFIED #5   // Ziose
-  ADD_STORE_ITEM misc35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
-  ADD_STORE_ITEM misc36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #15  // Gold
+  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #10  // Silver
+  ADD_STORE_ITEM RING12   LAST #0 #0 #0 IDENTIFIED #1   // Onyx
+  ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #3   // Bloodstone
+  ADD_STORE_ITEM MISC25   LAST #0 #0 #0 IDENTIFIED #2   // Zircone
+  ADD_STORE_ITEM MISC27   LAST #0 #0 #0 IDENTIFIED #10  // Moonstone
+  ADD_STORE_ITEM MISC29   LAST #0 #0 #0 IDENTIFIED #5   // Ziose
+  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
+  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
 
   ADD_STORE_ITEM BAG02F   LAST #0 #0 #0 IDENTIFIED #1   // Gem Bag
 
@@ -2485,25 +2460,24 @@ END BUT_ONLY
 
 // DSHOP01 - Ikert
 // 
-// halfling near Cowled Wizard's house in Docks
+// Halfling near Cowled Wizard's house in Docks
 
 // 100% stock overwrite
 
 // BSHOP02 - Storekeep
 // 
-// elf girl fence near Bel Dalemark
+// Elf girl fence near Bel Dalemark
 
 // 100% stock overwrite
 
-// to whoever decides to comment out a part of installer - these two guys share
-// one block, so you better don't try to separate them or you may screw things up
+// To whoever decides to comment out a part of installer - these two guys share one block, so you better don't try to separate them or you may screw things up
 
-// robbing Dalok of Flametongue
+// Robbing Dalok of Flametongue
 COPY_EXISTING cedruid2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM sw1h24
 END BUT_ONLY
 
-// swapping Ikert and elf-on-the-bridge, dialog and scripts remain tied to original area
+// Swapping Ikert and elf-on-the-bridge, dialog and scripts remain tied to original area
 
 COPY_EXISTING bshop02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   READ_ASCII 0x248 bridge_scripts (40)
@@ -2548,7 +2522,13 @@ COPY_EXISTING ar0300.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   END
 END
 
-// docks store, elven
+//////////////////////////
+
+// DSHOP01 - Storekeep
+//
+// Docks store, elven
+
+// 100% stock overwrite
  
 COPY_EXISTING dshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy INT_VAR elf=1 END
@@ -2580,7 +2560,7 @@ COPY_EXISTING dshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     POTN30    // Potion of Infravision
     POTN44    // Potion of Strength
     BAG03C    // Scroll Case
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -2596,7 +2576,7 @@ COPY_EXISTING dshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM POTN19   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Agility
   ADD_STORE_ITEM POTN13   LAST #1 #0 #0 IDENTIFIED #1   // Oil of Fiery Burning
   ADD_STORE_ITEM POTN39   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Perception
-  ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
+  ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
   ADD_STORE_ITEM SW1H04   LAST #0 #0 #0 IDENTIFIED #3   // Long Sword 
   ADD_STORE_ITEM SW1H05   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +1
   ADD_STORE_ITEM SW1H41   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +2
@@ -2613,7 +2593,13 @@ COPY_EXISTING dshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
 END BUT_ONLY
 
-// bridge store, buys stolen goods at good price
+//////////////////////////
+
+// BSHOP02 - Bel Dalemark
+//
+// Bridge store, buys stolen goods at good price
+
+// 100% stock overwrite
 
 COPY_EXISTING bshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy INT_VAR weap=1 armor=1 rang=1 magic=1 potn=1 jewel=1 misc=1 END
@@ -2649,7 +2635,7 @@ COPY_EXISTING bshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     POTN30    // Potion of Infravision
     POTN44    // Potion of Strength
     BAG02C    // Gem Bag
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -2677,14 +2663,15 @@ COPY_EXISTING bshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM AROW04   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Acid +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #1  // Dart of Wounding
 
+  ADD_STORE_ITEM SW1H09   LAST #0 #0 #0 IDENTIFIED #1   // The Whistling Sword +2
   ADD_STORE_ITEM CLCK10   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Fire Resistance
 
   ADD_STORE_ITEM POTN10   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Invisibility
   ADD_STORE_ITEM POTN17   LAST #1 #0 #0 IDENTIFIED #1   // Elixir of Health
   ADD_STORE_ITEM POTN02   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Fire Resistance
 
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
-  ADD_STORE_ITEM misc35   LAST #0 #0 #0 IDENTIFIED #1   // Horn Coral
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
+  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #1   // Horn Coral
 
   ADD_STORE_ITEM SCRL09   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Undead
   ADD_STORE_ITEM SCRL67   LAST #1 #0 #0 IDENTIFIED #1   // Mage Armor
@@ -2696,8 +2683,7 @@ END BUT_ONLY
 
 // MERCHANT - Bel Dalemark
 // 
-// helps to investigate skin murders
-// give him berries and leather
+// Helps to investigate skin murders; give him berries and leather
 
 // 100% stock overwrite
 
@@ -2747,7 +2733,7 @@ COPY_EXISTING merchant.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD08    // Buckler
     SHLD12    // Small Shield
     POTN44    // Potion of Strength
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -2771,10 +2757,10 @@ COPY_EXISTING merchant.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM POTN45   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Freedom
   ADD_STORE_ITEM POTN26   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Explosions
 
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
   ADD_STORE_ITEM amul07   LAST #0 #0 #0 IDENTIFIED #1   // Rainbow Obsidian
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
-  ADD_STORE_ITEM ring12   LAST #0 #0 #0 IDENTIFIED #1   // Onyx
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
+  ADD_STORE_ITEM RING12   LAST #0 #0 #0 IDENTIFIED #1   // Onyx
   ADD_STORE_ITEM amul11   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
 
 END BUT_ONLY
@@ -2783,7 +2769,7 @@ END BUT_ONLY
 
 // MURCRAG - Mrs. Cragmoon
 // 
-// semi-legal potions
+// Semi-legal potions
 
 // 100% stock overwrite
 
@@ -2851,7 +2837,7 @@ END BUT_ONLY
 
 // UHMER01 - Elence Fielding
 // 
-// elf girl in Immensville
+// Elf girl in Immensville
 
 // 100% stock overwrite
 
@@ -2901,7 +2887,7 @@ COPY_EXISTING uhmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BULL01    // Bullet
     BULL03    // Bullet +2
     POTN02    // Potion of Fire Resistance
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -2951,8 +2937,7 @@ END BUT_ONLY
 
 // UHMER02 - Min Mining
 // 
-// gnome in Immensville
-// arrogant jerk, give him trash worth his demeanor
+// Gnome in Immensville; arrogant jerk, give him trash worth his demeanor
 
 // 100% stock overwrite
 
@@ -3008,8 +2993,7 @@ END BUT_ONLY
 
 // UHMER03 - Beherant Diir
 // 
-// fatman in Immensville
-// make him a druid
+// Fatman in Immensville; make him a druid
 
 // 100% stock overwrite
 
@@ -3029,7 +3013,7 @@ COPY_EXISTING uhmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     CHAN01    // Chain Mail
     PLAT10    // Plate Mail +1
     LEAT05    // Studded Leather Armor +1
- // these are RR's additions
+ // RR additions
     ~RR#BUC02~  // Buckler +1
 
   LPF store INT_VAR
@@ -3048,8 +3032,8 @@ COPY_EXISTING uhmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   SAY 0xc @200126 // Nature's Blessings
 
-  ADD_STORE_ITEM gberry   LAST #5 #0 #0 IDENTIFIED #50  // Goodberry
-  ADD_STORE_ITEM fireseed LAST #1 #0 #0 IDENTIFIED #5  // Fireseed
+  ADD_STORE_ITEM gberry   LAST #5 #0 #0 IDENTIFIED #1 UNLIMITED  // Goodberry
+  ADD_STORE_ITEM fireseed LAST #1 #0 #0 IDENTIFIED #5   // Fireseed
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #15  // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Extra Healing
@@ -3089,8 +3073,7 @@ END BUT_ONLY
 
 // PPSTOR01 - Storekeep
 // 
-// dude from Brynnlaw
-// give him pirate weapons
+// Dude from Brynnlaw; give him pirate weapons
 
 // 100% stock overwrite
 
@@ -3163,7 +3146,7 @@ COPY_EXISTING ppstor01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7U    // Contingency
     SCRL7V    // Spell Deflection / Greater Spell Deflection
     RESTORE   // Restoration
- // these are RR's additions
+ // RR additions
     ~RR#BOW03~  // Composite Short Bow +1
     ~RR#BUC02~  // Buckler +1
     ~RR#BUC03~  // Buckler +2
@@ -3212,7 +3195,6 @@ COPY_EXISTING ppstor01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM ~RR#BUC03~ LAST #0 #0 #0 IDENTIFIED #1  // Buckler +2
   END
 
-  ADD_STORE_ITEM SW1H36   LAST #0 #1 #0 IDENTIFIED #1   // Namarra +2
   ADD_STORE_ITEM SW1H52   LAST #0 #0 #0 IDENTIFIED #1   // Water's Edge +3
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
@@ -3380,8 +3362,7 @@ END BUT_ONLY
 
 // GOVWAU01 - Priest of Waukeen
 // 
-// Government District
-// i honestly don't know what to do with Waukeen, can think of no items fitting her temple well
+// Government District; I honestly don't know what to do with Waukeen, can think of no items fitting her temple well
 
 // 100% stock overwrite
 
@@ -3430,8 +3411,8 @@ COPY_EXISTING govwau01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #1   // Stone to Flesh Scroll
 
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #3   // Gold Necklace
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #5   // Gold Ring
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #5   // Gold Ring
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
 
   ADD_STORE_ITEM MISC6W   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Wooden Stake
 
@@ -3451,8 +3432,7 @@ END BUT_ONLY
 
 // SLILMAT - Priest of Ilmater
 // 
-// present in both Waukeen Promenade and Slums, which results in a shared store (when you buy from
-// one and the same item magically disappears from the other).
+// Present in both Waukeen Promenade and Slums, which results in a shared store (when you buy from one and the same item magically disappears from the other)
 
 // 100% stock overwrite
 
@@ -3542,7 +3522,7 @@ END BUT_ONLY
 
 // WILMAT - Priestess of Ilmater
 // 
-// she apparently was supposed to be in Waukeen Promenade instead of the abovementioned clone dude.
+// She apparently was supposed to be in Waukeen's Promenade instead of the abovementioned clone dude
 
 // 100% stock overwrite
 
@@ -4171,7 +4151,7 @@ COPY_EXISTING temsup.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #1   // Stone to Flesh Scroll
 
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #2   // Gold
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #3   // Gold
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #3   // Gold
 
   ADD_STORE_ITEM ~ag#ir03~  LAST #1 #0 #0 IDENTIFIED #3   // Armor of Faith
   ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #3   // Bless
@@ -4259,9 +4239,9 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #3   // Stone to Flesh Scroll
 
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
-  ADD_STORE_ITEM misc35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
-  ADD_STORE_ITEM misc33   LAST #0 #0 #0 IDENTIFIED #1   // Aquamarine
-  ADD_STORE_ITEM misc36   LAST #0 #0 #0 IDENTIFIED #3   // Pearl
+  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
+  ADD_STORE_ITEM MISC33   LAST #0 #0 #0 IDENTIFIED #1   // Aquamarine
+  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #3   // Pearl
 
   ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #3   // Bless
   ADD_STORE_ITEM ~ag#ir06~  LAST #1 #0 #0 IDENTIFIED #3   // Silence
@@ -4279,16 +4259,16 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 END BUT_ONLY
 
 ////////////////
-// innkeepers //
+// Innkeepers //
 ////////////////
 
-// most of them can't trade
+// Most of them can't trade
 
 //////////////////////
 /*
 // SEVBAR01 - Patricia
 // 
-// male-hating fat woman in Promenade
+// Male-hating fat woman in Promenade
 
 COPY_EXISTING sevbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy INT_VAR weap=1 armor=1 rang=1 magic=1 potn=1 jewel=1 misc=1 END
@@ -4321,7 +4301,7 @@ END BUT_ONLY
 
 // GORCH - Gorch
 // 
-// Mae'var guild
+// Mae'var's Guild
 
 // 100% stock overwrite
 
@@ -4380,7 +4360,7 @@ COPY_EXISTING gorch.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     MISC45    // Rogue Stone
     RESTORE   // Restoration
     BAG02B    // Gem Bag
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -4401,10 +4381,10 @@ COPY_EXISTING gorch.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM amul13   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
   ADD_STORE_ITEM amul06   LAST #0 #0 #0 IDENTIFIED #1   // Agni Mani
   ADD_STORE_ITEM amul07   LAST #0 #0 #0 IDENTIFIED #1   // Rainbow Obsidian
-  ADD_STORE_ITEM ring16   LAST #0 #0 #0 IDENTIFIED #1   // Angel Skin
-  ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
-  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #1   // Silver
-  ADD_STORE_ITEM ring12   LAST #0 #0 #0 IDENTIFIED #1   // Onyx
+  ADD_STORE_ITEM RING16   LAST #0 #0 #0 IDENTIFIED #1   // Angel Skin
+  ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
+  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #1   // Silver
+  ADD_STORE_ITEM RING12   LAST #0 #0 #0 IDENTIFIED #1   // Onyx
 
   PATCH_IF comp_rr_equip=1 BEGIN
     ADD_STORE_ITEM ~RR#SAP01~ LAST #0 #0 #0 IDENTIFIED #1  // Sap
@@ -4488,7 +4468,7 @@ COPY_EXISTING binnkeep.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM SCRL59   LAST #1 #0 #0 IDENTIFIED #1   // Neutralize Poison
   ADD_STORE_ITEM amul07   LAST #0 #0 #0 IDENTIFIED #1   // Rainbow Obsidian
-  ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
+  ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
   ADD_STORE_ITEM SCRL94   LAST #1 #0 #0 IDENTIFIED #1   // Resist Fear
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Healing
   ADD_STORE_ITEM POTN42   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Regeneration 
@@ -4611,7 +4591,7 @@ COPY_EXISTING bernard.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     RESTORE   // Restoration
     SW1H53    // Sword of Flame +1
     BAG03     // Scroll Case
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
     ~RR#BUC02~  // Buckler +1
 
@@ -4641,9 +4621,9 @@ COPY_EXISTING bernard.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SHLD08   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Buckler
   ADD_STORE_ITEM SHLD01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Small Shield
   ADD_STORE_ITEM SHLD03   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Medium Shield
-  ADD_STORE_ITEM ring14   LAST #0 #0 #0 IDENTIFIED #1   // Greenstonee
-  ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
-  ADD_STORE_ITEM misc21   LAST #0 #0 #0 IDENTIFIED #1   // Skydrop
+  ADD_STORE_ITEM RING14   LAST #0 #0 #0 IDENTIFIED #1   // Greenstonee
+  ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
+  ADD_STORE_ITEM MISC21   LAST #0 #0 #0 IDENTIFIED #1   // Skydrop
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Extra Healing
 
@@ -4680,14 +4660,14 @@ END BUT_ONLY
 END BUT_ONLY
 */
 ////////////
-// fences //
+// Fences //
 ////////////
 
 //////////////////////////
 
 // ROGER - Roger the Fence
 // 
-// sewers, Questpack has a potion quest related to him
+// Sewers, Questpack has a potion quest related to him
 
 // 100% stock overwrite
 
@@ -4756,7 +4736,7 @@ END BUT_ONLY
 
 // JAYES - Jayes
 // 
-// halfing, Promenade, eastern grid
+// Halfing, Promenade, eastern grid
 
 // 100% stock overwrite
 
@@ -4820,7 +4800,7 @@ COPY_EXISTING jayes.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL8C    // Stone to Flesh / Summon Nishruu
     BAG03F    // Scroll Case
     CLCK09    // Mage Robe of Cold Resistance
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -4855,8 +4835,8 @@ COPY_EXISTING jayes.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM POTN42   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Regeneration 
 
   ADD_STORE_ITEM amul06   LAST #0 #0 #0 IDENTIFIED #1   // Agni Mani
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
-  ADD_STORE_ITEM misc23   LAST #0 #0 #0 IDENTIFIED #1   // Jasper
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
+  ADD_STORE_ITEM MISC23   LAST #0 #0 #0 IDENTIFIED #1   // Jasper
 
   ADD_STORE_ITEM SCRL72   LAST #1 #0 #0 IDENTIFIED #1   // Friends / Monster Summoning I
   ADD_STORE_ITEM SCRL95   LAST #1 #0 #0 IDENTIFIED #1   // Melf's Acid Arrow
@@ -4875,8 +4855,7 @@ END BUT_ONLY
 
 // DMARK - Fovem
 // 
-// Docks, near the loading platform
-// easy to stumble upon, give him very cheap stuff
+// Docks, near the loading platform; easy to stumble upon, give him very cheap stuff
 
 // 100% stock overwrite
 
@@ -4903,7 +4882,7 @@ COPY_EXISTING dmark.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     PLAT04    // Full Plate Mail
     LEAT04    // Studded Leather Armor
     SHLD08    // Buckler
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -4917,8 +4896,8 @@ COPY_EXISTING dmark.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   WRITE_LONG 0xc 46004
 
-  ADD_STORE_ITEM ring15   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
-  ADD_STORE_ITEM misc29   LAST #0 #0 #0 IDENTIFIED #1   // Ziose
+  ADD_STORE_ITEM RING15   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
+  ADD_STORE_ITEM MISC29   LAST #0 #0 #0 IDENTIFIED #1   // Ziose
   ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
 
   ADD_STORE_ITEM SW1H05   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +1
@@ -5002,7 +4981,7 @@ COPY_EXISTING bshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7P    // Power Word: Silence
     SCRL7Q    // Improved Haste
     SCRL7R    // Death Fog / Acid Fog
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -5019,10 +4998,10 @@ COPY_EXISTING bshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM amul02   LAST #0 #0 #0 IDENTIFIED #1   // Necklace
   ADD_STORE_ITEM amul05   LAST #0 #0 #0 IDENTIFIED #2   // Bluestone
-  ADD_STORE_ITEM ring16   LAST #0 #0 #0 IDENTIFIED #2   // Angel Skin
-  ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
-  ADD_STORE_ITEM misc21   LAST #0 #0 #0 IDENTIFIED #3   // Skydrop
-  ADD_STORE_ITEM misc42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
+  ADD_STORE_ITEM RING16   LAST #0 #0 #0 IDENTIFIED #2   // Angel Skin
+  ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
+  ADD_STORE_ITEM MISC21   LAST #0 #0 #0 IDENTIFIED #3   // Skydrop
+  ADD_STORE_ITEM MISC42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
 
   ADD_STORE_ITEM SW1H22   LAST #0 #0 #0 IDENTIFIED #1   // Scimitar +1
   ADD_STORE_ITEM DAGG16   LAST #10 #0 #0 IDENTIFIED #1  // Poisoned Throwing Dagger
@@ -5129,7 +5108,7 @@ COPY_EXISTING arled.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BAG02D    // Gem Bag
     MISC3P    // Glasses of Identification
     CLCK13    // Traveller's Robe
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW03~  // Composite Short Bow +1
@@ -5153,7 +5132,7 @@ COPY_EXISTING arled.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
 
-  ADD_STORE_ITEM misc75   LAST #0 #0 #0  IDENTIFIED #1  // Dagger of Venom
+  ADD_STORE_ITEM MISC75   LAST #0 #0 #0  IDENTIFIED #1  // Dagger of Venom
 
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #3  // Arrow +1
   ADD_STORE_ITEM AROW04   LAST #40 #0 #0 IDENTIFIED #1  // Arrow of Acid +1
@@ -5190,8 +5169,7 @@ END BUT_ONLY
 
 // SLSHOP01 - Black Market Thief
 // 
-// Slums, near Ilmater temple on roofs. sneaky bastard, i didn't even know there was the second fence in Slums
-// since he's so hard to find, give him best stuff
+// Slums, near Ilmater temple on roofs. Sneaky bastard, I didn't even know there was the second fence in Slums; since he's so hard to find, give him best stuff
 
 // 100% stock overwrite
 
@@ -5238,7 +5216,7 @@ COPY_EXISTING slshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD10    // Buckler
     SHLD15    // Large Shield
     SHLD04    // Medium Shield +1
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -5287,9 +5265,9 @@ COPY_EXISTING slshop01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM POTN46   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Stone Form
   ADD_STORE_ITEM POTN39   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Perception
 
-  ADD_STORE_ITEM ring06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
-  ADD_STORE_ITEM misc45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
+  ADD_STORE_ITEM RING06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
+  ADD_STORE_ITEM MISC45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
 
   ADD_STORE_ITEM SCRL5I   LAST #1 #0 #0 IDENTIFIED #1   // Greater Malison
   ADD_STORE_ITEM SCRL1X   LAST #1 #0 #0 IDENTIFIED #1   // Ice Storm
@@ -5347,7 +5325,7 @@ COPY_EXISTING slshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD11    // Small Shield
     SHLD14    // Medium Shield
     POTN08    // Potion of Healing
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -5378,9 +5356,9 @@ COPY_EXISTING slshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL1H   LAST #1 #0 #0 IDENTIFIED #1   // Haste
 
   ADD_STORE_ITEM amul07   LAST #0 #0 #0 IDENTIFIED #1   // Rainbow Obsidian
-  ADD_STORE_ITEM ring11   LAST #0 #0 #0 IDENTIFIED #1   // Silver
-  ADD_STORE_ITEM misc35   LAST #0 #0 #0 IDENTIFIED #1   // Horn Coral
-  ADD_STORE_ITEM misc37   LAST #0 #0 #0 IDENTIFIED #1   // Sphene
+  ADD_STORE_ITEM RING11   LAST #0 #0 #0 IDENTIFIED #1   // Silver
+  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #1   // Horn Coral
+  ADD_STORE_ITEM MISC37   LAST #0 #0 #0 IDENTIFIED #1   // Sphene
 
 END BUT_ONLY
 
@@ -5457,7 +5435,7 @@ COPY_EXISTING trthf02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7U    // Contingency
     SCRL7V    // Spell Deflection / Greater Spell Deflection
     BAG02E    // Gem Bag
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW03~  // Composite Short Bow +1
@@ -5482,9 +5460,10 @@ COPY_EXISTING trthf02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting (Bullet +4)
   END
 
-  ADD_STORE_ITEM waflail  LAST #0 #0 #0 IDENTIFIED #1   // Defender of Easthaven +2
-  ADD_STORE_ITEM brac18   LAST #0 #0 #0 IDENTIFIED #1   // Gloves of Missile Snaring
-  ADD_STORE_ITEM boot10   LAST #0 #0 #0 IDENTIFIED #1   // Boots of Lightning Speed
+  ADD_STORE_ITEM SW1H36   LAST #0 #1 #0 IDENTIFIED #1   // Namarra +2
+  ADD_STORE_ITEM WAFLAIL  LAST #0 #0 #0 IDENTIFIED #1   // Defender of Easthaven +2
+  ADD_STORE_ITEM BRAC18   LAST #0 #0 #0 IDENTIFIED #1   // Gloves of Missile Snaring
+  ADD_STORE_ITEM BOOT10   LAST #0 #0 #0 IDENTIFIED #1   // Boots of Lightning Speed
 
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM WAND08   LAST #10 #0 #0 IDENTIFIED #1  // Sleep
@@ -5498,10 +5477,10 @@ COPY_EXISTING trthf02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM SCRL08   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Poison
 
-  ADD_STORE_ITEM ring17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
-  ADD_STORE_ITEM misc21   LAST #0 #0 #0 IDENTIFIED #1   // Skydrop
-  ADD_STORE_ITEM misc23   LAST #0 #0 #0 IDENTIFIED #1   // Jasper
-  ADD_STORE_ITEM misc44   LAST #0 #0 #0 IDENTIFIED #1   // King's Tears
+  ADD_STORE_ITEM RING17   LAST #0 #0 #0 IDENTIFIED #1   // Flamedance
+  ADD_STORE_ITEM MISC21   LAST #0 #0 #0 IDENTIFIED #1   // Skydrop
+  ADD_STORE_ITEM MISC23   LAST #0 #0 #0 IDENTIFIED #1   // Jasper
+  ADD_STORE_ITEM MISC44   LAST #0 #0 #0 IDENTIFIED #1   // King's Tears
 
   ADD_STORE_ITEM POTN28   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Fortitude
   ADD_STORE_ITEM POTN12   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Stone Giant Strength
@@ -5516,7 +5495,7 @@ COPY_EXISTING trthf02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 END BUT_ONLY
 
 ////////////////////
-// special stores //
+// Special Stores //
 ////////////////////
 
 ///////////////////////////////
@@ -5586,7 +5565,7 @@ COPY_EXISTING bmthief.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL2A    // Monster Summoning II
     SCRL1W    // Fireshield (Blue) / Mestil's Acid Sheath
     SCRL1X    // Ice Storm
- // these are RR's additions
+ // RR additions
     STAF01    // Quarterstaff
     STAF02    // Quarterstaff +1
     BLUN01    // Club
@@ -5665,11 +5644,11 @@ COPY_EXISTING bmthief.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL1I   LAST #1 #0 #0 IDENTIFIED #1   // Hold Person
   ADD_STORE_ITEM SCRL5J   LAST #1 #0 #0 IDENTIFIED #1   // Oliluke's Resilient Sphere
 
-  ADD_STORE_ITEM BRAC17   LAST #0 #0 #0 IDENTIFIED #1   // Gloves of the Rogue
   ADD_STORE_ITEM XBOW10   LAST #0 #0 #0 IDENTIFIED #1   // Necaradan's Crossbow
-  ADD_STORE_ITEM misc2p   LAST #1 #0 #0 IDENTIFIED #1   // Greagan's Harp
+  ADD_STORE_ITEM BRAC17   LAST #0 #0 #0 IDENTIFIED #1   // Gloves of the Rogue
+  ADD_STORE_ITEM MISC2P   LAST #1 #0 #0 IDENTIFIED #1   // Greagan's Harp
 
-  ADD_STORE_ITEM misc41   LAST #0 #0 #0 IDENTIFIED #1   // Star Sapphire
+  ADD_STORE_ITEM MISC41   LAST #0 #0 #0 IDENTIFIED #1   // Star Sapphire
 
   PATCH_IF comp_rr_equip=1 BEGIN
     ADD_STORE_ITEM ~RR#SAP01~ LAST #0 #0 #0 IDENTIFIED #6  // Sap
@@ -5681,7 +5660,7 @@ END BUT_ONLY
 
 // SHTHSTOR - Rattell
 // 
-// thief stronghold 'bartender'
+// Thief stronghold 'bartender'
 
 // 100% stock overwrite
 
@@ -5735,7 +5714,7 @@ COPY_EXISTING shthstor.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL2H    // Shadow Door
     SCRL1J    // Invisibility 10' Radius / Invisibility Sphere
     RESTORE   // Restoration
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW02~  // Composite Short Bow
@@ -5782,16 +5761,16 @@ COPY_EXISTING shthstor.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM WAND06   LAST #50 #0 #0 IDENTIFIED #1  // Frost
   END
   ADD_STORE_ITEM SCRL09   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Undead
-  ADD_STORE_ITEM ring06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
+  ADD_STORE_ITEM RING06   LAST #0 #0 #0 IDENTIFIED #1   // Ring of Protection +1
 
   ADD_STORE_ITEM amul11   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
   ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
-  ADD_STORE_ITEM misc36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
-  ADD_STORE_ITEM misc41   LAST #0 #0 #0 IDENTIFIED #1   // Star Sapphire
-  ADD_STORE_ITEM misc42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
-  ADD_STORE_ITEM misc44   LAST #0 #0 #0 IDENTIFIED #1   // King's Tears
-  ADD_STORE_ITEM misc45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
+  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
+  ADD_STORE_ITEM MISC41   LAST #0 #0 #0 IDENTIFIED #1   // Star Sapphire
+  ADD_STORE_ITEM MISC42   LAST #0 #0 #0 IDENTIFIED #1   // Diamond
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
+  ADD_STORE_ITEM MISC44   LAST #0 #0 #0 IDENTIFIED #1   // King's Tears
+  ADD_STORE_ITEM MISC45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
 
   PATCH_IF comp_rr_equip=1 BEGIN
     ADD_STORE_ITEM ~RR#SAP01~ LAST #0 #0 #0 IDENTIFIED #4  // Sap
@@ -5840,8 +5819,7 @@ END BUT_ONLY
 
 // SCROLLS - Lady Yuth
 // 
-// we kick her out of Adenturer's Mart, where spell scrolls are now sold legally by Deidre
-// Temple District looks a suitable place for a noblewoman to frequent, she'll conduct her illegalities there
+// We kick her out of Adenturer's Mart, where spell scrolls are now sold legally by Deidre; Temple District looks a suitable place for a noblewoman to frequent, she'll conduct her illegalities there
 
 // 100% stock overwrite
 
@@ -6140,7 +6118,7 @@ COPY_EXISTING bernard2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL9B    // Summon Fiend
     SCRL8Z    // Simulacrum
     SCRL8S    // Summon Efreet
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
     ~RR#BUC02~  // Buckler +1
 
@@ -6209,7 +6187,7 @@ COPY_EXISTING bernard2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL2G   LAST #1 #0 #0 IDENTIFIED #1   // Monster Summoning III / Monster Summoning V
   ADD_STORE_ITEM SCRL8C   LAST #1 #0 #0 IDENTIFIED #1   // Stone to Flesh / Summon Nishruu
 
-  ADD_STORE_ITEM misc36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
+  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #1   // Pearl
 
 END BUT_ONLY
 
@@ -6217,8 +6195,7 @@ END BUT_ONLY
 
 // PPSTOR01 - Merchant     
 // 
-// the merchant from extortion encounter at Gates, he was a duplicate of Brynnlaw's storekeep
-// he may need something else beside ammo. hmm...
+// The merchant from extortion encounter at Gates, he was a duplicate of Brynnlaw's storekeep; he may need something else beside ammo, hmm...
 
 // 100% stock overwrite
 
@@ -6330,7 +6307,7 @@ COPY_EXISTING trgeni01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     HALB02    // Halberd +1
     DART02    // Dart +1
     CLCK14    // Adventurer's Robe
- // these are RR's additions
+ // RR additions
     ~RR#BOW03~  // Composite Short Bow +1
 
   LPF store INT_VAR
@@ -6491,7 +6468,7 @@ END BUT_ONLY
 
 // SAHPR1 - Priestess of Sekolah
 // 
-// sahuagin city, as you might guess
+// Sahuagin city, as you might guess
 
 // 100% stock overwrite
 
@@ -6809,7 +6786,7 @@ END BUT_ONLY
 /*
 // UDDROW22 - Drow Bartender
 // 
-// bartender in Ust Natha, can't trade
+// Bartender in Ust Natha, can't trade
 
 COPY_EXISTING uddrow22.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy INT_VAR weap=1 armor=1 rang=1 magic=1 potn=1 jewel=1 misc=1 END
@@ -6820,16 +6797,16 @@ END BUT_ONLY
 
 // UDDROW23 - Drow
 // 
-// weaponmaster
+// Weaponmaster
 
 // 100% stock overwrite
 
-// take Psion's Blade for Yaga-Shura's temple
+// Take Psion's Blade for Yaga-Shura's temple
 COPY_EXISTING ar5201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=sw2h21 END
 END BUT_ONLY
 
-// takee Azamantes' Serpent Shaft
+// Take Azamantes' Serpent Shaft
 COPY_EXISTING ~gorlic01.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM staf23
 END BUT_ONLY
@@ -6896,7 +6873,7 @@ COPY_EXISTING uddrow23.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL2F    // Cone of Cold
     SCRL2G    // Monster Summoning III / Monster Summoning V
     SCRL2H    // Shadow Door
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -6940,7 +6917,7 @@ END BUT_ONLY
 
 // UDDROW24 - Drow
 // 
-// potionmaster
+// Potionmaster
 
 // 100% stock overwrite
 
@@ -7042,8 +7019,7 @@ END BUT_ONLY
 
 // UDDROW25 - Drow
 // 
-// spellmaster
-// he trades all the magic that can be purchased after departing to Brynnlaw
+// Spellmaster, he trades all the magic that can be purchased after departing to Brynnlaw
 
 // 100% stock overwrite
 
@@ -7091,7 +7067,7 @@ COPY_EXISTING uddrow25.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL8G    // Ruby Ray of Reversal
     SCRL8T    // Summon Djinni
 
-    // spell revisions
+    // Spell Revisions
     SCRL1V     // Dimension Door / Dimension Jump
     SCRLW801   // Ghost Form
 
@@ -7253,7 +7229,7 @@ END BUT_ONLY
 
 // UDDUER01 - Carlig
 // 
-// when approached for the first time
+// When approached for the first time
 
 // 100% stock overwrite
 
@@ -7306,8 +7282,8 @@ COPY_EXISTING udduer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM LEAT01   LAST #0 #0 #0 IDENTIFIED #3   // Leather Armor
   ADD_STORE_ITEM CHAN04   LAST #0 #0 #0 IDENTIFIED #1   // Splint Mail
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Healing
-  ADD_STORE_ITEM misc25   LAST #0 #0 #0 IDENTIFIED #1   // Zircone
-  ADD_STORE_ITEM ring15   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
+  ADD_STORE_ITEM MISC25   LAST #0 #0 #0 IDENTIFIED #1   // Zircone
+  ADD_STORE_ITEM RING15   LAST #0 #0 #0 IDENTIFIED #1   // Bloodstone
 
 END BUT_ONLY
 
@@ -7315,7 +7291,7 @@ END BUT_ONLY
 
 // UDDUER02 - Carlig
 // 
-// when disguised as drow
+// When disguised as drow
 
 // 100% stock overwrite
 
@@ -7392,7 +7368,7 @@ COPY_EXISTING udduer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7T    // Disintegrate
     SCRL8I    // Cacofiend
     RESTORE   // Restoration
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW03~  // Composite Short Bow +1
@@ -7402,11 +7378,10 @@ COPY_EXISTING udduer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     sell=150
     buy=25
     steal=0
-    fence=1 // he'll buy anything, else the visiting 'drow' party might become upset :)
-            // yeah, and it makes the best place ever to sell stolen stuff - quite fine, since it's as late as in Ch.5
+    fence=1 // He'll buy anything, else the visiting 'drow' party might become upset :); yeah, and it makes the best place ever to sell stolen stuff - quite fine, since it's as late as in Ch.5
   END
 
-  ADD_STORE_ITEM misc5k   LAST #0 #0 #0 IDENTIFIED #1   // Illithium Ore
+  ADD_STORE_ITEM MISC5K   LAST #0 #0 #0 IDENTIFIED #1   // Illithium Ore
 
   ADD_STORE_ITEM POTN20   LAST #1 #0 #0 IDENTIFIED #1   // Antidote
   ADD_STORE_ITEM POTN36   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Master Thievery
@@ -7459,7 +7434,7 @@ END BUT_ONLY
 /*
 // UDSVIR04 - Innkeeper
 // 
-// svirf innkeeper, can't trade
+// Svirf innkeeper, can't trade
 
 COPY_EXISTING udsvir04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy INT_VAR weap=1 armor=1 rang=1 magic=1 potn=1 jewel=1 misc=1 END
@@ -7470,8 +7445,7 @@ END BUT_ONLY
 
 // UDSVIR05 - Therndle Daglefodd
 // 
-// he asks to rescue his imprisoned son
-// give him stuff related to illusions, stone, mining, some combat too
+// He asks to rescue his imprisoned son. Give him stuff related to illusions, stone, mining, some combat too
 
 // 100% stock overwrite
 
@@ -7535,7 +7509,7 @@ COPY_EXISTING udsvir05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL7H    // Flesh to Stone
     SCRL7I    // Death Spell / Banishment
     RESTORE   // Restoration
- // these are RR's additions
+ // RR additions
     ~RR#BOW03~  // Composite Short Bow +1
     ~RR#BUC02~  // Buckler +1
 
@@ -7636,17 +7610,16 @@ COPY_EXISTING udsvir05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL63   LAST #1 #0 #0 IDENTIFIED #1   // Raise Dead
   ADD_STORE_ITEM RESTORE  LAST #1 #0 #0 IDENTIFIED #1   // Restoration
 
-// i'm not a spec when it comes to mineralogy, if you think some of
-// these gems don't belong to Underdark then do go ahead and fix it
+// I'm not a spec when it comes to mineralogy, if you think some of these gems don't belong to Underdark then do go ahead and fix it
 
-  ADD_STORE_ITEM misc20   LAST #0 #0 #0 IDENTIFIED #7   // Bloodstone
-  ADD_STORE_ITEM misc22   LAST #0 #0 #0 IDENTIFIED #10  // Andar
-  ADD_STORE_ITEM misc23   LAST #0 #0 #0 IDENTIFIED #7   // Jasper
-  ADD_STORE_ITEM misc24   LAST #0 #0 #0 IDENTIFIED #3   // Tchazar
-  ADD_STORE_ITEM misc25   LAST #0 #0 #0 IDENTIFIED #5   // Zircone
-  ADD_STORE_ITEM misc29   LAST #0 #0 #0 IDENTIFIED #5   // Ziose
-  ADD_STORE_ITEM misc34   LAST #0 #0 #0 IDENTIFIED #3   // Garnet
-  ADD_STORE_ITEM misc37   LAST #0 #0 #0 IDENTIFIED #2   // Sphene
+  ADD_STORE_ITEM MISC20   LAST #0 #0 #0 IDENTIFIED #7   // Bloodstone
+  ADD_STORE_ITEM MISC22   LAST #0 #0 #0 IDENTIFIED #10  // Andar
+  ADD_STORE_ITEM MISC23   LAST #0 #0 #0 IDENTIFIED #7   // Jasper
+  ADD_STORE_ITEM MISC24   LAST #0 #0 #0 IDENTIFIED #3   // Tchazar
+  ADD_STORE_ITEM MISC25   LAST #0 #0 #0 IDENTIFIED #5   // Zircone
+  ADD_STORE_ITEM MISC29   LAST #0 #0 #0 IDENTIFIED #5   // Ziose
+  ADD_STORE_ITEM MISC34   LAST #0 #0 #0 IDENTIFIED #3   // Garnet
+  ADD_STORE_ITEM MISC37   LAST #0 #0 #0 IDENTIFIED #2   // Sphene
 
 END BUT_ONLY
 
@@ -7896,7 +7869,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 	SCRL73    // Protection from Petrification / Expeditious Retreat
 	SCRL81    // Sleep
 
-    // spell revisions
+    // Spell Revisions
     SCRL1V     // Dimension Door / Dimension Jump
     SCRLW801   // Ghost Form
 
@@ -8285,7 +8258,7 @@ END BUT_ONLY
 // AMBAR01 - Zakee Rafeha
 // 
 // Amkethran bartender
-// nobody's gonna care for his trash, move his ioun stone to smugglers nearby
+// Nobody's gonna care for his trash, move his ioun stone to smugglers nearby
 
 // 100% stock overwrite
 
@@ -8341,7 +8314,7 @@ COPY_EXISTING ambar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     XBOW01    // Heavy Crossbow
     XBOW04    // Light Crossbow
     HELM25    // Silver Ioun Stone
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
 
   LPF store INT_VAR
@@ -8351,7 +8324,6 @@ COPY_EXISTING ambar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     fence=0
   END
 
-  // and i know, it's beyond silly...
   ADD_STORE_ITEM POTN55   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Superior Healing
 
 END BUT_ONLY
@@ -8461,7 +8433,7 @@ COPY_EXISTING amsmug01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     MISC42    // Diamond
     MISC43    // Emerald
     MISC45    // Rogue Stone
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW03~  // Composite Short Bow +1
@@ -8649,7 +8621,7 @@ COPY_EXISTING amsmug02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     MISC44    // King's Tears
     MISC45    // Rogue Stone
     BAG02I    // Gem Bag
- // these are RR's additions
+ // RR additions
     BLUN01    // Club
     ~RR#SAP01~  // Sap
     ~RR#BOW03~  // Composite Short Bow +1
@@ -8748,7 +8720,7 @@ END BUT_ONLY
 
 // AMCLER02 - Chyil
 // 
-// Amkethran temple of Waukeen
+// Amkethran Temple of Waukeen
 
 // 100% stock overwrite
 
@@ -8802,7 +8774,7 @@ COPY_EXISTING amcler02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM BAG03I   LAST #0 #0 #0 IDENTIFIED #1   // Scroll Case
 
-  ADD_STORE_ITEM misc43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
+  ADD_STORE_ITEM MISC43   LAST #0 #0 #0 IDENTIFIED #1   // Emerald
 
   ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #3   // Bless
   ADD_STORE_ITEM ~ag#ir02~  LAST #1 #0 #0 IDENTIFIED #3   // Sanctuary
@@ -8819,7 +8791,7 @@ END BUT_ONLY
 // SARBAR01 - Bartender
 // 
 // Saradush bartender
-// this guy's assortiment is snafu, but so are most of tob stores
+// This guy's assortiment is snafu, but so are most of ToB stores
 
 // 100% stock overwrite
 
@@ -8958,7 +8930,7 @@ COPY_EXISTING sarbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD30    // Large Shield +2
     SW1H66    // Yamato +4
     BOOT01    // Boots of Speed
- // these are RR's additions
+ // RR additions
     ~RR#BOW02~  // Composite Short Bow
     ~RR#BOW03~  // Composite Short Bow +1
     ~RR#BOW04~  // Composite Short Bow +2
@@ -9030,7 +9002,7 @@ END BUT_ONLY
 
 // SARTEM01 - Sister Farielle
 // 
-// Saradush temple of Waukeen
+// Saradush Temple of Waukeen
 
 // 100% stock overwrite
 
@@ -9086,8 +9058,8 @@ COPY_EXISTING sartem01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM STAF19   LAST #0 #0 #0 IDENTIFIED #1   // Cleric's Staff +3
   ADD_STORE_ITEM RODS03   LAST #1 #0 #0 IDENTIFIED #1   // Rod of Resurrection
 
-  ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
-  ADD_STORE_ITEM ring10   LAST #0 #0 #0 IDENTIFIED #1   // Gold
+  ADD_STORE_ITEM amul10   LAST #0 #0 #0 IDENTIFIED #1   // Gold Necklace
+  ADD_STORE_ITEM RING10   LAST #0 #0 #0 IDENTIFIED #1   // Gold Ring
 
   ADD_STORE_ITEM ~ag#ir03~  LAST #1 #0 #0 IDENTIFIED #3   // Armor of Faith
   ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #3   // Bless
@@ -9107,7 +9079,7 @@ END BUT_ONLY
 
 // HGKAR01 - Karthis al-Hezzar
 // 
-// i think it's the fool we get to rescue from Yaga-Shura's marauders
+// I think it's the fool we get to rescue from Yaga-Shura's marauders
 
 // 100% stock overwrite
 
@@ -9190,7 +9162,7 @@ COPY_EXISTING hgkar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BAG02H    // Gem Bag
     BAG03H    // Scroll Case
     BAG06C    // Potion Case
- // these are RR's additions
+ // RR additions
     ~RR#BOW04~  // Composite Short Bow +2
     ~RR#BOW05~  // Composite Short Bow +3
 
@@ -9549,7 +9521,7 @@ WRITE_LONG 0x4c 0x9c
 WRITE_LONG 0x70 0x9c
 
 
-// remove Wyrmcleaver from Unseeing Eye's lair
+// Remove Wyrmcleaver from Unseeing Eye's lair
 COPY_EXISTING ar0205.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=halb04 END
 END BUT_ONLY
@@ -9616,9 +9588,7 @@ END BUT_ONLY
 
 // WMART1 - Joluv
 // 
-// most of bonus merchant stuff is unavailable within IR v3 - due to the lack of unique
-// BAMs and concepts, - but if somebody wants them anyway, then go ahead and install Joluv
-// with BG2Tweakpack or similar. he'll have all the trash left untouched by us
+// Most of bonus merchant stuff is unavailable within IR v3 - due to the lack of unique BAMs and concepts - but if somebody wants them anyway, then go ahead and install Joluv with Tweakpack or similar. He'll have all the trash left untouched by us
 
 COPY_EXISTING wmart1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   REMOVE_STORE_ITEM 

@@ -970,6 +970,15 @@ COPY ~%source%/STAFF_OF_FIRE_2.tpa~ ~%target%~
 COPY ~%source%/STAFF_OF_RYNN_3.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/THE_WHISTLING_SWORD_2.tpa
+  ADD_PROJECTILE ~item_rev/itm/sw1h09.pro~ // Whistling Sword
+  COPY ~item_rev/itm/sw1h09.spl~ ~override~
+    WRITE_SHORT 0x98 sw1h09
+  COPY ~item_rev/itm/sw1h09.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/THE_WHISTLING_SWORD_2.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/SHORT_SWORD_OF_BACKSTABBING_3.tpa
   COPY ~item_rev/itm/sw1h10.eff~ ~override~ // Backstabbing
 >>>>>>>>

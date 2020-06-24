@@ -102,7 +102,7 @@ WYVERNS_TAIL_2                             MORNSTAR blun17   1        1        0
 SKULLCRUSHER_3                             MACE     blun18   1        1        0        0        1        1        @1112    @1140    @1115    @1141    *        *        *        *
 MAULERS_ARM_1                              MACE     blun19   1        1        0        0        1        1        @1112    @1142    @1115    @1143    *        *        *        *
 ARDULIAS_FALL_2                            MACE     blun20   1        1        0        0        1        1        @1112    @1144    @1115    @1145    *        *        *        *
-KROTANS_SKULLCRUSHER_2                     MACE     blun21   1        1        1        1        1        1        @1112    @1146    @1115    @1147    *        *        *        *
+MACE_2                                     MACE     blun21   1        1        1        1        1        1        @1112    @1146    @1115    @1147    *        *        *        *
 BLACKBLOOD_2                               CLUB     blun22   1        1        0        0        1        1        @1105    @1148    @1125    @1149    *        *        *        *
 BONE_CLUB_3                                CLUB     blun23   1        1        0        0        1        1        @1105    @1150    @1125    @1151    *        *        *        *
 GNASHER_2                                  CLUB     blun24   1        1        0        0        1        1        @1105    @1152    @1125    @1153    *        *        *        *
@@ -536,7 +536,7 @@ PLATE_MAIL_2                               PLATE    plat10   1        1        0
 DELVERS_PLATE_2                            PLATE    plat11   1        1        0        0        1        1        @1825    @1840    @1828    @1841    *        *        *        *
 DOOMPLATE_3                                PLATE    plat12   1        1        0        0        1        1        @1825    @1842    @1828    @1843    *        *        *        * 
 DEEP_GUARDIANS_PLATE_4                     PLATE    plat13   1        1        0        0        1        1        @1825    @1844    @1828    @1845    *        *        *        *
-FULL_PLATE_MAIL_1#2                        PLATEF   plat14   1        1        1        1        1        1        @1497    @1831    @1499    @1832    *        *        *        *
+FULL_PLATE_MAIL_1                          PLATEF   plat14   1        1        1        1        1        1        @1497    @1831    @1499    @1832    *        *        *        *
 PRIDE_OF_THE_ORDER_2                       PLATEF   plat15   1        1        0        0        1        1        @1497    @1846    @1499    @1847    *        *        *        *
 CASIELS_SOUL_3                             PLATEF   plat16   1        1        0        0        1        1        @1497    @1848    @1499    @1849    *        *        *        * 
 ARMOR_OF_THE_HART_4                        PLATEF   plat17   1        1        0        0        1        1        @1497    @1850    @1499    @1851    *        *        *        cursed
@@ -697,7 +697,7 @@ LONG_SWORD_1                               SWORDL   sw1h05   1        1        1
 VARSCONA_2                                 SWORDL   sw1h06   1        1        1        1        1        1        @1513    @2064    @1515    @2065    *        *        *        *
 SHORT_SWORD                                SWORDS   sw1h07   1        1        1        1        1        1        @2066    @2066    @2067    @2067    *        *        *        *
 SHORT_SWORD_1                              SWORDS   sw1h08   1        1        1        1        1        1        @2066    @2068    @2069    @2070    *        *        *        *
-WHISTLING_SWORD_2                          SWORDS   sw1h09   1        1        1        1        1        1        @2066    @2579    @2069    @2580    *        *        *        *
+THE_WHISTLING_SWORD_2                      SWORDS   sw1h09   1        1        1        1        1        1        @2066    @2579    @2069    @2580    *        *        *        *
 SHORT_SWORD_OF_BACKSTABBING_3              SWORDS   sw1h10   1        1        1        1        1        1        @2066    @2073    @2069    @2074    *        *        *        * 
 HULLS_LONG_SWORD                           SWORDL   sw1h12   1        1        1        1        1        1        @2422    @2422    @2061    @2061    *        *        *        *
 MOONBLADE_3                                SWORDL   sw1h13   1        1        1        1        1        1        @2403    @2403    @2404    @2404    *        *        *        *
@@ -923,7 +923,17 @@ THE_HARROWER_1                             SWORDL   sw1h79   0        0        0
 THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @60048   @1762    @60049   *        *        *        *
 RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @60050   @1762    @60051   *        *        *        *
 
-HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70000   @1671    @70001   *        *        *        *
+DART_2                                     DART     ohdart50 1        1        0        1        1        1        @1466    @70000   @1469    @70001   *        *        *        *
+DART_3                                     DART     ohdart51 1        1        0        1        1        1        @1466    @70002   @1469    @70003   *        *        *        *
+HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70004   @1671    @70005   *        *        *        *
+HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70006   @1671    @70007   *        *        *        *
+HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70008   @1671    @70009   *        *        *        *
+BUCKLER_2                                  SHIELDB  ohshld50 1        1        0        1        1        1        @1955    @70010   @1958    @70011   *        *        *        *
+BUCKLER_3                                  SHIELDB  ohshld51 1        1        0        1        1        1        @1955    @70012   @1958    @70013   *        *        *        *
+WAKIZASHI_2                                WAKI     ohsw1h51 1        1        0        1        1        1        @2127    @70014   @2130    @70015   *        *        *        *
+WAKIZASHI_3                                WAKI     ohsw1h52 1        1        0        1        1        1        @2127    @70016   @2130    @70017   *        *        *        *
+NINJA-TO_2                                 NINJATO  ohsw1h53 1        1        0        1        1        1        @2132    @70018   @2135    @70019   *        *        *        *
+NINJA-TO_3                                 NINJATO  ohsw1h54 1        1        0        1        1        1        @2132    @70020   @2135    @70021   *        *        *        *
 UNHOLY_REAVER_5                            SWORD2H  ohreaver 1        1        0        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *
 
 SMALL_SHIELD#EE                            SHIELDS  shld01a  0        0        0        0        1        1        @1939    @1939    @1940    @1940    *        *        *        *
