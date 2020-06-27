@@ -710,9 +710,9 @@ DEFINE_PATCH_MACRO special BEGIN
 
   // Sling of Seeking +1, Arrow of Slaying +1, Arrow of Detonation, Bolt of Polymorphing - special +5 THAC0 bonus
   PATCH_IF
-    ~%SOURCE_RES%~ STRING_EQUAL ~slng03~
-	~%SOURCE_RES%~ STRING_EQUAL ~arow03~
-	~%SOURCE_RES%~ STRING_EQUAL ~arow06~
+    ~%SOURCE_RES%~ STRING_EQUAL ~slng03~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~arow03~ ||
+	~%SOURCE_RES%~ STRING_EQUAL ~arow06~ ||
 	~%SOURCE_RES%~ STRING_EQUAL ~bolt05~
   BEGIN
     iden_bonus_thaco=5
