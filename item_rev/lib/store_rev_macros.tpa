@@ -393,6 +393,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY make_scrolls BEGIN
   sppr505 => ag#ir07  // True Sight
 END
 
+  ACTION_IF comp_sr=1 BEGIN
+	ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_TRUE_DISPEL_MAGIC[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+	  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_TRUE_DISPEL_MAGIC~ RET spell_res END
+	  OUTER_SPRINT $make_scrolls("%spell_res%") ~ag#ir09~
+	END
+  END
+
 COPY_EXISTING spwi609a.bam ~override/sppr505a.bam~ // fix the True Seeing BAM
  spwi609b.bam ~override/sppr505b.bam~
  spwi609c.bam ~override/sppr505c.bam~
@@ -456,6 +463,17 @@ ACTION_PHP_EACH make_scrolls AS ind => res BEGIN
 
 END
 
+// Spell Revisions fixes
+ACTION_IF comp_sr=1 BEGIN
+  ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_TRUE_DISPEL_MAGIC[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~AG#IR09.itm~ BEGIN
+      COPY_EXISTING ~AG#IR09.itm~ override
+      WRITE_ASCIIE 0x3a ~SPPR303A~ (8) // inventory
+      WRITE_ASCIIE 0x72+4 ~SPPR303A~ (8)
+    END
+  END
+END
+  
 END
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

@@ -211,7 +211,7 @@ Speed Factor\1~
 @100164 = ~Bonus to hit:  3~
 
 // replace @100164
-@100165 = ~THAC0:  +3 bonus~
+@100165 = ~THAC0: +3~
 
 // @1032143 from "gtu.tra", BG2Fixpack
 @100166 = ~Damage: 1D4 + 3 (+2 bonus missile damage)~
