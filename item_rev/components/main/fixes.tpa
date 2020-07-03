@@ -3603,7 +3603,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) THEN BEGIN
       END
     BUT_ONLY_IF_IT_CHANGES
   END
-    
+  
     ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart08.PRO~
   
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART08.ITM~) THEN BEGIN
@@ -3617,6 +3617,42 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) THEN BEGIN
           LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
           PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
             WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart08%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ohdart50.itm~) THEN BEGIN
+  COPY_EXISTING ~ohdart50.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart02%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ohdart51.itm~) THEN BEGIN
+  COPY_EXISTING ~ohdart51.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart02%~
           END
         END
       END
