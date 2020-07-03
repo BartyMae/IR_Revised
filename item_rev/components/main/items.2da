@@ -923,18 +923,19 @@ THE_HARROWER_1                             SWORDL   sw1h79   0        0        0
 THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @60048   @1762    @60049   *        *        *        *
 RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @60050   @1762    @60051   *        *        *        *
 
-DART_2                                     DART     ohdart50 1        1        0        1        1        1        @1466    @70000   @1469    @70001   *        *        *        *
-DART_3                                     DART     ohdart51 1        1        0        1        1        1        @1466    @70002   @1469    @70003   *        *        *        *
-HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70004   @1671    @70005   *        *        *        *
-HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70006   @1671    @70007   *        *        *        *
-HIDE_ARMOR_3                               HIDE     ohleat52 1        1        0        1        1        1        @1651    @70008   @1671    @70009   *        *        *        *
-BUCKLER_2                                  SHIELDB  ohshld50 1        1        0        1        1        1        @1955    @70010   @1958    @70011   *        *        *        *
-BUCKLER_3                                  SHIELDB  ohshld51 1        1        0        1        1        1        @1955    @70012   @1958    @70013   *        *        *        *
-WAKIZASHI_2                                WAKI     ohsw1h51 1        1        0        1        1        1        @2127    @70014   @2130    @70015   *        *        *        *
-WAKIZASHI_3                                WAKI     ohsw1h52 1        1        0        1        1        1        @2127    @70016   @2130    @70017   *        *        *        *
-NINJA-TO_2                                 NINJATO  ohsw1h53 1        1        0        1        1        1        @2132    @70018   @2135    @70019   *        *        *        *
-NINJA-TO_3                                 NINJATO  ohsw1h54 1        1        0        1        1        1        @2132    @70020   @2135    @70021   *        *        *        *
-SCIMITAR_2                                 SCIMITAR ohsw1h55 1        1        0        1        1        1        @1509    @70022   @1511    @70023   *        *        *        *
+SPLINT_MAIL_2                              SPLINT   ohchan50 1        1        0        1        1        1        @1335    @70000   @1338    @70001    *        *        *        *
+DART_2                                     DART     ohdart50 1        1        0        1        1        1        @1466    @70002   @1469    @70003   *        *        *        *
+DART_3                                     DART     ohdart51 1        1        0        1        1        1        @1466    @70004   @1469    @70005   *        *        *        *
+HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70006   @1671    @70007   *        *        *        *
+HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70008   @1671    @70009   *        *        *        *
+HIDE_ARMOR_3                               HIDE     ohleat52 1        1        0        1        1        1        @1651    @70010   @1671    @70011   *        *        *        *
+BUCKLER_2                                  SHIELDB  ohshld50 1        1        0        1        1        1        @1955    @70012   @1958    @70013   *        *        *        *
+BUCKLER_3                                  SHIELDB  ohshld51 1        1        0        1        1        1        @1955    @70014   @1958    @70015   *        *        *        *
+WAKIZASHI_2                                WAKI     ohsw1h51 1        1        0        1        1        1        @2127    @70016   @2130    @70017   *        *        *        *
+WAKIZASHI_3                                WAKI     ohsw1h52 1        1        0        1        1        1        @2127    @70018   @2130    @70019   *        *        *        *
+NINJA-TO_2                                 NINJATO  ohsw1h53 1        1        0        1        1        1        @2132    @70020   @2135    @70021   *        *        *        *
+NINJA-TO_3                                 NINJATO  ohsw1h54 1        1        0        1        1        1        @2132    @70022   @2135    @70023   *        *        *        *
+SCIMITAR_2                                 SCIMITAR ohsw1h55 1        1        0        1        1        1        @1509    @70024   @1511    @70025   *        *        *        *
 UNHOLY_REAVER_5                            SWORD2H  ohreaver 1        1        0        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *
 
 SMALL_SHIELD#EE                            SHIELDS  shld01a  0        0        0        0        1        1        @1939    @1939    @1940    @1940    *        *        *        *
