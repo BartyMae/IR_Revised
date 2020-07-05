@@ -20,7 +20,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~trrak01.cre~) BEGIN
     ADD_CRE_ITEM sw1h30 #0 #0 #0 NONE WEAPON1 EQUIP
 	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=95 END
   END BUT_ONLY
-  
+
   COPY_EXISTING ar1905.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
     LPF DELETE_AREA_ITEM STR_VAR item_to_delete=sw1h30 END
   END BUT_ONLY
@@ -222,18 +222,8 @@ END
 
 /////////////////////////////////////
 
-// Place Plate of the Dark +1 on Samia
 // Move Malakar from Spellhold troll to Samia kensai
 // Place Silver Charm on Samia cleric
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~samia.cre~) BEGIN
-  COPY_EXISTING samia.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~plat05~
-	REMOVE_CRE_ITEM ~plat10~
-	ADD_CRE_ITEM ~plat05~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
-END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~pptroll1.cre~) BEGIN
   COPY_EXISTING pptroll1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
@@ -416,7 +406,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~greyhand.cre~) BEGIN
   COPY_EXISTING ~greyhand.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM boot09
   END BUT_ONLY
-  
+
   COPY_EXISTING udtrap02.dlg override
   DECOMPILE_DLG_TO_D
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("sw1h34",~ ~GiveItemCreate("boot09",~
@@ -525,7 +515,7 @@ END
 
 /////////////////////////////////////
 
-// Place Fallorain's Plate +1 on Reynald de Chatillion in BG2
+// Place Fallorain's Plate +1 on Reynald de Chatillion
 ACTION_IF (FILE_EXISTS_IN_GAME ~kaypal02.cre~) BEGIN
   COPY_EXISTING kaypal02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~plat01~
@@ -537,13 +527,25 @@ END
 
 /////////////////////////////////////
 
+// Place Plate of the Dark +1 on Tarnor the Hatchetman
+ACTION_IF (FILE_EXISTS_IN_GAME ~tarnor.cre~) BEGIN
+  COPY_EXISTING tarnor.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~plat05~
+	REMOVE_CRE_ITEM ~plat14~
+	ADD_CRE_ITEM ~plat05~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+
+/////////////////////////////////////
+
 // Places a droppable Robe of the Neutral Archmagi on Jaheria assassin
-/*ACTION_IF (FILE_EXISTS_IN_GAME ~jade3.cre~) BEGIN // Genthore
-  COPY_EXISTING jade3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN 
+ACTION_IF (FILE_EXISTS_IN_GAME ~jade3.cre~) BEGIN // Jeremon
+  COPY_EXISTING jade3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
 	  ADD_CRE_ITEM clck16 #0 #0 #0 NONE ARMOR
     END
 	BUT_ONLY
-END*/
+END
 
 /////////////////////////////////////
 
@@ -597,7 +599,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bodfgt01.cre~) BEGIN
   COPY_EXISTING bodfgt01.cre override
 			    obshal02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
-  END 
+  END
   BUT_ONLY
 END
 
@@ -869,7 +871,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
+ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
     COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BG1)
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -906,7 +908,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
 END
 
 // Place Ankheg Plate Mail +1 in BG1
-ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN 
+ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN // Nashkel (BG1)
     COPY_EXISTING ~ar4800.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
