@@ -8333,7 +8333,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2 bonus
-Damage: 2D4 + 2
+Damage: 1D6 + 2
 Weight: 4
 Speed Factor: 2
 Damage type: crushing
@@ -8348,10 +8348,10 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2 bonus
-Damage: 1D8 + 2
+Damage: 1D6 + 2
 Damage type: piercing
 Weight: 4
-Speed Factor: 4
+Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: 2-handed
 Requires: 5 Strength

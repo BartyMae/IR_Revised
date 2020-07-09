@@ -1,5 +1,3 @@
-
-
 // some updates here, based on Mike's work:
 //   - slightly optimized processing
 //   - crossbows are distinguished by STR requirement
@@ -449,4 +447,3 @@ PATCH_IF item=0x24 BEGIN
 END
 
 END
-
