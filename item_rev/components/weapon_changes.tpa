@@ -377,22 +377,21 @@ DEFINE_PATCH_MACRO special BEGIN
     END
   END
 
-  // Staff Mace - lock XdY damage, dunno what to tie it to
+  // Staff Mace - use mace's damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~staf06~
   BEGIN
     iden_new_dice = 2
-    iden_new_size = 4
+    iden_new_size = 3
   END
 
-  // Staff Spear +2 - use spear's damage and speed
+  // Staff Spear +2 - use spear's damage and range
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~staf07~
   BEGIN
     iden_new_dice = new_spear_dice
     iden_new_size = new_spear_size
-    iden_delta_speed = new_spear_speed - old_spear_speed
-    iden_delta_damage = new_spear_damage - old_spear_damage
+	WRITE_SHORT off+0xe 3 // range
   END
 
   // Moonblade - use longsword's stats
