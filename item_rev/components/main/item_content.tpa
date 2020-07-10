@@ -566,6 +566,13 @@ COPY ~%source%/PROTECTION_FROM_ALTERATIONS.tpa~ ~%target%~
 COPY ~%source%/FIRECAM_FULL_PLATE_MAIL_2.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/DELRYN_FAMILY_SHIELD_2.tpa
+  COPY ~item_rev/itm/npshld.spl~ ~override~ // Protection from Missiles
+    SAY NAME1 @4033
+>>>>>>>>
+COPY ~%source%/DELRYN_FAMILY_SHIELD_2.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/DOOMPLATE_3.tpa
   ADD_PROJECTILE ~item_rev/itm/plat12.pro~ // Aura of Despair
   COPY ~item_rev/itm/plat12.spl~ ~override~
