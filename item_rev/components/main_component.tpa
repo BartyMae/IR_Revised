@@ -11,6 +11,7 @@ END
 ACTION_IF comp_sr BEGIN
   LOAD_TRA ~item_rev/languages/english/spell_revisions.tra~
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/spell_revisions.tra~
+  COPY ~item_rev/components/main/sr~     ~item_rev/itm~
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
