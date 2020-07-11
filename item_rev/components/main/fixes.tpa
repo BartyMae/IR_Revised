@@ -617,10 +617,10 @@ COPY_EXISTING ~sw1h27.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
   WRITE_ASCII 0x22 ~F2~
 LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 25    // colour index
+SET gradient = 250    // colour index
 SET location = wgrey    // location
 LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 89    // colour index
+SET gradient = 25    // colour index
 SET location = wred    // location
 LAUNCH_PATCH_MACRO ~colour~
 SET gradient = 33    // colour index
