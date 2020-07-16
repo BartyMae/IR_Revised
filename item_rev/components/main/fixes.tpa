@@ -1829,17 +1829,17 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   WRITE_LONG  0x48 0
     WRITE_ASCII 0x44 ~GMSHLD~
      LAUNCH_PATCH_MACRO ~clear~
-  SET gradient = 227    // colour index
+  SET gradient = 226    // colour index
   SET location = sgrey    // location
   LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 66    // colour index
+  SET gradient = 113    // colour index
   SET location = steal    // location
   LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 232  // colour index
+  SET gradient = 113  // colour index
   SET location = sblue    // location
   LAUNCH_PATCH_MACRO ~colour~
   PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) THEN BEGIN
-  SET gradient = 254    // colour index
+  SET gradient = 11    // colour index
   SET location = spink    // location
   LAUNCH_PATCH_MACRO ~colour~
   END
