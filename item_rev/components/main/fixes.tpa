@@ -3079,7 +3079,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) THEN BEGIN
         END
       END
     LAUNCH_PATCH_MACRO ~clear~
-    SET gradient = 227  // colour index
+    SET gradient = 86  // colour index
     SET location = wpink    // location
     LAUNCH_PATCH_MACRO ~colour~
       END
@@ -3138,7 +3138,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) THEN BEGIN
         END
       END
     LAUNCH_PATCH_MACRO ~clear~
-    SET gradient = 186  // colour index
+    SET gradient = 227  // colour index
     SET location = wpink    // location
     LAUNCH_PATCH_MACRO ~colour~
       END
