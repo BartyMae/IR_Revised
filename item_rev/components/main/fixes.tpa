@@ -5242,7 +5242,7 @@ ACTION_IF ee_two_handed_shapeshifts=1 BEGIN // Add two-handed flag for shapeshif
   END
 END
 
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_tostc bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BG1 fixes
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
     SAY NAME1 @1085    SAY NAME2 @1099
     SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
