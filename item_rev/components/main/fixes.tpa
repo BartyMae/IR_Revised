@@ -1,10 +1,10 @@
 // SR haste/slow/petrification sectype fixes
 ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) THEN BEGIN // SR check
 
-ADD_SECTYPE ~k1#Haste~ @1
-ADD_SECTYPE ~k1#Slow~ @1
-ADD_SECTYPE ~k1#Petrify~ @1
-ADD_SECTYPE ~k1#Dispel~ @1
+ADD_SECTYPE ~k1#Haste~ ~~
+ADD_SECTYPE ~k1#Slow~ ~~
+ADD_SECTYPE ~k1#Petrify~ ~~
+ADD_SECTYPE ~k1#Dispel~ ~~
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~potn14.spl~) THEN BEGIN // Potion of Speed
 COPY_EXISTING ~potn14.spl~ ~override~
