@@ -315,7 +315,7 @@ ADD_PROJECTILE ~item_rev/itm/dvthclap.pro~ // Thunderclap
 COPY ~item_rev/itm/dvthclap.spl~ ~override~
   WRITE_SHORT 0x98 dvthclap
 
-COPY ~item_rev/itm/dvvampir.spl~ ~override~ // Vampiric 1D4
+COPY ~item_rev/itm/dvvampir.spl~ ~override~ // Vampiric
 COPY ~item_rev/itm/dvvampir.eff~ ~override~
 
 COPY ~item_rev/itm/dvvorpal.spl~ ~override~ // Vorpal
