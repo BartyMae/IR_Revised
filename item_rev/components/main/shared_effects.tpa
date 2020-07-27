@@ -134,8 +134,8 @@ COPY ~item_rev/itm/dvwinded.spl~ ~override~ // Exhaustion
 COPY ~item_rev/itm/dvafflic.spl~ ~override~ // Affliction
 COPY ~item_rev/itm/dvafflic.eff~ ~override~
 
-COPY ~item_rev/itm/dvbanish.spl~ ~override~ // Banishing
-COPY ~item_rev/itm/dvbanish.eff~ ~override~
+COPY ~item_rev/itm/dvbanis2.spl~ ~override~ // Banishing
+COPY ~item_rev/itm/dvbanis2.eff~ ~override~
 
 COPY ~item_rev/itm/dvbram.spl~ ~override~ // Battering Ram
 COPY ~item_rev/itm/dvbram.eff~ ~override~
