@@ -399,13 +399,26 @@ BUT_ONLY
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) THEN BEGIN // SR Revised check
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_TRUE_DISPEL_MAGIC[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_TRUE_DISPEL_MAGIC~ RET spell_res END
+  OUTER_SPRINT ~true_dispel_magic~ ~%spell_res%~
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h10.itm~) THEN BEGIN // Carsomyr +4 Dispel Magic
     COPY_EXISTING ~sw2h10.itm~ ~override~
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
+	  REPLACE_TEXTUALLY ~sppr303~ ~%true_dispel_magic%~
   END
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h19.itm~) THEN BEGIN // Carsomyr +5 Dispel Magic
-    COPY_EXISTING ~sw2h19.itm~ ~override~
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sppr303~ ~sppr327~
+    COPY_EXISTING ~sw2h10.itm~ ~override~
+      REPLACE_TEXTUALLY ~sppr303~ ~%true_dispel_magic%~
+  END
+END
+END
+
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_POLYMORPH_OTHER[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_POLYMORPH_OTHER~ RET spell_res END
+  OUTER_SPRINT ~polymorph_other~ ~%spell_res%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~amul24.itm~) THEN BEGIN // Periapt of Form Stability Polymorph Other
+    COPY_EXISTING ~amul24.itm~ ~override~
+      REPLACE_TEXTUALLY ~sppr420~ ~%polymorph_other%~
   END
 END
 
