@@ -127,7 +127,7 @@ COPY ~item_rev/itm/wolfdam5.eff~ ~override~
 COPY ~item_rev/itm/dvnatfrm.spl~ ~override~ // Shapeshift Natural Form
   SAY NAME1 @4108
 
-COPY ~item_rev/itm/dvwinded.spl~ ~override~ // Exhaustion
+COPY ~item_rev/itm/dvexhaus.spl~ ~override~ // Exhaustion
 
 /*----------------Weapon Enhancements----------------*/
 
