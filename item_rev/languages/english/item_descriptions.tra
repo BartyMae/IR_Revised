@@ -6514,8 +6514,8 @@ Not Usable By:
  Mage
  Beast Master~
 @1808 = ~Katana~
-@1809 = ~Yoshimo's Katana +2~
-@1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
+@1809 = ~Yoshimo's Katana +2~ //This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
+@1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
 
 STATISTICS:
 
@@ -6531,7 +6531,7 @@ Proficiency Type: Katana
 Type: 1-handed
 Requires: 6 Strength
 Usable By:
- Yoshimo~
+ Thief (single-class)~
 @1811 = ~Two-Handed Sword~
 @1812 = ~Hallowed Redeemer +2~
 @1813 = ~Keldorn distinguished himself early in his career as a paladin, and since he was ordered, this powerful sword has always been at his side. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of arcane and divine magic alike because of it's power to silence which leave them defenceless while judgement falls upon them.
@@ -8128,7 +8128,7 @@ Equipped Abilities:
 THAC0: +2 bonus
 Damage: 1D6 + 2
 Damage type: piercing
-Weight: 5
+Weight: 3
 Speed Factor: 4
 Proficiency Type: Spear
 Type: 2-handed
@@ -13351,7 +13351,7 @@ Requires: 8 Strength
 Not Usable By:
  Cleric
  Mage~
-@2536 = ~Control Cirlet~
+@2536 = ~Control Circlet~
 @2537 = ~A circlet of alien metal that dominates even the most powerful of minds and leaves them defenceless. Perhaps this item could be used to control a mind flayer and make him help you escape from this hellish prison.
 
 STATISTICS:
