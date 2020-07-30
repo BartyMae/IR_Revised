@@ -912,7 +912,7 @@ STATISTICS:
 
 Equipped Abilities:
  Berserking: the wielder goes berserk and totally out of control when in combat
- Protects Against: Charm and Confusion
+ Protects Against: Charm, Confusion, and Domination
 
 THAC0: +3 bonus
 Damage: 2D4 + 3
@@ -4907,7 +4907,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Protects Against: Charm
+ Protects Against: Charm and Domination
 
 Armor Class Bonus: 1
 Protects Against Critical Hits
@@ -5902,7 +5902,7 @@ Kitthix (8 HD):
 
 Special Characteristics:
  Magic Resistance: 10%
- Protected Against: Charm, Confusion, Fear, Poison, and Web
+ Protected Against: Charm, Confusion, Domination, Fear, Poison, and Web
  Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
  Web Tangle (3x per day): target is held for 2 rounds (save vs. breath neg.)
 
@@ -6083,7 +6083,7 @@ STATISTICS:
 
 Equipped Abilities:
  Regeneration: 1 hp/round
- Protects Against: Charm and Fear
+ Protects Against: Charm, Domination, and Fear
 
 Combat Abilities:
  Soul Drinking: 15% chance target is drained one level, granting the wielder a +5 bonus to maximum hit points, a +1 bonus to Strength, and hasting them for 1 turn
@@ -6364,7 +6364,7 @@ STATISTICS:
 
 Equipped Abilities:
  Spell: Non-Detection
- Protects Against: Charm
+ Protects Against: Charm and Domination
  Mithral: +1 bonus to AC
 
 Armor Class: 3
@@ -7872,7 +7872,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Protects Against: Charm and Confusion
+ Protects Against: Charm, Confusion, and Domination
 
 Armor Class Bonus: 3
 Special: No Missile Weapon Protection
@@ -8123,7 +8123,7 @@ STATISTICS:
 
 Equipped Abilities:
  Saving Throws: +3 bonus vs. death
- Protects Against: Charm and Hold
+ Protects Against: Charm, Domination, and Hold
 
 THAC0: +2 bonus
 Damage: 1D6 + 2
@@ -9713,7 +9713,7 @@ The Equalizer was last rumored to have been wielded by the elven hero Alaine Gre
 STATISTICS:
 
 Equipped Abilities:
- Protects Against: Charm and Confusion
+ Protects Against: Charm, Confusion, and Domination
 
 Combat Abilities:
  Equalizer: deals damage depending on target's alignment:
@@ -10571,7 +10571,7 @@ As a weapon, Lilarcor has its uses, but many a warrior has eventually given it a
 STATISTICS:
 
 Equipped Abilities:
- Protects Against: Charm and Confusion
+ Protects Against: Charm, Confusion, and Domination
 
 THAC0: +3 bonus
 Damage: 1D10 + 3
