@@ -3373,7 +3373,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Nature's Vengeance: 25% chance creatures who strike the wearer are struck by lightning for 6D6 electrical damage (save vs. breath at -2 neg. half)
+ Nature's Vengeance: 25% chance creatures who strike the wearer are struck by lightning for 6D6 electrical damage (save vs. breath at -2 half)
 
 Weight: 3
 Not Usable By:
@@ -10988,7 +10988,7 @@ Like all wands, the Wand of Fire can only be used a limited number of times befo
 STATISTICS:
 
 Special Abilities (consume charges):
- Fireball: 6D6 (save vs. wand at -2 neg. half)
+ Fireball: 6D6 (save vs. wand at -2 half)
 
 Requires: 13 Intelligence
 Usable By:
@@ -11002,7 +11002,7 @@ Like all wands, the Wand of Frost can only be used a limited number of times bef
 STATISTICS:
 
 Special Abilities (consume charges):
- Cone of Cold: 6D4 + 6 (save vs. wand at -4 neg. half)
+ Cone of Cold: 6D4 + 6 (save vs. wand at -4 half)
 
 Requires: 13 Intelligence
 Usable By:
@@ -11016,7 +11016,7 @@ Like all wands, the Wand of Lightning can only be used a limited number of times
 STATISTICS:
 
 Special Abilities (consumes charges):
- Lightning Bolt: 6D6 (save vs. wand at -4 neg. half)
+ Lightning Bolt: 6D6 (save vs. wand at -4 half)
 
 Requires: 13 Intelligence
 Usable By:
@@ -11072,7 +11072,7 @@ Like all wands, the Wand of the Heavens can only be used a limited number of tim
 STATISTICS:
 
 Special Abilities (consume charges):
- Flame Strike: 10D6 (save vs. wand at -4 neg. half)
+ Flame Strike: 10D6 (save vs. wand at -4 half)
 
 Requires: 10 Intelligence, 15 Wisdom
 Usable By:
