@@ -7,19 +7,6 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
   INCLUDE ~item_rev/components/main/palette_compatibility.tph~
 END
 
-// SR changes some spells, so if it is installed, we want our item abilities to match
-ACTION_IF comp_sr BEGIN
-  LOAD_TRA ~item_rev/languages/english/spell_revisions.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/spell_revisions.tra~
-  COPY ~item_rev/components/main/sr~     ~item_rev/itm~
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-  LOAD_TRA ~item_rev/languages/english/srr.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/srr.tra~
-  COPY ~item_rev/components/main/srr~     ~item_rev/itm~
-END
-
 /*------------------Additional Content-----------------*/
 
 ACTION_IF install_sensible_lore BEGIN
