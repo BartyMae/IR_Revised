@@ -155,14 +155,14 @@ COPY ~item_rev/itm/dvbrnwnd.eff~ ~override~
 
 ADD_PROJECTILE ~item_rev/itm/dvflbrst.pro~ // Burst of Flames
 COPY ~item_rev/itm/dvflbrst.spl~ ~override~
-  WRITE_SHORT 0x98 dvflbrst
+  WRITE_SHORT 0x98 %dvflbrst%
 
 ADD_PROJECTILE ~item_rev/itm/dvfrbolt.pro~ // Fire Bolt (Firetooth)
 COPY ~item_rev/itm/dvfrbolt.spl~ ~override~
-  WRITE_SHORT 0x98 dvfrbolt
+  WRITE_SHORT 0x98 %dvfrbolt%
 
 COPY ~item_rev/itm/dvvtrsph.spl~ ~override~ // Burst of Acid
-  WRITE_SHORT 0x98 dvflbrst
+  WRITE_SHORT 0x98 %dvflbrst%
 COPY ~item_rev/itm/dvvtrsph.vvc~ ~override~
 COPY ~item_rev/itm/dvvtrsph.bam~ ~override~
 
@@ -186,7 +186,7 @@ COPY ~item_rev/itm/dvdarkf2.spl~ ~override~
 
 ADD_PROJECTILE ~item_rev/itm/dvdeton.pro~ // Detonation
 COPY ~item_rev/itm/dvdeton.spl~ ~override~
-  WRITE_SHORT 0x98 dvdeton
+  WRITE_SHORT 0x98 %dvdeton%
 
 COPY ~item_rev/itm/dvdispel.spl~ ~override~ // Dispelling
 
@@ -197,7 +197,7 @@ COPY ~item_rev/itm/dvdoom.spl~ ~override~ // Dooming
 COPY ~item_rev/itm/dvdoom.eff~ ~override~
 
 COPY ~item_rev/itm/dvshake.spl~ ~override~ // Earthshaking
-  WRITE_SHORT 0x98 dvflbrst
+  WRITE_SHORT 0x98 %dvflbrst%
 COPY ~item_rev/itm/dvshake.eff~ ~override~
 
 COPY ~item_rev/itm/dvenerv.spl~ ~override~ // Enervating
@@ -255,7 +255,7 @@ COPY ~item_rev/itm/dvpin.eff~ ~override~
 
 ADD_PROJECTILE ~item_rev/itm/dvsburst.pro~ // Resonating
 COPY ~item_rev/itm/dvreson.spl~ ~override~
-  WRITE_SHORT 0x98 dvsburst
+  WRITE_SHORT 0x98 %dvsburst%
 COPY ~item_rev/itm/dvsburst.vvc~ ~override~
 COPY ~item_rev/itm/dvsburst.bam~ ~override~
 
@@ -278,7 +278,7 @@ COPY ~item_rev/itm/dvslow2.spl~ ~override~ // Slow (2 rounds)
 COPY ~item_rev/itm/dvslow5.spl~ ~override~ // Slow (5 rounds)
 
 COPY ~item_rev/itm/dvsburst.spl~ ~override~ // Sonic Blast
-  WRITE_SHORT 0x98 dvsburst
+  WRITE_SHORT 0x98 %dvsburst%
 COPY ~item_rev/itm/dvsburst.eff~ ~override~
 
 COPY ~item_rev/itm/dvspdrnk.eff~ ~override~ // Spell Drinker
@@ -289,11 +289,11 @@ COPY ~item_rev/itm/dvspabsr.spl~ ~override~
 
 ADD_PROJECTILE ~item_rev/itm/dvstdust.pro~ // Stardust effect
 COPY ~item_rev/itm/dvstdust.spl~ ~override~
-  WRITE_SHORT 0x98 dvstdust
+  WRITE_SHORT 0x98 %dvstdust%
 
 ADD_PROJECTILE ~item_rev/itm/dvstench.pro~ // Stench effect
 COPY ~item_rev/itm/dvstench.spl~ ~override~
-  WRITE_SHORT 0x98 dvstench
+  WRITE_SHORT 0x98 %dvstench%
 COPY ~item_rev/itm/dvstench.eff~ ~override~
 
 COPY ~item_rev/itm/dvstnhld.spl~ ~override~ // Stonehold
@@ -313,7 +313,7 @@ COPY ~item_rev/itm/dvtenchu.spl~ ~override~ // Tenchu
 
 ADD_PROJECTILE ~item_rev/itm/dvthclap.pro~ // Thunderclap
 COPY ~item_rev/itm/dvthclap.spl~ ~override~
-  WRITE_SHORT 0x98 dvthclap
+  WRITE_SHORT 0x98 %dvthclap%
 
 COPY ~item_rev/itm/dvvampir.spl~ ~override~ // Vampiric
 COPY ~item_rev/itm/dvvampir.eff~ ~override~
@@ -345,13 +345,13 @@ COPY ~item_rev/itm/dvlightb.spl~ ~override~ // Lightning Bolt
 
 ADD_PROJECTILE ~item_rev/itm/dvmcure.pro~ // Mass Cure
 COPY ~item_rev/itm/dvmcure.spl~ ~override~
-  WRITE_SHORT 0x98 dvmcure
+  WRITE_SHORT 0x98 %dvmcure%
   SAY NAME1 @4054
 
 ADD_PROJECTILE ~item_rev/itm/dvpexpl.pro~ // Prismatic Explosion
 COPY ~item_rev/itm/dvpexpl.spl~ ~override~
   SAY NAME1 @4014
-  WRITE_SHORT 0x98 dvpexpl
+  WRITE_SHORT 0x98 %dvpexpl%
 COPY ~item_rev/itm/dvpexpl1.spl~ ~override~
 COPY ~item_rev/itm/dvpexpl2.spl~ ~override~
 

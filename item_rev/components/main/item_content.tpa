@@ -88,10 +88,10 @@ COPY ~%source%/AMULET_OF_CHEETAH_SPEED.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/ARROW_OF_DETONATION.tpa
   ADD_PROJECTILE ~item_rev/itm/arowex.pro~
   COPY_EXISTING ~%ARROW_OF_DETONATION%.itm~ ~override~
-    WRITE_SHORT 0x9c arowex
+    WRITE_SHORT 0x9c %arowex%
   ADD_PROJECTILE ~item_rev/itm/arowex2.pro~
   COPY ~item_rev/itm/arow06.spl~ ~override~ // Explosion
-    WRITE_SHORT 0x98 arowex2
+    WRITE_SHORT 0x98 %arowex2%
 >>>>>>>>
 COPY ~%source%/ARROW_OF_DETONATION.tpa~ ~%target%~
 
@@ -118,7 +118,7 @@ COPY ~%source%/GIRDLE_OF_TROLLISH_FORTITUDE.tpa~ ~%target%~
   COPY ~item_rev/itm/belt10a.spl~ ~override~ // Inertial Barrier
   ADD_PROJECTILE ~item_rev/itm/belt10.pro~
   COPY ~item_rev/itm/belt10b.spl~ ~override~
-    WRITE_SHORT 0x98 belt10
+    WRITE_SHORT 0x98 %belt10%
 >>>>>>>>
 COPY ~%source%/BELT_OF_INERTIAL_BARRIER.tpa~ ~%target%~
 
@@ -155,7 +155,7 @@ COPY ~%source%/BOOTS_OF_ETHEREALNESS.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/IRON_BOW_OF_GESEN_4.tpa
   ADD_PROJECTILE ~item_rev/itm/bow19.pro~ // Shocking Arrows
   COPY_EXISTING ~%IRON_BOW_OF_GESEN_4%.itm~ ~override~
-    WRITE_SHORT 0x9c bow19
+    WRITE_SHORT 0x9c %bow19%
 >>>>>>>>
 COPY ~%source%/IRON_BOW_OF_GESEN_4.tpa~ ~%target%~
 
@@ -198,7 +198,7 @@ COPY ~%source%/CLOAK_OF_THE_WOLF.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/clck07.pro~ // Blinding Beauty
   COPY ~item_rev/itm/clck07.spl~ ~override~
     SAY NAME1 @4016
-    WRITE_SHORT 0x98 clck07
+    WRITE_SHORT 0x98 %clck07%
   COPY ~item_rev/itm/clck07.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/NYMPH_CLOAK.tpa~ ~%target%~
@@ -279,7 +279,7 @@ COPY ~%source%/BLACKMIST_4.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/THE_WAVE_4.tpa
   ADD_PROJECTILE ~item_rev/itm/halb09.pro~ // Smashing Wave
   COPY ~item_rev/itm/halb09.spl~ ~override~
-    WRITE_SHORT 0x98 halb09
+    WRITE_SHORT 0x98 %halb09%
   COPY ~item_rev/itm/halb09.eff~ ~override~
   COPY ~item_rev/itm/halb09.bam~ ~override~
   COPY ~item_rev/itm/halb09.vvc~ ~override~
@@ -315,7 +315,7 @@ COPY ~%source%/PEARLY_WHITE_IOUN_STONE.tpa~ ~%target%~
   COPY ~item_rev/itm/helm30.spl~ ~override~
     SAY NAME1 @4029
   COPY ~item_rev/itm/helm30a.spl~ ~override~
-    WRITE_SHORT 0x98 helm30
+    WRITE_SHORT 0x98 %helm30%
   COPY ~item_rev/itm/helm30a.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/MASTER_THIEFS_HOOD.tpa~ ~%target%~
@@ -332,7 +332,7 @@ COPY ~%source%/HORNED_HELM_OF_THE_ROCK.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/ARMOR_OF_MISSILE_ATTRACTION_3.tpa
   ADD_PROJECTILE ~item_rev/itm/leat06.pro~ // Missile Attraction
   COPY ~item_rev/itm/leat06.spl~ ~override~
-    WRITE_SHORT 0x98 leat06
+    WRITE_SHORT 0x98 %leat06%
   COPY ~item_rev/itm/leat06.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/ARMOR_OF_MISSILE_ATTRACTION_3.tpa~ ~%target%~
@@ -403,7 +403,7 @@ COPY ~%source%/IRON_HORN_OF_VALHALLA.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/HORN_OF_SILENCE.tpa
   ADD_PROJECTILE ~item_rev/itm/misc3l.pro~ // Silence
   COPY ~item_rev/itm/misc3l.spl~ ~override~
-    WRITE_SHORT 0x98 misc3l
+    WRITE_SHORT 0x98 %misc3l%
 	SAY NAME1 @4104
 >>>>>>>>
 COPY ~%source%/HORN_OF_SILENCE.tpa~ ~%target%~
@@ -574,7 +574,7 @@ COPY ~%source%/DELRYN_FAMILY_SHIELD_2.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/DOOMPLATE_3.tpa
   ADD_PROJECTILE ~item_rev/itm/plat12.pro~ // Aura of Despair
   COPY ~item_rev/itm/plat12.spl~ ~override~
-    WRITE_SHORT 0x98 plat12
+    WRITE_SHORT 0x98 %plat12%
   COPY ~item_rev/itm/plat12.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/DOOMPLATE_3.tpa~ ~%target%~
@@ -708,7 +708,7 @@ COPY ~%source%/ROD_OF_ABSORPTION.tpa~ ~%target%~
   ADD_SECTYPE ~dvshld07~ ~~
   ADD_PROJECTILE ~item_rev/itm/shld07.pro~ // Shield Others
   COPY ~item_rev/itm/shld07.spl~ ~override~
-    WRITE_SHORT 0x98 shld07
+    WRITE_SHORT 0x98 %shld07%
     LPF ADD_SPELL_EFFECT
     INT_VAR
     opcode			= 221
@@ -762,7 +762,7 @@ COPY ~%source%/ERINNE_SLING_4.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_COMMAND_3.tpa
   ADD_PROJECTILE ~item_rev/itm/staf09.pro~ // Aura of Command
   COPY ~item_rev/itm/staf09.spl~ ~override~
-    WRITE_SHORT 0x98 staf09
+    WRITE_SHORT 0x98 %staf09%
   COPY ~item_rev/itm/staf09.eff~ ~override~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar2400.are~) BEGIN
@@ -788,7 +788,7 @@ COPY ~%source%/STAFF_OF_COMMAND_3.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_CURING_1.tpa
   ADD_PROJECTILE ~item_rev/itm/staf10.pro~ // Healing Aura
   COPY ~item_rev/itm/staf10.spl~ ~override~
-    WRITE_SHORT 0x98 staf10
+    WRITE_SHORT 0x98 %staf10%
   COPY ~item_rev/itm/staf10.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/STAFF_OF_CURING_1.tpa~ ~%target%~
@@ -918,7 +918,7 @@ COPY ~%source%/STAFF_OF_THE_WOODLANDS_4.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_AIR_2.tpa
   ADD_PROJECTILE ~item_rev/itm/staf15.pro~ // Whirlwind Strike
   COPY ~item_rev/itm/staf15.spl~ ~override~
-    WRITE_SHORT 0x98 staf15
+    WRITE_SHORT 0x98 %staf15%
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~pmaster.cre~) BEGIN
     COPY_EXISTING ~pmaster.cre~ ~override~ // Master of Thralls
@@ -992,7 +992,7 @@ COPY ~%source%/STAFF_OF_RYNN_3.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/THE_WHISTLING_SWORD_2.tpa
   ADD_PROJECTILE ~item_rev/itm/sw1h09.pro~ // Whistling Sword
   COPY ~item_rev/itm/sw1h09.spl~ ~override~
-    WRITE_SHORT 0x98 sw1h09
+    WRITE_SHORT 0x98 %sw1h09%
   COPY ~item_rev/itm/sw1h09.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/THE_WHISTLING_SWORD_2.tpa~ ~%target%~
@@ -1035,7 +1035,7 @@ COPY ~%source%/RAS_2.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/NAMARRA_2.tpa
   ADD_PROJECTILE ~item_rev/itm/sw1h36.pro~ // Silence
   COPY ~item_rev/itm/sw1h36.spl~ ~override~
-    WRITE_SHORT 0x98 sw1h36
+    WRITE_SHORT 0x98 %sw1h36%
 >>>>>>>>
 COPY ~%source%/NAMARRA_2.tpa~ ~%target%~
 
@@ -1043,7 +1043,7 @@ COPY ~%source%/NAMARRA_2.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/BLADE_OF_ROSES_1.tpa
 ADD_PROJECTILE ~item_rev/itm/sw1h40.pro~ // Singing Sword
 COPY ~item_rev/itm/sw1h40.spl~ ~override~
-  WRITE_SHORT 0x98 sw1h40
+  WRITE_SHORT 0x98 %sw1h40%
 >>>>>>>>
 COPY ~%source%/BLADE_OF_ROSES_1.tpa~ ~%target%~
 
@@ -1051,7 +1051,7 @@ COPY ~%source%/BLADE_OF_ROSES_1.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/CELESTIAL_FURY_3.tpa
   ADD_PROJECTILE ~item_rev/itm/sw1h51.pro~ // Batto
   COPY ~item_rev/itm/sw1h51.spl~ ~override~
-    WRITE_SHORT 0x98 sw1h51
+    WRITE_SHORT 0x98 %sw1h51%
 >>>>>>>>
 COPY ~%source%/CELESTIAL_FURY_3.tpa~ ~%target%~
 
@@ -1184,7 +1184,7 @@ COPY ~%source%/WAND_OF_MONSTER_SUMMONING.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/wand11.pro~ // Flame Strike
   COPY ~item_rev/itm/wand11.spl~ ~override~
     SAY NAME1 @4100
-	WRITE_SHORT 0x98 wand11
+	WRITE_SHORT 0x98 %wand11%
 >>>>>>>>
 COPY ~%source%/WAND_OF_THE_HEAVENS.tpa~ ~%target%~
 
