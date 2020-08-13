@@ -5902,3 +5902,41 @@ END
 BUT_ONLY_IF_IT_CHANGES
 END
 END
+
+
+// BG1 shields
+ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~shld01~
+	~shld02~
+	~shld03~
+	~shld04~
+	~shld05~
+	~shld06~
+	~shld07~
+	~shld08~
+	~shld09~
+	~shld10~
+	~shld11~
+	~shld12~
+	~shld13~
+	~shld14~
+	~shld15~
+	~shld16~
+	~shld17~
+	~shld19~
+	~shld23~
+	~shld24~
+	~shld25~
+	//~shld26~
+	~shld27~
+	~shld28~
+	~shld29~
+	~shld30~
+	~shld31~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
+      COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
+    END
+  END
+END
