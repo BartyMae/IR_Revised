@@ -1,163 +1,39 @@
 // BG1 shields
-/*ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld01a.itm~) BEGIN
-    COPY_EXISTING ~shld01a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld01.itm~ ~override/shld01a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld01.itm~
+ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~shld01~
+	~shld02~
+	~shld03~
+	~shld04~
+	~shld05~
+	~shld06~
+	~shld07~
+	~shld08~
+	~shld09~
+	~shld10~
+	~shld11~
+	~shld12~
+	~shld13~
+	~shld14~
+	~shld15~
+	~shld16~
+	~shld17~
+	~shld19~
+	~shld23~
+	~shld24~
+	~shld25~
+	~shld26~
+	~shld27~
+	~shld28~
+	~shld29~
+	~shld30~
+	~shld31~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
+      COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
+    END
   END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld02a.itm~) BEGIN
-    COPY_EXISTING ~shld02a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld02.itm~ ~override/shld02a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld02.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld03a.itm~) BEGIN
-    COPY_EXISTING ~shld03a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld03.itm~ ~override/shld03a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld03.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld04a.itm~) BEGIN
-    COPY_EXISTING ~shld04a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld04.itm~ ~override/shld04a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld04.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld05a.itm~) BEGIN
-    COPY_EXISTING ~shld05a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld05.itm~ ~override/shld05a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld05.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld06a.itm~) BEGIN
-    COPY_EXISTING ~shld06a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld06.itm~ ~override/shld06a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld06.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld07a.itm~) BEGIN
-    COPY_EXISTING ~shld07a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld07.itm~ ~override/shld07a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld07.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld08a.itm~) BEGIN
-    COPY_EXISTING ~shld08a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld08.itm~ ~override/shld08a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld08.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld09a.itm~) BEGIN
-    COPY_EXISTING ~shld09a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld09.itm~ ~override/shld09a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld09.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld10a.itm~) BEGIN
-    COPY_EXISTING ~shld10a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld10.itm~ ~override/shld10a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld10.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld11a.itm~) BEGIN
-    COPY_EXISTING ~shld11a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld11.itm~ ~override/shld11a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld11.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld12a.itm~) BEGIN
-    COPY_EXISTING ~shld12a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld12.itm~ ~override/shld12a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld12.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld13a.itm~) BEGIN
-    COPY_EXISTING ~shld13a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld13.itm~ ~override/shld13a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld13.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld14a.itm~) BEGIN
-    COPY_EXISTING ~shld14a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld14.itm~ ~override/shld14a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld14.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld15a.itm~) BEGIN
-    COPY_EXISTING ~shld15a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld15.itm~ ~override/shld15a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld15.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld16a.itm~) BEGIN
-    COPY_EXISTING ~shld16a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld16.itm~ ~override/shld16a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld16.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld17a.itm~) BEGIN
-    COPY_EXISTING ~shld17a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld17.itm~ ~override/shld17a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld17.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld19a.itm~) BEGIN
-    COPY_EXISTING ~shld19a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld19.itm~ ~override/shld19a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld19.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld23a.itm~) BEGIN
-    COPY_EXISTING ~shld23a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld23.itm~ ~override/shld23a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld23.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld24a.itm~) BEGIN
-    COPY_EXISTING ~shld24a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld24.itm~ ~override/shld24a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld24.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld26a.itm~) BEGIN
-    COPY_EXISTING ~shld26a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld26.itm~ ~override/shld26a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld26.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld27a.itm~) BEGIN
-    COPY_EXISTING ~shld27a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld27.itm~ ~override/shld27a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld27.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld28a.itm~) BEGIN
-    COPY_EXISTING ~shld28a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld28.itm~ ~override/shld28a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld28.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld29a.itm~) BEGIN
-    COPY_EXISTING ~shld29a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld29.itm~ ~override/shld29a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld29.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld30a.itm~) BEGIN
-    COPY_EXISTING ~shld30a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld30.itm~ ~override/shld30a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld30.itm~
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld31a.itm~) BEGIN
-    COPY_EXISTING ~shld31a.itm~ ~1pp/temp.itm~
-	COPY_EXISTING ~shld31.itm~ ~override/shld31a.itm~
-	COPY ~1pp/temp.itm~ ~override/shld31.itm~
-  END
-
-END*/
+END
 
 
 // Axes
