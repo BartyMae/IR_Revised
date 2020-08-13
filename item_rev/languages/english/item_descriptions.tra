@@ -11862,8 +11862,8 @@ STATISTICS:
 *CURSED*
 
 Equipped Abilities:
- Strength: +2 bonus
- THAC0: -4 penalty
+ Strength: +3 bonus
+ THAC0: -2 penalty
  Dexterity: -2 penalty
 
 Weight: 1
@@ -12138,8 +12138,8 @@ Equipped Abilities:
  Wild Magic: any spell cast by the wearer is affected by wild surges
 
 Weight: 1
-Not Usable By:
- Wizard Slayer~
+Usable By:
+ Mage~
 @2375 = ~Protection from Alterations~
 @2376 = ~This scroll offers protection to the reader from most transmutation attacks, such as slow, polymorph, disintegration, and petrification. The effect is not permanent, however, and will wear off after 5 turns.
 
@@ -12367,7 +12367,7 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
-@2401 = ~Girdle of Gender~
+@2401 = ~Girdle of Masculinity/Femininity~
 @2402 = ~The cursed girdle of gender, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that, not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover.
 
 STATISTICS:
@@ -12412,8 +12412,8 @@ STATISTICS:
 
 Equipped Abilities:
  Armor Class: +2 bonus (+4 vs. missile weapons)
- Saving Throws: +3 bonus vs. breath, polymorph, wand, and spell; -3 penalty vs. death
- Maximum Hit Points: -10% penalty
+ Saving Throws: +3 bonus vs. breath, polymorph, wand, and spell; -5 penalty vs. death
+ Maximum Hit Points: -15% penalty
 
 Weight: 1
 Not Usable By:
