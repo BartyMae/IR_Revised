@@ -949,7 +949,8 @@ Proficiency Type: Club
 Type: 1-handed
 Requires: 5 Strength
 Usable By:
- Druid~
+ Druid
+ Ranger~
 @1127 = ~Mace of Disruption +3~
 @1128 = ~Possibly the singular most popular weapon amongst the ranks of Lathander's clerics, the mace of disruption is the bane of the undead. It is rumored that the last cleric carrying such a weapon in Thay was caught by Szazz Tam and flayed alive, before being turned into a zombie servant.
 
@@ -7716,7 +7717,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Shield Others: allies within 7.5' gain a +2 bonus to AC
+ Shield Others: allies within 10' gain a +2 bonus to AC
 
 Armor Class Bonus: 3
 Special: +1 vs. Missile Weapons

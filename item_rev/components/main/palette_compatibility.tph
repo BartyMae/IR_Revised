@@ -4,6 +4,6 @@
 
 PRINT ~Copying files...~
 
-COPY ~item_rev/components/main/1pp/ext_pal/MPALETTE.bmp~ ~override~
-COPY ~item_rev/components/main/1pp/ext_pal/MPAL256.bmp~ ~override~
-COPY ~item_rev/components/main/1pp/ext_pal/RANGES12.bmp~ ~override~
+COPY ~item_rev/components/1pp/ext_pal/MPALETTE.bmp~ ~override~
+COPY ~item_rev/components/1pp/ext_pal/MPAL256.bmp~ ~override~
+COPY ~item_rev/components/1pp/ext_pal/RANGES12.bmp~ ~override~

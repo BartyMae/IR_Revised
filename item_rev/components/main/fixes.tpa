@@ -26,10 +26,10 @@ ACTION_IF ee_two_handed_shapeshifts=1 BEGIN // Add two-handed flag for shapeshif
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
       COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
         READ_BYTE 0x18 flags
         WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
-	  END
+      END
     END
   END
 END
@@ -70,7 +70,7 @@ SET resist_dispel = 2	// dispel/resitance
 SET duration = 0		// duration
 SET probability1 = 100	// probability 1
 SET probability2 = 0	// probability 2
-SPRINT "resource" "staf11b" 		// resource
+SPRINT "resource" "rods01b" 		// resource
 SET dicenumber = 0		// dice number
 SET dicesize = 0		// dice size
 SET savingthrow = 0   // saving throw
@@ -151,9 +151,9 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       WRITE_BYTE 0x38 0x50
-	END
+    END
   END
 END
 
@@ -165,9 +165,9 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       WRITE_BYTE 0x38 0x28
-	END
+    END
   END
 END
 
@@ -223,9 +223,9 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       WRITE_BYTE 0x38 0x18
-	END
+    END
   END
 END
 
@@ -237,110 +237,110 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
     SAY NAME1 @1085    SAY NAME2 @1099
     SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
     SAY NAME1 @4004
   COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
     SAY NAME1 @1780    SAY NAME2 @1780
     SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane
     SAY NAME1 @1920    SAY NAME2 @1929
     SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
     SAY NAME1 @1760    SAY NAME2 @2426
     SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor
     SAY NAME1 @1636    SAY NAME2 @2573
     SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   // Shields
   COPY ~item_rev/itm/shld01a.itm~ ~override/shld01.itm~
     SAY NAME1 @1939    SAY NAME2 @1939
     SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld02a.itm~ ~override/shld02.itm~
     SAY NAME1 @1939    SAY NAME2 @1941
     SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1943
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld03a.itm~ ~override/shld03.itm~
     SAY NAME1 @1501    SAY NAME2 @1501
     SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld04a.itm~ ~override/shld04.itm~
     SAY NAME1 @1501    SAY NAME2 @1945
     SAY UNIDENTIFIED_DESC @1503 SAY IDENTIFIED_DESC @1946
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld05a.itm~ ~override/shld05.itm~
     SAY NAME1 @1947    SAY NAME2 @1947
     SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld06a.itm~ ~override/shld06.itm~
     SAY NAME1 @1947    SAY NAME2 @1949
     SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1951
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld07a.itm~ ~override/shld07.itm~
     SAY NAME1 @1947    SAY NAME2 @1953
     SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1954
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld08a.itm~ ~override/shld08.itm~
     SAY NAME1 @1955    SAY NAME2 @1955
     SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld09a.itm~ ~override/shld09.itm~
     SAY NAME1 @1955    SAY NAME2 @1955
     SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld10a.itm~ ~override/shld10.itm~
     SAY NAME1 @1955    SAY NAME2 @1955
     SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld11a.itm~ ~override/shld11.itm~
     SAY NAME1 @1939    SAY NAME2 @1939
     SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld12a.itm~ ~override/shld12.itm~
     SAY NAME1 @1939    SAY NAME2 @1939
     SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld13a.itm~ ~override/shld13.itm~
     SAY NAME1 @1501    SAY NAME2 @1501
     SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld14a.itm~ ~override/shld14.itm~
     SAY NAME1 @1501    SAY NAME2 @1501
     SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld15a.itm~ ~override/shld15.itm~
     SAY NAME1 @1947    SAY NAME2 @1947
     SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld16a.itm~ ~override/shld16.itm~
     SAY NAME1 @1947    SAY NAME2 @1947
     SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld17a.itm~ ~override/shld17.itm~
     SAY NAME1 @1955    SAY NAME2 @1957
     SAY UNIDENTIFIED_DESC @1958 SAY IDENTIFIED_DESC @1959
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld19a.itm~ ~override/shld19.itm~
     SAY NAME1 @1501    SAY NAME2 @1960
     SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1961
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld28a.itm~ ~override/shld28.itm~
     SAY NAME1 @1939    SAY NAME2 @1978
     SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld29a.itm~ ~override/shld29.itm~
     SAY NAME1 @1501    SAY NAME2 @1980
     SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/shld30a.itm~ ~override/shld30.itm~
     SAY NAME1 @1947    SAY NAME2 @1982
     SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1983
-	LPF update_item_descriptions_to_bgee END
+    LPF update_item_descriptions_to_bgee END
 END
 
 
@@ -410,7 +410,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
   COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override
     LPF DELETE_SPELL_EFFECT
       INT_VAR opcode_to_delete = 321
-	END
+    END
     LPF DELETE_SPELL_EFFECT
       INT_VAR opcode_to_delete = 328
     END
@@ -445,7 +445,7 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       SET opcode = 0      // Set opcode
       SET target = 0      // target type
       SET timing = 2      // timing type
@@ -462,7 +462,7 @@ BEGIN
       SET parameter1 = 0 // set parameter 1
       SET parameter2 = 0 // set parameter 2
       LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-	END
+    END
   END
 END
 
@@ -515,7 +515,7 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       WRITE_BYTE 0x1c 0x25
     END
   END
@@ -558,32 +558,22 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
         END
       END
     END
-    PATCH_FOR_EACH ~item~ IN // 1 charge
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 1st header
       ~AMUL20~   // Kaligum's Amulet of Magic Resistance
       ~AMUL25~   // Amulet of Spell Warding
       ~AMUL26~   // Amulet of Cheetah Speed
       ~BELT09~   // Girdle of Trollish Fortitude
-      //~BLUN27~   // Club of Detonation +5 (2nd)
       ~BOOT09~   // Boots of the Shifting Sands
       ~BOOT11~   // Boots of Etherealness
-      //~BOW20~   // Darkfire Bow +4 (2nd)
-      //~BOW21~   // Darkfire Bow +5 (2nd)
       ~BRAC16~   // Bracers of the Blinding Strike
       ~BRAC20~   // Gauntlets of Healing
       ~BRAC23~   // Blessed Bracers
-      //~BRAC23~   // Blessed Bracers (2nd)
       ~CHAN10~   // Prismatic Chain +4
       ~CLCK04~   // Cloak of the Wolf
       ~CLCK07~   // Cloak of the Nymph
-      ~CCLCK08~   // Algernon's Cloak
+      ~CCLCK08~  // Algernon's Cloak
       ~CLCK27~   // Cloak of the Sewers
-      //~CLCK27~   // Cloak of the Sewers (2nd)
-      //~HALB10~   // Ravager +4 (2nd)
-      //~HAMM11~   // Runehammer +5 (2nd)
-      //~HAMM11~   // Runehammer +5 (3rd)
       ~HELM16~   // Helm of Brilliance
-      //~HELM16~   // Helm of Brilliance (2nd)
-      //~HELM16~   // Helm of Brilliance (3rd)
       ~HELM17~   // Skull of Death
       ~HELM18~   // Pearly White Ioun Stone
       ~HELM30~   // Master Thief's Hood
@@ -598,84 +588,134 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       ~MISC3J~   // Bronze Horn of Valhalla
       ~MISC3K~   // Iron Horn of Valhalla
       ~MISC73~   // The Horn of Kazgaroth
-      //~MISC5T~   // Shaman's Staff (2nd)
       ~MISC7T~   // Moon Dog Figurine
       ~MISC7Y~   // Thrall Collar
-      ~FIGURE01~   // Shakti Figurine
+      ~FIGURE01~ // Shakti Figurine
       ~TOME01~   // Flesh Golem Manual
       ~TOME02~   // Clay Golem Manual
       ~TOME03~   // Stone Golem Manual
       ~TOME04~   // Juggernaut Golem Manual
-      ~NPMISC1~   // Jansen Spectroscopes
+      ~NPMISC1~  // Jansen Spectroscopes
       ~NPSHLD~   // Delryn Family Shield +2
       ~VICARM~   // Shar's Blessing +5
       ~RING20~   // Ring of Energy
       ~RING26~   // Ring of Djinni Summoning
       ~RING27~   // Ring of Fire Control
-      //~RING27~   // Ring of Fire Control (2nd)
       ~RING28~   // Ring of Air Control
-      //~RING28~   // Ring of Air Control (2nd)
       ~RING29~   // Ring of Earth Control
-      //~RING29~   // Ring of Earth Control (2nd)
       ~RING30~   // Ring of Human Influence
       ~RING34~   // Ring of Spell Turning
-      //~RING39~   // Ring of Kangaxx (2nd)
       ~RING42~   // Ring of the Wraith
       ~RODS01~   // Rod of Absorption
       ~RODS03~   // Rod of Resurrection
       ~RODS06~   // Rod of Reversal
-      //~STAF09~   // Staff of Command +3 (2nd)
-      //~STAF10~   // Staff of Curing +1 (2nd)
-      //~STAF11~   // Staff of the Magi +5 (2nd)
-      //~STAF11~   // Staff of the Magi +5 (3rd)
-      //~STAF12~   // Staff of Power +3 (2nd)
-      //~STAF12~   // Staff of Power +3 (3rd)
-      //~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
-      //~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
-      //~STAF14~   // Staff of the Woodlands (2nd)
-      //~STAF14~   // Staff of the Woodlands (3rd)
-      //~STAF15~   // Staff of Air +2 (2nd)
-      //~STAF16~   // Staff of Earth +2 (2nd)
-      //~STAF17~   // Staff of Fire +2 (2nd)
-      //~STAF20~   // Staff of Rynn +3 (2nd)
-      //~SW1H26~   // Ilbratha +1 (2nd)
-      //~SW1H31~   // Daystar +4 (2nd)
-      //~SW1H33~   // Ras +2 (2nd)
-      //~SW1H51~   // Celestial Fury (3rd)
-      //~SW1H64~   // Purifier +5 (2nd)
-      //~SW1H65~   // Purifier +5 (3rd)
-      //~SW1H68~   // Spectral Brand +4 (2nd)
-      //~SW1H69~   // Spectral Brand +5 (2nd)
-      //~SW1H69~   // Spectral Brand +5 (3rd)
-      //~SW1H70~   // Hindo's Doom +4 (2nd)
-      //~SW1H70~   // Hindo's Doom +5 (3rd)
-      //~SW2H10~   // Carsomyr +4 (2nd)
-      ~WA2HELM~   // Shadow Veil
+      ~WA2HELM~  // Shadow Veil
       ~WAND14~   // Web Sack
       ~WAND15~   // Rod of the Apprenti
-      //~WAND15~   // Rod of the Apprenti (2nd)
-      //~WAND15~   // Rod of the Apprenti (3rd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
         GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
         PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
           READ_ASCII (itm_offset + 0x0) resref
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
-          READ_SHORT (itm_offset + 0xa) charges_1
+            READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 1) BEGIN
-              PATCH_IF (charges_1 < 1) BEGIN
-                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
-                WRITE_SHORT (itm_offset + 0xa) 1
-              END
-			END
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xa) 1
+    		END
+            PATCH_IF (charges_1 < 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xa) 1
+    		END
           END
         END
       END
     END
-    PATCH_FOR_EACH ~item~ IN // 3 charges
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 2nd header
+      ~BLUN27~   // Club of Detonation +5 (2nd)
+      ~BOW20~    // Darkfire Bow +4 (2nd)
+      ~BOW21~    // Darkfire Bow +5 (2nd)
+      ~BRAC23~   // Blessed Bracers (2nd)
+      ~CLCK27~   // Cloak of the Sewers (2nd)
+      ~HALB10~   // Ravager +4 (2nd)
+      ~HAMM11~   // Runehammer +5 (2nd)
+      ~HELM16~   // Helm of Brilliance (2nd)
+      ~MISC5T~   // Shaman's Staff (2nd)
+      ~RING27~   // Ring of Fire Control (2nd)
+      ~RING28~   // Ring of Air Control (2nd)
+      ~RING29~   // Ring of Earth Control (2nd)
+      ~RING39~   // Ring of Kangaxx (2nd)
+      ~STAF09~   // Staff of Command +3 (2nd)
+      ~STAF10~   // Staff of Curing +1 (2nd)
+      ~STAF11~   // Staff of the Magi +5 (2nd)
+      ~STAF12~   // Staff of Power +3 (2nd)
+      ~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
+      ~STAF14~   // Staff of the Woodlands (2nd)
+      ~STAF15~   // Staff of Air +2 (2nd)
+      ~STAF16~   // Staff of Earth +2 (2nd)
+      ~STAF17~   // Staff of Fire +2 (2nd)
+      ~STAF20~   // Staff of Rynn +3 (2nd)
+      ~SW1H26~   // Ilbratha +1 (2nd)
+      ~SW1H31~   // Daystar +4 (2nd)
+      ~SW1H33~   // Ras +2 (2nd)
+      ~SW1H64~   // Purifier +5 (2nd)
+      ~SW1H68~   // Spectral Brand +4 (2nd)
+      ~SW1H69~   // Spectral Brand +5 (2nd)
+      ~SW1H70~   // Hindo's Doom +4 (2nd)
+      ~SW2H10~   // Carsomyr +4 (2nd)
+      ~WAND15~   // Rod of the Apprenti (2nd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xc) charges_2
+            PATCH_IF (charges_2 > 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, secondary charges: %charges_2% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xc) 1
+    		END
+            PATCH_IF (charges_2 < 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, secondary charges: %charges_2% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xc) 1
+    		END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 3rd header
+      ~HAMM11~   // Runehammer +5 (3rd)
+      ~HELM16~   // Helm of Brilliance (3rd)
+      ~STAF11~   // Staff of the Magi +5 (3rd)
+      ~STAF12~   // Staff of Power +3 (3rd)
+      ~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
+      ~STAF14~   // Staff of the Woodlands (3rd)
+      ~SW1H51~   // Celestial Fury (3rd)
+      ~SW1H65~   // Purifier +5 (3rd)
+      ~SW1H69~   // Spectral Brand +5 (3rd)
+      ~SW1H70~   // Hindo's Doom +5 (3rd)
+      ~WAND15~   // Rod of the Apprenti (3rd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xe) charges_3
+            PATCH_IF (charges_3 > 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, tertiary charges: %charges_3% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xe) 1
+    		END
+            PATCH_IF (charges_3 < 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, tertiary charges: %charges_3% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xe) 1
+    		END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges, 1st header
       ~BOOT12~   // Gargoyle Boots
-      //~HALB06~   // Blackmist +4 (2nd)
-      //~HALB11~   // Ravager +5 (2nd)
       ~HELM31~   // Horned Helm of the Rock
       ~MISC3H~   // Horn of Blasting
       ~MISC3L~   // Horn of Silence
@@ -686,7 +726,6 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       ~RING05~   // Ring of Invisibility
       ~RING33~   // Ring of the Ram
       ~RING39~   // Ring of Kangaxx
-      //~SW1H51~   // Celestial Fury (2nd)
       ~WAND12~   // Rod of Wonder
       ~REGISAMU~ // Ruby Pendant of Beguiling
       ~WA2HARP~  // Harp of Pandemonium
@@ -698,11 +737,36 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
             READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 3) BEGIN
-              PATCH_IF (charges_1 < 3) BEGIN
-                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
-                WRITE_SHORT (itm_offset + 0xa) 3
-              END
-			END
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xa) 3
+    		END
+            PATCH_IF (charges_1 < 3) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xa) 3
+    		END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
+      ~HALB06~   // Blackmist +4 (2nd)
+      ~HALB11~   // Ravager +5 (2nd)
+      ~SW1H51~   // Celestial Fury (2nd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xc) charges_2
+            PATCH_IF (charges_2 > 3) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_2% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xc) 3
+    		END
+            PATCH_IF (charges_2 < 3) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_2% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xc) 3
+    		END
           END
         END
       END
@@ -745,32 +809,22 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
         END
       END
     END
-    PATCH_FOR_EACH ~item~ IN // 1 charge
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 1st header
       ~AMUL20~   // Kaligum's Amulet of Magic Resistance
       ~AMUL25~   // Amulet of Spell Warding
       ~AMUL26~   // Amulet of Cheetah Speed
       ~BELT09~   // Girdle of Trollish Fortitude
-      //~BLUN27~   // Club of Detonation +5 (2nd)
       ~BOOT09~   // Boots of the Shifting Sands
       ~BOOT11~   // Boots of Etherealness
-      //~BOW20~   // Darkfire Bow +4 (2nd)
-      //~BOW21~   // Darkfire Bow +5 (2nd)
       ~BRAC16~   // Bracers of the Blinding Strike
       ~BRAC20~   // Gauntlets of Healing
       ~BRAC23~   // Blessed Bracers
-      //~BRAC23~   // Blessed Bracers (2nd)
       ~CHAN10~   // Prismatic Chain +4
       ~CLCK04~   // Cloak of the Wolf
       ~CLCK07~   // Cloak of the Nymph
-      ~CCLCK08~   // Algernon's Cloak
+      ~CCLCK08~  // Algernon's Cloak
       ~CLCK27~   // Cloak of the Sewers
-      //~CLCK27~   // Cloak of the Sewers (2nd)
-      //~HALB10~   // Ravager +4 (2nd)
-      //~HAMM11~   // Runehammer +5 (2nd)
-      //~HAMM11~   // Runehammer +5 (3rd)
       ~HELM16~   // Helm of Brilliance
-      //~HELM16~   // Helm of Brilliance (2nd)
-      //~HELM16~   // Helm of Brilliance (3rd)
       ~HELM17~   // Skull of Death
       ~HELM18~   // Pearly White Ioun Stone
       ~HELM30~   // Master Thief's Hood
@@ -785,63 +839,30 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       ~MISC3J~   // Bronze Horn of Valhalla
       ~MISC3K~   // Iron Horn of Valhalla
       ~MISC73~   // The Horn of Kazgaroth
-      //~MISC5T~   // Shaman's Staff (2nd)
       ~MISC7T~   // Moon Dog Figurine
       ~MISC7Y~   // Thrall Collar
-      ~FIGURE01~   // Shakti Figurine
+      ~FIGURE01~ // Shakti Figurine
       ~TOME01~   // Flesh Golem Manual
       ~TOME02~   // Clay Golem Manual
       ~TOME03~   // Stone Golem Manual
       ~TOME04~   // Juggernaut Golem Manual
-      ~NPMISC1~   // Jansen Spectroscopes
+      ~NPMISC1~  // Jansen Spectroscopes
       ~NPSHLD~   // Delryn Family Shield +2
       ~VICARM~   // Shar's Blessing +5
       ~RING20~   // Ring of Energy
       ~RING26~   // Ring of Djinni Summoning
       ~RING27~   // Ring of Fire Control
-      //~RING27~   // Ring of Fire Control (2nd)
       ~RING28~   // Ring of Air Control
-      //~RING28~   // Ring of Air Control (2nd)
       ~RING29~   // Ring of Earth Control
-      //~RING29~   // Ring of Earth Control (2nd)
       ~RING30~   // Ring of Human Influence
       ~RING34~   // Ring of Spell Turning
-      //~RING39~   // Ring of Kangaxx (2nd)
       ~RING42~   // Ring of the Wraith
       ~RODS01~   // Rod of Absorption
       ~RODS03~   // Rod of Resurrection
       ~RODS06~   // Rod of Reversal
-      //~STAF09~   // Staff of Command +3 (2nd)
-      //~STAF10~   // Staff of Curing +1 (2nd)
-      //~STAF11~   // Staff of the Magi +5 (2nd)
-      //~STAF11~   // Staff of the Magi +5 (3rd)
-      //~STAF12~   // Staff of Power +3 (2nd)
-      //~STAF12~   // Staff of Power +3 (3rd)
-      //~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
-      //~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
-      //~STAF14~   // Staff of the Woodlands (2nd)
-      //~STAF14~   // Staff of the Woodlands (3rd)
-      //~STAF15~   // Staff of Air +2 (2nd)
-      //~STAF16~   // Staff of Earth +2 (2nd)
-      //~STAF17~   // Staff of Fire +2 (2nd)
-      //~STAF20~   // Staff of Rynn +3 (2nd)
-      //~SW1H26~   // Ilbratha +1 (2nd)
-      //~SW1H31~   // Daystar +4 (2nd)
-      //~SW1H33~   // Ras +2 (2nd)
-      //~SW1H51~   // Celestial Fury (3rd)
-      //~SW1H64~   // Purifier +5 (2nd)
-      //~SW1H65~   // Purifier +5 (3rd)
-      //~SW1H68~   // Spectral Brand +4 (2nd)
-      //~SW1H69~   // Spectral Brand +5 (2nd)
-      //~SW1H69~   // Spectral Brand +5 (3rd)
-      //~SW1H70~   // Hindo's Doom +4 (2nd)
-      //~SW1H70~   // Hindo's Doom +5 (3rd)
-      //~SW2H10~   // Carsomyr +4 (2nd)
-      ~WA2HELM~   // Shadow Veil
+      ~WA2HELM~  // Shadow Veil
       ~WAND14~   // Web Sack
       ~WAND15~   // Rod of the Apprenti
-      //~WAND15~   // Rod of the Apprenti (2nd)
-      //~WAND15~   // Rod of the Apprenti (3rd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
         GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
@@ -850,19 +871,102 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
             READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 1) BEGIN
-              PATCH_IF (charges_1 < 1) BEGIN
-                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
-                WRITE_SHORT (itm_offset + 0xa) 1
-              END
-			END
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xa) 1
+    		END
+            PATCH_IF (charges_1 < 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xa) 1
+    		END
           END
         END
       END
     END
-    PATCH_FOR_EACH ~item~ IN // 3 charges
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 2nd header
+      ~BLUN27~   // Club of Detonation +5 (2nd)
+      ~BOW20~    // Darkfire Bow +4 (2nd)
+      ~BOW21~    // Darkfire Bow +5 (2nd)
+      ~BRAC23~   // Blessed Bracers (2nd)
+      ~CLCK27~   // Cloak of the Sewers (2nd)
+      ~HALB10~   // Ravager +4 (2nd)
+      ~HAMM11~   // Runehammer +5 (2nd)
+      ~HELM16~   // Helm of Brilliance (2nd)
+      ~MISC5T~   // Shaman's Staff (2nd)
+      ~RING27~   // Ring of Fire Control (2nd)
+      ~RING28~   // Ring of Air Control (2nd)
+      ~RING29~   // Ring of Earth Control (2nd)
+      ~RING39~   // Ring of Kangaxx (2nd)
+      ~STAF09~   // Staff of Command +3 (2nd)
+      ~STAF10~   // Staff of Curing +1 (2nd)
+      ~STAF11~   // Staff of the Magi +5 (2nd)
+      ~STAF12~   // Staff of Power +3 (2nd)
+      ~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
+      ~STAF14~   // Staff of the Woodlands (2nd)
+      ~STAF15~   // Staff of Air +2 (2nd)
+      ~STAF16~   // Staff of Earth +2 (2nd)
+      ~STAF17~   // Staff of Fire +2 (2nd)
+      ~STAF20~   // Staff of Rynn +3 (2nd)
+      ~SW1H26~   // Ilbratha +1 (2nd)
+      ~SW1H31~   // Daystar +4 (2nd)
+      ~SW1H33~   // Ras +2 (2nd)
+      ~SW1H64~   // Purifier +5 (2nd)
+      ~SW1H68~   // Spectral Brand +4 (2nd)
+      ~SW1H69~   // Spectral Brand +5 (2nd)
+      ~SW1H70~   // Hindo's Doom +4 (2nd)
+      ~SW2H10~   // Carsomyr +4 (2nd)
+      ~WAND15~   // Rod of the Apprenti (2nd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xc) charges_2
+            PATCH_IF (charges_2 > 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, secondary charges: %charges_2% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xc) 1
+    		END
+            PATCH_IF (charges_2 < 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, secondary charges: %charges_2% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xc) 1
+    		END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 3rd header
+      ~HAMM11~   // Runehammer +5 (3rd)
+      ~HELM16~   // Helm of Brilliance (3rd)
+      ~STAF11~   // Staff of the Magi +5 (3rd)
+      ~STAF12~   // Staff of Power +3 (3rd)
+      ~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
+      ~STAF14~   // Staff of the Woodlands (3rd)
+      ~SW1H51~   // Celestial Fury (3rd)
+      ~SW1H65~   // Purifier +5 (3rd)
+      ~SW1H69~   // Spectral Brand +5 (3rd)
+      ~SW1H70~   // Hindo's Doom +5 (3rd)
+      ~WAND15~   // Rod of the Apprenti (3rd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xe) charges_3
+            PATCH_IF (charges_3 > 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, tertiary charges: %charges_3% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xe) 1
+    		END
+            PATCH_IF (charges_3 < 1) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, tertiary charges: %charges_3% => setting them to 1..."
+              WRITE_SHORT (itm_offset + 0xe) 1
+    		END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges, 1st header
       ~BOOT12~   // Gargoyle Boots
-      //~HALB06~   // Blackmist +4 (2nd)
-      //~HALB11~   // Ravager +5 (2nd)
       ~HELM31~   // Horned Helm of the Rock
       ~MISC3H~   // Horn of Blasting
       ~MISC3L~   // Horn of Silence
@@ -873,7 +977,6 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       ~RING05~   // Ring of Invisibility
       ~RING33~   // Ring of the Ram
       ~RING39~   // Ring of Kangaxx
-      //~SW1H51~   // Celestial Fury (2nd)
       ~WAND12~   // Rod of Wonder
       ~REGISAMU~ // Ruby Pendant of Beguiling
       ~WA2HARP~  // Harp of Pandemonium
@@ -885,11 +988,36 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
           PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
             READ_SHORT (itm_offset + 0xa) charges_1
             PATCH_IF (charges_1 > 3) BEGIN
-              PATCH_IF (charges_1 < 3) BEGIN
-                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
-                WRITE_SHORT (itm_offset + 0xa) 3
-              END
-			END
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xa) 3
+    		END
+            PATCH_IF (charges_1 < 3) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xa) 3
+    		END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
+      ~HALB06~   // Blackmist +4 (2nd)
+      ~HALB11~   // Ravager +5 (2nd)
+      ~SW1H51~   // Celestial Fury (2nd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+        PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+          READ_ASCII (itm_offset + 0x0) resref
+          PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+            READ_SHORT (itm_offset + 0xc) charges_2
+            PATCH_IF (charges_2 > 3) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_2% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xc) 3
+    		END
+            PATCH_IF (charges_2 < 3) BEGIN
+              PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_2% => setting them to 3..."
+              WRITE_SHORT (itm_offset + 0xc) 3
+    		END
           END
         END
       END
@@ -936,32 +1064,22 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
         END
       END
     END
-    PATCH_FOR_EACH ~item~ IN // 1 charge
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 1st header
       ~AMUL20~   // Kaligum's Amulet of Magic Resistance
       ~AMUL25~   // Amulet of Spell Warding
       ~AMUL26~   // Amulet of Cheetah Speed
       ~BELT09~   // Girdle of Trollish Fortitude
-      //~BLUN27~   // Club of Detonation +5 (2nd)
       ~BOOT09~   // Boots of the Shifting Sands
       ~BOOT11~   // Boots of Etherealness
-      //~BOW20~   // Darkfire Bow +4 (2nd)
-      //~BOW21~   // Darkfire Bow +5 (2nd)
       ~BRAC16~   // Bracers of the Blinding Strike
       ~BRAC20~   // Gauntlets of Healing
       ~BRAC23~   // Blessed Bracers
-      //~BRAC23~   // Blessed Bracers (2nd)
       ~CHAN10~   // Prismatic Chain +4
       ~CLCK04~   // Cloak of the Wolf
       ~CLCK07~   // Cloak of the Nymph
-      ~CCLCK08~   // Algernon's Cloak
+      ~CCLCK08~  // Algernon's Cloak
       ~CLCK27~   // Cloak of the Sewers
-      //~CLCK27~   // Cloak of the Sewers (2nd)
-      //~HALB10~   // Ravager +4 (2nd)
-      //~HAMM11~   // Runehammer +5 (2nd)
-      //~HAMM11~   // Runehammer +5 (3rd)
       ~HELM16~   // Helm of Brilliance
-      //~HELM16~   // Helm of Brilliance (2nd)
-      //~HELM16~   // Helm of Brilliance (3rd)
       ~HELM17~   // Skull of Death
       ~HELM18~   // Pearly White Ioun Stone
       ~HELM30~   // Master Thief's Hood
@@ -976,63 +1094,30 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       ~MISC3J~   // Bronze Horn of Valhalla
       ~MISC3K~   // Iron Horn of Valhalla
       ~MISC73~   // The Horn of Kazgaroth
-      //~MISC5T~   // Shaman's Staff (2nd)
       ~MISC7T~   // Moon Dog Figurine
       ~MISC7Y~   // Thrall Collar
-      ~FIGURE01~   // Shakti Figurine
+      ~FIGURE01~ // Shakti Figurine
       ~TOME01~   // Flesh Golem Manual
       ~TOME02~   // Clay Golem Manual
       ~TOME03~   // Stone Golem Manual
       ~TOME04~   // Juggernaut Golem Manual
-      ~NPMISC1~   // Jansen Spectroscopes
+      ~NPMISC1~  // Jansen Spectroscopes
       ~NPSHLD~   // Delryn Family Shield +2
       ~VICARM~   // Shar's Blessing +5
       ~RING20~   // Ring of Energy
       ~RING26~   // Ring of Djinni Summoning
       ~RING27~   // Ring of Fire Control
-      //~RING27~   // Ring of Fire Control (2nd)
       ~RING28~   // Ring of Air Control
-      //~RING28~   // Ring of Air Control (2nd)
       ~RING29~   // Ring of Earth Control
-      //~RING29~   // Ring of Earth Control (2nd)
       ~RING30~   // Ring of Human Influence
       ~RING34~   // Ring of Spell Turning
-      //~RING39~   // Ring of Kangaxx (2nd)
       ~RING42~   // Ring of the Wraith
       ~RODS01~   // Rod of Absorption
       ~RODS03~   // Rod of Resurrection
       ~RODS06~   // Rod of Reversal
-      //~STAF09~   // Staff of Command +3 (2nd)
-      //~STAF10~   // Staff of Curing +1 (2nd)
-      //~STAF11~   // Staff of the Magi +5 (2nd)
-      //~STAF11~   // Staff of the Magi +5 (3rd)
-      //~STAF12~   // Staff of Power +3 (2nd)
-      //~STAF12~   // Staff of Power +3 (3rd)
-      //~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
-      //~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
-      //~STAF14~   // Staff of the Woodlands (2nd)
-      //~STAF14~   // Staff of the Woodlands (3rd)
-      //~STAF15~   // Staff of Air +2 (2nd)
-      //~STAF16~   // Staff of Earth +2 (2nd)
-      //~STAF17~   // Staff of Fire +2 (2nd)
-      //~STAF20~   // Staff of Rynn +3 (2nd)
-      //~SW1H26~   // Ilbratha +1 (2nd)
-      //~SW1H31~   // Daystar +4 (2nd)
-      //~SW1H33~   // Ras +2 (2nd)
-      //~SW1H51~   // Celestial Fury (3rd)
-      //~SW1H64~   // Purifier +5 (2nd)
-      //~SW1H65~   // Purifier +5 (3rd)
-      //~SW1H68~   // Spectral Brand +4 (2nd)
-      //~SW1H69~   // Spectral Brand +5 (2nd)
-      //~SW1H69~   // Spectral Brand +5 (3rd)
-      //~SW1H70~   // Hindo's Doom +4 (2nd)
-      //~SW1H70~   // Hindo's Doom +5 (3rd)
-      //~SW2H10~   // Carsomyr +4 (2nd)
-      ~WA2HELM~   // Shadow Veil
+      ~WA2HELM~  // Shadow Veil
       ~WAND14~   // Web Sack
       ~WAND15~   // Rod of the Apprenti
-      //~WAND15~   // Rod of the Apprenti (2nd)
-      //~WAND15~   // Rod of the Apprenti (3rd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
         GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
@@ -1044,20 +1129,111 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
               READ_ASCII (container_offset + 0x0) container_name (32) NULL
               READ_SHORT (itm_offset + 0xa) charges_1
               PATCH_IF (charges_1 > 1) BEGIN
-                PATCH_IF (charges_1 < 1) BEGIN
-                  PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
-                  WRITE_SHORT (itm_offset + 0xa) 1
-				END
-              END
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xa) 1
+    		  END
+              PATCH_IF (charges_1 < 1) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xa) 1
+    		  END
             END
           END
         END
       END
     END
-    PATCH_FOR_EACH ~item~ IN // 3 charges
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 2nd header
+      ~BLUN27~   // Club of Detonation +5 (2nd)
+      ~BOW20~    // Darkfire Bow +4 (2nd)
+      ~BOW21~    // Darkfire Bow +5 (2nd)
+      ~BRAC23~   // Blessed Bracers (2nd)
+      ~CLCK27~   // Cloak of the Sewers (2nd)
+      ~HALB10~   // Ravager +4 (2nd)
+      ~HAMM11~   // Runehammer +5 (2nd)
+      ~HELM16~   // Helm of Brilliance (2nd)
+      ~MISC5T~   // Shaman's Staff (2nd)
+      ~RING27~   // Ring of Fire Control (2nd)
+      ~RING28~   // Ring of Air Control (2nd)
+      ~RING29~   // Ring of Earth Control (2nd)
+      ~RING39~   // Ring of Kangaxx (2nd)
+      ~STAF09~   // Staff of Command +3 (2nd)
+      ~STAF10~   // Staff of Curing +1 (2nd)
+      ~STAF11~   // Staff of the Magi +5 (2nd)
+      ~STAF12~   // Staff of Power +3 (2nd)
+      ~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
+      ~STAF14~   // Staff of the Woodlands (2nd)
+      ~STAF15~   // Staff of Air +2 (2nd)
+      ~STAF16~   // Staff of Earth +2 (2nd)
+      ~STAF17~   // Staff of Fire +2 (2nd)
+      ~STAF20~   // Staff of Rynn +3 (2nd)
+      ~SW1H26~   // Ilbratha +1 (2nd)
+      ~SW1H31~   // Daystar +4 (2nd)
+      ~SW1H33~   // Ras +2 (2nd)
+      ~SW1H64~   // Purifier +5 (2nd)
+      ~SW1H68~   // Spectral Brand +4 (2nd)
+      ~SW1H69~   // Spectral Brand +5 (2nd)
+      ~SW1H70~   // Hindo's Doom +4 (2nd)
+      ~SW2H10~   // Carsomyr +4 (2nd)
+      ~WAND15~   // Rod of the Apprenti (2nd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
+        PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
+          GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
+          PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+            READ_ASCII (itm_offset + 0x0) resref
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+              READ_ASCII (container_offset + 0x0) container_name (32) NULL
+              READ_SHORT (itm_offset + 0xc) charges_2
+              PATCH_IF (charges_2 > 1) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, secondary charges: %charges_2% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xc) 1
+    		  END
+              PATCH_IF (charges_2 < 1) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, secondary charges: %charges_2% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xc) 1
+    		  END
+            END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 1 charge, 3rd header
+      ~HAMM11~   // Runehammer +5 (3rd)
+      ~HELM16~   // Helm of Brilliance (3rd)
+      ~STAF11~   // Staff of the Magi +5 (3rd)
+      ~STAF12~   // Staff of Power +3 (3rd)
+      ~STAF13~   // Staff of Thunder and Lightning +2 (3rd)
+      ~STAF14~   // Staff of the Woodlands (3rd)
+      ~SW1H51~   // Celestial Fury (3rd)
+      ~SW1H65~   // Purifier +5 (3rd)
+      ~SW1H69~   // Spectral Brand +5 (3rd)
+      ~SW1H70~   // Hindo's Doom +5 (3rd)
+      ~WAND15~   // Rod of the Apprenti (3rd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
+        PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
+          GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
+          PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+            READ_ASCII (itm_offset + 0x0) resref
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+              READ_ASCII (container_offset + 0x0) container_name (32) NULL
+              READ_SHORT (itm_offset + 0xe) charges_3
+              PATCH_IF (charges_3 > 1) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, tertiary charges: %charges_3% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xe) 1
+    		  END
+              PATCH_IF (charges_3 < 1) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, tertiary charges: %charges_3% => setting them to 1..."
+                WRITE_SHORT (itm_offset + 0xe) 1
+    		  END
+            END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges, 1st header
       ~BOOT12~   // Gargoyle Boots
-      //~HALB06~   // Blackmist +4 (2nd)
-      //~HALB11~   // Ravager +5 (2nd)
       ~HELM31~   // Horned Helm of the Rock
       ~MISC3H~   // Horn of Blasting
       ~MISC3L~   // Horn of Silence
@@ -1068,7 +1244,6 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       ~RING05~   // Ring of Invisibility
       ~RING33~   // Ring of the Ram
       ~RING39~   // Ring of Kangaxx
-      //~SW1H51~   // Celestial Fury (2nd)
       ~WAND12~   // Rod of Wonder
       ~REGISAMU~ // Ruby Pendant of Beguiling
       ~WA2HARP~  // Harp of Pandemonium
@@ -1083,11 +1258,40 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
               READ_ASCII (container_offset + 0x0) container_name (32) NULL
               READ_SHORT (itm_offset + 0xa) charges_1
               PATCH_IF (charges_1 > 3) BEGIN
-                PATCH_IF (charges_1 < 3) BEGIN
-                  PATCH_PRINT "~%SOURCE_FILE%~: ~%container_name%~, ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
-                  WRITE_SHORT (itm_offset + 0xa) 3
-				END
-              END
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+                WRITE_SHORT (itm_offset + 0xa) 3
+    		  END
+              PATCH_IF (charges_1 < 3) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_1% => setting them to 3..."
+                WRITE_SHORT (itm_offset + 0xa) 3
+    		  END
+            END
+          END
+        END
+      END
+    END
+    PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
+      ~HALB06~   // Blackmist +4 (2nd)
+      ~HALB11~   // Ravager +5 (2nd)
+      ~SW1H51~   // Celestial Fury (2nd)
+    BEGIN
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+        GET_OFFSET_ARRAY container_array ARE_V10_CONTAINERS
+        PHP_EACH ~container_array~ AS ~int~ => ~container_offset~ BEGIN
+          GET_OFFSET_ARRAY2 itm_array container_offset ARE_V10_ITEMS
+          PHP_EACH ~itm_array~ AS ~int~ => ~itm_offset~ BEGIN
+            READ_ASCII (itm_offset + 0x0) resref
+            PATCH_IF (~%resref%~ STRING_EQUAL_CASE ~%item%~) BEGIN
+              READ_ASCII (container_offset + 0x0) container_name (32) NULL
+              READ_SHORT (itm_offset + 0xc) charges_2
+              PATCH_IF (charges_2 > 3) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_2% => setting them to 3..."
+                WRITE_SHORT (itm_offset + 0xc) 3
+    		  END
+              PATCH_IF (charges_2 < 3) BEGIN
+                PATCH_PRINT "~%SOURCE_FILE%~: ~%item%.itm~, primary charges: %charges_2% => setting them to 3..."
+                WRITE_SHORT (itm_offset + 0xc) 3
+    		  END
             END
           END
         END
@@ -1267,9 +1471,9 @@ END
 
 // Flame swords fix
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqlfsa1.bam~) BEGIN
-  ACTION_FOR_EACH resource IN // Fix flaming long swords
+  ACTION_FOR_EACH resource IN
     ~miscbc~
-	~rodsword~
+    ~rodsword~
     ~sw1h27~
     ~sw1h39~
     ~sw1h53~
@@ -1287,7 +1491,7 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqlf2a1.bam~) BEGIN
   ACTION_FOR_EACH resource IN
     ~npsw06~
-	~sblade~
+    ~sblade~
     ~sw1h27~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
@@ -1578,144 +1782,88 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wqlm2a1.bam~) BEGIN
 END
 
 // Staff fixes
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf01.itm~) BEGIN
-    COPY_EXISTING ~staf01.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ // animation type
+ACTION_IF (FILE_EXISTS_IN_GAME ~wplqsg1.bam~) BEGIN // QS
+  ACTION_FOR_EACH resource IN
+    ~staf01~
+    ~staf03~
+    ~staf04~
+    ~staf16~
+    ~wastaff~
+    ~npstaf~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_ASCII 0x22 ~QS~ // animation type
+      END
     END
   END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf02.itm~) BEGIN
-    COPY_EXISTING ~staf02.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ // animation type
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wplq2g1.bam~) BEGIN // Q2
+  ACTION_FOR_EACH resource IN
+    ~staf02~
+    ~staf05~
+    ~staf08~
+    ~staf12~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_ASCII 0x22 ~Q2~ // animation type
+      END
     END
   END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf03.itm~) BEGIN
-    COPY_EXISTING ~staf03.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ // animation type
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wplq3g1.bam~) BEGIN // Q3
+  ACTION_FOR_EACH resource IN
+    ~staf14~
+    ~staf18~
+    ~staf19~
+    ~staf20~
+    ~staf23~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_ASCII 0x22 ~Q3~ // animation type
+      END
     END
   END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf04.itm~) BEGIN
-    COPY_EXISTING ~staf04.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ // animation type
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wplq4g1.bam~) BEGIN // Q4
+  ACTION_FOR_EACH resource IN
+    ~staf09~
+    ~staf10~
+    ~staf13~
+    ~staf15~
+    ~staf17~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_ASCII 0x22 ~Q4~ // animation type
+      END
     END
   END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf05.itm~) BEGIN
-    COPY_EXISTING ~staf05.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ // animation type
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wplgsg1.bam~) BEGIN // GS
+  ACTION_FOR_EACH resource IN
+    ~staf11~
+    ~staf21~
+    ~staf22~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_ASCII 0x22 ~GS~ // animation type
+      END
     END
   END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08.itm~) BEGIN
-    COPY_EXISTING ~staf08.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf09.itm~) BEGIN
-    COPY_EXISTING ~staf09.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf10.itm~) BEGIN
-    COPY_EXISTING ~staf10.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf11.itm~) BEGIN
-    COPY_EXISTING ~staf11.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~GS~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf12.itm~) BEGIN
-    COPY_EXISTING ~staf12.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q2~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf13.itm~) BEGIN
-    COPY_EXISTING ~staf13.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf14.itm~) BEGIN
-    COPY_EXISTING ~staf14.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf15.itm~) BEGIN
-    COPY_EXISTING ~staf15.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf16.itm~) BEGIN
-    COPY_EXISTING ~staf16.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf17.itm~) BEGIN
-    COPY_EXISTING ~staf17.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q4~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf18.itm~) BEGIN
-    COPY_EXISTING ~staf18.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf19.itm~) BEGIN
-    COPY_EXISTING ~staf19.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf20.itm~) BEGIN
-    COPY_EXISTING ~staf20.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf21.itm~) BEGIN
-    COPY_EXISTING ~staf21.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~GS~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf22.itm~) BEGIN
-    COPY_EXISTING ~staf22.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~GS~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf23.itm~) BEGIN
-    COPY_EXISTING ~staf23.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~Q3~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~wastaff.itm~) BEGIN
-    COPY_EXISTING ~wastaff.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ // animation type
-    END
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~npstaf.itm~) BEGIN
-    COPY_EXISTING ~npstaf.itm~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-      WRITE_ASCII 0x22 ~QS~ // animation type
-    END
-  END
+END
 
 // Helms fix (default style)
 
@@ -3438,21 +3586,21 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 COPY_EXISTING ~dwshld01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~C7~
-	WRITE_LONG  0x48 0
+    WRITE_LONG  0x48 0
     WRITE_ASCII 0x44 ~GMSHLD~
    	LAUNCH_PATCH_MACRO ~clear~
-	SET gradient = 184		// colour index
-	SET location = sgrey		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 186		// colour index
-	SET location = steal		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 192	// colour index
-	SET location = sblue		// location
-	LAUNCH_PATCH_MACRO ~colour~
-	SET gradient = 199		// colour index
-	SET location = spink		// location
-	LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 184		// colour index
+    SET location = sgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 186		// colour index
+    SET location = steal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 192	// colour index
+    SET location = sblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 199		// colour index
+    SET location = spink		// location
+    LAUNCH_PATCH_MACRO ~colour~
   END
   BUT_ONLY_IF_IT_CHANGES
   END
@@ -3462,7 +3610,7 @@ END // C7 shields
 
 // Projectiles fixes
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow01.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow01.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) BEGIN
   COPY_EXISTING ~AROW01.ITM~ ~override~
@@ -3482,7 +3630,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow02.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW02.ITM~) BEGIN
   COPY_EXISTING ~AROW02.ITM~ ~override~
@@ -3526,7 +3674,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow03.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW03.ITM~) BEGIN
   COPY_EXISTING ~AROW03.ITM~ ~override~
@@ -3546,7 +3694,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow04.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW04.ITM~) BEGIN
   COPY_EXISTING ~AROW04.ITM~ ~override~
@@ -3569,7 +3717,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow05.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW05.ITM~) BEGIN
   COPY_EXISTING ~AROW05.ITM~ ~override~
@@ -3592,7 +3740,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow07.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow07.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW07.ITM~) BEGIN
   COPY_EXISTING ~AROW07.ITM~ ~override~
@@ -3612,7 +3760,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow10.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow10.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW10.ITM~) BEGIN
   COPY_EXISTING ~AROW10.ITM~ ~override~
@@ -3632,7 +3780,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow11.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow11.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW11.ITM~) BEGIN
   COPY_EXISTING ~AROW11.ITM~ ~override~
@@ -3652,7 +3800,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow15.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow15.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW15.ITM~) BEGIN
   COPY_EXISTING ~AROW15.ITM~ ~override~
@@ -3690,7 +3838,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1axe05.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H05.ITM~) BEGIN
   COPY_EXISTING ~AX1H05.ITM~ ~override~
@@ -3764,7 +3912,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1axe08.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe08.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H08.ITM~) BEGIN
   COPY_EXISTING ~AX1H08.ITM~ ~override~
@@ -3802,7 +3950,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1axe09.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe09.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H09.ITM~) BEGIN
   COPY_EXISTING ~AX1H09.ITM~ ~override~
@@ -3840,7 +3988,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1axe10.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe10.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H10.ITM~) BEGIN
   COPY_EXISTING ~AX1H10.ITM~ ~override~
@@ -3878,7 +4026,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1axe16.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe16.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H16.ITM~) BEGIN
   COPY_EXISTING ~AX1H16.ITM~ ~override~
@@ -3916,7 +4064,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt01.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt01.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT01.ITM~) BEGIN
   COPY_EXISTING ~BOLT01.ITM~ ~override~
@@ -3940,7 +4088,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt02.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT02.ITM~) BEGIN
   COPY_EXISTING ~BOLT02.ITM~ ~override~
@@ -3986,7 +4134,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt03.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT03.ITM~) BEGIN
   COPY_EXISTING ~BOLT03.ITM~ ~override~
@@ -4010,7 +4158,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt04.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT04.ITM~) BEGIN
   COPY_EXISTING ~BOLT04.ITM~ ~override~
@@ -4034,7 +4182,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt05.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT05.ITM~) BEGIN
   COPY_EXISTING ~BOLT05.ITM~ ~override~
@@ -4058,7 +4206,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt06.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt06.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT06.ITM~) BEGIN
   COPY_EXISTING ~BOLT06.ITM~ ~override~
@@ -4093,7 +4241,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt09.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt09.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT09.ITM~) BEGIN
   COPY_EXISTING ~BOLT09.ITM~ ~override~
@@ -4150,7 +4298,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bull02.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL02.ITM~) BEGIN
   COPY_EXISTING ~BULL02.ITM~ ~override~
@@ -4196,7 +4344,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bull03.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL03.ITM~) BEGIN
   COPY_EXISTING ~BULL03.ITM~ ~override~
@@ -4220,7 +4368,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bull04.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL04.ITM~) BEGIN
   COPY_EXISTING ~BULL04.ITM~ ~override~
@@ -4244,7 +4392,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bull05.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL05.ITM~) BEGIN
   COPY_EXISTING ~BULL05.ITM~ ~override~
@@ -4290,7 +4438,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bull06.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull06.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL06.ITM~) BEGIN
   COPY_EXISTING ~BULL06.ITM~ ~override~
@@ -4314,7 +4462,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dagg05.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG05.ITM~) BEGIN
   COPY_EXISTING ~DAGG05.ITM~ ~override~
@@ -4352,7 +4500,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dagg11.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg11.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG11.ITM~) BEGIN
   COPY_EXISTING ~DAGG11.ITM~ ~override~
@@ -4390,7 +4538,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dagg12.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg12.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG12.ITM~) BEGIN
   COPY_EXISTING ~DAGG12.ITM~ ~override~
@@ -4428,7 +4576,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dagg16.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg16.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG16.ITM~) BEGIN
   COPY_EXISTING ~DAGG16.ITM~ ~override~
@@ -4466,7 +4614,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart01.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart01.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART01.ITM~) BEGIN
   COPY_EXISTING ~DART01.ITM~ ~override~
@@ -4486,7 +4634,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart02.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART02.ITM~) BEGIN
   COPY_EXISTING ~DART02.ITM~ ~override~
@@ -4506,7 +4654,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart03.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART03.ITM~) BEGIN
   COPY_EXISTING ~DART03.ITM~ ~override~
@@ -4526,7 +4674,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart04.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART04.ITM~) BEGIN
   COPY_EXISTING ~DART04.ITM~ ~override~
@@ -4546,7 +4694,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart05.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART05.ITM~) BEGIN
   COPY_EXISTING ~DART05.ITM~ ~override~
@@ -4566,7 +4714,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart08.pro~
+  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart08.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART08.ITM~) BEGIN
   COPY_EXISTING ~DART08.ITM~ ~override~
@@ -4630,7 +4778,7 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
 SET opcode = 83			// Set opcode
 SET target = 1			// target type
 SET timing = 2			// timing type
@@ -5223,7 +5371,7 @@ SET savebonus = 0		// saving throw bonus
 SET parameter1 = 0 // param1
 SET parameter2 = (%1dart08% - 1) // param2
 LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-	END	BUT_ONLY_IF_IT_CHANGES
+    END	BUT_ONLY_IF_IT_CHANGES
   END
 END
 
@@ -5908,32 +6056,32 @@ END
 ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
   ACTION_FOR_EACH resource IN
     ~shld01~
-	~shld02~
-	~shld03~
-	~shld04~
-	~shld05~
-	~shld06~
-	~shld07~
-	~shld08~
-	~shld09~
-	~shld10~
-	~shld11~
-	~shld12~
-	~shld13~
-	~shld14~
-	~shld15~
-	~shld16~
-	~shld17~
-	~shld19~
-	~shld23~
-	~shld24~
-	~shld25~
-	//~shld26~
-	~shld27~
-	~shld28~
-	~shld29~
-	~shld30~
-	~shld31~
+    ~shld02~
+    ~shld03~
+    ~shld04~
+    ~shld05~
+    ~shld06~
+    ~shld07~
+    ~shld08~
+    ~shld09~
+    ~shld10~
+    ~shld11~
+    ~shld12~
+    ~shld13~
+    ~shld14~
+    ~shld15~
+    ~shld16~
+    ~shld17~
+    ~shld19~
+    ~shld23~
+    ~shld24~
+    ~shld25~
+    ~shld26~
+    ~shld27~
+    ~shld28~
+    ~shld29~
+    ~shld30~
+    ~shld31~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
       COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
