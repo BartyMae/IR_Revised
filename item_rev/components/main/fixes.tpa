@@ -3610,7 +3610,7 @@ END // C7 shields
 
 // Projectiles fixes
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow01.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow01.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) BEGIN
   COPY_EXISTING ~AROW01.ITM~ ~override~
@@ -3630,7 +3630,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow02.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW02.ITM~) BEGIN
   COPY_EXISTING ~AROW02.ITM~ ~override~
@@ -3674,7 +3674,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow03.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW03.ITM~) BEGIN
   COPY_EXISTING ~AROW03.ITM~ ~override~
@@ -3694,7 +3694,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow04.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW04.ITM~) BEGIN
   COPY_EXISTING ~AROW04.ITM~ ~override~
@@ -3717,7 +3717,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow05.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW05.ITM~) BEGIN
   COPY_EXISTING ~AROW05.ITM~ ~override~
@@ -3740,7 +3740,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow07.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow07.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW07.ITM~) BEGIN
   COPY_EXISTING ~AROW07.ITM~ ~override~
@@ -3760,7 +3760,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow10.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow10.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW10.ITM~) BEGIN
   COPY_EXISTING ~AROW10.ITM~ ~override~
@@ -3780,7 +3780,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow11.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow11.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW11.ITM~) BEGIN
   COPY_EXISTING ~AROW11.ITM~ ~override~
@@ -3800,7 +3800,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1arow15.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow15.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AROW15.ITM~) BEGIN
   COPY_EXISTING ~AROW15.ITM~ ~override~
@@ -3838,7 +3838,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe05.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H05.ITM~) BEGIN
   COPY_EXISTING ~AX1H05.ITM~ ~override~
@@ -3912,7 +3912,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe08.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe08.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H08.ITM~) BEGIN
   COPY_EXISTING ~AX1H08.ITM~ ~override~
@@ -3950,7 +3950,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe09.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe09.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H09.ITM~) BEGIN
   COPY_EXISTING ~AX1H09.ITM~ ~override~
@@ -3988,7 +3988,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe10.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe10.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H10.ITM~) BEGIN
   COPY_EXISTING ~AX1H10.ITM~ ~override~
@@ -4026,7 +4026,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1axe16.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe16.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H16.ITM~) BEGIN
   COPY_EXISTING ~AX1H16.ITM~ ~override~
@@ -4064,7 +4064,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt01.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt01.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT01.ITM~) BEGIN
   COPY_EXISTING ~BOLT01.ITM~ ~override~
@@ -4088,7 +4088,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt02.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT02.ITM~) BEGIN
   COPY_EXISTING ~BOLT02.ITM~ ~override~
@@ -4134,7 +4134,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt03.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT03.ITM~) BEGIN
   COPY_EXISTING ~BOLT03.ITM~ ~override~
@@ -4158,7 +4158,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt04.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT04.ITM~) BEGIN
   COPY_EXISTING ~BOLT04.ITM~ ~override~
@@ -4182,7 +4182,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt05.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT05.ITM~) BEGIN
   COPY_EXISTING ~BOLT05.ITM~ ~override~
@@ -4206,7 +4206,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt06.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt06.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT06.ITM~) BEGIN
   COPY_EXISTING ~BOLT06.ITM~ ~override~
@@ -4241,7 +4241,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bolt09.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt09.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT09.ITM~) BEGIN
   COPY_EXISTING ~BOLT09.ITM~ ~override~
@@ -4298,7 +4298,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull02.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL02.ITM~) BEGIN
   COPY_EXISTING ~BULL02.ITM~ ~override~
@@ -4344,7 +4344,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull03.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL03.ITM~) BEGIN
   COPY_EXISTING ~BULL03.ITM~ ~override~
@@ -4368,7 +4368,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull04.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL04.ITM~) BEGIN
   COPY_EXISTING ~BULL04.ITM~ ~override~
@@ -4392,7 +4392,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull05.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL05.ITM~) BEGIN
   COPY_EXISTING ~BULL05.ITM~ ~override~
@@ -4438,7 +4438,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1bull06.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull06.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~BULL06.ITM~) BEGIN
   COPY_EXISTING ~BULL06.ITM~ ~override~
@@ -4462,7 +4462,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg05.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG05.ITM~) BEGIN
   COPY_EXISTING ~DAGG05.ITM~ ~override~
@@ -4500,7 +4500,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg11.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg11.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG11.ITM~) BEGIN
   COPY_EXISTING ~DAGG11.ITM~ ~override~
@@ -4538,7 +4538,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg12.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg12.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG12.ITM~) BEGIN
   COPY_EXISTING ~DAGG12.ITM~ ~override~
@@ -4576,7 +4576,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dagg16.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg16.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG16.ITM~) BEGIN
   COPY_EXISTING ~DAGG16.ITM~ ~override~
@@ -4614,7 +4614,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart01.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart01.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART01.ITM~) BEGIN
   COPY_EXISTING ~DART01.ITM~ ~override~
@@ -4634,7 +4634,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart02.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart02.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART02.ITM~) BEGIN
   COPY_EXISTING ~DART02.ITM~ ~override~
@@ -4654,7 +4654,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart03.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart03.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART03.ITM~) BEGIN
   COPY_EXISTING ~DART03.ITM~ ~override~
@@ -4674,7 +4674,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart04.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart04.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART04.ITM~) BEGIN
   COPY_EXISTING ~DART04.ITM~ ~override~
@@ -4694,7 +4694,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart05.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart05.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART05.ITM~) BEGIN
   COPY_EXISTING ~DART05.ITM~ ~override~
@@ -4714,7 +4714,7 @@ END // C7 shields
     BUT_ONLY_IF_IT_CHANGES
   END
 
-  ADD_PROJECTILE      ~item_rev/components/main/1pp/projectiles/1dart08.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart08.pro~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~DART08.ITM~) BEGIN
   COPY_EXISTING ~DART08.ITM~ ~override~
