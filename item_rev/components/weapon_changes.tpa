@@ -100,7 +100,7 @@ LAM wc_table_read
 //////////////////////////////////////////////
 //  descriptions
 
-DEFINE_PATCH_MACRO wc_slash_to_pierce BEGIN
+ DEFINE_PATCH_MACRO wc_slash_to_pierce BEGIN
   SPRINT t1 @100132
   SPRINT t2 @100133
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
@@ -124,9 +124,15 @@ DEFINE_PATCH_MACRO wc_pierce_to_slashpierce BEGIN
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
-DEFINE_PATCH_MACRO katana_waki_prof BEGIN
+DEFINE_PATCH_MACRO katana_prof BEGIN
   SPRINT t1 @100146
   SPRINT t2 @100147
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO waki_prof BEGIN
+  SPRINT t1 @100146
+  SPRINT t2 @100168
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
@@ -142,15 +148,27 @@ DEFINE_PATCH_MACRO scimitar_prof BEGIN
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
-DEFINE_PATCH_MACRO mace_morning_prof BEGIN
+DEFINE_PATCH_MACRO mace_prof BEGIN
   SPRINT t1 @100146
   SPRINT t2 @100150
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO morning_prof BEGIN
+  SPRINT t1 @100146
+  SPRINT t2 @100169
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
 DEFINE_PATCH_MACRO short_sword_prof BEGIN
   SPRINT t1 @100146
   SPRINT t2 @100199
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ninjato_prof BEGIN
+  SPRINT t1 @100146
+  SPRINT t2 @100170
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
@@ -885,7 +903,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     // change proficiency to "short sword"
     BEGIN
       WRITE_BYTE 0x31 0x5b
-      SPRINT text_update short_sword_prof
+      SPRINT text_update ninjato_prof
       LPM update_item_descriptions
       SPRINT text_update wc_slash_to_pierce
       LPM update_item_descriptions
@@ -896,7 +914,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     // change proficiency to "katana/wakizashi"
     BEGIN
       WRITE_BYTE 0x31 0x5e
-	  SPRINT text_update katana_waki_prof
+	  SPRINT text_update waki_prof
       LPM update_item_descriptions
 	  PATCH_IF dual_mode_wakizashis=1 BEGIN
 	  SPRINT text_update wc_pierce_to_slashpierce
@@ -916,14 +934,14 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     katana
     // change proficiency to "katana/wakizashi"
     BEGIN
-      SPRINT text_update katana_waki_prof
+      SPRINT text_update katana_prof
       LPM update_item_descriptions
     END
 
     mace
     // change proficiency to "mace/morning star"
     BEGIN
-      SPRINT text_update mace_morning_prof
+      SPRINT text_update mace_prof
       LPM update_item_descriptions
     END
 
@@ -935,7 +953,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
       WRITE_BYTE 0x31 0x65
       SPRINT text_update wc_crush_to_crushpierce
       LPM update_item_descriptions
-      SPRINT text_update mace_morning_prof
+      SPRINT text_update morning_prof
       LPM update_item_descriptions
     END
 

@@ -224,11 +224,11 @@ Speed Factor\1~
 // Proficiency  //
 //////////////////
 
-// catch ~Proficiency type:~
+ // catch ~Proficiency type:~
 @100146 = ~Proficiency[ %tab%]+[Tt]ype:.*~
 
 // replace @100146
-@100147 = ~Proficiency Type: Katana/Wakizashi~
+@100147 = ~Proficiency Type: Katana~
 
 // replace @100146
 @100148 = ~Proficiency Type: Flail~
@@ -237,10 +237,19 @@ Speed Factor\1~
 @100149 = ~Proficiency Type: Scimitar~
 
 // replace @100146
-@100150 = ~Proficiency Type: Mace/Morning Star~
+@100150 = ~Proficiency Type: Mace~
 
 // replace @100146
 @100199 = ~Proficiency Type: Short Sword~
+
+// replace @100146
+@100168 = ~Proficiency Type: Wakizashi~
+
+// replace @100146
+@100169 = ~Proficiency Type: Morning Star~
+
+// replace @100146
+@100170 = ~Proficiency Type: Ninja-To~
 
 
 //////////////////
