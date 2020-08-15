@@ -2,10 +2,12 @@
 INCLUDE ~item_rev/lib/identify_fix.tpa~
 INCLUDE ~item_rev/lib/identify_item.tpa~
 
+
 // EE fixes
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // Fix Shaman usabilities
+// Fix Shaman usabilities
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   PATCH_IF (~%SOURCE_SIZE%~ > ~0x71~) BEGIN
     READ_SHORT 0x1c type
     READ_BYTE 0x31 prof
@@ -17,7 +19,8 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // Fix Shaman usabilities
   END
 BUT_ONLY
 
-ACTION_IF ee_two_handed_shapeshifts=1 BEGIN // Add two-handed flag for shapeshifts/polymorphs
+// Add two-handed flag for shapeshifts/polymorphs
+ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
   ACTION_FOR_EACH resource IN
     ~dvjelly~
     ~dvrat~
@@ -107,8 +110,7 @@ END
 
 // EE quantity fixes
 
-// Arrows, Bolts, Bullets, and Darts
-ACTION_FOR_EACH resource IN
+ACTION_FOR_EACH resource IN // Arrows, Bolts, Bullets, and Darts
   ~arow01~
   ~arow02~
   ~arow03~
@@ -157,8 +159,7 @@ BEGIN
   END
 END
 
-// Throwing Axes and Throwing Daggers
-ACTION_FOR_EACH resource IN
+ACTION_FOR_EACH resource IN // Throwing Axes and Throwing Daggers
   ~ax1h04~
   ~dagg05~
   ~dagg16~
@@ -171,8 +172,7 @@ BEGIN
   END
 END
 
-// Potions
-ACTION_FOR_EACH resource IN
+ACTION_FOR_EACH resource IN // Potions
   ~potn02~
   ~potn03~
   ~potn04~
@@ -233,6 +233,8 @@ END // EE fixes
 
 
 // BG1EE fixes
+
+// Item resource fixes
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
     SAY NAME1 @1085    SAY NAME2 @1099
@@ -345,6 +347,8 @@ END
 
 
 // EET fixes
+
+// Item resource fixes
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) BEGIN
     COPY_EXISTING ~helm15.itm~ ~override/helm15_.itm~
@@ -372,27 +376,6 @@ END
 
 // Non-EE fixes
 
-// BG1 fixes
-ACTION_IF (GAME_IS ~tutu tutu_totsc~ AND NOT GAME_IS ~bg2 tob bgt bgee bg2ee eet~) BEGIN
-  COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
-    SAY NAME1 @1085    SAY NAME2 @1099
-    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
-  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
-    SAY NAME1 @4004
-  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
-    SAY NAME1 @1780    SAY NAME2 @1780
-    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
-  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane
-    SAY NAME1 @1920    SAY NAME2 @1929
-    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
-  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
-    SAY NAME1 @1760    SAY NAME2 @2426
-    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor
-    SAY NAME1 @1636    SAY NAME2 @2573
-    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
-END
-
 // Invalid opcodes fix
 ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
   COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override // remove spellstates
@@ -419,7 +402,37 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
 END
 
 
+// BG1 fixes
+
+// Item resource fixes
+ACTION_IF (GAME_IS ~tutu tutu_totsc~ AND NOT GAME_IS ~bg2 tob bgt bgee bg2ee eet~) BEGIN
+  COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
+    SAY NAME1 @1085    SAY NAME2 @1099
+    SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
+  COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
+    SAY NAME1 @4004
+  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
+    SAY NAME1 @1780    SAY NAME2 @1780
+    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
+  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane
+    SAY NAME1 @1920    SAY NAME2 @1929
+    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
+  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
+    SAY NAME1 @1760    SAY NAME2 @2426
+    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
+  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor
+    SAY NAME1 @1636    SAY NAME2 @2573
+    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
+END
+
+
 // All games
+
+// BG2 broken areas fix
+ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
+  COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
+  COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
+END
 
 // Fixes for other mods
 ACTION_IF (FILE_EXISTS_IN_GAME ~X#RINGRO.itm~) BEGIN // BG1 NPC Project Ring of Human Influence fix
@@ -428,16 +441,9 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~X#RINGRO.itm~) BEGIN // BG1 NPC Project Ring of 
   END
 END
 
-// BG2 broken areas fix
-ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
-  COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
-  COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
-END
-
 // Stacking fixes
 
-// Rings and Gems
-ACTION_FOR_EACH resource IN
+ACTION_FOR_EACH resource IN // Rings and Gems
   ~misc6o~   // Sun Gem
   ~misc6n~   // Sun Gem
   ~ringjoia~ // Joia's Flamedance Ring
@@ -466,8 +472,7 @@ BEGIN
   END
 END
 
-// Scrolls
-ACTION_FOR_EACH resource IN
+ACTION_FOR_EACH resource IN // Scrolls
   ~bgscrl3i~ // Mirianne's Scroll
   ~scrl2j~   // Gorion's Letter
   ~scrl2k~   // Slythe's Letter
@@ -1421,7 +1426,6 @@ END
 
 INCLUDE ~item_rev/components/main/1pp.tpa~
 
-
 // Short bows fix
 ACTION_IF (FILE_EXISTS_IN_GAME ~wplbsg1.bam~) BEGIN
   COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
@@ -1467,7 +1471,6 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wqls0a1.bam~) BEGIN
     END
   END
 END
-
 
 // Flame swords fix
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqlfsa1.bam~) BEGIN
@@ -1814,6 +1817,74 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wplq2g1.bam~) BEGIN // Q2
       END
     END
   END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf02.itm~) BEGIN
+COPY_EXISTING ~staf02.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q2~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf05.itm~) BEGIN
+COPY_EXISTING ~staf05.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q2~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08.itm~) BEGIN
+COPY_EXISTING ~staf08.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q2~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf12.itm~) BEGIN
+COPY_EXISTING ~staf12.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q2~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf24.itm~) BEGIN
+COPY_EXISTING ~staf24.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISTAF24~
+    WRITE_LONG  0x7A 0
+    WRITE_ASCII 0x76 ~ISTAF24~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 198	// colour index
+    SET location = wpink		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 216	// colour index
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 208	// colour index
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 254	// colour index
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 254	// colour index
+    SET location = wred		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~wplq3g1.bam~) BEGIN // Q3
@@ -1830,6 +1901,94 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wplq3g1.bam~) BEGIN // Q3
         WRITE_ASCII 0x22 ~Q3~ // animation type
       END
     END
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf14.itm~) BEGIN
+COPY_EXISTING ~staf14.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf18.itm~) BEGIN
+COPY_EXISTING ~staf18.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf19.itm~) BEGIN
+COPY_EXISTING ~staf19.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 209	// colour index
+    SET location = wpink		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 208	// colour index
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 202	// colour index
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 244	// colour index
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 202	// colour index
+    SET location = wred		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET setr = 0
+    SET setg = 0
+    SET setb = 0
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~glow~
+    SET setr = 0
+    SET setg = 0
+    SET setb = 0
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~glow~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf20.itm~) BEGIN
+COPY_EXISTING ~staf20.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISTAF20~
+    WRITE_LONG  0x7A 0
+    WRITE_ASCII 0x76 ~ISTAF20~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf23.itm~) BEGIN
+COPY_EXISTING ~staf23.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~misc5t.itm~) BEGIN
+COPY_EXISTING ~misc5t.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
   END
 END
 
@@ -1848,6 +2007,72 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wplq4g1.bam~) BEGIN // Q4
       END
     END
   END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf09.itm~) BEGIN
+COPY_EXISTING ~staf09.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q4~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf10.itm~) BEGIN
+COPY_EXISTING ~staf10.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q4~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 195	// colour index
+    SET location = wpink		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 100	// colour index
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 202	// colour index
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 96	// colour index
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 96	// colour index
+    SET location = wred		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf13.itm~) BEGIN
+COPY_EXISTING ~staf13.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q4~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf15.itm~) BEGIN
+COPY_EXISTING ~staf15.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q4~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf17.itm~) BEGIN
+COPY_EXISTING ~staf17.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~Q4~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~wplgsg1.bam~) BEGIN // GS
@@ -1863,6 +2088,113 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wplgsg1.bam~) BEGIN // GS
 		WRITE_ASCII 0x44 ~1GSTAFGS~
       END
     END
+  END
+  
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf11.itm~) BEGIN
+COPY_EXISTING ~staf11.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~GS~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~1GSTAFGS~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 127	// colour index
+    SET location = wpink		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 207	// colour index
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 192	// colour index
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET setr = 0
+    SET setg = 0
+    SET setb = 0
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~glow~
+    SET gradient = 250	// colour index
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 220	// colour index
+    SET location = wred		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf21.itm~) BEGIN
+COPY_EXISTING ~staf21.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~GS~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~1GSTAFGS~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 220	// colour index
+    SET location = wpink		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 225	// colour index
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 232	// colour index
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET setr = 0
+    SET setg = 0
+    SET setb = 0
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~glow~
+    SET gradient = 239	// colour index
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 240	// colour index
+    SET location = wred		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~staf22.itm~) BEGIN
+COPY_EXISTING ~staf22.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~GS~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~1GSTAFGS~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISTAF22~
+    WRITE_LONG  0x7A 0
+    WRITE_ASCII 0x76 ~ISTAF22~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 220	// colour index
+    SET location = wpink		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 207	// colour index
+    SET location = wteal		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 248	// colour index
+    SET location = wgrey		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET setr = 0
+    SET setg = 0
+    SET setb = 0
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~glow~
+    SET setr = 30
+    SET setg = 30
+    SET setb = 20
+    SET speed = 0x19
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~pulse~
+    SET gradient = 224	// colour index
+    SET location = wblue		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 240	// colour index
+    SET location = wred		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
   END
 END
 
@@ -3608,7 +3940,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
 
 END // C7 shields
-
 
 // Projectiles fixes
 
