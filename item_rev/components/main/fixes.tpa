@@ -1860,6 +1860,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wplgsg1.bam~) BEGIN // GS
       COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
       PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
         WRITE_ASCII 0x22 ~GS~ // animation type
+		WRITE_ASCII 0x44 ~1GSTAFGS~
       END
     END
   END
@@ -1867,10 +1868,10 @@ END
 
 // Helms fix (default style)
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj0a1.bam~) BEGIN // J0 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj0a1.bam~) BEGIN // J0 helms (equivalent to H0), open-faced and plain
 END // J0 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj1a1.bam~) BEGIN // J1 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj1a1.bam~) BEGIN // J1 helms (equivalent to H1), open-faced and wide horns
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm04.itm~) BEGIN
 COPY_EXISTING ~helm04.itm~ ~override~
@@ -1904,7 +1905,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J1 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj2a1.bam~) BEGIN // J2 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj2a1.bam~) BEGIN // J2 helms (equivalent to H2), open-faced, spike, and wings
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm21.itm~) BEGIN
 COPY_EXISTING ~helm21.itm~ ~override~
@@ -1990,7 +1991,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J2 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj3a1.bam~) BEGIN // J3 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj3a1.bam~) BEGIN // J3 helms (equivalent to H3), closed-faced and curling horns
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm02.itm~) BEGIN
 COPY_EXISTING ~helm02.itm~ ~override~
@@ -2162,31 +2163,31 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J3 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj4a1.bam~) BEGIN // J4 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj4a1.bam~) BEGIN // J4 helms (equivalent to H4), open-faced, horns, and tail
 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm13.itm~) BEGIN
-COPY_EXISTING ~helm13.itm~ ~override~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm11.itm~) BEGIN
+COPY_EXISTING ~helm11.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~J4~
     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~1HELM10~
+    WRITE_ASCII 0x3A ~1HELM06~
     WRITE_LONG  0x5C 0
     WRITE_ASCII 0x58 ~CHELM05~
   LAUNCH_PATCH_MACRO ~clear~
-  SET gradient = 248    // colour index
+  SET gradient = 226    // colour index
   SET location = hgrey    // location
   LAUNCH_PATCH_MACRO ~colour~
   SET gradient = 102  // colour index
   SET location = hblue    // location
   LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 210  // colour index
+  SET gradient = 102  // colour index
   SET location = hred    // location
   LAUNCH_PATCH_MACRO ~colour~
   PATCH_IF (%pcolour% = 2 || %pcolour% = 3) BEGIN
-  SET gradient = 195    // colour index
+  SET gradient = 98    // colour index
   SET location = hpink    // location
   LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 0    // colour index
+  SET gradient = 102    // colour index
   SET location = hteal    // location
   LAUNCH_PATCH_MACRO ~colour~
   END
@@ -2226,19 +2227,50 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J4 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj5a1.bam~) BEGIN // J5 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj5a1.bam~) BEGIN // J5 helms (equivalent to H5), open-faced and roman
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm13.itm~) BEGIN
+COPY_EXISTING ~helm13.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~J5~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1HELM12~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CHELM05~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 248    // colour index
+  SET location = hgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 102  // colour index
+  SET location = hblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 210  // colour index
+  SET location = hred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 195    // colour index
+  SET location = hpink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 0    // colour index
+  SET location = hteal    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
 END // J5 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj6a1.bam~) BEGIN // J6 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj6a1.bam~) BEGIN // J6 helms (equivalent to H6), open-faced and long spikes
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm01.itm~) BEGIN
 COPY_EXISTING ~helm01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~J6~
     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~1HELM01~
+    WRITE_ASCII 0x3A ~1HELM08~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CHELM01~
+    WRITE_ASCII 0x58 ~1CHELM01~
   LAUNCH_PATCH_MACRO ~clear~
   SET gradient = 14    // colour index
   SET location = hgrey    // location
@@ -2261,39 +2293,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm11.itm~) BEGIN
-COPY_EXISTING ~helm11.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~J6~
-    WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~1HELM08~
-    WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~1CHELM01~
-  LAUNCH_PATCH_MACRO ~clear~
-  SET gradient = 226    // colour index
-  SET location = hgrey    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 102  // colour index
-  SET location = hblue    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 102  // colour index
-  SET location = hred    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  PATCH_IF (%pcolour% = 2 || %pcolour% = 3) BEGIN
-  SET gradient = 98    // colour index
-  SET location = hpink    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 102    // colour index
-  SET location = hteal    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  END
-  END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-
 END // J6 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj7a1.bam~) BEGIN // J7 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj7a1.bam~) BEGIN // J7 helms, open-faced and long horns
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm07.itm~) BEGIN
 COPY_EXISTING ~helm07.itm~ ~override~
@@ -2355,7 +2357,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J7 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj8a1.bam~) BEGIN // J8 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj8a1.bam~) BEGIN // J8 helms, open-faced and wings
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm03.itm~) BEGIN
 COPY_EXISTING ~helm03.itm~ ~override~
@@ -2419,7 +2421,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J8 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj9a1.bam~) BEGIN // J9 helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqlj9a1.bam~) BEGIN // J9 helms, closed-faced, pointy horns, and tail
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm09.itm~) BEGIN
 COPY_EXISTING ~helm09.itm~ ~override~
@@ -2453,7 +2455,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // J9 helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqljaa1.bam~) BEGIN // JA helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqljaa1.bam~) BEGIN // JA helms, closed-faced, wide wings, and tail
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm05.itm~) BEGIN
 COPY_EXISTING ~helm05.itm~ ~override~
@@ -2547,10 +2549,10 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
 END // JA helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqljba1.bam~) BEGIN // JB helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqljba1.bam~) BEGIN // JB helms, headband
 END // JB helms
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~wqljca1.bam~) BEGIN // JC helms
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqljca1.bam~) BEGIN // JC helms, open-faced and wide wings
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm12.itm~) BEGIN
 COPY_EXISTING ~helm12.itm~ ~override~
