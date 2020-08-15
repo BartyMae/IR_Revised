@@ -2170,9 +2170,9 @@ COPY_EXISTING ~helm11.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~J4~
     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~1HELM06~
+    WRITE_ASCII 0x3A ~1HELM10~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CHELM05~
+    WRITE_ASCII 0x58 ~1CHELM17~
   LAUNCH_PATCH_MACRO ~clear~
   SET gradient = 226    // colour index
   SET location = hgrey    // location
@@ -2244,7 +2244,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   SET gradient = 102  // colour index
   SET location = hblue    // location
   LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 210  // colour index
+  SET gradient = 102  // colour index
   SET location = hred    // location
   LAUNCH_PATCH_MACRO ~colour~
   PATCH_IF (%pcolour% = 2 || %pcolour% = 3) BEGIN
