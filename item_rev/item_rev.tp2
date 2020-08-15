@@ -5,7 +5,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.151)~
+VERSION ~V4 Beta 10 (Revised V1.3.152)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -65,6 +65,9 @@ LOAD_TRA ~item_rev/languages/english/potion_descriptions.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/item_descriptions.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/item_upgrades.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/potion_descriptions.tra~
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+  LOAD_TRA ~item_rev/languages/%LANGUAGE%/enhanced_editions.tra~
+END
 INCLUDE ~item_rev/components/main_component.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -222,6 +225,9 @@ REQUIRE_PREDICATE (NOT FILE_EXISTS_IN_GAME ~cdt02160.g3~
 
 LOAD_TRA ~item_rev/languages/english/proficiencies.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/proficiencies.tra~
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+  LOAD_TRA ~item_rev/languages/%LANGUAGE%/enhanced_editions.tra~
+END
 INCLUDE ~item_rev/components/weapon_changes.tpa~
 
 
