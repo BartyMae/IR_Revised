@@ -448,7 +448,7 @@ END
 /////////////////////////////////////
 
 // Replace Boots of Stealth with Ring of Night's Embrace in Shadow Thieves Guildhouse
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   COPY_EXISTING ~ar0303.are~ ~override~ // Shadow Thieves Guildhouse
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~boot02~ new_item = ~ring21~ END
@@ -557,8 +557,8 @@ END
 // SHLD19 (Large Shield +2) -> SHLD30
 // SW1H09 (Short Sword +2) -> SW1H29
 
-//Replace bad copies of Battle Axe +2
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+// Replace bad copies of Battle Axe +2
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   COPY_EXISTING ~ar0420.are~ ~override~ // Planer Sphere
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ax1h03~ new_item = ~ax1h11~ END
@@ -574,7 +574,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sengua04.cre~) BEGIN
 END
 
 // Replace bad copies of Flail
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar0602.are~) BEGIN
     COPY_EXISTING ~ar0602.are~ ~override~ // Irenicus' Dungeon
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -584,7 +584,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
 	END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~xr0602.are~) BEGIN
     COPY_EXISTING ~xr0602.are~ ~override~ // Irenicus' Dungeon #2
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -615,7 +615,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~brainwa5.cre~) BEGIN // BG1
   END BUT_ONLY
 END
 
-//Replace bad copies of Dagger +2
+// Replace bad copies of Dagger +2
 ACTION_IF (FILE_EXISTS_IN_GAME ~VAELASA.cre~) BEGIN
   COPY_EXISTING VAELASA.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg15~
@@ -638,7 +638,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~marek.cre~) BEGIN // BG1
   BUT_ONLY
 END
 
-//Replace bad copies of Full Plate Mail +1
+// Replace bad copies of Full Plate Mail +1
 ACTION_IF (FILE_EXISTS_IN_GAME ~gromg10.cre~) BEGIN
   COPY_EXISTING gromg10.cre override
 			    deckwar1.cre override
@@ -648,7 +648,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~gromg10.cre~) BEGIN
   BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~sarevo2.cre~) BEGIN // BG1
     COPY_EXISTING ~knight4.cre~ ~override~
                   ~deathk.cre~ ~override~
@@ -661,7 +661,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   END
 END
 
-//Replace bad copies of Large Shield +2
+// Replace bad copies of Large Shield +2
 ACTION_IF (FILE_EXISTS_IN_GAME ~chak.cre~) BEGIN
   COPY_EXISTING chak.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~shld19~ ~shld30~
@@ -669,8 +669,8 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~chak.cre~) BEGIN
   BUT_ONLY
 END
 
-//Replace bad copies of Short Sword +2
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+// Replace bad copies of Short Sword +2
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar0303.are~) BEGIN
     COPY_EXISTING ~ar0303.are~ ~override~ // Mae'var's Guildhouse
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -680,7 +680,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar2210.are~) BEGIN
     COPY_EXISTING ~ar2210.are~ ~override~ // ?
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -797,7 +797,7 @@ END
 
 /////////////////////////////////////
 
-//Various fixes
+// Various fixes
 
 // Elminster fixes
 ACTION_IF (FILE_EXISTS_IN_GAME ~amelm01.cre~) BEGIN
@@ -831,6 +831,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~jatermin.cre~) BEGIN
 END
 
 // Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
+ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
 ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
   COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -838,8 +839,10 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
     END
     BUT_ONLY
 END
+END
 
 // Place Telbar's Armor +2 on Sendai in BG1
+ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
 ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
   COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~leat07~
@@ -847,6 +850,29 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
 	ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
   END
   BUT_ONLY
+END
+END
+
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BGEE
+ACTION_IF (FILE_EXISTS_IN_GAME ~sendai.cre~) BEGIN
+  COPY_EXISTING sendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~leat07~
+	REMOVE_CRE_ITEM ~leat07_~
+	ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+END
+
+ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
+ACTION_IF (FILE_EXISTS_IN_GAME ~sendai_.cre~) BEGIN
+  COPY_EXISTING bgsendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~leat07~
+	REMOVE_CRE_ITEM ~leat07_~
+	ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
 END
 
 // Place Fallorain's Plate +1 on Genthore in BG1
@@ -870,19 +896,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
-    COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BG1)
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
-	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar6800.are~) BEGIN
     COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BGT)
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -894,7 +908,19 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
+    COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BGEE)
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
+	  LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~bg2300.are~) BEGIN
     COPY_EXISTING ~bg2300.are~ ~override~ // Friendly Arm Inn (EET)
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -907,17 +933,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
 END
 
 // Place Ankheg Plate Mail +1 in BG1
-ACTION_IF (FILE_EXISTS_IN_GAME ~shista.cre~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN // Nashkel (BG1)
-    COPY_EXISTING ~ar4800.are~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN // Nashkel (BGT)
     COPY_EXISTING ~ar3700.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -927,7 +943,17 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN // Nashkel (BG1)
+    COPY_EXISTING ~ar4800.are~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
+    END
+    BUT_ONLY
+  END
+END
+
+ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~bg4800.are~) BEGIN // Nashkel (EET)
     COPY_EXISTING ~bg4800.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -947,7 +973,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~taerom.dlg~) BEGIN
 END
 
 // Replace Spellhold's bad copy of Ray of Enfeeblement with good copy
-ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar1513.are~) BEGIN
     COPY_EXISTING ~ar1513.are~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
