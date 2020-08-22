@@ -866,7 +866,7 @@ END
 
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
 ACTION_IF (FILE_EXISTS_IN_GAME ~sendai_.cre~) BEGIN
-  COPY_EXISTING bgsendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+  COPY_EXISTING sendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~leat07~
 	REMOVE_CRE_ITEM ~leat07_~
 	ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
