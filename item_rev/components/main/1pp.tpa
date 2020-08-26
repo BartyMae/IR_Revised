@@ -676,7 +676,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun12.itm~) BEGIN
 COPY_EXISTING ~blun12.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~M2~
+    // WRITE_ASCII 0x22 ~M2~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN01~
     // WRITE_LONG  0x7A 0
@@ -704,7 +704,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun13.itm~) BEGIN
 COPY_EXISTING ~blun13.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F0~
+    // WRITE_ASCII 0x22 ~F0~
      WRITE_LONG  0x3E 0
      WRITE_ASCII 0x3A ~IBLUN13B~
      WRITE_LONG  0x7A 0
@@ -726,11 +726,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14.itm~) BEGIN
 COPY_EXISTING ~blun14.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F3~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -757,11 +753,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14d.itm~) BEGIN
 COPY_EXISTING ~blun14d.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F1~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F1~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 243	// colour index
     SET location = wgrey		// location
@@ -779,11 +771,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14e.itm~) BEGIN
 COPY_EXISTING ~blun14e.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F1~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F1~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 252	// colour index
     SET location = wgrey		// location
@@ -801,11 +789,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14f.itm~) BEGIN
 COPY_EXISTING ~blun14f.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F1~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F1~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246	// colour index
     SET location = wgrey		// location
@@ -823,11 +807,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14g.itm~) BEGIN
 COPY_EXISTING ~blun14g.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F0~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246	// colour index
     SET location = wgrey		// location
@@ -845,11 +825,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14h.itm~) BEGIN
 COPY_EXISTING ~blun14h.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F0~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246	// colour index
     SET location = wgrey		// location
@@ -867,11 +843,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14i.itm~) BEGIN
 COPY_EXISTING ~blun14i.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F0~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246	// colour index
     SET location = wgrey		// location
@@ -910,7 +882,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun18.itm~) BEGIN
 COPY_EXISTING ~blun18.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-WRITE_ASCII 0x22 ~M2~
+    // WRITE_ASCII 0x22 ~M2~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN01~
     // WRITE_LONG  0x7A 0
@@ -932,7 +904,7 @@ WRITE_ASCII 0x22 ~M2~
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun19.itm~) BEGIN
 COPY_EXISTING ~blun19.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-// WRITE_ASCII 0x22 ~M2~
+    // WRITE_ASCII 0x22 ~M2~
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~IBLUN11~
     WRITE_LONG  0x7A 0
@@ -954,7 +926,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun20.itm~) BEGIN
 COPY_EXISTING ~blun20.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-   WRITE_ASCII 0x22 ~M2~
+    // WRITE_ASCII 0x22 ~M2~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN11~
     // WRITE_LONG  0x7A 0
@@ -976,7 +948,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun22.itm~) BEGIN
 COPY_EXISTING ~blun22.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-   WRITE_ASCII 0x22 ~MS~
+    // WRITE_ASCII 0x22 ~MS~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN11~
     // WRITE_LONG  0x7A 0
@@ -998,7 +970,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun23.itm~) BEGIN
 COPY_EXISTING ~blun23.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-   // WRITE_ASCII 0x22 ~MS~
+    // WRITE_ASCII 0x22 ~MS~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN11~
     // WRITE_LONG  0x7A 0
@@ -1023,7 +995,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun24.itm~) BEGIN
 COPY_EXISTING ~blun24.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-   // WRITE_ASCII 0x22 ~MS~
+    // WRITE_ASCII 0x22 ~MS~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN11~
     // WRITE_LONG  0x7A 0
@@ -1048,7 +1020,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun25.itm~) BEGIN
 COPY_EXISTING ~blun25.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~M2~
+    // WRITE_ASCII 0x22 ~M2~
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~IBLUN12~
     WRITE_LONG  0x7A 0
@@ -1076,7 +1048,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun26.itm~) BEGIN
 COPY_EXISTING ~blun26.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-   // WRITE_ASCII 0x22 ~MS~
+    // WRITE_ASCII 0x22 ~MS~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN11~
     // WRITE_LONG  0x7A 0
@@ -1101,7 +1073,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun27.itm~) BEGIN
 COPY_EXISTING ~blun27.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-   // WRITE_ASCII 0x22 ~MS~
+    // WRITE_ASCII 0x22 ~MS~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~IBLUN11~
     // WRITE_LONG  0x7A 0
@@ -1125,12 +1097,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun30.itm~) BEGIN
 COPY_EXISTING ~blun30.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F3~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -1157,11 +1124,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun30c.itm~) BEGIN
 COPY_EXISTING ~blun30c.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F3~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -1188,11 +1151,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun30d.itm~) BEGIN
 COPY_EXISTING ~blun30d.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F3~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -1219,11 +1178,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~dwblun01.itm~) BEGIN
 COPY_EXISTING ~dwblun01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F0~
-     // WRITE_LONG  0x3E 0
-     // WRITE_ASCII 0x3A ~IBLUN13B~
-     // WRITE_LONG  0x7A 0
-     // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 218	// colour index
     SET location = wgrey		// location
@@ -1241,7 +1196,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~waflail.itm~) BEGIN // originally blun16, but it overwrote the description and erroneously turned it into a flail - better to use on waflail instead
 COPY_EXISTING ~waflail.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~F0~
+    // WRITE_ASCII 0x22 ~F0~
     WRITE_LONG  0x50 0x1a32
     WRITE_LONG  0x8 0x1a30
     WRITE_SHORT  0x1c 0x17
@@ -1341,9 +1296,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow05.itm~) BEGIN
 COPY_EXISTING ~bow05.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 13	// colour index
     SET location = wgrey		// location
@@ -1361,9 +1316,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow06.itm~) BEGIN
 COPY_EXISTING ~bow06.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~IBOW06~
     WRITE_LONG  0x7A 0
@@ -1403,9 +1358,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow08.itm~) BEGIN
 COPY_EXISTING ~bow08.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 248	// colour index
     SET location = wgrey		// location
@@ -1513,9 +1468,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow14.itm~) BEGIN
 COPY_EXISTING ~bow14.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 247	// colour index
     SET location = wgrey		// location
@@ -1533,9 +1488,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow15.itm~) BEGIN
 COPY_EXISTING ~bow15.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 6	// colour index
     SET location = wgrey		// location
@@ -1589,9 +1544,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow18.itm~) BEGIN
 COPY_EXISTING ~bow18.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 6	// colour index
     SET location = wgrey		// location
@@ -1609,9 +1564,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow19.itm~) BEGIN
 COPY_EXISTING ~bow19.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 226	// colour index
     SET location = wgrey		// location
@@ -1629,9 +1584,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow20.itm~) BEGIN
 COPY_EXISTING ~bow20.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 6	// colour index
     SET location = wgrey		// location
@@ -1649,9 +1604,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow21.itm~) BEGIN
 COPY_EXISTING ~bow21.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 6	// colour index
     SET location = wgrey		// location
@@ -1737,9 +1692,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~bow26.itm~) BEGIN
 COPY_EXISTING ~bow26.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~BS~
+    // WRITE_ASCII 0x22 ~BS~
     WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBOW02~
+    // WRITE_ASCII 0x44 ~GBOW02~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 6	// colour index
     SET location = wgrey		// location
@@ -5321,7 +5276,7 @@ END
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h01.itm~) BEGIN
 COPY_EXISTING ~sw1h01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5341,7 +5296,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h02.itm~) BEGIN
 COPY_EXISTING ~sw1h02.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5361,7 +5316,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h03.itm~) BEGIN
 COPY_EXISTING ~sw1h03.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5557,7 +5512,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h18.itm~) BEGIN
 COPY_EXISTING ~sw1h18.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5775,7 +5730,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h34.itm~) BEGIN // Swap Albruin and Daystar back
 COPY_EXISTING ~sw1h34.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5813,7 +5768,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h37.itm~) BEGIN
 COPY_EXISTING ~sw1h37.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5834,7 +5789,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h38.itm~) BEGIN
 COPY_EXISTING ~sw1h38.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5854,7 +5809,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h39.itm~) BEGIN
 COPY_EXISTING ~sw1h39.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -5899,7 +5854,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h42.itm~) BEGIN
 COPY_EXISTING ~sw1h42.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -6124,7 +6079,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h62.itm~) BEGIN
 COPY_EXISTING ~sw1h62.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -6144,7 +6099,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h63.itm~) BEGIN
 COPY_EXISTING ~sw1h63.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -6164,7 +6119,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h64.itm~) BEGIN
 COPY_EXISTING ~sw1h64.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -6190,7 +6145,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.itm~) BEGIN
 COPY_EXISTING ~sw1h65.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -6236,7 +6191,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h72.itm~) BEGIN
 COPY_EXISTING ~sw1h72.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~S0~
+    // WRITE_ASCII 0x22 ~S0~
     // WRITE_LONG  0x3E 0
     // WRITE_ASCII 0x3A ~~
     LAUNCH_PATCH_MACRO ~clear~
@@ -6473,7 +6428,7 @@ END
   ACTION_IF (FILE_EXISTS_IN_GAME ~miscbc.itm~) BEGIN
 COPY_EXISTING ~miscbc.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-    WRITE_ASCII 0x22 ~FS~
+    // WRITE_ASCII 0x22 ~FS~
   END
   BUT_ONLY_IF_IT_CHANGES
 END
@@ -6481,7 +6436,7 @@ END
   ACTION_IF (FILE_EXISTS_IN_GAME ~npsw06.itm~) BEGIN
 COPY_EXISTING ~npsw06.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-  WRITE_ASCII 0x22 ~F2~
+    // WRITE_ASCII 0x22 ~F2~
 LAUNCH_PATCH_MACRO ~clear~
 SET gradient = 99		// colour index
 SET location = wgrey		// location
@@ -6503,7 +6458,7 @@ END
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.itm~) BEGIN
 COPY_EXISTING ~sw1h27.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-  WRITE_ASCII 0x22 ~F2~
+    // WRITE_ASCII 0x22 ~F2~
 LAUNCH_PATCH_MACRO ~clear~
 SET gradient = 250		// colour index
 SET location = wgrey		// location
@@ -6525,7 +6480,7 @@ END
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h39.itm~) BEGIN
 COPY_EXISTING ~sw1h39.itm~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-    WRITE_ASCII 0x22 ~FS~
+    // WRITE_ASCII 0x22 ~FS~
 LAUNCH_PATCH_MACRO ~clear~
 SET gradient = 27		// colour index
 SET location = wgrey		// location

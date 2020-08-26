@@ -1444,6 +1444,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wplbsg1.bam~) BEGIN
       COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
       PATCH_IF (SOURCE_SIZE > 0x71) BEGIN 
         WRITE_ASCII 0x22 ~BW~
+		WRITE_ASCII 0x44 ~GBOW02~
       END
     END
   END
