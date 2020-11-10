@@ -663,11 +663,10 @@ COPY ~%source%/RING_OF_SPELL_TURNING.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/RING_OF_KANGAXX.tpa
-  COPY ~item_rev/itm/ring39a.spl~ ~override~ // Larloch's Minor Drain
+  COPY ~item_rev/itm/ring39a.spl~ ~override~ // Energy Drain
     SAY NAME1 @4046
   COPY ~item_rev/itm/ring39b.spl~ ~override~
-  COPY ~item_rev/itm/ring39a.eff~ ~override~
-  COPY ~item_rev/itm/ring39c.spl~ ~override~ // Finger of Death
+  COPY ~item_rev/itm/ring39i.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/RING_OF_KANGAXX.tpa~ ~%target%~
 

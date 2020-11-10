@@ -7332,8 +7332,7 @@ Usable By:
 STATISTICS:
 
 Special Abilities:
- Larloch's Minor Drain (3x per day)
- Finger of Death (1x per day)
+ Energy Drain (1x per day)
 
 Equipped Abilities:
  Armor Class: +2 bonus
@@ -13743,8 +13742,8 @@ Usable By:
 @4043 = ~Charm Person~
 @4044 = ~Battering Ram~
 @4045 = ~Spell Turning~
-@4046 = ~Larloch's Minor Drain~
-@4047 = ~Finger of Death~
+@4046 = ~Energy Drain
+@4047 = ~Unused~
 @4048 = ~Terrify~
 @4049 = ~Paralyze~
 @4050 = ~Drain Life~

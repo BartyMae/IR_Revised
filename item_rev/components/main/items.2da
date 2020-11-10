@@ -576,7 +576,7 @@ RING_OF_THE_BURGLAR                        RING     ring35   1        1        0
 RING_OF_DANGER_SENSE                       RING     ring36   1        1        0        0        1        1        @1800    @1901    @1802    @1902    *        *        *        *
 STORM_RING                                 RING     ring37   1        1        0        0        1        1        @2487    @2487    @2488    @2488    *        *        *        * 
 DAWN_RING                                  RING     ring38   1        1        0        0        1        1        @2489    @2489    @2490    @2490    *        *        *        * 
-RING_OF_KANGAXX                            RING     ring39   1        1        0        0        1        1        @1800    @1903    @1802    @1904    @4046    @4047    *        * 
+RING_OF_KANGAXX                            RING     ring39   1        1        0        0        1        1        @1800    @1903    @1802    @1904    @4046    *        *        * 
 RING_OF_ACUITY                             RING     ring40   1        1        0        1        1        1        @1800    @1905    @1802    @1906    *        *        *        *
 RING_OF_PROTECTION_3                       RING     ring41   1        1        0        0        1        1        @1800    @1907    @1802    @1908    *        *        *        *
 RING_OF_THE_WRAITH                         RING     ring42   1        1        0        0        1        1        @1800    @1909    @1802    @1910    @4085    *        *        *
