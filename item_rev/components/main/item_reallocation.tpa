@@ -458,10 +458,16 @@ END
 
 /////////////////////////////////////
 
-// Add Horn of Kazgaroth to Deril (Demi Lich form) to match ARP
+// Remove Horn of Kazgaroth from Deril (lich form) for ARP, put on Lagole Gon
 ACTION_IF (FILE_EXISTS_IN_GAME ~cedelich.cre~) BEGIN
   COPY_EXISTING cedelich.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM misc73 // Remove duplicate
+    END
+	BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~celich.cre~) BEGIN
+  COPY_EXISTING celich.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
 	  ADD_CRE_ITEM misc73 #1 #0 #0 NONE INV
     END
 	BUT_ONLY
