@@ -115,21 +115,10 @@ COPY ~%source%/GIRDLE_OF_TROLLISH_FORTITUDE.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/BELT_OF_INERTIAL_BARRIER.tpa
-  ADD_SECTYPE ~belt10~ ~~
   COPY ~item_rev/itm/belt10.spl~ ~override~ // Inertial Barrier
   ADD_PROJECTILE ~item_rev/itm/belt10.pro~
   COPY ~item_rev/itm/belt10a.spl~ ~override~
     WRITE_SHORT 0x98 %belt10%
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-    opcode			= 221
-    target			= 2
-    power			= 1
-    savingthrow     = 0
-    parameter1		= 9
-    parameter2		= EVALUATE_BUFFER %belt10%
-    timing			= 1
-    insert_point    = 1
   END
   COPY ~item_rev/itm/belt10.eff~ ~override~
 >>>>>>>>
@@ -717,22 +706,10 @@ COPY ~%source%/ROD_OF_ABSORPTION.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/SHIELD_OF_THE_FALLING_STARS_2.tpa
-  ADD_SECTYPE ~dvshld07~ ~~
   ADD_PROJECTILE ~item_rev/itm/shld07.pro~ // Shield Others
   COPY ~item_rev/itm/shld07.spl~ ~override~
   COPY ~item_rev/itm/shld07a.spl~ ~override~
-    WRITE_BYTE 0x27 "%dvshld07%"
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-    opcode			= 221
-    target			= 2
-    power			= 1
-    savingthrow     = 0
-    parameter1		= 9
-    parameter2		= EVALUATE_BUFFER %dvshld07%
-    timing			= 1
-    insert_point    = 1
-  END
+    WRITE_SHORT 0x98 %shld07%
   COPY ~item_rev/itm/shld07.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/SHIELD_OF_THE_FALLING_STARS_2.tpa~ ~%target%~
