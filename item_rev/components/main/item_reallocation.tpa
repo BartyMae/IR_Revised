@@ -76,7 +76,7 @@ END
 
 /////////////////////////////////////
 
-// Move Flame of the North from Ilithid Lair to Tazok
+// Move Flame of the North from Illithid Lair to Tazok
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~ppmind01.cre~) BEGIN
   COPY_EXISTING ppmind01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
