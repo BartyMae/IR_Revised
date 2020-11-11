@@ -750,7 +750,6 @@ COPY ~%source%/ERINNE_SLING_4.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_COMMAND_3.tpa
   ADD_PROJECTILE ~item_rev/itm/staf09.pro~ // Aura of Command
   COPY ~item_rev/itm/staf09.spl~ ~override~
-  COPY ~item_rev/itm/staf09a.spl~ ~override~
     WRITE_SHORT 0x98 %staf09%
   COPY ~item_rev/itm/staf09.eff~ ~override~
 
@@ -777,7 +776,8 @@ COPY ~%source%/STAFF_OF_COMMAND_3.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_CURING_1.tpa
   ADD_PROJECTILE ~item_rev/itm/staf10.pro~ // Healing Aura
   COPY ~item_rev/itm/staf10.spl~ ~override~
-    WRITE_SHORT 0x98 %staf10%
+  COPY ~item_rev/itm/staf10a.spl~ ~override~
+	WRITE_SHORT 0x98 %staf10%
   COPY ~item_rev/itm/staf10.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/STAFF_OF_CURING_1.tpa~ ~%target%~
