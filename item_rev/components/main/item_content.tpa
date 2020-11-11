@@ -576,6 +576,7 @@ COPY ~%source%/DELRYN_FAMILY_SHIELD_2.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/DOOMPLATE_3.tpa
   ADD_PROJECTILE ~item_rev/itm/plat12.pro~ // Aura of Despair
   COPY ~item_rev/itm/plat12.spl~ ~override~
+  COPY ~item_rev/itm/plat12a.spl~ ~override~
     WRITE_SHORT 0x98 %plat12%
   COPY ~item_rev/itm/plat12.eff~ ~override~
 >>>>>>>>
