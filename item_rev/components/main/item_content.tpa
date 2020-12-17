@@ -119,7 +119,6 @@ COPY ~%source%/GIRDLE_OF_TROLLISH_FORTITUDE.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/belt10.pro~
   COPY ~item_rev/itm/belt10a.spl~ ~override~
     WRITE_SHORT 0x98 %belt10%
-  END
   COPY ~item_rev/itm/belt10.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/BELT_OF_INERTIAL_BARRIER.tpa~ ~%target%~
