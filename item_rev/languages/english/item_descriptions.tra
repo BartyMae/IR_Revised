@@ -2451,12 +2451,30 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
+@1288000000 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
+
+STATISTICS:
+
+Armor Class: 5 (+1 bonus)
+Weight: 1
+Not Usable By:
+ Kensai
+ Wizard Slayer~
 @1289 = ~Bracers of Defense AC 4~
 @1290 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
 
 STATISTICS:
 
 Armor Class: 4
+Weight: 1
+Not Usable By:
+ Kensai
+ Wizard Slayer~
+@1290000000 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+
+STATISTICS:
+
+Armor Class: 4 (+1 bonus)
 Weight: 1
 Not Usable By:
  Kensai
@@ -2471,6 +2489,15 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
+@1292000000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+
+STATISTICS:
+
+Armor Class: 3 (+1 bonus)
+Weight: 1
+Not Usable By:
+ Kensai
+ Wizard Slayer~
 @1293 = ~Bracers of the Blinding Strike~
 @1294 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
@@ -2480,6 +2507,18 @@ Special Abilities:
  Whirlwind Attack (1x per day)
 
 Armor Class: 5
+Weight: 1
+Not Usable By:
+ Kensai
+ Wizard Slayer~
+@1294000000 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+
+STATISTICS:
+
+Special Abilities:
+ Whirlwind Attack (1x per day)
+
+Armor Class: 5 (+1 bonus)
 Weight: 1
 Not Usable By:
  Kensai
@@ -2633,6 +2672,24 @@ Equipped Abilities:
  Physical Resistance: +10% bonus
 
 Armor Class: 2
+Weight: 1
+Usable By:
+ True Fighter
+ Monk
+ Kensai~
+@1314000000 = ~Bands of the Master
+When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
+
+In the surviving teachings of the Kamjin-Doh of Kara-Tur, it is written that a true weapon master relies not on leather, chain, or plate, but on honing their skills so that they are never struck at all... and this means a weapon master must know their enemy's movements like the movements of their own hand. But such mastery lies in staying focused upon your enemy even in the heat of battle... and these simple leather armbands are intended to do just that. While worn, they exert a slight calming influence on the mind of the sword saint that wields them, heightening the warrior's perceptions and senses, and allowing them to read the movements of their opponents easier. On the rare occasion when an enemy strikes a sword saint, these bands allow the wielder to shrug off pain (which in the teachings of Kamjin-Doh are called "distractions") and keep the pain where it belongs - on one's opponent.
+
+If you wear these bands, never forget their purpose, never forget your focus, and never forget the reach of your enemy. Keep these three things in your heart, and they will serve you well in battle.
+
+STATISTICS:
+
+Equipped Abilities:
+ Physical Resistance: +10% bonus
+
+Armor Class: 2 (+2 bonus)
 Weight: 1
 Usable By:
  True Fighter
@@ -6302,6 +6359,16 @@ Equipped Abilities:
 
 Usable By:
  Edwin~
+@1780 = ~This is Edwin's birthright, inlaid with his family stone.
+
+STATISTICS:
+
+Equipped Abilities:
+ Saving Throws: +3 bonus vs. death
+ Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 9th
+
+Usable By:
+ Edwin~
 @1781 = ~This is Edwin's birthright, inlaid with his family stone.
 
 STATISTICS:
@@ -8147,7 +8214,7 @@ The Impaler has a palpable aura of magic that hints at the nature of the weapon 
 STATISTICS:
 
 Combat Abilities:
- Impaling: target suffers 1D10 piercing damage
+ Impaling: target suffers 1D10 piercing damage, 15% chance target dies (save vs. death neg.)
  Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3 bonus
