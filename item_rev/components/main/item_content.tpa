@@ -431,6 +431,10 @@ COPY ~%source%/JADE_HOUND_FIGURINE.tpa~ ~%target%~
   COPY ~item_rev/itm/bersersu.cre~ ~override~
     SAY NAME1 @4512   SAY NAME2 @4512
   COPY ~item_rev/itm/horn1.eff~ ~override~
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/bersersu.cre~ ~override~
+	  SAY NAME1 @4512   SAY NAME2 @4512
+  END
 >>>>>>>>
 COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
 
@@ -439,6 +443,10 @@ COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
   COPY ~item_rev/itm/berser02.cre~ ~override~
     SAY NAME1 @4514   SAY NAME2 @4514
   COPY ~item_rev/itm/horn2.eff~ ~override~
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/berser02.cre~ ~override~
+      SAY NAME1 @4514   SAY NAME2 @4514
+  END
 >>>>>>>>
 COPY ~%source%/BRONZE_HORN_OF_VALHALLA.tpa~ ~%target%~
 
@@ -447,6 +455,10 @@ COPY ~%source%/BRONZE_HORN_OF_VALHALLA.tpa~ ~%target%~
   COPY ~item_rev/itm/berser03.cre~ ~override~
     SAY NAME1 @4516   SAY NAME2 @4516
   COPY ~item_rev/itm/horn3.eff~ ~override~
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/berser03.cre~ ~override~
+      SAY NAME1 @4516   SAY NAME2 @4516
+  END
 >>>>>>>>
 COPY ~%source%/IRON_HORN_OF_VALHALLA.tpa~ ~%target%~
 
@@ -518,6 +530,10 @@ COPY ~%source%/EDWINS_AMULET.tpa~ ~%target%~
   COPY ~item_rev/itm/shakti.cre~ ~override~
     SAY NAME1 @4540   SAY NAME2 @4540
   COPY ~item_rev/itm/shakti.eff~ ~override~
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/shakti.cre~ ~override~
+    SAY NAME1 @4540   SAY NAME2 @4540
+  END
 >>>>>>>>
 COPY ~%source%/SHAKTI_WARRIOR_FIGURINE.tpa~ ~%target%~
 
@@ -1078,6 +1094,9 @@ COPY ~%source%/ARBANES_SWORD_2.tpa~ ~%target%~
   COPY ~item_rev/itm/sw1h33b.itm~ ~override~
     SAY NAME2 @2101
   COPY ~item_rev/itm/sword02.cre~ ~override~
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/sword02.cre~ ~override~
+  END
 >>>>>>>>
 COPY ~%source%/RAS_2.tpa~ ~%target%~
 
@@ -1136,6 +1155,9 @@ COPY ~%source%/YAMATO_3.tpa~ ~%target%~
   COPY ~item_rev/itm/sw1h68a.itm~ ~override~
     SAY NAME2 @2166
   COPY ~item_rev/itm/sword68.cre~ ~override~
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/sword68.cre~ ~override~
+  END
 >>>>>>>>
 COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
 
@@ -1146,6 +1168,9 @@ COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
   COPY ~item_rev/itm/sword69.cre~ ~override~
   COPY ~item_rev/itm/sw1h69.spl~ ~override~
     SAY NAME2 @4089
+  ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/sword69.cre~ ~override~
+  END
 >>>>>>>>
 COPY ~%source%/SPECTRAL_BRAND_5.tpa~ ~%target%~
 
