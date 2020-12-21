@@ -171,7 +171,7 @@ COPY ~%source%/BRACERS_OF_SPEED.tpa~ ~%target%~
   ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/brac13.itm~ ~override~
     SAY NAME1 @1267    SAY NAME2 @1287
-    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1288000000
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @128800000
   END
 >>>>>>>>
 COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
@@ -181,7 +181,7 @@ COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
   ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/brac14.itm~ ~override~
     SAY NAME1 @1267    SAY NAME2 @1289
-    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1290000000
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @129000000
   END
 >>>>>>>>
 COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
@@ -191,7 +191,7 @@ COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
   ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/brac15.itm~ ~override~
     SAY NAME1 @1267    SAY NAME2 @1291
-    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1292000000
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @129200000
   END
 >>>>>>>>
 COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
@@ -201,7 +201,7 @@ COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
   ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/brac16.itm~ ~override~
     SAY NAME1 @1267    SAY NAME2 @1293
-    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1294000000
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @129400000
   END
 >>>>>>>>
 COPY ~%source%/BRACERS_OF_THE_BLINDING_STRIKE.tpa~ ~%target%~
@@ -218,7 +218,7 @@ COPY ~%source%/BLESSED_BRACERS.tpa~ ~%target%~
   ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/brac26.itm~ ~override~
     SAY NAME1 @1267    SAY NAME2 @1289
-    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1314000000
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @131400000
   END
 >>>>>>>>
 COPY ~%source%/BANDS_OF_FOCUS.tpa~ ~%target%~
@@ -432,8 +432,10 @@ COPY ~%source%/JADE_HOUND_FIGURINE.tpa~ ~%target%~
     SAY NAME1 @4512   SAY NAME2 @4512
   COPY ~item_rev/itm/horn1.eff~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING misc3i.itm override
+      SAY IDENTIFIED_DESC @171700000
     COPY ~item_rev/components/main/alternatives/bersersu.cre~ ~override~
-	  SAY NAME1 @4512   SAY NAME2 @4512
+      SAY NAME1 @4512   SAY NAME2 @4512
   END
 >>>>>>>>
 COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
@@ -444,6 +446,8 @@ COPY ~%source%/SILVER_HORN_OF_VALHALLA.tpa~ ~%target%~
     SAY NAME1 @4514   SAY NAME2 @4514
   COPY ~item_rev/itm/horn2.eff~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING misc3j.itm override
+      SAY IDENTIFIED_DESC @171900000
     COPY ~item_rev/components/main/alternatives/berser02.cre~ ~override~
       SAY NAME1 @4514   SAY NAME2 @4514
   END
@@ -456,6 +460,8 @@ COPY ~%source%/BRONZE_HORN_OF_VALHALLA.tpa~ ~%target%~
     SAY NAME1 @4516   SAY NAME2 @4516
   COPY ~item_rev/itm/horn3.eff~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING misc3k.itm override
+      SAY IDENTIFIED_DESC @172100000
     COPY ~item_rev/components/main/alternatives/berser03.cre~ ~override~
       SAY NAME1 @4516   SAY NAME2 @4516
   END
@@ -467,7 +473,7 @@ COPY ~%source%/IRON_HORN_OF_VALHALLA.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/misc3l.pro~ // Silence
   COPY ~item_rev/itm/misc3l.spl~ ~override~
     WRITE_SHORT 0x98 %misc3l%
-	SAY NAME1 @4104
+    SAY NAME1 @4104
 >>>>>>>>
 COPY ~%source%/HORN_OF_SILENCE.tpa~ ~%target%~
 
@@ -498,7 +504,7 @@ COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
     COPY_EXISTING highhedg.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
       REMOVE_STORE_ITEM
         misc73    // Horn of Kazgaroth
-	  ADD_STORE_ITEM ~misc73~   AFTER  ~misc72~ #1 #0 #0 ~IDENTIFIED~ #1
+      ADD_STORE_ITEM ~misc73~   AFTER  ~misc72~ #1 #0 #0 ~IDENTIFIED~ #1
     END
   END
 >>>>>>>>
@@ -519,8 +525,8 @@ COPY ~%source%/MOON_DOG_FIGURINE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/EDWINS_AMULET.tpa
   ACTION_IF nerf_edwins_amulet = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/misc89.itm~ ~override~
-    SAY NAME1 @1649    SAY NAME2 @1649
-    SAY UNIDENTIFIED_DESC @1780000000 SAY IDENTIFIED_DESC @1780000000
+      SAY NAME1 @1649    SAY NAME2 @1649
+      SAY UNIDENTIFIED_DESC @178000000 SAY IDENTIFIED_DESC @178000000
   END
 >>>>>>>>
 COPY ~%source%/EDWINS_AMULET.tpa~ ~%target%~
@@ -531,8 +537,10 @@ COPY ~%source%/EDWINS_AMULET.tpa~ ~%target%~
     SAY NAME1 @4540   SAY NAME2 @4540
   COPY ~item_rev/itm/shakti.eff~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING figure01.itm override
+      SAY IDENTIFIED_DESC @249900000
     COPY ~item_rev/components/main/alternatives/shakti.cre~ ~override~
-    SAY NAME1 @4540   SAY NAME2 @4540
+      SAY NAME1 @4540   SAY NAME2 @4540
   END
 >>>>>>>>
 COPY ~%source%/SHAKTI_WARRIOR_FIGURINE.tpa~ ~%target%~
@@ -854,7 +862,7 @@ COPY ~%source%/STAFF_OF_COMMAND_3.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/staf10.pro~ // Healing Aura
   COPY ~item_rev/itm/staf10.spl~ ~override~
   COPY ~item_rev/itm/staf10a.spl~ ~override~
-	WRITE_SHORT 0x98 %staf10%
+    WRITE_SHORT 0x98 %staf10%
   COPY ~item_rev/itm/staf10.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/STAFF_OF_CURING_1.tpa~ ~%target%~
@@ -1095,7 +1103,10 @@ COPY ~%source%/ARBANES_SWORD_2.tpa~ ~%target%~
     SAY NAME2 @2101
   COPY ~item_rev/itm/sword02.cre~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING sw1h33.itm override
+      SAY IDENTIFIED_DESC @210200000
     COPY ~item_rev/components/main/alternatives/sword02.cre~ ~override~
+      SAY NAME1 @4520   SAY NAME2 @4520
   END
 >>>>>>>>
 COPY ~%source%/RAS_2.tpa~ ~%target%~
@@ -1156,7 +1167,10 @@ COPY ~%source%/YAMATO_3.tpa~ ~%target%~
     SAY NAME2 @2166
   COPY ~item_rev/itm/sword68.cre~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING sw1h68.itm override
+      SAY IDENTIFIED_DESC @216700000
     COPY ~item_rev/components/main/alternatives/sword68.cre~ ~override~
+      SAY NAME1 @4522   SAY NAME2 @4522
   END
 >>>>>>>>
 COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
@@ -1169,7 +1183,10 @@ COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
   COPY ~item_rev/itm/sw1h69.spl~ ~override~
     SAY NAME2 @4089
   ACTION_IF standard_saving_throws = 1 BEGIN
+    COPY_EXISTING sw1h69.itm override
+      SAY IDENTIFIED_DESC @216900000
     COPY ~item_rev/components/main/alternatives/sword69.cre~ ~override~
+      SAY NAME1 @4524   SAY NAME2 @4524
   END
 >>>>>>>>
 COPY ~%source%/SPECTRAL_BRAND_5.tpa~ ~%target%~
@@ -1259,7 +1276,7 @@ COPY ~%source%/WAND_OF_MONSTER_SUMMONING.tpa~ ~%target%~
   ADD_PROJECTILE ~item_rev/itm/wand11.pro~ // Flame Strike
   COPY ~item_rev/itm/wand11.spl~ ~override~
     SAY NAME1 @4100
-	WRITE_SHORT 0x98 %wand11%
+    WRITE_SHORT 0x98 %wand11%
 >>>>>>>>
 COPY ~%source%/WAND_OF_THE_HEAVENS.tpa~ ~%target%~
 
@@ -1649,7 +1666,7 @@ COPY ~%source%/POTION_OF_SUPERIOR_HEALING.tpa~ ~%target%~
   ACTION_IF nerf_edwins_amulet = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/bgmisc89.itm~ ~override~
     SAY NAME1 @1649    SAY NAME2 @1649
-    SAY UNIDENTIFIED_DESC @1780000000 SAY IDENTIFIED_DESC @1780000000
+    SAY UNIDENTIFIED_DESC @178000000 SAY IDENTIFIED_DESC @178000000
   END
 >>>>>>>>
 COPY ~%source%/EDWINS_AMULET#BGT.tpa~ ~%target%~
@@ -1662,13 +1679,13 @@ COPY ~%source%/EDWINS_AMULET#BGT.tpa~ ~%target%~
     PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
       READ_BYTE 0x18 flags
       // WRITE_BYTE 0x18 (%flags% BXOR 0b00100000) // Add unusable flag
-	END
+    END
   ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~ohgith03.cre~) BEGIN
       COPY_EXISTING ohgith03.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
         REMOVE_CRE_ITEM ohreaver
-	    ADD_CRE_ITEM reaver #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ WEAPON1 EQUIP TWOHANDED
-	    ADD_CRE_ITEM sw2h01 #0 #0 #0 NONE INV
+        ADD_CRE_ITEM reaver #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ WEAPON1 EQUIP TWOHANDED
+        ADD_CRE_ITEM sw2h01 #0 #0 #0 NONE INV
       END
       BUT_ONLY
     END

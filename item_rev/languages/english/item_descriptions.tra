@@ -2451,7 +2451,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1288000000 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
+@128800000 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
 
 STATISTICS:
 
@@ -2470,7 +2470,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1290000000 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+@129000000 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
 
 STATISTICS:
 
@@ -2489,7 +2489,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1292000000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2511,7 +2511,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1294000000 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@129400000 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
 
@@ -2677,7 +2677,7 @@ Usable By:
  True Fighter
  Monk
  Kensai~
-@1314000000 = ~Bands of the Master
+@131400000 = ~Bands of the Master
 When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
 
 In the surviving teachings of the Kamjin-Doh of Kara-Tur, it is written that a true weapon master relies not on leather, chain, or plate, but on honing their skills so that they are never struck at all... and this means a weapon master must know their enemy's movements like the movements of their own hand. But such mastery lies in staying focused upon your enemy even in the heat of battle... and these simple leather armbands are intended to do just that. While worn, they exert a slight calming influence on the mind of the sword saint that wields them, heightening the warrior's perceptions and senses, and allowing them to read the movements of their opponents easier. On the rare occasion when an enemy strikes a sword saint, these bands allow the wielder to shrug off pain (which in the teachings of Kamjin-Doh are called "distractions") and keep the pain where it belongs - on one's opponent.
@@ -6000,6 +6000,26 @@ Special Characteristics:
 
 Not Usable By:
  Wizard Slayer~
+@171700000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a fifth level warrior who will fight for the summoner for five turns.
+
+STATISTICS:
+
+Special Abilities:
+ Summon Berserker (1x per day): 5 turns
+
+Berserker (5 HD):
+ ST18, DE16, CO16, IN10, WI10, CH10
+ HP 60, AC 3, THAC0 12, APR 3/2
+ 1D8 + 4 Slashing (Long Sword +1)
+ Saving Throws 11/13/12/13/14, AL CG
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+ Enrage (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
 @1718 = ~Bronze Horn of Valhalla~
 @1719 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a seventh level warrior who will fight for the summoner for five turns.
 
@@ -6021,6 +6041,26 @@ Special Characteristics:
 
 Not Usable By:
  Wizard Slayer~
+@171900000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a seventh level warrior who will fight for the summoner for five turns.
+
+STATISTICS:
+
+Special Abilities:
+ Summon Berserker (1x per day): 5 turns
+
+Berserker (7 HD):
+ ST18, DE17, CO17, IN11, WI12, CH11
+ HP 84, AC 2, THAC0 9, APR 3
+ 1D8 + 6 Slashing (Battle Axe +2)
+ Saving Throws 10/12/11/12/13, AL CG
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+ Enrage (2x per day)
+
+Not Usable By:
+ Wizard Slayer~
 @1720 = ~Iron Horn of Valhalla~
 @1721 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a ninth level warrior who will fight for the summoner for five turns.
 
@@ -6034,6 +6074,26 @@ Berserker (9 HD):
  HP 117, AC 1, THAC0 6, APR 7/2
  1D10 + 8 Slashing (2H Sword +3)
  Saving Throws 9/13/9/11/13, AL CG
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+ Enrage (3x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@172100000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a ninth level warrior who will fight for the summoner for five turns.
+
+STATISTICS:
+
+Special Abilities:
+ Summon Berserker (1x per day): 5 turns
+
+Berserker (9 HD):
+ ST18, DE18, CO18, IN12, WI14, CH12
+ HP 117, AC 1, THAC0 6, APR 7/2
+ 1D10 + 8 Slashing (2H Sword +3)
+ Saving Throws 8/10/9/9/11, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -6359,7 +6419,7 @@ Equipped Abilities:
 
 Usable By:
  Edwin~
-@1780000000 = ~This is Edwin's birthright, inlaid with his family stone.
+@178000000 = ~This is Edwin's birthright, inlaid with his family stone.
 
 STATISTICS:
 
@@ -9327,7 +9387,7 @@ Special Abilities:
 Ras (7 HD):
  HP 35, AC 0, THAC0 9, APR 2
  1D8 + 5 Slashing (Ras +2)
- Saving Throws 10/12/11/12/13, AL TN
+ Saving Throws 10/14/10/12/14, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
 
@@ -9343,6 +9403,39 @@ Weight: 4
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-Handed
+Requires: 6 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
+@210200000 = ~The Dancing Blade
+Beroalf was a barbarian who traveled from the cold north in search of adventure. He sought treasures and glory, but soon all he wanted were companions to share in the excitement of battle, much like those he had left behind in his faraway village. Unfortunately, his coarse remarks and rudimentary hygiene repelled most travelers he met, until he expressed his thoughts to a sympathetic mage. The mage, for a price, constructed Ras, the dancing blade. Though not quite what Beroalf had in mind, he was thrilled nonetheless, and wielded the sword for many years. How they were ultimately separated is not known.
+
+STATISTICS:
+
+Special Abilities:
+ Dancing Blade (1x per day): the sword can attack on its own for 1 turn
+
+Ras (7 HD):
+ HP 35, AC 0, THAC0 9, APR 2
+ 1D8 + 5 Slashing (Ras +2)
+ Saving Throws 10/12/11/12/13, AL TN
+ SR 100%, CR 100%, PR 100%, MR 100%
+ FR 100%, CR 100%, ER 100%, AR 100%
+
+Special Characteristics:
+ Magic Resistance: 100%
+ Protected Against: Backstabs and Poison
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
+
+THAC0: +2 bonus
+Damage: 1D8 + 2
+Damage type: slashing
+Weight: 4
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: 1-handed
 Requires: 6 Strength
 Not Usable By:
  Cleric
@@ -10169,6 +10262,42 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
+@216700000 = ~When examined in direct sunlight, this mysterious scimitar becomes transparent and faint, almost disappearing from sight. As the lighting grows dimmer, however, the sword seems almost to gain substance from the darkness until it glows with a grey light in total darkness.
+
+Legend has it that the souls of those who fall beneath this dark blade are forever enslaved, and can be summoned to fight at the side of the one who defeated them. Though this legendary power seems somehow sealed, Spectral Brand is still able to create an illusionary copy of itself capable of fighting alongside the wielder, and the chilling touch of its blade attacks directly the life force of any living creature.
+
+STATISTICS:
+
+Special Abilities:
+ Spectral Blade (1x per day): the sword can attack on its own for 1 turn
+
+Spectral Brand (10 HD):
+ HP 48, AC 0, THAC0 4, APR 2
+ 1D8 + 8 Magic (Spectral Brand +4)
+ Saving Throws 8/10/9/9/11, AL TN
+ SR 100%, CR 100%, PR 100%, MR 100%
+ FR 100%, CR 100%, ER 100%, AR 100%
+
+Special Characteristics:
+ Protected Against: Backstabs and Poison
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
+
+Combat Abilities:
+ Icy: target suffers 1D6 cold damage
+ Spectral Blade: +3 bonus to THAC0
+
+THAC0: +4 bonus
+Damage: 1D8 + 4
+Damage Type: Slashing
+Weight: 4
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: One-Handed
+Requires: 8 Strength
+Not Usable By:
+ Cleric
+ Mage
+ Beast Master~
 @2168 = ~Spectral Brand +5~
 @2169 = ~When examined in direct sunlight, this mysterious scimitar becomes transparent and faint, almost disappearing from sight. As the lighting grows dimmer, however, the sword seems almost to gain substance from the darkness until it glows with a grey light in total darkness.
 
@@ -10186,6 +10315,48 @@ Spectral Brand (12 HD):
  HP 54, AC 0, THAC0 1, APR 3
  1D8 + 10 Magic (Spectral Brand +5)
  Saving Throws 8/12/8/10/12, AL TN
+ SR 100%, CR 100%, PR 100%, MR 100%
+ FR 100%, CR 100%, ER 100%, AR 100%
+
+Special Characteristics:
+ Protected Against: Backstabs and Poison
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
+
+Equipped Abilities:
+ Spell: Negative Plane Protection
+
+Combat Abilities:
+ Icy: target suffers 1D8 cold damage
+ Spectral Blade: +3 bonus to THAC0
+
+THAC0: +5 bonus
+Damage: 1D8 + 5
+Damage Type: Slashing
+Weight: 4
+Speed Factor: 0
+Proficiency Type: Scimitar/Wakizashi/Ninja-To
+Type: One-Handed
+Requires: 8 Strength
+Not Usable By:
+ Cleric
+ Mage
+ Beast Master~
+@216900000 = ~When examined in direct sunlight, this mysterious scimitar becomes transparent and faint, almost disappearing from sight. As the lighting grows dimmer, however, the sword seems almost to gain substance from the darkness until it glows with a grey light in total darkness.
+
+Legend has it that the souls of those who fall beneath this dark blade are forever enslaved, and can be summoned to fight at the side of the one who defeated them. Though this legendary power seems somehow sealed, Spectral Brand is still able to create an illusionary copy of itself capable of fighting alongside the wielder, and the chilling touch of its blade attacks directly the life force of any living creature.
+
+Drawing upon the necromancy of the Skull of the Lich the seal has been broken, and Spectral Brand is now an instrument of unholy death that should never have been unleashed upon the Realms.
+
+STATISTICS:
+
+Special Abilities:
+ Spectral Blade (1x per day): the sword can attack on its own for 1 turn
+ Dark Swarm (1x per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
+
+Spectral Brand (12 HD):
+ HP 54, AC 0, THAC0 1, APR 3
+ 1D8 + 10 Magic (Spectral Brand +5)
+ Saving Throws 7/9/8/8/10, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
 
@@ -13238,6 +13409,23 @@ Gladiator (11 HD):
  HP 128, AC -2, THAC0 3, APR 4
  1D6 + 8 Slashing (Short Sword +3)
  Saving Throws 8/12/8/10/12, AL CN
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Not Usable By:
+ Wizard Slayer~
+@249900000 = ~This statue is a replica of a fierce gladiator, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue armored warrior wielding magical short swords.
+
+STATISTICS:
+
+Special Abilities:
+ Summon Gladiator (1x per day): 5 turns
+
+Gladiator (11 HD):
+ ST16, DE18, CO18, IN14, WI16, CH14
+ HP 128, AC -2, THAC0 3, APR 4
+ 1D6 + 8 Slashing (Short Sword +3)
+ Saving Throws 7/9/8/8/10, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
