@@ -981,7 +981,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     light_xbow
     // add reload time to crossbows, duration = 1 second
     BEGIN
-	  PATCH_IF disable_xbow_reload = 0 BEGIN
+	  PATCH_IF xbow_reload_pause = 1 BEGIN
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=2 END // type 2 = ranged, no ammo required
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=4 END // type 4 = ranged, requires ammo
 	  END
@@ -990,7 +990,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     heavy_xbow
     // add reload time to crossbows, duration = 2 seconds
     BEGIN
-	  PATCH_IF disable_xbow_reload = 0 BEGIN
+	  PATCH_IF xbow_reload_pause = 1 BEGIN
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=2 parameter1=0 parameter2=1 type=2 END
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=2 parameter1=0 parameter2=1 type=4 END
       END

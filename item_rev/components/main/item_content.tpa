@@ -167,11 +167,61 @@ COPY ~%source%/IRON_BOW_OF_GESEN_4.tpa~ ~%target%~
 COPY ~%source%/BRACERS_OF_SPEED.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/BRACERS_OF_DEFENSE_AC_5.tpa
+  ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/brac13.itm~ ~override~
+    SAY NAME1 @1267    SAY NAME2 @1287
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1288000000
+  END
+>>>>>>>>
+COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BRACERS_OF_DEFENSE_AC_4.tpa
+  ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/brac14.itm~ ~override~
+    SAY NAME1 @1267    SAY NAME2 @1289
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1290000000
+  END
+>>>>>>>>
+COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BRACERS_OF_DEFENSE_AC_3.tpa
+  ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/brac15.itm~ ~override~
+    SAY NAME1 @1267    SAY NAME2 @1291
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1292000000
+  END
+>>>>>>>>
+COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BRACERS_OF_THE_BLINDING_STRIKE.tpa
+  ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/brac16.itm~ ~override~
+    SAY NAME1 @1267    SAY NAME2 @1293
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1294000000
+  END
+>>>>>>>>
+COPY ~%source%/BRACERS_OF_THE_BLINDING_STRIKE.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/BLESSED_BRACERS.tpa
   COPY ~item_rev/itm/brac23.spl~ ~override~ // Righteous Fury
     SAY NAME1 @4012
 >>>>>>>>
 COPY ~%source%/BLESSED_BRACERS.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/BANDS_OF_FOCUS.tpa
+  ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/brac26.itm~ ~override~
+    SAY NAME1 @1267    SAY NAME2 @1289
+    SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @1314000000
+  END
+>>>>>>>>
+COPY ~%source%/BANDS_OF_FOCUS.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/CRIMSON_CHAIN_5.tpa
@@ -452,6 +502,16 @@ COPY ~%source%/HORN_OF_KAZGAROTH.tpa~ ~%target%~
   COPY ~item_rev/itm/figmoond.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/MOON_DOG_FIGURINE.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/EDWINS_AMULET.tpa
+  ACTION_IF nerf_edwins_amulet = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/misc89.itm~ ~override~
+    SAY NAME1 @1649    SAY NAME2 @1649
+    SAY UNIDENTIFIED_DESC @1780000000 SAY IDENTIFIED_DESC @1780000000
+  END
+>>>>>>>>
+COPY ~%source%/EDWINS_AMULET.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/SHAKTI_WARRIOR_FIGURINE.tpa
@@ -1558,6 +1618,16 @@ COPY ~%source%/POTION_OF_EXTRA_HEALING.tpa~ ~%target%~
     SAY NAME1 @3098
 >>>>>>>>
 COPY ~%source%/POTION_OF_SUPERIOR_HEALING.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/EDWINS_AMULET#BGT.tpa
+  ACTION_IF nerf_edwins_amulet = 1 BEGIN
+    COPY ~item_rev/components/main/alternatives/bgmisc89.itm~ ~override~
+    SAY NAME1 @1649    SAY NAME2 @1649
+    SAY UNIDENTIFIED_DESC @1780000000 SAY IDENTIFIED_DESC @1780000000
+  END
+>>>>>>>>
+COPY ~%source%/EDWINS_AMULET#BGT.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/UNHOLY_REAVER_5.tpa
