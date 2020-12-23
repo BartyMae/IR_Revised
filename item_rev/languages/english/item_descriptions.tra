@@ -8556,11 +8556,11 @@ Usable By:
 STATISTICS:
 
 Special Abilities:
- Reverse Magic (1x per day): removes all magical effects from the target (save vs. wand at -4 neg.)
  Spell Trap (1x per day): 1 turn
 
 Equipped Abilities:
  Magic Resistance: +20% bonus
+ Spell: True Seeing
 
 Combat Abilities:
  Dispelling: removes all magical effects from the target (save vs. spell neg.)
@@ -10684,7 +10684,7 @@ STATISTICS:
 
 Combat Abilities:
  Powerful Weapon: +2 bonus to damage
- Enervating: living creatures struck suffer 1D6 magic damage and lose 1 level (save vs. death neg. level loss)
+ Enervating: living creatures struck suffer 1D6 magic damage and are drained 1 level (save vs. death neg. level loss)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
