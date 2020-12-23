@@ -5824,12 +5824,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Dispel Magic.
+The spell on this page is Confusion.
 
 STATISTICS:
 
 Special Abilities:
- Dispel Magic (1x per day)
+ Confusion (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -5837,12 +5837,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Cone of Cold.
+The spell on this page is Spell Shield.
 
 STATISTICS:
 
 Special Abilities:
- Cone of Cold (1x per day)
+ Spell Shield (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -5876,12 +5876,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Animate Dead.
+The spell on this page is Domination.
 
 STATISTICS:
 
 Special Abilities:
- Animate Dead (1x per day)
+ Domination (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -5889,12 +5889,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Breach.
+The spell on this page is Skull Trap.
 
 STATISTICS:
 
 Special Abilities:
- Breach (1x per day)
+ Skull Trap (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -7820,19 +7820,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1952 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
-
-A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
-
-The spell on this page is Hold Monster.
-
-STATISTICS:
-
-Special Abilities:
- Hold Monster (1x per day)
-
-Not Usable By:
- Wizard Slayer~
+@1952 = ~Unused~
 @1953 = ~Shield of the Falling Stars +2~
 @1954 = ~Ilmater himself enchanted this shield upon seeing a young squire's willingness to endure untold agony for the well-being of his mount. During a fierce battle between a human cavalry division and a hobgoblin horde, the young man was sent for reinforcements. He was beset by a cascade of arrows that nearly blocked out the sun, and he knew that even if he avoided the arrows himself, should his horse fall he would surely be doomed. With his shield and body he positioned himself to take the brunt of the onslaught, and was mortally wounded for it. His horse remained unscathed allowing for their escape, and his body was carried back to the nearest town, where he was resurrected from death.
 
@@ -13951,6 +13939,136 @@ Equipped Abilities:
 
 Usable By:
  Evil-aligned clerics~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Vocalize.
+
+STATISTICS:
+
+Special Abilities:
+ Vocalize (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Cone of Cold.
+
+STATISTICS:
+
+Special Abilities:
+ Cone of Cold (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Animate Dead.
+
+STATISTICS:
+
+Special Abilities:
+ Fireball (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Lower Resistance.
+
+STATISTICS:
+
+Special Abilities:
+ Lower Resistance (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Greater Malison.
+
+STATISTICS:
+
+Special Abilities:
+ Greater Malison (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Mirror Image.
+
+STATISTICS:
+
+Special Abilities:
+ Mirror Image (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Breach.
+
+STATISTICS:
+
+Special Abilities:
+ Breach (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Haste.
+
+STATISTICS:
+
+Special Abilities:
+ Haste (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Hold Monster.
+
+STATISTICS:
+
+Special Abilities:
+ Hold Monster (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Pierce Magic.
+
+STATISTICS:
+
+Special Abilities:
+ Pierce Magic (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
 
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
@@ -14067,13 +14185,22 @@ Usable By:
 @4112 = ~Improved Invisibility~
 @4113 = ~Stoneskin~
 @4114 = ~True Seeing~
-@4115 = ~Dispel Magic~
-@4116 = ~Cone of Cold~
+@4115 = ~Confusion~
+@4116 = ~Spell Shield~
 @4117 = ~Invisible Stalker~
 @4118 = ~Cloudkill~
-@4119 = ~Animate Dead~
-@4120 = ~Breach~
-@4121 = ~Hold Monster~
+@4119 = ~Domination~
+@4120 = ~Skull Trap~
+@4121 = ~Vocalize~
+@4122 = ~Cone of Cold~
+@4123 = ~Animate Dead~
+@4124 = ~Lower Resistance~
+@4125 = ~Greater Malison~
+@4126 = ~Mirror Image~
+@4127 = ~Breach~
+@4128 = ~Haste~
+@4129 = ~Hold Monster~
+@4130 = ~Pierce Magic~
 
 @4500 = ~Shapeshifts Wolfwere~
 @4501 = ~Claws & Bite +1~

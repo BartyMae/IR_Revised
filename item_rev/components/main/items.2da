@@ -432,6 +432,15 @@ BOOK_OF_INFINITE_SPELLS#7                  *        misc3a7  1        1        0
 BOOK_OF_INFINITE_SPELLS#8                  *        misc3a8  1        1        0        0        1        1        @1689    @1689    @1690    @1699    @4119    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#9                  *        misc3a9  1        1        0        0        1        1        @1689    @1689    @1690    @1700    @4120    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#10                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4121    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#11                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4122    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#12                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4123    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#13                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4124    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#14                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4125    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#15                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4126    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#16                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4127    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#17                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4128    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#18                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4129    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#19                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @1952    @4130    @4110    *        *
 EFREETI_BOTTLE                             MISC     misc3c   1        1        0        0        1        1        @1701    @1702    @1703    @1704    *        *        *        *
 GOLDEN_LION_FIGURINE                       MISC     misc3d   1        1        0        0        1        1        @1705    @1706    @1707    @1708    *        *        *        *
 BLACK_SPIDER_FIGURINE                      MISC     misc3e   1        1        0        0        1        1        @1705    @1709    @1707    @1710    *        *        *        *
