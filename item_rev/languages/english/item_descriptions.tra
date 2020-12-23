@@ -492,8 +492,8 @@ NOTE: Azuredge is always considered to be of +3 enchantment when determining wha
 STATISTICS:
 
 Combat Abilities:
- Disruption: undead creatures are destroyed (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
  Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1 bonus
@@ -937,8 +937,8 @@ NOTE: The Root of the Problem is always considered to be of +3 enchantment when 
 STATISTICS:
 
 Combat Abilities:
- Entangling: target is entangled for 1 round (save vs. breath neg.)
  Monster Bane: +3 bonus to THAC0 and +5 bonus to damage against monsters
+ Entangling: target is entangled for 1 round (save vs. breath neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 1
@@ -961,8 +961,8 @@ NOTE: Mace of Disruption is always considered to be of +3 enchantment when deter
 STATISTICS:
 
 Combat Abilities:
- Disruption: undead creatures are destroyed (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 2
@@ -1096,8 +1096,8 @@ STATISTICS:
 
 Combat Abilities:
  Bone Breaking: target suffers a -3 penalty to maximum hit points for 1 turn
- Crushing Blow: 15% chance of dealing 3D8 crushing damage
  Human Bane: +3 bonus to THAC0 and +5 bonus to damage against humanoids
+ Crushing Blow: 15% chance of dealing 3D8 crushing damage
 
 THAC0: +1 bonus
 Damage: 1D6 + 2
@@ -1203,8 +1203,8 @@ NOTE: Bone Club is always considered to be of +3 enchantment when determining wh
 STATISTICS:
 
 Combat Abilities:
- Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 1
@@ -1249,8 +1249,8 @@ Equipped Abilities:
  Spell: Negative Plane Protection
 
 Combat Abilities:
- Disruption: undead creatures are destroyed (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +2 bonus
 Damage: 1D6 + 3
@@ -1284,7 +1284,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Fiery: target suffers 1D6 fire damage
- Detonation: 5% chance of dealing 6D6 fire damage to target and opponents within 15' (save vs. breath half)
+ Detonation: 5% chance of dealing 6D6 fire damage to those within 15' (save vs. breath half)
 
 THAC0: +4 bonus
 Damage: 1D6 + 4
@@ -1372,8 +1372,8 @@ Equipped Abilities:
 
 Combat Abilities:
  Shocking: target suffers 1D8 electrical damage
- Chain Lightning: 15% chance lightning leaps at the target dealing 6D6 electrical damage before arcing towards other enemies within 30' who suffer 3D6 electrical damage
  Lightning Shield: creatures who strike the wielder are struck by lightning for 1D6 electrical damage
+ Chain Lightning: 15% chance lightning leaps at the target dealing 6D6 electrical damage before arcing towards other enemies within 30' who suffer 3D6 electrical damage
 
 THAC0: +5 bonus
 Damage: 1D6 + 6
@@ -3476,8 +3476,8 @@ Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, Poison, and Stun
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
+ Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
 
 Equipped Abilities:
  Armor Class: +1 bonus
@@ -4489,8 +4489,8 @@ Equipped Abilities:
  Spell Immunity: Horrid Wilting
 
 Combat Abilities:
- Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath neg. unconsciousness)
  Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave are slayed (save vs. death neg.)
+ Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath neg. unconsciousness)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -13289,8 +13289,8 @@ Special Abilities:
  Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
 
 Combat Abilities:
- Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
  Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
  Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +3 bonus
