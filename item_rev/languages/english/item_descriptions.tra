@@ -4488,7 +4488,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath at -2 neg. unconsciousness)
- Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave are slayed (save vs. death at -2 neg.)
+ Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave die (save vs. death at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -4792,7 +4792,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Banishing: summoned and gated creatures are dismissed (save vs. spell neg.)
+ Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D4 + 5
@@ -4825,7 +4825,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Banishing: summoned and gated creatures are dismissed (save vs. spell neg.)
+ Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +5 bonus
 Damage: 1D4 + 6
@@ -10658,7 +10658,7 @@ Equipped Abilities:
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
  Demon Bane: +3 bonus to THAC0 and +5 bonus to damage against demons
- Banishing: summoned and gated creatures are dismissed (save vs. spell neg.)
+ Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +1 bonus
 Damage: 1D10 + 1
