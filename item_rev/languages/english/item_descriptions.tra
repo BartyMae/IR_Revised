@@ -4487,8 +4487,8 @@ Equipped Abilities:
  Spell Immunity: Horrid Wilting
 
 Combat Abilities:
- Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave are slayed (save vs. death neg.)
- Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath neg. unconsciousness)
+ Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath at -2 neg. unconsciousness)
+ Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave are slayed (save vs. death at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
