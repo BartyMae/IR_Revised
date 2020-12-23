@@ -160,6 +160,12 @@ COPY ~%source%/BOOTS_OF_ETHEREALNESS.tpa~ ~%target%~
 COPY ~%source%/GARGOYLE_BOOTS.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/TANSHERON_BOWs_3.tpa
+  COPY ~item_rev/itm/bow15.spl~ ~override~ // Phantom Arrow
+>>>>>>>>
+COPY ~%source%/TANSHERON_BOWs_3.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/IRON_BOW_OF_GESEN_4.tpa
   ADD_PROJECTILE ~item_rev/itm/bow19.pro~ // Shocking Arrows
   COPY_EXISTING ~%IRON_BOW_OF_GESEN_4%.itm~ ~override~
