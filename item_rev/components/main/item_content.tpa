@@ -153,6 +153,13 @@ COPY ~%source%/BOLT_OF_POLYMORPHING_2.tpa~ ~%target%~
 COPY ~%source%/BOOTS_OF_ETHEREALNESS.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/GARGOYLE_BOOTS.tpa
+  COPY ~item_rev/itm/boot12.spl~ ~override~ // Gargoyle Skin
+  COPY ~item_rev/itm/boot12.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/GARGOYLE_BOOTS.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/IRON_BOW_OF_GESEN_4.tpa
   ADD_PROJECTILE ~item_rev/itm/bow19.pro~ // Shocking Arrows
   COPY_EXISTING ~%IRON_BOW_OF_GESEN_4%.itm~ ~override~

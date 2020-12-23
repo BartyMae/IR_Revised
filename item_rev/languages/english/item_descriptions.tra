@@ -143,7 +143,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Spell Deflection (1x per day): 1 turn
+ Spell Deflection (1x per day): 5 turns
 
 Equipped Abilities:
  Saving Throws: +2 bonus
@@ -1752,11 +1752,11 @@ Usable By:
 
 STATISTICS:
 
-Special Abilities:
- Stoneskin (3x per day): 1 turn
-
 Equipped Abilities:
  Protects Against: Backstabs
+ Gargoyle Skin: 1 stoneskin per round
+
+NOTE: Multiple Stoneskin effects are not cumulative.
 
 Weight: 2
 Usable By:
@@ -13957,7 +13957,7 @@ Usable By:
 @4005 = ~Protection from Magical Weapons~
 @4006 = ~Earthquake~
 @4007 = ~Etherealness~
-@4008 = ~Stoneskin~
+@4008 = ~Unused~
 @4009 = ~Darkfire Shield~
 @4010 = ~Whirlwind Attack~
 @4011 = ~Heal~
