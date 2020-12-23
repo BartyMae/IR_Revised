@@ -402,6 +402,17 @@ COPY ~%source%/HORNED_HELM_OF_THE_ROCK.tpa~ ~%target%~
 COPY ~%source%/ARMOR_OF_MISSILE_ATTRACTION_3.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/SKIN_OF_THE_GHOUL_2.tpa
+  ADD_PROJECTILE ~item_rev/itm/leat13.pro~ // Stench
+  COPY ~item_rev/itm/leat13.spl~ ~override~
+  COPY ~item_rev/itm/leat13a.spl~ ~override~
+    WRITE_SHORT 0x98 %leat13%
+  COPY ~item_rev/itm/leat13.eff~ ~override~
+  COPY ~item_rev/itm/leat13i.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/SKIN_OF_THE_GHOUL_2.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/EFREETI_BOTTLE.tpa
   COPY ~item_rev/itm/misc3c.spl~ ~override~ // Summon Efreeti
   COPY ~item_rev/itm/misc3c.eff~ ~override~
@@ -600,11 +611,6 @@ COPY ~%source%/GOLEM_MANUAL_STONE.tpa~ ~%target%~
 >>>>>>>>
 COPY ~%source%/GOLEM_MANUAL_JUGGERNAUT.tpa~ ~%target%~
 
-<<<<<<<< .../item_rev-inlined/item/ARMOR_OF_THE_HART_4.tpa
-COPY ~item_rev/itm/plat17.spl~ ~override~ // Heroic Inspiration
->>>>>>>>
-COPY ~%source%/ARMOR_OF_THE_HART_4.tpa~ ~%target%~
-
 
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ACID.tpa
   COPY ~item_rev/itm/scrl03.spl~ ~override~
@@ -686,6 +692,12 @@ COPY ~%source%/DOOMPLATE_3.tpa~ ~%target%~
   COPY ~item_rev/itm/plat16a.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/CASIELS_SOUL_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ARMOR_OF_THE_HART_4.tpa
+COPY ~item_rev/itm/plat17.spl~ ~override~ // Heroic Inspiration
+>>>>>>>>
+COPY ~%source%/ARMOR_OF_THE_HART_4.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/RING_OF_INVISIBILITY.tpa

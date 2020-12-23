@@ -294,11 +294,6 @@ ADD_PROJECTILE ~item_rev/itm/dvstdust.pro~ // Stardust effect
 COPY ~item_rev/itm/dvstdust.spl~ ~override~
   WRITE_SHORT 0x98 %dvstdust%
 
-ADD_PROJECTILE ~item_rev/itm/dvstench.pro~ // Stench effect
-COPY ~item_rev/itm/dvstench.spl~ ~override~
-  WRITE_SHORT 0x98 %dvstench%
-COPY ~item_rev/itm/dvstench.eff~ ~override~
-
 COPY ~item_rev/itm/dvstnhld.spl~ ~override~ // Stonehold
 COPY ~item_rev/itm/dvstnhld.eff~ ~override~
 
