@@ -184,9 +184,12 @@ COPY ~item_rev/itm/dvcutthr.eff~ ~override~
 COPY ~item_rev/itm/dvdarkf1.spl~ ~override~ // Darkfire Shield
 COPY ~item_rev/itm/dvdarkf2.spl~ ~override~
 
-ADD_PROJECTILE ~item_rev/itm/dvdeton.pro~ // Detonation
-COPY ~item_rev/itm/dvdeton.spl~ ~override~
-  WRITE_SHORT 0x98 %dvdeton%
+ADD_PROJECTILE ~item_rev/itm/dvdeto1.pro~ // Detonation
+COPY ~item_rev/itm/dvdeto1.spl~ ~override~
+  WRITE_SHORT 0x98 %dvdeto1%
+ADD_PROJECTILE ~item_rev/itm/dvdeto2.pro~ // Detonation
+COPY ~item_rev/itm/dvdeto2.spl~ ~override~
+  WRITE_SHORT 0x98 %dvdeto2%
 
 COPY ~item_rev/itm/dvdispel.spl~ ~override~ // Dispelling
 
