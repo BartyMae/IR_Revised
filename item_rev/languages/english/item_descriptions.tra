@@ -2074,7 +2074,7 @@ NOTE: Tansheron's Bow requires no ammunition, but normal arrows cannot be fired 
 STATISTICS:
 
 Combat Abilities:
- Phantom Arrow: 50% chance target flees in terror for 2 rounds (save vs. spell neg.)
+ Phantom Arrow: target either flees or is frozen in terror for 1 round (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D6
@@ -4513,7 +4513,7 @@ STATISTICS:
 Combat Abilities:
  Poisonous: target suffers 1D6 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
- Terrifying Aura: opponents within 10' are paralyzed (save vs. spell at -2 neg.)
+ Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -4541,7 +4541,7 @@ STATISTICS:
 Combat Abilities:
  Poisonous: target suffers 1D8 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
- Terrifying Aura: opponents within 10' are paralyzed (save vs. spell at -2 neg.)
+ Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
  Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
 
 THAC0: +5 bonus
@@ -12544,7 +12544,7 @@ Equipped Abilities:
  Charisma: -1 penalty
 
 Combat Abilities:
- Horrifying: 33% chance target flees in terror for 2 rounds (save vs. spell neg.)
+ Horrifying: target flees in terror for 2 rounds (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
