@@ -3431,7 +3431,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Nature's Vengeance: 25% chance creatures who strike the wearer are struck by lightning for 6D6 electrical damage (save vs. breath at -2 half)
+ Nature's Vengeance: 33% chance creatures who strike the wearer are struck by lightning for 6D6 electrical damage (save vs. breath at -2 half)
 
 Weight: 3
 Not Usable By:
@@ -3785,7 +3785,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: 25% chance of blinding target and opponents within 5' for 2 rounds (save vs. breath neg.)
+ Stardust: target and opponents within 5' for 1 round (save vs. breath at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D4 + 4
@@ -3807,7 +3807,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: 33% chance of blinding target and opponents within 5' for 2 rounds (save vs. breath neg.)
+ Stardust: target and opponents within 5' for 1 rounds (save vs. breath at -2 neg.)
  Starbolt: 15% chance of dealing 5D6 magic damage
  Returning: returns to the wielder's hand instantly after an attack is made
 
