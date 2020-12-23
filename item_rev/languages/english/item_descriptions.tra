@@ -4340,7 +4340,7 @@ STATISTICS:
 
 Combat Abilities:
  Slashing: target suffers 1D4 slashing damage
- Staggering: 50% chance target suffers a -1 penalty to APR and a -2 penalty to movement and casting speed for 1 round (save vs. breath neg.)
+ Staggering: target suffers a -1/2 penalty to APR and a -2 penalty to movement and casting speed for 1 round (save vs. breath neg.)
 
 Damage: 1D10 + 2
 THAC0: +2 bonus
