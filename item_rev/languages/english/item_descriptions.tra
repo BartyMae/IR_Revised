@@ -8640,6 +8640,8 @@ Lesser Shambling Mound (8 HD):
 
 Equipped Abilities:
  Regeneration: 1 hp/2 rounds
+
+Combat Abilities:
  Animal Empaty: animals within 30' are charmed for 1 turn (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
@@ -10015,7 +10017,7 @@ Equipped Abilities:
 Combat Abilities:
  Fiery: target suffers 1D8 fire damage
  Incendiary: target suffers 1 fire damage every round for 5 rounds
- Flame Whip: target is entangled in flames for 2 rounds (save vs. breath neg.)
+ Flame Whip: target is entangled in flames for 2 rounds (save vs. breath at -2 neg.)
 
 THAC0: +5 bonus
 Damage: 1D8 + 5
