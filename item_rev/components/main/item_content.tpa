@@ -324,7 +324,7 @@ COPY ~%source%/SURYRISS_BLADE_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/BLACKMIST_4.tpa
-COPY ~item_rev/itm/halb06.spl~ ~override~ // Black Mist
+COPY ~item_rev/itm/halb06.spl~ ~override~ // Blackmist
 
 COPY_EXISTING UDDEMON.dlg override // Quest enable
   DECOMPILE_DLG_TO_D

@@ -1739,7 +1739,7 @@ Said to be sewn together from scraps of the planes themselves, these strange boo
 STATISTICS:
 
 Special Abilities:
- Etherealness (1x per day): for 5 rounds, the wearer is effectively invulnerable, cannot be seen, and regenerates 2 hp/second, but cannot attack or use abilities
+ Etherealness (1x per day): the wearer is effectively invulnerable, cannot be seen, and regenerates 2 hp/second, but cannot attack or use abilities for 5 rounds
 
 Equipped Abilities:
  Dimensional Anchor: wearer is unaffected by Teleport Field, Maze, Imprisonment, and other similar effects
@@ -4412,14 +4412,12 @@ Not Usable By:
 
 STATISTICS:
 
-Special Abilities:
- Black Mist (3x per day): blinds everyone within 10' for 1 turn (save vs. spell at -2 neg.)
-
 Equipped Abilities:
  Blind Fighting: wielder fights without penalties even if unable to see and cannot be backstabbed
 
 Combat Abilities:
  Weakening: target suffers a cumulative -1 penalty to THAC0 and damage for 2 rounds
+ Blackmist: 15% chance of blinding everyone within 10' for 1 turn (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -7369,7 +7367,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Stoneskin (1x per day): 1 turn
+ Stoneskin (1x per day): 5 turns
  Conjure Lesser Earth Elemental (1x per day): 1 turn
 
 Equipped Abilities:
@@ -7420,7 +7418,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Spell Turning (1x per day): 1 turn
+ Spell Turning (1x per day): 5 turns
 
 Equipped Abilities:
  Magic Resistance: +10% bonus
@@ -13969,7 +13967,7 @@ Usable By:
 @4017 = ~Charm Person~
 @4018 = ~Shapeshifts Rat~
 @4019 = ~Shapeshifts Mustard Jelly~
-@4020 = ~Black Mist~
+@4020 = ~Unused~
 @4021 = ~Unused~
 @4022 = ~Mass Cure~
 @4023 = ~Champion's Strength~
