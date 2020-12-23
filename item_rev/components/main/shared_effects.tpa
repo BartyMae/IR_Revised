@@ -311,6 +311,12 @@ COPY ~item_rev/itm/dvsunder.eff~ ~override~
 
 COPY ~item_rev/itm/dvtenchu.spl~ ~override~ // Tenchu
 
+ADD_PROJECTILE ~item_rev/itm/dvtaura.pro~
+COPY ~item_rev/itm/dvtaura1.spl~ ~override~ // Terrifying Aura
+COPY ~item_rev/itm/dvtaura2.spl~ ~override~
+  WRITE_SHORT 0x98 %dvtaura%
+COPY ~item_rev/itm/dvtaura.eff~ ~override~
+
 ADD_PROJECTILE ~item_rev/itm/dvthclap.pro~ // Thunderclap
 COPY ~item_rev/itm/dvthclap.spl~ ~override~
   WRITE_SHORT 0x98 %dvthclap%

@@ -329,8 +329,8 @@ BLACKMIST_4                                HALBERD  halb06   1        1        0
 HALBERD_2                                  HALBERD  halb07   1        1        0        0        1        1        @1493    @1532    @1495    @1533    *        *        *        *
 DUSKBLADE_2                                HALBERD  halb08   1        1        0        0        1        1        @1493    @1534    @1495    @1535    *        *        *        *
 THE_WAVE_4                                 HALBERD  halb09   1        1        0        0        1        1        @1493    @1536    @1495    @1537    *        *        *        * 
-RAVAGER_4                                  HALBERD  halb10   1        1        0        0        1        1        @1493    @1538    @1495    @1539    @1538    @4021    *        *
-RAVAGER_5                                  HALBERD  halb11   1        1        0        0        1        1        @1493    @1540    @1495    @1541    @1540    @4021    *        *
+RAVAGER_4                                  HALBERD  halb10   1        1        0        0        1        1        @1493    @1538    @1495    @1539    *        *        *        *
+RAVAGER_5                                  HALBERD  halb11   1        1        0        0        1        1        @1493    @1540    @1495    @1541    *        *        *        *
 HALBERD_3                                  HALBERD  halb12   1        1        0        0        1        1        @1493    @1542    @1495    @1543    *        *        *        *
 
 WAR_HAMMER                                 HAMMER   hamm01   1        1        1        1        1        1        @1544    @1544    @1545    @1545    *        *        *        *

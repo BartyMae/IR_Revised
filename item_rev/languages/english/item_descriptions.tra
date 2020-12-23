@@ -4512,11 +4512,10 @@ Not Usable By:
 
 STATISTICS:
 
-Special Abilities:
- Cloak of Fear (1x per day)
-
 Combat Abilities:
+ Poisonous: target suffers 1D6 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
+ Terrifying Aura: opponents within 10' are paralyzed (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -4537,15 +4536,14 @@ Not Usable By:
 @1540 = ~Ravager +5~
 @1541 = ~The guards upon the walls of the evil fortress, Darkhold, carry halberds of ancient, demonic creation. The halberds were purchased from the forges of hell in trade for the souls of captured heroes, so each halberd is a valued possession. Those who wield these weapons outside the walls of Darkhold do so at their own peril, for the master of the hold is said to be linked to each one. Only taking the blood-soaked shaft of this weapon in hand brings a sudden chill along the spine and the very sight of this cursed halberd has been known to strike terror into the heart of an opponent.
 
-Combined with the Serpent Shaft, this dark halberd has the ability to slay an opponent with a single blow - unless they can survive the lethal poison injected by this vicious weapon.
+Combined with the Serpent Shaft, this dark halberd has the ability to slay an opponent with a single blow - unless they can survive its lethal poison.
 
 STATISTICS:
 
-Special Abilities:
- Cloak of Fear (3x per day)
-
 Combat Abilities:
+ Poisonous: target suffers 1D8 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
+ Terrifying Aura: opponents within 10' are paralyzed (save vs. spell at -2 neg.)
  Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
 
 THAC0: +5 bonus
@@ -13972,7 +13970,7 @@ Usable By:
 @4018 = ~Shapeshifts Rat~
 @4019 = ~Shapeshifts Mustard Jelly~
 @4020 = ~Black Mist~
-@4021 = ~Cloak of Fear~
+@4021 = ~Unused~
 @4022 = ~Mass Cure~
 @4023 = ~Champion's Strength~
 @4024 = ~Fireball~
