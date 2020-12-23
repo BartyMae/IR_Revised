@@ -8627,7 +8627,7 @@ Usable By:
 STATISTICS:
 
 Special Abilities:
- Barkskin (1x per day): 1 turn
+ Barkskin (1x per day): 5 turns
  Summon Lesser Shambling Mound (1x per day): 1 turn
 
 Lesser Shambling Mound (8 HD):
@@ -9211,7 +9211,7 @@ Ilbratha was created by unknown hands at the behest of Azoun the First, long dea
 STATISTICS:
 
 Special Abilities:
- Mirror Image (1x per day): 1 turn
+ Mirror Image (1x per day): 5 turns
 
 Equipped Abilities:
  Translucent: +2 bonus to AC
@@ -10107,7 +10107,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Magic Resistance: +5% bonus
+ Magic Resistance: +10% bonus
 
 Combat Abilities:
  Righteous: +3 bonus to damage against evil creatures
@@ -10147,7 +10147,7 @@ Special Abilities:
  Greater Restoration (1x per day)
 
 Equipped Abilities:
- Magic Resistance: +15% bonus
+ Magic Resistance: +20% bonus
 
 Combat Abilities:
  Holy: +5 bonus to damage against evil creatures
