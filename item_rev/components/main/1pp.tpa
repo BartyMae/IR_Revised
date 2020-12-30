@@ -2864,13 +2864,13 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 COPY_EXISTING ~halb06.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     LAUNCH_PATCH_MACRO ~clear~
-    SET gradient = 176	// colour index
+    SET gradient = 6	// colour index
     SET location = wgrey		// location
     LAUNCH_PATCH_MACRO ~colour~
-    SET gradient = 191	// colour index
+    SET gradient = 6	// colour index
     SET location = wblue		// location
     LAUNCH_PATCH_MACRO ~colour~
-    SET gradient = 176	// colour index
+    SET gradient = 254	// colour index
     SET location = wred		// location
     LAUNCH_PATCH_MACRO ~colour~
     END
