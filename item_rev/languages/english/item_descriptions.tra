@@ -1754,7 +1754,7 @@ STATISTICS:
 
 Equipped Abilities:
  Protects Against: Backstabs
- Gargoyle Skin: 1 stoneskin per round
+ Gargoyle Skin: 5 stoneskins per turn
 
 NOTE: Multiple Stoneskin effects are not cumulative.
 
@@ -13974,7 +13974,7 @@ The spell on this page is Animate Dead.
 STATISTICS:
 
 Special Abilities:
- Fireball (1x per day)
+ Animate Dead (1x per day)
 
 Not Usable By:
  Wizard Slayer~

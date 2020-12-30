@@ -162,6 +162,7 @@ COPY ~%source%/GARGOYLE_BOOTS.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/TANSHERON_BOWs_3.tpa
   COPY ~item_rev/itm/bow15.spl~ ~override~ // Phantom Arrow
+  COPY ~item_rev/itm/bow15.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/TANSHERON_BOWs_3.tpa~ ~%target%~
 

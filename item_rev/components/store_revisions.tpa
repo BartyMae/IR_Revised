@@ -16,13 +16,14 @@ LAF make_scrolls END
 
 
 // Increase bag capacity a little
-ACTION_FOR_EACH file IN
+ACTION_FOR_EACH resource IN
   bag02 bag02b bag02c bag02d bag02e bag02f bag02g bag02h bag02i // Gem Bag
   bag03 bag03b bag03c bag03d bag03e bag03f bag03g bag03h bag03i // Scroll Case
 BEGIN
-  COPY_EXISTING ~%file%.sto~ override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    WRITE_SHORT 0x22 50
-  END BUT_ONLY
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
+    COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
+	WRITE_SHORT 0x22 100
+  END
 END
 
 
