@@ -897,7 +897,7 @@ COPY ~%source%/STAFF_OF_CURING_1.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_THE_MAGI_5.tpa
   COPY ~item_rev/itm/staf11.spl~ ~override~ // Spell Trap
     SAY NAME1 @4056
-  COPY ~item_rev/itm/staf11b.spl~ ~override~
+  COPY ~item_rev/itm/staf11a.spl~ ~override~
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~hllayen.cre~) BEGIN
     COPY_EXISTING ~hllayen.cre~ ~override~ // Layene

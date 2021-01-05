@@ -96,7 +96,7 @@ SET resist_dispel = 2	// dispel/resitance
 SET duration = 60		// duration
 SET probability1 = 100	// probability 1
 SET probability2 = 0	// probability 2
-SPRINT "resource" "staf11b" 		// resource
+SPRINT "resource" "staf11a" 		// resource
 SET dicenumber = 0		// dice number
 SET dicesize = 0		// dice size
 SET savingthrow = 0   // saving throw
@@ -651,7 +651,6 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       ~RING39~   // Ring of Kangaxx (2nd)
       ~STAF09~   // Staff of Command +3 (2nd)
       ~STAF10~   // Staff of Curing +1 (2nd)
-      ~STAF11~   // Staff of the Magi +5 (2nd)
       ~STAF12~   // Staff of Power +3 (2nd)
       ~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
       ~STAF14~   // Staff of the Woodlands (2nd)
@@ -752,6 +751,7 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
+      ~STAF11~   // Staff of the Magi +5 (2nd)
       ~SW1H51~   // Celestial Fury (2nd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
@@ -898,7 +898,6 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       ~RING39~   // Ring of Kangaxx (2nd)
       ~STAF09~   // Staff of Command +3 (2nd)
       ~STAF10~   // Staff of Curing +1 (2nd)
-      ~STAF11~   // Staff of the Magi +5 (2nd)
       ~STAF12~   // Staff of Power +3 (2nd)
       ~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
       ~STAF14~   // Staff of the Woodlands (2nd)
@@ -999,6 +998,7 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
+      ~STAF11~   // Staff of the Magi +5 (2nd)
       ~SW1H51~   // Celestial Fury (2nd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
@@ -1153,7 +1153,6 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       ~RING39~   // Ring of Kangaxx (2nd)
       ~STAF09~   // Staff of Command +3 (2nd)
       ~STAF10~   // Staff of Curing +1 (2nd)
-      ~STAF11~   // Staff of the Magi +5 (2nd)
       ~STAF12~   // Staff of Power +3 (2nd)
       ~STAF13~   // Staff of Thunder and Lightning +2 (2nd)
       ~STAF14~   // Staff of the Woodlands (2nd)
@@ -1266,6 +1265,7 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
+      ~STAF11~   // Staff of the Magi +5 (2nd)
       ~SW1H51~   // Celestial Fury (2nd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
