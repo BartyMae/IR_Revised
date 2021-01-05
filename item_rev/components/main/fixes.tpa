@@ -642,7 +642,6 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       ~BOW21~    // Darkfire Bow +5 (2nd)
       ~BRAC23~   // Blessed Bracers (2nd)
       ~CLCK27~   // Cloak of the Sewers (2nd)
-      ~HALB10~   // Ravager +4 (2nd)
       ~HAMM11~   // Runehammer +5 (2nd)
       ~HELM16~   // Helm of Brilliance (2nd)
       ~MISC5T~   // Shaman's Staff (2nd)
@@ -720,7 +719,6 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 1st header
-      ~BOOT12~   // Gargoyle Boots
       ~HELM31~   // Horned Helm of the Rock
       ~MISC3H~   // Horn of Blasting
       ~MISC3L~   // Horn of Silence
@@ -754,8 +752,6 @@ COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
-      ~HALB06~   // Blackmist +4 (2nd)
-      ~HALB11~   // Ravager +5 (2nd)
       ~SW1H51~   // Celestial Fury (2nd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
@@ -893,7 +889,6 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       ~BOW21~    // Darkfire Bow +5 (2nd)
       ~BRAC23~   // Blessed Bracers (2nd)
       ~CLCK27~   // Cloak of the Sewers (2nd)
-      ~HALB10~   // Ravager +4 (2nd)
       ~HAMM11~   // Runehammer +5 (2nd)
       ~HELM16~   // Helm of Brilliance (2nd)
       ~MISC5T~   // Shaman's Staff (2nd)
@@ -971,7 +966,6 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 1st header
-      ~BOOT12~   // Gargoyle Boots
       ~HELM31~   // Horned Helm of the Rock
       ~MISC3H~   // Horn of Blasting
       ~MISC3L~   // Horn of Silence
@@ -1005,8 +999,6 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
-      ~HALB06~   // Blackmist +4 (2nd)
-      ~HALB11~   // Ravager +5 (2nd)
       ~SW1H51~   // Celestial Fury (2nd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
@@ -1152,7 +1144,6 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       ~BOW21~    // Darkfire Bow +5 (2nd)
       ~BRAC23~   // Blessed Bracers (2nd)
       ~CLCK27~   // Cloak of the Sewers (2nd)
-      ~HALB10~   // Ravager +4 (2nd)
       ~HAMM11~   // Runehammer +5 (2nd)
       ~HELM16~   // Helm of Brilliance (2nd)
       ~MISC5T~   // Shaman's Staff (2nd)
@@ -1238,7 +1229,6 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 1st header
-      ~BOOT12~   // Gargoyle Boots
       ~HELM31~   // Horned Helm of the Rock
       ~MISC3H~   // Horn of Blasting
       ~MISC3L~   // Horn of Silence
@@ -1276,8 +1266,6 @@ COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
       END
     END
     PATCH_FOR_EACH ~item~ IN // 3 charges, 2nd header
-      ~HALB06~   // Blackmist +4 (2nd)
-      ~HALB11~   // Ravager +5 (2nd)
       ~SW1H51~   // Celestial Fury (2nd)
     BEGIN
       PATCH_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
