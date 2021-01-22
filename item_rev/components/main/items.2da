@@ -406,7 +406,7 @@ ARMOR_OF_DEEP_NIGHT_5                      LEATHERS leat17   1        1        0
 ARMOR_OF_THE_VIPER_4                       LEATHERS leat18   1        1        0        0        1        1        @1636    @1665    @1640    @1666    @4030    *        *        *
 SHADOW_DRAGONHIDE_ARMOR_5                  HIDE     leat19   1        1        0        0        1        1        @1651    @1667    @1671    @1669    *        *        *        *
 AEGERS_HIDE_3                              HIDE     leat20   1        1        0        0        1        1        @1651    @1670    @1671    @1672    *        *        *        *
-HUMAN_FLESH_4                              LEATHER  leat21   1        1        0        0        1        1        @1651    @1673    @1632    @1674    *        *        *        *
+HUMAN_FLESH_5                              LEATHER  leat21   1        1        0        0        1        1        @1651    @1673    @1632    @1674    *        *        *        *
 HUMAN_FLESH                                LEATHER  leat22   1        1        0        0        1        1        @1629    @1675    @1632    @1676    *        *        *        *
 TROLLHIDE_ARMOR_4                          HIDE     leat23   1        1        0        0        1        1        @1651    @1677    @1671    @1678    *        *        *        *
 GRANDMASTERS_ARMOR_5                       LEATHER  leat24   1        1        0        0        1        1        @1629    @1679    @1632    @1680    *        *        *        *
@@ -692,7 +692,7 @@ STAFF_OF_EARTH_2                           STAFF    staf16   1        1        0
 STAFF_OF_FIRE_2                            STAFF    staf17   1        1        0        0        1        1        @2009    @2038    @2012    @2039    @2038    @4065    *        *
 QUARTERSTAFF_2                             STAFF    staf18   1        1        0        1        1        1        @2009    @2040    @2012    @2041    *        *        *        *
 CLERICS_STAFF_3                            STAFF    staf19   1        1        0        0        1        1        @2009    @2042    @2012    @2043    *        *        *        *
-STAFF_OF_RYNN_3                            STAFF    staf20   1        1        0        0        1        1        @2009    @2044    @2012    @2045    @2044    @4066    *        *
+STAFF_OF_RHYNN_3                           STAFF    staf20   1        1        0        0        1        1        @2009    @2044    @2012    @2045    @2044    @4066    *        *
 STAFF_OF_THE_RAM_4                         STAFF    staf21   1        1        0        0        1        1        @2009    @2046    @2012    @2047    *        *        *        *
 STAFF_OF_THE_RAM_5                         STAFF    staf22   1        1        0        0        1        1        @2009    @2048    @2012    @2049    *        *        *        *
 SERPENT_SHAFT_3                            STAFF    staf23   1        1        0        0        1        1        @2009    @2050    @2012    @2051    *        *        *        *

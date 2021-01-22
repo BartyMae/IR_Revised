@@ -819,6 +819,7 @@ DEFINE_PATCH_MACRO special BEGIN
   BEGIN
     iden_bonus_thaco +=1
 	iden_bonus_damage =1
+	iden_delta_damage +=1
   END
 
   // Ripper +2 - broken if not set

@@ -573,7 +573,7 @@ Equipped Abilities:
 THAC0: +4 bonus
 Damage: 1D8 + 4
 Damage Type: Slashing
-Weight: 7
+Weight: 6
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-Handed
@@ -603,7 +603,7 @@ Combat Abilities:
 THAC0: +5 bonus
 Damage: 1D8 + 5
 Damage Type: Slashing
-Weight: 7
+Weight: 6
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-Handed
@@ -2607,7 +2607,7 @@ STATISTICS:
 Equipped Abilities:
  Saving Throws: +1 bonus
  THAC0: +1 bonus
- Maximum Hit Points: +5 bonus
+ Maximum Hit Points: +10 bonus
 
 Weight: 1
 Usable By:
@@ -3785,7 +3785,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: target and opponents within 5' for 1 round (save vs. breath at -2 neg.)
+ Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D4 + 4
@@ -3807,7 +3807,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: target and opponents within 5' for 1 rounds (save vs. breath at -2 neg.)
+ Stardust: target and opponents within 5' are blinded for 1 rounds (save vs. breath at -2 neg.)
  Starbolt: 15% chance of dealing 5D6 magic damage
  Returning: returns to the wielder's hand instantly after an attack is made
 
@@ -4089,7 +4089,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1491 = ~Drow Piwafwi Cloak~
-@1492 = ~The magically enhanced drow piwafi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
+@1492 = ~The magically enhanced drow piwafwi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafwi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
 
 STATISTICS:
 
@@ -5547,7 +5547,7 @@ Equipped Abilities:
  Protects Against: Backstabs
 
 Armor Class: 2
-Weight: 25
+Weight: 20
 Requires: 6 Strength
 Not Usable By:
  Mage
@@ -5569,7 +5569,7 @@ Equipped Abilities:
  Protects Against: Poison
 
 Armor Class: 3
-Weight: 25
+Weight: 20
 Requires: 6 Strength
 Not Usable By:
  Mage
@@ -5612,7 +5612,7 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@1673 = ~Human Flesh +4~
+@1673 = ~Human Flesh +5~
 @1674 = ~Made from human skin and treated with the blood of a noble dragon, this armor emits the stench of bitter death. The malevolent armor can only be used by a truly evil person.
 
 STATISTICS:
@@ -5622,7 +5622,7 @@ Equipped Abilities:
  Magic Resistance: +20% bonus
  Hideous: +2 bonus to AC and saving throws vs. humanoids
 
-Armor Class: 4
+Armor Class: 3
 Weight: 15
 Requires: 4 Strength
 Not Usable By:
@@ -5632,7 +5632,7 @@ Not Usable By:
  Kensai
  Shapeshifter~
 @1675 = ~Human Flesh~
-@1676 = ~This is a tunic made from the badly sewn together human flesh that you took from the Tanner's house in the Bridge District. If completed it may make serviceable armor, albeit only the most evil of humans could wear such a vile item.
+@1676 = ~This is a tunic made from the badly sewn together human flesh that you took from the Tanner's house in the Bridge District. If completed it may make serviceable armor, albeit only the most evil of people could wear such a vile item.
 
 STATISTICS:
 
@@ -5646,12 +5646,13 @@ Not Usable By:
  Kensai
  Shapeshifter~
 @1677 = ~Trollhide Armor +4~
-@1678 = ~Some might argue that trolls are the natural enemy of most rangers. Inherently violent and aggressive, trolls frequently attack with little or no provocation. They attack humans and small human settlements regularly, destroying everything in their path. Trolls are not only feared for their large, powerful limbs, but for their ability to rapidly regenerate most wounds inflicted on them. This magically enhanced suit of armor, made with the thick hide of trolls, grants the wearer the same regenerative properties.
+@1678 = ~Some might argue that trolls are the natural enemy of most rangers. Inherently violent and aggressive, trolls frequently attack with little or no provocation. They attack humans and small human settlements regularly, destroying everything in their path. Trolls are not only feared for their large, powerful limbs, but for their ability to rapidly regenerate most wounds inflicted on them. This magically enhanced suit of armor, made with the thick hide of trolls, grants the wearer the same regenerative properties. The armor is not held together by typical metal studs but instead by portruding heavy thorns.
 
 STATISTICS:
 
 Equipped Abilities:
  Regeneration: 1 hp/round
+ Thorns: creatures who strike the wearer in melee suffer 2 piercing damage every round for 5 rounds
 
 Armor Class: 2
 Weight: 25
@@ -8640,7 +8641,7 @@ Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
-Usable By
+Usable By:
  Druid~
 @2034 = ~Staff of Air +2~
 @2035 = ~Legend states that a planeswalker brought this staff from his home plane, although other tales claim it was forged by an ancient druidic sect, or was the weapon of a powerful elementalist. In truth, several such staves exist. They are tied to different elemental planes, and each has had many stories from any number of owners. Perhaps that is their true power: they compel people to craft heroes of their own.
@@ -8747,8 +8748,8 @@ Type: Two-Handed
 Requires: 5 Strength
 Usable By:
  Cleric~
-@2044 = ~Staff of Rynn +3~
-@2045 = ~There was a time when magic was distrusted even more so than now, and the burning of "heretics" was woefully common. Delmarey, a witch from the swamplands near Myth Rynn, faced just such a fate when she was blamed for an unseasonable drought. Taken by surprise and sentenced by a mob, she was put to the torch in the village square. With her dying breath she uttered a foul curse, fueling the fire to an unstoppable magnitude. By dawn, the entire village was reduced to black coal, save the burnt remains of the pole Delmarey had been bound to. This staff has been imbued with some remnants of Delmarey's power, making it a highly enchanted weapon.
+@2044 = ~Staff of Rhynn +3~
+@2045 = ~There was a time when magic was distrusted even more so than now, and the burning of "heretics" was woefully common. Delmarey, a witch from the swamplands near Myth Rhynn, faced just such a fate when she was blamed for an unseasonable drought. Taken by surprise and sentenced by a mob, she was put to the torch in the village square. With her dying breath she uttered a foul curse, fueling the fire to an unstoppable magnitude. By dawn, the entire village was reduced to black coal, save the burnt remains of the pole Delmarey had been bound to. This staff has been imbued with some remnants of Delmarey's power, making it a highly enchanted weapon.
 
 STATISTICS:
 
@@ -11577,7 +11578,7 @@ Equipped Abilities:
  Maximum Hit Points: -10 penalty
 
 Combat Abilities:
- Scourging: 15% chance target is sticken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
+ Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
 
 THAC0: +4 bonus
 Damage: +4 bonus

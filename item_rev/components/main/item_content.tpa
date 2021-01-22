@@ -160,11 +160,11 @@ COPY ~%source%/BOOTS_OF_ETHEREALNESS.tpa~ ~%target%~
 COPY ~%source%/GARGOYLE_BOOTS.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/TANSHERON_BOWs_3.tpa
+<<<<<<<< .../item_rev-inlined/item/TANSHERONS_BOW_3.tpa
   COPY ~item_rev/itm/bow15.spl~ ~override~ // Phantom Arrow
-  COPY ~item_rev/itm/bow15.eff~ ~override~
+  COPY ~item_rev/itm/bow15i.eff~ ~override~
 >>>>>>>>
-COPY ~%source%/TANSHERON_BOWs_3.tpa~ ~%target%~
+COPY ~%source%/TANSHERONS_BOW_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/IRON_BOW_OF_GESEN_4.tpa
@@ -412,6 +412,14 @@ COPY ~%source%/ARMOR_OF_MISSILE_ATTRACTION_3.tpa~ ~%target%~
   COPY ~item_rev/itm/leat13i.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/SKIN_OF_THE_GHOUL_2.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/TROLLHIDE_ARMOR_4.tpa
+  COPY ~item_rev/itm/leat23.spl~ ~override~
+  COPY ~item_rev/itm/leat23a.spl~ ~override~
+  COPY ~item_rev/itm/leat23.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/TROLLHIDE_ARMOR_4.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/EFREETI_BOTTLE.tpa
@@ -1082,11 +1090,11 @@ COPY ~%source%/STAFF_OF_EARTH_2.tpa~ ~%target%~
 COPY ~%source%/STAFF_OF_FIRE_2.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/STAFF_OF_RYNN_3.tpa
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_RHYNN_3.tpa
   COPY ~item_rev/itm/staf20.spl~ ~override~ // Greater Malison
     SAY NAME1 @4066
 >>>>>>>>
-COPY ~%source%/STAFF_OF_RYNN_3.tpa~ ~%target%~
+COPY ~%source%/STAFF_OF_RHYNN_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/THE_WHISTLING_SWORD_2.tpa
