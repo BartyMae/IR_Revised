@@ -246,9 +246,13 @@ COPY ~item_rev/itm/dvmindbr.spl~ ~override~ // Mindbreaking
 COPY ~item_rev/itm/dvmindbr.eff~ ~override~
 
 COPY ~item_rev/itm/dvtoxic.spl~ ~override~ // Toxins (1 hp/6 seconds)
+COPY ~item_rev/itm/dvtoxic.eff~ ~override~
 COPY ~item_rev/itm/dvvenom.spl~ ~override~ // Venomous (1 hp/12 seconds)
+COPY ~item_rev/itm/dvvenom.eff~ ~override~
 COPY ~item_rev/itm/dvaspven.spl~ ~override~ // Asp's Venom (1 hp/30 seconds)
+COPY ~item_rev/itm/dvaspven.eff~ ~override~
 COPY ~item_rev/itm/dvviper.spl~ ~override~ // Viperous (5 hp/12 seconds)
+COPY ~item_rev/itm/dvviper.eff~ ~override~
 
 COPY ~item_rev/itm/dvprlyze.spl~ ~override~ // Paralyzing
 COPY ~item_rev/itm/dvprlyze.eff~ ~override~

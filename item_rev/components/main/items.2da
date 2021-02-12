@@ -820,7 +820,7 @@ HEAVY_CROSSBOW_2                           XBOWHVY  xbow07   1        1        0
 GIANT_HAIR_CROSSBOW_3                      XBOWHVY  xbow08   1        1        0        0        1        1        @2269    @2283    @2272    @2284    *        *        *        *
 LIGHT_CROSSBOW_2                           XBOWLITE xbow09   1        1        0        0        1        1        @1517    @2285    @1519    @2286    *        *        *        *
 NECARADANS_CROSSBOW_2                      XBOWLITE xbow10   1        1        0        0        1        1        @1517    @2287    @1519    @2288    *        *        *        *
-CROSSBOW_OF_AFFLICTION_4                   XBOWHVY  xbow13   1        1        0        0        1        1        @2269    @2289    @2272    @2290    *        *        *        *
+CROSSBOW_OF_AFFLICTION_4                   XBOWHVY  xbow13   1        1        0        0        1        1        @2269    @2289    @1519    @2290    *        *        *        *
 HEAVY_CROSSBOW_OF_SEARING_2                XBOWHVY  xbow14   1        1        0        0        1        1        @2269    @2291    @2272    @2292    *        *        *        *
 FIRETOOTH_4                                XBOWLITE xbow15   1        1        0        0        1        1        @1517    @2293    @1519    @2294    *        *        *        *
 FIRETOOTH_5                                XBOWLITE xbow16   1        1        0        0        1        1        @1517    @2295    @1519    @2296    *        *        *        *

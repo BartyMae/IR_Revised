@@ -8545,6 +8545,7 @@ Usable By:
 STATISTICS:
 
 Special Abilities:
+ Remove Magic (3x per day)
  Spell Trap (1x per day): 1 turn
 
 Equipped Abilities:
@@ -8562,7 +8563,7 @@ Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
-Usable By
+Usable By:
  Mage~
 @2028 = ~Staff of Power +3~
 @2029 = ~Staffs of Power are immediately familiar to most spellcasters, and are almost icons of arcane study. The inherent utility of such staffs has resulted in many being crafted or commissioned, and specific histories are usually lost in the crowd.
@@ -8585,7 +8586,7 @@ Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
-Usable By
+Usable By:
  Mage~
 @2030 = ~Staff of Thunder and Lightning +2~
 @2031 = ~There are stories that tell of such staves sprouting in the undergrowth around druid groves when the forest is threatened. Fanciful tales, but whether they are true or not, this staff is a powerful tool indeed. It draws energy from storms, and there is a chance that any blow may trigger a deafening thunderclap that knocks enemies down. It can also casts lightning bolts capable of paralyzing the target, and if circumstances warrant it, it can summon a lighting storm to blast enemies to dust.
@@ -8631,7 +8632,7 @@ Equipped Abilities:
  Regeneration: 1 hp/2 rounds
 
 Combat Abilities:
- Animal Empaty: animals within 30' are charmed (save vs. spell at -2 neg.)
+ Animal Empathy: animals within 30' are charmed (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D6 + 4
@@ -11132,7 +11133,7 @@ Combat Abilities:
 THAC0: +2 bonus
 Damage: 1D8 + 2
 Damage Type: Piercing
-Weight: 2
+Weight: 4
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-Handed
@@ -13009,7 +13010,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2463 = ~Joril's Dagger +3~
-@2464 = ~Joril was a powerful Frost giant that lived with his clan in the Spine of the World. His magic dagger was lost when he was killed by a band of adventurers. Eventually the dagger wound up in the town of Kuldahar where it was reforged so that it could be used as a two-handed sword.
+@2464 = ~Joril was a powerful frost giant that lived with his clan in the Spine of the World. His magic dagger was lost when he was killed by a band of adventurers. Eventually the dagger wound up in the town of Kuldahar where it was reforged so that it could be used as a two-handed sword.
 
 STATISTICS:
 
@@ -13609,7 +13610,7 @@ Usable By:
 @2538 = ~Brine Potion~
 @2539 = ~A potion obtained from a briny pool in which young illithids, tadpole like creatures, live and grow. When used, the potion will temporarily make the user immune to psionics.
 
-Usable By
+Usable By:
  All~
 @2540 = ~Patrol Leader's Helm~
 @2541 = ~This is the helmet of the Svirfneblin Patrol Leader that you were sent to kill. It will act as proof that you have succeeded in your mission.
