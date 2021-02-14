@@ -331,7 +331,9 @@ COPY ~%source%/SURYRISS_BLADE_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/BLACKMIST_4.tpa
-COPY ~item_rev/itm/halb06.spl~ ~override~ // Blackmist
+  ADD_PROJECTILE ~item_rev/itm/halb06.pro~ // Blackmist
+  COPY ~item_rev/itm/halb06.spl~ ~override~ // Blackmist
+    WRITE_SHORT 0x98 %halb06%
 
 COPY_EXISTING UDDEMON.dlg override // Quest enable
   DECOMPILE_DLG_TO_D
@@ -397,6 +399,7 @@ COPY ~%source%/HORNED_HELM_OF_THE_ROCK.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/ARMOR_OF_MISSILE_ATTRACTION_3.tpa
   ADD_PROJECTILE ~item_rev/itm/leat06.pro~ // Missile Attraction
   COPY ~item_rev/itm/leat06.spl~ ~override~
+  COPY ~item_rev/itm/leat06a.spl~ ~override~
     WRITE_SHORT 0x98 %leat06%
   COPY ~item_rev/itm/leat06.eff~ ~override~
 >>>>>>>>
@@ -1155,9 +1158,11 @@ COPY ~%source%/NAMARRA_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/BLADE_OF_ROSES_1.tpa
-ADD_PROJECTILE ~item_rev/itm/sw1h40.pro~ // Singing Sword
-COPY ~item_rev/itm/sw1h40.spl~ ~override~
-  WRITE_SHORT 0x98 %sw1h40%
+  ADD_PROJECTILE ~item_rev/itm/sw1h40.pro~ // Singing Sword
+  COPY ~item_rev/itm/sw1h40.spl~ ~override~
+  COPY ~item_rev/itm/sw1h40a.spl~ ~override~
+    WRITE_SHORT 0x98 %sw1h40%
+  COPY ~item_rev/itm/sw1h40.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/BLADE_OF_ROSES_1.tpa~ ~%target%~
 

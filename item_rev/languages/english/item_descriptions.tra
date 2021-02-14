@@ -3807,7 +3807,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: target and opponents within 5' are blinded for 1 rounds (save vs. breath at -2 neg.)
+ Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
  Starbolt: 15% chance of dealing 5D6 magic damage
  Returning: returns to the wielder's hand instantly after an attack is made
 
@@ -4417,7 +4417,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Weakening: target suffers a cumulative -1 penalty to THAC0 and damage for 2 rounds
- Blackmist: 15% chance of blinding everyone within 10' for 1 turn (save vs. spell at -2 neg.)
+ Blackmist: 15% chance of blinding opponents within 10' for 1 turn (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -5386,7 +5386,7 @@ STATISTICS:
 *CURSED*
 
 Equipped Abilities:
- Missile Attraction: wearer suffers a -10 penalty to AC vs. missile weapons and creatures within 20' gain a +4 bonus to AC vs. missile weapons
+ Missile Attraction: wearer suffers a -10 penalty to AC vs. missile weapons and everyone within 20' gains a +4 bonus to AC vs. missile weapons
 
 Armor Class: 4
 Weight: 20
