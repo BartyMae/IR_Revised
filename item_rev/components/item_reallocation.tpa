@@ -1,8 +1,8 @@
 /////////////////////////////////////
 
-// reducing amount of lootable potions, mainly concerns healing ones
+// Reducing amount of lootable potions, mainly healing
 
-// random encounter actors
+// Random encounter actors
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~maevar.cre~) BEGIN // BG2 files check
 
@@ -23,7 +23,7 @@ COPY_EXISTING rethug04.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATC
   REMOVE_CRE_ITEM potn14 potn43
 END BUT_ONLY
 
-// areas
+// Areas
 
 COPY_EXISTING ar0304.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF REPLACE_AREA_ITEM INT_VAR charges1=3 STR_VAR old_item=potn08 new_item=potn08 END
@@ -578,7 +578,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bhcrypt.cre~) BEGIN
   COPY_EXISTING bhcrypt.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM sw1h36
     ADD_CRE_ITEM sw1h34 #1 #0 #0 NONE WEAPON1 EQUIP
-	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=5 parameter2=90 END
+    LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=5 parameter2=90 END
   END BUT_ONLY
 END
 
@@ -610,7 +610,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~dempri.cre~) BEGIN
   COPY_EXISTING dempri.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM blun04
     ADD_CRE_ITEM blun19 #1 #0 #0 NONE WEAPON1 EQUIP
-	LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=101 END
+    LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=2 parameter2=101 END
   END BUT_ONLY
 END
 
@@ -639,7 +639,7 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~amsaemon.cre~) BEGIN
   COPY_EXISTING amsaemon.cre override
                 yaga03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h52~ ~sw1h76~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h52~ ~sw1h76~
   END BUT_ONLY
 END
 
@@ -713,7 +713,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wwboo.spl~) BEGIN
     COPY_EXISTING vaelasa.dlg override
       DECOMPILE_DLG_TO_D
         REPLACE_TEXTUALLY CASE_INSENSITIVE ~AddexperienceParty(16250)~
-		~AddexperienceParty(16250)
+        ~AddexperienceParty(16250)
 GiveItemCreate("MISC3F",LastTalkedToBy,0,0,0)~
       COMPILE_D_TO_DLG
     END BUT_ONLY

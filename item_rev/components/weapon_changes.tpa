@@ -286,20 +286,20 @@ DEFINE_PATCH_MACRO special BEGIN
       update_line = 2
     END
 
-	PATCH_IF halberds_can_slash_too=2 BEGIN
-	  WRITE_SHORT off+0x1c 7
-	  SPRINT text_update wc_pierce_to_slashpierce
+    PATCH_IF halberds_can_slash_too=2 BEGIN
+      WRITE_SHORT off+0x1c 7
+      SPRINT text_update wc_pierce_to_slashpierce
       LPM update_item_descriptions
-	END
+    END
     WRITE_SHORT off+0xe 3 // range
   END
   
   PATCH_IF dual_mode_wakizashis=1 BEGIN
     PATCH_IF wakizashi BEGIN
       WRITE_SHORT off+0x1c 7
-	  iden_new_dice = 1
+      iden_new_dice = 1
       iden_new_size = 6
-	END
+    END
   END
 
   // 1d12 twohanded swords - change to 2d8, not 2d6
@@ -409,7 +409,7 @@ DEFINE_PATCH_MACRO special BEGIN
   BEGIN
     iden_new_dice = new_spear_dice
     iden_new_size = new_spear_size
-	WRITE_SHORT off+0xe 3 // range
+    WRITE_SHORT off+0xe 3 // range
   END
 
   // Moonblade - use longsword's stats
@@ -728,9 +728,9 @@ DEFINE_PATCH_MACRO special BEGIN
   // Sling of Seeking +1, Arrow of Slaying +1, Arrow of Detonation, Bolt of Polymorphing - special +5 THAC0 bonus
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~slng03~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~arow03~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~arow06~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~bolt05~
+    ~%SOURCE_RES%~ STRING_EQUAL ~arow03~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~arow06~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~bolt05~
   BEGIN
     iden_bonus_thaco=5
   END
@@ -742,27 +742,27 @@ DEFINE_PATCH_MACRO special BEGIN
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h08~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h10~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sw2h19~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~sw2h22~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~ohreaver~
+    ~%SOURCE_RES%~ STRING_EQUAL ~sw2h22~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~ohreaver~
   BEGIN
-	iden_bonus_damage =2
+    iden_bonus_damage =2
   END
 
   // Aegis-fang +3, World's Edge +3, Harmonium Halberd +3 - special +4 damage bonus
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~aegis~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~aegis2~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~aegis2a~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~aegis2b~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~aegis2~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~aegis2a~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~aegis2b~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~bgsw2h07~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~wa2halb~
   BEGIN
-	iden_bonus_damage =4
+    iden_bonus_damage =4
   END
 
   PATCH_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet~) BEGIN // BG1 World's Edge fix
     PATCH_IF ~%SOURCE_RES%~ STRING_EQUAL ~sw2h07~ BEGIN
-	  iden_bonus_damage =4
+      iden_bonus_damage =4
     END
   END
 
@@ -778,7 +778,7 @@ DEFINE_PATCH_MACRO special BEGIN
     ~%SOURCE_RES%~ STRING_EQUAL ~dagg04~
   BEGIN
     iden_bonus_thaco +=2
-	iden_bonus_damage =2
+    iden_bonus_damage =2
   END
 
   // Mighty Oak +2 - special +2 damage and +1 THAC0 penalty
@@ -786,7 +786,7 @@ DEFINE_PATCH_MACRO special BEGIN
     ~%SOURCE_RES%~ STRING_EQUAL ~blun37~
   BEGIN
     iden_bonus_thaco -=1
-	iden_bonus_damage =2
+    iden_bonus_damage =2
   END
 
   // Warblade +3, Giant Hair Crossbow +3 - special +4 damage bonus and -2 THAC0 penalty
@@ -795,47 +795,47 @@ DEFINE_PATCH_MACRO special BEGIN
     ~%SOURCE_RES%~ STRING_EQUAL ~xbow08~
   BEGIN
     iden_bonus_thaco -=2
-	iden_bonus_damage =4
+    iden_bonus_damage =4
   END
   
   // Drowcraft Weapons - special +2 THAC0 and damage bonuses
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dwblun01~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwhalb01~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwsper01~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwsw1h01~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwsw1h02~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwxbow01~
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwhalb01~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwsper01~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwsw1h01~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwsw1h02~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwxbow01~
   BEGIN
     iden_bonus_thaco +=2
-	iden_bonus_damage =2
+    iden_bonus_damage =2
   END
   
   // Drowcraft Ammunition - special +1 THAC0 and damage bonuses
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dwbolt01~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwbolt02~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~dwbolt03~
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwbolt02~ ||
+    ~%SOURCE_RES%~ STRING_EQUAL ~dwbolt03~
   BEGIN
     iden_bonus_thaco +=1
-	iden_bonus_damage =1
-	iden_delta_damage +=1
+    iden_bonus_damage =1
+    iden_delta_damage +=1
   END
 
   // Ripper +2 - broken if not set
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow09~
   BEGIN
-	iden_bonus_damage =2
-	iden_delta_damage +=1
+    iden_bonus_damage =2
+    iden_delta_damage +=1
   END
   
   // Strong Arm +2 - broken if not set
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow11~
   BEGIN
-	iden_bonus_damage =4
-	iden_delta_damage -=2
+    iden_bonus_damage =4
+    iden_delta_damage -=2
   END
   
   // Iron Bow of Gesen +4 - use spear's XdY damage (don't ask me why :rolleyes:)
@@ -844,7 +844,7 @@ DEFINE_PATCH_MACRO special BEGIN
   BEGIN
     iden_new_dice = new_spear_dice
     iden_new_size = new_spear_size
-	//WRITE_SHORT 0x4ea 08 // electricity damage
+    //WRITE_SHORT 0x4ea 08 // electricity damage
   END
 
   // Paralytic Bolt - they'll have normal damage (1d10) with this component, so increase it
@@ -864,7 +864,7 @@ DEFINE_PATCH_MACRO special BEGIN
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sper08~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sper09~ ||
-	~%SOURCE_RES%~ STRING_EQUAL ~sper11~
+    ~%SOURCE_RES%~ STRING_EQUAL ~sper11~
   BEGIN
     PATCH_IF type=1 BEGIN
       WRITE_SHORT off+0xe 2 // range
@@ -915,12 +915,12 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     // change proficiency to "katana/wakizashi"
     BEGIN
       WRITE_BYTE 0x31 0x5e
-	  SPRINT text_update waki_prof
+      SPRINT text_update waki_prof
       LPM update_item_descriptions
-	  PATCH_IF dual_mode_wakizashis=1 BEGIN
-	  SPRINT text_update wc_pierce_to_slashpierce
+      PATCH_IF dual_mode_wakizashis=1 BEGIN
+      SPRINT text_update wc_pierce_to_slashpierce
       LPM update_item_descriptions
-	  END ELSE
+      END ELSE
       SPRINT text_update wc_pierce_to_slash
       LPM update_item_descriptions
     END
@@ -967,10 +967,10 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
       SPRINT text_update flail_prof
       LPM update_item_descriptions
     END
-	
+    
     (short_bow || long_bow || comp_long_bow)
     // reduce ApR of bows by 0.5 if it's above 1
-	BEGIN
+    BEGIN
       GET_OFFSET_ARRAY global ITM_V10_GEN_EFFECTS
       PHP_EACH global AS ind => res BEGIN
         PATCH_IF (SHORT_AT res)=1 BEGIN // ApR modifier
@@ -982,20 +982,20 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     light_xbow
     // add reload time to crossbows, duration = 1 second
     BEGIN
-	  PATCH_IF xbow_reload_pause = 1 BEGIN
+      PATCH_IF xbow_reload_pause = 1 BEGIN
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=2 END // type 2 = ranged, no ammo required
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=4 END // type 4 = ranged, requires ammo
-	  END
+      END
     END
     
     heavy_xbow
     // add reload time to crossbows, duration = 2 seconds
     BEGIN
-	  PATCH_IF xbow_reload_pause = 1 BEGIN
+      PATCH_IF xbow_reload_pause = 1 BEGIN
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=2 parameter1=0 parameter2=1 type=2 END
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=2 parameter1=0 parameter2=1 type=4 END
       END
-	END
+    END
     
 
     // if ammo's prof is 0 (none), then archer suffers no thaco penalty even without any points in launcher's proficiency

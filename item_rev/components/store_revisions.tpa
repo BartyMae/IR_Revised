@@ -22,7 +22,7 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
     COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
-	WRITE_SHORT 0x22 100
+    WRITE_SHORT 0x22 100
   END
 END
 
@@ -208,7 +208,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     BRAC14    // Bracers of Defense AC 4
     BELT06    // Girdle of Hill Giant Strength
     CLCK12    // Knave's Robe
-	HALB07    // Halberd +2
+    HALB07    // Halberd +2
  // RR additions
     ~RR#BOW02~  // Composite Short Bow
     ~RR#BOW03~  // Composite Short Bow +1
@@ -412,7 +412,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SHLD29    // Medium Shield +2
     SHLD30    // Large Shield +2
     SW1H09    // Short Sword +2
-	SW1H29    // Short Sword +2
+    SW1H29    // Short Sword +2
     SW1H41    // Long Sword +2
     SW1H42    // Bastard Sword +2
     SW2H09    // Warblade +4
@@ -520,7 +520,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM OHDART50 LAST #40 #0 #0 IDENTIFIED #2  // Dart +2
-	ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #1  // Dart +3
+    ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #1  // Dart +3
   END
   ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Wounding
@@ -729,7 +729,7 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #5   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #5   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
+    ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
   END
   PATCH_IF comp_sr=1 BEGIN
     ADD_STORE_ITEM SCRL1V   LAST #1 #0 #0 IDENTIFIED #5   // Dimension Door / Dimension Jump
@@ -884,7 +884,7 @@ COPY_EXISTING wmart2.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL6Z   LAST #0 #0 #0 IDENTIFIED #2   // Phantom Blade
   PATCH_IF comp_sr=0 BEGIN
     ADD_STORE_ITEM SCRL6Y   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Acid / Vitriolic Sphere
-	//ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
+    //ADD_STORE_ITEM SCRL5T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Electricity / Ball Lightning
   END
   ADD_STORE_ITEM SCRL6T   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Normal Weapons
   ADD_STORE_ITEM SCRL2H   LAST #1 #0 #0 IDENTIFIED #2   // Shadow Door
@@ -1681,13 +1681,13 @@ COPY_EXISTING shop08.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #2   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #2   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
+    ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
   END
   ADD_STORE_ITEM SCRL73   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Petrification / Expeditious Retreat
   ADD_STORE_ITEM SCRL66   LAST #1 #0 #0 IDENTIFIED #2   // Grease
   ADD_STORE_ITEM SCRL6D   LAST #1 #0 #0 IDENTIFIED #2   // Find Familiar
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlfr.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
+    ADD_STORE_ITEM dvscrlfr.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
   END
   ADD_STORE_ITEM SCRL75   LAST #1 #0 #0 IDENTIFIED #2   // Identify
   ADD_STORE_ITEM SCRL67   LAST #1 #0 #0 IDENTIFIED #2   // Mage Armor
@@ -2352,11 +2352,11 @@ COPY_EXISTING wallace.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #2   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #2   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
+    ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
   END
   ADD_STORE_ITEM SCRL73   LAST #1 #0 #0 IDENTIFIED #2   // Protection from Petrification / Expeditious Retreat
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlfr.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
+    ADD_STORE_ITEM dvscrlfr.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
   END
   ADD_STORE_ITEM SCRL66   LAST #1 #0 #0 IDENTIFIED #2   // Grease
   ADD_STORE_ITEM SCRL75   LAST #1 #0 #0 IDENTIFIED #2   // Identify
@@ -3770,7 +3770,7 @@ ACTION_IF comp_ir=1 BEGIN
                 hendak.dlg override
     DECOMPILE_DLG_TO_D
       REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("SW1H03"~ ~GiveItemCreate("SW1H44"~ // Lawgiver -> Katana +1
-	  REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("PLAT01"~ ~GiveItemCreate("PLAT04"~ // Plate Mail -> Full Plate Mail
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("PLAT01"~ ~GiveItemCreate("PLAT04"~ // Plate Mail -> Full Plate Mail
     COMPILE_D_TO_DLG
 END
 
@@ -5966,7 +5966,7 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRL1O    // Slow
     SCRL1P    // Skull Trap
     SCRL1Q    // Vampiric Touch
-	SCRL1R    // Wraithform
+    SCRL1R    // Wraithform
     SCRL1T    // Ghost Armor
     SCRL1U    // Confusion
     SCRL1Y    // Improved Invisibility
@@ -5987,7 +5987,7 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     SCRLAI    // Ray of Enfeeblement
     SCRLAJ    // Farsight
     SCRLAK    // Remove Curse / Break Enchantment
-	SCRL5G    // Remove Curse / Break Enchantment
+    SCRL5G    // Remove Curse / Break Enchantment
     SCRLAL    // Sunfire
     SCRLAM    // Symbol of Death
     SCRLAN    // Symbol of Stun
@@ -6012,8 +6012,8 @@ COPY_EXISTING scrolls.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL82   LAST #1 #0 #0 IDENTIFIED #2   // Chill Touch
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #2   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
-	ADD_STORE_ITEM dvscrlfr.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
+    ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #2   // Detect Evil
+    ADD_STORE_ITEM dvscrlfr.itm   LAST #1 #0 #0 IDENTIFIED #2   // Friends
   END
   ADD_STORE_ITEM SCRL66   LAST #1 #0 #0 IDENTIFIED #2   // Grease
   ADD_STORE_ITEM SCRL75   LAST #1 #0 #0 IDENTIFIED #2   // Identify
@@ -7950,8 +7950,8 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     RING02    // Ring of Fire Resistance
     BOOT01    // Boots of Speed
     HELM23    // Golden Ioun Stone
-	SCRL73    // Protection from Petrification / Expeditious Retreat
-	SCRL81    // Sleep
+    SCRL73    // Protection from Petrification / Expeditious Retreat
+    SCRL81    // Sleep
 
     // Spell Revisions
     SCRL1V     // Dimension Door / Dimension Jump
@@ -8026,7 +8026,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL83   LAST #1 #0 #0 IDENTIFIED #5   // Chromatic Orb
   ADD_STORE_ITEM SCRL70   LAST #1 #0 #0 IDENTIFIED #5   // Color Spray
   PATCH_IF (FILE_EXISTS_IN_GAME ~dvsrr.mrk~) BEGIN
-	ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
+    ADD_STORE_ITEM dvscrlda.itm   LAST #1 #0 #0 IDENTIFIED #5   // Detect Evil
   END
   PATCH_IF comp_sr=1 BEGIN
     ADD_STORE_ITEM SCRL1V   LAST #1 #0 #0 IDENTIFIED #5   // Dimension Door / Dimension Jump
@@ -8105,7 +8105,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL1M   LAST #1 #0 #0 IDENTIFIED #5   // Non-Detection
   PATCH_IF comp_sr=0 BEGIN
     ADD_STORE_ITEM SCRL6I   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Cold / Ice Lance
-	ADD_STORE_ITEM SCRL6H   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Fire / Protection from Elemental Energy
+    ADD_STORE_ITEM SCRL6H   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Fire / Protection from Elemental Energy
   END
   ADD_STORE_ITEM SCRL1N   LAST #1 #0 #0 IDENTIFIED #5   // Protection from Normal Missiles / Protection from Missiles
   ADD_STORE_ITEM SCRLA7   LAST #1 #0 #0 IDENTIFIED #5   // Remove Magic
@@ -8177,7 +8177,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SCRL6Z   LAST #0 #0 #0 IDENTIFIED #3   // Phantom Blade
   PATCH_IF comp_sr=0 BEGIN
     ADD_STORE_ITEM SCRL6Y   LAST #1 #0 #0 IDENTIFIED #3   // Protection from Acid / Vitriolic Sphere
-	ADD_STORE_ITEM SCRL6I   LAST #1 #0 #0 IDENTIFIED #3   // Protection from Cold / Ice Lance
+    ADD_STORE_ITEM SCRL6I   LAST #1 #0 #0 IDENTIFIED #3   // Protection from Cold / Ice Lance
   END
   ADD_STORE_ITEM SCRL6T   LAST #1 #0 #0 IDENTIFIED #3   // Protection from Normal Weapons
   ADD_STORE_ITEM SCRL2H   LAST #1 #0 #0 IDENTIFIED #3   // Shadow Door
@@ -8553,7 +8553,7 @@ COPY_EXISTING amsmug01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM DART02   LAST #40 #0 #0 IDENTIFIED #5  // Dart +1
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM OHDART50 LAST #40 #0 #0 IDENTIFIED #3  // Dart +2
-	ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #2  // Dart +3
+    ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #2  // Dart +3
   END
   ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #2  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #2  // Dart of Wounding
@@ -8772,7 +8772,7 @@ COPY_EXISTING amsmug02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM OHDART50 LAST #40 #0 #0 IDENTIFIED #5  // Dart +2
-	ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #3  // Dart +3
+    ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #3  // Dart +3
   END
   ADD_STORE_ITEM DART03   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Stunning +1
   ADD_STORE_ITEM DART04   LAST #40 #0 #0 IDENTIFIED #3  // Dart of Wounding
@@ -9090,7 +9090,7 @@ COPY_EXISTING sarbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM DART02   LAST #40 #0 #0 IDENTIFIED #5  // Dart +1
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM OHDART50 LAST #40 #0 #0 IDENTIFIED #3  // Dart +2
-	ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #1  // Dart +3
+    ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #1  // Dart +3
   END
   ADD_STORE_ITEM AROW01   LAST #40 #0 #0 IDENTIFIED #1 UNLIMITED  // Arrow
   ADD_STORE_ITEM AROW02   LAST #40 #0 #0 IDENTIFIED #5   // Arrow +1
@@ -9316,7 +9316,7 @@ COPY_EXISTING hgkar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SLNG10   LAST #0 #0 #0 IDENTIFIED #1   // Sling +3
 
   PATCH_IF comp_ir=1 BEGIN
-	ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #2  // Dart +3
+    ADD_STORE_ITEM OHDART51 LAST #40 #0 #0 IDENTIFIED #2  // Dart +3
   END
   ADD_STORE_ITEM AROW15   LAST #40 #0 #0 IDENTIFIED #2  // Arrow +3
   ADD_STORE_ITEM BOLT09   LAST #40 #0 #0 IDENTIFIED #2  // Bolt +3
