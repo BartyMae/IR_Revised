@@ -258,91 +258,6 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet
     SAY NAME1 @1636    SAY NAME2 @2573
     SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
     LPF update_item_descriptions_to_bgee END
-  // Shields
-  COPY ~item_rev/itm/shld01a.itm~ ~override/shld01.itm~
-    SAY NAME1 @1939    SAY NAME2 @1939
-    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld02a.itm~ ~override/shld02.itm~
-    SAY NAME1 @1939    SAY NAME2 @1941
-    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1943
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld03a.itm~ ~override/shld03.itm~
-    SAY NAME1 @1501    SAY NAME2 @1501
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld04a.itm~ ~override/shld04.itm~
-    SAY NAME1 @1501    SAY NAME2 @1945
-    SAY UNIDENTIFIED_DESC @1503 SAY IDENTIFIED_DESC @1946
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld05a.itm~ ~override/shld05.itm~
-    SAY NAME1 @1947    SAY NAME2 @1947
-    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld06a.itm~ ~override/shld06.itm~
-    SAY NAME1 @1947    SAY NAME2 @1949
-    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1951
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld07a.itm~ ~override/shld07.itm~
-    SAY NAME1 @1947    SAY NAME2 @1953
-    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1954
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld08a.itm~ ~override/shld08.itm~
-    SAY NAME1 @1955    SAY NAME2 @1955
-    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld09a.itm~ ~override/shld09.itm~
-    SAY NAME1 @1955    SAY NAME2 @1955
-    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld10a.itm~ ~override/shld10.itm~
-    SAY NAME1 @1955    SAY NAME2 @1955
-    SAY UNIDENTIFIED_DESC @1956 SAY IDENTIFIED_DESC @1956
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld11a.itm~ ~override/shld11.itm~
-    SAY NAME1 @1939    SAY NAME2 @1939
-    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld12a.itm~ ~override/shld12.itm~
-    SAY NAME1 @1939    SAY NAME2 @1939
-    SAY UNIDENTIFIED_DESC @1940 SAY IDENTIFIED_DESC @1940
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld13a.itm~ ~override/shld13.itm~
-    SAY NAME1 @1501    SAY NAME2 @1501
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld14a.itm~ ~override/shld14.itm~
-    SAY NAME1 @1501    SAY NAME2 @1501
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1944
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld15a.itm~ ~override/shld15.itm~
-    SAY NAME1 @1947    SAY NAME2 @1947
-    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld16a.itm~ ~override/shld16.itm~
-    SAY NAME1 @1947    SAY NAME2 @1947
-    SAY UNIDENTIFIED_DESC @1948 SAY IDENTIFIED_DESC @1948
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld17a.itm~ ~override/shld17.itm~
-    SAY NAME1 @1955    SAY NAME2 @1957
-    SAY UNIDENTIFIED_DESC @1958 SAY IDENTIFIED_DESC @1959
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld19a.itm~ ~override/shld19.itm~
-    SAY NAME1 @1501    SAY NAME2 @1960
-    SAY UNIDENTIFIED_DESC @1944 SAY IDENTIFIED_DESC @1961
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld28a.itm~ ~override/shld28.itm~
-    SAY NAME1 @1939    SAY NAME2 @1978
-    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld29a.itm~ ~override/shld29.itm~
-    SAY NAME1 @1501    SAY NAME2 @1980
-    SAY UNIDENTIFIED_DESC @1942 SAY IDENTIFIED_DESC @1979
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/shld30a.itm~ ~override/shld30.itm~
-    SAY NAME1 @1947    SAY NAME2 @1982
-    SAY UNIDENTIFIED_DESC @1950 SAY IDENTIFIED_DESC @1983
-    LPF update_item_descriptions_to_bgee END
 END
 
 
@@ -1402,12 +1317,11 @@ END
 
 LAUNCH_ACTION_MACRO ~Locations~
 
+// Set color settings
 OUTER_SET pcolour = 1
-
 ACTION_IF 1pp_ee_helms_shields_colors = 2 BEGIN
   OUTER_SET pcolour = 2
 END
-
 ACTION_IF 1pp_ee_helms_shields_colors = 3 BEGIN
   OUTER_SET pcolour = 4
 END
@@ -3751,35 +3665,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld08.itm~) BEGIN
-COPY_EXISTING ~shld08.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~C4~
-    WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~ISHLDB01~
-    WRITE_LONG  0x48 0
-    WRITE_ASCII 0x44 ~GBSHLD~
-    WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~1CSHLDB1~
-  LAUNCH_PATCH_MACRO ~clear~
-  SET gradient = 226    // colour index
-  SET location = sgrey    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 239    // colour index
-  SET location = steal    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 226  // colour index
-  SET location = sblue    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  PATCH_IF (%pcolour% = 2 || %pcolour% = 3) BEGIN
-  SET gradient = 188    // colour index
-  SET location = spink    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  END
-  END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-
 END // C4 shields
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqlc5a1.bam~) BEGIN // C5 shields
@@ -3930,6 +3815,747 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
 
 END // C7 shields
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqld1a1.bam~) BEGIN // D1 shields
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld08.itm~) BEGIN
+COPY_EXISTING ~shld08.itm~ ~override/shld08a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D1~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD08~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD08~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD08~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 27    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 28    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 30    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 92    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld09.itm~) BEGIN
+COPY_EXISTING ~shld09.itm~ ~override/shld09a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D1~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD09~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD08~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD09~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 209   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 22    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 23    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 209   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld10.itm~) BEGIN
+COPY_EXISTING ~shld10.itm~ ~override/shld10a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D1~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD10~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD08~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD10~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 26    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 28    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 26    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 179   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld17.itm~) BEGIN
+COPY_EXISTING ~shld17.itm~ ~override/shld17a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D1~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD17~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD08~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD17~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 66    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 90    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 208   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 66    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+END // D1 shields
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqld2a1.bam~) BEGIN // D2 shields
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld01.itm~) BEGIN
+COPY_EXISTING ~shld01.itm~ ~override/shld01a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD01~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD01~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD01~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 22    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 28    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 30    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 92    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld02.itm~) BEGIN
+COPY_EXISTING ~shld02.itm~ ~override/shld02a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD02~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD01~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD02~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 109   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 24    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 25    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 29    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld11.itm~) BEGIN
+COPY_EXISTING ~shld11.itm~ ~override/shld11a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD11~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD01~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD01~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 81    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 28    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 30    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 188   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld12.itm~) BEGIN
+COPY_EXISTING ~shld12.itm~ ~override/shld12a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD12~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD01~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD02~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 72    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 27    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 30    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 91   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld24.itm~) BEGIN
+COPY_EXISTING ~shld24.itm~ ~override/shld24a.itm~ // Remove tower shield animation and use its original small shield animation because there isn't really a suitable buckler icon for it
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLDRF~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD01~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD02~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 210   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 109   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 254   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 255   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld28.itm~) BEGIN
+COPY_EXISTING ~shld28.itm~ ~override/shld28a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D2~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD28~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD01~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD02~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 210   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 215   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 210   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 237   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+END // D2 shields
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqld3a1.bam~) BEGIN // D3 shields
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld03.itm~) BEGIN
+COPY_EXISTING ~shld03.itm~ ~override/shld03a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD03~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD03~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 94    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 100   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 215   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 66    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld04.itm~) BEGIN
+COPY_EXISTING ~shld04.itm~ ~override/shld04a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD04~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD04~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 81    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 250   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 98    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 160    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld13.itm~) BEGIN
+COPY_EXISTING ~shld13.itm~ ~override/shld13a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD13~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD03~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 174   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 100   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 202   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 183   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld14.itm~) BEGIN
+COPY_EXISTING ~shld14.itm~ ~override/shld14a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD14~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD03~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 92    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 30    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 242   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 39    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld26.itm~) BEGIN
+COPY_EXISTING ~shld26.itm~ ~override/shld26a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLDVR~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD04~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 183   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 26    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 218   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 96    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld27.itm~) BEGIN
+COPY_EXISTING ~shld27.itm~ ~override/shld27a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLDGN~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD04~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 218   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 217   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 218   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 58    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld29.itm~) BEGIN
+COPY_EXISTING ~shld29.itm~ ~override/shld29a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD29~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD03~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD04~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 90    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 10    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 249   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 18    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+END // D3 shields
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~wqld4a1.bam~) BEGIN // D4 shields
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld05.itm~) BEGIN
+COPY_EXISTING ~shld05.itm~ ~override/shld05a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD05~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD05~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 91    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 6     // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 26    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 87    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld06.itm~) BEGIN
+COPY_EXISTING ~shld06.itm~ ~override/shld06a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD06~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD06~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 99    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 30    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 112   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 237   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld07.itm~) BEGIN
+COPY_EXISTING ~shld07.itm~ ~override/shld07a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD07~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD07~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 3     // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 16    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 208   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 66    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld15.itm~) BEGIN
+COPY_EXISTING ~shld15.itm~ ~override/shld15a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD15~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD05~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 92    // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 27    // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 215   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 254   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld16.itm~) BEGIN
+COPY_EXISTING ~shld16.itm~ ~override/shld16a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD16~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD05~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 100   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 248   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 109   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 238   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld19.itm~) BEGIN
+COPY_EXISTING ~shld19.itm~ ~override/shld19a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLD19~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD19~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 0     // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 208   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 211   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 66    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld23.itm~) BEGIN
+COPY_EXISTING ~shld23.itm~ ~override/shld23a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLDFS~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD06~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 192   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 218   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 96    // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 18    // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~shld31.itm~) BEGIN
+COPY_EXISTING ~shld31.itm~ ~override/shld31a.itm~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~D4~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~ISHLDZS~
+    WRITE_LONG  0x48 0
+    WRITE_ASCII 0x44 ~GSHLD05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CSHLD07~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 219   // colour index
+  SET location = sred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 200   // colour index
+  SET location = sblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 213   // colour index
+  SET location = sgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
+  SET gradient = 199   // colour index
+  SET location = spink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+END // D4 shields
 
 // Projectiles fixes
 
@@ -6398,12 +7024,10 @@ ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
     ~shld19~
     ~shld23~
     ~shld24~
-    ~shld25~
     ~shld26~
     ~shld27~
     ~shld28~
     ~shld29~
-    ~shld30~
     ~shld31~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
