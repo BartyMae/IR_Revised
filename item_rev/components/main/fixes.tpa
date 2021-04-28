@@ -7022,13 +7022,8 @@ ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
     ~shld16~
     ~shld17~
     ~shld19~
-    ~shld23~
-    ~shld24~
-    ~shld26~
-    ~shld27~
     ~shld28~
     ~shld29~
-    ~shld31~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
       COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
