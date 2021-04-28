@@ -4055,7 +4055,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld24.itm~) BEGIN
-COPY_EXISTING ~shld24.itm~ ~override/shld24a.itm~ // Remove tower shield animation and use its original small shield animation because there isn't really a suitable buckler icon for it
+COPY_EXISTING ~shld24.itm~ ~override/shld24_.itm~ // Remove tower shield animation and use its original small shield animation because there isn't really a suitable buckler icon for it
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~D2~
     WRITE_LONG  0x3E 0
@@ -4233,7 +4233,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld26.itm~) BEGIN
-COPY_EXISTING ~shld26.itm~ ~override/shld26a.itm~
+COPY_EXISTING ~shld26.itm~ ~override/shld26_.itm~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~D3~
     WRITE_LONG  0x3E 0
@@ -4260,9 +4260,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
   BUT_ONLY_IF_IT_CHANGES
   END
-
+  
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld27.itm~) BEGIN
-COPY_EXISTING ~shld27.itm~ ~override/shld27a.itm~
+COPY_EXISTING ~shld27.itm~ ~override/shld27_.itm~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~D3~
     WRITE_LONG  0x3E 0
@@ -4498,7 +4498,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld23.itm~) BEGIN
-COPY_EXISTING ~shld23.itm~ ~override/shld23a.itm~
+COPY_EXISTING ~shld23.itm~ ~override/shld23_.itm~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~D4~
     WRITE_LONG  0x3E 0
@@ -4527,7 +4527,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld31.itm~) BEGIN
-COPY_EXISTING ~shld31.itm~ ~override/shld31a.itm~
+COPY_EXISTING ~shld31.itm~ ~override/shld31_.itm~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~D4~
     WRITE_LONG  0x3E 0
@@ -7032,6 +7032,20 @@ ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%a.itm~) BEGIN
       COPY_EXISTING ~%resource%a.itm~ ~override\%resource%.itm~
+    END
+  END
+END
+
+ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~shld23~
+    ~shld24~
+    ~shld26~
+    ~shld27~
+    ~shld31~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%_.itm~) BEGIN
+      COPY_EXISTING ~%resource%_.itm~ ~override\%resource%.itm~
     END
   END
 END

@@ -88,6 +88,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~shld11a~  => 2 // Small Shield
   ~shld12a~  => 2 // Small Shield
   ~shld24a~  => 2 // Polished Shield +1
+  ~shld24_~  => 2 // 
   ~shld28a~  => 2 // Small Shield +2
   ~bdshld02~ => 2 // The Suncatcher +2
 
@@ -166,7 +167,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~shld13a~  => 3 // Medium Shield
   ~shld14a~  => 3 // Medium Shield
   ~shld26a~  => 3 // Font of Virtue +2
+  ~shld26_~  => 3 // 
   ~shld27a~  => 3 // Tahcaluss +3
+  ~shld27_~  => 3 // 
   ~shld29a~  => 3 // Medium Shield +2
   ~bdshld03~ => 3 // Shield of Egons +2
   ~bdshld05~ => 3 // Dragonscale Shield +3
@@ -282,8 +285,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~shld16a~  => 4 // Large Shield
   ~shld19a~  => 4 // Large Shield +2
   ~shld23a~  => 4 // Wall of the North +2
+  ~shld23_~  => 4 // 
   ~shld30a~  => 4 // Large Shield +2
   ~shld31a~  => 4 // Gorm's Arm +3
+  ~shld31_~  => 4 // 
   ~bdshld04~ => 4 // Rhino Beetle Shield +2
   ~bdshld08~ => 4 // The Bloodied Guardian +2
 
