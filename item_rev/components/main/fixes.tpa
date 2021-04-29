@@ -2874,7 +2874,7 @@ PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
   END
   END
   BUT_ONLY_IF_IT_CHANGES
-  END
+END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld25.itm~) BEGIN
 COPY_EXISTING ~shld25.itm~ ~override~
@@ -4089,7 +4089,7 @@ END // D2 shields
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqld3a1.bam~) BEGIN // D3 shields
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld03.itm~) BEGIN
-COPY_EXISTING ~shld03.itm~ ~override/shld03a.itm~
+COPY_EXISTING ~shld03.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~D3~
     WRITE_LONG  0x3E 0
@@ -7008,7 +7008,6 @@ ACTION_IF (1pp_ee_bg1_style_shields = 1) BEGIN
     ~shld23~
     ~shld24~
     ~shld26~
-    ~shld27~
     ~shld31~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%_.itm~) BEGIN
