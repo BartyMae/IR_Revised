@@ -40,7 +40,7 @@ Usable By:
  Mage
  Paladin
  Ranger~
-@1008 = ~Greenstone Amulet~ //NOTE: This amulet does not confer complete immunity to psionics.
+@1008 = ~Greenstone Amulet~
 @1009 = ~Creatures that attack the mind are the stuff of nightmares, so it is not surprising that items protecting against them might acquire some of their disrepute. Greenstone amulets, for example, have been linked to a claim that when the drow first retreated underground they fed on intellect devourers, and that eating such a creature without wearing a greenstone amulet produced a mind flayer. This is all, of course, nothing more than superstitious tavern talk. Nonetheless these mind shielding amulets are indeed used by drows who have to deal with the illithids, as they call them, being it a peaceful deal, or a not so peaceful one.
 
 These highly prized items are fist-sized green stone worked into some kind of smooth shape, usually like a flattened egg, but sometimes like a shield or helmet. When worn, the greenstone protects the wearer from all forms of mind attacks, including psionics.
@@ -208,7 +208,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1034 = ~Arrow +1~ //BG1: The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. These enchanted arrows will fly truer, thus having a greater chance of striking their target and doing more damage, and have the ability to strike opponents that are immune to normal weapons.
+@1034 = ~Arrow +1~ // BG1: The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. These enchanted arrows will fly truer, thus having a greater chance of striking their target and doing more damage, and have the ability to strike opponents that are immune to normal weapons.
 @1035 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long.~
 @1036 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. Magical enchantments guarantee these arrows improved accuracy and damage.
 
@@ -219,7 +219,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1037 = ~Arrow of Acid +2~ //BG1: This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
+@1037 = ~Arrow of Acid +2~ // BG1: This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
 @1038 = ~This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
 
 STATISTICS:
@@ -232,7 +232,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1039 = ~Arrow of Biting~ //BG1: The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
+@1039 = ~Arrow of Biting~ // BG1: The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
 @1040 = ~The Arrow of Biting was designed as a deadly compliment to the archer. Poison smeared on the barbed arrowhead infiltrates the bloodstream of its victims, causing agony and often death.
 
 STATISTICS:
@@ -256,7 +256,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1043 = ~Arrow of Dispelling +1~ //BG1: The arrow of dispelling will remove the magical enchantments that its victim is surrounded by. //BG2: This arrow will remove the magical enchantments that its victim is surrounded by.
+@1043 = ~Arrow of Dispelling +1~ // BG1: The arrow of dispelling will remove the magical enchantments that its victim is surrounded by. // BG2: This arrow will remove the magical enchantments that its victim is surrounded by.
 @1044 = ~The Arrow of Dispelling will remove all magical enchantments affecting its target.
 
 STATISTICS:
@@ -269,7 +269,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1045 = ~Arrow of Fire +1~ //BG2: This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
+@1045 = ~Arrow of Fire +1~ // BG2: This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
 @1046 = ~The Arrow of Fire is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set aflame.
 
 STATISTICS:
@@ -282,7 +282,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1047 = ~Arrow of Ice +1~ //BG2: This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
+@1047 = ~Arrow of Ice +1~ // BG2: This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 @1048 = ~The Arrow of Ice is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 
 STATISTICS:
@@ -295,7 +295,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1049 = ~Arrow of Piercing +3~ //BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
+@1049 = ~Arrow of Piercing +3~ // BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
 @1050 = ~This arrow is long and thin, imbued with magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
 
 STATISTICS:
@@ -308,7 +308,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1051 = ~Arrow +2~ //These arrows were enhanced through magical means when they were created. They appear slightly straighter than the average arrow, and almost alive as they effortlessly leave your bow and streak towards their target with deadly accuracy.
+@1051 = ~Arrow +2~
 @1052 = ~This arrow was enhanced through magical means when it was created. It appears slightly straighter than the average arrow, and almost alive as it effortlessly leaves your bow and streaks towards its target with deadly accuracy.
 
 STATISTICS:
@@ -318,7 +318,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1053 = ~Arrow +3~ //These enchanted missiles far surpass the craftsmanship of any arrow, magical or otherwise, you have ever seen.
+@1053 = ~Arrow +3~
 @1054 = ~This enchanted missile far surpasses the craftsmanship of any arrow, magical or otherwise, you have ever seen.
 
 STATISTICS:
@@ -1606,7 +1606,7 @@ Damage: 1D8
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@1186 = ~Bolt of Biting~ //BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. //BG2: This bolt was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. //BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
+@1186 = ~Bolt of Biting~ // BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. // BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
 @1187 = ~The Bolt of Biting was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. 
 
 STATISTICS:
@@ -1618,7 +1618,7 @@ Damage: 1D8
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@1188 = ~Bolt +2~ //BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. It will strike its target more easily and do more damage, and can strike opponents that are immune to normal weapons. //BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
+@1188 = ~Bolt +2~ // BG1: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. // BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. It will strike its target more easily and do more damage, and can strike opponents that are immune to normal weapons.
 @1189 = ~This bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
 
 STATISTICS:
@@ -1628,7 +1628,7 @@ Damage: 1D8
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@1190 = ~Bolt +3~ //These enchanted missiles far surpass the craftsmanship of any bolt, magical or otherwise, you have ever seen.
+@1190 = ~Bolt +3~
 @1191 = ~This enchanted missile far surpasses the craftsmanship of any bolt, magical or otherwise, you have ever seen.
 
 STATISTICS:
@@ -2091,7 +2091,7 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1245 = ~Composite Long Bow +2~ //This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
+@1245 = ~Composite Long Bow +2~ // This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
 @1246 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
@@ -2283,7 +2283,7 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1261 = ~Composite Long Bow +3~ //This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
+@1261 = ~Composite Long Bow +3~ // This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
 @1262 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
@@ -2748,7 +2748,7 @@ Damage: 1D4 + 4
 Damage Type: Missile
 Weight: 0
 Launcher: Sling~
-@1326 = ~Bullet of Smiting +3~ //These bullets are especially dense and weigh twice as much as ordinary specimens. When launched, they seem to accumulate even more mass on their way to the target, finally smashing into the unlucky victim with the force of a swung mace.
+@1326 = ~Bullet of Smiting +3~
 @1327 = ~This bullet is especially dense and weighs twice as much as an ordinary specimen. When launched, it seems to accumulate even more mass on its way to the target, finally smashing into the unlucky victim with the force of a swung mace.
 
 STATISTICS:
@@ -3583,7 +3583,7 @@ Requires: 6 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1435 = ~Throwing Dagger~ //The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+@1435 = ~Throwing Dagger~ // The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
 @1436 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
 STATISTICS:
@@ -3721,7 +3721,7 @@ Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1452 = ~Poisoned Throwing Dagger~ //The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
+@1452 = ~Poisoned Throwing Dagger~ // The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 @1453 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 
 STATISTICS:
@@ -3908,7 +3908,7 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@1473 = ~Dart of Wounding~ //This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
+@1473 = ~Dart of Wounding~ // This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
 @1474 = ~The barbed tip of this dart inflicts upon its target wounds so deep that they will continue to bleed for some time, with very deadly results.
 
 STATISTICS:
@@ -4313,7 +4313,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1522 = ~Halberd +1~ //Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
+@1522 = ~Halberd +1~ // Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
 @1523 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. This halberd is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -6338,7 +6338,7 @@ Damage Type: Missile
 Weight: 2
 Launcher: Sling~
 @1760 = ~Two-Handed Sword~
-@1761 = ~Unholy Reaver +5~ //This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
+@1761 = ~Unholy Reaver +5~ // This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
 @1762 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
 @1763 = ~Ir'revrykal
 This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god know only as "the One in the Void." To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possess such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as "Pain-Servant."
@@ -6639,7 +6639,7 @@ Not Usable By:
  Mage
  Beast Master~
 @1808 = ~Katana~
-@1809 = ~Yoshimo's Katana +2~ //This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
+@1809 = ~Yoshimo's Katana +2~ // This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
 @1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
 
 STATISTICS:
@@ -7868,8 +7868,9 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@1960 = ~Dwarven Shield +2~ // Pellan's Shield +2
-@1961 = ~This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
+@1960 = ~Dwarven Shield +2~ // BG1: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
+@1961 = ~Pellan's Shield
+This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense.  pon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
 
 Superior craftsmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
 
@@ -8015,8 +8016,7 @@ Not Usable By:
  Thief
  Kensai~
 @1976 = ~Saving Grace +3~
-@1977 = ~Shield of Dawn
-Shields like this are first mentioned in ancient liturgies of Amaunator, in which the god's champions bear radiant shields against an infestation of undead. The shields made their first appearance in modern times in dramatic fashion, appearing miraculously at the altars of several of the deity's temples in the Year of Smoldering Spells, 1020 DR. Since that time a number have been lost in battle, and not a few were stolen by foul creatures to prevent their use.
+@1977 = ~Shields like this are first mentioned in ancient liturgies of Amaunator, in which the god's champions bear radiant shields against an infestation of undead. The shields made their first appearance in modern times in dramatic fashion, appearing miraculously at the altars of several of the deity's temples in the Year of Smoldering Spells, 1020 DR. Since that time, a number have been lost in battle, and not a few were stolen by foul creatures to prevent their use.
 
 Once a holy artifact used by the elite sect of clerics and holy warriors called Sunmasters, part of the enchantments fled with their god's demise, but it still remain a powerful tool for any adventurer.
 
@@ -8469,7 +8469,7 @@ Type: Two-Handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@2020 = ~Martial Staff +2~ // Aule's Staff +3: This finely crafted stave was among the spoils taken from the invaders of Durlag's Tower. It is very deadly in combat, and was apparently the property of a spellcaster that enjoyed standing on the frontlines. It appears to have a core of iron, yet it is comparable in weight to a normal weapon of its type. Part of the enchantment seems to come from the hide that strengthens the grip; leather no doubt made from a battle-ready creature of some sort. With the tastes and inclinations of the attackers of the Tower well documented, the hide could be almost anything...or anyone.
+@2020 = ~Martial Staff +2~ // BG1: Aule's Staff +3: This finely crafted stave was among the spoils taken from the invaders of Durlag's Tower. It is very deadly in combat, and was apparently the property of a spellcaster that enjoyed standing on the frontlines. It appears to have a core of iron, yet it is comparable in weight to a normal weapon of its type. Part of the enchantment seems to come from the hide that strengthens the grip; leather no doubt made from a battle-ready creature of some sort. With the tastes and inclinations of the attackers of the Tower well documented, the hide could be almost anything...or anyone.
 @2021 = ~This humble staff radiates powerful magic, and was likely the weapon of a traveling martial artist. It would certainly prove more than ample for dealing with most threats encountered on the road.
 
 STATISTICS:
@@ -9754,7 +9754,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2134 = ~Ninja-To +1~ //Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@2134 = ~Ninja-To +1~ // Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 @2135 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.~
 @2136 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used. This particular ninja-to has been enhanced magically to complement the skill of the wielder.
 
@@ -11981,7 +11981,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2323 = ~Arrow of Slaying +1~ //This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
+@2323 = ~Arrow of Slaying +1~ // This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
 @2324 = ~This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Prime Material Plane, and its power doesn't seem to work on outsiders, elementals, or undead creatures.
 
 STATISTICS:
@@ -12044,7 +12044,7 @@ Damage: 1D4 + 1
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@2331 = ~Blessed Bolt +3~ //This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
+@2331 = ~Blessed Bolt +3~ // This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
 @2332 = ~This is a crossbow bolt that has been permanently enchanted with a powerful blessing. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade.
 
 STATISTICS:
@@ -13448,7 +13448,7 @@ Not Usable By:
 @2504 = ~Melee/Thrown Switch~
 @2505 = ~Unused~
 @2506 = ~Unused~
-@2507 = ~Poisoned Arrow~ //He is the only person who can safely handle them.
+@2507 = ~Poisoned Arrow~ // He is the only person who can safely handle them.
 @2508 = ~These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows.
 
 STATISTICS:
