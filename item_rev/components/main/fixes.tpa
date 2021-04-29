@@ -2874,7 +2874,7 @@ PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
   END
   END
   BUT_ONLY_IF_IT_CHANGES
-END
+  END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld25.itm~) BEGIN
 COPY_EXISTING ~shld25.itm~ ~override~
@@ -2895,34 +2895,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   LAUNCH_PATCH_MACRO ~colour~
   PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
   SET gradient = 7    // colour index
-  SET location = spink    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  END
-  END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~shld27.itm~) BEGIN
-COPY_EXISTING ~shld27.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-WRITE_LONG  0x3E 0
-WRITE_ASCII 0x3A ~ISHLDGN~
-WRITE_LONG  0x48 0
-WRITE_ASCII 0x44 ~GSHLD03~
-WRITE_LONG  0x5C 0
-WRITE_ASCII 0x58 ~CSHLD04~
-LAUNCH_PATCH_MACRO ~clear~
-SET gradient = 218    // colour index
-SET location = sred    // location
-LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 217    // colour index
-SET location = sblue    // location
-LAUNCH_PATCH_MACRO ~colour~
-SET gradient = 218    // colour index
-SET location = sgrey    // location
-LAUNCH_PATCH_MACRO ~colour~
-PATCH_IF (%pcolour% = 1 || %pcolour% = 2 || %pcolour% = 3) BEGIN
-  SET gradient = 58    // colour index
   SET location = spink    // location
   LAUNCH_PATCH_MACRO ~colour~
   END
