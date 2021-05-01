@@ -760,7 +760,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1103 = ~Girdle of the Champion~ // Girdle of Fire Giant Strength: This belt is actually the woven hair from a fire giant's beard. When worn the belt greatly increases the wearer's strength.
+@1103 = ~Girdle of the Champion~ // BG2: Girdle of Fire Giant Strength: This belt is actually the woven hair from a fire giant's beard. When worn the belt greatly increases the wearer's strength.
 @1104 = ~Graena's Triumph
 The famous barbarian explorer Graena was a member of the Sky Pony tribe of the Uthgardt northerners. When she tried to leave the tribe to seek her fortune in southern lands, the elders of the tribe told her she could not leave. At that time, only men were allowed to leave the tribe. The elders believed women were too valuable to let go. In order to prove herself to the elders, Graena had to run a gauntlet of the strongest warriors in the tribe and wrest the belt of the head warrior from his body. Graena underwent the challenge and emerged bloody and broken, but victorious. According to tribal law, she was now the head warrior of the tribe and effectively male. The elders knew she was going to leave, but they gave her a warrior's name, Graena Blood-Has-Dried. She left the tribe, relinquished her position to the old head warrior, and returned his belt to him. But before she left, she swore to never harm a member of the tribe if she encountered one in the future.
 
@@ -1734,7 +1734,7 @@ Equipped Abilities:
 Weight: 2
 Usable By:
  All~
-@1208 = ~Boots of Etherealness~ // Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any mage to become intangible to attacks while devastating an opponent with offensive magic.
+@1208 = ~Boots of Etherealness~ // BG2: Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any mage to become intangible to attacks while devastating an opponent with offensive magic.
 @1209 = ~Boots of the Plane Strider
 Said to be sewn together from scraps of the planes themselves, these strange boots not only grant their user the ability to shift from the Material Plane to the Ethereal Plane, but allow the wearer to remain anchored to whichever Plane he wishes. Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any plane-traveling adventurer.
 
@@ -2661,7 +2661,7 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Bard~
-@1313 = ~Bands of Focus~ // Tzu-Zan's Bracers: Although monks traditionally shun armor, these gauntlets of Grandmaster Tzu-Zan are highly sought after by the practitioners of weaponless combat.
+@1313 = ~Bands of Focus~ // BG2: Tzu-Zan's Bracers: Although monks traditionally shun armor, these gauntlets of Grandmaster Tzu-Zan are highly sought after by the practitioners of weaponless combat.
 @1314 = ~Bands of the Master
 When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
 
@@ -3911,7 +3911,7 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@1473 = ~Dart of Wounding~ // This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
+@1473 = ~Dart of Wounding~ // BG2: This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
 @1474 = ~The barbed tip of this dart inflicts upon its target wounds so deep that they will continue to bleed for some time, with very deadly results.
 
 STATISTICS:
@@ -4316,7 +4316,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1522 = ~Halberd +1~ // Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
+@1522 = ~Halberd +1~ // BG2: Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
 @1523 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. This halberd is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -4621,7 +4621,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1549 = ~Rift Hammer +2~ // Ashideena +2: Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
+@1549 = ~Rift Hammer +2~ // BG1/BG2: Ashideena +2: Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
 @1550 = ~During the Time of Troubles the walls between dimensions seemed particularly thin, and many creatures normally confined to other planes walked the face of Toril. Unfamiliar items appeared as well, including several of these weapons found after portals or rifts were sighted. The true origins of the Rift Hammers have never been explained, and superstitious folk refuse even to hold them for fear they retain the taint of the lower planes.
 
 STATISTICS:
@@ -4643,7 +4643,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1551 = ~Hammer of Corrosion +1~
+@1551 = ~Hammer of Corrosion +1~ // BG2: War Hammer +1, +4 vs. Giantkin: The Knee-Capper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
 @1552 = ~The Hammer of Corrosion, or "The Defiler", as it has become known in dwarven circles, is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenceless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
@@ -4666,7 +4666,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1553 = ~Tersyus +2~ // Borok's Fist +2: Borok Thundercracker was a dwarven hero that led several campaigns against giants and other "tall vermin" that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his "little iron fist", though not to his face.
+@1553 = ~Tersyus +2~ // BG2: Borok's Fist +2: Borok Thundercracker was a dwarven hero that led several campaigns against giants and other "tall vermin" that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his "little iron fist", though not to his face.
 @1554 = ~Wrath of Tyr
 The sibling to the more powerful hammers called Ulhaeron, Mercy of Tyr, and Bythialarus, Wisdom of Tyr. All three hammers were forged together in commemoration of the ascension of the Valjevo dynasty in the kingdom of Phlan in the year 750 DR. Eventually, the three were recovered by the temple of Tyr in Waterdeep and given in turn to those warriors who ventured into the world to combat Tyr's enemies.
 
@@ -6341,7 +6341,7 @@ Damage Type: Missile
 Weight: 2
 Launcher: Sling~
 @1760 = ~Two-Handed Sword~
-@1761 = ~Unholy Reaver +5~ // This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
+@1761 = ~Unholy Reaver +5~ // BG2: This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
 @1762 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
 @1763 = ~Ir'revrykal
 This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god know only as "the One in the Void." To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possess such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as "Pain-Servant."
@@ -6642,7 +6642,7 @@ Not Usable By:
  Mage
  Beast Master~
 @1808 = ~Katana~
-@1809 = ~Yoshimo's Katana +2~ // This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
+@1809 = ~Yoshimo's Katana +2~ // BG2: This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
 @1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
 
 STATISTICS:
@@ -6885,7 +6885,7 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
-@1835 = ~Radiant Plate +2~ // The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
+@1835 = ~Radiant Plate +2~ // BG1: The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
 @1836 = ~This brilliant golden armor has a short history. A priestess of Lathander named Iraeni of Suzail had it constructed for the champion of her church, a warrior-priest named Beldan Miller. Beldan employed the armor frequently, as Iraeni was often attacked by agents of Myrkul. After twenty years of serving Lathander, Iraeni decided to step down from her office, as did Beldan. They were married shortly after. Beldan gave the armor to an errant paladin of Lathander, who is believed to have died fighting a powerful undead creature in Amn.
 
 STATISTICS:
@@ -7105,7 +7105,7 @@ Not Usable By:
  Kensai 
  Shapeshifter
  Stalker~
-@1854 = ~Full Plate Mail +2~ // This +2 armor was created with the limited wish spell.
+@1854 = ~Full Plate Mail +2~ // BG2: This +2 armor was created with the limited wish spell.
 @1855 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection, and the enchantments on this suit are particularly powerful. The intricate engraving and spectacular embossing adorning the suit are of indeterminate origin, as is the armor itself.
 
 STATISTICS:
@@ -8891,7 +8891,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2059 = ~Lawgiver +2~ // Kondar +3: At a first glance, this sword appears much like any other. In the presence of any shapeshifting creature, however, the blade becomes warm as its power stirs. Its namesake was the original owner of the weapon, and his tale, though mostly long forgotten, was wrought with treachery and deceit. Rumors persist that he paid a fearsome price for this blade, but with it he revealed the true identities of those that sought to betray him. Their names and crimes however, are long since lost to history.
+@2059 = ~Lawgiver +2~ // BG2: Kondar +3: At a first glance, this sword appears much like any other. In the presence of any shapeshifting creature, however, the blade becomes warm as its power stirs. Its namesake was the original owner of the weapon, and his tale, though mostly long forgotten, was wrought with treachery and deceit. Rumors persist that he paid a fearsome price for this blade, but with it he revealed the true identities of those that sought to betray him. Their names and crimes however, are long since lost to history.
 @2060 = ~The bane of the chaotic or morally suspect, a Lawgiver blade has but one purpose: to enforce the rule of law wherever that authority is challenged or questioned. Whether or not the concept of "law" coincides with the concept of "justice" is largely irrelevant, as the owners of these weapons often view the world in a very polarized fashion. There is right and there is wrong, and other details only serve to confuse the matter.
 
 STATISTICS:
@@ -9757,7 +9757,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2134 = ~Ninja-To +1~ // Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@2134 = ~Ninja-To +1~ // BG2: Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 @2135 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.~
 @2136 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used. This particular ninja-to has been enhanced magically to complement the skill of the wielder.
 
@@ -10670,7 +10670,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2195 = ~Soul Reaver +4~ // Durlag's Pride +2
+@2195 = ~Soul Reaver +4~
 @2196 = ~Thirsting for fresh blood, usually only a warrior intent on death and destruction wields such an evil blade. Some warriors claiming to be doing good have attempted to master the Soul Reaver and use it for noble purposes, but more often than not, they are found surrounded by carnage and death too horrible to bear. One such warrior was found in a cathedral, surrounded by the corpses of priests and resting on the end of his own blade, where he had thrown himself in a fit of guilt.
 
 STATISTICS:
@@ -11944,7 +11944,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2317 = ~Sword of Balduran +2~ // Sword of Balduran +2: This ornate but poorly balanced weapon was found beside Balduran's remains.
+@2317 = ~Sword of Balduran +2~ // BG2: This ornate but poorly balanced weapon was found beside Balduran's remains.
 @2318 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail of Anchorome again and has never been seen again. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
 This ornate but poorly balanced weapon was found within the wreck of Balduran's ship. Gold weapons are not known to be useful in combat, but legends say that only weapons forged of gold can harm such dread creatures as the loup garou.
@@ -11984,7 +11984,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2323 = ~Arrow of Slaying +1~ // This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
+@2323 = ~Arrow of Slaying +1~ // BG1/2: This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
 @2324 = ~This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Prime Material Plane, and its power doesn't seem to work on outsiders, elementals, or undead creatures.
 
 STATISTICS:
@@ -12047,7 +12047,7 @@ Damage: 1D4 + 1
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@2331 = ~Blessed Bolt +3~ // This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
+@2331 = ~Blessed Bolt +3~ // BG2: This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
 @2332 = ~This is a crossbow bolt that has been permanently enchanted with a powerful blessing. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade.
 
 STATISTICS:
@@ -12102,7 +12102,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@2339 = ~Bracers of Speed~ // Bracers of Binding: These bracers appear to be Bracers of Specialization but when donned, bind the wearers wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the drow. The recipient, believing them to be very powerful, will often don them before examining them. At this point, the drow find it amusing to conjure a hook horror.
+@2339 = ~Bracers of Speed~ // BG1/BG2: Bracers of Binding: These bracers appear to be Bracers of Specialization but when donned, bind the wearers wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the drow. The recipient, believing them to be very powerful, will often don them before examining them. At this point, the drow find it amusing to conjure a hook horror.
 @2340 = ~These bracers are said to originate from the Underdark. Such items are sometimes given by Drow nobility as compensation to those who offer their swords to their cause. Once worn, they grant an unnatural and unsustainable speed to attacks, and will remind the wearer of the long enduring gratitude of its creators.
 
 STATISTICS:
@@ -13461,7 +13461,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2507 = ~Poisoned Arrow~ // He is the only person who can safely handle them.
+@2507 = ~Poisoned Arrow~ // BG1: These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows. He is the only person who can safely handle them.
 @2508 = ~These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows.
 
 STATISTICS:
