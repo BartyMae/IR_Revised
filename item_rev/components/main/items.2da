@@ -17,6 +17,7 @@ AMULET_OF_SPELL_WARDING                    AMULET   amul25   1        1        0
 AMULET_OF_CHEETAH_SPEED                    AMULET   amul26   1        1        0        0        1        1        @1000    @1026    @1002    @1027    @4003    *        *        *
 AMULET_OF_SELDARINE                        AMULET   amul27   1        1        0        0        1        1        @1000    @1028    @1002    @1029    *        *        *        *
 AMULET_OF_THE_MASTER_HARPER                AMULET   amul28   1        1        0        0        1        1        @1000    @1030    @1002    @1031    *        *        *        *
+AMULET_OF_PROTECTION_2                     AMULET   dvamul01 1        1        0        0        1        1        @1000    @2505    @1002    @2506    *        *        *        *
 
 ARROW                                      ARROW    arow01   1        1        1        1        1        1        @1032    @1032    @1033    @1033    *        *        *        *
 ARROW_1                                    ARROW    arow02   1        1        1        1        1        1        @1032    @1034    @1035    @1036    *        *        *        *
@@ -36,7 +37,7 @@ QUIVER_OF_PLENTY_3                         ARROW    quiver03 1        1        0
 
 BATTLE_AXE                                 AXE      ax1h01   1        1        1        1        1        1        @1055    @1055    @1056    @1056    *        *        *        *
 BATTLE_AXE_1                               AXE      ax1h02   1        1        1        1        1        1        @1055    @1057    @1058    @1059    *        *        *        *
-BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03   1        1        1        1        1        1        @1055    @2569    @1058    @2570    *        *        *        *
+BATTLE_AXE_2#BG1_DUPLICATE                 AXE      ax1h03   1        1        0        0        1        1        @1055    @1060    @1058    @1061    *        *        *        *
 THROWING_AXE                               AXEH     ax1h04   1        1        1        1        1        1        @1062    @1062    @1063    @1063    @4052    @4051    *        *
 THROWING_AXE_1                             AXEH     ax1h05   1        1        1        1        1        1        @1062    @2311    @1067    @2312    @4052    @4051    @2504    *
 THROWING_AXE_1#A                           AXEH     ax1h05a  1        1        1        1        1        1        @1062    @2311    @1067    @2312    @2311    @2504    *        *
@@ -86,7 +87,7 @@ MORNING_STAR_1                             MORNSTAR blun07   1        1        1
 FLAIL#2                                    FLAIL    blun08   1        1        1        1        1        1        @1107    @1107    @1108    @1108    *        *        *        *
 KIELS_MORNING_STAR_3                       MORNSTAR blun09   1        1        1        1        1        1        @1117    @1122    @1120    @1123    *        *        *        cursed
 THE_ROOT_OF_THE_PROBLEM_3                  CLUB     blun10   1        1        1        1        1        1        @1105    @1124    @1125    @1126    *        *        *        *
-KROTANS_SKULLCRUSHER_2                     MACE     blun11   1        1        1        1        1        1        @1112    @2571    @1115    @2572    *        *        *        *
+MACE_2#BG1_DUPLICATE                       MACE     blun11   1        1        1        1        1        1        @1112    @1146    @1115    @1147    *        *        *        *
 MACE_OF_DISRUPTION_3                       MACE     blun12   1        1        0        0        1        1        @1112    @1127    @1115    @1128    *        *        *        *
 FLAIL_2                                    FLAIL    blun13   1        1        0        1        1        1        @1107    @1129    @1110    @1130    *        *        *        *
 FLAIL_OF_AGES_3                            FLAIL    blun14   1        1        0        0        1        1        @1107    @1131    @1110    @1132    *        *        *        *
@@ -414,7 +415,7 @@ GRANDMASTERS_ARMOR_5                       LEATHER  leat24   1        1        0
 AEGIS_FANG_3                               HAMMER   aegis2   1        1        0        0        1        1        @1544    @1681    @1545    @1682    @4052    @4051    @2504    *
 AEGIS_FANG_3#A                             HAMMER   aegis2a  1        1        0        0        1        1        @1544    @1681    @1545    @1682    @1681    @2504    *        *
 AEGIS_FANG_3#B                             HAMMER   aegis2b  1        1        0        0        1        1        @1544    @1681    @1545    @1682    @4052    @4051    @2504    *
-BRUENORS_WARAXE_3                          AXE      bruenaxe 1        1        0        0        1        1        @1055    @2341    @1058    @2342    *        *        *        *
+BRUENORS_BATTLE_AXE_3                      AXE      bruenaxe 1        1        0        0        1        1        @1055    @2341    @1058    @2342    *        *        *        *
 MITHRAL_FULL_PLATE_MAIL_2                  PLATEF   bruenpla 1        1        0        0        1        1        @1497    @1683    @1499    @1684    *        *        *        *
 TAULMARIL_3                                BOWLONG  cattibow 1        1        0        0        1        1        @1217    @2343    @1220    @2344    *        *        *        *
 RUBY_PENDANT_OF_BEGUILING                  AMULET   regisamu 1        1        0        0        1        1        @1000    @2451    @1002    @2452    @4031    *        *        *
@@ -537,7 +538,7 @@ FLASHER_LAUNCHER_2                         XBOWLITE xbow12   1        1        0
 PLATE_MAIL                                 PLATE    plat01   1        1        1        1        1        1        @1825    @1825    @1826    @1826    *        *        *        *
 PLATE_MAIL_1                               PLATE    plat02   1        1        1        1        1        1        @1825    @1827    @1828    @1829    *        *        *        *
 FULL_PLATE_MAIL                            PLATEF   plat04   1        1        1        1        1        1        @1497    @1497    @1830    @1830    *        *        *        *
-PLATE_OF_THE_DARK_1                        PLATEF   plat05   1        1        1        1        1        1        @1497    @2577    @1499    @2578    *        *        *        *
+FULL_PLATE_MAIL_1#BG1_DUPLICATE            PLATEF   plat05   1        1        1        1        1        1        @1497    @1831    @1499    @1832    *        *        *        *
 ANKHEG_PLATE_MAIL_2                        PLATE    plat06   1        1        1        1        1        1        @1825    @1833    @1828    @1834    *        *        *        *
 RADIANT_PLATE_2                            PLATE    plat08   1        1        1        1        1        1        @1825    @1835    @1828    @1836    *        *        *        *
 MITHRAL_FULL_PLATE_MAIL_2                  PLATEF   plat09   1        1        0        0        1        1        @1825    @1683    @1828    @1837    *        *        *        *
@@ -556,9 +557,13 @@ ENKIDUS_FULL_PLATE_4                       PLATEF   plat21   1        1        0
 SHURUPPAKS_MAIL_5                          SPLINT   plat22   1        1        0        0        1        1        @1335    @1860    @1338    @1861    *        *        *        *
 FULL_PLATE_MAIL_3                          PLATEF   plat23   1        1        0        0        1        1        @1497    @2370    @1499    @1862    *        *        *        *
 
+BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03_  1        1        0        0        1        1        @1055    @2569    @1058    @2570    *        *        *        *
+KROTANS_SKULLCRUSHER_2                     MACE     blun11_  1        1        0        0        1        1        @1112    @2571    @1115    @2572    *        *        *        *
 TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0        0        1        1        @1636    @2573    @1640    @2574    *        *        *        *
-FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        1        1        1        1        @1825    @2575    @1828    @2576    *        *        *        *
-ANKHEG_PLATE_MAIL_1                        PLATE    plat06_  1        1        1        1        1        1        @1825    @2581    @1828    @2582    *        *        *        *
+FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        0        0        1        1        @1825    @2575    @1828    @2576    *        *        *        *
+PLATE_OF_THE_DARK_1                        PLATEF   plat05_  1        1        0        0        1        1        @1497    @2577    @1499    @2578    *        *        *        *
+ANKHEG_PLATE_MAIL_1                        PLATE    plat06_  1        1        0        0        1        1        @1825    @2579    @1828    @2580    *        *        *        *
+THE_WHISTLING_SWORD_2                      SWORDS   sw1h09_  1        1        0        0        1        1        @2066    @2581    @2069    @2582    *        *        *        *
 
 RING_OF_FIRE_RESISTANCE                    RING     ring02   1        1        1        1        1        1        @1800    @1863    @1802    @1864    *        *        *        *
 RING_OF_THE_FOREST                         RING     ring03   1        1        1        1        1        1        @1800    @1865    @1802    @1866    *        *        *        *
@@ -706,7 +711,7 @@ LONG_SWORD_1                               SWORDL   sw1h05   1        1        1
 VARSCONA_2                                 SWORDL   sw1h06   1        1        1        1        1        1        @1513    @2064    @1515    @2065    *        *        *        *
 SHORT_SWORD                                SWORDS   sw1h07   1        1        1        1        1        1        @2066    @2066    @2067    @2067    *        *        *        *
 SHORT_SWORD_1                              SWORDS   sw1h08   1        1        1        1        1        1        @2066    @2068    @2069    @2070    *        *        *        *
-THE_WHISTLING_SWORD_2                      SWORDS   sw1h09   1        1        1        1        1        1        @2066    @2579    @2069    @2580    *        *        *        *
+SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h29   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
 SHORT_SWORD_OF_BACKSTABBING_3              SWORDS   sw1h10   1        1        1        1        1        1        @2066    @2073    @2069    @2074    *        *        *        *
 HULLS_LONG_SWORD                           SWORDL   sw1h12   1        1        1        1        1        1        @2422    @2422    @2061    @2061    *        *        *        *
 MOONBLADE_3                                SWORDL   sw1h13   1        1        1        1        1        1        @2403    @2403    @2404    @2404    *        *        *        *

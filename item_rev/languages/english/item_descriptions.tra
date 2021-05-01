@@ -1,5 +1,5 @@
 @1000 = ~Amulet~
-@1001 = ~Amulet of Protection +1~
+@1001 = ~Amulet of Protection +1~ // BG1/BG2: The Protector: The royal guard of King Pyronan, ruler of Impiltur, were given 'The Protector' as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
 @1002 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
 @1003 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
 
@@ -11,7 +11,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1004 = ~Shield Amulet~
+@1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell 'Shield'. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
 @1005 = ~Made by the Harpell clan of wizards in Longsaddle, these simple but elegant amulets project a shielding field of invisible force that protects the wearer from physical attacks just as though they were wearing armor. This sphere of energy is particularly effective against missile weapons which are slowed somewhat and often end up falling to the ground before reaching the target. The barrier also protects the wearer from the spell Magic Missile.
 
 STATISTICS:
@@ -25,7 +25,7 @@ Not Usable By:
  Wizard Slayer~
 @1006 = ~Amulet of Metaspell Influence~
 @1007 = ~The Amplifier
-Known for its ability to enhance spellcasting, the Amulet of Metaspell Influence is highly sought after by practitioners of magic. It was created by Elairdrin Mellwith who resided in the Star Mountains. His reasons for fabricating such an item stemmed from his womanizing habits, and to this end the Amplifier served his purpose well. It was later taken from him by a wizardress with a more destructive intent, but records detailing the change of hands vary widely.
+Known for its ability to enhance spellcasting, the Amulet of Metaspell Influence is highly sought after by magic practitioners. It was created by Elairdrin Mellwith who resided in the Star Mountains. His reasons for fabricating such an item stemmed from his womanizing habits, and to this extent the Amplifier served his purpose well. It was later taken from him by a mage with a more destructive intent, but records detailing the change of hands vary widely.
 
 STATISTICS:
 
@@ -41,9 +41,7 @@ Usable By:
  Paladin
  Ranger~
 @1008 = ~Greenstone Amulet~
-@1009 = ~Creatures that attack the mind are the stuff of nightmares, so it is not surprising that items protecting against them might acquire some of their disrepute. Greenstone amulets, for example, have been linked to a claim that when the drow first retreated underground they fed on intellect devourers, and that eating such a creature without wearing a greenstone amulet produced a mind flayer. This is all, of course, nothing more than superstitious tavern talk. Nonetheless these mind shielding amulets are indeed used by drows who have to deal with the illithids, as they call them, being it a peaceful deal, or a not so peaceful one.
-
-These highly prized items are fist-sized green stone worked into some kind of smooth shape, usually like a flattened egg, but sometimes like a shield or helmet. When worn, the greenstone protects the wearer from all forms of mind attacks, including psionics.
+@1009 = ~The deep green stone at the center of the amulet seems to shimmer with an iridescent light, almost as if it has a life of its own. Even without the powerful magics that are bestowed upon the amulet, it would be an extremely valuable addition to any collection.
 
 STATISTICS:
 
@@ -52,8 +50,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1010 = ~Silver Charm~
-@1011 = ~Lore holds that some shapeshifters and fiends are especially vulnerable to the bite of silver weaponry. This amulet contains powdered silver and seems to protect the wearer from the attacks of those creatures.
+@1010 = ~Silver Charm~ // BG1: Wolfsbane Charm: A silver amulet containing powdered wolfsbane.
+@1011 = ~Legend holds that some shapeshifters and fiends are especially vulnerable to the bite of silver weaponry. This amulet contains powdered silver and seems to protect the wearer from the attacks of those creatures.
 
 STATISTICS:
 
@@ -63,7 +61,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1012 = ~Amulet of Energy Shielding~
-@1013 = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist being imprisoned or killed.
+@1013 = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist any efforts at being imprisoned or killed.
 
 STATISTICS:
 
@@ -73,7 +71,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1014 = ~Kaligun's Amulet of Magic Resistance~
-@1015 = ~This particular amulet has the initials KP on its back surface. KP, or Kaligun Poonil, was the general of a small force sent into the woodlands to clear out Red Wizards. Being particularly fearful of magic, he wore this amulet along with other magical protections. Overconfident in these protections, Kaligun finally died when he foolishly ambushed three high level Red Wizards who lowered his magic resistance before destroying him with their spells.
+@1015 = ~This particular amulet has the initials KP on its back surface. KP, or Kaligun Poonil, was the general of a small force sent into the woodlands to clear out Red Wizards. Being particularly fearful of magic, he wore this amulet into battle. Overconfident in the protection offered by this amulet, Kaligun finally died when he foolishly ambushed three high-level Red Wizards who lowered his magic resistance before destroying him with their spells.
 
 STATISTICS:
 
@@ -85,12 +83,12 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1016 = ~Amulet of Power~
+@1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!" It has seen much use, and changed hands many times through blood and battle.
 @1017 = ~Arduelth, a young witch, had spent her life living under the shadow of Thay, and wished to study for a magical means to empower Rashemen, so she left on a dajemma - the customary Rashemi journey of self-discovery. Years later she returned, a haunted look in her eyes. Around her neck she wore an amulet that glowed with power - only the first of the artifacts she claimed to have learned how to create. She spoke long and passionately of how they could make use of such items - to not only bring peace to Rashemen, but break the back of Thay. The hathrans narrowed their eyes behind their masks as she spoke, fearing the young woman's intensity: but they listened, and gravely made her one of them.
 
 Before long, the witches began to regret their decision. The young woman seemed obsessed with the idea of creating more items of greater and more sinister properties... and her plans grew more and more elaborate, from freeing the slaves of Thay to enslaving the Red Wizards in their place, sapping them of their power for her own devices. It was suspected that Arduelth had become a durthan, eternal enemy of the hathrans - but another witch saw once that she communed with something far darker. Though the young woman still dreamed of peace and freedom for her people, she had given herself over to a dark entity - her pure intentions savaged by the lengths she would dare go to achieve them.
 
-Though it seems Arduelth's life has come to an end, the amulet still glows with a same promising light...
+Though it seems Arduelth's life has come to an end, the amulet still glows with a same promising light... as if it carried a fraction of its former wearer's soul, and the determination to see her plans come to fruition - whatever the cost.
 
 STATISTICS:
 
@@ -105,8 +103,8 @@ Usable By:
  Mage
  Paladin
  Ranger~
-@1018 = ~Periapt of Proof Against Poison~
-@1019 = ~This periapt, which has to be be worn next to the skin, makes the wearer immune to all poisons. Items with similar functions are in common circulation, created for nobles or merchants fearing poison. Eunuchs from Kara-Tur wear amulets such as this when sampling their emperor's food, and The Purple Dragons use rings with similar powers to protect the Obarskyr royal family from assassination attempts.
+@1018 = ~Periapt of Proof Against Poison~ // BG2: This periapt is a large gemstone hanging on a thick golden chain. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food.
+@1019 = ~This periapt is a large gemstone hanging on a thick golden chain; worn next to the skin, it makes the wearer immune to all poisons. Items with similar functions are in common circulation, created for nobles or merchants fearing poison. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food, and The Purple Dragons use rings with similar powers to protect the Obarskyr royal family from assassination attempts.
 
 STATISTICS:
 
@@ -116,9 +114,9 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1020 = ~Periapt of Life Protection~
-@1021 = ~Natnea Chesh was one of the first priestesses of Kelemvor in the Moonshae Islands, and became known as "The Defender of the Dead", when she helped stop a necromancer from raising an army of undead. As a gift for her heroic deeds, Kelemvor gave her this amulet, along with the secret of making copies for other clerics dedicated to the destruction of powerful undead creatures.
+@1021 = ~Natnea Chesh was one of the first priestesses of Kelemvor in the Moonshae Islands, and became known as "The Defender of the Dead" when she helped stop a necromancer from raising an army of undead. As a gift for her heroic deeds, Kelemvor gave her this amulet, along with the secret of making copies for other clerics dedicated to the destruction of powerful undead creatures.
 
-A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: 'Against Death we must all fail, but with this gem we may still prevail!'
+A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: "Against death we must all fail, but with this gem, we may still prevail!"
 
 STATISTICS:
 
@@ -128,7 +126,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1022 = ~Periapt of Form Stability~
-@1023 = ~Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often the offender would spend several weeks transformed into some form of wild beast or a statue for her garden, a practice which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return he had prepared this necklace, designed to protect him from her most powerful alteration spells, but he could not shield those around him as well. Apparently an impromptu army of farmers-turned-bears eventually overwhelmed him.
+@1023 = ~Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often this meant several weeks transformed into some form of wild beast, which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return he had prepared this necklace, designed to prevent her changing his form, but he could not shield those around him as well. Apparently, an impromptu army of farmers-turned-bears eventually overwhelmed him.
 
 STATISTICS:
 
@@ -138,7 +136,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1024 = ~Amulet of Spell Warding~
-@1025 = ~A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting. These potent defensive amulets are much in demand in areas where duels between rival spellcasters are common. Armed with one of these items, even a relatively inexperienced caster can withstand the attack of an archmage - albeit briefly.
+@1025 = ~A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting. These potent defensive amulets are high in demand in areas where duels between rival spellcasters are common. Armed with one of these items, even a relatively inexperienced caster can withstand the attack of an archmage - albeit briefly.
 
 STATISTICS:
 
@@ -150,7 +148,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1026 = ~Amulet of Cheetah Speed~
+@1026 = ~Amulet of Cheetah Speed~ // BG2: This amulet grants its wearer fleetness of foot. Not surprisingly, it is popular among fleeing felons, travelers, and cowards.
 @1027 = ~Shamans of many barbarian clans have long looked upon the cheetah as one of the most nimble and swift hunters. Warriors of these clans rely on agility and quick movements instead of pure strength and they get across the battlefield like a whirlwind. Barbarian shamans would sometimes create spells that would temporarily imbue the warriors with inhuman quickness and fleetness of foot. However, since these spells were temporary, often times the spell would wear off at inopportune times.
 
 Thus a group of barbarian shamans once congregated to find a way to better harness the swift agility of the cheetah. For nearly a year the shamans remained out of sight from their home clans, busily focusing their attentions towards the magic to create such items. Then one day, the shamans returned to their respective clans, each holding a small necklace, with a pendant that resembled a cheetah's paw. The shamans gave this pendant to their strongest warrior of each clan. Once placed around the neck of the warrior, the speed of the cheetah filled their powerful bodies. From then on, the Amulet of Cheetah Speed, as it became known, would become one of the most prized artifacts within barbarian clans. Only the mightiest warriors wore the amulet, and it became the goal of all young warriors to one day be adorned with an amulet such as this.
@@ -183,7 +181,7 @@ NOTE: Multiple Protection from Evil effects are not cumulative.
 
 Usable By:
  All~
-@1030 = ~Amulet of the Master Harper~
+@1030 = ~Amulet of the Master Harper~ // BG2: This medallion is highly sought after by both thieves and bards, though for different reasons. In addition to providing powerful magical protection against physical attacks, the amulet increases the wearer's proficiency in several rogue skills. But even more valuable, from the bard's perspective, is the amulet's ability to grant the wearer immunity to all forms of silence.
 @1031 = ~Ciressa Gind'ra was a cunning arcane trickster who infiltrated the Night Masks for the Harpers, before she was found drowned in a two-inch puddle outside her residence. To infiltrate them, Ciressa created an amulet that allowed her to boost her abilities to that of a master thief. One night she used it to break into the Night King's private quarters. Unfortunately, she didn't anticipate the Night King's Faithful Hound, who was summoned to guard the room. The phantom watchdog immediately commenced a loud barking, revealing her presence to the Night King himself. When he was finished with her, he took the amulet, and since it had qualities useful for many adventurers, he made copies of it, which he sold throughout the land.
 
 STATISTICS:
@@ -409,7 +407,8 @@ Not Usable By:
  Thief
  Beast Master~
 @1064 = ~Bala's Axe~
-@1065 = ~Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened by his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench which overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates, especially considering a detect magic spell reveals the axe has no magical properties. After a lengthy career of mage slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards.
+@1065 = ~Wizard Slayer
+Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards.
 
 STATISTICS:
 
@@ -664,8 +663,8 @@ Not Usable By:
 @1085 = ~Girdle~
 @1086 = ~Golden Girdle~
 @1087 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.~
-@1088 = ~Swordsman's Belt
-To honor those warriors who accomplish great deeds within the ranks of the Purple Dragon Knights, King Azoun IV had the Royal Magician Vangerdahast create several of these belts. His daughter, Alusair, now continues that tradition, occasionally offering these belts to entice proven adventurers into joining the ranks of the Purple Dragons.
+@1088 = ~Golden Girdle of Urnst
+Created to protect a powerful wizard against malevolent warriors, this magical garment is made of red silk strewn with golden flakes. It is enchanted to give limited protection against slashing weapons of any type.
 
 STATISTICS:
 
@@ -677,7 +676,7 @@ Not Usable By:
  Wizard Slayer~
 @1089 = ~Girdle of Bluntness~
 @1090 = ~Destroyer of the Hills
-Having lost friends and loved ones to a series of raids by hill giants, Garrar the Powerful made it his mission to cleanse his homeland of their presence. It is not known where he acquired this item, but with it he singlehandedly dispatched dozens of the creatures, all the while protected from the blows of their clubs. The surviving giants fled to neighboring lands.
+Having lost friends and loved ones to a series of raids by hill giants, Garrar the Powerful made it his mission to cleanse his homeland of their presence. It is not known where he acquired this item, but with it he single-handedly dispatched dozens of the creatures, all the while protected from the blows of their clubs. The remaining giants fled to neighboring lands, lands that lacked a similar champion and did not fare as well.
 
 STATISTICS:
 
@@ -688,7 +687,8 @@ Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1091 = ~Girdle of Piercing~
-@1092 = ~The life of a swashbuckler is full of bravery, grand adventure, and epic fencing duels. Aside from being remarkably good-looking, this belt allow the wearer to dodge opponent's strikes with great flair. Highly prized by thieves and mages alike, belts such as this allow even a relatively inexperienced adventurer to avoid the thrusting attacks of an assassin's dagger or a bandit's short sword.
+@1092 = ~Elves' Bane
+An infamous highwayman in his day, Pandar of Scardale made quite a name for himself vexing the elves of Cormanthor forest. To their annoyance, he continually used the wood to escape the law, and with the aid of this girdle, the elves' arrows as well. Unfortunately for Pandar, pit-traps and starvation proved a slower, but effective, substitution.
 
 STATISTICS:
 
@@ -697,7 +697,7 @@ Armor Class: +4 bonus vs. piercing weapons
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1093 = ~Girdle of Beatification~
+@1093 = ~Girdle of Beatification~ // BG2: Girdle of Hill Giant Strength: This plain belt makes the wearer as strong as a hill giant, but does not make him or her giant size. Many a cocky warrior has been surprised by a much smaller opponent with remarkable strength. More often than not, a belt such as this is the reason.
 @1094 = ~Priests of the Red Knight in the Citadel of Strategic Militancy, just north of Baldur's Gate, consecrated this belt and gave it to the warrior Thom Wainwright, who had performed a number of great services for the Order of the Red Falcons. Thom wore the girdle proudly until he fell into severe debt in his later years. To his undying regret, he auctioned it off to a well-known priest of Tempus.
 
 STATISTICS:
@@ -710,7 +710,7 @@ NOTE: Multiple Bless effects are not cumulative.
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1095 = ~Girdle of Priestly Might~
+@1095 = ~Girdle of Priestly Might~ // BG2: Girdle of Stone Giant Strength: As a young boy, Stewart Elttil was kidnapped by raiding kobolds after his family was slain. However, en route to their den, the kobolds surprised a family of stone giants. These giants rescued Stewart and raised him as their own. It soon became apparent that the boy, no matter how hard he tried, could not compete in the family rock-throwing contests. The stone giant father bartered with a local wizard for this girdle, which made Stewart as strong as his brothers and sisters. When Stewart met an untimely end, the girdle was stolen away.
 @1096 = ~These items first appeared after the Time of Troubles, and Priests of Mystra took it to be a sign that the goddess had regained her power. It is not known exactly how many other girdles of this type have appeared in the Realms. Given the new, more active stance that powers have been forced to take in the Realms, it is thought that there may be more than a few of these items, and that many deities may have granted such girdles to their more devoted and powerful followers.
 
 STATISTICS:
@@ -722,7 +722,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1097 = ~Girdle of Giant Strength~
+@1097 = ~Girdle of Giant Strength~ // BG2: Girdle of Frost Giant Strength: This belt is actually the woven hair from a frost giant's beard. When worn, the belt greatly increases the wearer's strength, making him or her as strong as a frost giant.
 @1098 = ~As a young boy, Stewart Elttil was kidnapped by raiding kobolds after his family was slain. However, en route to their den the kobolds surprised a family of stone giants. These giants rescued Stewart and raised him as their own. It soon became apparent that the boy, no matter how hard he tried, could not compete in the family rock throwing contests. The stone giant father bartered with a local wizard for this girdle, which made Stewart as strong as his brothers and sisters. When Stewart met an untimely end, the girdle was stolen away.
 
 STATISTICS:
@@ -733,7 +733,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1099 = ~Girdle of Trollish Fortitude~
+@1099 = ~Girdle of Trollish Fortitude~ // BG2: Girdle of Fortitude
 @1100 = ~This girdle greatly increases the wearer's constitution. King Violos used it when leading an expedition against marsh trolls. He'd been severely sickened the previous winter and was no longer the healthy man he once was. The belt gave extra years to his life and inspired his men to renew their confidence in their king once more.
 
 STATISTICS:
@@ -747,8 +747,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1101 = ~Belt of Inertial Barrier~
-@1102 = ~When worn, this belt creates a dense curtain of air around the wearer, forming a barrier which provides superior protection against breath attacks as well as missile weapons. The barrier is not strong enough to keep enemies out, but it can slow them a bit. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
+@1101 = ~Belt of Inertial Barrier~ // BG2: When worn, this belt creates a dense curtain of air around the wearer. This curtain, or barrier, provides superior protection against breath attacks as well as magic. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
+@1102 = ~When worn, this belt creates a dense curtain of air around the wearer. This curtain, or barrier, provides superior protection against breath attacks as well as missile weapons. The barrier is not strong enough to keep enemies out, but it can slow them down a bit. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
 
 STATISTICS:
 
@@ -760,7 +760,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1103 = ~Girdle of the Champion~
+@1103 = ~Girdle of the Champion~ // Girdle of Fire Giant Strength: This belt is actually the woven hair from a fire giant's beard. When worn the belt greatly increases the wearer's strength.
 @1104 = ~Graena's Triumph
 The famous barbarian explorer Graena was a member of the Sky Pony tribe of the Uthgardt northerners. When she tried to leave the tribe to seek her fortune in southern lands, the elders of the tribe told her she could not leave. At that time, only men were allowed to leave the tribe. The elders believed women were too valuable to let go. In order to prove herself to the elders, Graena had to run a gauntlet of the strongest warriors in the tribe and wrest the belt of the head warrior from his body. Graena underwent the challenge and emerged bloody and broken, but victorious. According to tribal law, she was now the head warrior of the tribe and effectively male. The elders knew she was going to leave, but they gave her a warrior's name, Graena Blood-Has-Dried. She left the tribe, relinquished her position to the old head warrior, and returned his belt to him. But before she left, she swore to never harm a member of the tribe if she encountered one in the future.
 
@@ -1639,7 +1639,7 @@ Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
 @1192 = ~Boots~
-@1193 = ~Boots of Speed~
+@1193 = ~Boots of Speed~ // BG1/BG2: These enchanted boots were once the property of a deadly assassin fond of chasing down his prey. He moved with such speed that his targets often didn't have the opportunity to respond, even on horseback. Over time, the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!"
 @1194 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.~
 @1195 = ~The Paws of the Cheetah
 These enchanted boots were once the property of a deadly Sword Coast assassin who purportedly moved with such speed that his targets often didn't have the opportunity to respond, even if on horseback. Over time the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!". These boots were the source of his ability, though it is also believed that he formed an elite guild wherein each member was equipped identically, thus explaining why he was not just fast, but could seemingly appear in several places at once.
@@ -1680,8 +1680,8 @@ Weight: 2
 Usable By:
  All~
 @1200 = ~Boots of Avoidance~
-@1201 = ~Elves' Bane
-An infamous highwayman in his day, Pandar of Scardale made quite a name for himself vexing the elves of Cormanthor forest. To their annoyance, he continually used the wood to escape the law; and with the aid of these boots, the elves' arrows as well. Unfortunately for Pandar, pit-traps and starvation proved a slower, but effective, substitute.
+@1201 = ~Senses of the Cat
+The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy, who had tired of suffering 'accidents' at the hands of his inexperienced students.
 
 STATISTICS:
 
@@ -1703,7 +1703,7 @@ Equipped Abilities:
 Weight: 3
 Usable By:
  All~
-@1204 = ~Boots of Elvenkind~
+@1204 = ~Boots of Elvenkind~ // BG2: These soft boots make the wearer move as silently as the woodland elves. Thieves love to get their hands on these boots, but the elves are reluctant about exporting them, fearful that they may be used for illegal purposes.
 @1205 = ~Several pairs of this type of boots were made for elven battalions during the Year of Singing Arrows, 884 DR. These boots allow their wearer to walk freely and silently among the briars and thorns of the most dense forests, and the scouts equipped with this stealthy footwear turned the tide of at least two major battles against Sembian mercenaries. Thieves love to get their hands on these boots, but the elves are reluctant about exporting them, fearful that they may be used for illegal purposes.
 
 STATISTICS:
@@ -1718,8 +1718,10 @@ Usable By:
  Monk
  Ranger
  Thief~
-@1206 = ~Boots of Phasing~
-@1207 = ~This item is cursed and can only be removed with a magical spell. Whether by mistake or malicious purposes the creator of these boots enchanted them with dangerous magic. When worn the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase striking the wearer becomes much more difficult.
+@1206 = ~Boots of Phasing~ // BG2: This item is cursed and can only be removed with a remove curse spell. Whether by mistake or malicious purposes, the creator of these boots enchanted them with dangerous magic.  When worn, the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase, the wearer receives a +2 AC bonus.
+@1207 = ~This item is cursed and can only be removed with magic. Whether by mistake or malicious purposes, the creator of these boots enchanted them with dangerous magic. When worn, the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase, striking the wearer becomes much more difficult.
+
+
 
 STATISTICS:
 
@@ -1732,7 +1734,7 @@ Equipped Abilities:
 Weight: 2
 Usable By:
  All~
-@1208 = ~Boots of Etherealness~
+@1208 = ~Boots of Etherealness~ // Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any mage to become intangible to attacks while devastating an opponent with offensive magic.
 @1209 = ~Boots of the Plane Strider
 Said to be sewn together from scraps of the planes themselves, these strange boots not only grant their user the ability to shift from the Material Plane to the Ethereal Plane, but allow the wearer to remain anchored to whichever Plane he wishes. Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any plane-traveling adventurer.
 
@@ -2091,7 +2093,7 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1245 = ~Composite Long Bow +2~ // This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
+@1245 = ~Composite Long Bow +2~ // BG2: This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
 @1246 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
@@ -2283,7 +2285,7 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1261 = ~Composite Long Bow +3~ // This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
+@1261 = ~Composite Long Bow +3~ // BG2: This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
 @1262 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
@@ -2363,7 +2365,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1273 = ~Bracers of Defense AC 6~
+@1273 = ~Bracers of Defense AC 6~ // BG1: Bracers to the Death: These bracers were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of this magical item, but rumors persist that they are used to this day in competitive combat across the lands.
 @1274 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 6, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
@@ -2375,7 +2377,7 @@ Not Usable By:
  Wizard Slayer~
 @1275 = ~Bracers of Archery~
 @1276 = ~The Dale's Protector
-During a dangerous meeting with a rival ruler, the King of the Great Dale requested the protection of his best archers in addition to his usual guard. The archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the King, but none had anticipated the amazing accuracy and lethality of the hidden archers. The King was able to escape unharmed; in fact, none of the ambush members even lived to approach him.
+During a dangerous meeting with a rival ruler, the King of the Great Dale requested the protection of his best archers in addition to his usual guard. The archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the King and force their will over his rule, but none had anticipated the amazing accuracy and lethality of the hidden archers. The King was able to escape unharmed; in fact, none of the ambush members even lived to approach him. 
 
 STATISTICS:
 
@@ -2390,7 +2392,8 @@ Not Usable By:
 @1277 = ~Gauntlets~
 @1278 = ~Gauntlets of Ogre Power~
 @1279 = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.~
-@1280 = ~While these magical items have been around for thousands of years, their popularity never seems to decrease. Recently, a party of adventurers out of Calimshan uncovered a vast treasure trove, filled with magical items like these. The sudden influx of magical gauntlets does not seem to have decreased their value, as every adventurer across the land clamors for the assistance of these useful artifacts.
+@1280 = ~Hands of Takkok
+The Hands of Takkok are exactly that: his very hands. He lost them when he attacked a strange man crossing the Spine of the World. The mysterious man turned out to be a mage of incredible power, and he used Takkok's hands to create this pair of ogre skin gauntlets.
 
 STATISTICS:
 
@@ -2414,7 +2417,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1283 = ~Gauntlets of Parrying~
+@1283 = ~Gauntlets of Parrying~ // BG1/BG2: Gauntlets of Weapon Skill: Xarrnous' Second Sword Arm: Perhaps the most well-known owner of these gauntlets was a mercenary, named Xarrnous. He specialized in smuggling, and frequently loaned these gauntlets to clients if they were to travel with him. In his eyes, an extra sword arm was always handy.
 @1284 = ~Gauntlets of Swordplay
 It was the infamous swashbuckler, Eisneid Clume, who first requested magical assistance to help her parrying ability. She had been run through in seven duels before she had the gauntlets made. Once the gauntlets were in her possession, Eisneid won over thirty duels without a single scratch. Finally, word of her magical assets leaked out, and the level of swordplay in Hillsfar increased dramatically.
 
@@ -2442,7 +2445,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1287 = ~Bracers of Defense AC 5~
-@1288 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
+@1288 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
 
 STATISTICS:
 
@@ -2451,7 +2454,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@128800000 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
+@128800000 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
 
 STATISTICS:
 
@@ -2461,7 +2464,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1289 = ~Bracers of Defense AC 4~
-@1290 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+@1290 = ~Sometimes known as Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five but the weight of his armor was getting harder and harder to bear. A companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
 
 STATISTICS:
 
@@ -2470,7 +2473,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129000000 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+@129000000 = ~Sometimes known as Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five but the weight of his armor was getting harder and harder to bear. A companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
 
 STATISTICS:
 
@@ -2480,7 +2483,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1291 = ~Bracers of Defense AC 3~
-@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor -  he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2489,7 +2492,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2498,8 +2501,8 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1293 = ~Bracers of the Blinding Strike~
-@1294 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@1293 = ~Bracers of the Blinding Strike~ // BG2: Knight Wesic of the Most Noble Order of the Radiant Heart often said, "attack swiftly and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in righteous battle, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@1294 = ~Ardulia the Agile often said, "Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
 
@@ -2511,7 +2514,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129400000 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@129400000 = ~Ardulia the Agile often said, "Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
 
@@ -2523,7 +2526,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1295 = ~Gloves of the Rogue~
+@1295 = ~Gloves of the Rogue~ // BG2: Gloves of Pickpocketing: A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle, and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.
 @1296 = ~The elderly Oghmanyte Milladolin found that age was affecting her and her fellows quite rapidly, causing their hands to shake and preventing them from performing many of their priestly duties. With Oghma's blessings, Milladolin created magical gloves that steadied their hands and heightened their muscle control. Years later, a young Oghmanyte was caught for thievery - guilty of using the gloves. Word spread, and soon the gloves themselves were stolen away.
 
 STATISTICS:
@@ -2538,7 +2541,7 @@ Weight: 1
 Usable By:
  Thief~
 @1297 = ~Gloves of Missile Snaring~
-@1298 = ~Foik Morur demonstrated the effectiveness of these gloves at a community fair near Beregost several years back. He paid a local archer to fire arrows at him. As the arrows approached, Foik's hands would move of their own accord, either knocking the arrow away or catching it. He earned more than a few pieces of gold for his troubles, and these earnings attracted some shadowy figures to Foik's tent that evening. The next morning Foik was found dead, and the gloves were missing.
+@1298 = ~Foik Morur demonstrated the effectiveness of these gloves at a community fair near Beregost several years back. He paid a local archer to fire arrows at him. As the arrows approached, Foik's hands would move of their own accord, either knocking the arrow away or catching it. He earned more than a few pieces of gold for his troubles, and these earnings attracted some shadowy figures to Foik's tent that evening. The next morning Foik was found dead and the gloves missing.
 
 STATISTICS:
 
@@ -2567,7 +2570,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1301 = ~Gauntlets of Healing~
+@1301 = ~Gauntlets of Healing~ // BG2: These gloves are usually given to novices of the Most Noble Order of the Radiant Heart who have yet to acquire the ability to cast spells. For anyone outside of the Order to wear these gloves is a rare honor.
 @1302 = ~Healing Hands
 These armored gloves are usually given to members of the Most Noble Order of the Radiant Heart to aid them in their duties. For anyone outside of the Order to wear these gloves is a rare honor.
 
@@ -2583,9 +2586,9 @@ Weight: 1
 Usable By:
  Cleric
  Paladin~
-@1303 = ~Gauntlets of Weapon Mastery~
+@1303 = ~Gauntlets of Weapon Mastery~ // BG2: Gauntlets of Extraordinary Specialization: These rarest of gauntlets are highly sought after by duelists, warriors, and fighters of all kinds.
 @1304 = ~Gauntlets to the Death
-These rarest of gauntlets are highly sought after by duelists, warriors, and fighters of all kinds. They were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of his magical gauntlets, but rumors persist that they are used to this day in competitive combat across the lands.
+These rarest of gauntlets are highly sought after by duelists, warriors, and fighters of all kinds. These gauntlets were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of this magical item, but rumors persist that they are used to this day in competitive combat across the lands.
 
 STATISTICS:
 
@@ -2599,7 +2602,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1305 = ~Paladin's Bracers~
+@1305 = ~Paladin's Bracers~ // BG2: Defenders of justice are ever eager to acquire another tool which may be used to thwart the machinations of evil. However, these particular gauntlets can only be worn by a warrior of the purest heart.
 @1306 = ~Durin d'Artham, one of the most devoted paladins of Lathander, lay on his deathbed after decades of service to his god, and decided that he had not done enough to serve his god. Summoning the most accomplished spellcasters available, he begged them to bind his soul into a mighty pair of bracers for centuries to come, granting his strength and skill to those devoted to their deity. The spell worked, and Durin still serves warriors of the purest heart.
 
 STATISTICS:
@@ -2613,7 +2616,7 @@ Weight: 1
 Usable By:
  Cleric
  Paladin~
-@1307 = ~Blessed Bracers~
+@1307 = ~Blessed Bracers~ // BG2: The willing sacrifice of a vast fortune in gold, combined with the holy venerations of the sanctifying ceremony, have convinced the blessed powers to transform these already formidable gauntlets into gloves of awesome righteous power.
 @1308 = ~Durin d'Artham, one of the most devoted paladins of Lathander, lay on his deathbed after decades of service to his god, and decided that he had not done enough to serve his god. Summoning the most accomplished spellcasters available, he begged them to bind his soul into a mighty pair of bracers for centuries to come, granting his strength and skill to those devoted to their deity. The spell worked, and Durin still serves warriors of the purest heart.
 
 The willing sacrifice of a vast fortune in gold, combined with the holy venerations of the sanctifying ceremony, have convinced the blessed powers to transform these already formidable gauntlets into gloves of awesome righteous power.
@@ -2633,7 +2636,7 @@ Weight: 1
 Usable By:
  Cleric
  Paladin~
-@1309 = ~Bard's Gloves~
+@1309 = ~Bard's Gloves~ // BG2: These leather gloves do not appear to have any special properties, though they are quite fashionable.
 @1310 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves - over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
 
 STATISTICS:
@@ -2644,7 +2647,7 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Bard~
-@1311 = ~Wondrous Gloves~
+@1311 = ~Wondrous Gloves~ // BG2: These gem-studded leather gloves are enchanted so as to augment the skills of any bard.
 @1312 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves - over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
 
 These gem-studded leather gloves have been further echanted so as to augment the skills of any bard.
@@ -2658,7 +2661,7 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Bard~
-@1313 = ~Bands of Focus~
+@1313 = ~Bands of Focus~ // Tzu-Zan's Bracers: Although monks traditionally shun armor, these gauntlets of Grandmaster Tzu-Zan are highly sought after by the practitioners of weaponless combat.
 @1314 = ~Bands of the Master
 When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
 
@@ -3167,8 +3170,8 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @1376 = ~Cloak of Protection +2~
-@1377 = ~The Protector
-The royal guard of King Pyronan, ruler of Impiltur, were given cloaks such as this as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves regarding who should receive such cloak. After years of internal hostility, the mantles were lost and the guards were replaced by less greedy individuals.
+@1377 = ~The Spirit's Shield
+This cloak is said to focus the energies of one's spirit into a force that protects him or her. Rumors of a vampire enslaved in the magical item are ever-present, but they are impossible to prove without destroying the cloak.
 
 STATISTICS:
 
@@ -3179,7 +3182,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1378 = ~Cloak of Displacement~
+@1378 = ~Cloak of Displacement~ // BG1/2: The Cloak of Displacement is a magical item that causes subtle shifts in the image of its wearer. It has the power to actually shift an individual's image by as much as six inches in any direction from their actual location. Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
 @1379 = ~Interwoven with strands of sinew from a displacer beast's tentacles, the fabric of a Cloak of Displacement distorts and warps light waves, and once in combat it causes subtle shifts in the image of its wearer, by as much as six inches in any direction, making it much harder for enemies to score a proper hit on the wearer.
 
 Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
@@ -3196,7 +3199,7 @@ Not Usable By:
  Wizard Slayer~
 @1380 = ~Cloak of the Wolf~
 @1381 = ~Relair's Mistake
-A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently infected himself with lycanthropy. The wearer can change form whenever they wish - Relair was not so lucky.
+A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever he wishes. Relair was not so lucky.
 
 STATISTICS:
 
@@ -3234,9 +3237,9 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1384 = ~Cloak of Non-Detection~
+@1384 = ~Cloak of Non-Detection~ // BG1/BG2: Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success. No record exists of previous owners. 
 @1385 = ~Whispers of Silence
-Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success allowing the wearer to became non-detectable by magical means such as Detect Invisibility and True Sight. No record exists of previous owners.
+Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success, allowing the wearer to became non-detectable by magical means such as Detect Invisibility and True Sight. No record exists of previous owners.
 
 STATISTICS:
 
@@ -3246,7 +3249,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1386 = ~Nymph Cloak~
+@1386 = ~Nymph Cloak~ // BG1/2: The fabled Nymph Cloak is renowned for its ability to increase the charisma of even the most surly dwarf. A Cormyrean noble hoping to make her politically convenient marriage more palatable apparently went to great expense to obtain one for herself and another for her husband.
 @1387 = ~Named for the creatures most closely associated with beauty, Nymph Cloaks are popular fodder for tavern tales among the common folk. The story usually involves some hapless noble couple spending a fortune on one or more such items so they can stand to look at one another. It always gets a big laugh among a copper-ale crowd, though most professional bards consider such pandering a tool of the unskilled.
 
 STATISTICS:
@@ -3278,7 +3281,7 @@ Not Usable By:
 @1390 = ~Mage Robe~
 @1391 = ~Robe of Cold Resistance~
 @1392 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
-@1393 = ~Robes of Cold Resistance are a common sight in the Sword Coast region, especially as one travels north towards Neverwinter and the Icewind Dales. Many young mages receive it as a gift from their instructors upon successfully completing their first five years of study.
+@1393 = ~Robes of Cold Resistance are a common sight in the Sword Coast region, especially as one travels north towards Neverwinter and the Icewind Dales. Many young mages receive it as a gift from their instructors upon successfully completing their first five years of study. As with other such robes, they can only be worn by those of the wizardly profession.
 
 STATISTICS:
 
@@ -3289,7 +3292,7 @@ Weight: 3
 Usable By:
  Mage~
 @1394 = ~Robe of Fire Resistance~
-@1395 = ~Due to the extremely volatile nature of most magics, Robes of Fire Resistance are not uncommon among young acolytes and their wizardly tutors, especially in Thay's circles and enclaves where worship of the Firelord Kossuth is widespread.
+@1395 = ~Due to the extremely volatile nature of most magics, Robes of Fire Resistance are not uncommon among young acolytes and their wizardly tutors, especially in Thay's circles and enclaves where worship of the Firelord Kossuth is widespread. As with other such robes, they cannot be worn except by mages.
 
 STATISTICS:
 
@@ -3300,7 +3303,7 @@ Weight: 3
 Usable By:
  Mage~
 @1396 = ~Robe of Electricity Resistance~
-@1397 = ~While seen with less frequency than some other mage robes, those of Electricity Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind.
+@1397 = ~While seen with less frequency than some other mage robes, those of Electricity Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind. As with all such robes, they can only be worn by those of the wizardly profession.
 
 STATISTICS:
 
@@ -3311,7 +3314,7 @@ Weight: 3
 Usable By:
  Mage~
 @1398 = ~Knave's Robe~
-@1399 = ~This robe has been specially enchanted to meet the eclectic needs of the multiclass mage. A favorite among thief-mages, the Knave's Robe has been enchanted to shield its wearer from the blades and poisons of any darkened alley. As with others of its type, however, its use is restricted to students of the arcane.
+@1399 = ~A favorite among thief-mages, the Knave's Robe has been enchanted to shield its wearer from the blades and poisons of any darkened alley. As with others of its type, however, its use is restricted to students of the arcane.
 
 STATISTICS:
 
@@ -3323,7 +3326,7 @@ Weight: 4
 Usable By:
  Mage~
 @1400 = ~Traveler's Robe~
-@1401 = ~This mage robe has been designed for use by rambling, itinerant mages that travel from town to town. Its enchantments not only provide protection from the bandit's arrows but also allow the wearer to move with extraordinary speed without effort. As with other robes of its kind, the Traveler's Robe can only be worn by mages.
+@1401 = ~This mage robe has been perfected for use by any rambling, itinerant mage that travels from town to town. Its enchantments provide protection from the bandit's arrow and from the jealous thief-mage that lies in ambush with his Stinking Cloud. As with other robes of its kind, the Traveller's Robe can only be worn by mages. 
 
 STATISTICS:
 
@@ -3335,7 +3338,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@1402 = ~Adventurer's Robe~
+@1402 = ~Adventurer's Robe~ // BG1/2: This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrifying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
 @1403 = ~Former Royal Magician Vangerdahast to King Azoun IV of Cormyr was once an accomplished adventurer of high fame. One reason he became popular in wizardly circles was his creation of the Adventurer's Robe. Mages have always struggled with the limitations placed on them by the ability to cast arcane magics. This robe gives the mage an edge in surviving encounters with melee fighters by being able to absorb some of the damage from those hits.
 
 STATISTICS:
@@ -3347,7 +3350,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@1404 = ~Robe of the Weave~
+@1404 = ~Robe of the Weave~ // BG1/2: Robe of the Good Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of good alignment.
 @1405 = ~Crafted by some of the finest mages and weavers of the Realms, this robe is made from the fibers of plants specially cultivated during the Time of Troubles, and the weave of the robe is woven counter to the magical Weave of Faerûn. The resulting robes grant the wearer significant resistance to all spells, and are a favored defensive tool of powerful spellcasters, but beyond just mere magical protection, a robe such as this is a symbol of prestige.
 
 STATISTICS:
@@ -3358,7 +3361,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1406 = ~Robe of the Battlemage~
+@1406 = ~Robe of the Battlemage~ // BG1/2: Robe of the Neutral Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of neutral alignment.
 @1407 = ~Battlemages are wizards trained to fight in the heat of combat, and developing their abilities for the purpose of offensive use. Battlemages are dangerous to behold, deadly and capable of long-term combat survival. In order to make themselves all the more lethal in a battle field, battlemages wear robes which offer protection from all forms of physical attack, while at the same time increasing their fighting skills and resistance.
 
 STATISTICS:
@@ -3371,7 +3374,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1408 = ~Robe of Arcane Might~
+@1408 = ~Robe of Arcane Might~ // BG1/2: Robe of the Evil Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of evil alignment.
 @1409 = ~While garments like this have been found in almost every culture with a strong contingent of spellcasters, this example and most others in the areas around Baldur's Gate and Amn are believed to have originated within Ulcaster's School of Wizardry. The school presented no bias in its teachings, and hosted casters from all across the Sword Coast until its destruction some 200 years ago.
 
 STATISTICS:
@@ -3384,7 +3387,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1410 = ~Cloak of the Shield~
+@1410 = ~Cloak of the Shield~ // BG1/2: This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
 @1411 = ~This cloak projects a large shield-sized invisible wall of force that stays with the wearer and protects him as if it were a normal shield. This special creation can be activated and deactivated at will, and so does not encumber nor interfere with arcane spellcasting.
 
 STATISTICS:
@@ -3395,7 +3398,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1412 = ~Cloak of Elvenkind~
+@1412 = ~Cloak of Elvenkind~ // BG2: This green cloak resembles a normal cloak. Wearing it makes any person able to hide in shadows with astonishing ability. As per the thief ability though, the moment the wearer attacks or otherwise makes their presence known, the wearer must leave the shadows.
 @1413 = ~This green cloak resembles a normal cloak. Wearing it makes any person able to hide in shadows with astonishing skill. Elven rangers and scouts are given cloaks like this one to help hide them while patrolling the borders of their lands. These cloaks vary in effectiveness, depending on the status of the original owner.
 
 STATISTICS:
@@ -3408,7 +3411,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1414 = ~Stormlord's Cloak~
+@1414 = ~Stormlord's Cloak~ // BG2: Cloak of Reflection: Vorn Druidslayer crafted this cloak and used it with great success in his campaign to eliminate the druids from all the woods south of Baldur's Gate. His campaign ended abruptly when he encountered a flock of wyverns, who were attracted by the cloak's sheen. They killed Vorn and used the cloak to cover their nest, serving to protect their young during electrical storms.
 @1415 = ~Balhoderie the Wrathful was a pirate captain in Nelanther in the mid-1300s DR. Though he was known for his great temper and brutality, he was rather sensitive when it came to physical discomfort from the elements. He was constantly commanding his underlings to add wood to his fires or open windows in his cabin. He was so annoyed by the inability of his crew to constantly maintain a perfect temperature around him that he hunted down a Stormlord of Talos and slew him for his cloak.
 
 Though Balhoderie had some of his lady friends sew over the Talosian symbols on the cloak with bits of pirate flags, the brothers of the Stormlord never forgot Balhoderie's blasphemous plunder. By 1360, they had managed to install a youthful Stormlord on one of Balhoderie's three ships, the Sarketa. When the opportunity presented itself, the Stormlord roused the crew to mutiny. After Balhoderie had been overthrown, the Stormlord retrieves the cloak and installed himself as the new commander of the dead pirate's fleet.
@@ -3425,7 +3428,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1416 = ~Cloak of Nature's Vengeance~
+@1416 = ~Cloak of Nature's Vengeance~ // BG2: Cloak of the Stars: Thalanta the Fair created many types of cloaks, all known as Cloaks of the Stars. This particular version is simple, with three stars down each sleeve. Once per day each star can be removed and thrown as a dart. The star disappears, only to return the next day.
 @1417 = ~The Avengers are members of a special sect within a druidic order. They are devoted to fighting those who defile nature, and these cloaks were sometimes worn by members of their sect when embarking on their crusades against those who had inflicted grievous wounds upon the land.
 
 STATISTICS:
@@ -3436,7 +3439,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1418 = ~Cloak of Mirroring~
+@1418 = ~Cloak of Mirroring~ // BG2: Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water". Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
 @1419 = ~Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water". Its true enchantment becomes apparent in battle when the mantle makes a reflected image of the wearer to appear alongside him. Unable to discern which one is real, an attacker has a 50% chance that he will attack the image and a 50% chance that he will attack the wearer, in either case risking to trigger again another image. Whenever an attacker successfully hits the wearer the cloak dazzles foes with sparkling lights for an instant and causes another image to appear.
 
 STATISTICS:
@@ -3488,7 +3491,7 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @1422 = ~Cloak of Bravery~
-@1423 = ~This cloak is a powerful, evil thing. Made from the poorly stitched together skin of innocent nymphs, and blessed by unholy powers, it bestows on the bearer an almost reckless bravery in battle.
+@1423 = ~This cloak is an evil thing, albeit powerful. Made from the poorly stitched together skin of innocent nymphs, and blessed by unholy powers, it bestows on the bearer an almost reckless bravery in battle.
 
 STATISTICS:
 
@@ -3501,7 +3504,7 @@ Weight: 3
 Not Usable By:
  Paladin
  Wizard Slayer~
-@1424 = ~Cloak of Protection +3~
+@1424 = ~Cloak of Protection +3~ // BG2: Improved Cloak of Protection +2: The abilities conferred by this powerfully enchanted cloak attest to the fact that protection can take many forms - including hiding from view and running away.
 @1425 = ~The Protector
 The royal guard of King Pyronan, ruler of Impiltur, were given cloaks such as this as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves regarding who should receive such cloak. After years of internal hostility, the mantles were lost and the guards were replaced by less greedy individuals.
 
@@ -3516,7 +3519,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1426 = ~Montolio's Cloak~
+@1426 = ~Montolio's Cloak~ // BG2: This is the fabled cloak of Montolio DeBrouchee - the aged, blind mentor of the dark-elf ranger Drizzt Do'urden. Like his famous pupil, Montolio was a master at wielding two blades simultaneously.
 @1427 = ~Montolio Debrouchee, better known as "Mooshie", was a ranger of great renown, having dedicated himself to the defense of all living things not evil in nature, and total dedication to the goddess of the forest, Mielikki, at an early age. He served as a ranger for many years, often as a scout for large armies, or working with small groups of rangers or by himself. Montolio was a good friend and a mentor of the dark elf Drizzt Do'Urden. He became blinded five years before he met Drizzt while serving with a ranger group known as the Range Watchers, when they encountered and came into battle against a vicious red dragon, which killed three rangers and melted Montolio's face. His face was healed by clerics, but his eyes were beyond repair. Being pitied even by the Range Watchers and thinking his life meaningless, he fell into despair and came to the grove later known as Mooshie's Grove to die there. Instead, he learned to survive by using his other senses to their fullest extent. He befriended the animals and made it a personal goal to keep watch on, and protect the caravans going near the grove from Graul, an orc leader, and his raiding band. Mooshie eventually died of natural causes in his sleep.
 
 STATISTICS:
@@ -3583,7 +3586,7 @@ Requires: 6 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1435 = ~Throwing Dagger~ // The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+@1435 = ~Throwing Dagger~ // BG1/BG2: The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
 @1436 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
 STATISTICS:
@@ -3721,7 +3724,7 @@ Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1452 = ~Poisoned Throwing Dagger~ // The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
+@1452 = ~Poisoned Throwing Dagger~ // BG2: The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 @1453 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 
 STATISTICS:
@@ -5425,7 +5428,7 @@ Armor Class: 4
 Weight: 0
 Usable By:
  Thief~
-@1648 = ~Karajah's Leather Armor +3~ // Karajah's Leather Armor +3: Karajah was Calimshan's undisputed champion of pit fighting for a decade. Wearing only a thin leather armor and spiked gauntlets, he would pummel his foes to the ground, seemingly impervious to their blows. Eventually, it was revealed that his armor was heavily enchanted at which point angry spectators threw him into the pit with a club-wielding ogre. The beast managed to break all of Karajah's bones while the armor remained as good as new...
+@1648 = ~Karajah's Leather Armor +3~ // BG1: Karajah was Calimshan's undisputed champion of pit fighting for a decade. Wearing only a thin leather armor and spiked gauntlets, he would pummel his foes to the ground, seemingly impervious to their blows. Eventually, it was revealed that his armor was heavily enchanted at which point angry spectators threw him into the pit with a club-wielding ogre. The beast managed to break all of Karajah's bones while the armor remained as good as new...
 @1649 = ~Edwin's Amulet~
 @1650 = ~Karajah's Life and Death
 Karajah was Calimshan's champion of pit fighting for a full decade, and seemingly unbeatable. His success, or so he claimed, was due to the mobility that his light armor afforded him. He may well have been unaware of the suit's magical qualities, but his peers ignored his claims of ignorance when enchantments were discovered. The armor survived the subsequent beating, whereas Karajah did not.
@@ -12099,7 +12102,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@2339 = ~Bracers of Speed~
+@2339 = ~Bracers of Speed~ // Bracers of Binding: These bracers appear to be Bracers of Specialization but when donned, bind the wearers wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the drow. The recipient, believing them to be very powerful, will often don them before examining them. At this point, the drow find it amusing to conjure a hook horror.
 @2340 = ~These bracers are said to originate from the Underdark. Such items are sometimes given by Drow nobility as compensation to those who offer their swords to their cause. Once worn, they grant an unnatural and unsustainable speed to attacks, and will remind the wearer of the long enduring gratitude of its creators.
 
 STATISTICS:
@@ -12596,7 +12599,7 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
-@2401 = ~Girdle of Masculinity/Femininity~
+@2401 = ~Girdle of Masculinity/Femininity~ // BG2: Girdle of Gender
 @2402 = ~The cursed girdle of gender, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that, not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover.
 
 STATISTICS:
@@ -13446,8 +13449,18 @@ Not Usable By:
  Cleric
  Beast Master~
 @2504 = ~Melee/Thrown Switch~
-@2505 = ~Unused~
-@2506 = ~Unused~
+@2505 = ~Amulet of Protection +2~
+@2506 = ~The Protector
+The royal guard of King Pyronan, ruler of Impiltur, were given 'The Protector' as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armor Class: +2 bonus
+ Saving Throws: +2 bonus
+
+Not Usable By:
+ Wizard Slayer~
 @2507 = ~Poisoned Arrow~ // He is the only person who can safely handle them.
 @2508 = ~These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows.
 
@@ -13841,27 +13854,8 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@2579 = ~The Whistling Sword +2~
-@2580 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left, he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
-
-Combat Abilities:
- Whistling Sword: wielder and allies within 20' are immune to fear
-
-THAC0: +2 bonus
-Damage: 1D6 + 2
-Damage Type: Piercing
-Weight: 3
-Speed Factor: 1
-Proficiency Type: Short Sword
-Type: One-Handed
-Requires: 5 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Beast Master~
-@2581 = ~Ankheg Plate Mail +1~
-@2582 = ~This plate mail has been expertly crafted by Taerom Fuiruim of Beregost, then masterfully enspelled for strength and durability (perhaps by Beregost's local archmage, the conjurer Thalantyr). Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the most appreciated aspect of ankheg mail is its light weight and low encumbrance, being only half the weight of normal plate mail. Monsters come and go, but fatigue is a constant enemy.
+@2579 = ~Ankheg Plate Mail +1~
+@2580 = ~This plate mail has been expertly crafted by Taerom Fuiruim of Beregost, then masterfully enspelled for strength and durability (perhaps by Beregost's local archmage, the conjurer Thalantyr). Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the most appreciated aspect of ankheg mail is its light weight and low encumbrance, being only half the weight of normal plate mail. Monsters come and go, but fatigue is a constant enemy.
 
 STATISTICS:
 
@@ -13881,6 +13875,25 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
+@2581 = ~The Whistling Sword +2~
+@2582 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left, he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
+
+Combat Abilities:
+ Whistling Sword: wielder and allies within 20' are immune to fear
+
+THAC0: +2 bonus
+Damage: 1D6 + 2
+Damage Type: Piercing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-Handed
+Requires: 5 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
 @2583 = ~Holy Symbol of Lathander~
 @2584 = ~Only the most worthy and devoted servants of the Dawnbringer are granted these powerful holy symbols.
 
