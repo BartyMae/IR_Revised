@@ -521,29 +521,6 @@ END
 
 /////////////////////////////////////
 
-// Place Fallorain's Plate +1 on Reynald de Chatillion
-ACTION_IF (FILE_EXISTS_IN_GAME ~kaypal02.cre~) BEGIN
-  COPY_EXISTING kaypal02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~plat01~
-    ADD_CRE_ITEM ~plat02_~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
-END
-
-/////////////////////////////////////
-
-// Place Plate of the Dark +1 on Tarnor the Hatchetman
-ACTION_IF (FILE_EXISTS_IN_GAME ~tarnor.cre~) BEGIN
-  COPY_EXISTING tarnor.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~plat05~
-    REMOVE_CRE_ITEM ~plat14~
-    ADD_CRE_ITEM ~plat05~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
-END
-
-/////////////////////////////////////
-
 // Places a droppable Robe of the Neutral Archmagi on Jaheria assassin
 ACTION_IF (FILE_EXISTS_IN_GAME ~jade3.cre~) BEGIN // Jeremon
   COPY_EXISTING jade3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
@@ -621,6 +598,16 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~brainwa5.cre~) BEGIN // BG1
   END BUT_ONLY
 END
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
+  COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~ax1h03~
+	REMOVE_CRE_ITEM ~ax1h03_~
+    REMOVE_CRE_ITEM ~ax1h11~
+    ADD_CRE_ITEM ~ax1h03_~ #0 #0 #0 NONE WEAPON1 EQUIP
+  END
+  BUT_ONLY
+END
+
 // Replace bad copies of Dagger +2
 ACTION_IF (FILE_EXISTS_IN_GAME ~VAELASA.cre~) BEGIN
   COPY_EXISTING VAELASA.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
@@ -665,6 +652,26 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
     END
     BUT_ONLY
   END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~tamoko.cre~) BEGIN // Tamoko in BG1
+  COPY_EXISTING tamoko.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~plat05~
+	REMOVE_CRE_ITEM ~plat05_~
+    REMOVE_CRE_ITEM ~plat14~
+    ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~tamoko2.cre~) BEGIN // Tamoko in BG1
+  COPY_EXISTING tamoko2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~plat05~
+	REMOVE_CRE_ITEM ~plat05_~
+    REMOVE_CRE_ITEM ~plat14~
+    ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
 END
 
 // Replace bad copies of Large Shield +2
@@ -749,16 +756,6 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~deckwar1.cre~) BEGIN
   BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN
-  COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~sw1h09~
-    REMOVE_CRE_ITEM ~sw1h09_~
-    REMOVE_CRE_ITEM ~sw1h14~
-    ADD_CRE_ITEM ~sw1h09~ #0 #0 #0 NONE WEAPON1 EQUIP
-  END
-  BUT_ONLY
-END
-
 ACTION_IF (FILE_EXISTS_IN_GAME ~dw#vider.cre~) BEGIN
   COPY_EXISTING dw#vider.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
@@ -797,6 +794,17 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~type3.sto~) BEGIN
   COPY_EXISTING type3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+  END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargul in BG1
+  COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~sw1h09~
+    REMOVE_CRE_ITEM ~sw1h09_~
+    REMOVE_CRE_ITEM ~sw1h14~
+	REMOVE_CRE_ITEM ~sw1h29~
+    ADD_CRE_ITEM ~sw1h09_~ #0 #0 #0 NONE WEAPON1 EQUIP
   END
   BUT_ONLY
 END

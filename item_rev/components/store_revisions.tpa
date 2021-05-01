@@ -285,8 +285,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM CLCK18   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
   END
 
-  ADD_STORE_ITEM SW1H06   LAST #0 #0 #0 IDENTIFIED #1   // Varscona +2 
-  ADD_STORE_ITEM SW1H09   LAST #0 #0 #0 IDENTIFIED #1   // The Whistling Sword +2
+  ADD_STORE_ITEM SW1H06   LAST #0 #0 #0 IDENTIFIED #1   // Varscona +2
   ADD_STORE_ITEM WA2DAK   LAST #0 #0 #0 IDENTIFIED #1   // Dak'kon's Zerth Blade +2
   ADD_STORE_ITEM HAMM05   LAST #0 #0 #0 IDENTIFIED #1   // Borok's Fist +2 / Tersyus +2
   ADD_STORE_ITEM HALB03   LAST #0 #0 #0 IDENTIFIED #1   // Suryris's Blade +2
