@@ -5720,8 +5720,8 @@ Equipped Abilities:
  Mithral: +1 bonus to AC
 
 Armor Class: -1
-Weight: 40
-Requires: 13 Strength
+Weight: 30
+Requires: 12 Strength
 Not Usable By:
  Bard
  Druid
@@ -6917,7 +6917,7 @@ Equipped Abilities:
  Mithral: +1 bonus to AC
 
 Armor Class: -1
-Weight: 40
+Weight: 30
 Requires: 12 Strength
 Not Usable By:
  Bard
@@ -7881,8 +7881,8 @@ STATISTICS:
 
 Armor Class Bonus: 4
 Special: +1 vs. Missile Weapons
-Weight: 25
-Requires: 13 Strength
+Weight: 15
+Requires: 12 Strength
 Not Usable By:
  Bard
  Druid
