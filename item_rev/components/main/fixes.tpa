@@ -2810,6 +2810,41 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 END // JA helms
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqljba1.bam~) BEGIN // JB helms, headband
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~compon17.itm~) BEGIN
+COPY_EXISTING ~compon17.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~JB~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1BAND05~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~1CBAND05~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 208  // colour index
+  SET location = hred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm28.itm~) BEGIN
+COPY_EXISTING ~helm28.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~JB~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1BAND06~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~1CBAND06~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 227  // colour index
+  SET location = hred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
 END // JB helms
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqljca1.bam~) BEGIN // JC helms, open-faced and wide wings
