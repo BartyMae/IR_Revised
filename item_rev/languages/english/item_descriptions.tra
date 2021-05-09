@@ -5240,6 +5240,7 @@ Equipped Abilities:
  Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 8th to 9th
 
 Armor Class Bonus: None
+Weight: 1
 Usable By:
  Mage~
 @1620 = ~Thieves' Hood~
@@ -5734,12 +5735,12 @@ Not Usable By:
  Kensai
  Stalker~
 @1685 = ~Roranach's Horn~
-@1686 = ~Passed down from generation to generation of Rashemi warriors, this helm provides its user with enhanced vitality, and resistance to attacks of physical nature. However, the rushing charges encouraged by its user's raging have often led to this helm changing hands more frequently than perhaps it should.
+@1686 = ~This helm is carved from the horn of a great ram. Etchings on the horn suggest the beast was once worshipped by ancient barbarian tribes.
 
 STATISTICS:
 
 Equipped Abilities:
- Maximum Hit Points: +10 bonus
+ Elemental Resistance: 15% bonus
 
 Armor Class Bonus: 2
 Protects Against Critical Hits
