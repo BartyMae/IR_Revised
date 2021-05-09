@@ -95,6 +95,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
 // Non-Playable
 
 // Mod-Added
+  ~dvshld01~ => 2
   ~_shld01~  => 2
   ~_shld02~  => 2
   ~_shld11~  => 2

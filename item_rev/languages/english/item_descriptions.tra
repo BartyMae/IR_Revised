@@ -8001,13 +8001,13 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1974 = ~Nature's Ward +2~
-@1975 = ~In the ancient days when the Ashenwood was young, and there were those who still called them 'green elves' - shields like these were worn by an order of wild elven druids and rangers dedicated to protecting the forest and its inhabitants. Now little is left of the order but their memory, and replicas of their gear... and the knowledge of how the Ashenwood has grown and flourished in the ages that have followed.
+@1974 = ~Shield of the Lost +2~
+@1975 = ~This odd shield was constructed by nomads that once inhabited the forest of Mir, a group long since absorbed into "civilized" society and forgotten. Examination reveals fine weaving of animal and human hair bound together by enchantment, though how this was done is lost to time.
 
 STATISTICS:
 
 Equipped Abilities:
- Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
+ Magic Damage Resistance: +50% bonus
 
 Armor Class Bonus: 3
 Weight: 15
@@ -8018,7 +8018,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1976 = ~Saving Grace +3~
+@1976 = ~Saving Grace +3~ // BG2: Once a very powerful shield used by the clerics of Bane, most of the enchantments fled with their god's demise. The basic magical protection still remains, making it useful for any adventurer.
 @1977 = ~Shields like this are first mentioned in ancient liturgies of Amaunator, in which the god's champions bear radiant shields against an infestation of undead. The shields made their first appearance in modern times in dramatic fashion, appearing miraculously at the altars of several of the deity's temples in the Year of Smoldering Spells, 1020 DR. Since that time, a number have been lost in battle, and not a few were stolen by foul creatures to prevent their use.
 
 Once a holy artifact used by the elite sect of clerics and holy warriors called Sunmasters, part of the enchantments fled with their god's demise, but it still remain a powerful tool for any adventurer.
@@ -11146,7 +11146,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2237 = ~Mirror Shield +3~
+@2237 = ~Mirror Shield +3~ // BG2: Sentinel +4: A century ago, astronomers noted an unexpected comet coming to earth offshore of the Sword Coast. An odd occurrence, it was made stranger by the lightweight fragments of metal found days later by blacksmith Huffum Fuiruim, who cared little about celestial events. He fashioned the bulk of it into this shield, though the forging took months and the aid of several enchanters. "From the heavens? Nay, from my hammer!"
 @2238 = ~Angwile the Artificer was widely known among the svirfneblin as the foremost authority on beholders. While he was often derided during his lifetime as foolhardy and reckless, his studies of captive beholders led to the creation of many artifacts that are to this day highly sought after by deep gnomes and other denizens of the Underdark.
 
 Among Angwile's most well-known creation there's the Mirror Shield. This shield looks and works like a normal shield, but instead of a coat-of-arms, the front is mirror-reflective, and the inside is crystal clear. The wearer can cover behind the shield and look through its clear surface, while beholder's rays are deflected away, and gaze attacks are nullified as opponents see their own reflected image.
@@ -13954,7 +13954,7 @@ Equipped Abilities:
 
 Usable By:
  Evil-aligned clerics~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2593 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -13967,7 +13967,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2594 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -13980,7 +13980,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2595 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -13993,7 +13993,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2596 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14006,7 +14006,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2597 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14019,7 +14019,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2598 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14032,7 +14032,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2599 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14045,7 +14045,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2600 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14058,7 +14058,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2601 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14071,7 +14071,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1691 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+@2602 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
@@ -14084,6 +14084,25 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
+@2603 = ~Nature's Ward +2~
+@2604 = ~In the ancient days when the Ashenwood was young, and there were those who still called them 'green elves' - shields like these were worn by an order of wild elven druids and rangers dedicated to protecting the forest and its inhabitants. Now little is left of the order but their memory, and replicas of their gear... and the knowledge of how the Ashenwood has grown and flourished in the ages that have followed.
+
+STATISTICS:
+
+Equipped Abilities:
+ Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
+
+Armor Class Bonus: 3
+Special: No Missile Weapon Protection
+Weight: 6
+Requires: 4 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Monk
+ Thief
+ Kensai~
 
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~

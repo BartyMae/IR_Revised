@@ -847,6 +847,20 @@ COPY ~%source%/SHIELD_OF_THE_FALLING_STARS_2.tpa~ ~%target%~
 COPY ~%source%/SAVING_GRACE_3.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/NATURES_WARD_2.tpa
+  // Madulf's dialogue
+  ACTION_IF (FILE_EXISTS_IN_GAME ~UHOGRE01.dlg~) BEGIN
+    COPY_EXISTING ~UHOGRE01.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~shld26~
+                          ~dvshld01~
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/NATURES_WARD_2.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/ERINNE_SLING_4.tpa
   // Cespenar's dialogue
   ACTION_IF (FILE_EXISTS_IN_GAME ~botsmith.dlg~) BEGIN
