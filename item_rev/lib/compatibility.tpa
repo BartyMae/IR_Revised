@@ -9,7 +9,7 @@
 
 // Detecting already installed mods
 
-// Item Revisions - main component
+// Item Revisions - Main Component
 ACTION_IF MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0 BEGIN
   OUTER_SET comp_ir=1  END ELSE BEGIN
   OUTER_SET comp_ir=0  END
@@ -54,14 +54,9 @@ ACTION_IF MOD_IS_INSTALLED ~aurora/setup-aurora.tp2~ 0 BEGIN
   OUTER_SET comp_aurora=1  END ELSE BEGIN
   OUTER_SET comp_aurora=0  END
 
+// IWDification - Divine Spell Pack
+ACTION_IF MOD_IS_INSTALLED ~iwdification/setup-iwdification.tp2~ 40 AND comp_sr=0 BEGIN
+  OUTER_SET comp_iwdification=1  END ELSE BEGIN
+  OUTER_SET comp_iwdification=0  END
+
 ///////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
