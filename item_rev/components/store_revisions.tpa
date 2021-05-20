@@ -33,17 +33,17 @@ END
 //   cure_moderate_wounds = 35 (IWDification)
 //   cure_medium_wounds   = 45 / 50 (SR)
 //   dispel_magic         = 200
-//   remove_curse         = 500
 //   cure_disease         = 300
 //   cure_serious_wounds  = 60 / 75 (SR)
 //   neutralize_poison    = 300
+//   remove_curse         = 400
 //   lesser_restoration   = 500
 //   cure_critical_wounds = 75 / 100 (SR)
+//   mass_cure            = 125
 //   raise_dead           = 1000
-//   mass_cure            = 100
 //   heal                 = 1000
-//   resurrection         = 2000
 //   greater_restoration  = 2000
+//   resurrection         = 2000
 
 
 /////////////////////////
@@ -2673,7 +2673,7 @@ COPY_EXISTING bshop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     steal=0
     fence=1
   END
-  WRITE_BYTE 0x10 BYTE_AT 0x10 &`32 // disable the temple menu. could have been put into 'store', but for two places only?
+  WRITE_BYTE 0x10 BYTE_AT 0x10 &`32 // disable the temple menu
 
   SAY 0xc @200123 // Quite Legitimate Goods
 
@@ -3052,12 +3052,13 @@ COPY_EXISTING uhmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     fence=0
   END
 
-  WRITE_BYTE 0x10 BYTE_AT 0x10 |32 // Enable the temple menu, could have been put into 'store', but for two places only?
+  WRITE_BYTE 0x10 BYTE_AT 0x10 |32 // enable the temple menu
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
-    neutralize_poison=100
+    cure_disease=300
+    neutralize_poison=300
   END
 
   SAY 0xc @200126 // Nature's Blessings
@@ -3239,7 +3240,7 @@ COPY_EXISTING ppstor01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 END BUT_ONLY
 
 ///////////////
-//  temples  //
+//  Temples  //
 ///////////////
 
 ///////////////////////////
@@ -3276,11 +3277,18 @@ COPY_EXISTING bhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-	cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_disease=300
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    neutralize_poison=300
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
   END
 
@@ -3356,11 +3364,12 @@ COPY_EXISTING doghma.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-	cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-	cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=50
-    remove_curse=125
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    remove_curse=100
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
     raise_dead=1000
   END
 
@@ -3425,11 +3434,15 @@ COPY_EXISTING govwau01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-	cure_medium_wounds= comp_sr=1 ? 50 : 45
-	dispel_magic=200
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
-    neutralize_poison=300
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
+    dispel_magic=200
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
   END
 
@@ -3505,13 +3518,15 @@ COPY_EXISTING slilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=20
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 30 : 0
     cure_medium_wounds= comp_sr=1 ? 40 : 35
+    cure_serious_wounds= comp_sr=1 ? 60 : 0
     cure_disease=180
-    cure_serious_wounds= comp_sr=1 ? 60 : 45
+    cure_serious_wounds= !comp_sr=1 ? 0 : 45
+    cure_critical_wounds= comp_sr=1 ? 80 : 0
     neutralize_poison=180
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 80 : 55
+    cure_critical_wounds= !comp_sr=1 ? 0 : 55
+    mass_cure= comp_atweaks_temples=1 ? 100 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 80 : 0
     heal=750
   END
 
@@ -3610,10 +3625,14 @@ COPY_EXISTING wilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=20
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 30 : 0
     cure_medium_wounds= comp_sr=1 ? 40 : 35
+    cure_serious_wounds= comp_sr=1 ? 60 : 0
     cure_disease=180
-    cure_serious_wounds= comp_sr=1 ? 60 : 45
+    cure_serious_wounds= !comp_sr=1 ? 0 : 45
+    cure_critical_wounds= comp_sr=1 ? 80 : 0
     neutralize_poison=180
-    cure_critical_wounds= comp_sr=1 ? 80 : 55
+    cure_critical_wounds= !comp_sr=1 ? 0 : 55
+    mass_cure= comp_atweaks_temples=1 ? 100 : 0
+    raise_dead=1000
   END
 
   ADD_STORE_ITEM SCRL03   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Acid
@@ -3692,14 +3711,16 @@ COPY_EXISTING kpchap01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=15
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 20 : 0
     cure_medium_wounds= comp_sr=1 ? 30 : 25
+    cure_serious_wounds= comp_sr=1 ? 45 : 0
     dispel_magic=100
     cure_disease=150
-    cure_serious_wounds= comp_sr=1 ? 45 : 30
+    cure_serious_wounds= !comp_sr=1 ? 0 : 30
+    cure_critical_wounds= comp_sr=1 ? 60 : 0
     neutralize_poison=150
     lesser_restoration=250
-    cure_critical_wounds= comp_sr=1 ? 60 : 40
+    cure_critical_wounds= !comp_sr=1 ? 0 : 40
+    mass_cure= comp_atweaks_temples=1 ? 75: 0
     raise_dead=750
-    mass_cure= comp_atweaks_temples=1 ? 60: 0
     heal=500
   END
 
@@ -3824,15 +3845,17 @@ COPY_EXISTING temhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
+    remove_curse=400
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
     heal=1000
     resurrection=2000
     greater_restoration=2000
@@ -3947,15 +3970,17 @@ COPY_EXISTING temlath.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
+    remove_curse=400
     lesser_restoration=375
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=900
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
     heal=1000
     resurrection=1800
     greater_restoration=1500
@@ -4095,19 +4120,21 @@ COPY_EXISTING temtalos.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
 
   LPF temple INT_VAR
-    call_lightning=5        // wrath of Talos is never in a short supply! :lol:
+    call_lightning=5
     cure_light_wounds=30
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 45 : 0
     cure_medium_wounds= comp_sr=1 ? 60 : 55
+    cure_serious_wounds= comp_sr=1 ? 90 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=375
-    cure_serious_wounds= comp_sr=1 ? 90 : 75
+    cure_serious_wounds= !comp_sr=1 ? 0 : 75
+    cure_critical_wounds= comp_sr=1 ? 120 : 0
     neutralize_poison=375
-    lesser_restoration=750
-    cure_critical_wounds= comp_sr=1 ? 120 : 90
+    remove_curse=500
+    lesser_restoration=625
+    cure_critical_wounds= !comp_sr=1 ? 0 : 90
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1250
-    mass_cure= comp_atweaks_temples=1 ? 120 : 0
     heal=1250
     resurrection=2500
     greater_restoration=2500
@@ -4177,15 +4204,17 @@ COPY_EXISTING temsup.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
+    remove_curse=400
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
   END
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
@@ -4256,19 +4285,21 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
 
   LPF temple INT_VAR
-    call_lightning=5      // Yes, it CAN be used for healing - just get 127% electrical res
+    call_lightning=5
     cure_light_wounds=50
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 70 : 0
     cure_medium_wounds= comp_sr=1 ? 100 : 90
+    cure_serious_wounds= comp_sr=1 ? 150 : 0
     dispel_magic=400
-    remove_curse=1000
     cure_disease=600
-    cure_serious_wounds= comp_sr=1 ? 150 : 120
+    cure_serious_wounds= !comp_sr=1 ? 0 : 120
+    cure_critical_wounds= comp_sr=1 ? 200 : 0
     neutralize_poison=600
+    remove_curse=800
     lesser_restoration=1000
-    cure_critical_wounds= comp_sr=1 ? 200 : 150
+    cure_critical_wounds= !comp_sr=1 ? 0 : 150
+    mass_cure= comp_atweaks_temples=1 ? 250 : 0
     raise_dead=2000
-    mass_cure= comp_atweaks_temples=1 ? 200 : 0
   END
 
   PATCH_IF comp_ir=1 BEGIN
@@ -6669,15 +6700,17 @@ COPY_EXISTING sahpr1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
+    remove_curse=400
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
     heal=1000
   END
 
@@ -6825,15 +6858,17 @@ COPY_EXISTING suelf10.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=15
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 25 : 0
     cure_medium_wounds= comp_sr=1 ? 30 : 25
+    cure_serious_wounds= comp_sr=1 ? 45 : 0
     dispel_magic=150
-    remove_curse=375
-    cure_disease=225
-    cure_serious_wounds= comp_sr=1 ? 45 : 30
+    cure_disease=150
+    cure_serious_wounds= !comp_sr=1 ? 0 : 30
+    cure_critical_wounds= comp_sr=1 ? 60 : 0
     neutralize_poison=150
+    remove_curse=300
     lesser_restoration=375
-    cure_critical_wounds= comp_sr=1 ? 60 : 40
+    cure_critical_wounds= !comp_sr=1 ? 0 : 40
+    mass_cure= comp_atweaks_temples=1 ? 75 : 0
     raise_dead=750
-    mass_cure= comp_atweaks_temples=1 ? 60 : 0
     heal=500
     resurrection=1500
     greater_restoration=1500
@@ -8882,12 +8917,14 @@ COPY_EXISTING amcler02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
-	dispel_magic=200
-    remove_curse=500
-    cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
+    dispel_magic=200
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    remove_curse=400
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
   END
 
@@ -9170,14 +9207,15 @@ COPY_EXISTING sartem01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
-    cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    remove_curse=400
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 1000 : 0
   END
 
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Extra Healing
@@ -9471,15 +9509,17 @@ COPY_EXISTING garlena.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
+    remove_curse=400
     lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
     heal=1000
     resurrection=2000
     greater_restoration=2000
@@ -9763,413 +9803,272 @@ END BUT_ONLY
 
 ///////////////////////////////////////////////////////////////////
 
-//////////////////////////////
-// BG1 (BGT/EET?) Additions //
-//////////////////////////////
+/////////////////////////////
+// BG1 (BGT/EET) Additions //
+/////////////////////////////
 
 ///////////////////////////
-/*
-// TEM0149 - Ilmater Priest in Ilmater's Shrine (Baldur's Gate)
+
+// TEM0149 - Priest of Ilmater (Sune) in Ilmater's Shrine at Baldur's Gate
 // 
 // Sensible modifications of prices in BG1 temples
 
 COPY_EXISTING tem0149.sto override
-			  _tem0149.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-  LPF temple INT_VAR
-    cure_light_wounds=20
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 30 : 0
-    cure_medium_wounds= comp_sr=1 ? 40 : 35
-    cure_disease=180
-    cure_serious_wounds= comp_sr=1 ? 60 : 45
-    neutralize_poison=180
-    lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 80 : 55
-    raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 80 : 0
-  END
-
-  ADD_STORE_ITEM SCRL03   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Acid
-  ADD_STORE_ITEM SCRL08   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Poison
-
-  ADD_STORE_ITEM restore  LAST #1 #0 #0 IDENTIFIED #1   // Restoration
-  ADD_STORE_ITEM SCRL63   LAST #1 #0 #0 IDENTIFIED #1   // Raise Dead
-  ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #1   // Stone to Flesh Scroll
-
-  ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #30  // Potion of Healing
-  ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Extra Healing
-  ADD_STORE_ITEM POTN20   LAST #1 #0 #0 IDENTIFIED #5   // Antidote
-  ADD_STORE_ITEM POTN17   LAST #1 #0 #0 IDENTIFIED #3   // Elixir of Health
-  ADD_STORE_ITEM POTN42   LAST #1 #0 #0 IDENTIFIED #2   // Potion of Regeneration 
-  ADD_STORE_ITEM POTN28   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Fortitude
-  ADD_STORE_ITEM POTN21   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Clarity
-
-  ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #4   // Bless
-  ADD_STORE_ITEM SCRL56     LAST #1 #0 #0 IDENTIFIED #4   // Cure Serious Wounds
-  ADD_STORE_ITEM ~ag#ir0d~  LAST #1 #0 #0 IDENTIFIED #4   // Holy Smite
-  ADD_STORE_ITEM ~ag#ir0c~  LAST #1 #0 #0 IDENTIFIED #4   // Remove Paralysis
-  ADD_STORE_ITEM SCRL59     LAST #1 #0 #0 IDENTIFIED #4   // Neutralize Poison
-  ADD_STORE_ITEM SCRL61     LAST #1 #0 #0 IDENTIFIED #4   // Cure Critical Wounds
-  ADD_STORE_ITEM SCRL58     LAST #1 #0 #0 IDENTIFIED #4   // Free Action
-  ADD_STORE_ITEM SCRL5d     LAST #1 #0 #0 IDENTIFIED #3   // Protection from Evil 10' Radius
-
-END BUT_ONLY IF_EXISTS
-
-
-// TEM0609 - Umberlee Priest in Water Queen's House (Baldur's Gate)
-// 
-// Sensible modifications of prices in BG1 temples
-
-COPY_EXISTING tem0609.sto override
-			  _tem0609.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-  LPF buy END
-  REMOVE_STORE_ITEM 
-    POTN17    // Elixir of Health
-    POTN25    // Potion of Healing
-    POTN52    // Potion of Extra Healing
-    POTN20    // Antidote
-    SCRLPET   // Stone to Flesh Scroll
-
-  LPF store INT_VAR
-    sell=150
-    steal=0
-  END
-
-  LPF temple INT_VAR
-    call_lightning=5
-    cure_light_wounds=50
-    dispel_magic=400
-    remove_curse=1000
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 90 : 120
-    cure_disease=600
-    cure_serious_wounds=150
-    neutralize_poison=600
-    lesser_restoration=1500
-//    cure_critical_wounds=200
-    raise_dead=2000
-    mass_cure= comp_atweaks_temples=1 ? 200 : 0
-  END
-
-  PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM WAND07   LAST #10 #0 #0 IDENTIFIED #1  // Lightning
-  END ELSE BEGIN
-    ADD_STORE_ITEM WAND07   LAST #50 #0 #0 IDENTIFIED #1  // Lightning
-  END
-  ADD_STORE_ITEM CLCK11   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Electric Resistance
-
-  ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #15  // Potion of Healing
-  ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Extra Healing
-  ADD_STORE_ITEM POTN19   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Agility
-  ADD_STORE_ITEM POTN10   LAST #1 #0 #0 IDENTIFIED #2   // Potion of Invisibility
-  ADD_STORE_ITEM POTN06   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Cloud Giant Strength
-
-  ADD_STORE_ITEM restore  LAST #1 #0 #0 IDENTIFIED #3   // Restoration
-  ADD_STORE_ITEM SCRL63   LAST #1 #0 #0 IDENTIFIED #3   // Raise Dead
-  ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #3   // Stone to Flesh Scroll
-
-  ADD_STORE_ITEM amul12   LAST #0 #0 #0 IDENTIFIED #1   // Larael's Tear
-  ADD_STORE_ITEM MISC35   LAST #0 #0 #0 IDENTIFIED #3   // Horn Coral
-  ADD_STORE_ITEM MISC33   LAST #0 #0 #0 IDENTIFIED #1   // Aquamarine
-  ADD_STORE_ITEM MISC36   LAST #0 #0 #0 IDENTIFIED #3   // Pearl
-
-  ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #3   // Bless
-  ADD_STORE_ITEM ~ag#ir06~  LAST #1 #0 #0 IDENTIFIED #3   // Silence
-  ADD_STORE_ITEM ~ag#ir0b~  LAST #1 #0 #0 IDENTIFIED #2   // Remove Curse / Break Enchantment
-  ADD_STORE_ITEM SCRL56     LAST #1 #0 #0 IDENTIFIED #2   // Cure Serious Wounds
-  ADD_STORE_ITEM ~ag#ir09~  LAST #1 #0 #0 IDENTIFIED #2   // Dispel Magic
-  ADD_STORE_ITEM ~ag#ir0a~  LAST #1 #0 #0 IDENTIFIED #2   // Glyph of Warding
-  ADD_STORE_ITEM ~ag#ir0c~  LAST #1 #0 #0 IDENTIFIED #2   // Remove Paralysis
-  ADD_STORE_ITEM ~ag#ir0e~  LAST #1 #0 #0 IDENTIFIED #2   // Unholy Blight
-  ADD_STORE_ITEM SCRL58     LAST #1 #0 #0 IDENTIFIED #2   // Free Action
-  ADD_STORE_ITEM SCRL5f     LAST #1 #0 #0 IDENTIFIED #1   // Chaotic Commands
-  ADD_STORE_ITEM SCRL5c     LAST #1 #0 #0 IDENTIFIED #1   // Protection from Lightning
-
-END BUT_ONLY IF_EXISTS
-
-// TEM0131 - Gond priest in Hall of Wonders (Baldur's Gate)
-// 
-// Sensible modifications of prices in BG1 temples
-
-COPY_EXISTING tem0131.sto override
-			  _tem0131.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-
-  LPF temple INT_VAR
-    cure_light_wounds=25
-    dispel_magic=200
-    remove_curse=500
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 45 : 60
-    cure_disease=300
-    cure_serious_wounds=75
-    neutralize_poison=300
-    lesser_restoration=750
-//    cure_critical_wounds=100
-    raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
-  END
-
-END BUT_ONLY IF_EXISTS
-
-
-// TEM0132 - Tymora priest in Lady's Hall (Baldur's Gate)
-// 
-// Sensible modifications of prices in BG1 temples
-
-COPY_EXISTING tem0132.sto override
-			  _tem0132.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-
-  LPF temple INT_VAR
-    cure_light_wounds=25
-    dispel_magic=200
-    remove_curse=500
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 45 : 60
-    cure_disease=300
-    cure_serious_wounds=75
-    neutralize_poison=300
-    lesser_restoration=750
-//    cure_critical_wounds=100
-    raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
-  END
-
-END BUT_ONLY IF_EXISTS
-
-
-// TEM0002 - Helm priest in Temple of Helm (Baldur's Gate)
-// 
-// Sensible modifications of prices in BG1 temples
-
-COPY_EXISTING tem0002.sto override
-			  _tem0002.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-  LPF buy END
-  REMOVE_STORE_ITEM 
-    POTN17    // Elixir of Health
-    POTN25    // Potion of Healing
-    POTN52    // Potion of Extra Healing
-    POTN20    // Antidote
-    SCRLPET   // Stone to Flesh Scroll
-
-  LPF store INT_VAR
-    sell=150
-    steal=0
-  END
+              _tem0149.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
-    dispel_magic=200
-    remove_curse=500
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
-    lesser_restoration=500
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
   END
-
-  ADD_STORE_ITEM ~ag#ir03~  LAST #1 #0 #0 IDENTIFIED #5   // Armor of Faith
-  ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #5   // Bless
-  ADD_STORE_ITEM ~ag#ir02~  LAST #1 #0 #0 IDENTIFIED #5   // Sanctuary
-  ADD_STORE_ITEM ~ag#ir04~  LAST #1 #0 #0 IDENTIFIED #5   // Chant
-  ADD_STORE_ITEM ~ag#ir08~  LAST #1 #0 #0 IDENTIFIED #5   // Draw Upon Holy Might
-  ADD_STORE_ITEM ~ag#ir05~  LAST #1 #0 #0 IDENTIFIED #5   // Find Traps
-  ADD_STORE_ITEM ~ag#ir06~  LAST #1 #0 #0 IDENTIFIED #5   // Silence
-  ADD_STORE_ITEM ~ag#ir0b~  LAST #1 #0 #0 IDENTIFIED #3   // Remove Curse / Break Enchantment
-  ADD_STORE_ITEM SCRL56     LAST #1 #0 #0 IDENTIFIED #3   // Cure Serious Wounds
-  ADD_STORE_ITEM ~ag#ir09~  LAST #1 #0 #0 IDENTIFIED #3   // Dispel Magic
-  ADD_STORE_ITEM ~ag#ir0a~  LAST #1 #0 #0 IDENTIFIED #3   // Glyph of Warding
-  ADD_STORE_ITEM ~ag#ir0c~  LAST #1 #0 #0 IDENTIFIED #3   // Remove Paralysis
-  ADD_STORE_ITEM SCRL61     LAST #1 #0 #0 IDENTIFIED #3   // Cure Critical Wounds
-  ADD_STORE_ITEM SCRL5b     LAST #1 #0 #0 IDENTIFIED #3   // Defensive Harmony
-  ADD_STORE_ITEM SCRL5d     LAST #1 #0 #0 IDENTIFIED #3   // Protection from Evil 10' Radius
-  ADD_STORE_ITEM SCRL5e     LAST #1 #0 #0 IDENTIFIED #2   // Champion's Strength
-  ADD_STORE_ITEM SCRL5c     LAST #1 #0 #0 IDENTIFIED #2   // Protection from Lightning
 
 END BUT_ONLY IF_EXISTS
 
 
-// TEM2304 - Garl Glittergold priest (Friendly Arm Inn)
+// TEM0609 - Priestess of Umberlee in Water Queen's House at Baldur's Gate
+// 
+// Sensible modifications of prices in BG1 temples
+
+COPY_EXISTING tem0609.sto override
+              _tem0609.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+
+  LPF temple INT_VAR
+    call_lightning=5
+    cure_light_wounds=50
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 70 : 0
+    cure_medium_wounds= comp_sr=1 ? 100 : 90
+    cure_serious_wounds= comp_sr=1 ? 150 : 0
+    dispel_magic=400
+    cure_disease=600
+    cure_serious_wounds= !comp_sr=1 ? 0 : 120
+    cure_critical_wounds= comp_sr=1 ? 200 : 0
+    neutralize_poison=600
+    remove_curse=800
+    lesser_restoration=1000
+    cure_critical_wounds= !comp_sr=1 ? 0 : 150
+    mass_cure= comp_atweaks_temples=1 ? 250 : 0
+    raise_dead=2000
+  END
+
+END BUT_ONLY IF_EXISTS
+
+
+// TEM0131 - Priest of Gond in Hall of Wonders at Baldur's Gate
+// 
+// Sensible modifications of prices in BG1 temples
+
+COPY_EXISTING tem0131.sto override
+              _tem0131.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+
+  LPF temple INT_VAR
+    cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
+    dispel_magic=200
+    cure_disease=300
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    neutralize_poison=300
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    raise_dead=1000
+  END
+
+END BUT_ONLY IF_EXISTS
+
+
+// TEM0132 - Chanthalas Ulbright (Tymora) in Lady's Hall at Baldur's Gate
+// 
+// Sensible modifications of prices in BG1 temples
+
+COPY_EXISTING tem0132.sto override
+              _tem0132.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+
+  LPF temple INT_VAR
+    cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
+    dispel_magic=200
+    cure_disease=300
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    neutralize_poison=300
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    raise_dead=1000
+  END
+
+END BUT_ONLY IF_EXISTS
+
+
+// TEM0002 - Priest of Helm in Temple of Helm at Baldur's Gate
+// 
+// Sensible modifications of prices in BG1 temples
+
+COPY_EXISTING tem0002.sto override
+              _tem0002.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+
+  LPF temple INT_VAR
+    cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
+    dispel_magic=200
+    cure_disease=300
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    neutralize_poison=300
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    raise_dead=1000
+  END
+
+END BUT_ONLY IF_EXISTS
+
+
+// TEM2304 - Gellana Mirrorshade (Garl Glittergold) in Temple of Wisdom at Friendly Arm Inn
 // 
 // Sensible modifications of prices in BG1 temples
 
 COPY_EXISTING tem2304.sto override
-			  _tem2304.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+              _tem2304.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 45 : 60
     cure_disease=300
-    cure_serious_wounds=75
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
-    lesser_restoration=750
-    cure_critical_wounds=100
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
   END
 
 END BUT_ONLY IF_EXISTS
 
 
-// TEM2601 - Oghma priest (Candlekeep)
+// TEM2601 - Priest of Oghma at Candlekeep
 // 
 // Sensible modifications of prices in BG1 temples
 
 COPY_EXISTING tem2601.sto override
-			  _tem2601.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-  LPF buy END
-  REMOVE_STORE_ITEM 
-    POTN17    // Elixir of Health
-    POTN25    // Potion of Healing
-    POTN52    // Potion of Extra Healing	
-    POTN20    // Antidote
-    SCRLPET   // Stone to Flesh Scroll
+              _tem2601.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
-  LPF store INT_VAR
-    sell=150
-    steal=0
-  END
   WRITE_BYTE 0x10 THIS |4 // enable identification
   WRITE_LONG 0x40 50 // half-price identification
 
   LPF temple INT_VAR
     cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=50
-    remove_curse=125
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 45 : 60
-    cure_serious_wounds=75
+    remove_curse=100
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
     raise_dead=1000
   END
-
-  ADD_STORE_ITEM restore  LAST #1 #0 #0 IDENTIFIED #1   // Restoration
-  ADD_STORE_ITEM SCRL63   LAST #1 #0 #0 IDENTIFIED #1   // Raise Dead
-  ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #1   // Stone to Flesh Scroll
-
-  ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
-  ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Extra Healing
-  ADD_STORE_ITEM POTN29   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Genius
-  ADD_STORE_ITEM POTN43   LAST #1 #0 #0 IDENTIFIED #3   // Potion of Insight 
-  ADD_STORE_ITEM POTN36   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Master Thievery
-  ADD_STORE_ITEM POTN45   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Freedom
-
-  ADD_STORE_ITEM ~ag#ir01~  LAST #1 #0 #0 IDENTIFIED #3   // Bless
-  ADD_STORE_ITEM ~ag#ir05~  LAST #1 #0 #0 IDENTIFIED #3   // Find Traps
-  ADD_STORE_ITEM ~ag#ir0b~  LAST #1 #0 #0 IDENTIFIED #3   // Remove Curse / Break Enchantment
-  ADD_STORE_ITEM SCRL56     LAST #1 #0 #0 IDENTIFIED #3   // Cure Serious Wounds
-  ADD_STORE_ITEM SCRL58     LAST #1 #0 #0 IDENTIFIED #3   // Free Action
-  ADD_STORE_ITEM ~ag#ir09~  LAST #1 #0 #0 IDENTIFIED #3   // Dispel Magic
 
 END BUT_ONLY IF_EXISTS
 
 
-// TEM3402 - Kelddath Ormlyr - Lathander priest (Beregost)
+// TEM3402 - Kelddath Ormlyr (Lathander) at Beregost
 // 
 // Sensible modifications of prices in BG1 temples
 
 COPY_EXISTING tem3402.sto override 
-			  _tem3402.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-
-  LPF temple INT_VAR
-    cure_light_wounds=25
-    dispel_magic=200
-    remove_curse=500
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 45 : 60
-    cure_disease=300
-    cure_serious_wounds=75
-    neutralize_poison=300
-    lesser_restoration=750
-    cure_critical_wounds=100
-    raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
-  END
-
-END BUT_ONLY IF_EXISTS
-
-
-// TEM4802 - Helm priest in Nashkel and Priest in Gullykin
-// 
-// Sensible modifications of prices in BG1 temples
-
-COPY_EXISTING tem4802.sto override
-			  _tem4802.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-  LPF buy END
-  REMOVE_STORE_ITEM 
-    POTN17    // Elixir of Health
-    POTN25    // Potion of Healing
-    POTN52    // Potion of Extra Healing
-    POTN20    // Antidote
-    SCRLPET   // Stone to Flesh Scroll
-
-  LPF store INT_VAR
-    sell=150
-    steal=0
-  END
-  LPF store INT_VAR
-    sell=150
-    steal=0
-  END
+              _tem3402.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
     cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
     cure_disease=300
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
-    lesser_restoration=500
-    raise_dead=1000
+    remove_curse=400
+    lesser_restoration=375
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    raise_dead=900
   END
-
-  ADD_STORE_ITEM SCRL15   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Petrification / Protection from Alteration
-
-  ADD_STORE_ITEM restore  LAST #1 #0 #0 IDENTIFIED #1   // Restoration
-  ADD_STORE_ITEM SCRL63   LAST #1 #0 #0 IDENTIFIED #1   // Raise Dead
-  ADD_STORE_ITEM SCRLPET  LAST #1 #0 #0 IDENTIFIED #1   // Stone to Flesh Scroll
-
-  ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
-  ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Extra Healing
-  PATCH_IF comp_ir BEGIN
-    ADD_STORE_ITEM POTN30   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Infravision/Sight
-  END ELSE BEGIN
-    ADD_STORE_ITEM POTN44   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Strength
-  END
-  ADD_STORE_ITEM POTN24   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Defense
-
-  ADD_STORE_ITEM ~ag#ir02~  LAST #1 #0 #0 IDENTIFIED #3   // Sanctuary
-  ADD_STORE_ITEM ~ag#ir06~  LAST #1 #0 #0 IDENTIFIED #3   // Silence
-  ADD_STORE_ITEM ~ag#ir0b~  LAST #1 #0 #0 IDENTIFIED #2   // Remove Curse / Break Enchantment
-  ADD_STORE_ITEM ~ag#ir09~  LAST #1 #0 #0 IDENTIFIED #2   // Dispel Magic
-  ADD_STORE_ITEM ~ag#ir0a~  LAST #1 #0 #0 IDENTIFIED #2   // Glyph of Warding
-  ADD_STORE_ITEM SCRL56     LAST #1 #0 #0 IDENTIFIED #2   // Cure Serious Wounds
-  ADD_STORE_ITEM SCRL61     LAST #1 #0 #0 IDENTIFIED #2   // Cure Critical Wounds
-  ADD_STORE_ITEM SCRL5b     LAST #1 #0 #0 IDENTIFIED #2   // Defensive Harmony
-  ADD_STORE_ITEM SCRL5e     LAST #1 #0 #0 IDENTIFIED #1   // Champion's Strength
 
 END BUT_ONLY IF_EXISTS
 
 
-// TEM4003 - Yondalla Priest in Gullykin
+// TEM4802 - Priest of Helm at Nashkel (also priest at Gullykin)
+// 
+// Sensible modifications of prices in BG1 temples
+
+COPY_EXISTING tem4802.sto override
+              _tem4802.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+
+  LPF temple INT_VAR
+    cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
+    dispel_magic=200
+    cure_disease=300
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
+    neutralize_poison=300
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    raise_dead=1000
+  END
+
+END BUT_ONLY IF_EXISTS
+
+
+// TEM4003 - Alvanhendar (Yondalla) in Temple of Yondalla and Alvanhendar's Fine Wines at Gullykin
 // 
 // Sensible modifications of prices in BG1 temples
 
 COPY_EXISTING tem4003.sto override 
-			  _tem4003.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+              _tem4003.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
+    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_serious_wounds= comp_sr=1 ? 75 : 0
     dispel_magic=200
-    remove_curse=500
-    cure_medium_wounds= comp_iwdification=1 OR comp_sr=1 ? 45 : 60
     cure_disease=300
-    cure_serious_wounds=75
+    cure_serious_wounds= !comp_sr=1 ? 0 : 60
+    cure_critical_wounds= comp_sr=1 ? 100 : 0
     neutralize_poison=300
-    lesser_restoration=750
-    cure_critical_wounds=100
+    remove_curse=400
+    lesser_restoration=500
+    cure_critical_wounds= !comp_sr=1 ? 0 : 75
+    mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
   END
 
-END BUT_ONLY IF_EXISTS*/
+END BUT_ONLY IF_EXISTS
