@@ -167,7 +167,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
   ACTION_IF comp_iwdification=1 AND !comp_sr=1 BEGIN
     ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_CURE_MODERATE_WOUNDS[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
       LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_MODERATE_WOUNDS~ RET spell_res END
-      OUTER_SPRINT $temple("cure_medium_wounds") ~%spell_res%~
+      OUTER_SPRINT $temple("cure_moderate_wounds") ~%spell_res%~
     END
   END
 
