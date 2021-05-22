@@ -116,13 +116,13 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       slow_poison          => sppr212
       remove_curse         => sppr307
       cure_disease         => sppr317
-	  cure_medium_wounds   => sppr315
+      cure_medium_wounds   => sppr315
       dispel_magic         => sppr303
       cure_serious_wounds  => sppr401
       lesser_restoration   => sppr417
       neutralize_poison    => sppr404
       cure_critical_wounds => sppr502
-      mass_cure            => sppr514
+      mass_cure            => rr#pr514
       raise_dead           => sppr504
       heal                 => sppr607
       greater_restoration  => sppr713
@@ -131,6 +131,9 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
     ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_CURE_MODERATE_WOUNDS[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
       LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_MODERATE_WOUNDS~ RET spell_res END
       OUTER_SPRINT $temple("cure_moderate_wounds") ~%spell_res%~
+    END
+    COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
+      LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
     END
   END
 
@@ -142,12 +145,12 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       slow_poison          => sppr212
       remove_curse         => sppr307
       cure_disease         => sppr317
-	  cure_medium_wounds   => sppr315
+      cure_medium_wounds   => sppr315
       dispel_magic         => sppr303
       cure_serious_wounds  => sppr401
       lesser_restoration   => sppr417
       neutralize_poison    => sppr404
-      mass_cure            => sppr514
+      mass_cure            => rr#pr514
       raise_dead           => sppr504
       heal                 => sppr607
       greater_restoration  => sppr713
@@ -165,23 +168,26 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_SERIOUS_WOUNDS~ RET spell_res END
       OUTER_SPRINT $temple("cure_serious_wounds") ~%spell_res%~
     END
+    COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
+      LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+    END
   END
 
   ACTION_IF comp_more_cures=1 AND !comp_sr=1 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY temple BEGIN
       call_lightning       => sppr302
       cure_light_wounds    => sppr103
-	  cure_moderate_wounds => spprxxx
+      cure_moderate_wounds => spprxxx
       slow_poison          => sppr212
       cure_disease         => sppr317
-	  cure_medium_wounds   => sppr315
+      cure_medium_wounds   => sppr315
       dispel_magic         => sppr303
       remove_curse         => sppr307
       cure_serious_wounds  => sppr401
       lesser_restoration   => sppr417
       neutralize_poison    => sppr404
       cure_critical_wounds => sppr502
-      mass_cure            => sppr514
+      mass_cure            => rr#pr514
       raise_dead           => sppr504
       heal                 => sppr607
       greater_restoration  => sppr713
@@ -190,6 +196,11 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
     ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_CURE_MODERATE_WOUNDS[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
       LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_MODERATE_WOUNDS~ RET spell_res END
       OUTER_SPRINT $temple("cure_moderate_wounds") ~%spell_res%~
+    END
+    ACTION_IF comp_stronger_cures=1 BEGIN
+      COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
+        LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+      END
     END
   END
 
@@ -199,22 +210,23 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       cure_light_wounds    => sppr103
       slow_poison          => sppr212
       cure_disease         => sppr317
-	  cure_medium_wounds   => sppr315
+      cure_medium_wounds   => sppr315
       dispel_magic         => sppr303
       remove_curse         => sppr307
       cure_serious_wounds  => sppr401
       lesser_restoration   => sppr417
       neutralize_poison    => sppr404
       cure_critical_wounds => sppr502
-      mass_cure            => sppr514
+      mass_cure            => rr#pr514
       raise_dead           => sppr504
       heal                 => sppr607
       greater_restoration  => sppr713
       resurrection         => sppr712
     END
-    ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_CURE_MODERATE_WOUNDS[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
-      LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_MODERATE_WOUNDS~ RET spell_res END
-      OUTER_SPRINT $temple("cure_moderate_wounds") ~%spell_res%~
+    ACTION_IF comp_stronger_cures=1 BEGIN
+      COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
+        LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+      END
     END
   END
 

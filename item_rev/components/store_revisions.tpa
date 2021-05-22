@@ -40,10 +40,10 @@ END
 //   lesser_restoration   = 500
 //   neutralize_poison    = 300
 //   cure_critical_wounds = 75 / 125 (SR)
-//   mass_cure            = 125
+//   mass_cure            = 150
 //   raise_dead           = 1000
-//   heal                 = 1000
-//   greater_restoration  = 2000
+//   heal                 = 500
+//   greater_restoration  = 1000
 //   resurrection         = 2000
 
 
@@ -3289,7 +3289,7 @@ COPY_EXISTING bhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -3440,7 +3440,7 @@ COPY_EXISTING govwau01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -3522,9 +3522,9 @@ COPY_EXISTING slilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_critical_wounds= comp_cure_wounds=1 ? 100 : 55
     neutralize_poison=225
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 100 : 0
+    mass_cure= comp_atweaks_temples=1 ? 120 : 0
     raise_dead=1000
-    heal=750
+    heal=375
   END
 
   ADD_STORE_ITEM SCRL03   LAST #1 #0 #0 IDENTIFIED #1   // Protection from Acid
@@ -3713,9 +3713,9 @@ COPY_EXISTING kpchap01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=150
 	remove_curse=150
     lesser_restoration=250
-    mass_cure= comp_atweaks_temples=1 ? 75: 0
+    mass_cure= comp_atweaks_temples=1 ? 90: 0
     raise_dead=750
-    heal=500
+    heal=250
   END
 
   ADD_STORE_ITEM AX1H01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Battle Axe
@@ -3847,11 +3847,11 @@ COPY_EXISTING temhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
-    heal=1000
+    heal=500
     resurrection=2000
-    greater_restoration=2000
+    greater_restoration=1000
   END
 
   ADD_STORE_ITEM SW1H01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Bastard Sword 
@@ -3971,11 +3971,11 @@ COPY_EXISTING temlath.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=375
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=900
-    heal=1000
+    heal=500
     resurrection=1800
-    greater_restoration=1500
+    greater_restoration=750
   END
 
   ADD_STORE_ITEM RODS03   LAST #1 #0 #0 IDENTIFIED #1   // Rod of Resurrection
@@ -4124,11 +4124,11 @@ COPY_EXISTING temtalos.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=375
     remove_curse=375
     lesser_restoration=625
-    mass_cure= comp_atweaks_temples=1 ? 150 : 0
+    mass_cure= comp_atweaks_temples=1 ? 180 : 0
     raise_dead=1250
-    heal=1250
+    heal=625
     resurrection=2500
-    greater_restoration=2500
+    greater_restoration=1250
   END
 
   ADD_STORE_ITEM SPER09   LAST #0 #0 #0 IDENTIFIED #1   // Talos' Fury +2
@@ -4203,7 +4203,7 @@ COPY_EXISTING temsup.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -4287,7 +4287,7 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=600
     remove_curse=600
     lesser_restoration=1000
-    mass_cure= comp_atweaks_temples=1 ? 250 : 0
+    mass_cure= comp_atweaks_temples=1 ? 300 : 0
     raise_dead=2000
   END
 
@@ -6697,9 +6697,9 @@ COPY_EXISTING sahpr1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
-    heal=1000
+    heal=500
   END
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
@@ -6854,11 +6854,11 @@ COPY_EXISTING suelf10.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=150
     remove_curse=225
     lesser_restoration=375
-    mass_cure= comp_atweaks_temples=1 ? 75 : 0
+    mass_cure= comp_atweaks_temples=1 ? 90 : 0
     raise_dead=750
-    heal=500
+    heal=250
     resurrection=1500
-    greater_restoration=1500
+    greater_restoration=750
   END
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #10  // Potion of Healing
@@ -8909,7 +8909,7 @@ COPY_EXISTING amcler02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9197,7 +9197,7 @@ COPY_EXISTING sartem01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9500,11 +9500,11 @@ COPY_EXISTING garlena.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
-    heal=1000
+    heal=500
     resurrection=2000
-    greater_restoration=2000
+    greater_restoration=1000
   END
 
   ADD_STORE_ITEM SW1H01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Bastard Sword 
@@ -9807,7 +9807,7 @@ COPY_EXISTING tem0149.sto override
     cure_disease=200
     cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9834,7 +9834,7 @@ COPY_EXISTING tem0609.sto override
     neutralize_poison=600
     remove_curse=800
     lesser_restoration=1000
-    mass_cure= comp_atweaks_temples=1 ? 250 : 0
+    mass_cure= comp_atweaks_temples=1 ? 300 : 0
     raise_dead=2000
   END
 
@@ -9860,7 +9860,7 @@ COPY_EXISTING tem0131.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9886,7 +9886,7 @@ COPY_EXISTING tem0132.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9912,7 +9912,7 @@ COPY_EXISTING tem0002.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9938,7 +9938,7 @@ COPY_EXISTING tem2304.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -9987,7 +9987,7 @@ COPY_EXISTING tem3402.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=375
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=900
   END
 
@@ -10013,7 +10013,7 @@ COPY_EXISTING tem4802.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
@@ -10039,7 +10039,7 @@ COPY_EXISTING tem4003.sto override
     neutralize_poison=300
     remove_curse=300
     lesser_restoration=500
-    mass_cure= comp_atweaks_temples=1 ? 125 : 0
+    mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1000
   END
 
