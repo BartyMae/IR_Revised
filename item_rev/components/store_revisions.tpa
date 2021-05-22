@@ -30,16 +30,16 @@ END
 // Temple services:
 //   call_lightning       = 5
 //   cure_light_wounds    = 25
-//   cure_moderate_wounds = 35 (IWDification)
+//   cure_moderate_wounds = 35 / 50 (SR)
 //   slow_poison          = 100
 //   cure_disease         = 200
-//   break_enchantment    = 300
-//   cure_medium_wounds   = 45 / 50 (SR)
+//   remove_curse         = 300
+//   cure_medium_wounds   = 45 / 75 (SR)
 //   dispel_magic         = 300
-//   cure_serious_wounds  = 60 / 75 (SR)
+//   cure_serious_wounds  = 60 / 100 (SR)
 //   lesser_restoration   = 500
 //   neutralize_poison    = 300
-//   cure_critical_wounds = 75 / 100 (SR)
+//   cure_critical_wounds = 75 / 125 (SR)
 //   mass_cure            = 125
 //   raise_dead           = 1000
 //   heal                 = 1000
@@ -3056,9 +3056,9 @@ COPY_EXISTING uhmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   WRITE_BYTE 0x10 BYTE_AT 0x10 |32 // enable the temple menu
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
     cure_disease=200
     neutralize_poison=300
   END
@@ -3279,15 +3279,15 @@ COPY_EXISTING bhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -3365,11 +3365,11 @@ COPY_EXISTING doghma.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=100
-    break_enchantment=100
+    remove_curse=100
     raise_dead=1000
   END
 
@@ -3433,12 +3433,12 @@ COPY_EXISTING govwau01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
-    break_enchantment=300
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -3514,12 +3514,12 @@ COPY_EXISTING slilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=20
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 30 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 40 : 30
 	slow_poison=75
-    cure_medium_wounds= comp_sr=1 ? 40 : 35
-    cure_serious_wounds= comp_sr=1 ? 60 : 45
+    cure_medium_wounds= comp_cure_wounds=1 ? 60 : 35
+    cure_serious_wounds= comp_cure_wounds=1 ? 80 : 45
     cure_disease=150
-    cure_critical_wounds= comp_sr=1 ? 80 : 55
+    cure_critical_wounds= comp_cure_wounds=1 ? 100 : 55
     neutralize_poison=225
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 100 : 0
@@ -3620,12 +3620,12 @@ COPY_EXISTING wilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=20
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 30 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 40 : 30
 	slow_poison=75
-    cure_medium_wounds= comp_sr=1 ? 40 : 35
-    cure_serious_wounds= comp_sr=1 ? 60 : 45
+    cure_medium_wounds= comp_cure_wounds=1 ? 60 : 35
+    cure_serious_wounds= comp_cure_wounds=1 ? 80 : 45
     cure_disease=150
-    cure_critical_wounds= comp_sr=1 ? 80 : 55
+    cure_critical_wounds= comp_cure_wounds=1 ? 100 : 55
     raise_dead=1000
   END
 
@@ -3703,15 +3703,15 @@ COPY_EXISTING kpchap01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=15
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 20 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 30 : 20
 	slow_poison=50
-    cure_medium_wounds= comp_sr=1 ? 30 : 25
-    cure_serious_wounds= comp_sr=1 ? 45 : 30
+    cure_medium_wounds= comp_cure_wounds=1 ? 45 : 25
+    cure_serious_wounds= comp_cure_wounds=1 ? 60 : 30
     dispel_magic=150
     cure_disease=100
-    cure_critical_wounds= comp_sr=1 ? 60 : 40
+    cure_critical_wounds= comp_cure_wounds=1 ? 75 : 40
     neutralize_poison=150
-	break_enchantment=150
+	remove_curse=150
     lesser_restoration=250
     mass_cure= comp_atweaks_temples=1 ? 75: 0
     raise_dead=750
@@ -3837,15 +3837,15 @@ COPY_EXISTING temhelm.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -3961,15 +3961,15 @@ COPY_EXISTING temlath.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=375
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=900
@@ -4114,15 +4114,15 @@ COPY_EXISTING temtalos.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF temple INT_VAR
     call_lightning=5
     cure_light_wounds=30
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 45 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 60 : 45
 	slow_poison=125
-    cure_medium_wounds= comp_sr=1 ? 60 : 55
-    cure_serious_wounds= comp_sr=1 ? 90 : 75
+    cure_medium_wounds= comp_cure_wounds=1 ? 90 : 55
+    cure_serious_wounds= comp_cure_wounds=1 ? 120 : 75
     dispel_magic=375
     cure_disease=250
-    cure_critical_wounds= comp_sr=1 ? 120 : 90
+    cure_critical_wounds= comp_cure_wounds=1 ? 150 : 90
     neutralize_poison=375
-    break_enchantment=375
+    remove_curse=375
     lesser_restoration=625
     mass_cure= comp_atweaks_temples=1 ? 150 : 0
     raise_dead=1250
@@ -4193,15 +4193,15 @@ COPY_EXISTING temsup.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -4277,15 +4277,15 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF temple INT_VAR
     call_lightning=5
     cure_light_wounds=50
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 70 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 100 : 70
 	slow_poison=200
-    cure_medium_wounds= comp_sr=1 ? 100 : 90
-    cure_serious_wounds= comp_sr=1 ? 150 : 120
+    cure_medium_wounds= comp_cure_wounds=1 ? 150 : 90
+    cure_serious_wounds= comp_cure_wounds=1 ? 200 : 120
     dispel_magic=600
     cure_disease=400
-    cure_critical_wounds= comp_sr=1 ? 200 : 150
+    cure_critical_wounds= comp_cure_wounds=1 ? 250 : 150
     neutralize_poison=600
-    break_enchantment=600
+    remove_curse=600
     lesser_restoration=1000
     mass_cure= comp_atweaks_temples=1 ? 250 : 0
     raise_dead=2000
@@ -6687,15 +6687,15 @@ COPY_EXISTING sahpr1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -6844,15 +6844,15 @@ COPY_EXISTING suelf10.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=15
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 25 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 30 : 25
 	slow_poison=50
-    cure_medium_wounds= comp_sr=1 ? 30 : 25
-    cure_serious_wounds= comp_sr=1 ? 45 : 30
+    cure_medium_wounds= comp_cure_wounds=1 ? 45 : 25
+    cure_serious_wounds= comp_cure_wounds=1 ? 60 : 30
     dispel_magic=225
     cure_disease=100
-    cure_critical_wounds= comp_sr=1 ? 60 : 40
+    cure_critical_wounds= comp_cure_wounds=1 ? 75 : 40
     neutralize_poison=150
-    break_enchantment=225
+    remove_curse=225
     lesser_restoration=375
     mass_cure= comp_atweaks_temples=1 ? 75 : 0
     raise_dead=750
@@ -8902,12 +8902,12 @@ COPY_EXISTING amcler02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
-    break_enchantment=300
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9190,12 +9190,12 @@ COPY_EXISTING sartem01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
-    break_enchantment=300
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9490,15 +9490,15 @@ COPY_EXISTING garlena.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9800,12 +9800,12 @@ COPY_EXISTING tem0149.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9824,15 +9824,15 @@ COPY_EXISTING tem0609.sto override
   LPF temple INT_VAR
     call_lightning=5
     cure_light_wounds=50
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 70 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 100 : 70
 	slow_poison=200
-    cure_medium_wounds= comp_sr=1 ? 100 : 90
-    cure_serious_wounds= comp_sr=1 ? 150 : 120
+    cure_medium_wounds= comp_cure_wounds=1 ? 150 : 90
+    cure_serious_wounds= comp_cure_wounds=1 ? 200 : 120
     dispel_magic=600
     cure_disease=400
-    cure_critical_wounds= comp_sr=1 ? 200 : 150
+    cure_critical_wounds= comp_cure_wounds=1 ? 250 : 150
     neutralize_poison=600
-    break_enchantment=800
+    remove_curse=800
     lesser_restoration=1000
     mass_cure= comp_atweaks_temples=1 ? 250 : 0
     raise_dead=2000
@@ -9850,15 +9850,15 @@ COPY_EXISTING tem0131.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9876,15 +9876,15 @@ COPY_EXISTING tem0132.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9902,15 +9902,15 @@ COPY_EXISTING tem0002.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9928,15 +9928,15 @@ COPY_EXISTING tem2304.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -9957,11 +9957,11 @@ COPY_EXISTING tem2601.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=100
-    break_enchantment=100
+    remove_curse=100
     raise_dead=1000
   END
 
@@ -9977,15 +9977,15 @@ COPY_EXISTING tem3402.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=375
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=900
@@ -10003,15 +10003,15 @@ COPY_EXISTING tem4802.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000
@@ -10029,15 +10029,15 @@ COPY_EXISTING tem4003.sto override
 
   LPF temple INT_VAR
     cure_light_wounds=25
-    cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+    cure_moderate_wounds= comp_cure_wounds=1 ? 50 : 35
 	slow_poison=100
-    cure_medium_wounds= comp_sr=1 ? 50 : 45
-    cure_serious_wounds= comp_sr=1 ? 75 : 60
+    cure_medium_wounds= comp_cure_wounds=1 ? 75 : 45
+    cure_serious_wounds= comp_cure_wounds=1 ? 100 : 60
     dispel_magic=300
     cure_disease=200
-    cure_critical_wounds= comp_sr=1 ? 100 : 75
+    cure_critical_wounds= comp_cure_wounds=1 ? 125 : 75
     neutralize_poison=300
-    break_enchantment=300
+    remove_curse=300
     lesser_restoration=500
     mass_cure= comp_atweaks_temples=1 ? 125 : 0
     raise_dead=1000

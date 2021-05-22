@@ -54,14 +54,14 @@ ACTION_IF MOD_IS_INSTALLED ~aurora/setup-aurora.tp2~ 0 BEGIN
   OUTER_SET comp_aurora=1  END ELSE BEGIN
   OUTER_SET comp_aurora=0  END
 
-// IWDification/SCS - Divine spells
-ACTION_IF MOD_IS_INSTALLED ~iwdification/setup-iwdification.tp2~ 40 OR MOD_IS_INSTALLED ~stratagems/setup-stratagems.tp2~ 1510 AND comp_sr=0 BEGIN
-  OUTER_SET comp_iwdification=1  END ELSE BEGIN
-  OUTER_SET comp_iwdification=0  END
-
-// SR/SCS - Stronger/consistent Cure Wounds
+// SR/SCS - Stronger/consistent Cure/Cause Wounds spells
 ACTION_IF FILE_EXISTS_IN_GAME ~dvsrv3.mrk~ OR MOD_IS_INSTALLED ~stratagems/setup-stratagems.tp2~ 3550 OR MOD_IS_INSTALLED ~stratagems/setup-stratagems.tp2~ 3551 OR MOD_IS_INSTALLED ~stratagems/setup-stratagems.tp2~ 3552 BEGIN
   OUTER_SET comp_cure_wounds=1  END ELSE BEGIN
   OUTER_SET comp_cure_wounds=0  END
+
+// IWDification/SCS - More Cure/Cause Wounds spells
+ACTION_IF MOD_IS_INSTALLED ~iwdification/setup-iwdification.tp2~ 40 OR MOD_IS_INSTALLED ~stratagems/setup-stratagems.tp2~ 1510 BEGIN
+  OUTER_SET comp_more_cures=1  END ELSE BEGIN
+  OUTER_SET comp_more_cures=0  END
 
 ///////////////////////////////////////////////////////////////////
