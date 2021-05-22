@@ -3621,6 +3621,7 @@ COPY_EXISTING wilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF temple INT_VAR
     cure_light_wounds=20
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 30 : 0
+	slow_poison=75
     cure_medium_wounds= comp_sr=1 ? 40 : 35
     cure_serious_wounds= comp_sr=1 ? 60 : 45
     cure_disease=150
@@ -4276,8 +4277,8 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF temple INT_VAR
     call_lightning=5
     cure_light_wounds=50
-	slow_poison=200
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 70 : 0
+	slow_poison=200
     cure_medium_wounds= comp_sr=1 ? 100 : 90
     cure_serious_wounds= comp_sr=1 ? 150 : 120
     dispel_magic=600
@@ -9800,6 +9801,7 @@ COPY_EXISTING tem0149.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     cure_disease=200
@@ -9823,6 +9825,7 @@ COPY_EXISTING tem0609.sto override
     call_lightning=5
     cure_light_wounds=50
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 70 : 0
+	slow_poison=200
     cure_medium_wounds= comp_sr=1 ? 100 : 90
     cure_serious_wounds= comp_sr=1 ? 150 : 120
     dispel_magic=600
@@ -9848,6 +9851,7 @@ COPY_EXISTING tem0131.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
@@ -9873,6 +9877,7 @@ COPY_EXISTING tem0132.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
@@ -9898,6 +9903,7 @@ COPY_EXISTING tem0002.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
@@ -9923,6 +9929,7 @@ COPY_EXISTING tem2304.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
@@ -9971,6 +9978,7 @@ COPY_EXISTING tem3402.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
@@ -9996,6 +10004,7 @@ COPY_EXISTING tem4802.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
@@ -10021,6 +10030,7 @@ COPY_EXISTING tem4003.sto override
   LPF temple INT_VAR
     cure_light_wounds=25
     cure_moderate_wounds= comp_iwdification=1 AND !comp_sr=1 ? 35 : 0
+	slow_poison=100
     cure_medium_wounds= comp_sr=1 ? 50 : 45
     cure_serious_wounds= comp_sr=1 ? 75 : 60
     dispel_magic=300
