@@ -197,7 +197,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_CURE_MODERATE_WOUNDS~ RET spell_res END
       OUTER_SPRINT $temple("cure_moderate_wounds") ~%spell_res%~
     END
-    ACTION_IF comp_stronger_cures=1 BEGIN
+    ACTION_IF comp_cure_wounds=1 BEGIN
       COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
         LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
       END
@@ -223,7 +223,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       greater_restoration  => sppr713
       resurrection         => sppr712
     END
-    ACTION_IF comp_stronger_cures=1 BEGIN
+    ACTION_IF comp_cure_wounds=1 BEGIN
       COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
         LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
       END
