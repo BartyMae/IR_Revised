@@ -125,7 +125,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1022 = ~Periapt of Form Stability~
+@1022 = ~Periapt of Form Stability~ // BG2: Necklace of Form Stability
 @1023 = ~Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often this meant several weeks transformed into some form of wild beast, which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return he had prepared this necklace, designed to prevent her changing his form, but he could not shield those around him as well. Apparently, an impromptu army of farmers-turned-bears eventually overwhelmed him.
 
 STATISTICS:
@@ -1718,7 +1718,7 @@ Usable By:
  Monk
  Ranger
  Thief~
-@1206 = ~Boots of Phasing~
+@1206 = ~Boots of Phasing~ // BG2: This item is cursed and can only be removed with a remove curse spell. Whether by mistake or malicious purposes, the creator of these boots enchanted them with dangerous magic. When, the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase the wearer receives a +2 AC bonus.
 @1207 = ~This item is cursed and can only be removed with magic. Whether by mistake or malicious purposes, the creator of these boots enchanted them with dangerous magic. When worn, the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase, striking the wearer becomes much more difficult.
 
 STATISTICS:
@@ -3180,7 +3180,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1378 = ~Cloak of Displacement~ // BG1/2: The Cloak of Displacement is a magical item that causes subtle shifts in the image of its wearer. It has the power to actually shift an individual's image by as much as six inches in any direction from their actual location. Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
+@1378 = ~Cloak of Displacement~ // BG1/BG2: The Cloak of Displacement is a magical item that causes subtle shifts in the image of its wearer. It has the power to actually shift an individual's image by as much as six inches in any direction from their actual location. Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
 @1379 = ~Interwoven with strands of sinew from a displacer beast's tentacles, the fabric of a Cloak of Displacement distorts and warps light waves, and once in combat it causes subtle shifts in the image of its wearer, by as much as six inches in any direction, making it much harder for enemies to score a proper hit on the wearer.
 
 Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
@@ -3247,7 +3247,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1386 = ~Nymph Cloak~ // BG1/2: The fabled Nymph Cloak is renowned for its ability to increase the charisma of even the most surly dwarf. A Cormyrean noble hoping to make her politically convenient marriage more palatable apparently went to great expense to obtain one for herself and another for her husband.
+@1386 = ~Nymph Cloak~ // BG1/BG2: The fabled Nymph Cloak is renowned for its ability to increase the charisma of even the most surly dwarf. A Cormyrean noble hoping to make her politically convenient marriage more palatable apparently went to great expense to obtain one for herself and another for her husband.
 @1387 = ~Named for the creatures most closely associated with beauty, Nymph Cloaks are popular fodder for tavern tales among the common folk. The story usually involves some hapless noble couple spending a fortune on one or more such items so they can stand to look at one another. It always gets a big laugh among a copper-ale crowd, though most professional bards consider such pandering a tool of the unskilled.
 
 STATISTICS:
@@ -3336,7 +3336,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@1402 = ~Adventurer's Robe~ // BG1/2: This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrifying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
+@1402 = ~Adventurer's Robe~ // BG1/BG2: This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrifying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
 @1403 = ~Former Royal Magician Vangerdahast to King Azoun IV of Cormyr was once an accomplished adventurer of high fame. One reason he became popular in wizardly circles was his creation of the Adventurer's Robe. Mages have always struggled with the limitations placed on them by the ability to cast arcane magics. This robe gives the mage an edge in surviving encounters with melee fighters by being able to absorb some of the damage from those hits.
 
 STATISTICS:
@@ -3348,7 +3348,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@1404 = ~Robe of the Weave~ // BG1/2: Robe of the Good Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of good alignment.
+@1404 = ~Robe of the Weave~ // BG1/BG2: Robe of the Good Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of good alignment.
 @1405 = ~Crafted by some of the finest mages and weavers of the Realms, this robe is made from the fibers of plants specially cultivated during the Time of Troubles, and the weave of the robe is woven counter to the magical Weave of Faerûn. The resulting robes grant the wearer significant resistance to all spells, and are a favored defensive tool of powerful spellcasters, but beyond just mere magical protection, a robe such as this is a symbol of prestige.
 
 STATISTICS:
@@ -3359,7 +3359,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1406 = ~Robe of the Battlemage~ // BG1/2: Robe of the Neutral Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of neutral alignment.
+@1406 = ~Robe of the Battlemage~ // BG1/BG2: Robe of the Neutral Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of neutral alignment.
 @1407 = ~Battlemages are wizards trained to fight in the heat of combat, and developing their abilities for the purpose of offensive use. Battlemages are dangerous to behold, deadly and capable of long-term combat survival. In order to make themselves all the more lethal in a battle field, battlemages wear robes which offer protection from all forms of physical attack, while at the same time increasing their fighting skills and resistance.
 
 STATISTICS:
@@ -3372,7 +3372,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1408 = ~Robe of Arcane Might~ // BG1/2: Robe of the Evil Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of evil alignment.
+@1408 = ~Robe of Arcane Might~ // BG1/BG2: Robe of the Evil Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of evil alignment.
 @1409 = ~While garments like this have been found in almost every culture with a strong contingent of spellcasters, this example and most others in the areas around Baldur's Gate and Amn are believed to have originated within Ulcaster's School of Wizardry. The school presented no bias in its teachings, and hosted casters from all across the Sword Coast until its destruction some 200 years ago.
 
 STATISTICS:
@@ -3385,7 +3385,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1410 = ~Cloak of the Shield~ // BG1/2: This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
+@1410 = ~Cloak of the Shield~ // BG1/BG2: This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
 @1411 = ~This cloak projects a large shield-sized invisible wall of force that stays with the wearer and protects him as if it were a normal shield. This special creation can be activated and deactivated at will, and so does not encumber nor interfere with arcane spellcasting.
 
 STATISTICS:
@@ -4875,7 +4875,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1571 = ~Helm of Despair~
+@1571 = ~Helm of Despair~ // BG1/2: Helm of Opposite Alignment: The cursed Helm of Alignment Change is a truly fearsome item. As its name suggests, it has the power to alter the fundamental ethical framework, nay, the very identity of anyone unlucky enough to wear it. It can ruin homes, friendships, even entire cities or nations. Should the legions of evil ever force one onto the head of a benevolent Solar, the multiverse, as we know it, will surely meet an abrupt and painful end.
 @1572 = ~This class of open-faced helmet, made of reinforced leather or metal, covers most of the head, save the face and neck. These helmets commonly provide protection for the nose as well.~
 @1573 = ~The evil form of the paladin, the blackguard, is opposite in every way. As the image of the paladin often takes the form of a knight in shining armor, so the blackguard wears the dark plate that blends with the night. Blackguard's helmets are fashioned to increase the intimidating presence of their wearer, and are blessed by evil gods.
 
@@ -4898,8 +4898,8 @@ Not Usable By:
  Thief
  Kensai~
 @1574 = ~Helm of Glory~
-@1575 = ~Helm of the Valiant
-Named for its original owner, Sir Tain the Valiant, this helm saw many great battles in his possession. It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years. Alas, the young man had neither the strength nor the skill to uphold his master's legacy. It is rumored he lost his life in the pursuit of a worthy but ultimately futile cause, and the helm has had many owners since.
+@1575 = ~Helm of the Noble
+Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession.  It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years.  Alas, the young man had neither the strength, nor the skill to uphold his master's legacy.  It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since. 
 
 STATISTICS:
 
@@ -4921,7 +4921,7 @@ Not Usable By:
  Kensai~
 @1576 = ~Helm of Defense~
 @1577 = ~Gift of Peace
-Prized for its noble origin as much as for its benefits to the wearer, the first of these helms was originally intended to be a simple gift. There was no great crisis at hand, nor dangerous evil to be overthrown; just a wish for a friend to give a gift to another. It could just as easily have been a good book or a bottle of wine, but adventurers are eminently more practical in their gift giving. Subsequently, because of its effectiveness in any situation, countless variants of this helm were created. These helms have seen many great battles since theirs creation, but the simple virtue at theirs core is what has always been remembered.
+Prized for its noble origin as much as for its benefits to the wearer, this helm was originally intended to be a simple gift. There was no great crisis at hand, nor dangerous evil to be overthrown; just a wish for a friend to give a gift to another. It could just have easily been a good book or bottle of wine, but adventurers are eminently more practical in their gift giving. The helm has seen many great battles since its creation, but the simple virtue at its core is what has always been remembered.
 
 STATISTICS:
 
@@ -4937,7 +4937,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1578 = ~Helm of the Watcher~
+@1578 = ~Helm of the Watcher~ // BG1/2: Helm of Infravision: The Eyes of Truth: Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.  
 @1579 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.~
 @1580 = ~It is unclear if these magic headpieces were created by clerics of Helm, god of guardians, or if they acquired their name by a more convenient circumstance. Whatever the case, they are highly prized by guards and sentries. Needless to say, bandits have also taken to wearing them, proving the old proverb that 'what's good for the goose is good for the gander'.
 
@@ -4973,7 +4973,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1584 = ~Helm of Balduran~
+@1584 = ~Helm of Balduran~ // BG1/2: The fabled helm of Balduran, legendary founder of Baldur's Gate, has long been rumored to wield powerful protective magic. The exact nature of this magic, however, has not yet been determined.
 @1585 = ~This sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.~
 @1586 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
@@ -5050,7 +5050,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1592 = ~Helm of Brilliance~
+@1592 = ~Helm of Brilliance~ // BG2: This helm is made of polished steel and set with diamonds, rubies and fire opals. The gems glow with an internal light, the source of which can only be magical. The helm makes the wearer resistant to fire as well as giving the wearer some spell abilities. These include Fireball, Prismatic Spray, and Sunray.
 @1593 = ~This helm appears ordinary until its true nature is perceived. Made of brilliant silver and polished steel, the Helm of Brilliance is set with diamonds, rubies, fire opals, and opals, each of large size and enchanted. When struck by bright light, the helm scintillates and sends forth reflective rays in all directions from its crown-like, gem-tipped spikes. The jewels allow the wearer to cast a variety of powerful spells and can absorb significant amounts of fire damage.
 
 The few such helms reported to still exist have been traced back to a great cleric of Lathander from Baldur's Gate named Ergelion. Ergelion equipped his companions with these helms to turn back a horde of undead swarming out of the Troll Hills to the north. Though the horde never reached Baldur's Gate, none of that band of adventurers was seen or heard from again.
@@ -5096,9 +5096,9 @@ Not Usable By:
  Thief
  Kensai~
 @1596 = ~Ioun Stone~
-@1597 = ~Pearly White Ioun Stone~
+@1597 = ~Pearly White Ioun Stone~ // BG2: Legend tells us that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer the ability to regenerate at a rate of 2 hit points per minute.
 @1598 = ~This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.~
-@1599 = ~Legends tell that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer regenerating features, as well as the ability to shapeshift into a giant troll.
+@1599 = ~Legends tell that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer regeneration as well as the ability to shapeshift into a giant troll.
 
 Although the dark rites bind the troll's regenerative properties into this stone, a dose of their weaknesses are included as well.
 
@@ -5126,7 +5126,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1600 = ~Ioun Stone of Good Luck~
+@1600 = ~Ioun Stone of Good Luck~ // BG2: Dusty Rose Ioun Stone: This ioun stone glows with a dusty rose hue, hinting at calming images and sensations. While pleasing, it does not appear to enhance the basic protection enchantment upon it.
 @1601 = ~Also knowed as Luckstones, these ioun stones are mostly appreciated by thieves and bards as they often find themselves at the mercy of the fortune. The floating stone grants the wearer a luck bonus to any of his actions increasing saving throws, hit chances, damage rolls, thieving skills, etc.
 
 STATISTICS:
@@ -5137,7 +5137,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1602 = ~Trueblood's Ioun Stone~
+@1602 = ~Pale Green Ioun Stone~
 @1603 = ~On his deathbed, aged hero Rigar Trueblood begged one last request of his mage companion Spectorial: that his skill and fortitude as a warrior live on. The reluctant friend consented and transferred these traits to an item, knowing the warrior's soul would then be lacking them. This pale green ioun stone now holds these essences, and grants the owner Trueblood's health and skill.
 
 STATISTICS:
@@ -5149,7 +5149,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1604 = ~Red Dragonscale Helm~
+@1604 = ~Red Dragonscale Helm~ // BG2: Dragon Helm: The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
 @1605 = ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. The overlapping red scales protects the wearer from normal blows as well as fire damage, and donning the helmet also grants immunity to magical sleep and unconsciousness, though it is hard to determine whether these benefits originate within the scales or the spells of the mage.
 
 STATISTICS:
@@ -5167,8 +5167,8 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1606 = ~Golden Ioun Stone~
-@1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of his spells. Considered 'cheating' by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
+@1606 = ~Golden Ioun Stone~ // BG2: Highly sought out by wizards and mages, this ioun stone raises the intelligence of those who possess it.
+@1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of their spells. Considered 'cheating' by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
 
 STATISTICS:
 
@@ -5179,8 +5179,8 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1608 = ~Obsidian Ioun Stone~
-@1609 = ~The tough obsidian stone imbues its owner with a similar hardiness, though the process of magically altering one's constitution sometimes may be painful.
+@1608 = ~Obsidian Ioun Stone~ // BG2: The tough obsidian stone imbues its owner with a similar hardiness.
+@1609 = ~The tough obsidian stone imbues its owner with a similar hardiness, though the process of magically altering one's constitution may sometimes be painful.
 
 STATISTICS:
 
@@ -5191,7 +5191,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1610 = ~Silver Ioun Stone~
+@1610 = ~Silver Ioun Stone~ // BG2: Perhaps the silver and gray in this stone hints at the knowledge that only comes with age and experience.
 @1611 = ~Perhaps the silver and grey in this stone hint at the knowledge that only comes with age and experience. These items improve perception and insight, and are often used as meditative tools by high-ranking clergy of a faith.
 
 STATISTICS:
@@ -5215,7 +5215,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1614 = ~Bronze Ioun Stone~
+@1614 = ~Bronze Ioun Stone~ // BG2: The powerful enchantments on this ioun stone make it a treasure eagerly sought after by wizards and mages.
 @1615 = ~The powerful enchantments on this ioun stone make it a treasure eagerly sought after by adventures of any kind.
 
 STATISTICS:
@@ -5242,7 +5242,7 @@ Weight: 1
 Usable By:
  Mage~
 @1620 = ~Thieves' Hood~
-@1621 = ~This apparently common hood emanates a strong magical aura.~
+@1621 = ~Although this hood does not confer any noticeable advantages on its wearer, it does have an aura of latent magic.~
 @1622 = ~Bards and rogues alike are known to reminisce on "the glory days", and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
 
 STATISTICS:
@@ -5256,7 +5256,7 @@ Weight: 1
 Usable By:
  Bard
  Thief~
-@1623 = ~Master Thief's Hood~
+@1623 = ~Master Thief's Hood~ // BG2: There is no honor among thieves. Perhaps that is why the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
 @1624 = ~Bards and rogues alike are known to reminisce on "the glory days", and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
 
 STATISTICS:
@@ -7870,7 +7870,7 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@1960 = ~Dwarven Shield +2~ // BG1: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
+@1960 = ~Dwarven Shield +2~ // BG1: Pellan's Shield: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
 @1961 = ~Pellan's Shield
 This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
 
@@ -11039,7 +11039,7 @@ Usable By:
  Fighter/Mage
  Fighter/Mage/Thief
  Mage/Thief~
-@2225 = ~Shadow Veil~
+@2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as 'The Nameless One'.  
 @2226 = ~Made of blackened silver and dark blue steel, this helm is rumored to slowly corrupt its wearer to bend to Shar's whim, so that ultimately the Dark Goddess gains a powerful follower by greatly warding the victim in what her clerics often refer to as the subject's "infancy."
 
 The helm is capable of absorbing significant amounts of cold damage, and with a command word, it can create a shadow clone of the wearer to fight alongside him. Those who possess it inevitably become creatures of the night themselves, operating as easily in the dark as they would during the day - and under the watchful eye of Shar.
@@ -11983,7 +11983,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2323 = ~Arrow of Slaying +1~ // BG1/2: This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
+@2323 = ~Arrow of Slaying +1~ // BG1/BG2: This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
 @2324 = ~This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Prime Material Plane, and its power doesn't seem to work on outsiders, elementals, or undead creatures.
 
 STATISTICS:
