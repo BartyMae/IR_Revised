@@ -588,7 +588,7 @@ Not Usable By:
 @1080 = ~Lonesome Road
 This was the weapon of a cursed soul, doomed to wander the length and breadth of Faerûn for his crimes against the elves of Myth Drannor. Denell Harband was a human involved with the creation of the "Halfaxe Trail." Under the orders of his commander, Halvan the Dark, he forged ahead through elven forests despite protests and repeated attacks. When he was finally captured by the elves, he stated emphatically that he was free of guilt because he was just following his orders. The elven council deemed that Denell be placed under a High Geas to carry his axe from the Sword Coast of Faerûn to its borders in the east, and from the Great Glacier to Lurien. It took Denell thirty years to complete his task. When he finished, he was an accomplished warrior, weathered and beaten by years on foreign roads. On his way back to his home, he passed by Harrowdale and saw a wooden statue of Halvan the Dark raised proudly in a small town square. With a single-handed blow, he lodged his huge axe into Halvan's forehead. Never breaking stride, he decided to extend his never ending journey indefinitely, and he was last seen disappearing in the deepest caverns beneath the Marching Mountains.
 
-Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now a most fearsome weapon - a vorpal-edged axe capable of severing an opponents head with a single blow.
+Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now a most fearsome weapon - a vorpal-edged axe capable of severing an opponent's head with a single blow.
 
 STATISTICS:
 
@@ -1755,7 +1755,7 @@ STATISTICS:
 
 Equipped Abilities:
  Protects Against: Backstabs
- Gargoyle Skin: 5 stoneskins per turn
+ Gargoyle Skin: 5 stoneskins are generated per turn
 
 NOTE: Multiple Stoneskin effects are not cumulative.
 
@@ -2545,7 +2545,7 @@ Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Missile Deflection: deflects missile weapons
+ Missile Deflection: missile weapons are harmlessly deflected
  Off-Hand THAC0: -20 penalty
 
 NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf's Minute Meteors can be deflected, while magical projectiles like Lightning Bolts, Fireballs, and Magic Missiles cannot be.
@@ -7970,7 +7970,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Missile Deflection: deflects missile weapons
+ Missile Deflection: missile weapons are harmlessly deflected
 
 NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf's Minute Meteors can be deflected, while magical projectiles like Lightning Bolts, Fireballs, and Magic Missiles cannot be.
 
@@ -10867,7 +10867,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2211 = ~Gram the Sword of Grief +4~
-@2212 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents.
+@2212 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt. 
 
 STATISTICS:
 
@@ -10895,7 +10895,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2213 = ~Gram the Sword of Grief +5~
-@2214 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents.
+@2214 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt.
 
 Siegfried's fearsome blade is even more powerful with the Heart of the Damned set into its pommel.
 
@@ -11288,7 +11288,7 @@ Like all wands, the Wand of Monster Summoning can only be used a limited number 
 STATISTICS:
 
 Special Abilities (consumes charges):
- Monster Summoning: (1 turn)
+ Monster Summoning: 1 turn
 
 Requires: 14 Intelligence
 Usable By:
