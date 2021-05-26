@@ -12,7 +12,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell 'Shield'. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
-@1005 = ~Made by the Harpell clan of wizards in Longsaddle, these simple but elegant amulets project a shielding field of invisible force that protects the wearer from physical attacks just as though they were wearing armor. This sphere of energy is particularly effective against missile weapons which are slowed somewhat and often end up falling to the ground before reaching the target. The barrier also protects the wearer from the spell Magic Missile.
+@1005 = ~Made by the Harpell clan of wizards in Longsaddle, these simple but elegant amulets generate a shield-sized invisible wall of force that stays with the amulet and can be wielded by the wearer as if it were a normal shield. This sphere of energy is particularly effective against missile weapons and the barrier also protects the wearer from the spell Magic Missile.
 
 STATISTICS:
 
@@ -3386,7 +3386,7 @@ Weight: 6
 Usable By:
  Mage~
 @1410 = ~Cloak of the Shield~ // BG1/BG2: This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
-@1411 = ~This cloak projects a large shield-sized invisible wall of force that stays with the wearer and protects him as if it were a normal shield. This special creation can be activated and deactivated at will, and so does not encumber nor interfere with arcane spellcasting.
+@1411 = ~This cloak projects a sphere of energy that protects the wearer from melee and missile weapons. This special creation can be activated and deactivated at will, and so does not encumber nor interfere with arcane spellcasting.
 
 STATISTICS:
 
@@ -8006,6 +8006,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
+ Wisdom: +1 bonus
  Magic Damage Resistance: +50% bonus
 
 Armor Class Bonus: 3
