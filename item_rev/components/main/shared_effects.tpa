@@ -222,6 +222,9 @@ COPY ~item_rev/itm/dvflwhip.vvc~ ~override~
 COPY ~item_rev/itm/dvfreeze.spl~ ~override~ // Freezing
 COPY ~item_rev/itm/dvfreeze.eff~ ~override~
 
+COPY ~item_rev/itm/dvfrdoom.spl~ ~override~ // Frozen Doom
+COPY ~item_rev/itm/dvfrdoom.eff~ ~override~
+
 COPY ~item_rev/itm/dvholdun.spl~ ~override~ // Halt Undead
 
 COPY ~item_rev/itm/dvhseek.spl~ ~override~ // Heartseeking
