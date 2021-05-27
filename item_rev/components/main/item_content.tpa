@@ -786,7 +786,8 @@ COPY ~%source%/RING_OF_SPELL_TURNING.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/RING_OF_DANGER_SENSE.tpa
-  COPY ~item_rev/itm/ring36.eff~ ~override~ // Find Traps
+  COPY ~item_rev/itm/ring36.spl~ ~override~ // Find Traps
+  COPY ~item_rev/itm/ring36.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/RING_OF_DANGER_SENSE.tpa~ ~%target%~
 
