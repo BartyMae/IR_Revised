@@ -221,6 +221,14 @@ COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
 COPY ~%source%/BRACERS_OF_THE_BLINDING_STRIKE.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/GLOVES_OF_THE_ROGUE.tpa
+  COPY ~item_rev/itm/ubglove1.itm~ ~override~
+  SAY NAME1 @1715    SAY NAME2 @2605
+  SAY UNIDENTIFIED_DESC @1952 SAY IDENTIFIED_DESC @2606
+>>>>>>>>
+COPY ~%source%/GLOVES_OF_THE_ROGUE.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/BLESSED_BRACERS.tpa
   COPY ~item_rev/itm/brac23.spl~ ~override~ // Righteous Fury
     SAY NAME1 @4012
@@ -852,6 +860,13 @@ COPY ~%source%/SHIELD_OF_THE_FALLING_STARS_2.tpa~ ~%target%~
   COPY ~item_rev/itm/shld27b.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/SAVING_GRACE_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/SHIELD_OF_THE_LOST.tpa
+  COPY ~item_rev/itm/shld26.spl~ ~override~ // Deflect Magic
+  COPY ~item_rev/itm/shld26.eff~ ~override~
+>>>>>>>>
+COPY ~%source%/SHIELD_OF_THE_LOST.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/NATURES_WARD_2.tpa

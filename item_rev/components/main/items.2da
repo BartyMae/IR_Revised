@@ -194,16 +194,17 @@ BRACERS_OF_DEFENSE_AC_5                    BRACER   brac13   1        1        0
 BRACERS_OF_DEFENSE_AC_4                    BRACER   brac14   1        1        0        0        1        1        @1267    @1289    @1269    @1290    *        *        *        *
 BRACERS_OF_DEFENSE_AC_3                    BRACER   brac15   1        1        0        1        1        1        @1267    @1291    @1269    @1292    *        *        *        *
 BRACERS_OF_THE_BLINDING_STRIKE             BRACER   brac16   1        1        0        0        1        1        @1267    @1293    @1269    @1294    @4010    *        *        *
-GLOVES_OF_THE_BURGLAR                      GAUNTLET brac17   1        1        0        0        1        1        @1267    @1295    @1269    @1296    *        *        *        *
-GLOVES_OF_MISSILE_SNARING                  GAUNTLET brac18   1        1        0        1        1        1        @1267    @1297    @1269    @1298    *        *        *        *
+GLOVES_OF_THE_ROGUE                        GAUNTLET brac17   1        1        0        0        1        1        @1715    @1295    @1952    @1296    *        *        *        *
+GLOVES_OF_MISSILE_SNARING                  GAUNTLET brac18   1        1        0        1        1        1        @1715    @1297    @1952    @1298    *        *        *        *
 GAUNTLETS_OF_CRUSHING                      GAUNTLET brac19   1        1        0        1        1        1        @1277    @1299    @1279    @1300    *        *        *        *
 GAUNTLETS_OF_HEALING                       GAUNTLET brac20   1        1        0        1        1        1        @1277    @1301    @1279    @1302    @4011    *        *        *
 GAUNTLETS_OF_EXTRAORDINARY_SPECIALIZATION  GAUNTLET brac21   1        1        0        0        1        1        @1277    @1303    @1279    @1304    *        *        *        *
 PALADINS_BRACERS                           BRACER   brac22   1        1        0        0        1        1        @1267    @1305    @1269    @1306    *        *        *        *
 BLESSED_BRACERS                            BRACER   brac23   1        1        0        0        1        1        @1267    @1307    @1269    @1308    @4012    @4013    *        *
-BARDS_GLOVES                               GAUNTLET brac24   1        1        0        0        1        1        @1277    @1309    @1279    @1310    *        *        *        *
-WONDROUS_GLOVES                            GAUNTLET brac25   1        1        0        0        1        1        @1277    @1311    @1279    @1312    *        *        *        *
+BARDS_GLOVES                               GAUNTLET brac24   1        1        0        0        1        1        @1715    @1309    @1952    @1310    *        *        *        *
+WONDROUS_GLOVES                            GAUNTLET brac25   1        1        0        0        1        1        @1715    @1311    @1952    @1312    *        *        *        *
 BANDS_OF_FOCUS                             BRACER   brac26   1        1        0        1        1        1        @1267    @1313    @1269    @1314    *        *        *        *
+GLOVES_OF_PICKPOCKETING                    GAUNTLET ubglove1 1        1        1        1        1        1        @1715    @2605    @1952    @2606    *        *        *        *
 
 BULLET                                     BULLET   bull01   1        1        1        1        1        1        @1315    @1315    @1316    @1316    *        *        *        *
 BULLET_1                                   BULLET   bull02   1        1        1        1        1        1        @1315    @1317    @1318    @1319    *        *        *        *

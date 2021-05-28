@@ -5978,7 +5978,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1715 = ~Unused~
+@1715 = ~Gloves~
 @1716 = ~Silver Horn of Valhalla~
 @1717 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a fifth level warrior who will fight for the summoner for five turns.
 
@@ -7824,7 +7824,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1952 = ~Unused~
+@1952 = ~A glove is a garment covering the hand, and usually usually have separate sheaths or openings for each finger and the thumb. Gloves protect and comfort hands against cold or heat, disease, or damage by friction and abrasion, and provide a guard for what a bare hand should not touch.~
 @1953 = ~Shield of the Falling Stars +2~
 @1954 = ~Ilmater himself enchanted this shield upon seeing a young squire's willingness to endure untold agony for the well-being of his mount. During a fierce battle between a human cavalry division and a hobgoblin horde, the young man was sent for reinforcements. He was beset by a cascade of arrows that nearly blocked out the sun, and he knew that even if he avoided the arrows himself, should his horse fall he would surely be doomed. With his shield and body he positioned himself to take the brunt of the onslaught, and was mortally wounded for it. His horse remained unscathed allowing for their escape, and his body was carried back to the nearest town, where he was resurrected from death.
 
@@ -8007,8 +8007,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Wisdom: +1 bonus
- Magic Damage Resistance: +50% bonus
+ Deflect Magic: one spell cast against the wearer is absorbed per turn
 
 Armor Class Bonus: 3
 Weight: 15
@@ -14101,6 +14100,18 @@ Not Usable By:
  Monk
  Thief
  Kensai~
+@2605 = ~Gloves of Pickpocketing~
+@2606 = ~A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle, and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.
+
+STATISTICS:
+
+Equipped Abilities:
+ Pick Pockets: +20% bonus
+
+Weight: 1
+Usable By:
+ Bard
+ Thief~
 
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
