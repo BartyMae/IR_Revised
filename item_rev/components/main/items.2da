@@ -369,7 +369,7 @@ HELMET#8                                   HELMET   helm15   1        1        1
 HELM_OF_BRILLIANCE                         HELMET   helm16   1        1        0        0        1        1        @1569    @1592    @1579    @1593    @4024    @4025    @4026    *
 SKULL_OF_DEATH                             HELMET   helm17   1        1        0        0        1        1        @1569    @1594    @1579    @1595    @4027    *        *        *
 PEARLY_WHITE_IOUN_STONE                    IOUN     helm18   1        1        0        1        1        1        @1596    @1597    @1598    @1599    @4028    *        *        *
-STONE_OF_GOOD_LUCK                         IOUN     helm19   1        1        0        1        1        1        @1596    @1600    @1598    @1601    *        *        *        *
+DUSTY_ROSE_IOUN_STONE                      IOUN     helm19   1        1        0        1        1        1        @1596    @1600    @1598    @1601    *        *        *        *
 PALE_GREEN_IOUN_STONE                      IOUN     helm20   1        1        0        1        1        1        @1596    @1602    @1598    @1603    *        *        *        *
 RED_DRAGONSCALE_HELM                       HELMET   helm21   1        1        0        0        1        1        @1569    @1604    @1579    @1605    *        *        *        *
 HELMET#9                                   HELMET   helm22   1        1        0        0        1        1        @1569    @1569    @1587    @1587    *        *        *        *
@@ -387,6 +387,7 @@ GOLD_HORNED_HELM                           HELMET   helm33   1        1        0
 WONG_FEIS_IOUN_STONE                       IOUN     helm34   1        1        0        0        1        1        @1596    @2309    @1598    @2310    *        *        *        *
 MALLAS_SOUL_STONE                          IOUN     amsoul01 1        1        0        0        1        1        @1596    @2357    @1598    @2358    *        *        *        *
 RORANACHS_HORN                             HELMET   compon05 1        1        0        0        1        1        @1569    @1685    @1579    @1686    *        *        *        *
+IOUN_STONE_OF_GOOD_LUCK                    IOUN     dvhelm01 1        1        0        1        1        1        @1596    @2607    @1598    @2608    *        *        *        *
 
 LEATHER_ARMOR                              LEATHER  leat01   1        1        1        1        1        1        @1629    @1629    @1630    @1630    *        *        *        *
 LEATHER_ARMOR_1                            LEATHER  leat02   1        1        1        1        1        1        @1629    @1631    @1632    @1633    *        *        *        *

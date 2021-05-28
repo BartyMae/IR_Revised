@@ -5127,15 +5127,12 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1600 = ~Ioun Stone of Good Luck~ // BG2: Dusty Rose Ioun Stone: This ioun stone glows with a dusty rose hue, hinting at calming images and sensations. While pleasing, it does not appear to enhance the basic protection enchantment upon it.
-@1601 = ~Also knowed as Luckstones, these ioun stones are mostly appreciated by thieves and bards as they often find themselves at the mercy of the fortune. The floating stone grants the wearer a luck bonus to any of his actions increasing saving throws, hit chances, damage rolls, thieving skills, etc.
+@1600 = ~Dusty Rose Ioun Stone~
+@1601 = ~This ioun stone glows with a dusty rose hue, hinting at calming images and sensations. While pleasing, it does not appear to enhance the basic protection enchantment upon it.
 
 STATISTICS:
 
-Equipped Abilities:
- Luck: +1 bonus (+5% for skills)
-
-Armor Class Bonus: None
+Armor Class Bonus: 1
 Usable By:
  All~
 @1602 = ~Pale Green Ioun Stone~
@@ -14112,6 +14109,17 @@ Weight: 1
 Usable By:
  Bard
  Thief~
+@2607 = ~Ioun Stone of Good Luck~
+@2608 = ~Also knowed as Luckstones, these ioun stones are mostly appreciated by thieves and bards as they often find themselves at the mercy of the fortune. The floating stone grants the wearer a luck bonus to any of his actions increasing saving throws, hit chances, damage rolls, thieving skills, etc.
+
+STATISTICS:
+
+Equipped Abilities:
+ Luck: +1 bonus (+5% for skills)
+
+Armor Class Bonus: None
+Usable By:
+ All~
 
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
