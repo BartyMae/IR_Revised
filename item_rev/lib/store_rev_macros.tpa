@@ -133,7 +133,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       OUTER_SPRINT $temple("cure_moderate_wounds") ~%spell_res%~
     END
     COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
-      LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+      LPF ALTER_EFFECT INT_VAR silent = 1 target = 3 END
     END
   END
 
@@ -169,7 +169,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
       OUTER_SPRINT $temple("cure_serious_wounds") ~%spell_res%~
     END
     COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
-      LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+      LPF ALTER_EFFECT INT_VAR silent = 1 target = 3 END
     END
   END
 
@@ -199,7 +199,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
     END
     ACTION_IF comp_cure_wounds=1 BEGIN
       COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
-        LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+        LPF ALTER_EFFECT INT_VAR silent = 1 target = 3 END
       END
     END
   END
@@ -225,7 +225,7 @@ DEFINE_ACTION_MACRO spelldesc BEGIN
     END
     ACTION_IF comp_cure_wounds=1 BEGIN
       COPY_EXISTING ~sppr514.spl~ ~override/rr#pr514.spl~ PATCH_IF SOURCE_SIZE>0x71 BEGIN
-        LPF ALTER_EFFECT INT_VAR silent = 1 multi_match = 1 target = 3 END
+        LPF ALTER_EFFECT INT_VAR silent = 1 target = 3 END
       END
     END
   END
