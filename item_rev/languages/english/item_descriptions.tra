@@ -1608,7 +1608,7 @@ Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
 @1186 = ~Bolt of Biting~ // BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. // BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
-@1187 = ~The Bolt of Biting was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. 
+@1187 = ~The Bolt of Biting was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death.
 
 STATISTICS:
 
@@ -2376,7 +2376,7 @@ Not Usable By:
  Wizard Slayer~
 @1275 = ~Bracers of Archery~
 @1276 = ~The Dale's Protector
-During a dangerous meeting with a rival ruler, the King of the Great Dale requested the protection of his best archers in addition to his usual guard. The archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the King and force their will over his rule, but none had anticipated the amazing accuracy and lethality of the hidden archers. The King was able to escape unharmed; in fact, none of the ambush members even lived to approach him. 
+During a dangerous meeting with a rival ruler, the King of the Great Dale requested the protection of his best archers in addition to his usual guard. The archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the King and force their will over his rule, but none had anticipated the amazing accuracy and lethality of the hidden archers. The King was able to escape unharmed; in fact, none of the ambush members even lived to approach him.
 
 STATISTICS:
 
@@ -3236,7 +3236,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1384 = ~Cloak of Non-Detection~ // BG1/BG2: Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success. No record exists of previous owners. 
+@1384 = ~Cloak of Non-Detection~ // BG1/BG2: Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success. No record exists of previous owners.
 @1385 = ~Whispers of Silence
 Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success, allowing the wearer to became non-detectable by magical means such as Detect Invisibility and True Sight. No record exists of previous owners.
 
@@ -3325,7 +3325,7 @@ Weight: 4
 Usable By:
  Mage~
 @1400 = ~Traveler's Robe~
-@1401 = ~This mage robe has been perfected for use by any rambling, itinerant mage that travels from town to town. Its enchantments provide protection from the bandit's arrow and from the jealous thief-mage that lies in ambush with his Stinking Cloud. As with other robes of its kind, the Traveller's Robe can only be worn by mages. 
+@1401 = ~This mage robe has been perfected for use by any rambling, itinerant mage that travels from town to town. Its enchantments provide protection from the bandit's arrow and from the jealous thief-mage that lies in ambush with his Stinking Cloud. As with other robes of its kind, the Traveller's Robe can only be worn by mages.
 
 STATISTICS:
 
@@ -4900,7 +4900,7 @@ Not Usable By:
  Kensai~
 @1574 = ~Helm of Glory~
 @1575 = ~Helm of the Noble
-Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession.  It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years.  Alas, the young man had neither the strength, nor the skill to uphold his master's legacy.  It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since. 
+Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession.  It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years.  Alas, the young man had neither the strength, nor the skill to uphold his master's legacy.  It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since.
 
 STATISTICS:
 
@@ -4938,7 +4938,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1578 = ~Helm of the Watcher~ // BG1/2: Helm of Infravision: The Eyes of Truth: Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.  
+@1578 = ~Helm of the Watcher~ // BG1/2: Helm of Infravision: The Eyes of Truth: Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
 @1579 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.~
 @1580 = ~It is unclear if these magic headpieces were created by clerics of Helm, god of guardians, or if they acquired their name by a more convenient circumstance. Whatever the case, they are highly prized by guards and sentries. Needless to say, bandits have also taken to wearing them, proving the old proverb that 'what's good for the goose is good for the gander'.
 
@@ -7099,7 +7099,7 @@ Not Usable By:
  Avenger
  Barbarian
  Beast Master
- Kensai 
+ Kensai
  Shapeshifter
  Stalker~
 @1854 = ~Full Plate Mail +2~ // BG2: This +2 armor was created with the limited wish spell.
@@ -7140,7 +7140,7 @@ Not Usable By:
  Avenger
  Barbarian
  Beast Master
- Kensai 
+ Kensai
  Shapeshifter
  Stalker~
 @1858 = ~Enkidu's Plate +4~
@@ -7210,7 +7210,7 @@ Not Usable By:
  Stalker~
 @1863 = ~Ring of Fire Resistance~
 @1864 = ~Batalista's Passport
-The grand mage Batalista intended this item to aid him in his travels in the plane of fire, and it is said he repeatedly summoned a Salamander from that realm to aid in the construction of the ring. Salamanders are not known for their patience; hence, it was unwise for Batalista to pester his "instructor" quite so much. The finger bearing the finished ring was indeed untouched by the inferno that claimed his tower. Had that finger still been attached, Batalista himself might have fared better.
+The grand mage Batalista intended this item to aid in his travels in the plane of fire, and it is said he repeatedly summoned a Salamander from that realm to aid in the construction of this ring. Not being known for their patience, it is likely he should not have pestered his "instructor" quite so much. The finger bearing the finished ring was indeed untouched by the inferno that claimed his tower. Had that finger still been attached, Batalista himself might have fared better.
 
 STATISTICS:
 
@@ -7219,9 +7219,10 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1865 = ~Band of the Forest~
+@1865 = ~Band of the Forest~ // BG1/BG2: Ring of Animal Friendship
 @1866 = ~Druid's Ring
-This slender band of green metal has a strange, organic warmth to it - more like a vine than a circle of steel. A druid order in Cormanthor is said to guard the secret to the construction of these rings, which have never been seen in the possession of anyone outside their immediate membership. How this particular ring escaped the protection of their forest is unknown, but there are rumors that an outcast could have brought it into exile with him.
+This slender band of green metal has a strange, organic warmth to it - more like a vine than a circle of steel. A druid order in Cormanthor is said to cautiously guard the secret to the construction of these rings, which have never been seen in the possession of anyone outside their immediate membership. How this particular ring escaped the protection of their forest is unknown, but there are rumors that an outcast could have brought it into exile with him.
+
 
 STATISTICS:
 
@@ -7233,7 +7234,7 @@ Usable By:
  Ranger~
 @1867 = ~Ring of Invisibility~
 @1868 = ~Sandthief's Ring
-Though there are numerous examples of such rings, this one may have come from a set once owned by a master thief that worked Waterdhavian crowds in broad daylight, replacing purses with bags of sand. Once thought retired, it is now suspected that the so-called "Sand Thief" was eventually killed for not joining a local thieves' guild, and that his rings were seized by a group that abused his methods liberally.
+Held by a master thief for the better part of a generation, this ring was put to bold use in the markets of Waterdeep. Working a crowd in broad daylight, the rogue would steal countless numbers of purses from nobles, replacing them with bags of sand so the theft would go unnoticed. His identity was never known, but the name "Sandthief" was cursed loudly in its stead. It is rumored he retired, and now lives among the nobles he used to rob.
 
 STATISTICS:
 
@@ -7242,7 +7243,7 @@ Special Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1869 = ~Ring of Protection +1~
+@1869 = ~Ring of Protection +1~ // BG1/BG2: Ring of the Princes: This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.
 @1870 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this ring.
 
 STATISTICS:
@@ -7255,7 +7256,7 @@ Not Usable By:
  Wizard Slayer~
 @1871 = ~Ring of Protection +2~
 @1872 = ~The Guard's Ring
-The Guard was an immortal sentry assigned to protect a tomb that sheltered the body of a princess of the Akanal. As time passed, respect for the grave disappeared with the memory of the royal family, and adventurers began to try their luck with the Guard. It was inevitable that he would eventually be bested, and when he was, the ring he wore was one of many treasures taken from the tomb.
+The Guard was an immortal sentry assigned to protect a tomb that sheltered the body of a princess of the Akanal. Over millennia, respect for the grave disappeared with the memory of the royal family, and adventurers began to try their luck with the Guard. It was inevitable that he would eventually be bested, and when he was, the ring he wore was one of many treasures taken from the tomb.
 
 STATISTICS:
 
@@ -7265,9 +7266,9 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1873 = ~Ring of Wizardry~
+@1873 = ~Ring of Wizardry~ // BG1/BG2: Reaching Ring: This ring is masterfully enchanted, allowing the wearer to memorize more spells than normally possible. It was originally commissioned by spellcaster <CHARNAME>, apparently at great monetary and personal cost.
 @1874 = ~Reaching Ring
-Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end, it was found that his powers stemmed from the several magical rings that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items.
+This ring is masterfully enchanted, allowing the wearer to memorize more spells than normally possible.
 
 STATISTICS:
 
@@ -7301,7 +7302,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1879 = ~Ring of Night's Embrace~
+@1879 = ~Ring of Night's Embrace~ // BG1/BG2: Ring of Infravision: Topsider's Crutch: Merchants that dare the risks of trading with the Drow of the Great Rift are often given these items to aid in their movements underground.
 @1880 = ~This ring is as dark as the night sky. When donned, it grants its wearer the ability to see perfectly in the dark and blend easily into the shadows. Though a common item among rogues and others who wish to go unnoticed, this item is rapidly becoming standard equipment among the Night Masks, according to the Westgate city watch.
 
 STATISTICS:
@@ -7312,9 +7313,9 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1881 = ~Ring of Holiness~
+@1881 = ~Ring of Holiness~ // BG1/BG2: Honorary Ring of Sune: Rings of this type were given to faithful priests of Sune who demonstrated actions of astounding integrity and kindness.
 @1882 = ~Every God Ring
-Rings such as these are one of the most well kept secrets among the pious. For in order for these rings to be created they must be blessed by all the known gods. This can cause problems, especially for those faiths that conflict with each other. It's not surprising that those who choose to don the ring refuse to reveal its origins for fear of being persecuted by their own brethren.
+Rings such as these are one of the most well kept secrets among the pious. For in order for these rings to be created, they must be blessed by all the known gods. This can cause problems, especially for those faiths that conflict with each other. It's not surprising that those who choose to don the ring refuse to reveal its origins for fear of being persecuted by their own brethren.
 
 STATISTICS:
 
@@ -7324,7 +7325,7 @@ Equipped Abilities:
 Usable By:
  Cleric
  Paladin~
-@1883 = ~Ring of Djinni Summoning~
+@1883 = ~Ring of Djinni Summoning~ // BG2: An item out of fables, the Djinni ring is highly sought after. Once a day, the wearer of this beautiful ring can summon a Djinni who will do as the ring wearer commands. If the Djinni should die in service of its master, the ring will be destroyed.
 @1884 = ~An item out of fables, the Ring of Djinni Summoning is highly sought after. Once a day, the wearer of this beautiful ring can summon a djinni who will perform a Limited Wish as desired.
 
 STATISTICS:
@@ -7335,7 +7336,7 @@ Special Abilities:
 Not Usable By:
  Wizard Slayer~
 @1885 = ~Ring of Fire Control~
-@1886 = ~Elementals make for powerful foes but with this ring they can become valuable allies. Dark tales tell of groups of Red Wizards all with rings of elemental command descending upon small villages with no warning and destroying every living thing in sight. Although the truth of these rumors is questionable the fact remains that a ring of this power in the wrong hands is dangerous, and that copies of these rings are created by the Red Wizards of Thay indeed and are sold in their enclaves across the realms.
+@1886 = ~This burnished red ring is engraved with depictions of flames and lava coils. Mages and other planar travelers use these rings to protect themselves while visiting the Elemental Plane of Fire and to command fire elementals to do their bidding.
 
 STATISTICS:
 
@@ -7349,7 +7350,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1887 = ~Ring of Air Control~
-@1888 = ~Elementals make for powerful foes but with this ring they can become valuable allies. Dark tales tell of groups of Red Wizards all with rings of elemental command descending upon small villages with no warning and destroying every living thing in sight. Although the truth of these rumors is questionable the fact remains that a ring of this power in the wrong hands is dangerous, and that copies of these rings are created by the Red Wizards of Thay indeed and are sold in their enclaves across the realms.
+@1888 = ~Air elementals make for powerful foes, but with this ring, they can become valuable allies. Dark tales tell of groups of Red Wizards all with rings of elemental command descending upon small villages with no warning and destroying every living thing in sight. Although the truth of these rumors is questionable, the fact remains that a ring of this power in the wrong hands is dangerous.
 
 STATISTICS:
 
@@ -7363,7 +7364,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1889 = ~Ring of Earth Control~
-@1890 = ~Elementals make for powerful foes but with this ring they can become valuable allies. Dark tales tell of groups of Red Wizards all with rings of elemental command descending upon small villages with no warning and destroying every living thing in sight. Although the truth of these rumors is questionable the fact remains that a ring of this power in the wrong hands is dangerous, and that copies of these rings are created by the Red Wizards of Thay indeed and are sold in their enclaves across the realms.
+@1890 = ~If the songs of bards are correct, all one must do is wear this ring and they will gain the ability to control earth elementals at will. Of course, earth elementals are not easily controlled and care must be taken when commanding one. An angry earth elemental can make short work of an inept adventurer.
 
 STATISTICS:
 
@@ -7391,7 +7392,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1893 = ~Ring of Regeneration~
-@1894 = ~A lowly ranked Red Mage named Huhhus is said to have discovered the perfect way to distill troll flesh to make a potion that provides the same regenerative ability as that of the troll. Few were willing to drink the vile liquid, however. Decades later, a student of Huhhus created this ring, building upon the foundations of knowledge laid by Huhhus. Within the hollow cavity of the jade ring floats the ichor and brains of a troll, providing a limited regenerative capability to the wearer.
+@1894 = ~A lowly ranked Red Mage named Huhhus is said to have discovered the perfect way to distill troll flesh to make a potion that provided the same regenerative ability as that of the troll. Few were willing to drink the vile liquid however, and decades later, a student of Huhhus created this ring, building upon the foundations of knowledge laid by Huhhus. Within the hollow cavity of the jade ring floats the ichor and brains of a troll, providing a limited regenerative capability to the wearer.
 
 STATISTICS:
 
@@ -7426,8 +7427,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1899 = ~Ring of the Burglar~
-@1900 = ~Derek Drak, one of the most talented burglars in the Shadow Thieves, wore this ring on many of his scores. The ring enhanced Derek's already impressive dexterity, and in the city of Athkatla there wasn't a door that could not be unlocked by him. To activate the ring, the proper command word must be spoken, at which point the garnet stone on the ring will polymorph into the shape of a key that closely fits the lock.
+@1899 = ~Ring of the Burglar~ // BG2: Ring of Lock Picks
+@1900 = ~Derek Drak, one of the most talented burglars in the Shadow Thieves' guild, wore this ring on many of his scores. The ring enhanced Derek's already impressive lock picking abilities. In the city of Athkatla, there wasn't a door that could not be unlocked by Derek. To activate the ring, the proper command word must be known, at which point the garnet stone on the ring will polymorph into the shape of a key that closely fits the lock.
 
 STATISTICS:
 
@@ -7438,7 +7439,7 @@ Equipped Abilities:
 Usable By:
  Thief~
 @1901 = ~Ring of Danger Sense~
-@1902 = ~Nizzuf's Maze was a grand hedge maze created by the arch-mage Nizzuf for his amusement. The maze boasted hundreds of magical traps, most of them extremely lethal. Nizzuf posted a reward big enough to buy a kingdom for the man or woman brave enough to enter the maze and reach its core. Thousands tried and died. But one, Oteg Verm completed the maze, thanks mainly to this ring which helped him 'see' where the traps were hidden and avoid them.
+@1902 = ~Nizzuf's Maze was a grand hedge maze created by the arch-mage Nizzuf for his amusement. The maze boasted hundreds of magical traps, most of them extremely lethal. Nizzuf posted a reward big enough to buy a kingdom to the man or woman brave enough to enter the maze and reach its core. Thousands tried and died. But one, Oteg Verm, completed the maze, thanks mainly to this ring which let him 'see' where the traps were hidden.
 
 STATISTICS:
 
@@ -7450,8 +7451,8 @@ Equipped Abilities:
 Usable By:
  Monk
  Thief~
-@1903 = ~Ring of Kangaxx~
-@1904 = ~This ring is relatively unadorned, but the vile magic within radiates intense evil. Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power. It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to destroy him fully, they became liches themselves to stand guard over his remains. It may have been the construction of this ring which originally drew their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
+@1903 = ~Ring of Gaxx~
+@1904 = ~This ring is relatively unadorned, but the vile magic within radiates intense evil. Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power. It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains. The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
 
 STATISTICS:
 
@@ -7468,7 +7469,7 @@ Not Usable By:
  Paladin
  Wizard Slayer~
 @1905 = ~Ring of Acuity~
-@1906 = ~The origins of this ring are unclear, and while its enchantments share similarities with historical examples of Rings of Wizardry, there is something strange in how it feels, either in the weight of the metal or in the aura it projects, and it does not function the same. It was likely found on some distant plane, and as such, its maker will remain a mystery.
+@1906 = ~The origins of this ring are unclear, and while its enchantments share similarities with historical examples of Rings of Wizardry, there is something strange in how it feels, either in the weight of the metal or in the aura it projects, and it does not function the same. It was likely found on some distant plane, and as such, its maker will remain a mystery to you.
 
 STATISTICS:
 
@@ -7489,9 +7490,9 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1909 = ~Ring of the Wraith~
+@1909 = ~Ring of the Wraith~ // BG2: Ring of Improved Invisibility
 @1910 = ~The Specter's Ring
-A ruthless assassin of Tethyr known only as the Specter used this ring to great effect many years ago. Striking completely unseen, his victims' demises were often attributed to angry ghosts and spirits. The wearer of this ring assumes a dark, almost incorporeal form like that of a wraith, gaining many of its traits as well.
+A ruthless assassin of Tethyr known only as the Specter used this ring to great effect many years ago. Striking completely unseen, his victims' demises were often attributed to angry ghosts and spirits. The wearer of this ring assumes a dark incorporeal form like that of a wraith, gaining many of its characteristics as well.
 
 STATISTICS:
 
@@ -7499,7 +7500,7 @@ Special Abilities:
  Improved Invisibility (1x per day): 1 turn
 
 Equipped Abilities:
- Wraith Form: the wearer cannot be harmed by non-magical weapons or attacks, is immune to spells that don't affect incorporeal creatures, and gains a +50% bonus to Move Silently
+ Wraith Form: the wearer moves silently and cannot be backstabbed, is vulnerable only to magical weapons or attacks, and is immune to spells and abilities that don't affect incorporeal creatures
 
 Usable By:
  Thief~
@@ -7515,7 +7516,7 @@ Equipped Abilities:
 Usable By:
  Druid
  Ranger~
-@1913 = ~Ring of Larloch~
+@1913 = ~Ring of Larloch~ // BG2: Ring of Anti-Venom: This ring is an unadorned silver band. However, its plain appearance belies the powerful magic within. A Ring of Anti-Venom is eagerly sought after by royalty, influential political figures, and other potential assassination targets.
 @1914 = ~Soul Stealer
 Larloch, the infamous necromancer turned lich, had an insatiable need for new souls for his research. The means he used to tear them from their living bodies and capture them are as myriad as they are terrifying. The uninitiated dabble with Larloch's artifacts at their own peril.
 
@@ -8493,7 +8494,7 @@ Not Usable By:
 @2022 = ~Staff of Command +3~
 @2023 = ~This item is of the kind used by nefarious people seeking to sway others to follow their ways. Enchanters are often found wielding staves such as this, but this unique specimen belonged to Morinth the Bewitcher.
 
-This staff allows the wielder to dominate another creature's mind, or destroy it with a strike, but the staff's ability to enhance the potency of all enchantments cast by its wielder is what mindbenders seek the most. 
+This staff allows the wielder to dominate another creature's mind, or destroy it with a strike, but the staff's ability to enhance the potency of all enchantments cast by its wielder is what mindbenders seek the most.
 
 Possessing the power to manipulate other's minds doesn't ensure immunity to the same treatment, as Morinth's death proved when she was ambushed and abducted by a group of mind flayers equally interested in her brain and her staff.
 
@@ -9233,7 +9234,7 @@ Equipped Abilities:
  Protects Against: Entangle, Grease, Slow, and Web
 
 Combat Abilities:
- Hastening: 15% chance that the wielder is hasted for 5 rounds 
+ Hastening: 15% chance that the wielder is hasted for 5 rounds
 
 THAC0: +2 bonus
 Damage: 1D6 + 2
@@ -10863,7 +10864,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2211 = ~Gram the Sword of Grief +4~
-@2212 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt. 
+@2212 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt.
 
 STATISTICS:
 
@@ -11037,7 +11038,7 @@ Usable By:
  Fighter/Mage
  Fighter/Mage/Thief
  Mage/Thief~
-@2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as 'The Nameless One'.  
+@2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as 'The Nameless One'.
 @2226 = ~Made of blackened silver and dark blue steel, this helm is rumored to slowly corrupt its wearer to bend to Shar's whim, so that ultimately the Dark Goddess gains a powerful follower by greatly warding the victim in what her clerics often refer to as the subject's "infancy."
 
 The helm is capable of absorbing significant amounts of cold damage, and with a command word, it can create a shadow clone of the wearer to fight alongside him. Those who possess it inevitably become creatures of the night themselves, operating as easily in the dark as they would during the day - and under the watchful eye of Shar.
@@ -12135,7 +12136,7 @@ Requires: 10 Strength
 Not Usable By:
  Cleric
  Druid
- Mage 
+ Mage
  Monk
  Thief
  Beast Master~
@@ -12209,10 +12210,10 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1D4 
+Damage: 1D4
 Damage Type: Piercing
 Weight: 1
-Speed Factor: 2 
+Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-Handed
 Requires: 3 Strength
@@ -12337,7 +12338,7 @@ Not Usable By:
 @2370 = ~Full Plate Mail +3~
 @2371 = ~Ring of Clumsiness~
 @2372 = ~The Jester's Folly
-The most notorious owner of this ring made a substantial living exploiting its nature. Gregoria the Foole, a jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed only once the stooge had promised no reprisals for the treatment he had received, although Gregoria frequently still had to make a hasty retreat. His last known performance was rumored to have been an ill-humored mage in Zhentil Keep; a show from which he did not flee quite fast enough.
+The most notorious owner of this ring made a substantial living exploiting its cursed nature. Gregoria the Foole, a jester by trade, would use his incomparable sleight of hand to switch this ring with that of a patsy taken from his audience. The rest of his performance would involve the mocking of the newly clumsy individual, much to the delight of their comrades. The ring was removed (by a method known only to the wily jester) only once the stooge had promised no reprisals for the treatment he had received; though Gregoria frequently still had to make a hasty retreat. His last known performance was rumored to have been an ill-humored mage in Zhentil Keep; a show from which he did not flee quite fast enough.
 
 STATISTICS:
 
@@ -12353,7 +12354,7 @@ Not Usable By:
  Wizard Slayer~
 @2373 = ~Ring of Folly~
 @2374 = ~Discipliner
-Oft the bane of the careless mage, this ring was actually used to promote humility. Hergat Norin, a grand wizard of Narfell, would give the Discipliner to his most skilled, and most egotistical, students. Through their blind arrogance, they would mistake the ring as a reward for their "obvious brilliance," and not the punishment of a disapproving teacher.
+Oft the bane of the careless mage, this ring was actually used to promote humility. Hergat Norin, a grand wizard of Narfell, would give the Discipliner to his most skilled, and most egotistical, students. Through their blind arrogance, they would mistake the ring as a reward for their "obvious brilliance", and not the punishment of a disapproving teacher.
 
 STATISTICS:
 
@@ -12705,10 +12706,10 @@ Usable By:
 @2418 = ~This ring was given to <CHARNAME> by Koveras in Candlekeep. Its polished black surface is cold to the touch and engraved with powerful incantations. The ring's design and crafting material suggest western workmanship. On the inside, you see what appears to be a thick figure eight with a slash mark through it.
 
 STATISTICS:
- 
+
 Equipped Abilities:
  Luck: +1 bonus (+5% for skills)
- 
+
 Not Usable By:
  Wizard Slayer~
 @2419 = ~Nester's Dagger~
@@ -12718,7 +12719,7 @@ Not Usable By:
 @2423 = ~Perdue's Short Sword~
 @2424 = ~Ring of Sorcery~
 @2425 = ~Evermemory
-This ring is masterfully enchanted, allowing the wearer to memorize more spells than normally possible.
+Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end, it was found that his powers stemmed from the several magical rings that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items.
 
 STATISTICS:
 
@@ -12825,7 +12826,7 @@ Special Abilities:
 Usable By:
  Bard~
 @2445 = ~Shaman's Staff~
-@2446 = ~This is a Staff of Goodberries that belonged to the Kobold Shaman in the sewers below the slums. 
+@2446 = ~This is a Staff of Goodberries that belonged to the Kobold Shaman in the sewers below the slums.
 
 STATISTICS:
 
@@ -13134,7 +13135,7 @@ Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- 
+
 Requires: 16 Intelligence
 Usable By:
  Mage~
@@ -13159,7 +13160,7 @@ Special Characteristics:
  Protected Against: Backstabs, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Cursing: target is cursed and cannot recover from their wounds permanently
- 
+
 Requires: 16 Intelligence
 Usable By:
  Mage~
@@ -13183,7 +13184,7 @@ Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal/+1 Weapons, Petrification, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- 
+
 Requires: 16 Intelligence
 Usable By:
  Mage~
@@ -13208,7 +13209,7 @@ Special Characteristics:
  Protected Against: Backstabs, Normal/+1/+2 Weapons, Petrification, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Stunning: target is stunned for 1 round (save vs. spell neg.)
- 
+
 Requires: 16 Intelligence
 Usable By:
  Mage~
@@ -13539,7 +13540,7 @@ STATISTICS:
 
 Equipped Abilities:
  Domination
- 
+
 Usable By:
  All~
 @2527 = ~Mantle of Waukeen~
@@ -14298,21 +14299,21 @@ Usable By:
 
 @60000 = ~Rhyte's Last Arrow +2~
 @60001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
- 
+
 "Oh, shocked from the strike of his powerful bow,
 The slain game sought by Adaniss falls.
 Long ago in the time of the Quiet Earth,
 The hunt from the famed High Forest calls.
 
-The Duke of Everlund known for his boast 
-Of the trophies held in his pride as dear. 
+The Duke of Everlund known for his boast
+Of the trophies held in his pride as dear.
 Intensely enraged at his rival hunter
-Whose bounty by far surpassed his one year. 
+Whose bounty by far surpassed his one year.
 
 One morn tragedy befell the land
 With the misconceived death of the Duke's prized hound.
-Fallen at the base of a great elm tree 
-A bow's shot death in its heart was found. 
+Fallen at the base of a great elm tree
+A bow's shot death in its heart was found.
 
 With skill so great targets in his eyes were at the mercy of his arrow's flight.
 His hands sure and still,
@@ -14340,13 +14341,13 @@ Never missing a kill,
 None could match the marksmanship of Adaniss Rhyte.
 
 Again called the forest with its precious game,
-And a prize Adaniss with thrill did he seek. 
-But none could be finer than the great clawed falcon 
+And a prize Adaniss with thrill did he seek.
+But none could be finer than the great clawed falcon
 Sought by all amidst the forest's Lost Peaks.
 
 Once more the rivalry of the Duke did stir,
 For he thought of his skills with Rhyte's bow to be best.
-And set his sights on the glorious bird 
+And set his sights on the glorious bird
 To emerge as the holder of its sainted crest.
 
 The two climbed the peaks and searched days on end,
@@ -14459,7 +14460,7 @@ STATISTICS:
 
 Equipped Abilities:
  Cold Resistance: +100% bonus
- Fire Resistance: -100% penalty 
+ Fire Resistance: -100% penalty
 
 Weight: 1
 Not Usable By:
