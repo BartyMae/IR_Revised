@@ -274,7 +274,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
     SAY NAME1 @1497    SAY NAME2 @2577
     SAY UNIDENTIFIED_DESC @1499 SAY IDENTIFIED_DESC @2578
     LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/leat06_.itm~ ~override/plat06.itm~  // Ankheg Plate Mail
+  COPY ~item_rev/itm/plat06_.itm~ ~override/plat06.itm~  // Ankheg Plate Mail
     SAY NAME1 @1825    SAY NAME2 @2579
     SAY UNIDENTIFIED_DESC @1828 SAY IDENTIFIED_DESC @2580
     LPF update_item_descriptions_to_bgee END
