@@ -1,11 +1,11 @@
 BACKUP ~item_rev/backup~
-AUTHOR ~Demivrgvs, Ardanis and Mike1072 at forums.gibberlings3.net~ // Revised by Bartimaeus
+AUTHOR ~Bartimaeus in the IR Revised thread at forums.gibberlings3.net~
 
 README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.462)~
+VERSION ~V4 Beta 10 (Revised V1.3.463)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
