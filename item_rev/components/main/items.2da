@@ -714,7 +714,7 @@ LONG_SWORD_1                               SWORDL   sw1h05   1        1        1
 VARSCONA_2                                 SWORDL   sw1h06   1        1        1        1        1        1        @1513    @2064    @1515    @2065    *        *        *        *
 SHORT_SWORD                                SWORDS   sw1h07   1        1        1        1        1        1        @2066    @2066    @2067    @2067    *        *        *        *
 SHORT_SWORD_1                              SWORDS   sw1h08   1        1        1        1        1        1        @2066    @2068    @2069    @2070    *        *        *        *
-SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h29   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
+SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h09   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
 SHORT_SWORD_OF_BACKSTABBING_3              SWORDS   sw1h10   1        1        1        1        1        1        @2066    @2073    @2069    @2074    *        *        *        *
 HULLS_LONG_SWORD                           SWORDL   sw1h12   1        1        1        1        1        1        @2422    @2422    @2061    @2061    *        *        *        *
 MOONBLADE_3                                SWORDL   sw1h13   1        1        1        1        1        1        @2403    @2403    @2404    @2404    *        *        *        *
