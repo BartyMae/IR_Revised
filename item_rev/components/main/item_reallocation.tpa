@@ -540,6 +540,17 @@ END
 // SW1H09 (Short Sword +2) -> SW1H29
 
 // Replace bad copies of Battle Axe +2
+ACTION_FOR_EACH resource IN
+  ~sengua04~
+  ~ysfire02~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~ax1h03~ ~ax1h11~
+    BUT_ONLY
+  END
+END
+
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   COPY_EXISTING ~ar0420.are~ ~override~ // Planer Sphere
     PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -548,14 +559,30 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
     BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sengua04.cre~) BEGIN
-  COPY_EXISTING sengua04.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ax1h03~ ~ax1h11~
+ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
+  COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~ax1h03~
+	REMOVE_CRE_ITEM ~ax1h03_~
+    REMOVE_CRE_ITEM ~ax1h11~
+    ADD_CRE_ITEM ~ax1h03_~ #0 #0 #0 NONE WEAPON1 EQUIP
   END
   BUT_ONLY
 END
 
 // Replace bad copies of Flail
+ACTION_FOR_EACH resource IN
+  ~bodfgt01~
+  ~braiwa5~
+  ~helmho~
+  ~obshal02~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun08~ ~blun02~
+    BUT_ONLY
+  END
+END
+
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar0602.are~) BEGIN
     COPY_EXISTING ~ar0602.are~ ~override~ // Irenicus' Dungeon
@@ -576,109 +603,66 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
     END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bodfgt01.cre~) BEGIN
-  COPY_EXISTING bodfgt01.cre override
-                obshal02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~helmho.cre~) BEGIN // BG1
-  COPY_EXISTING ~helmho.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~brainwa5.cre~) BEGIN // BG1
-  COPY_EXISTING ~brainwa5.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~blun02~ ~blun08~
-  END BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
-  COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~ax1h03~
-	REMOVE_CRE_ITEM ~ax1h03_~
-    REMOVE_CRE_ITEM ~ax1h11~
-    ADD_CRE_ITEM ~ax1h03_~ #0 #0 #0 NONE WEAPON1 EQUIP
-  END
-  BUT_ONLY
-END
-
 // Replace bad copies of Dagger +2
-ACTION_IF (FILE_EXISTS_IN_GAME ~VAELASA.cre~) BEGIN
-  COPY_EXISTING VAELASA.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg15~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~C6ARKAN.cre~) BEGIN
-  COPY_EXISTING C6ARKAN.cre override
-                C6ARKAN3.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg15~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~marek.cre~) BEGIN // BG1
-  COPY_EXISTING marek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg02~
-  END
-  BUT_ONLY
-END
-
-// Replace bad copies of Full Plate Mail +1
-ACTION_IF (FILE_EXISTS_IN_GAME ~gromg10.cre~) BEGIN
-  COPY_EXISTING gromg10.cre override
-                deckwar1.cre override
-                yaga03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sarevo2.cre~) BEGIN // BG1
-    COPY_EXISTING ~knight4.cre~ ~override~
-                  ~deathk.cre~ ~override~
-                  ~deathk1.cre~ ~override~
-                  ~sarev1.cre~ ~override~
-                  ~sarevo2.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-        REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
-    END
+ACTION_FOR_EACH resource IN
+  ~c6arkan~
+  ~c6arkan3~
+  ~marek~
+  ~vaelasa~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~dagg03~ ~dagg15~
     BUT_ONLY
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~tamoko.cre~) BEGIN // Tamoko in BG1
-  COPY_EXISTING tamoko.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~plat05~
-	REMOVE_CRE_ITEM ~plat05_~
-    REMOVE_CRE_ITEM ~plat14~
-    ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
+// Replace bad copies of Full Plate Mail +1
+ACTION_FOR_EACH resource IN
+  ~bazliz03~
+  ~bazliz04~
+  ~deathk1~
+  ~deathk~
+  ~deckwar1~
+  ~gromg10~
+  ~knight4~
+  ~sarev1~
+  ~sarevo2~
+  ~sengua04~
+  ~yaga03~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat05~ ~plat14~
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~tamoko2.cre~) BEGIN // Tamoko in BG1
-  COPY_EXISTING tamoko2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~plat05~
-	REMOVE_CRE_ITEM ~plat05_~
-    REMOVE_CRE_ITEM ~plat14~
-    ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
+ACTION_FOR_EACH resource IN
+  ~tamoko~
+  ~tamoko2~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REMOVE_CRE_ITEM ~plat05~
+      REMOVE_CRE_ITEM ~plat05_~
+      REMOVE_CRE_ITEM ~plat14~
+      ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
 // Replace bad copies of Large Shield +2
-ACTION_IF (FILE_EXISTS_IN_GAME ~chak.cre~) BEGIN
-  COPY_EXISTING chak.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~shld19~ ~shld30~
+ACTION_FOR_EACH resource IN
+  ~chak~
+  ~gorgua03~
+  ~gorcamb3~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~shld19~ ~shld30~
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
 // Replace bad copies of Short Sword +2
@@ -702,102 +686,59 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sarkis02.cre~) BEGIN
-  COPY_EXISTING ~sarkis02.cre~ ~override~
-                ~sarkis03.cre~ ~override~
-                ~c6alyra.cre~ ~override~
-                ~c6natas.cre~ ~override~
-                ~c6kach.cre~ ~override~
-                ~ammerc07.cre~ ~override~
-                ~sargrd05.cre~ ~override~
-                ~sargrd09.cre~ ~override~
-                ~vvarkan.cre~ ~override~
-                ~hlketta.cre~ ~override~
-                ~hlketta2.cre~ ~override~
-                ~deckass1.cre~ ~override~
-                ~calaha.cre~ ~override~
-                ~hgskl02.cre~ ~override~
-                ~vvcat.cre~ ~override~
-                ~sarcpt01.cre~ ~override~
-                ~gordeck5.cre~ ~override~
-                ~gordeck6.cre~ ~override~
-                ~gordeck7.cre~ ~override~
-                ~gordeck8.cre~ ~override~
-                ~gordeck9.cre~ ~override~
-                ~gordecka.cre~ ~override~
-                ~teltief2.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+ACTION_FOR_EACH resource IN
+  ~ammerc07~
+  ~ammerc08~
+  ~ammerc09~
+  ~arkanisg~
+  ~c6kach~
+  ~calaha~
+  ~deckass1~
+  ~deckwar1~
+  ~gordeck5~
+  ~gordeck6~
+  ~gordeck7~
+  ~gordeck8~
+  ~gordeck9~
+  ~gordecka~
+  ~hgskl02~
+  ~hlketta2~
+  ~hlketta~
+  ~sarcpt01~
+  ~sargrd05~
+  ~sargrd09~
+  ~sarkis02~
+  ~sarkis03~
+  ~senorc02~
+  ~senorc04~
+  ~teltief2~
+  ~vvarkan~
+  ~vvcat~
+  ~yaga03~
+  ~dw#vider~
+  ~dw#vime1~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~ammerc08.cre~) BEGIN
-  COPY_EXISTING ~ammerc08.cre~ ~override~
-                ~ammerc09.cre~ ~override~
-                ~senorc02.cre~ ~override~
-                ~senorc04.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+ACTION_FOR_EACH resource IN
+  ~bernad5~
+  ~ribald3~
+  ~trmer04a~
+  ~type3~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.sto~) BEGIN
+    COPY_EXISTING ~%resource%.sto~ ~override\%resource%.sto~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~yaga03.cre~) BEGIN
-  COPY_EXISTING yaga03.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~deckwar1.cre~) BEGIN
-  COPY_EXISTING deckwar1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~dw#vider.cre~) BEGIN
-  COPY_EXISTING dw#vider.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~dw#vime1.cre~) BEGIN
-  COPY_EXISTING dw#vime1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-  REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~ribald3.sto~) BEGIN
-  COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~trmer04a.sto~) BEGIN
-  COPY_EXISTING trmer04a.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~bernard5.sto~) BEGIN
-  COPY_EXISTING bernard5.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~type3.sto~) BEGIN
-  COPY_EXISTING type3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE ~sw1h09~ ~sw1h29~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargul in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargal in BG1
   COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~sw1h09~
     REMOVE_CRE_ITEM ~sw1h09_~
@@ -812,74 +753,10 @@ END
 
 // Various fixes
 
-// Elminster fixes
-ACTION_IF (FILE_EXISTS_IN_GAME ~amelm01.cre~) BEGIN
-  COPY_EXISTING amelm01.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
-    REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
-    REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
-    REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~merlin.cre~) BEGIN
-  COPY_EXISTING merlin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
-    REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
-    REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
-    REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
-  END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~jatermin.cre~) BEGIN
-  COPY_EXISTING jatermin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
-    REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
-    REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
-    REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
-  END
-  BUT_ONLY
-END
-
-// Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
-ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
-ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
-  COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
-    END
-    BUT_ONLY
-END
-END
-
 // Place Telbar's Armor +2 on Sendai in BG1
 ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
 ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
   COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~leat07~
-    REMOVE_CRE_ITEM ~leat07_~
-    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
-END
-END
-
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BGEE
-ACTION_IF (FILE_EXISTS_IN_GAME ~sendai.cre~) BEGIN
-  COPY_EXISTING sendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~leat07~
-    REMOVE_CRE_ITEM ~leat07_~
-    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
-END
-END
-
-ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
-ACTION_IF (FILE_EXISTS_IN_GAME ~sendai_.cre~) BEGIN
-  COPY_EXISTING sendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~leat07~
     REMOVE_CRE_ITEM ~leat07_~
     ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
@@ -983,6 +860,64 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~taerom.dlg~) BEGIN
       REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06~ ~plat06_~
     COMPILE_D_TO_DLG
   BUT_ONLY
+END
+
+// Elminster fixes
+ACTION_FOR_EACH resource IN
+  ~amelm01~
+  ~merlin~
+  ~jatermin~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.sto~) BEGIN
+    COPY_EXISTING ~%resource%.sto~ ~override\%resource%.sto~
+      REPLACE_CRE_ITEM ~amul14~ #1 #0 #0 ~unstealable~ ~AMULET~
+      REPLACE_CRE_ITEM ~ring07~ #1 #0 #0 ~unstealable~ ~RING~
+      REPLACE_CRE_ITEM ~brac03~ #1 #0 #0 ~unstealable~ ~GLOVES~
+      REPLACE_CRE_ITEM ~clck02~ #1 #0 #0 ~unstealable~ ~CLOAK~
+    BUT_ONLY
+  END
+END
+
+// Remove extra Boots of Speed from Lothander
+ACTION_IF (FILE_EXISTS_IN_GAME ~lothan.cre~) BEGIN // Lothander
+  COPY_EXISTING lothan.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM boot01
+    ADD_CRE_ITEM bootdriz #1 #0 #0 IDENTIFIED BOOTS
+  END
+  BUT_ONLY
+END
+
+// Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
+ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
+ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
+  COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
+    END
+    BUT_ONLY
+END
+END
+
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BGEE
+ACTION_IF (FILE_EXISTS_IN_GAME ~sendai.cre~) BEGIN
+  COPY_EXISTING sendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~leat07~
+    REMOVE_CRE_ITEM ~leat07_~
+    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
+END
+
+ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
+ACTION_IF (FILE_EXISTS_IN_GAME ~sendai_.cre~) BEGIN
+  COPY_EXISTING sendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~leat07~
+    REMOVE_CRE_ITEM ~leat07_~
+    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+  END
+  BUT_ONLY
+END
 END
 
 // Replace Spellhold's bad copy of Ray of Enfeeblement with good copy
