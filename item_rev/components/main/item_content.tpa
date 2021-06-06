@@ -915,6 +915,7 @@ COPY ~%source%/ERINNE_SLING_4.tpa~ ~%target%~
   COPY ~item_rev/itm/staf09a.spl~ ~override~
     WRITE_SHORT 0x98 %staf09%
   COPY ~item_rev/itm/staf09.eff~ ~override~
+  COPY ~item_rev/itm/staf09b.spl~ ~override~ // Domination
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar2400.are~) BEGIN
     COPY_EXISTING ~ar2400.are~ ~override~ // Illithid City
