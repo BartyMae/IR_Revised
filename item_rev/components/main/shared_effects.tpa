@@ -344,6 +344,9 @@ COPY ~item_rev/itm/dvwebb.eff~ ~override~
 
 /*----------------Item Special Abilities----------------*/
 
+COPY ~item_rev/itm/dvcharmp.spl~ ~override~ // Charm Person
+  SAY NAME1 @4017
+
 COPY ~item_rev/itm/dvdlifea.spl~ ~override~ // Drain Life
   SAY NAME1 @4050
 COPY ~item_rev/itm/dvdlifeb.spl~ ~override~
