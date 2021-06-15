@@ -129,6 +129,8 @@ COPY ~item_rev/itm/dvnatfrm.spl~ ~override~ // Shapeshift Natural Form
 
 COPY ~item_rev/itm/dvexhaus.spl~ ~override~ // Exhaustion
 
+COPY ~item_rev/itm/iconblnd.eff~ ~override~ // Blindness
+
 /*----------------Weapon Enhancements----------------*/
 
 COPY ~item_rev/itm/dvafflic.spl~ ~override~ // Affliction
