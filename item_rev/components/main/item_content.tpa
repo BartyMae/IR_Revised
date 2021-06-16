@@ -439,8 +439,7 @@ COPY ~%source%/TROLLHIDE_ARMOR_4.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/EFREETI_BOTTLE.tpa
-  COPY ~item_rev/itm/misc3c.spl~ ~override~ // Summon Efreeti
-  COPY ~item_rev/itm/misc3c.eff~ ~override~
+  COPY ~item_rev/itm/misc3c.eff~ ~override~ // Summon Efreeti
 >>>>>>>>
 COPY ~%source%/EFREETI_BOTTLE.tpa~ ~%target%~
 
