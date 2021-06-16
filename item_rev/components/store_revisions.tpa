@@ -1939,6 +1939,7 @@ COPY_EXISTING trmer01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM MISC45   LAST #0 #0 #0 IDENTIFIED #1   // Rogue Stone
 
   ADD_STORE_ITEM amul14   LAST #0 #0 #0 IDENTIFIED #1   // Amulet of Protection +1
+  ADD_STORE_ITEM dvamul01 LAST #0 #0 #0 IDENTIFIED #1   // Amulet of Protection +2
 
   ADD_STORE_ITEM BAG02C   LAST #0 #0 #0 IDENTIFIED #1   // Gem Bag
 
@@ -2055,6 +2056,7 @@ COPY_EXISTING trmer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM STAF08   LAST #0 #0 #0 IDENTIFIED #1   // Martial Staff +3
   ADD_STORE_ITEM BOW15    LAST #0 #0 #0 IDENTIFIED #1   // Tansheron's Bow +3
   ADD_STORE_ITEM LEAT09   LAST #0 #0 #0 IDENTIFIED #1   // Karajah's Armor +3
+  ADD_STORE_ITEM HELM19   LAST #0 #0 #0 IDENTIFIED #1   // Dusty Rose Ioun Stone
   ADD_STORE_ITEM CLCK03   LAST #0 #0 #0 IDENTIFIED #1   // Cloak of Displacement
   ADD_STORE_ITEM BELT10   LAST #0 #0 #0 IDENTIFIED #1   // Belt of Inertial Barrier
   ADD_STORE_ITEM AMUL01   LAST #25 #0 #0 IDENTIFIED #1  // Necklace of Missiles / Amulet of Health
@@ -4297,6 +4299,8 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM WAND07   LAST #50 #0 #0 IDENTIFIED #1  // Lightning
   END
   ADD_STORE_ITEM CLCK11   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Electric Resistance
+
+  ADD_STORE_ITEM SHLD26   LAST #0 #0 #0 IDENTIFIED #1   // Shield of the Lost +2
 
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #15  // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Extra Healing
