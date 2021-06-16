@@ -4300,8 +4300,6 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
   ADD_STORE_ITEM CLCK11   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Electric Resistance
 
-  ADD_STORE_ITEM SHLD26   LAST #0 #0 #0 IDENTIFIED #1   // Shield of the Lost +2
-
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #15  // Potion of Healing
   ADD_STORE_ITEM POTN52   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Extra Healing
   ADD_STORE_ITEM POTN19   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Agility
@@ -7684,6 +7682,7 @@ COPY_EXISTING udsvir05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM HELM01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Helmet
 
+  ADD_STORE_ITEM SHLD26   LAST #0 #0 #0 IDENTIFIED #1   // Shield of the Lost +2
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM RING05   LAST #3 #0 #0 IDENTIFIED #1   // Ring of Invisibility
   END ELSE BEGIN
