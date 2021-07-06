@@ -158,7 +158,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     PLAT10    // Plate Mail +1
     SHLD01    // Small Shield
     SHLD03    // Medium Shield
-    SHLD06    // Large Shield +1
+    SHLD05    // Large Shield
     SHLD08    // Buckler
     SHLD02    // Small Shield +1
     SHLD04    // Medium Shield +1
