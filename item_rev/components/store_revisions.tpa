@@ -252,7 +252,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM XBOW09   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +2
   ADD_STORE_ITEM SLNG04   LAST #0 #0 #0 IDENTIFIED #1   // Sling +2
   ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
-  ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
+  ADD_STORE_ITEM LEAT07   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM OHLEAT51   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +2
   END
@@ -407,7 +407,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 	PLAT05    // Full Plate Mail +1
     PLAT14    // Full Plate Mail +1
     PLAT17    // T'rahcie's Plate +5
-    LEAT15    // Studded Leather Armor +2
+    LEAT15    // Studded Leather Armor +3
     LEAT11    // Leather Armor +2
     LEAT12    // Leather Armor +3
     CHAN08    // Chain Mail +2
@@ -3733,7 +3733,7 @@ COPY_EXISTING kpchap01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM LEAT01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Leather Armor
   ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
   ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #5   // Studded Leather Armor
-  ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
+  ADD_STORE_ITEM LEAT07   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
   ADD_STORE_ITEM LEAT10   LAST #0 #0 #0 IDENTIFIED #3   // Hide Armor
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM OHLEAT51   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +2
@@ -5829,7 +5829,7 @@ COPY_EXISTING shthstor.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM BOLT06   LAST #40 #0 #0 IDENTIFIED #3  // Bolt +2
 
   ADD_STORE_ITEM LEAT11   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +2
-  ADD_STORE_ITEM LEAT15   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
+  ADD_STORE_ITEM LEAT07   LAST #0 #0 #0 IDENTIFIED #1   // Studded Leather Armor +2
   PATCH_IF comp_ir BEGIN
     ADD_STORE_ITEM OHLEAT51   LAST #0 #0 #0 IDENTIFIED #1   // Hide Armor +3
   END
@@ -9068,7 +9068,7 @@ COPY_EXISTING sarbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     LEAT12    // Leather Armor +3
     LEAT04    // Studded Leather Armor
     LEAT05    // Studded Leather Armor +1
-    LEAT15    // Studded Leather Armor +2
+    LEAT15    // Studded Leather Armor +3
     CHAN01    // Chain Mail
     CHAN02    // Chain Mail +1
     CHAN08    // Chain Mail +2
