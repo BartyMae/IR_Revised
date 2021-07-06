@@ -169,6 +169,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     RING06    // Ring of Protection +1
     RING20    // Ring of Energy
     HELM13    // Helmet
+	HELM22    // Helmet
     BRAC15    // Bracers of Defense AC 3
     BRAC02    // Bracers of Defense AC 7
     AMUL14    // Amulet of Protection +1
@@ -319,10 +320,11 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM SHLD22 LAST #0 #0 #0 IDENTIFIED #1   // Shield of Balduran +2 -> Mirror Shield +3
   END
 
-  ADD_STORE_ITEM BAG31    LAST #0 #0 #0 IDENTIFIED #1   // Bag of Holding
   ADD_STORE_ITEM CLCK15   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Good Archmagi / Robe of the Weave
   ADD_STORE_ITEM CLCK16   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Neutral Archmagi / Robe of the Battlemage
   ADD_STORE_ITEM CLCK17   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Evil Archmagi / Robe of Arcane Might
+
+  ADD_STORE_ITEM BAG31    LAST #0 #0 #0 IDENTIFIED #1   // Bag of Holding
 
   // Potions moved here, previously they were assigned to Joluv
   ADD_STORE_ITEM POTN08   LAST #1 #0 #0 IDENTIFIED #100 // Potion of Healing
@@ -402,6 +404,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy END // doesn't buy anything
   REMOVE_STORE_ITEM 
     HELM16    // Helm of Brilliance
+	PLAT05    // Full Plate Mail +1
     PLAT14    // Full Plate Mail +1
     PLAT17    // T'rahcie's Plate +5
     LEAT15    // Studded Leather Armor +2
@@ -556,10 +559,6 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM BULL06   LAST #40 #0 #0 IDENTIFIED #1  // Bullet of Smiting +3 (Bullet +4)
   END
 
-  PATCH_IF comp_cursed=0 BEGIN
-    ADD_STORE_ITEM PLAT17   LAST #0 #0 #0 IDENTIFIED #1   // T'rahcie's Plate +5 / Armor of the Hart +3
-  END
-
   ADD_STORE_ITEM POTN55   LAST #1 #0 #0 IDENTIFIED #5   // Potion of Superior Healing
   ADD_STORE_ITEM POTN06   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Cloud Giant Strength
   ADD_STORE_ITEM POTN07   LAST #1 #0 #0 IDENTIFIED #1   // Potion of Storm Giant Strength
@@ -649,6 +648,9 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SLNG06   LAST #0 #0 #0 IDENTIFIED #1   // Sling of Arvoreen +2
   ADD_STORE_ITEM LEAT17   LAST #0 #0 #0 IDENTIFIED #1   // Armor of Deep Night +5
   ADD_STORE_ITEM CHAN11   LAST #0 #0 #0 IDENTIFIED #1   // Crimson Chain +5
+  PATCH_IF comp_cursed=0 BEGIN
+    ADD_STORE_ITEM PLAT17   LAST #0 #0 #0 IDENTIFIED #1   // T'rahcie's Plate +5 / Armor of the Hart +3
+  END
   ADD_STORE_ITEM HELM16   LAST #1 #1 #1 IDENTIFIED #1   // Helm of Brilliance
   ADD_STORE_ITEM CLCK05   LAST #0 #0 #0 IDENTIFIED #1   // Cloak of Balduran
   ADD_STORE_ITEM BRAC15   LAST #0 #0 #0 IDENTIFIED #1   // Bracers of Defense AC 3
