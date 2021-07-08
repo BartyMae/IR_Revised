@@ -409,6 +409,13 @@ COPY ~%source%/HORNED_HELM_OF_THE_ROCK.tpa~ ~%target%~
 COPY ~%source%/IOUN_STONE_OF_GOOD_LUCK.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/EILISTRAEES_BOON.tpa
+  COPY ~item_rev/itm/xoband03.spl~ ~override~ // Shield of the Archon
+    SAY NAME1 @4047
+>>>>>>>>
+COPY ~%source%/EILISTRAEES_BOON.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/ARMOR_OF_MISSILE_ATTRACTION_3.tpa
   ADD_PROJECTILE ~item_rev/itm/leat06.pro~ // Missile Attraction
   COPY ~item_rev/itm/leat06.spl~ ~override~

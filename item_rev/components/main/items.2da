@@ -388,6 +388,10 @@ WONG_FEIS_IOUN_STONE                       IOUN     helm34   1        1        0
 MALLAS_SOUL_STONE                          IOUN     amsoul01 1        1        0        0        1        1        @1596    @2357    @1598    @2358    *        *        *        *
 RORANACHS_HORN                             HELMET   compon05 1        1        0        0        1        1        @1569    @1685    @1579    @1686    *        *        *        *
 IOUN_STONE_OF_GOOD_LUCK                    IOUN     dvhelm01 1        1        0        1        1        1        @1596    @2607    @1598    @2608    *        *        *        *
+CIRCLET                                    CIRCLET  XOBAND01 1        1        0        0        1        1        @2609    @2609    @2610    @2610    *        *        *        *
+SILVER_CIRCLET                             CIRCLET  XOBAND02 1        1        0        0        1        1        @2609    @2611    @2234    @2612    *        *        *        *
+EILISTRAEES_BOON                           CIRCLET  XOBAND03 1        1        0        0        1        1        @2609    @2613    @2234    @2614    @4047    *        *        *
+CIRCLET_OF_THE_ARCHMAGI                    CIRCLET  XOBAND04 1        1        0        0        1        1        @2609    @2615    @2234    @2616    *        *        *        *
 
 LEATHER_ARMOR                              LEATHER  leat01   1        1        1        1        1        1        @1629    @1629    @1630    @1630    *        *        *        *
 LEATHER_ARMOR_1                            LEATHER  leat02   1        1        1        1        1        1        @1629    @1631    @1632    @1633    *        *        *        *

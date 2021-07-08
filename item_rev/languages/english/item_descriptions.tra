@@ -2980,7 +2980,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1352 = ~Elven Chain~
-@1353 = ~The delicate yet sturdy craftsmanship of the Elven races allows them to design many beautiful yet utilitarian goods. Among these is Elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by thieves and fighter/mages with few restrictions.
+@1353 = ~The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by thieves and fighter-mages with few restrictions.
 
 STATISTICS:
 
@@ -2996,8 +2996,8 @@ Not Usable By:
  Kensai
  Stalker~
 @1354 = ~Elven Chain +1~
-@1355 = ~The delicate yet sturdy craftsmanship of the Elven races allows them to design many beautiful yet utilitarian goods. Among these is Elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by thieves and fighter/mages with few restrictions.~
-@1356 = ~This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by fighter-mages without removing their spellcasting ability. This variety of mail is woven in almost exactly the same form by both elves and the Drow; its design has changed little since the Drow's elven past and is used for surface forays, where Adamantine Drow chain would decay.
+@1355 = ~The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by thieves and fighter-mages with few restrictions.~
+@1356 = ~This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by fighter-mages without removing their spellcasting ability. This variety of mail is woven in almost exactly the same form by both elves and the drow; its design has changed little since the drow's elven past and is used for surface forays, where adamantine drow chain would decay.
 
 STATISTICS:
 
@@ -3099,7 +3099,7 @@ Usable By:
  Paladin
  Ranger~
 @1367 = ~Aslyferund Elven Chain +5~
-@1368 = ~While in exile from Myth Drannor, Aslyferund learned the secret of fashioning powerful Elven armor by gilding and heavily enchanting normal Elven Chain, it is rumored with the aid of a gold dragon. Alas, his refusal to divulge the secret lead to his murder by a rival smith.
+@1368 = ~While in exile from Myth Drannor, Aslyferund learned the secret of fashioning powerful elven armor by gilding and heavily enchanting normal elven chain, it is rumored with the aid of a gold dragon. Alas, his refusal to divulge the secret lead to his murder by a rival smith.
 
 How Cespenar came into possession of the secret is a mystery.
 
@@ -5556,7 +5556,7 @@ Not Usable By:
  Kensai
  Shapeshifter~
 @1665 = ~Armor of the Viper +4~
-@1666 = ~This armor's namesake is a serpent only in manner, referring to the Drow assassin Raroh. Poison was his trademark, and he had this suit enchanted consequently without revealing its properties to anyone.
+@1666 = ~This armor's namesake is a serpent only in manner, referring to the drow assassin Raroh. Poison was his trademark, and he had this suit enchanted consequently without revealing its properties to anyone.
 
 Raroh taught everything he knew about the art of killing and the secrets to create the most lethal of poisons to Avlorm, the most promising novice assassin within his own guild. But when Avlorm's power eventually threatened his own, Raroh had to teach his pupil the last lesson of his life. Avlorm and a few trained assassins planned to kill their master within his own house, with the aid of the night and the best poison they could brew. Unfortunately for them, Raroh was well aware of this, and thanks to this suit's immunity to venom, their poisoned darts and blades couldn't harm him. Subsequentely he easily dispatched all of them entwisting them in a poisonous cloud of ghastly, green vapors, and landing the killing blows with bare hands.
 
@@ -7290,7 +7290,7 @@ Not Usable By:
  Wizard Slayer~
 @1877 = ~Ring of Energy~
 @1878 = ~The Victor
-Crafted by Drow mages of the Underdark, this weapon was used in an arranged battle between two rival houses. Each combatant was allowed to use a single magic item to aid his efforts. This ring was the weapon used by the victor of the contest, though he never laid hands on it. It was worn by his sibling and fired from the crowd, striking his opponent squarely in the back. Everyone witnessing agreed it was a brilliant interpretation of the rules.
+Crafted by drow mages of the Underdark, this weapon was used in an arranged battle between two rival houses. Each combatant was allowed to use a single magic item to aid his efforts. This ring was the weapon used by the victor of the contest, though he never laid hands on it. It was worn by his sibling and fired from the crowd, striking his opponent squarely in the back. Everyone witnessing agreed it was a brilliant interpretation of the rules.
 
 STATISTICS:
 
@@ -7302,7 +7302,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1879 = ~Ring of Night's Embrace~ // BG1/BG2: Ring of Infravision: Topsider's Crutch: Merchants that dare the risks of trading with the Drow of the Great Rift are often given these items to aid in their movements underground.
+@1879 = ~Ring of Night's Embrace~ // BG1/BG2: Ring of Infravision: Topsider's Crutch: Merchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground.
 @1880 = ~This ring is as dark as the night sky. When donned, it grants its wearer the ability to see perfectly in the dark and blend easily into the shadows. Though a common item among rogues and others who wish to go unnoticed, this item is rapidly becoming standard equipment among the Night Masks, according to the Westgate city watch.
 
 STATISTICS:
@@ -10024,9 +10024,9 @@ Not Usable By:
  Mage
  Beast Master~
 @2155 = ~Foebane +4~
-@2156 = ~The Archmage Demron crafted this magical bastard sword for the Elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
+@2156 = ~The Archmage Demron crafted this magical bastard sword for the elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
 
-Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death, though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the Elven cities.
+Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death, though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
 
 Yet even the power of Foebane was not enough to withstand the dark hordes which overran Myth Drannor. When the elven city fell, Captain Fflar met a grisly, gruesome end and the sword itself was lost beneath the rubble of the once great metropolis.
 
@@ -10059,9 +10059,9 @@ Not Usable By:
  Thief
  Beast Master~
 @2157 = ~Foebane +5~
-@2158 = ~The Archmage Demron crafted this magical bastard sword for the Elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
+@2158 = ~The Archmage Demron crafted this magical bastard sword for the elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
 
-Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death, though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the Elven cities.
+Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death, though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
 
 Yet even the power of Foebane was not enough to withstand the dark hordes which overran Myth Drannor. When the elven city fell, Captain Fflar met a grisly, gruesome end and the sword itself was lost beneath the rubble of the once great metropolis.
 
@@ -10972,7 +10972,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2219 = ~Psion's Blade +3~
-@2220 = ~Some believe this massive blade to be of Drow origin, though others dispute this claim. However, all agree this great sword was fashioned with a single purpose... to rid the world of the Illithid. A threat Mind Flayers don't take kindly.
+@2220 = ~Some believe this massive blade to be of drow origin, though others dispute this claim. However, all agree this great sword was fashioned with a single purpose... to rid the world of the Illithid. A threat Mind Flayers don't take kindly.
 
 The illithid brain known as Kwukgixrin sent its followers to scouring the underdark for this blade that it discovered when it absorbed the mind of a powerful human warrior. After countless fights the warrior had hidden the sword when he realized that he was too wounded to survive another attack from the illithid thralls. Before the illithid thralls could find the sword, the warrior's twin brother discovered it. The twin was in strong health and he made short work of the thralls and many illithids before leaving the Underdark.
 
@@ -11117,7 +11117,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@2234 = ~Unused~
+@2234 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.~
 @2235 = ~Sword of Balduran +2~
 @2236 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
@@ -12101,7 +12101,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @2339 = ~Bracers of Speed~ // BG1/BG2: Bracers of Binding: These bracers appear to be Bracers of Specialization but when donned, bind the wearers wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the drow. The recipient, believing them to be very powerful, will often don them before examining them. At this point, the drow find it amusing to conjure a hook horror.
-@2340 = ~These bracers are said to originate from the Underdark. Such items are sometimes given by Drow nobility as compensation to those who offer their swords to their cause. Once worn, they grant an unnatural and unsustainable speed to attacks, and will remind the wearer of the long enduring gratitude of its creators.
+@2340 = ~These bracers are said to originate from the Underdark. Such items are sometimes given by drow nobility as compensation to those who offer their swords to their cause. Once worn, they grant an unnatural and unsustainable speed to attacks, and will remind the wearer of the long enduring gratitude of its creators.
 
 STATISTICS:
 
@@ -14121,7 +14121,49 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
+@2609 = ~Circlet~
+@2610 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
 
+STATISTICS:
+
+Weight: 1
+Usable By:
+ All~
+@2611 = ~Silver Circlet~
+@2612 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. This simple silver circlet is enchanted to help the wearer successfully resist and avoid attacks of various natures.
+
+STATISTICS:
+
+Equipped Abilities:
+ Saving Throws: +1 bonus
+
+Weight: 1
+Usable By:
+ All~
+@2613 = ~Eilistraee's Boon~
+@2614 = ~This circlet is made of the purest silver, and is embedded with a shimmering green jewel that seems to emit a faint glow when caught by moonlight. It was blessed by the drow goddess Eilistraee, and is able to grant the wearer powerful protection against harmful magic for a short time.
+
+STATISTICS:
+
+Special Abilities:
+ Shield of the Archon (1x per day): 1 turn
+
+Weight: 1
+Usable By:
+ All~
+@2615 = ~Circlet of the Archmagi~
+@2616 = ~This powerful circlet was enchanted to complement the powerful robes customarily worn by archmages, building even further upon their magical protections. Due to the nature of its enchantment, it can only be worn by mages.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armor Class: +1 bonus
+ Saving Throws: +1 bonus
+ Magic Resistance: +5% bonus
+
+Weight: 1
+Usable By:
+ Mage~
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
@@ -14169,7 +14211,7 @@ Usable By:
 @4044 = ~Battering Ram~
 @4045 = ~Spell Turning~
 @4046 = ~Energy Drain~
-@4047 = ~Unused~
+@4047 = ~Shield of the Archon~
 @4048 = ~Terrify~
 @4049 = ~Paralyze~
 @4050 = ~Drain Life~

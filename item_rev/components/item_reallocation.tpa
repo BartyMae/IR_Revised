@@ -683,6 +683,30 @@ END
 
 /////////////////////////////////////
 
+// Remove Eilistraee's Boon from Temple of the Forgotten God (Sewers)
+
+ACTION_IF 1pp_circlets=1 BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar0203.are~) BEGIN // Temple of the Forgotten God
+    COPY_EXISTING ~ar0203.are~ ~override~ PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF DELETE_AREA_ITEM STR_VAR item_to_delete=xoband03 END // Eilistraee's Boon
+    END BUT_ONLY
+  END
+END
+
+/////////////////////////////////////
+
+// Remove Circlet of the Archmagi from Wolfwere Hideout (Temple Ruins)
+
+ACTION_IF 1pp_circlets=1 BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar1403.are~) BEGIN // Wolfwere Hideout
+    COPY_EXISTING ~ar1403.are~ ~override~ PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF DELETE_AREA_ITEM STR_VAR item_to_delete=xoband04 END // Circlet of the Archmagi
+    END BUT_ONLY
+  END
+END
+
+/////////////////////////////////////
+
 // Various fixes
 
 // Girdle of Bluntness -> Girdle of Piercing (BG1)

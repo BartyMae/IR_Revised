@@ -2844,6 +2844,42 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
+  ACTION_IF (FILE_EXISTS_IN_GAME ~xoband01.itm~) BEGIN
+COPY_EXISTING ~xoband01.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~JB~
+    WRITE_LONG  0x3E 0
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~xoband02.itm~) BEGIN
+COPY_EXISTING ~xoband02.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~JB~
+    WRITE_LONG  0x3E 0
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~xoband03.itm~) BEGIN
+COPY_EXISTING ~xoband03.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~JB~
+    WRITE_LONG  0x3E 0
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~xoband04.itm~) BEGIN
+COPY_EXISTING ~xoband04.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~JB~
+    WRITE_LONG  0x3E 0
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
 END // JB helms
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~wqljca1.bam~) BEGIN // JC helms, open-faced and wide wings
