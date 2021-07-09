@@ -6362,7 +6362,7 @@ Proficiency Type: Two-Handed Sword
 Type: Two-Handed
 Requires: 16 Strength
 Usable By:
- Neutral or evil-aligned paladin~
+ Neutral or evil-aligned paladins~
 @1764 = ~Protection Scroll~
 @1765 = ~Protection from Acid~
 @1766 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud the protective magic is released upon the reader. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
@@ -14150,7 +14150,7 @@ Special Abilities:
 
 Weight: 1
 Usable By:
- All~
+ Good or neutral-aligned characters~
 @2615 = ~Circlet of the Archmagi~
 @2616 = ~This powerful circlet was enchanted to complement the powerful robes customarily worn by archmages, building even further upon their magical protections. Due to the nature of its enchantment, it can only be worn by mages.
 
