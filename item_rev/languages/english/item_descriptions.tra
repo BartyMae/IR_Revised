@@ -2482,7 +2482,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1291 = ~Bracers of Defense AC 3~
-@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor -  he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
+@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -4900,7 +4900,7 @@ Not Usable By:
  Kensai~
 @1574 = ~Helm of Glory~
 @1575 = ~Helm of the Noble
-Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession.  It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years.  Alas, the young man had neither the strength, nor the skill to uphold his master's legacy.  It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since.
+Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession. It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years. Alas, the young man had neither the strength, nor the skill to uphold his master's legacy. It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since.
 
 STATISTICS:
 
@@ -6435,7 +6435,7 @@ Equipped Abilities:
 
 Usable By:
  Edwin~
-@1782 = ~Jansen AdventureWear~
+@1782 = ~Jansen AdventureWear~ // BG2: This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant a +25% resistance to all physical damage and an additional +5 bonus to Jan's armor class against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
 @1783 = ~Jansen-Brand Metal-Repellant AdventureWear - (patent pending)
 
 This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
@@ -6452,7 +6452,7 @@ Weight: 5
 Requires: 3 Strength
 Usable By:
  Jan Jansen~
-@1784 = ~Bow of Arvoreen +2~
+@1784 = ~Bow of Arvoreen +2~ // This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by halflings, granting a +2 bonus to hit rolls.
 @1785 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen.
 
 STATISTICS:
@@ -6482,8 +6482,8 @@ STATISTICS:
 Weight: 1
 Usable By:
  Imoen~
-@1788 = ~Corthala Family Armor +2~
-@1789 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. The armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages. The armor makes the wearer immune to charm and detection by magical means ensuring he can plan his actions and pursue his targets without worring about external interference.
+@1788 = ~Corthala Family Armor +2~ // BG2: This armor, long in the Corthala bloodline, protects the user against all forms of attacks. The armor is enchanted so that it grants a +3 bonus to Valygar's armor class. It also adds a bonus to resisting acid, fire and magical damage. The armor also makes Valygar immune to charm while he wears it. As it is specially fitted for Valygar, few other than he may wear it.
+@1789 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. This armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages, making the wearer immune to charm and detection by magical means.
 
 STATISTICS:
 
@@ -6503,8 +6503,8 @@ Not Usable By:
  Archer
  Beast Master
  Kensai~
-@1790 = ~Cloak of the High Forest~
-@1791 = ~In his younger years, Cernd spent a cycle of seasons meditating on his role within nature. He made no shelter for himself, wanting to be completely unencumbered by the trappings of civilization. Nature may have appreciated his intent, but She also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven from the very undergrowth to fit him perfectly. The message was clear: he can appreciate the rain while still seeking shelter from it.
+@1790 = ~Cloak of the High Forest~ // BG2: Only Cernd may use this cloak.
+@1791 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature.  He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it.
 
 STATISTICS:
 
@@ -6550,8 +6550,8 @@ Armor Class: 5
 Weight: 1
 Usable By:
  Jan Jansen~
-@1796 = ~Staff of the High Forest +2~
-@1797 = ~This staff finds its origin within a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was of particular interest; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as a boon from nature herself.
+@1796 = ~Staff of the High Forest +2~ // BG2: It has grown to fit his grip, and few others may wield it.
+@1797 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself.
 
 STATISTICS:
 
@@ -6568,8 +6568,8 @@ Type: Two-Handed
 Requires: 5 Strength
 Usable By:
  Druid (single-class)~
-@1798 = ~Firecam Full Plate Mail +2~
-@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before passing to Keldorn. Keldorn had proven himself to be one of the mightiest and more devoted champion of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical shield. Anyone who dares attack Torm's favored suffers proper retribution as the god's shield strikes back with its magical energy.
+@1798 = ~Firecam Full Plate Mail +2~ // BG2: Full plate armor is the best armor a warrior can buy, both in appearance and protection. This armor increases the wearer's armor class by one above that of normal full plate. While equipped, the suit provides the wearer with a +1 bonus to all saving throws and grants the wearer Free Action (the ability to pass through webs and other effects). This suit was designed for Keldorn, and only he may wear it.
+@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical shield. Anyone who dares attack Torm's favored suffers proper retribution as the god's shield strikes back with its magical energy.
 
 STATISTICS:
 
@@ -6583,7 +6583,7 @@ Requires: 15 Strength
 Usable By:
  Paladin~
 @1800 = ~Ring~
-@1801 = ~De'Arnise Signet Ring~
+@1801 = ~De'Arnise Signet Ring~ // BG2: This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring may not be removed from Nalia, nor its powers used by anyone else. The ring grants a +2 bonus to all saving throws, +2 armor class bonus, and 50% resistance to fire.
 @1802 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
 @1803 = ~This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring's powers may not be used by anyone else.
 
@@ -6594,8 +6594,8 @@ Equipped Abilities:
 
 Usable By:
  Nalia~
-@1804 = ~Delryn Family Shield +2~
-@1805 = ~This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy.
+@1804 = ~Delryn Family Shield +2~ // This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy. This protection from normal missiles can be used three times per day.
+@1805 = ~This is Anomen's family shield, given to him by his father. In addition to magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, they can use the shield to erect a field of protective energy around themselves.
 
 STATISTICS:
 
@@ -6616,8 +6616,8 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1806 = ~Sword of Arvoreen +2~
-@1807 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow any opponent it strikes.
+@1806 = ~Sword of Arvoreen +2~ // BG2: Another gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
+@1807 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow and weaken any opponent struck by it.
 
 STATISTICS:
 
@@ -6639,8 +6639,8 @@ Not Usable By:
  Mage
  Beast Master~
 @1808 = ~Katana~
-@1809 = ~Yoshimo's Katana +2~ // BG2: This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
-@1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
+@1809 = ~Yoshimo's Katana +2~
+@1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
 
 STATISTICS:
 
@@ -6656,10 +6656,10 @@ Proficiency Type: Katana
 Type: One-Handed
 Requires: 6 Strength
 Usable By:
- Thief (single-class)~
+ Yoshimo~
 @1811 = ~Two-Handed Sword~
-@1812 = ~Hallowed Redeemer +2~
-@1813 = ~Keldorn distinguished himself early in his career as a paladin, and since he was ordered, this powerful sword has always been at his side. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of arcane and divine magic alike because of it's power to silence which leave them defenceless while judgement falls upon them.
+@1812 = ~Hallowed Redeemer +2~ // BG2: Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. It is exceptionally accurate, but also protects him in battle with a special Fireshield, and any that strike him while he wields it suffer Torm's wrath in the form of magical damage. None but Keldorn may use this sword.
+@1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenceless while judgement falls upon them.
 
 STATISTICS:
 
@@ -6677,7 +6677,7 @@ Type: Two-Handed
 Requires: 14 Strength
 Usable By:
  Paladin~
-@1814 = ~Corthala Family Katana +2~
+@1814 = ~Corthala Family Katana +2~ // BG2: This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins. This +2 blade causes additional bleeding damage when it strikes an opponent.
 @1815 = ~This fine katana radiates magical energy. The blade was designed to give the wielder an edge over spellcasters by disrupting their casting abilities.
 
 STATISTICS:
@@ -6701,7 +6701,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@1816 = ~Entropy +2~
+@1816 = ~Entropy +2~ // BG2: This +2 abyssal greensteel blade is one of Haer'Dalis's favorite weapons. This short sword is capable of inflicting an additional 3 points of poison damage if the target fails a Saving Throw. This blade may only be used by tieflings.
 @1817 = ~This Baatorian green steel blade is one of Haer'Dalis' favorite weapons. This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the lower planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar'ri). This metal is also known as banesteel due to the fact that weapons made of green steel strike more often and are able to penetrate armor very easily.
 
 STATISTICS:
@@ -6723,8 +6723,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@1818 = ~Chaos +2~
-@1819 = ~This Tanar'ri red steel blade is one of Haer'Dalis' favorite weapons. This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar'ri. Red steel is also known as bloodsteel. Besides being the color of fresh blood, weapons made from red steel have a tendency to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual-wielding these two blades, Haer'Dalis surely is a dangerous opponent.
+@1818 = ~Chaos +2~ // BG2: Chaos is a +2 short sword usable only by tieflings. Every time it strikes an opponent, he or she loses 2 points of Dexterity for 5 rounds. Haer'Dalis prefers using Chaos with its partner—Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
+@1819 = ~This Tanar'ri red steel blade is one of Haer'Dalis' favorite weapons. This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar'ri. Red steel is also known as bloodsteel. Besides being the color of fresh blood, weapons made from red steel have a tendency to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual-wielding these two blades, Haer'Dalis is a dangerous opponent.
 
 STATISTICS:
 
@@ -6768,7 +6768,7 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
-@1823 = ~Flasher Launcher +2~
+@1823 = ~Flasher Launcher +2~ // BG2: This is Jan Jansen's crossbow, and such is its complexity that only he can use it. Likewise, only he can make the special ammunition it is capable of firing. Substantial tinkering on this launcher has made it especially accurate.
 @1824 = ~This is Jan Jansen's crossbow, and such is its complexity that only he can use it. Likewise, only he can make the special ammunition it is capable of firing. Substantial tinkering on this launcher has made it especially accurate, and projectiles fired from this bow erupt in a flash of light that can potentially blind any opponent.
 
 STATISTICS:
