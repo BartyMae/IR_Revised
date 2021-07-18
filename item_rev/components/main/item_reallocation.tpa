@@ -490,7 +490,8 @@ END
 // Replaces Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard
 ACTION_IF (FILE_EXISTS_IN_GAME ~sarmag01.cre~) BEGIN // Errard
   COPY_EXISTING sarmag01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~clck15~ ~clck18~
+      REMOVE_CRE_ITEM ~clck15~
+      ADD_CRE_ITEM dvclck01 #0 #0 #0 NONE ARMOR
     END
     BUT_ONLY
 END

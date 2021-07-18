@@ -287,7 +287,7 @@ COPY_EXISTING ribald.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM CLCK10   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Fire Resistance
   ADD_STORE_ITEM CLCK11   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Electric Resistance
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM CLCK18   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
+    ADD_STORE_ITEM DVCLCK01   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
   END
 
   ADD_STORE_ITEM SW1H06   LAST #0 #0 #0 IDENTIFIED #1   // Varscona +2
@@ -6607,7 +6607,7 @@ COPY_EXISTING trgeni01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM PLAT02   LAST #0 #0 #0 IDENTIFIED #1   // Plate Mail +1
 
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM CLCK18   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
+    ADD_STORE_ITEM DVCLCK01   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
   END
   ADD_STORE_ITEM AMUL14   LAST #0 #0 #0 IDENTIFIED #1   // Amulet of Protection +1
 
@@ -8150,7 +8150,7 @@ COPY_EXISTING 25spell.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM CLCK10   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Fire Resistance
   ADD_STORE_ITEM CLCK11   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Electric Resistance
   PATCH_IF comp_ir=1 BEGIN
-    ADD_STORE_ITEM CLCK18   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
+    ADD_STORE_ITEM DVCLCK01   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Acid Resistance
   END
 
   ADD_STORE_ITEM CLCK15   LAST #0 #0 #0 IDENTIFIED #1   // Robe of the Good Archmagi / Robe of the Weave

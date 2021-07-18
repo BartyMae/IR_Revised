@@ -324,8 +324,26 @@ COPY ~%source%/CLOAK_OF_THE_SEWERS.tpa~ ~%target%~
 COPY ~%source%/CLOAK_OF_PROTECTION_3.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/ROBE_OF_ACID_RESISTANCE.tpa
+  ACTION_IF gorion_original_robes != 1 BEGIN
+    ACTION_FOR_EACH resource IN
+      ~gorion~
+      ~gorion3~
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+        COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+          REMOVE_CRE_ITEM ~clck18~
+          ADD_CRE_ITEM ~dvclck01~ #0 #0 #0 ~NONE~ ~ARMOR~
+        BUT_ONLY
+      END
+    END
+  END
+>>>>>>>>
+COPY ~%source%/ROBE_OF_ACID_RESISTANCE.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/SURYRISS_BLADE_2.tpa
-COPY ~item_rev/itm/halb03.spl~ ~override~ // Staggering
+  COPY ~item_rev/itm/halb03.spl~ ~override~ // Staggering
 >>>>>>>>
 COPY ~%source%/SURYRISS_BLADE_2.tpa~ ~%target%~
 

@@ -254,7 +254,6 @@ ADVENTURERS_ROBE                           ROBE     clck14   1        1        1
 ROBE_OF_THE_WEAVE                          ROBE     clck15   1        1        1        1        1        1        @1390    @1404    @1392    @1405    *        *        *        *
 ROBE_OF_THE_BATTLEMAGE                     ROBE     clck16   1        1        1        1        1        1        @1390    @1406    @1392    @1407    *        *        *        *
 ROBE_OF_ARCANE_MIGHT                       ROBE     clck17   1        1        1        1        1        1        @1390    @1408    @1392    @1409    *        *        *        *
-ROBE_OF_ACID_RESISTANCE                    ROBE     clck18   1        1        1        1        1        1        @1390    @2345    @1392    @2346    *        *        *        *
 CLOAK_OF_THE_SHIELD                        CLOAK    clck20   1        1        1        1        1        1        @1372    @1410    @1374    @1411    *        *        *        *
 CLOAK_OF_ELVENKIND                         CLOAK    clck23   1        1        0        0        1        1        @1372    @1412    @1374    @1413    *        *        *        *
 STORMLORDS_CLOAK                           CLOAK    clck24   1        1        0        1        1        1        @1372    @1414    @1374    @1415    *        *        *        *
@@ -266,6 +265,7 @@ ROBE_OF_THE_APPRENTI                       ROBE     clck29   1        1        0
 CLOAK_OF_BRAVERY                           CLOAK    clck30   1        1        0        1        1        1        @1372    @1422    @1374    @1423    *        *        *        *
 CLOAK_OF_PROTECTION_3                      CLOAK    clck31   1        1        0        1        1        1        @1372    @1424    @1374    @1425    *        *        *        *
 MONTOLIOS_CLOAK                            CLOAK    clck32   1        1        0        0        1        1        @1372    @1426    @1374    @1427    *        *        *        *
+ROBE_OF_ACID_RESISTANCE                    ROBE     dvclck01 1        1        1        1        1        1        @1390    @2345    @1392    @2346    *        *        *        *
 
 DAGGER                                     DAGGER   dagg01   1        1        1        1        1        1        @1428    @1428    @1429    @1429    *        *        *        *
 DAGGER_1                                   DAGGER   dagg02   1        1        1        1        1        1        @1428    @1430    @1431    @1432    *        *        *        *
