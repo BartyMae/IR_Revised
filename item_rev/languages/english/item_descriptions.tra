@@ -14170,7 +14170,8 @@ Usable By:
 STATISTICS:
 
 Damage: 1D6
-Damage Type: Piercing
+Damage Type (Melee): Piercing
+Damage Type (Thrown): Missile
 Weight: 5
 Speed Factor: 6
 Proficiency Type: Spear
