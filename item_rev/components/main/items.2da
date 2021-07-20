@@ -677,6 +677,7 @@ SLING_3                                    SLING    slng10   1        1        0
 SPEAR                                      SPEAR    sper01   1        1        1        1        1        1        @1505    @1505    @1988    @1988    *        *        *        *
 SPEAR_1                                    SPEAR    sper02   1        1        1        1        1        1        @1505    @1989    @1507    @1990    *        *        *        *
 BACKBITER_3                                SPEAR    sper03   1        1        1        1        1        1        @1505    @1991    @1507    @1992    *        *        *        cursed
+JAVELIN                                    SPEAR    sper04   1        1        1        1        1        1        @2617    @2617    @2618    @2618    @4052    @4051    *        *
 SPEAR_2                                    SPEAR    sper05   1        1        0        1        1        1        @1505    @1993    @1507    @1994    *        *        *        *
 SPEAR_3                                    SPEAR    sper06   1        1        0        0        1        1        @1505    @1995    @1507    @1996    *        *        *        *
 SPEAR_OF_THE_UNICORN_2                     SPEAR    sper07   1        1        0        0        1        1        @1505    @1997    @1507    @1998    *        *        *        *

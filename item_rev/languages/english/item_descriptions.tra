@@ -14164,6 +14164,24 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Mage~
+@2617 = ~Javelin~
+@2618 = ~The javelin is a type of light spear designed for throwing, usually with a narrower tip. While this makes it less resilient and powerful in close quarter combat, it can be a deadly weapon if the advantage of its range is used to its fullest extent.
+
+STATISTICS:
+
+Damage: 1D6
+Damage Type: Piercing
+Weight: 5
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-Handed
+Requires: 5 Strength
+Not Usable By:
+ Cleric
+ Mage
+ Monk
+ Thief
+ Beast Master~
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
