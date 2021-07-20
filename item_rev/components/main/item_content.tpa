@@ -325,18 +325,26 @@ COPY ~%source%/CLOAK_OF_PROTECTION_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/ROBE_OF_ACID_RESISTANCE.tpa
-  ACTION_IF gorion_original_robes != 1 BEGIN
-    ACTION_FOR_EACH resource IN
-      ~gorion~
-      ~gorion3~
-    BEGIN
-      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
-        COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
-          REMOVE_CRE_ITEM ~clck18~
-          ADD_CRE_ITEM ~dvclck01~ #0 #0 #0 ~NONE~ ~ARMOR~
-        BUT_ONLY
-      END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~brenda.cre~) BEGIN
+    COPY_EXISTING brenda.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM clck09
+      ADD_CRE_ITEM ~dvclck01~ #0 #0 #0 ~NONE~ ~ARMOR~
     END
+    BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~narcil.cre~) BEGIN
+    COPY_EXISTING narcil.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM clck12
+      ADD_CRE_ITEM ~dvclck01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    END
+    BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~william1.cre~) BEGIN
+    COPY_EXISTING william1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM clck10
+      ADD_CRE_ITEM ~dvclck01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    END
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/ROBE_OF_ACID_RESISTANCE.tpa~ ~%target%~
