@@ -729,5 +729,4 @@ END ELSE BEGIN
       ~AddexperienceParty(16250)
 GiveItemCreate("MISC3F",LastTalkedToBy,0,0,0)~
     COMPILE_D_TO_DLG
-  END BUT_ONLY
 END
