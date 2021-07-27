@@ -337,7 +337,7 @@ HALBERD_3                                  HALBERD  halb12   1        1        0
 
 WAR_HAMMER                                 HAMMER   hamm01   1        1        1        1        1        1        @1544    @1544    @1545    @1545    *        *        *        *
 WAR_HAMMER_1                               HAMMER   hamm02   1        1        1        1        1        1        @1544    @1546    @1545    @1548    *        *        *        *
-RIFT_HAMMER_2                              HAMMER   hamm03   1        1        1        1        1        1        @1544    @1549    @1545    @1550    *        *        *        *
+ASHIDEENA_2                                HAMMER   hamm03   1        1        1        1        1        1        @1544    @1549    @1545    @1550    *        *        *        *
 HAMMER_OF_CORROSION_1                      HAMMER   hamm04   1        1        1        1        1        1        @1544    @1551    @1545    @1552    *        *        *        *
 TERSYUS_2                                  HAMMER   hamm05   1        1        0        0        1        1        @1544    @1553    @1545    @1554    *        *        *        *
 DWARVEN_THROWER_2                          HAMMER   hamm06   1        1        0        0        1        1        @1544    @1555    @1545    @1556    @4052    @4051    @2504    *
@@ -350,6 +350,7 @@ CROM_FAEYR_4#A                             HAMMER   hamm09a  1        1        0
 RUNEHAMMER_4                               HAMMER   hamm10   1        1        0        0        1        1        @1544    @1563    @1545    @1564    *        *        *        *
 RUNEHAMMER_5                               HAMMER   hamm11   1        1        0        0        1        1        @1544    @1565    @1545    @1566    @1565    @4022    @4023    *
 WAR_HAMMER_3                               HAMMER   hamm12   1        1        0        0        1        1        @1544    @1567    @1545    @1568    *        *        *        *
+RIFT_HAMMER_3                              HAMMER   dvhamm01 1        1        0        0        1        1        @1544    @2619    @1545    @2620    *        *        *        *
 
 HELMET                                     HELMET   helm01   1        1        1        1        1        1        @1569    @1569    @1570    @1570    *        *        *        *
 HELM_OF_DESPAIR                            HELMET   helm02   1        1        1        1        1        1        @1569    @1571    @1572    @1573    *        *        *        cursed

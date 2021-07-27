@@ -720,15 +720,14 @@ END
 /////////////////////////////////////
 
 // Make Jade Hound Figurine the quest reward for returning the Dryad acorns - check for the Unfinished Business component first
-/*
+
 ACTION_IF (FILE_EXISTS_IN_GAME ~wwboo.spl~) BEGIN
-  END ELSE BEGIN
-    COPY_EXISTING vaelasa.dlg override
-      DECOMPILE_DLG_TO_D
-        REPLACE_TEXTUALLY CASE_INSENSITIVE ~AddexperienceParty(16250)~
-        ~AddexperienceParty(16250)
+END ELSE BEGIN
+  COPY_EXISTING vaelasa.dlg override
+    DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~AddexperienceParty(16250)~
+      ~AddexperienceParty(16250)
 GiveItemCreate("MISC3F",LastTalkedToBy,0,0,0)~
-      COMPILE_D_TO_DLG
-    END BUT_ONLY
-  END
-*/
+    COMPILE_D_TO_DLG
+  END BUT_ONLY
+END

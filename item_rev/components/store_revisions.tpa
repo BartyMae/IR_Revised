@@ -3156,10 +3156,6 @@ COPY_EXISTING uhmer03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     ADD_STORE_ITEM RING03   LAST #50 #0 #0 IDENTIFIED #1   // Ring of Animal Friendship
   END
   ADD_STORE_ITEM STAF16   LAST #0 #1 #1 IDENTIFIED #1   // Staff of Earth
-  PATCH_IF (FILE_EXISTS_IN_GAME ~wwboo.spl~) BEGIN   // The Kidnapping of Boo
-  END ELSE BEGIN
-    ADD_STORE_ITEM MISC3F   LAST #1 #0 #0 IDENTIFIED #1   // Jade Hound Figurine
-  END
   ADD_STORE_ITEM MISC97   LAST #0 #0 #0 IDENTIFIED #3   // De'Tranion's Baalor Ale
 
   ADD_STORE_ITEM SCRL56   LAST #1 #0 #0 IDENTIFIED #3   // Cure Serious Wounds
