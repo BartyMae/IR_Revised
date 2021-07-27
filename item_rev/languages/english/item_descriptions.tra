@@ -621,7 +621,7 @@ STATISTICS:
 
 Combat Abilities:
  Slashing: target suffers 1D6 slashing damage
- Knockback: target is knocked back unconscious for 1 round (save vs. death neg.)
+ Knockback: target is knocked away unconscious for 1 round (save vs. death neg.)
  Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4 bonus
@@ -4620,13 +4620,13 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1549 = ~Rift Hammer +2~ // BG1/BG2: Ashideena +2: Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
-@1550 = ~During the Time of Troubles the walls between dimensions seemed particularly thin, and many creatures normally confined to other planes walked the face of Toril. Unfamiliar items appeared as well, including several of these weapons found after portals or rifts were sighted. The true origins of the Rift Hammers have never been explained, and superstitious folk refuse even to hold them for fear they retain the taint of the lower planes.
+@1549 = ~Ashideena +2~
+@1550 = ~Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
 
 STATISTICS:
 
 Combat Abilities:
- Resonating: 15% chance target and opponents within 10' are blasted with a powerful sonic wave dealing 4D4 crushing and deafening them for 2 rounds (save vs. breath neg. deafness)
+ Shocking: target suffers 1D4 electrical damage
 
 THAC0: +2 bonus
 Damage: 1D4 + 3
@@ -11508,7 +11508,7 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Knockback: target is knocked back unconscious for 1 round (save vs. death neg.)
+ Knockback: target is knocked away unconscious for 1 round (save vs. death neg.)
  Oversized: +4 bonus to damage, -2 penalty to THAC0
 
 THAC0: +3 bonus
@@ -13762,6 +13762,9 @@ Usable By:
 
 STATISTICS:
 
+Combat Abilities:
+ Knockdown: 33% chance target is knocked unconscious for 1 round (save vs. death neg.)
+
 THAC0: +2 bonus
 Damage: 1D8 + 2
 Damage Type: Slashing
@@ -14183,6 +14186,28 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
+@2619 = ~Rift Hammer +3~
+@2620 = ~During the Time of Troubles the walls between dimensions seemed particularly thin, and many creatures normally confined to other planes walked the face of Toril. Unfamiliar items appeared as well, including several of these weapons found after portals or rifts were sighted. The true origins of the Rift Hammers have never been explained, and superstitious folk refuse even to hold them for fear they retain the taint of the lower planes.
+
+STATISTICS:
+
+Combat Abilities:
+ Resonating: 15% chance target and opponents within 10' are blasted with a powerful sonic wave dealing 4D4 crushing and deafening them for 2 rounds (save vs. breath neg. deafness)
+
+THAC0: +3 bonus
+Damage: 1D4 + 4
+Damage Type: Crushing
+Weight: 5
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-Handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
@@ -14508,8 +14533,8 @@ STATISTICS:
 *CURSED*
 
 Equipped Abilities:
- Strength: +3 bonus
- Intelligence: -3 penalty
+ Strength: +2 bonus
+ Intelligence: -4 penalty
 
 Weight: 1
 Not Usable By:
@@ -14671,7 +14696,7 @@ Equipped Abilities:
  Spell: Non-Detection
 
 Combat Abilities:
- Knockback: 33% chance creatures struck by the wielder in melee are knocked away from the wielder
+ Knockback: 33% chance target is knocked away unconscious for 1 round (save vs. death neg.)
 
 THAC0: +1 bonus
 Damage: 1D4 + 2
