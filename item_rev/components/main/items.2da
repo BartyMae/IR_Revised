@@ -578,7 +578,7 @@ RING_OF_CLUMSINESS                         RING     ring04   1        1        1
 RING_OF_INVISIBILITY                       RING     ring05   1        1        1        1        1        1        @1800    @1867    @1802    @1868    @4035    *        *        *
 RING_OF_PROTECTION_1                       RING     ring06   1        1        1        1        1        1        @1800    @1869    @1802    @1870    *        *        *        *
 RING_OF_PROTECTION_2                       RING     ring07   1        1        1        1        1        1        @1800    @1871    @1802    @1872    *        *        *        *
-RING_OF_WIZARDRY                           RING     ring08   1        1        0        0        1        1        @1800    @1873    @1802    @1874    *        *        *        *
+RING_OF_WIZARDRY                           RING     ring08   1        1        1        1        1        1        @1800    @1873    @1802    @1874    *        *        *        *
 RING_OF_FREE_ACTION                        RING     ring09   1        1        1        1        1        1        @1800    @1875    @1802    @1876    *        *        *        *
 RING_OF_ENERGY                             RING     ring20   1        1        1        1        1        1        @1800    @1877    @1802    @1878    *        *        *        *
 RING_OF_NIGHTS_EMBRACE                     RING     ring21   1        1        1        1        1        1        @1800    @1879    @1802    @1880    *        *        *        *
