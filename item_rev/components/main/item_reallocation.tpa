@@ -609,7 +609,8 @@ ACTION_FOR_EACH resource IN
   ~c6arkan~
   ~c6arkan3~
   ~marek~
-  ~vaelasa~
+  ~marek1~
+  // ~vaelasa~
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
     COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
@@ -834,16 +835,6 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   END
 END
 
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4800.are~) BEGIN // Nashkel (BG1)
-    COPY_EXISTING ~ar4800.are~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
-    END
-    BUT_ONLY
-  END
-END
-
 ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee~) BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~bg4800.are~) BEGIN // Nashkel (EET)
     COPY_EXISTING ~bg4800.are~ ~override~
@@ -896,17 +887,6 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
       LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
     END
     BUT_ONLY
-END
-END
-
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BGEE
-ACTION_IF (FILE_EXISTS_IN_GAME ~sendai.cre~) BEGIN
-  COPY_EXISTING sendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~leat07~
-    REMOVE_CRE_ITEM ~leat07_~
-    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
-  END
-  BUT_ONLY
 END
 END
 
