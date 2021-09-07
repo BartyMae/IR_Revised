@@ -320,7 +320,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~d1shld01~ => 4 // The Argent Shield
   ~d2#run18~ => 4 // Spirit
   ~d2#shie1~ => 4 // Stormshield
-  ~d2#shie3~ => 4 // Herald Of Zakarum
+  ~d2#shie3~ => 4 // Herald of Zakarum
   ~darshld~  => 4 // Large Shield +3
   ~deitm122~ => 4
   ~depo164~  => 4 // Head Hunter's Glory
