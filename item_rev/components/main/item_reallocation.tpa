@@ -560,14 +560,16 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
     BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
-  COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~ax1h03~
-	REMOVE_CRE_ITEM ~ax1h03_~
-    REMOVE_CRE_ITEM ~ax1h11~
-    ADD_CRE_ITEM ~ax1h03_~ #0 #0 #0 NONE WEAPON1 EQUIP
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
+    COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM ~ax1h03~
+	  REMOVE_CRE_ITEM ~ax1h03_~
+      REMOVE_CRE_ITEM ~ax1h11~
+      ADD_CRE_ITEM ~ax1h03_~ #0 #0 #0 NONE WEAPON1 EQUIP
+    END
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
 // Replace bad copies of Flail
@@ -640,17 +642,19 @@ BEGIN
   END
 END
 
-ACTION_FOR_EACH resource IN
-  ~tamoko~
-  ~tamoko2~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
-    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
-      REMOVE_CRE_ITEM ~plat05~
-      REMOVE_CRE_ITEM ~plat05_~
-      REMOVE_CRE_ITEM ~plat14~
-      ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
-    BUT_ONLY
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~tamoko~
+    ~tamoko2~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+      COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~
+        REMOVE_CRE_ITEM ~plat05~
+        REMOVE_CRE_ITEM ~plat05_~
+        REMOVE_CRE_ITEM ~plat14~
+        ADD_CRE_ITEM ~plat05_~ #0 #0 #0 NONE ARMOR
+      BUT_ONLY
+    END
   END
 END
 
@@ -740,15 +744,17 @@ BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargal in BG1
-  COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~sw1h09~
-    REMOVE_CRE_ITEM ~sw1h09_~
-    REMOVE_CRE_ITEM ~sw1h14~
-	REMOVE_CRE_ITEM ~sw1h29~
-    ADD_CRE_ITEM ~sw1h09_~ #0 #0 #0 NONE WEAPON1 EQUIP
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargal in BG1
+    COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM ~sw1h09~
+      REMOVE_CRE_ITEM ~sw1h09_~
+      REMOVE_CRE_ITEM ~sw1h14~
+	  REMOVE_CRE_ITEM ~sw1h29~
+      ADD_CRE_ITEM ~sw1h09_~ #0 #0 #0 NONE WEAPON1 EQUIP
+    END
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -756,25 +762,27 @@ END
 // Various fixes
 
 // Place Telbar's Armor +2 on Sendai in BG1
-ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
-ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
-  COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~leat07~
-    REMOVE_CRE_ITEM ~leat07_~
-    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~bgsendai.cre~) BEGIN
+    COPY_EXISTING bgsendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM ~leat07~
+      REMOVE_CRE_ITEM ~leat07_~
+      ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+    END
+    BUT_ONLY
   END
-  BUT_ONLY
-END
 END
 
 // Place Fallorain's Plate +1 on Genthore in BG1
-ACTION_IF (FILE_EXISTS_IN_GAME ~gentho.cre~) BEGIN // Genthore
-  COPY_EXISTING gentho.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~plat02~
-    REMOVE_CRE_ITEM ~plat02_~
-    ADD_CRE_ITEM ~plat02_~ #0 #0 #0 NONE ARMOR
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~gentho.cre~) BEGIN // Genthore
+    COPY_EXISTING gentho.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM ~plat02~
+      REMOVE_CRE_ITEM ~plat02_~
+      ADD_CRE_ITEM ~plat02_~ #0 #0 #0 NONE ARMOR
+    END
+    BUT_ONLY
   END
-  BUT_ONLY
 END
 
 // Place both Ring of Sorcery and Ring of Wizardry in BG1
@@ -845,13 +853,15 @@ ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~taerom.dlg~) BEGIN
-  COPY_EXISTING taerom.dlg override
-    DECOMPILE_DLG_TO_D
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06_~ ~plat06~
-      REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06~ ~plat06_~
-    COMPILE_D_TO_DLG
-  BUT_ONLY
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~taerom.dlg~) BEGIN
+    COPY_EXISTING taerom.dlg override
+      DECOMPILE_DLG_TO_D
+        REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06_~ ~plat06~
+        REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06~ ~plat06_~
+      COMPILE_D_TO_DLG
+    BUT_ONLY
+  END
 END
 
 // Elminster fixes
@@ -881,24 +891,24 @@ END
 
 // Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
 ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
-ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
-  COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
-    END
-    BUT_ONLY
-END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
+    COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
+      END
+      BUT_ONLY
+  END
 END
 
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
-ACTION_IF (FILE_EXISTS_IN_GAME ~sendai_.cre~) BEGIN
-  COPY_EXISTING sendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-    REMOVE_CRE_ITEM ~leat07~
-    REMOVE_CRE_ITEM ~leat07_~
-    ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+  ACTION_IF (FILE_EXISTS_IN_GAME ~sendai_.cre~) BEGIN
+    COPY_EXISTING sendai_.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM ~leat07~
+      REMOVE_CRE_ITEM ~leat07_~
+      ADD_CRE_ITEM ~leat07_~ #0 #0 #0 NONE ARMOR
+    END
+    BUT_ONLY
   END
-  BUT_ONLY
-END
 END
 
 // Replace Spellhold's bad copy of Ray of Enfeeblement with good copy

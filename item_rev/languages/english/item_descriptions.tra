@@ -11222,7 +11222,7 @@ Usable By:
  Bard
  Mage~
 @2249 = ~Wand of Frost~
-@2250 = ~A Wand of Frost acts in a similar fashion to the Cone of Cold spell. Crystallized particles of snow and ice fan out from the wand's tip, defining an area wherein the temperature drops to -100 degrees F. When used, white crystalline motes spray forth from the wand in a column towards the victim, striking him or her square in the chest with numbing force. The temperature inside the column is deadly, and deals 6D4 + 6 cold damage. A successful save vs. wand at a -2 penalty reduces the damage by half.
+@2250 = ~A Wand of Frost acts in a similar fashion to the Cone of Cold spell. Crystallized particles of snow and ice fan out from the wand's tip, defining an area wherein the temperature drops to -100 degrees F. When used, white crystalline motes spray forth from the wand in a column towards the victim, striking him or her square in the chest with numbing force. The temperature inside the column is deadly, and deals 6D4 + 6 cold damage. A successful save vs. wand at a -4 penalty reduces the damage by half.
 
 Like all wands, the Wand of Frost can only be used a limited number of times before it is expended. Once these have been used, it melts into a harmless pool of water.
 
