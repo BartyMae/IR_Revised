@@ -282,6 +282,10 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
     SAY NAME1 @2066    SAY NAME2 @2581
     SAY UNIDENTIFIED_DESC @2069 SAY IDENTIFIED_DESC @2582
     LPF update_item_descriptions_to_bgee END
+  ADD_PROJECTILE ~item_rev/itm/sw1h09.pro~
+  COPY ~item_rev/itm/sw1h09.spl~ ~override~
+    WRITE_SHORT 0x98 %sw1h09%
+  COPY ~item_rev/itm/sw1h09.eff~ ~override~
 END
 
 
