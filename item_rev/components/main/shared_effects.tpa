@@ -355,7 +355,7 @@ COPY ~item_rev/itm/dvcharmp.eff~ ~override~
 COPY ~item_rev/itm/dvcharmp.spl~ ~override~
 
 COPY ~item_rev/itm/dvdchar.spl~ ~override~ // Dire Charm
-  SAY NAME1 @4030
+  SAY NAME1 @4031
 COPY ~item_rev/itm/dvdchar.eff~ ~override~
 COPY ~item_rev/itm/dvdchari.eff~ ~override~
 COPY ~item_rev/itm/dvdchari.spl~ ~override~
@@ -394,7 +394,7 @@ COPY ~item_rev/itm/dvpetri.eff~ ~override~
 COPY ~item_rev/itm/dvpetri2.spl~ ~override~
 
 COPY ~item_rev/itm/dvstones.spl~ ~override~ // Stoneskin
-  SAY NAME1 @4008
+  SAY NAME1 @4041
 
 COPY ~item_rev/itm/dvterri.spl~ ~override~ // Terrify
   SAY NAME1 @4048
