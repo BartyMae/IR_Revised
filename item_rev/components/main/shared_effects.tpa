@@ -346,13 +346,21 @@ COPY ~item_rev/itm/dvwebb.eff~ ~override~
 
 /*----------------Item Special Abilities----------------*/
 
-COPY ~item_rev/itm/dvcharmp.spl~ ~override~ // Charm Person
+COPY ~item_rev/itm/dvcharm.spl~ ~override~ // Charm Person
   SAY NAME1 @4017
+COPY ~item_rev/itm/dvcharm.eff~ ~override~
+COPY ~item_rev/itm/dvcharmi.eff~ ~override~
+COPY ~item_rev/itm/dvcharmi.spl~ ~override~
 COPY ~item_rev/itm/dvcharmp.eff~ ~override~
+COPY ~item_rev/itm/dvcharmp.spl~ ~override~
 
-COPY ~item_rev/itm/dvdcharm.spl~ ~override~ // Dire Charm
+COPY ~item_rev/itm/dvdchar.spl~ ~override~ // Dire Charm
   SAY NAME1 @4030
+COPY ~item_rev/itm/dvdchar.eff~ ~override~
+COPY ~item_rev/itm/dvdchari.eff~ ~override~
+COPY ~item_rev/itm/dvdchari.spl~ ~override~
 COPY ~item_rev/itm/dvdcharm.eff~ ~override~
+COPY ~item_rev/itm/dvdcharm.spl~ ~override~
 
 COPY ~item_rev/itm/dvdlifea.spl~ ~override~ // Drain Life
   SAY NAME1 @4050
