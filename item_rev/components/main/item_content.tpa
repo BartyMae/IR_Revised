@@ -85,6 +85,13 @@ COPY ~%source%/AMULET_OF_SPELL_WARDING.tpa~ ~%target%~
 COPY ~%source%/AMULET_OF_CHEETAH_SPEED.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/AMULET_OF_PROTECTION_2.tpa
+  COPY_EXISTING ~itemexcl.2da~ ~override~
+    APPEND ~itemexcl.2da~ ~DVAMUL01   1          ~
+>>>>>>>>
+COPY ~%source%/AMULET_OF_PROTECTION_2.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/ARROW_OF_DETONATION.tpa
   ADD_PROJECTILE ~item_rev/itm/arowex.pro~
   COPY_EXISTING ~%ARROW_OF_DETONATION%.itm~ ~override~
@@ -320,6 +327,8 @@ COPY ~%source%/CLOAK_OF_THE_SEWERS.tpa~ ~%target%~
     STRING_SET ~66933~ @207
     STRING_SET ~66934~ @208
   END
+  COPY_EXISTING ~itemexcl.2da~ ~override~
+    APPEND ~itemexcl.2da~ ~CLCK31     1          ~
 >>>>>>>>
 COPY ~%source%/CLOAK_OF_PROTECTION_3.tpa~ ~%target%~
 
@@ -818,6 +827,13 @@ COPY ~%source%/RING_OF_AIR_CONTROL.tpa~ ~%target%~
 COPY ~%source%/RING_OF_EARTH_CONTROL.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/RING_OF_PROTECTION_3.tpa
+  COPY_EXISTING ~itemexcl.2da~ ~override~
+    APPEND ~itemexcl.2da~ ~RING41     1          ~
+>>>>>>>>
+COPY ~%source%/RING_OF_PROTECTION_3.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/RING_OF_THE_RAM.tpa
   // Cespenar's dialogue
   ACTION_IF (FILE_EXISTS_IN_GAME ~botsmith.dlg~) BEGIN
@@ -1088,7 +1104,7 @@ COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_THE_WOODLANDS_4.tpa
-  COPY ~item_rev/itm/staf14.spl~ ~override~ // Animal Empaty
+  COPY ~item_rev/itm/staf14.spl~ ~override~ // Animal Empathy
   COPY ~item_rev/itm/staf14.eff~ ~override~
 
   COPY ~item_rev/itm/staf14a.spl~ ~override~ // Barkskin
