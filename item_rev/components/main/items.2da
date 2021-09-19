@@ -5,7 +5,7 @@ AMULET_OF_HEALTH                           AMULET   amul01   1        1        1
 AMULET_OF_PROTECTION_1                     AMULET   amul14   1        1        1        1        1        1        @1000    @1001    @1002    @1003    *        *        *        *
 SHIELD_AMULET                              AMULET   amul15   1        1        1        1        1        1        @1000    @1004    @1002    @1005    *        *        *        *
 AMULET_OF_METASPELL_INFLUENCE              AMULET   amul16   1        1        1        1        1        1        @1000    @1006    @1002    @1007    *        *        *        *
-GREENSTONE_AMULET                          AMULET   amul17   1        1        1        1        1        1        @1000    @1008    @1002    @1009    @4000    *        *        *
+GREENSTONE_AMULET                          AMULET   amul17   1        1        1        1        1        1        @1000    @1008    @1002    @1009    *        *        *        *
 SILVER_CHARM                               AMULET   amul18   1        1        1        1        1        1        @1000    @1010    @1002    @1011    *        *        *        *
 AMULET_OF_ENERGY_SHIELDING                 AMULET   amul19   1        1        0        0        1        1        @1000    @1012    @1002    @1013    *        *        *        *
 KALIGUNS_AMULET_OF_MAGIC_RESISTANCE        AMULET   amul20   1        1        0        0        1        1        @1000    @1014    @1002    @1015    @4001    *        *        *

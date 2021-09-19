@@ -1,0 +1,2442 @@
+// Projectiles fixes
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow01.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW01.ITM~) BEGIN
+  COPY_EXISTING ~AROW01.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROWHVY") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow01%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow02.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW02.ITM~) BEGIN
+  COPY_EXISTING ~AROW02.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROWHVY") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow02%~
+          END
+      PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow02%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~quiver01.ITM~) BEGIN
+  COPY_EXISTING ~quiver01.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROWHVY") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow02%~
+          END
+      PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow02%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow03.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW03.ITM~) BEGIN
+  COPY_EXISTING ~AROW03.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow03%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow04.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW04.ITM~) BEGIN
+  COPY_EXISTING ~AROW04.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow04%~
+          END
+      PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROWFLG") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow04%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow05.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW05.ITM~) BEGIN
+  COPY_EXISTING ~AROW05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow05%~
+          END
+      PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROWHVY") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow07.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW07.ITM~) BEGIN
+  COPY_EXISTING ~AROW07.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow07%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow10.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW10.ITM~) BEGIN
+  COPY_EXISTING ~AROW10.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow10%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow11.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW11.ITM~) BEGIN
+  COPY_EXISTING ~AROW11.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow11%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1arow15.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AROW15.ITM~) BEGIN
+  COPY_EXISTING ~AROW15.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow15%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~quiver03.ITM~) BEGIN
+  COPY_EXISTING ~quiver03.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow15%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe05.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H05.ITM~) BEGIN
+  COPY_EXISTING ~AX1H05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H05B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~AX1H05B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H06.ITM~) BEGIN
+  COPY_EXISTING ~AX1H06.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H06B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~AX1H06B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe08.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H08.ITM~) BEGIN
+  COPY_EXISTING ~AX1H08.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe08%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H08B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~AX1H08B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe08%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe09.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H09.ITM~) BEGIN
+  COPY_EXISTING ~AX1H09.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe09%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H09B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~AX1H09B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe09%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe10.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H10.ITM~) BEGIN
+  COPY_EXISTING ~AX1H10.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe10%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H10B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~AX1H10B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe10%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1axe16.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H16.ITM~) BEGIN
+  COPY_EXISTING ~AX1H16.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe16%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~AX1H16B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~AX1H16B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1axe16%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt01.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT01.ITM~) BEGIN
+  COPY_EXISTING ~BOLT01.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt01%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 27  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt02.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT02.ITM~) BEGIN
+  COPY_EXISTING ~BOLT02.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt02%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 90  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~quiver02.ITM~) BEGIN
+  COPY_EXISTING ~quiver02.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt02%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 90  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt03.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT03.ITM~) BEGIN
+  COPY_EXISTING ~BOLT03.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt03%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 218  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt04.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT04.ITM~) BEGIN
+  COPY_EXISTING ~BOLT04.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt04%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 252  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt05.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT05.ITM~) BEGIN
+  COPY_EXISTING ~BOLT05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt05%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 86  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt06.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT06.ITM~) BEGIN
+  COPY_EXISTING ~BOLT06.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt06%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 81  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT08.ITM~) BEGIN
+  COPY_EXISTING ~BOLT08.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 208  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bolt09.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BOLT09.ITM~) BEGIN
+  COPY_EXISTING ~BOLT09.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt09%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 227  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~quiver04.ITM~) BEGIN
+  COPY_EXISTING ~quiver04.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt09%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 227  // colour index
+    SET location = wpink    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BULL01.ITM~) BEGIN
+  COPY_EXISTING ~BULL01.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 27  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull02.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BULL02.ITM~) BEGIN
+  COPY_EXISTING ~BULL02.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull02%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 218  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~quiver05.ITM~) BEGIN
+  COPY_EXISTING ~quiver05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull02%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 218  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull03.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BULL03.ITM~) BEGIN
+  COPY_EXISTING ~BULL03.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull03%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 70  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull04.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BULL04.ITM~) BEGIN
+  COPY_EXISTING ~BULL04.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull04%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 115  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull05.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BULL05.ITM~) BEGIN
+  COPY_EXISTING ~BULL05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull05%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 148  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~quiver06.ITM~) BEGIN
+  COPY_EXISTING ~quiver06.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull05%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 148  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1bull06.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BULL06.ITM~) BEGIN
+  COPY_EXISTING ~BULL06.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull06%~
+          END
+        END
+      END
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 19  // colour index
+    SET location = wgrey    // location
+    LAUNCH_PATCH_MACRO ~colour~
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg05.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG05.ITM~) BEGIN
+  COPY_EXISTING ~DAGG05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG05B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~DAGG05B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg11.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG11.ITM~) BEGIN
+  COPY_EXISTING ~DAGG11.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg11%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG11B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~DAGG11.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg11%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg12.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG12.ITM~) BEGIN
+  COPY_EXISTING ~DAGG12.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg12%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG12B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~DAGG12B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg12%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dagg16.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG16.ITM~) BEGIN
+  COPY_EXISTING ~DAGG16.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg16%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DAGG16B.ITM~) BEGIN // IR fix
+  COPY_EXISTING ~DAGG16B.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DAGGER") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dagg16%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart01.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DART01.ITM~) BEGIN
+  COPY_EXISTING ~DART01.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart01%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart02.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DART02.ITM~) BEGIN
+  COPY_EXISTING ~DART02.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart02%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart03.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DART03.ITM~) BEGIN
+  COPY_EXISTING ~DART03.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart03%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart04.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DART04.ITM~) BEGIN
+  COPY_EXISTING ~DART04.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart04%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart05.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DART05.ITM~) BEGIN
+  COPY_EXISTING ~DART05.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart05%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/1dart08.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~DART08.ITM~) BEGIN
+  COPY_EXISTING ~DART08.ITM~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart08%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ohdart50.itm~) BEGIN
+  COPY_EXISTING ~ohdart50.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart02%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ohdart51.itm~) BEGIN
+  COPY_EXISTING ~ohdart51.itm~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+      READ_LONG  0x64 "abil_off" ELSE 0
+      READ_SHORT 0x68 "abil_num" ELSE 0
+      PATCH_IF (abil_off > 0x71) BEGIN
+        FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+          READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+          LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+          PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+            WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart02%~
+          END
+        END
+      END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+// EE projectile fixes
+
+ACTION_FOR_EACH resource IN
+  ~brac18~   // Gloves of Missile Snaring
+  ~shld24~   // Reflection Shield
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = 55 // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow01% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow07% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow10% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow11% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow15% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe08% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe09% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe10% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe16% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt01% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt06% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt09% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull06% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg11% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg12% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg16% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart01% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart02% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart03% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart04% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart05% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart08% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END	BUT_ONLY_IF_IT_CHANGES
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) BEGIN // SR check
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) BEGIN // Delryn Family Shield
+COPY_EXISTING ~npshld.spl~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = 55 // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow01% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow07% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow10% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow11% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow15% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe08% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe09% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe10% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe16% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt01% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt06% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt09% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull06% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg11% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg12% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg16% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart01% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart08% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+END
+BUT_ONLY_IF_IT_CHANGES
+END
+END

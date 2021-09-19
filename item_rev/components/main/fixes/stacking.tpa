@@ -1,0 +1,84 @@
+// Stacking fixes
+
+ACTION_FOR_EACH resource IN // Rings and Gems
+  ~misc6o~   // Sun Gem
+  ~misc6n~   // Sun Gem
+  ~ringjoia~ // Joia's Flamedance Ring
+  ~ringjos~  // Joseph's Greenstone Ring
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      SET opcode = 0      // Set opcode
+      SET target = 0      // target type
+      SET timing = 2      // timing type
+      SET power = 0      // power
+      SET resist_dispel = 0  // dispel/resitance
+      SET duration = 0    // duration
+      SET probability1 = 0  // probability 1
+      SET probability2 = 0  // probability 2
+      SPRINT "resource" ""     // resource
+      SET dicenumber = 0    // dice number
+      SET dicesize = 0    // dice size
+      SET savingthrow = 0   // saving throw
+      SET savebonus = 0    // saving throw bonus
+      SET parameter1 = 0 // set parameter 1
+      SET parameter2 = 0 // set parameter 2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END
+  END
+END
+
+ACTION_FOR_EACH resource IN // Scrolls
+  ~bgscrl3i~ // Mirianne's Scroll
+  ~scrl2j~   // Gorion's Letter
+  ~scrl2k~   // Slythe's Letter
+  ~scrl2l~   // Sarevok's Letter
+  ~scrl2m~   // Sarevok's Letter
+  ~scrl2n~   // Prat's Letter
+  ~scrl2o~   // Shalak's Letter
+  ~scrl2p~   // Shalak's Letter
+  ~scrl2q~   // Shalak's Letter
+  ~scrl2r~   // Kizska's Letter
+  ~scrl2s~   // Davaeorn's Letter
+  ~scrl2t~   // Davaeorn's Letter
+  ~scrl2u~   // Davaeorn's Letter
+  ~scrl2v~   // Mulhaney's Letter
+  ~scrl2w~   // Mulhaney's Letter
+  ~scrl2x~   // Tranzig's Letter
+  ~scrl2y~   // Tazok's Letter
+  ~scrl2z~   // Tazok's Letter
+  ~scrl3a~   // Rieltar's Letter
+  ~scrl3b~   // Nimbul's Letter
+  ~scrl3c~   // Rieltar's Letter
+  ~scrl3d~   // Alaundo's Letter
+  ~scrl3e~   // Alaundo's Letter
+  ~scrl3f~   // The Diary of Sarevok
+  ~scrl3i~   // Mirianne's Scroll
+  ~scrl3z~   // Gorion's Scroll
+  ~scrl5r~   // Andris' Journal
+  ~scrl5s~   // Dezkiel's Scroll
+  ~scrla9~   // Dradeel's Scroll
+  ~scrlaa~   // Dradeel's Scroll
+  ~scrlab~   // Dradeel's Recipe Page
+  ~scrlac~   // Dradeel's Recipe Page
+  ~scrlad~   // Dradeel's Recipe Page
+  ~scrladj~  // Firkraag's Note
+  ~scrlauto~ // Autograph
+  ~scrldra~  // Drasus's Scroll
+  ~scrlhp~   // Harpers' Note
+  ~scrlick~  // Illithid Correspondence
+  ~scrlkar~  // Karlat's Bounty Notice
+  ~scrlmz~   // A Note from Mazzy Fentan
+  ~scrlnei~  // Neira's Bounty Notice
+  ~scrltar~  // Tarnesh's Bounty Notice
+  ~scrlvail~ // Vail's or Quenash's Letter?
+  ~scrlzha~  // Unknown Scroll?
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      WRITE_BYTE 0x1c 0x25
+    END
+  END
+END

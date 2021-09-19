@@ -1,0 +1,128 @@
+/*----------------EE Sanctuary/Invisibility Flag Fix-----------------*/
+
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+  ACTION_FOR_EACH resource IN // Extended header #1
+    ~boot09~ // Boots of the Shifting Sand (1)
+    ~chan10~ // Prismatic Chain (1)
+    ~clck07~ // Nymph Cloak (1)
+    ~clck08~ // Algernon's Cloak (1)
+    ~helm17~ // Skull of Death (1)
+    ~helm30~ // Master Thief's Hood (1)
+    ~helm32~ // Horned Helm of the Rock (1)
+    ~helm16~ // Helm of Brilliance (1/2/3)
+    ~leat18~ // Armor of the Viper (1)
+    ~regisamu~ // Ruby Pendant of Beguiling (1)
+    ~misc3a~ // Book of Infinite Spells (1)
+    ~misc3a0~ // Book of Infinite Spells (1)
+    ~misc3a1~ // Book of Infinite Spells (1)
+    ~misc3a2~ // Book of Infinite Spells (1)
+    ~misc3a3~ // Book of Infinite Spells (1)
+    ~misc3a4~ // Book of Infinite Spells (1)
+    ~misc3a5~ // Book of Infinite Spells (1)
+    ~misc3a6~ // Book of Infinite Spells (1)
+    ~misc3a7~ // Book of Infinite Spells (1)
+    ~misc3a8~ // Book of Infinite Spells (1)
+    ~misc3a9~ // Book of Infinite Spells (1)
+    ~misc3a10~ // Book of Infinite Spells (1)
+    ~misc3a11~ // Book of Infinite Spells (1)
+    ~misc3a12~ // Book of Infinite Spells (1)
+    ~misc3a13~ // Book of Infinite Spells (1)
+    ~misc3a14~ // Book of Infinite Spells (1)
+    ~misc3a15~ // Book of Infinite Spells (1)
+    ~misc3a16~ // Book of Infinite Spells (1)
+    ~misc3a17~ // Book of Infinite Spells (1)
+    ~misc3a18~ // Book of Infinite Spells (1)
+    ~misc3a19~ // Book of Infinite Spells (1)
+    ~npmisc1~ // Jansen Spectroscopes (1)
+    ~vicarm~ // Shar's Blessing (1)
+    ~ring26~ // Ring of Djinni Summoning (1)
+    ~ring30~ // Ring of Human Influence (1)
+    ~ring33~ // Ring of the Ram (1)
+    ~ring39~ // Ring of Gaxx (1)
+    ~wand02~ // Wand of Fear (1)
+    ~wand03~ // Wand of Magic Missiles (1)
+    ~wand04~ // Wand of Paralyzation (1)
+    ~wand05~ // Wand of Fire (1)
+    ~wand06~ // Wand of Frost (1)
+    ~wand07~ // Wand of Lightning (1)
+    ~wand08~ // Wand of Sleep (1)
+    ~wand09~ // Wand of Polymorphing (1)
+    ~wand10~ // Wand of Monster Summoning (1)
+    ~wand11~ // Rod of the Heavens (1)
+    ~wand12~ // Rod of Wonder (1)
+    ~wand13~ // Wand of Cloudkill (1)
+    ~wand14~ // Web Sack (1)
+    ~wand15~ // Rod of the Apprenti (1/2/3)
+    ~wand18~ // Wand of Spell Striking (1/2)
+    ~wand19~ // Wand of Cursing (1)
+    ~wa2helm~ // Shadow Veil (1)
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_BYTE 0x99 flags
+        WRITE_BYTE 0x99 (%flags% BOR 0b00000010) // Add invisibility/sanctuary-breaking flag
+      END
+    END
+  END
+  ACTION_FOR_EACH resource IN // Extended header #2
+    ~// bow20~ // Darkfire Bow +4 (2)
+    ~// bow21~ // Darkfire Bow +5 (2)
+    ~helm16~ // Helm of Brilliance (1/2/3)
+    ~ring27~ // Ring of Fire Control (2)
+    ~ring28~ // Ring of Air Control (2)
+    ~ring29~ // Ring of Earth Control (2)
+    ~staf09~ // Staff of Command (2)
+    ~staf11~ // Staff of the Magi (2)
+    ~staf13~ // Staff of Thunder and Lightning (2/3)
+    ~staf15~ // Staff of Air (2)
+    ~staf16~ // Staff of Earth (2)
+    ~staf17~ // Staff of Fire (2)
+    ~staf20~ // Staff of Rhynn (2)
+    ~sw1h31~ // Daystar (2)
+    ~sw1h33~ // Ras (2)
+    ~sw1h33a~ // Ras (2)
+    ~sw1h51~ // Celstial Fury (2/3)
+    ~sw1h68~ // Spectral Brand (2)
+    ~sw1h69~ // Spectral Brand (2/3)
+    ~sw2h10~ // Carsomyr (2)
+    ~sw2h19~ // Carsomyr (2)
+    ~wand15~ // Rod of the Apprenti (1/2/3)
+    ~wand18~ // Wand of Spell Striking (1/2)
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_BYTE 0xd1 flags
+        WRITE_BYTE 0xd1 (%flags% BOR 0b00000010) // Add invisibility/sanctuary-breaking flag
+      END
+    END
+  END
+  ACTION_FOR_EACH resource IN // Extended header #3
+    ~helm16~ // Helm of Brilliance (1/2/3)
+    ~staf12~ // Staff of Power (3)
+    ~staf13~ // Staff of Thunder and Lightning (2/3)
+    ~sw1h51~ // Celstial Fury (2/3)
+    ~sw1h69~ // Spectral Brand (2/3)
+    ~wand15~ // Rod of the Apprenti (1/2/3)
+    ~staf14~ // Staff of the Woodlands (3)
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_BYTE 0x109 flags
+        WRITE_BYTE 0x109 (%flags% BOR 0b00000010) // Add invisibility/sanctuary-breaking flag
+      END
+    END
+  END
+END
+
+
+/*
+    ~rods02~ // Rod of Lordly Might (?)
+    ~rods02a~ // Rod of Lordly Might (?)
+    ~rodmace~ // Rod of Lordly Might (?)
+    ~rodsword~ // Rod of Lordly Might (?)
+    ~rodaxe~ // Rod of Lordly Might (?)
+    ~rodspear~ // Rod of Lordly Might (? note that the spear can be thrown!)
+*/
