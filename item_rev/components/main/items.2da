@@ -429,7 +429,7 @@ RUBY_PENDANT_OF_BEGUILING                  AMULET   regisamu 1        1        0
 
 GREAGANS_HARP                              *        misc2p   1        1        1        1        1        1        @1724    @2443    @1726    @2444    *        *        *        *
 BOOK_OF_INFINITE_SPELLS                    *        misc3a   1        1        0        0        1        1        @1689    @1689    @1690    @1691    *        *        *        *
-BOOK_OF_INFINITE_SPELLS#0                  *        misc3a0  1        1        0        0        1        1        @1689    @1689    @1690    @1691    @4111    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#0                  *        misc3aa  1        1        0        0        1        1        @1689    @1689    @1690    @1691    @4111    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#1                  *        misc3a1  1        1        0        0        1        1        @1689    @1689    @1690    @1692    @4112    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#2                  *        misc3a2  1        1        0        0        1        1        @1689    @1689    @1690    @1693    @4113    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#3                  *        misc3a3  1        1        0        0        1        1        @1689    @1689    @1690    @1694    @4114    @4110    *        *
