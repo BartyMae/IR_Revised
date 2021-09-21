@@ -4478,6 +4478,8 @@ Equipped abilities:
  - Fire Resistance: -25% penalty
  - Acid Resistance: -25% penalty
 
+Weight: 0
+
 ~
 @1600 = ~Dusty Rose Ioun Stone~
 @1601 = ~This ioun stone glows with a dusty rose hue, hinting at calming images and sensations. While pleasing, it does not appear to enhance the basic protection enchantment upon it.
@@ -4497,6 +4499,8 @@ Equipped abilities:
  - THAC0: +1 bonus
  - Maximum Hit Points: +10% bonus
 
+Weight: 0
+
 ~
 @1604 = ~Red Dragonscale Helm~ // BG2: Dragon Helm: The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
 @1605 = ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. The overlapping red scales protects the wearer from normal blows as well as fire damage, and donning the helmet also grants immunity to magical sleep and unconsciousness, though it is hard to determine whether these benefits originate within the scales or the spells of the mage.
@@ -4511,6 +4515,8 @@ Equipped abilities:
 
 Weight: 3
 
+Weight: 0
+
 ~
 @1606 = ~Golden Ioun Stone~ // BG2: Highly sought out by wizards and mages, this ioun stone raises the intelligence of those who possess it.
 @1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of their spells. Considered 'cheating' by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
@@ -4520,6 +4526,8 @@ STATISTICS:
 Equipped abilities:
  - Saving Throws: +3 bonus vs. spell
  - Intelligence: +1 bonus
+
+Weight: 0
 
 ~
 @1608 = ~Obsidian Ioun Stone~ // BG2: The tough obsidian stone imbues its owner with a similar hardiness.
@@ -4531,6 +4539,8 @@ Equipped abilities:
  - Saving Throws: +3 bonus vs. death
  - Constitution: +1 bonus
 
+Weight: 0
+
 ~
 @1610 = ~Silver Ioun Stone~ // BG2: Perhaps the silver and gray in this stone hints at the knowledge that only comes with age and experience.
 @1611 = ~Perhaps the silver and grey in this stone hint at the knowledge that only comes with age and experience. These items improve perception and insight, and are often used as meditative tools by high-ranking clergy of a faith.
@@ -4540,6 +4550,8 @@ STATISTICS:
 Equipped abilities:
  - Saving Throws: +3 bonus vs. polymorph
  - Wisdom: +1 bonus
+
+Weight: 0
 
 ~
 @1612 = ~Lavender Ioun Stone~
@@ -4551,6 +4563,8 @@ Equipped abilities:
  - Saving Throws: +3 bonus vs. breath
  - Dexterity: +1 bonus
 
+Weight: 0
+
 ~
 @1614 = ~Bronze Ioun Stone~ // BG2: The powerful enchantments on this ioun stone make it a treasure eagerly sought after by wizards and mages.
 @1615 = ~The powerful enchantments on this ioun stone make it a treasure eagerly sought after by adventures of any kind.
@@ -4559,6 +4573,8 @@ STATISTICS:
 
 Equipped abilities:
  - Magic Resistance: +10% bonus
+
+Weight: 0
 
 ~
 @1616 = ~Golden Circlet~
@@ -10340,6 +10356,8 @@ Equipped abilities:
 
 Armor Class Bonus: 1
 
+Weight: 0
+
 ~
 @2311 = ~Throwing Axe +1~
 @2312 = ~This throwing axe has not only been finely balanced for use as a missile weapon, but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style.
@@ -12414,6 +12432,8 @@ STATISTICS:
 
 Equipped abilities:
  - Luck: +1 bonus (+5% for skills)
+
+Weight: 0
 
 ~
 @2609 = ~Circlet~

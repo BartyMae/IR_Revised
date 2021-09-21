@@ -5126,6 +5126,7 @@ Equipped Abilities:
  Acid Resistance: -25% penalty
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1600 = ~Dusty Rose Ioun Stone~
@@ -5134,6 +5135,7 @@ Usable By:
 STATISTICS:
 
 Armor Class Bonus: 1
+Weight: 0
 Usable By:
  All~
 @1602 = ~Trueblood's Ioun Stone~ // BG2: Pale Green Ioun Stone: On his deathbed, aged hero Rigar Trueblood begged one last request of his mage companion Spectorial: that his skill and fortitude as a warrior live on. The reluctant friend consented and transferred these traits to an item, knowing the warrior's soul would then be lacking them. This pale green ioun stone now holds these essences, and grants the owner Trueblood's health and skill.
@@ -5146,6 +5148,7 @@ Equipped Abilities:
  Maximum Hit Points: +10% bonus
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1604 = ~Red Dragonscale Helm~ // BG2: Dragon Helm: The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
@@ -5176,6 +5179,7 @@ Equipped Abilities:
  Intelligence: +1 bonus
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1608 = ~Obsidian Ioun Stone~ // BG2: The tough obsidian stone imbues its owner with a similar hardiness.
@@ -5188,6 +5192,7 @@ Equipped Abilities:
  Constitution: +1 bonus
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1610 = ~Silver Ioun Stone~ // BG2: Perhaps the silver and gray in this stone hints at the knowledge that only comes with age and experience.
@@ -5200,6 +5205,7 @@ Equipped Abilities:
  Wisdom: +1 bonus
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1612 = ~Lavender Ioun Stone~
@@ -5223,6 +5229,7 @@ Equipped Abilities:
  Magic Resistance: +10% bonus
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1616 = ~Golden Circlet~
@@ -11865,6 +11872,7 @@ Equipped Abilities:
  Protects Against: Confusion and Feeblemindedness
 
 Armor Class Bonus: 1
+Weight: 0
 Usable By:
  Fighter
  Monk~
@@ -14123,6 +14131,7 @@ Equipped Abilities:
  Luck: +1 bonus (+5% for skills)
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @2609 = ~Circlet~
