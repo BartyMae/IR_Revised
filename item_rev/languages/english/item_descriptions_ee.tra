@@ -4272,8 +4272,8 @@ Weight: 5
 
 STATISTICS:
 
-Armor Class Bonus: none
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
 Weight: 3
 
@@ -4285,13 +4285,12 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Charisma: +1 bonus
  - Spell: Bless
 
 NOTE: Multiple Bless effects are not cumulative.
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4303,13 +4302,12 @@ Named for its original owner, Sir Tain the Noble, this helm saw many great battl
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Charisma: +1 bonus
  - Spell: Bless
 
 NOTE: Multiple Bless effects are not cumulative.
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4321,10 +4319,9 @@ Prized for its noble origin as much as for its benefits to the wearer, this helm
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Saving Throws: +1 bonus
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4336,10 +4333,9 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Protects Against: Blindness and Deafness
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4351,10 +4347,9 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Protects Against: Charm and Domination
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4368,11 +4363,10 @@ The fabled helm of Balduran has long been rumored to wield powerful protective m
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Magic Resistance: +10% bonus
  - Maximum Hit Points: +5 bonus
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4381,8 +4375,8 @@ Weight: 3
 
 STATISTICS:
 
-Armor Class Bonus: None
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
 Weight: 3
 
@@ -4391,8 +4385,8 @@ Weight: 3
 
 STATISTICS:
 
-Armor Class Bonus: None
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
 Weight: 3
 
@@ -4401,8 +4395,8 @@ Weight: 3
 
 STATISTICS:
 
-Armor Class Bonus: None
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
 Weight: 3
 
@@ -4413,10 +4407,9 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Protects Against: Fear
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4434,10 +4427,9 @@ Special abilities:
  - False Dawn (1x per day)
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Fire Resistance: +50% bonus
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4451,10 +4443,9 @@ Special abilities:
  - Gaze of Death (1x per day): target must die (save vs. death at -2 neg.)
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Spell: Death Ward
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4487,8 +4478,6 @@ Equipped abilities:
  - Fire Resistance: -25% penalty
  - Acid Resistance: -25% penalty
 
-Armor Class Bonus: None
-
 ~
 @1600 = ~Dusty Rose Ioun Stone~
 @1601 = ~This ioun stone glows with a dusty rose hue, hinting at calming images and sensations. While pleasing, it does not appear to enhance the basic protection enchantment upon it.
@@ -4508,8 +4497,6 @@ Equipped abilities:
  - THAC0: +1 bonus
  - Maximum Hit Points: +10% bonus
 
-Armor Class Bonus: None
-
 ~
 @1604 = ~Red Dragonscale Helm~ // BG2: Dragon Helm: The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
 @1605 = ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. The overlapping red scales protects the wearer from normal blows as well as fire damage, and donning the helmet also grants immunity to magical sleep and unconsciousness, though it is hard to determine whether these benefits originate within the scales or the spells of the mage.
@@ -4517,11 +4504,10 @@ Armor Class Bonus: None
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Fire Resistance: +25% bonus
  - Protects Against: Sleep and Unconsciousness
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4535,8 +4521,6 @@ Equipped abilities:
  - Saving Throws: +3 bonus vs. spell
  - Intelligence: +1 bonus
 
-Armor Class Bonus: None
-
 ~
 @1608 = ~Obsidian Ioun Stone~ // BG2: The tough obsidian stone imbues its owner with a similar hardiness.
 @1609 = ~The tough obsidian stone imbues its owner with a similar hardiness, though the process of magically altering one's constitution may sometimes be painful.
@@ -4546,8 +4530,6 @@ STATISTICS:
 Equipped abilities:
  - Saving Throws: +3 bonus vs. death
  - Constitution: +1 bonus
-
-Armor Class Bonus: None
 
 ~
 @1610 = ~Silver Ioun Stone~ // BG2: Perhaps the silver and gray in this stone hints at the knowledge that only comes with age and experience.
@@ -4559,8 +4541,6 @@ Equipped abilities:
  - Saving Throws: +3 bonus vs. polymorph
  - Wisdom: +1 bonus
 
-Armor Class Bonus: None
-
 ~
 @1612 = ~Lavender Ioun Stone~
 @1613 = ~The bright lavender hue of this stone dances and sparkles, as if the stone itself were alive.
@@ -4571,8 +4551,6 @@ Equipped abilities:
  - Saving Throws: +3 bonus vs. breath
  - Dexterity: +1 bonus
 
-Armor Class Bonus: None
-
 ~
 @1614 = ~Bronze Ioun Stone~ // BG2: The powerful enchantments on this ioun stone make it a treasure eagerly sought after by wizards and mages.
 @1615 = ~The powerful enchantments on this ioun stone make it a treasure eagerly sought after by adventures of any kind.
@@ -4581,8 +4559,6 @@ STATISTICS:
 
 Equipped abilities:
  - Magic Resistance: +10% bonus
-
-Armor Class Bonus: None
 
 ~
 @1616 = ~Golden Circlet~
@@ -4596,8 +4572,6 @@ Equipped abilities:
  - Magic Resistance: +10% bonus
  - Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 8th to 9th
 
-Armor Class Bonus: None
-
 Weight: 1
 
 ~
@@ -4610,8 +4584,6 @@ STATISTICS:
 Equipped abilities:
  - Spell: Non-Detection
  - Protects Against: Poison
-
-Armor Class Bonus: None
 
 Weight: 1
 
@@ -4629,8 +4601,6 @@ Equipped abilities:
  - Spell: Non-Detection
  - Protects Against: Poison
 
-Weight: 1
-
 ~
 @1625 = ~Helm of the Rock~
 @1626 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear - not only in the people they seek to conquer, but also in their own warriors.
@@ -4640,10 +4610,9 @@ This helm grants a warrior immunities far beyond mere physical protections. It i
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Damage Resistance: +5% bonus
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -4658,10 +4627,9 @@ Special abilities:
  - Gaze of Despair (3x per day): target is paralyzed with fear for 5 rounds (save vs. spell at -2 neg.)
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +1 bonus
  - Damage Resistance: +10% bonus
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -5034,10 +5002,9 @@ Weight: 30
 STATISTICS:
 
 Equipped abilities:
+ - Protects against critical hits
  - Armor Class: +2 bonus
  - Elemental Resistance: +15% bonus
-
-Protects Against Critical Hits
 
 Weight: 3
 
@@ -5784,11 +5751,9 @@ Special abilities:
  - Detect Invisibility (1x per day)
 
 Equipped abilities:
+ - Protects against critical hits
  - Find Traps: +20% bonus
  - Detect Illusions: +20% bonus
-
-Armor Class Bonus: None
-Protects Against Critical Hits
 
 Weight: 1
 
@@ -6082,8 +6047,7 @@ Requires: 8 Strength
 Weight: 25
 
 ~
-@1835 = ~Radiant Plate +2~ // BG1: The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense,
-
+@1835 = ~Radiant Plate +2~ // BG1: The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
 @1836 = ~This brilliant golden armor has a short history. A priestess of Lathander named Iraeni of Suzail had it constructed for the champion of her church, a warrior-priest named Beldan Miller. Beldan employed the armor frequently, as Iraeni was often attacked by agents of Myrkul. After twenty years of serving Lathander, Iraeni decided to step down from her office, as did Beldan. They were married shortly after. Beldan gave the armor to an errant paladin of Lathander, who is believed to have died fighting a powerful undead creature in Amn.
 
 STATISTICS:
@@ -6096,7 +6060,7 @@ NOTE: Multiple Protection from Evil effects are not cumulative.
 Armor Class: 1
 Requires: 12 Strength
 
-this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just
+Weight: 50
 
 ~
 @1837 = ~Full plate is the heaviest of all mundane armor, and despite its great weight, it offers unparalleled protection against attacks. Mobility is not very easy in this type of armor and as such dexterity while wearing full plates is highly restricted but they are to be worn by heavy infantry, and movement is not a priority. However, this magical specimen is made of mithral, a very rare, silvery, glistening metal that is lighter than iron but just as hard. As a result this full plate does not encumber more than a chain mail and is treated as a medium armor for purposes of movement and other limitations.
@@ -6109,7 +6073,7 @@ Equipped abilities:
 Armor Class: -1
 Requires: 12 Strength
 
-mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such
+Weight: 30
 
 ~
 @1838 = ~Plate Mail +2~
@@ -6120,7 +6084,7 @@ STATISTICS:
 Armor Class: 1
 Requires: 12 Strength
 
-would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf
+Weight: 50
 
 ~
 @1840 = ~Delver's Plate +2~
@@ -6134,7 +6098,7 @@ Equipped abilities:
 Armor Class: 1
 Requires: 12 Strength
 
-cares more of utility than looks.
+Weight: 50
 
 ~
 @1842 = ~Doom Plate +3~
@@ -6167,7 +6131,7 @@ Equipped abilities:
 Armor Class: -1
 Requires: 12 Strength
 
-Weight: 30
+Weight: 50
 
 ~
 @1846 = ~Pride of the Order +2~
@@ -6182,7 +6146,7 @@ Equipped abilities:
 Armor Class: -1
 Requires: 15 Strength
 
-Weight: 50
+Weight: 60
 
 ~
 @1848 = ~Casiel's Soul +3~
@@ -6199,7 +6163,7 @@ Equipped abilities:
 Armor Class: -2
 Requires: 15 Strength
 
-Weight: 50
+Weight: 60
 
 ~
 @1850 = ~Armor of the Hart +3~
@@ -6214,7 +6178,7 @@ Equipped abilities:
 Armor Class: -2
 Requires: 15 Strength
 
-Weight: 50
+Weight: 60
 
 ~
 @1852 = ~Red Dragonplate Armor +5~
@@ -6228,7 +6192,7 @@ Equipped abilities:
 Armor Class: -2
 Requires: 8 Strength
 
-Weight: 50
+Weight: 40
 
 ~
 @1854 = ~Full Plate Mail +2~ // BG2: This +2 armor was created with the limited wish spell.
@@ -6253,7 +6217,7 @@ Equipped abilities:
 Armor Class: -4
 Requires: 12 Strength
 
-Weight: 60
+Weight: 50
 
 ~
 @1858 = ~Enkidu's Plate +4~
@@ -6285,7 +6249,7 @@ Equipped abilities:
 Armor Class: -1
 Requires: 6 Strength
 
-Weight: 40
+Weight: 25
 
 ~
 @1862 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection, and the enchantments on this suit are particularly powerful. The intricate engraving and spectacular embossing adorning the suit are of indeterminate origin, as is the armor itself.
@@ -6609,7 +6573,7 @@ Proficiency Type: Club
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 50
+Weight: 3
 
 ~
 @1920 = ~Sling~
@@ -6622,7 +6586,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 60
+Weight: 0
 
 ~
 @1922 = ~Sling +1~
@@ -6638,7 +6602,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 25
+Weight: 0
 
 ~
 @1925 = ~Sling +3~
@@ -6653,7 +6617,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 60
+Weight: 0
 
 ~
 @1927 = ~Sling +2~
@@ -6668,7 +6632,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 3
+Weight: 0
 
 ~
 @1929 = ~Arla's Dragonbane +3~
@@ -6797,7 +6761,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 0
+Weight: 6
 
 ~
 @1941 = ~Small Shield +1~
@@ -6812,7 +6776,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 0
+Weight: 6
 
 ~
 @1944 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.
@@ -6824,7 +6788,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 0
+Weight: 15
 
 ~
 @1945 = ~Medium Shield +1~
@@ -6837,7 +6801,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 0
+Weight: 15
 
 ~
 @1947 = ~Large Shield~
@@ -6850,7 +6814,7 @@ Equipped abilities:
 
 Requires: 15 Strength
 
-Weight: 6
+Weight: 45
 
 ~
 @1949 = ~Large Shield +1~
@@ -6864,7 +6828,7 @@ Equipped abilities:
 
 Requires: 15 Strength
 
-Weight: 6
+Weight: 45
 
 ~
 @1952 = ~A glove is a garment covering the hand, and usually usually have separate sheaths or openings for each finger and the thumb. Gloves protect and comfort hands against cold or heat, disease, or damage by friction and abrasion, and provide a guard for what a bare hand should not touch.~
@@ -6879,7 +6843,7 @@ Equipped abilities:
 
 Requires: 15 Strength
 
-Weight: 15
+Weight: 45
 
 ~
 @1955 = ~Buckler~
@@ -6893,7 +6857,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 15
+Weight: 4
 
 ~
 @1957 = ~Buckler +1~
@@ -6908,7 +6872,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 45
+Weight: 4
 
 ~
 @1960 = ~Dwarven Shield +2~ // BG1: Pellan's Shield: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
@@ -6924,7 +6888,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 45
+Weight: 15
 
 ~
 @1962 = ~Kiel's Buckler +2~
@@ -6939,7 +6903,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 45
+Weight: 4
 
 ~
 @1964 = ~Red Dragonscale Shield +2~
@@ -6954,7 +6918,7 @@ Equipped abilities:
 
 Requires: 10 Strength
 
-Weight: 4
+Weight: 10
 
 ~
 @1966 = ~Shield of Balduran +2~
@@ -6971,7 +6935,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 4
+Weight: 15
 
 ~
 @1968 = ~Fortress Shield +3~
@@ -6985,7 +6949,7 @@ Equipped abilities:
 
 Requires: 15 Strength
 
-Weight: 15
+Weight: 45
 
 ~
 @1970 = ~Reflection Shield +1~
@@ -7018,7 +6982,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 10
+Weight: 6
 
 ~
 @1974 = ~Shield of the Lost +2~
@@ -7048,7 +7012,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 45
+Weight: 15
 
 ~
 @1978 = ~Small Shield +2~
@@ -7062,7 +7026,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @1980 = ~Medium Shield +2~
@@ -7075,7 +7039,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 6
+Weight: 15
 
 ~
 @1982 = ~Large Shield +2~
@@ -7088,7 +7052,7 @@ Equipped abilities:
 
 Requires: 15 Strength
 
-Weight: 15
+Weight: 45
 
 ~
 @1984 = ~Darksteel Shield +4~
@@ -7110,7 +7074,7 @@ Equipped abilities:
 
 Requires: 15 Strength
 
-Weight: 15
+Weight: 45
 
 ~
 @1986 = ~Shield of the Order +4~
@@ -7125,7 +7089,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 6
+Weight: 15
 
 ~
 @1988 = ~Among mankind's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks that had been sharpened at one end. Upon mastering the use of metals, weaponsmiths forged spear heads from iron and steel, and began experimenting with different types of spear heads, thus leading to the development of certain types of polearms.
@@ -7138,7 +7102,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 15
+Weight: 5
 
 ~
 @1989 = ~Spear +1~
@@ -7153,7 +7117,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 45
+Weight: 5
 
 ~
 @1991 = ~Backbiter +3~
@@ -7174,7 +7138,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 45
+Weight: 5
 
 ~
 @1993 = ~Spear +2~
@@ -7189,7 +7153,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 15
+Weight: 5
 
 ~
 @1995 = ~Spear +3~
@@ -7223,7 +7187,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 3
 
 ~
 @1999 = ~Impaler +3~
@@ -7310,7 +7274,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 3
+Weight: 5
 
 ~
 @2007 = ~Ixil's Spike +5~
@@ -7354,7 +7318,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2011 = ~Quarterstaff +1~
@@ -7370,7 +7334,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2014 = ~Staff of Striking +3~
@@ -7388,7 +7352,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2016 = ~Staff Mace +2~
@@ -7403,7 +7367,7 @@ Proficiency Type: Quarterstaff
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2018 = ~Staff Spear +2~
@@ -7593,7 +7557,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 2
 
 ~
 @2034 = ~Staff of Air +2~
@@ -7674,7 +7638,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 2
+Weight: 4
 
 ~
 @2042 = ~Cleric's Staff +3~
@@ -7809,7 +7773,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2056 = ~Bastard Sword +1~
@@ -7825,7 +7789,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2059 = ~Lawgiver +2~ // BG2: Kondar +3: At a first glance, this sword appears much like any other. In the presence of any shapeshifting creature, however, the blade becomes warm as its power stirs. Its namesake was the original owner of the weapon, and his tale, though mostly long forgotten, was wrought with treachery and deceit. Rumors persist that he paid a fearsome price for this blade, but with it he revealed the true identities of those that sought to betray him. Their names and crimes however, are long since lost to history.
@@ -7849,7 +7813,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2061 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
@@ -7877,7 +7841,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 6
+Weight: 4
 
 ~
 @2064 = ~Varscona +2~
@@ -7895,7 +7859,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 6
+Weight: 4
 
 ~
 @2066 = ~Short Sword~
@@ -7909,7 +7873,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 6
+Weight: 3
 
 ~
 @2068 = ~Short Sword +1~
@@ -7925,7 +7889,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2071 = ~Short Sword +2~
@@ -7940,7 +7904,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2073 = ~Short Sword of Backstabbing +3~
@@ -7962,7 +7926,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2075 = ~Icingdeath +3~
@@ -7984,7 +7948,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2077 = ~Twinkle +3~
@@ -8003,7 +7967,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2079 = ~The long, curved, single-edged blade is characteristic of both the sabre and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the sabre was intended mainly for horsemen due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. Thus, it is slightly slower, but tends to be more effective and deadly in combat.
@@ -8016,7 +7980,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2080 = ~Scimitar +1~
@@ -8031,7 +7995,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2082 = ~Rashad's Talon +2~
@@ -8089,7 +8053,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2088 = ~Ilbratha +1~
@@ -8113,7 +8077,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2090 = ~Arbane's Sword +2~
@@ -8137,7 +8101,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2092 = ~Cutthroat +3~
@@ -8156,7 +8120,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2094 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term 'short sword' does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
@@ -8188,7 +8152,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2097 = ~Daystar +4~
@@ -8238,7 +8202,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 3
+Weight: 5
 
 ~
 @2101 = ~Ras +2~
@@ -8269,7 +8233,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @210200000 = ~The Dancing Blade
@@ -8320,7 +8284,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 3
+Weight: 6
 
 ~
 @2105 = ~Adjatha the Drinker +2~
@@ -8344,7 +8308,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2107 = ~Namarra +2~
@@ -8387,7 +8351,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2111 = ~Jhor the Bleeder +2~
@@ -8423,7 +8387,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2115 = ~Blade of Roses +1~
@@ -8459,7 +8423,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 6
+Weight: 4
 
 ~
 @2119 = ~Bastard Sword +2~
@@ -8487,7 +8451,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 6
+Weight: 5
 
 ~
 @2122 = ~Katana +1~
@@ -8503,7 +8467,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 4
+Weight: 5
 
 ~
 @2125 = ~Malakar +2~
@@ -8524,7 +8488,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength, 16 Dexterity
 
-Weight: 4
+Weight: 5
 
 ~
 @2127 = ~Wakizashi~
@@ -8538,7 +8502,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 6
+Weight: 3
 
 ~
 @2129 = ~Wakizashi +1~
@@ -8554,7 +8518,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 3
 
 ~
 @2132 = ~Ninja-To~
@@ -8568,7 +8532,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 5
+Weight: 3
 
 ~
 @2134 = ~Ninja-To +1~ // BG2: Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
@@ -8584,7 +8548,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 5
+Weight: 3
 
 ~
 @2137 = ~Celestial Fury +3~
@@ -8613,7 +8577,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 3
+Weight: 5
 
 ~
 @2139 = ~Water's Edge +3~
@@ -8637,7 +8601,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2141 = ~Sword of Flame +1~
@@ -8657,7 +8621,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2143 = ~The Equalizer +4~
@@ -8684,7 +8648,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2145 = ~Katana +2~
@@ -8727,7 +8691,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2149 = ~Short Sword of Mask +5~
@@ -8759,7 +8723,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2151 = ~Angurvadal +4~
@@ -8807,7 +8771,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2155 = ~Foebane +4~
@@ -8837,7 +8801,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 3
+Weight: 6
 
 ~
 @2157 = ~Foebane +5~
@@ -8868,7 +8832,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 3
+Weight: 6
 
 ~
 @2159 = ~Purifier +4~
@@ -8896,7 +8860,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2161 = ~Purifier +5~
@@ -8930,7 +8894,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2163 = ~Yamato +3~
@@ -8948,7 +8912,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 6
+Weight: 3
 
 ~
 @21651 = ~Usuno's Blade +3~
@@ -8970,7 +8934,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 6
+Weight: 3
 
 ~
 @2166 = ~Spectral Brand +4~
@@ -9005,7 +8969,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 6
+Weight: 4
 
 ~
 @216700000 = ~When examined in direct sunlight, this mysterious scimitar becomes transparent and faint, almost disappearing from sight. As the lighting grows dimmer, however, the sword seems almost to gain substance from the darkness until it glows with a grey light in total darkness.
@@ -9039,7 +9003,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 6
+Weight: 4
 
 ~
 @2168 = ~Spectral Brand +5~
@@ -9080,7 +9044,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @216900000 = ~When examined in direct sunlight, this mysterious scimitar becomes transparent and faint, almost disappearing from sight. As the lighting grows dimmer, however, the sword seems almost to gain substance from the darkness until it glows with a grey light in total darkness.
@@ -9120,7 +9084,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2170 = ~Hindo's Doom +4~
@@ -9146,7 +9110,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 4
+Weight: 5
 
 ~
 @2172 = ~Hindo's Doom +5~
@@ -9175,7 +9139,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 4
+Weight: 5
 
 ~
 @2174 = ~Bastard Sword +3~
@@ -9190,7 +9154,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 4
+Weight: 6
 
 ~
 @2176 = ~Long Sword +3~
@@ -9220,7 +9184,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 5
+Weight: 3
 
 ~
 @2180 = ~Katana +3~
@@ -9250,7 +9214,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 6
+Weight: 4
 
 ~
 @2184 = ~The Answerer +4~
@@ -9285,7 +9249,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 3
+Weight: 8
 
 ~
 @2187 = ~Two-Handed Sword +1~
@@ -9300,7 +9264,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 5
+Weight: 8
 
 ~
 @2189 = ~Berserking Sword +3~
@@ -9323,7 +9287,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @2191 = ~Spider's Bane +2~
@@ -9341,7 +9305,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @2193 = ~Harbinger +3~
@@ -9385,7 +9349,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 16 Strength
 
-Weight: 8
+Weight: 10
 
 ~
 @2197 = ~Warblade +3~
@@ -9404,7 +9368,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 18 Strength
 
-Weight: 8
+Weight: 12
 
 ~
 @2199 = ~Carsomyr +4~
@@ -9431,7 +9395,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 16 Strength
 
-Weight: 8
+Weight: 10
 
 ~
 @2201 = ~Two-Handed Sword +2~
@@ -9465,7 +9429,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 10
+Weight: 8
 
 ~
 @2205 = ~Lilarcor +3~
@@ -9487,7 +9451,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 12
+Weight: 8
 
 ~
 @2207 = ~Silver Sword +4~
@@ -9506,7 +9470,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 10
+Weight: 8
 
 ~
 @2209 = ~Sword of Chaos +2~
@@ -9600,7 +9564,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 16 Strength
 
-Weight: 8
+Weight: 10
 
 ~
 @2217 = ~Two-Handed Sword +3~
@@ -9673,7 +9637,7 @@ Proficiency Type: Katana
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 8
+Weight: 5
 
 ~
 @2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as 'The Nameless One'.
@@ -9687,13 +9651,12 @@ Special abilities:
  - Simulacrum (1x per day): 1 turn
 
 Equipped abilities:
+ - Protects against critical hits
+ - Armor Class: +1 bonus
  - Cold Resistance: +50% bonus
  - Spell: Infravision
 
-Armor Class Bonus: 1
-Protects Against Critical Hits
-
-Weight: 10
+Weight: 3
 
 ~
 @2227 = ~Plate of Balduran +2~
@@ -9710,7 +9673,7 @@ Equipped abilities:
 Armor Class: -1
 Requires: 15 Strength
 
-Weight: 8
+Weight: 60
 
 ~
 @2229 = ~Mercykiller Ring~
@@ -9739,7 +9702,7 @@ Equipped abilities:
  - Magic Resistance: +10% bonus
  - Casting Speed: +2 bonus
 
-Weight: 8
+Weight: 4
 
 ~
 @2234 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.~
@@ -9763,7 +9726,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2237 = ~Mirror Shield +3~ // BG2: Sentinel +4: A century ago, astronomers noted an unexpected comet coming to earth offshore of the Sword Coast. An odd occurrence, it was made stranger by the lightweight fragments of metal found days later by blacksmith Huffum Fuiruim, who cared little about celestial events. He fashioned the bulk of it into this shield, though the forging took months and the aid of several enchanters. "From the heavens? Nay, from my hammer!"
@@ -9779,7 +9742,7 @@ Equipped abilities:
 
 Requires: 12 Strength
 
-Weight: 3
+Weight: 15
 
 ~
 @2239 = ~Wand~
@@ -9924,7 +9887,7 @@ Special abilities:
 
 Requires: 10 Intelligence
 
-Weight: 60
+Weight: 3
 
 ~
 @2263 = ~Wand of Cloudkill~
@@ -9978,7 +9941,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 12 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @2271 = ~Heavy Crossbow +1~
@@ -9994,7 +9957,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 12 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @2274 = ~Heavy Crossbow of Accuracy +1~
@@ -10014,7 +9977,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 12 Strength
 
-Weight: 15
+Weight: 8
 
 ~
 @2276 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft called a tiller. The bow is usually made of ash or yew. The crossbow fires a type of projectile known as a quarrel or bolt. Light crossbows not only weigh less than their heavier counterparts, but they fire faster as well.
@@ -10026,7 +9989,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2277 = ~Light Crossbow +1~
@@ -10041,7 +10004,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 8 Strength
 
-Weight: 8
+Weight: 4
 
 ~
 @2279 = ~Light Crossbow of Speed +1~
@@ -10060,7 +10023,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 8 Strength
 
-Weight: 8
+Weight: 4
 
 ~
 @2281 = ~Heavy Crossbow +2~
@@ -10094,7 +10057,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 18 Strength
 
-Weight: 4
+Weight: 12
 
 ~
 @2285 = ~Light Crossbow +2~
@@ -10152,7 +10115,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 8 Strength
 
-Weight: 8
+Weight: 4
 
 ~
 @2291 = ~Heavy Crossbow of Searing +2~
@@ -10170,7 +10133,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 12 Strength
 
-Weight: 12
+Weight: 8
 
 ~
 @2293 = ~Firetooth +4~
@@ -10229,7 +10192,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 12 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @2299 = ~Light Crossbow +3~
@@ -10244,7 +10207,7 @@ Proficiency Type: Crossbow
 Type: Two-handed
 Requires: 8 Strength
 
-Weight: 8
+Weight: 4
 
 ~
 @2301 = ~Flail of Ages +2~
@@ -10265,7 +10228,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 13 Strength
 
-Weight: 4
+Weight: 10
 
 ~
 @2303 = ~This two-headed flail causes acid and cold damage. If the other head for the Flail of Ages could be found, it would make this weapon more powerful.
@@ -10285,7 +10248,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 13 Strength
 
-Weight: 4
+Weight: 10
 
 ~
 @2304 = ~This two-headed flail causes fire and acid damage. If the other head for the Flail of Ages could be found, it would make this weapon more powerful.
@@ -10305,7 +10268,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 13 Strength
 
-Weight: 8
+Weight: 10
 
 ~
 @2305 = ~Flail of Ages +1~
@@ -10325,7 +10288,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 13 Strength
 
-Weight: 4
+Weight: 10
 
 ~
 @2307 = ~This one-headed flail causes fire damage. If the other heads for the Flail of Ages could be found, they would make this weapon more powerful.
@@ -10393,7 +10356,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 4 Strength
 
-Weight: 10
+Weight: 3
 
 ~
 @2313 = ~Defender of Easthaven +2~
@@ -10459,7 +10422,7 @@ Proficiency Type: Bastard Sword
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 10
+Weight: 6
 
 ~
 @2319 = ~Necklace~
@@ -10485,7 +10448,7 @@ THAC0: +1
 Damage: 1D6 (missile)
 Launcher: Bow
 
-Weight: 3
+Weight: 0
 
 ~
 @2325 = ~Throwing Axe +2~
@@ -10503,7 +10466,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 4 Strength
 
-Weight: 10
+Weight: 3
 
 ~
 @2327 = ~Bolt of Polymorphing +2~
@@ -10518,7 +10481,7 @@ THAC0: +2
 Damage: 1D8 (missile)
 Launcher: Crossbow
 
-Weight: 10
+Weight: 0
 
 ~
 @2329 = ~Flasher Master Bruiser Mate +1~
@@ -10533,7 +10496,7 @@ THAC0: +1
 Damage: 1D4 + 1 (missile)
 Launcher: Crossbow
 
-Weight: 6
+Weight: 0
 
 ~
 @2331 = ~Blessed Bolt +3~ // BG2: This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
@@ -10562,7 +10525,7 @@ Special abilities:
 Equipped abilities:
  - Spell Immunity: Earthquake
 
-Weight: 3
+Weight: 2
 
 ~
 @2335 = ~Boots of Lightning Speed~
@@ -10573,7 +10536,7 @@ STATISTICS:
 Equipped abilities:
  - Lightning Speed: wearer moves at triple move speed, but suffers a -20 penalty to THAC0 and 100% spell failure
 
-Weight: 0
+Weight: 2
 
 ~
 @2337 = ~Gauntlets of Might~
@@ -10589,7 +10552,7 @@ Equipped abilities:
  - THAC0: -2 penalty
  - Dexterity: -2 penalty
 
-Weight: 0
+Weight: 1
 
 ~
 @2339 = ~Bracers of Speed~ // BG1/BG2: Bracers of Binding: These bracers appear to be Bracers of Specialization but when donned, bind the wearers wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the drow. The recipient, believing them to be very powerful, will often don them before examining them. At this point, the drow find it amusing to conjure a hook horror.
@@ -10604,7 +10567,7 @@ Equipped abilities:
  - THAC0: -4 penalty
  - Exhausting: 5% chance with each hit to make the wearer exhausted and suffer a -2 penalty to AC, THAC0, damage, and casting speed for 2 rounds
 
-Weight: 0
+Weight: 1
 
 ~
 @2341 = ~Bruenor's Battle Axe +3~
@@ -10623,7 +10586,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 2
+Weight: 6
 
 ~
 @2343 = ~Taulmaril +3~
@@ -10643,7 +10606,7 @@ Proficiency Type: Long Bow
 Type: Two-handed
 Requires: 6 Strength
 
-Weight: 2
+Weight: 3
 
 ~
 @2345 = ~Robe of Acid Resistance~
@@ -10654,7 +10617,7 @@ STATISTICS:
 Equipped abilities:
  - Acid Resistance: +50%
 
-Weight: 1
+Weight: 3
 
 ~
 @2347 = ~Robe of the Apprenti~
@@ -10664,7 +10627,7 @@ STATISTICS:
 
 Armor Class: 3
 
-Weight: 1
+Weight: 3
 
 ~
 @2349 = ~Heart of the Golem +2~
@@ -10683,7 +10646,7 @@ Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 6
+Weight: 1
 
 ~
 @2351 = ~Soultaker Dagger~
@@ -10697,7 +10660,7 @@ Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 3
+Weight: 1
 
 ~
 @2353 = ~Shadow Thief Dagger~
@@ -10711,7 +10674,7 @@ Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 3
+Weight: 1
 
 ~
 @2355 = ~Life Stealer +4~
@@ -10730,7 +10693,7 @@ Proficiency Type: Dagger
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 3
+Weight: 1
 
 ~
 @2357 = ~Malla's Soul Stone~
@@ -10815,7 +10778,7 @@ STATISTICS:
 Armor Class: 4
 Requires: 6 Strength
 
-Weight: 1
+Weight: 20
 
 ~
 @2369 = ~Horned Helm of the Rock~
@@ -10872,7 +10835,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 1
+Weight: 0
 
 ~
 @2379 = ~The Vampire's Revenge +3~
@@ -10895,7 +10858,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 20
+Weight: 4
 
 ~
 @2381 = ~Malakar's Companion +2~
@@ -10916,7 +10879,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 5 Strength, 16 Dexterity
 
-Weight: 1
+Weight: 3
 
 ~
 @2383 = ~Blood Axe +2~
@@ -10934,7 +10897,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 1
+Weight: 6
 
 ~
 @2385 = ~Web Sack~
@@ -10945,7 +10908,7 @@ Special abilities:
 
 Requires: 12 Intelligence
 
-Weight: 0
+Weight: 3
 
 ~
 @2387 = ~Rod of Absorption~
@@ -10958,7 +10921,7 @@ Special abilities:
 
 Requires: 15 Intelligence
 
-Weight: 4
+Weight: 3
 
 ~
 @2389 = ~Rod of Lordly Might +3~
@@ -10983,7 +10946,7 @@ Proficiency Type: Club
 Type: One-handed
 Requires: 5 Strength, 10 Intelligence
 
-Weight: 3
+Weight: 10
 
 ~
 @2391 = ~Rod of Resurrection~
@@ -10996,7 +10959,7 @@ Special abilities:
 
 Requires: 10 Intelligence, 15 Wisdom
 
-Weight: 6
+Weight: 3
 
 ~
 @2393 = ~Rod of Terror +3~
@@ -11043,7 +11006,7 @@ Special abilities:
 
 Requires: 15 Intelligence
 
-Weight: 10
+Weight: 3
 
 ~
 @2399 = ~Shazzellim +1~
@@ -11064,7 +11027,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2401 = ~Girdle of Masculinity/Femininity~ // BG2: Girdle of Gender
@@ -11077,7 +11040,7 @@ STATISTICS:
 Equipped abilities:
  - Reverse Gender: wearer's gender is set to their opposite
 
-Weight: 3
+Weight: 1
 
 ~
 @2403 = ~Moonblade +3~
@@ -11096,7 +11059,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2405 = ~A Claw~
@@ -11115,7 +11078,7 @@ Equipped abilities:
  - Saving Throws: +3 bonus vs. breath, polymorph, wand, and spell; -5 penalty vs. death
  - Maximum Hit Points: -15% penalty
 
-Weight: 3
+Weight: 1
 
 ~
 @2409 = ~The Horn~
@@ -11128,7 +11091,7 @@ STATISTICS:
 Special abilities:
  - Globe of Power (1x per day): user loses 15% of their hit points, but gains a +2 bonus to AC and saving throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
 
-Weight: 4
+Weight: 1
 
 ~
 @2413 = ~Handmaiden's Mace +3~
@@ -11147,7 +11110,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 1
+Weight: 8
 
 ~
 @2415 = ~Sword of Chaos +4~
@@ -11168,7 +11131,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 18 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @2417 = ~Ring of Opportunity~
@@ -11210,7 +11173,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 18 Strength
 
-Weight: 1
+Weight: 12
 
 ~
 @2428 = ~Manual~
@@ -11294,7 +11257,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 1
+Weight: 4
 
 ~
 @2447 = ~Jade Hound Figurine~
@@ -11369,7 +11332,7 @@ Proficiency Type: Halberd
 Type: Two-handed
 Requires: 18 Strength
 
-Weight: 8
+Weight: 16
 
 ~
 @2455 = ~Harp of Pandemonium~
@@ -11397,7 +11360,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 8
+Weight: 6
 
 ~
 @2459 = ~Jerrod's Mace +3~
@@ -11418,7 +11381,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 12
+Weight: 8
 
 ~
 @2461 = ~Scarlet Ninja-To +3~
@@ -11437,7 +11400,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @2463 = ~Joril's Dagger +3~
@@ -11456,7 +11419,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 16
+Weight: 8
 
 ~
 @2465 = ~Sling of Everard +3~
@@ -11474,7 +11437,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 6
+Weight: 0
 
 ~
 @2467 = ~Spear of Kuldahar +3~
@@ -11492,7 +11455,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 8
+Weight: 5
 
 ~
 @2469 = ~Quarterstaff of Arundel +3~
@@ -11511,7 +11474,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 3
+Weight: 4
 
 ~
 @2471 = ~Everard's Morning Star +3~
@@ -11532,7 +11495,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 11 Strength
 
-Weight: 8
+Weight: 9
 
 ~
 @2473 = ~Flesh Golem Manual~
@@ -11654,7 +11617,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 13 Strength, 10 Intelligence
 
-Weight: 0
+Weight: 10
 
 ~
 @2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
@@ -11678,7 +11641,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires: 6 Strength, 10 Intelligence
 
-Weight: 5
+Weight: 10
 
 ~
 @2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
@@ -11704,7 +11667,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 10 Strength, 10 Intelligence
 
-Weight: 4
+Weight: 10
 
 ~
 @2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
@@ -11729,7 +11692,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength, 10 Intelligence
 
-Weight: 9
+Weight: 10
 
 ~
 @2485 = ~Oaken Ring~
@@ -11763,7 +11726,7 @@ STATISTICS:
 
 STATISTICS:
 
-Weight: 10
+Weight: 1
 
 ~
 @2494 = ~Worn Out Boots~
@@ -11771,14 +11734,14 @@ Weight: 10
 
 STATISTICS:
 
-Weight: 10
+Weight: 2
 
 ~
 @2496 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
 
 STATISTICS:
 
-Weight: 10
+Weight: 1
 
 ~
 @2497 = ~This is a small figurine depicting an eastern style warrior with two swords.~
@@ -11820,7 +11783,7 @@ Gladiator (11 HD):
 
 STATISTICS:
 
-Weight: 10
+Weight: 3
 
 ~
 @2502 = ~Embarl's Dagger~
@@ -11860,7 +11823,7 @@ Combat abilities:
 Damage: 1D6 (missile)
 Launcher: Bow
 
-Weight: 2
+Weight: 0
 
 ~
 @2509 = ~Solaufein's Piwafwi Cloak~
@@ -11873,7 +11836,7 @@ Equipped abilities:
  - Move Silently: +60% bonus
  - Hide in Shadows: +60% bonus
 
-Weight: 1
+Weight: 3
 
 ~
 @2511 = ~Rabbit's Foot~
@@ -11890,7 +11853,7 @@ Equipped abilities:
 
 STATISTICS:
 
-Weight: 3
+Weight: 1
 
 ~
 @2515 = ~Lover's Ring~
@@ -11910,8 +11873,8 @@ STATISTICS:
 
 STATISTICS:
 
-Armor Class Bonus: none
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
 Weight: 1
 
@@ -11921,7 +11884,7 @@ Weight: 1
 
 STATISTICS:
 
-Weight: 0
+Weight: 5
 
 ~
 @2523 = ~Collar~
@@ -11940,7 +11903,7 @@ Equipped abilities:
 
 STATISTICS:
 
-Weight: 3
+Weight: 1
 
 ~
 @2529 = ~Isaea's Signet Ring~
@@ -11965,17 +11928,17 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 1
+Weight: 4
 
 ~
 @2534 = ~This helmet is black and lustrous, its metal brought to a shine that nearly matches the small gems that have been placed around the faceplate. A black veil hangs down the open front of the helmet, obviously meant to completely obscure the face of whomever wears the item.
 
 STATISTICS:
 
-Armor Class Bonus: none
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
-Weight: 1
+Weight: 3
 
 ~
 @2535 = ~This curved scimitar is light and appears well-used. It shimmers slightly with a cool blue hue, and the sparse gems along its pommel sparkle with a pale light that makes it appear to be almost made of ice. A quality weapon.
@@ -11988,7 +11951,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 5
+Weight: 4
 
 ~
 @2536 = ~Control Circlet~
@@ -12009,10 +11972,10 @@ Special abilities:
 
 STATISTICS:
 
-Armor Class Bonus: none
-Protects Against Critical Hits
+Equipped abilities:
+ - Protects against critical hits
 
-Weight: 1
+Weight: 3
 
 ~
 @2542 = ~Star Medallion~
@@ -12069,7 +12032,7 @@ Damage: 1D4 + 1
 Damage Type: magic
 Launcher: Big Metal Rod
 
-Weight: 3
+Weight: 0
 
 ~
 @2558 = ~Frag Grenade
@@ -12087,7 +12050,7 @@ Damage: 6D6
 Damage Type: magic
 Launcher: Big Metal Rod
 
-Weight: 4
+Weight: 0
 
 ~
 @2560 = ~Scorcher Ammunition~
@@ -12103,7 +12066,7 @@ Damage: 3D6
 Damage Type: magic
 Launcher: Big Metal Rod
 
-Weight: 3
+Weight: 0
 
 ~
 @2562 = ~Combined Pantaloons~
@@ -12126,7 +12089,7 @@ Equipped abilities:
 Armor Class: -10
 Requires: 15 Strength
 
-Weight: 4
+Weight: 60
 
 ~
 @2566 = ~These are the boots that were once owned by the famous woodsman, Randy of the West.
@@ -12137,7 +12100,7 @@ Equipped abilities:
  - Charisma: +1 bonus
  - Protects Against: Disease
 
-Weight: 0
+Weight: 2
 
 ~
 @2567 = ~Harper Amulet~
@@ -12161,7 +12124,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 0
+Weight: 6
 
 ~
 @2571 = ~Krotan's Skullcrusher +2~
@@ -12176,7 +12139,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 0
+Weight: 8
 
 ~
 @2573 = ~Telbar's Armor +2~
@@ -12187,7 +12150,7 @@ STATISTICS:
 Armor Class: 5
 Requires: 6 Strength
 
-Weight: 60
+Weight: 20
 
 ~
 @2575 = ~Fallorain's Plate +1~
@@ -12196,7 +12159,7 @@ Weight: 60
 Armor Class: 2
 Requires: 10 Strength
 
-Weight: 2
+Weight: 30
 
 ~
 @2577 = ~Plate of the Dark +1~
@@ -12210,7 +12173,7 @@ Equipped abilities:
 Armor Class: 0
 Requires: 15 Strength
 
-Weight: 6
+Weight: 60
 
 ~
 @2579 = ~Ankheg Plate Mail +1~
@@ -12224,7 +12187,7 @@ Equipped abilities:
 Armor Class: 2
 Requires: 8 Strength
 
-Weight: 8
+Weight: 25
 
 ~
 @2581 = ~The Whistling Sword +2~
@@ -12240,7 +12203,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 20
+Weight: 3
 
 ~
 @2583 = ~Holy Symbol of Lathander~
@@ -12430,7 +12393,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 30
+Weight: 6
 
 ~
 @2605 = ~Gloves of Pickpocketing~
@@ -12441,7 +12404,7 @@ STATISTICS:
 Equipped abilities:
  - Pick Pockets: +20% bonus
 
-Weight: 60
+Weight: 1
 
 ~
 @2607 = ~Ioun Stone of Good Luck~
@@ -12452,15 +12415,13 @@ STATISTICS:
 Equipped abilities:
  - Luck: +1 bonus (+5% for skills)
 
-Armor Class Bonus: None
-
 ~
 @2609 = ~Circlet~
 @2610 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.
 
 STATISTICS:
 
-Weight: 25
+Weight: 1
 
 ~
 @2611 = ~Silver Circlet~
@@ -12471,7 +12432,7 @@ STATISTICS:
 Equipped abilities:
  - Saving Throws: +1 bonus
 
-Weight: 3
+Weight: 1
 
 ~
 @2613 = ~Eilistraee's Boon~
@@ -12482,7 +12443,7 @@ STATISTICS:
 Special abilities:
  - Shield of the Archon (1x per day): 1 turn
 
-Weight: 6
+Weight: 1
 
 ~
 @2615 = ~Circlet of the Archmagi~
@@ -12509,7 +12470,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 1
+Weight: 5
 
 ~
 @2619 = ~Rift Hammer +3~
@@ -12527,7 +12488,7 @@ Proficiency Type: War Hammer
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 1
+Weight: 5
 
 ~
 @4000 = ~Unused~
@@ -12793,7 +12754,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 4 Strength
 
-Weight: 1
+Weight: 3
 
 ~
 @60002 = ~Bereul's Retort +1~
@@ -12808,7 +12769,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 4 Strength
 
-Weight: 1
+Weight: 3
 
 ~
 @60004 = ~Golden Axe +1~
@@ -12826,7 +12787,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 5
+Weight: 6
 
 ~
 @60006 = ~Big-Fisted Belt~
@@ -12841,7 +12802,7 @@ Equipped abilities:
  - Strength: +2 bonus
  - Intelligence: -4 penalty
 
-Weight: 5
+Weight: 1
 
 ~
 @60008 = ~Belt of Antipode~
@@ -12853,7 +12814,7 @@ Equipped abilities:
  - Cold Resistance: +100% bonus
  - Fire Resistance: -100% penalty
 
-Weight: 3
+Weight: 1
 
 ~
 @60010 = ~Club +1~
@@ -12886,7 +12847,7 @@ Proficiency Type: Club
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 6
+Weight: 5
 
 ~
 @60014 = ~Night Club +1~
@@ -12904,7 +12865,7 @@ Proficiency Type: Club
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 1
+Weight: 3
 
 ~
 @60016 = ~The Thresher +2~
@@ -12919,7 +12880,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires: 13 Strength
 
-Weight: 1
+Weight: 10
 
 ~
 @60018 = ~Chanserv's Fish +2~
@@ -12937,7 +12898,7 @@ Proficiency Type: Club
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 3
+Weight: 2
 
 ~
 @60020 = ~The Stupefier +1~
@@ -12956,7 +12917,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 5
+Weight: 8
 
 ~
 @60022 = ~The Chesley Crusher +2~
@@ -12976,7 +12937,7 @@ Proficiency Type: Halberd
 Type: Two-handed
 Requires: 16 Strength
 
-Weight: 3
+Weight: 14
 
 ~
 @60024 = ~Hammer of Dawn +1~
@@ -12997,7 +12958,7 @@ Proficiency Type: War Hammer
 Type: One-handed
 Requires: 10 Strength
 
-Weight: 10
+Weight: 5
 
 ~
 @60026 = ~Rugged Leathers +2~
@@ -13012,7 +12973,7 @@ Equipped abilities:
 Armor Class: 6
 Requires: 4 Strength
 
-Weight: 2
+Weight: 15
 
 ~
 @60028 = ~Adoy's Belt~
@@ -13023,7 +12984,7 @@ STATISTICS:
 Equipped abilities:
  - Saving Throws: +5 bonus vs. polymorph
 
-Weight: 8
+Weight: 1
 
 ~
 @60030 = ~The Magma Bulwark +2~
@@ -13034,7 +12995,7 @@ STATISTICS:
 Armor Class: 1
 Requires: 10 Strength
 
-Weight: 14
+Weight: 30
 
 ~
 @60032 = ~Iron Thorn Ring~
@@ -13058,7 +13019,7 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +2 bonus
 
-Weight: 5
+Weight: 2
 
 ~
 @60036 = ~Glimmering Bands~
@@ -13069,7 +13030,7 @@ STATISTICS:
 Equipped abilities:
  - THAC0: +2 bonus
 
-Weight: 15
+Weight: 1
 
 ~
 @60038 = ~Buckley's Buckler~
@@ -13084,7 +13045,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 1
+Weight: 4
 
 ~
 @60040 = ~Sling of Unerring Accuracy +1~
@@ -13102,7 +13063,7 @@ Proficiency Type: Sling
 Type: One-handed
 Requires: 3 Strength
 
-Weight: 30
+Weight: 0
 
 ~
 @60042 = ~The Ossifier +1~
@@ -13123,7 +13084,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 2
+Weight: 4
 
 ~
 @60044 = ~Neera's Staff +1~
@@ -13141,7 +13102,7 @@ Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires: 5 Strength
 
-Weight: 1
+Weight: 4
 
 ~
 @60046 = ~The Harrower +1~
@@ -13179,7 +13140,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 16 Strength
 
-Weight: 0
+Weight: 10
 
 ~
 @60050 = ~Rancor +1~
@@ -13197,7 +13158,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires: 14 Strength
 
-Weight: 4
+Weight: 8
 
 ~
 @70000 = ~Splint Mail +2~
@@ -13208,7 +13169,7 @@ STATISTICS:
 Armor Class: 2
 Requires: 10 Strength
 
-Weight: 4
+Weight: 45
 
 ~
 @70002 = ~Dart +2~
@@ -13222,7 +13183,7 @@ Speed Factor: 0
 Proficiency Type: Dart
 Type: One-handed
 
-Weight: 4
+Weight: 0
 
 ~
 @70004 = ~Dart +3~
@@ -13236,7 +13197,7 @@ Speed Factor: 0
 Proficiency Type: Dart
 Type: One-handed
 
-Weight: 10
+Weight: 0
 
 ~
 @70006 = ~Hide Armor +1~
@@ -13247,7 +13208,7 @@ STATISTICS:
 Armor Class: 5
 Requires: 6 Strength
 
-Weight: 8
+Weight: 25
 
 ~
 @70008 = ~Hide Armor +2~
@@ -13258,7 +13219,7 @@ STATISTICS:
 Armor Class: 4
 Requires: 6 Strength
 
-Weight: 45
+Weight: 25
 
 ~
 @70010 = ~Hide Armor +3~
@@ -13269,7 +13230,7 @@ STATISTICS:
 Armor Class: 3
 Requires: 6 Strength
 
-Weight: 0
+Weight: 25
 
 ~
 @70012 = ~Buckler +2~
@@ -13283,7 +13244,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 0
+Weight: 4
 
 ~
 @70014 = ~Buckler +3~
@@ -13297,7 +13258,7 @@ Equipped abilities:
 
 Requires: 4 Strength
 
-Weight: 25
+Weight: 4
 
 ~
 @70016 = ~Wakizashi +2~
@@ -13312,7 +13273,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 25
+Weight: 3
 
 ~
 @70018 = ~Wakizashi +3~
@@ -13327,7 +13288,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 5 Strength
 
-Weight: 25
+Weight: 3
 
 ~
 @70020 = ~Ninja-To +2~
@@ -13342,7 +13303,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @70022 = ~Ninja-To +3~
@@ -13357,7 +13318,7 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 6 Strength
 
-Weight: 4
+Weight: 3
 
 ~
 @70024 = ~Scimitar +2~
@@ -13372,6 +13333,6 @@ Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
 Requires: 8 Strength
 
-Weight: 3
+Weight: 4
 
 ~
