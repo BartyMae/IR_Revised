@@ -1587,7 +1587,7 @@ Weight: 2
 STATISTICS:
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 7
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -1603,7 +1603,7 @@ Weight: 4
 STATISTICS:
 
 THAC0: +2
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 6
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -1715,7 +1715,7 @@ Combat abilities:
  - Sundering: target suffers a cumulative -1 penalty to AC for 2 rounds
 
 THAC0: +3
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -1734,7 +1734,7 @@ Combat abilities:
  - Heartseeking: 15% chance target dies (save vs. death neg.)
 
 THAC0: +4
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -1752,7 +1752,7 @@ Combat abilities:
  - Mighty Weapon: +4 bonus to damage
 
 THAC0: +3
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -1841,7 +1841,7 @@ Weight: 2
 STATISTICS:
 
 THAC0: +3
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -1995,7 +1995,7 @@ Weight: 3
 STATISTICS:
 
 THAC0: +4
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
@@ -2071,7 +2071,7 @@ During a dangerous meeting with a rival ruler, the King of the Great Dale reques
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +2 (missile weapons only)
+ - THAC0: +2 bonus (missile weapons only)
  - Damage: +2 bonus (missile weapons only)
 
 Weight: 1
@@ -2122,7 +2122,7 @@ Highly sought after among novice warriors, these items were once the property of
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +2 (melee weapons only)
+ - THAC0: +2 bonus (melee weapons only)
  - Damage: +2 bonus (melee weapons only)
 
 Weight: 1
@@ -2246,7 +2246,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +4 (fists only)
+ - THAC0: +4 bonus (fists only)
  - Damage: +4 bonus (fists only)
 
 Weight: 1
@@ -2274,7 +2274,7 @@ These rarest of gauntlets are highly sought after by duelists, warriors, and fig
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +1
+ - THAC0: +1 bonus
  - Damage: +1 bonus
  - Attacks per Round: +1/2 bonus
  - Speed Factor: +1 bonus
@@ -2289,7 +2289,7 @@ STATISTICS:
 
 Equipped abilities:
  - Saving Throws: +1 bonus
- - THAC0: +1
+ - THAC0: +1 bonus
  - Maximum Hit Points: +10 bonus
 
 Weight: 1
@@ -2308,7 +2308,7 @@ Special abilities:
 
 Equipped abilities:
  - Saving Throws: +2 bonus
- - THAC0: +2
+ - THAC0: +2 bonus
  - Maximum Hit Points: +10 bonus
 
 Weight: 1
@@ -2946,7 +2946,7 @@ STATISTICS:
 
 Equipped abilities:
  - Armor Class: +2 bonus
- - THAC0: +2
+ - THAC0: +2 bonus
  - Maximum Hit Points: +10 bonus
 
 Weight: 6
@@ -3074,7 +3074,7 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +2
+ - THAC0: +2 bonus
  - Maximum Hit Points: +10 bonus
  - Protects Against: Fear
 
@@ -3104,7 +3104,7 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +2 bonus
  - Saving Throws: +2 bonus
- - THAC0: +1
+ - THAC0: +1 bonus
  - Blind Fighting: wearer fights without penalties even if unable to see and cannot be backstabbed
 
 Weight: 3
@@ -3796,7 +3796,7 @@ Combat abilities:
  - Drowcraft: +2 bonus to THAC0 and damage
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -4494,7 +4494,7 @@ Armor Class Bonus: 1
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +1
+ - THAC0: +1 bonus
  - Maximum Hit Points: +10% bonus
 
 Armor Class Bonus: None
@@ -6005,7 +6005,7 @@ Combat abilities:
  - Blinding: 33% chance target blinded for 2 rounds (save vs. breath neg.)
 
 THAC0: +2
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 3
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -6622,7 +6622,7 @@ Weight: 60
 STATISTICS:
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
@@ -6637,7 +6637,7 @@ Weight: 25
 STATISTICS:
 
 THAC0: +3
-Damage: +3 bonus
+Damage: +3 (missile)
 Speed Factor: 3
 Proficiency Type: Sling
 Type: One-handed
@@ -6652,7 +6652,7 @@ Weight: 60
 STATISTICS:
 
 THAC0: +2
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 4
 Proficiency Type: Sling
 Type: One-handed
@@ -6676,7 +6676,7 @@ Combat abilities:
  - Dragon Bane: +3 bonus to THAC0 and +5 bonus to damage against dragons
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
@@ -6696,7 +6696,7 @@ Combat abilities:
  - Sonic Blast: 15% chance target and opponents within 10' are blasted with a powerful sonic wave, dealing 4D4 crushing and stunning them for 1 round (save vs. breath neg. stun)
 
 THAC0: +2
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 4
 Proficiency Type: Sling
 Type: One-handed
@@ -6716,7 +6716,7 @@ Combat abilities:
  - Sling of Force: wielder's Strength bonus is applied to damage
 
 THAC0: +2
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 4
 Proficiency Type: Sling
 Type: One-handed
@@ -9944,7 +9944,7 @@ Requires: 12 Intelligence
 
 STATISTICS:
 
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 10
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -9960,7 +9960,7 @@ Weight: 4
 STATISTICS:
 
 THAC0: +1
-Damage: +3 bonus
+Damage: +3 (missile)
 Speed Factor: 9
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -9980,7 +9980,7 @@ Combat abilities:
  - Marksmanship: +10% chance to score critical hits
 
 THAC0: +1
-Damage: +3 bonus
+Damage: +3 (missile)
 Speed Factor: 9
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10007,7 +10007,7 @@ Weight: 3
 STATISTICS:
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10026,7 +10026,7 @@ Combat abilities:
  - Rapid Reload: +1 Attack per Round
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10041,7 +10041,7 @@ Weight: 8
 STATISTICS:
 
 THAC0: +2
-Damage: +4 bonus
+Damage: +4 (missile)
 Speed Factor: 8
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10060,7 +10060,7 @@ Combat abilities:
  - Oversized: +4 bonus to damage, -2 penalty to THAC0
 
 THAC0: +3
-Damage: +5 bonus
+Damage: +5 (missile)
 Speed Factor: 7
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10075,7 +10075,7 @@ Weight: 4
 STATISTICS:
 
 THAC0: +2
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 3
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10097,7 +10097,7 @@ Combat abilities:
  - Sharpshoot: 25% chance that the wielder becomes invisible for 1 round
 
 THAC0: +2
-Damage: +2 bonus
+Damage: +2 (missile)
 Speed Factor: 3
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10118,7 +10118,7 @@ Combat abilities:
  - Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
 
 THAC0: +4
-Damage: +4 bonus
+Damage: +4 (missile)
 Speed Factor: 1
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10136,7 +10136,7 @@ Combat abilities:
  - Fiery: target suffers 1D4 fire damage
 
 THAC0: +2
-Damage: +4 bonus
+Damage: +4 (missile)
 Speed Factor: 8
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10158,7 +10158,7 @@ Combat abilities:
  - Fire Bolt: target suffers 1D6 fire damage
 
 THAC0: +4
-Damage: 1D8 + 4
+Damage: 1D8 + 4 (missile)
 Speed Factor: 1
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10195,7 +10195,7 @@ Weight: 4
 STATISTICS:
 
 THAC0: +3
-Damage: +5 bonus
+Damage: +5 (missile)
 Speed Factor: 7
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10210,7 +10210,7 @@ Weight: 4
 STATISTICS:
 
 THAC0: +3
-Damage: +3 bonus
+Damage: +3 (missile)
 Speed Factor: 2
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -10838,7 +10838,7 @@ Combat abilities:
  - Seeking: +5 bonus to THAC0
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
@@ -11440,7 +11440,7 @@ Combat abilities:
  - Rapid Shot: +1 Attack per Round
 
 THAC0: +3
-Damage: +3 bonus
+Damage: +3 (missile)
 Speed Factor: 3
 Proficiency Type: Sling
 Type: One-handed
@@ -12017,7 +12017,7 @@ STATISTICS:
 STATISTICS:
 
 THAC0: +5
-Damage: +5 bonus
+Damage: +5 (missile)
 Speed Factor: 0
 Proficiency Type: crossbow
 Type: Two-handed
@@ -13039,7 +13039,7 @@ Weight: 5
 STATISTICS:
 
 Equipped abilities:
- - THAC0: +2
+ - THAC0: +2 bonus
 
 Weight: 15
 
@@ -13068,7 +13068,7 @@ Equipped abilities:
  - Accuracy: +1 bonus to THAC0
 
 THAC0: +1
-Damage: +1 bonus
+Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
