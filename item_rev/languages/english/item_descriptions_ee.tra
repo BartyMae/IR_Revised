@@ -612,7 +612,8 @@ An infamous highwayman in his day, Pandar of Scardale made quite a name for hims
 
 STATISTICS:
 
-Armor Class: +4 bonus vs. piercing weapons
+Equipped abilities:
+ - Armor Class: +4 bonus vs. piercing weapons
 
 Weight: 1
 
@@ -2039,7 +2040,8 @@ Weight: 2
 
 STATISTICS:
 
-Armor Class: 8
+Equipped abilities:
+ Armor Class: 8
 
 Weight: 1
 
@@ -2049,7 +2051,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 7
+Equipped abilities:
+ Armor Class: 7
 
 Weight: 1
 
@@ -2059,7 +2062,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 6
+Equipped abilities:
+ Armor Class: 6
 
 Weight: 1
 
@@ -2133,7 +2137,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 5
+Equipped abilities:
+ Armor Class: 5
 
 Weight: 1
 
@@ -2142,7 +2147,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 5 (+1 bonus)
+Equipped abilities:
+ Armor Class: 5 (+1 bonus)
 
 Weight: 1
 
@@ -2152,7 +2158,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 4
+Equipped abilities:
+ Armor Class: 4
 
 Weight: 1
 
@@ -2161,7 +2168,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 4 (+1 bonus)
+Equipped abilities:
+ Armor Class: 4 (+1 bonus)
 
 Weight: 1
 
@@ -2171,7 +2179,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 3
+Equipped abilities:
+ Armor Class: 3
 
 Weight: 1
 
@@ -2180,7 +2189,8 @@ Weight: 1
 
 STATISTICS:
 
-Armor Class: 3 (+1 bonus)
+Equipped abilities:
+ Armor Class: 3 (+1 bonus)
 
 Weight: 1
 
@@ -2193,7 +2203,8 @@ STATISTICS:
 Special abilities:
  - Whirlwind Attack (1x per day)
 
-Armor Class: 5
+Equipped abilities:
+ Armor Class: 5
 
 Weight: 1
 
@@ -2205,7 +2216,8 @@ STATISTICS:
 Special abilities:
  - Whirlwind Attack (1x per day)
 
-Armor Class: 5 (+1 bonus)
+Equipped abilities:
+ Armor Class: 5 (+1 bonus)
 
 Weight: 1
 
@@ -2350,9 +2362,8 @@ If you wear these bands, never forget their purpose, never forget your focus, an
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: 2
  - Physical Resistance: +10% bonus
-
-Armor Class: 2
 
 Weight: 1
 
@@ -2367,9 +2378,8 @@ If you wear these bands, never forget their purpose, never forget your focus, an
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: 2 (+2 bonus)
  - Physical Resistance: +10% bonus
-
-Armor Class: 2 (+2 bonus)
 
 Weight: 1
 
@@ -3700,9 +3710,9 @@ A drowcraft shield is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +4 bonus
  - Drowcraft: +1 bonus to AC
 
-Armor Class Bonus: 4
 Requires: 12 Strength
 
 Weight: 15
@@ -4275,12 +4285,12 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Charisma: +1 bonus
  - Spell: Bless
 
 NOTE: Multiple Bless effects are not cumulative.
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4293,12 +4303,12 @@ Named for its original owner, Sir Tain the Noble, this helm saw many great battl
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Charisma: +1 bonus
  - Spell: Bless
 
 NOTE: Multiple Bless effects are not cumulative.
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4311,9 +4321,9 @@ Prized for its noble origin as much as for its benefits to the wearer, this helm
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Saving Throws: +1 bonus
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4326,9 +4336,9 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Protects Against: Blindness and Deafness
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4341,9 +4351,9 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Protects Against: Charm and Domination
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4358,10 +4368,10 @@ The fabled helm of Balduran has long been rumored to wield powerful protective m
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Magic Resistance: +10% bonus
  - Maximum Hit Points: +5 bonus
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4403,9 +4413,9 @@ Weight: 3
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Protects Against: Fear
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4424,9 +4434,9 @@ Special abilities:
  - False Dawn (1x per day)
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Fire Resistance: +50% bonus
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4441,9 +4451,9 @@ Special abilities:
  - Gaze of Death (1x per day): target must die (save vs. death at -2 neg.)
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Spell: Death Ward
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4485,7 +4495,8 @@ Armor Class Bonus: None
 
 STATISTICS:
 
-Armor Class Bonus: 1
+Equipped abilities:
+ - Armor Class: +1 bonus
 
 ~
 @1602 = ~Trueblood's Ioun Stone~ // BG2: Pale Green Ioun Stone: On his deathbed, aged hero Rigar Trueblood begged one last request of his mage companion Spectorial: that his skill and fortitude as a warrior live on. The reluctant friend consented and transferred these traits to an item, knowing the warrior's soul would then be lacking them. This pale green ioun stone now holds these essences, and grants the owner Trueblood's health and skill.
@@ -4506,10 +4517,10 @@ Armor Class Bonus: None
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Fire Resistance: +25% bonus
  - Protects Against: Sleep and Unconsciousness
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4614,10 +4625,9 @@ Special abilities:
  - Shadow Door (1x per day): 1 turn
 
 Equipped abilities:
+ - Armor Class: +1 boonus
  - Spell: Non-Detection
  - Protects Against: Poison
-
-Armor Class Bonus: 1
 
 Weight: 1
 
@@ -4630,9 +4640,9 @@ This helm grants a warrior immunities far beyond mere physical protections. It i
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Damage Resistance: +5% bonus
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -4648,9 +4658,9 @@ Special abilities:
  - Gaze of Despair (3x per day): target is paralyzed with fear for 5 rounds (save vs. spell at -2 neg.)
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Damage Resistance: +10% bonus
 
-Armor Class Bonus: 1
 Protects Against Critical Hits
 
 Weight: 3
@@ -5024,9 +5034,9 @@ Weight: 30
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +2 bonus
  - Elemental Resistance: +15% bonus
 
-Armor Class Bonus: 2
 Protects Against Critical Hits
 
 Weight: 3
@@ -5852,10 +5862,10 @@ Special abilities:
  - Protection from Normal Missiles (1x per day): 1 turn
 
 Equipped abilities:
+ - Armor Class: +3 bonus
  - Fire Resistance: +25% bonus
  - Cold Resistance: +25% bonus
 
-Armor Class Bonus: 3
 Requires: 12 Strength
 
 Weight: 15
@@ -6781,8 +6791,10 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 1
-Special: No Missile Weapon Protection
+Equipped abilities:
+ - Armor Class: +1 bonus
+ - No protection against missile attacks
+
 Requires: 4 Strength
 
 Weight: 0
@@ -6794,8 +6806,10 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 2
-Special: No Missile Weapon Protection
+Equipped abilities:
+ - Armor Class: +2 bonus
+ - No protection against missile attacks
+
 Requires: 4 Strength
 
 Weight: 0
@@ -6805,7 +6819,9 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 1
+Equipped abilities:
+ - Armor Class: +1 bonus
+
 Requires: 12 Strength
 
 Weight: 0
@@ -6816,7 +6832,9 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 2
+Equipped abilities:
+ - Armor Class: +2 bonus
+
 Requires: 12 Strength
 
 Weight: 0
@@ -6827,8 +6845,9 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 1
-Special: +1 vs. Missile Weapons
+Equipped abilities:
+ - Armor Class: +1 bonus, an extra +1 vs. missile attacks
+
 Requires: 15 Strength
 
 Weight: 6
@@ -6840,8 +6859,9 @@ Weight: 6
 
 STATISTICS:
 
-Armor Class Bonus: 2
-Special: +1 vs. Missile Weapons
+Equipped abilities:
+ - Armor Class: +2 bonus, an extra +1 vs. missile attacks
+
 Requires: 15 Strength
 
 Weight: 6
@@ -6854,10 +6874,9 @@ Weight: 6
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus, an extra +1 vs. missile attacks
  - Shield Others: allies within 10' gain a +2 bonus to AC
 
-Armor Class Bonus: 3
-Special: +1 vs. Missile Weapons
 Requires: 15 Strength
 
 Weight: 15
@@ -6868,8 +6887,10 @@ Weight: 15
 
 STATISTICS:
 
-Armor Class Bonus: 1
-Special: No Missile/Piercing Attack Protection
+Equipped abilities:
+ - Armor Class: +1 bonus
+ - No protection against missile and piercing attacks
+
 Requires: 4 Strength
 
 Weight: 15
@@ -6881,8 +6902,10 @@ Weight: 15
 
 STATISTICS:
 
-Armor Class Bonus: 2
-Special: No Missile/Piercing Attack Protection
+Equipped abilities:
+ - Armor Class: +2 b onus
+ - No protection against missile and piercing attacks
+
 Requires: 4 Strength
 
 Weight: 45
@@ -6896,8 +6919,9 @@ Superior craftsmanship is supplemented by a permanent lightness spell, which mak
 
 STATISTICS:
 
-Armor Class Bonus: 3
-Special: +1 vs. Missile Weapons
+Equipped abilities:
+ - Armor Class: +3 bonus, an extra +1 vs. missile attacks
+
 Requires: 12 Strength
 
 Weight: 45
@@ -6909,10 +6933,10 @@ Weight: 45
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus
+ - No protection against missile and piercing attacks
  - Protects Against: Hold and Stun
 
-Armor Class Bonus: 3
-Special: No Missile/Piercing Attack Protection
 Requires: 4 Strength
 
 Weight: 45
@@ -6924,10 +6948,10 @@ Weight: 45
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus
  - Fire Resistance: +25% bonus
  - Force Absorbing: wielder gains a +3 bonus to saves vs. breath and is immune to everything that pushes them away
 
-Armor Class Bonus: 3
 Requires: 10 Strength
 
 Weight: 4
@@ -6941,10 +6965,10 @@ This shield was worn by the hero Balduran. It is part of a set of weapons and ar
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus
  - Saving Throws: +1 bonus
  - Magic Resistance: +10% bonus
 
-Armor Class Bonus: 3
 Requires: 12 Strength
 
 Weight: 4
@@ -6956,10 +6980,9 @@ Weight: 4
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +4 bonus, an extra +1 vs. missile attacks
  - Physical Resistance: +10% bonus
 
-Armor Class Bonus: 4
-Special: +1 vs. Missile Weapons
 Requires: 15 Strength
 
 Weight: 15
@@ -6975,7 +6998,8 @@ Equipped abilities:
 
 NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf's Minute Meteors can be deflected, while magical projectiles like Lightning Bolts, Fireballs, and Magic Missiles cannot be.
 
-Armor Class Bonus: 2
+Equipped abilities:
+ - Armor Class: +2 bonus
 Special: No Piercing Attack Protection
 Requires: 4 Strength
 
@@ -6988,10 +7012,10 @@ Weight: 4
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus
+ - No protection against missile attacks
  - Protects Against: Charm, Confusion, and Domination
 
-Armor Class Bonus: 3
-Special: No Missile Weapon Protection
 Requires: 4 Strength
 
 Weight: 10
@@ -7003,9 +7027,9 @@ Weight: 10
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus
  - Deflect Magic: one spell cast against the wearer is absorbed per turn
 
-Armor Class Bonus: 3
 Requires: 12 Strength
 
 Weight: 15
@@ -7019,9 +7043,9 @@ Once a holy artifact used by the elite sect of clerics and holy warriors called 
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +4 bonus
  - Searing Light: creatures who strike the wearer in melee are blinded for 1 round, and undead creatures also suffer 2D6 magic damage (save vs. spell neg. blindness)
 
-Armor Class Bonus: 4
 Requires: 12 Strength
 
 Weight: 45
@@ -7032,8 +7056,10 @@ Weight: 45
 
 STATISTICS:
 
-Armor Class Bonus: 3
-Special: No Missile Weapon Protection
+Equipped abilities:
+ - Armor Class: +3 bonus
+ - No protection against missile attacks
+
 Requires: 4 Strength
 
 Weight: 4
@@ -7044,7 +7070,9 @@ Weight: 4
 
 STATISTICS:
 
-Armor Class Bonus: 3
+Equipped abilities:
+ - Armor Class: +3 bonus
+
 Requires: 12 Strength
 
 Weight: 6
@@ -7055,8 +7083,9 @@ Weight: 6
 
 STATISTICS:
 
-Armor Class Bonus: 3
-Special: +1 vs. Missile Weapons
+Equipped abilities:
+ - Armor Class: +3 bonus, an extra +1 vs. missile attacks
+
 Requires: 15 Strength
 
 Weight: 15
@@ -7076,10 +7105,9 @@ With their leader dead and their hero Glimred gone, the dwarves knew it was only
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +5 bonus, an extra +1 vs. missile attacks
  - Elemental Resistance: +25% bonus
 
-Armor Class Bonus: 5
-Special: +1 vs. Missile Weapons
 Requires: 15 Strength
 
 Weight: 15
@@ -7091,10 +7119,10 @@ Weight: 15
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +5 bonus
  - Protection from Demons: +2 bonus to AC and saving throws vs. demonic creatures and fallen celestials
  - Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
-Armor Class Bonus: 5
 Requires: 12 Strength
 
 Weight: 6
@@ -9746,9 +9774,9 @@ Among Angwile's most well-known creation there's the Mirror Shield. This shield 
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +4 bonus
  - Protects Against: Gaze/ray attacks
 
-Armor Class Bonus: 4
 Requires: 12 Strength
 
 Weight: 3
@@ -12396,10 +12424,10 @@ Special abilities:
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +3 bonus
+ - No protection against missile attacks
  - Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
 
-Armor Class Bonus: 3
-Special: No Missile Weapon Protection
 Requires: 4 Strength
 
 Weight: 30
@@ -13050,10 +13078,10 @@ Weight: 15
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
+ - No protection against missile and piercing attacks
  - Constitution: +1 bonus
 
-Armor Class Bonus: 1
-Special: No Missile/Piercing Attack Protection
 Requires: 4 Strength
 
 Weight: 1
@@ -13249,8 +13277,10 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 3
-Special: No Missile/Piercing Attack Protection
+Equipped abilities:
+ - Armor Class: +3 bonus
+ - No protection against missile and piercing attacks
+
 Requires: 4 Strength
 
 Weight: 0
@@ -13261,8 +13291,10 @@ Weight: 0
 
 STATISTICS:
 
-Armor Class Bonus: 4
-Special: No Missile/Piercing Attack Protection
+Equipped abilities:
+ - Armor Class: +4 bonus
+ - No protection against missile and piercing attacks
+
 Requires: 4 Strength
 
 Weight: 25

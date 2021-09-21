@@ -273,7 +273,7 @@ Speed Factor (Piercing)\1
 Speed Factor (Slashing)\1~
 
 // replace @100134
-@100204 = ~Damage type: piercing or slashing~
+@100204 = ~ (piercing or slashing)~
 
 // tooltip for piercing mode
 @100205 = ~Piercing~

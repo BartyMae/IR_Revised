@@ -5,7 +5,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.544)~
+VERSION ~V4 Beta 10 (Revised V1.3.545)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -65,9 +65,19 @@ LOAD_TRA ~item_rev/languages/english/potion_descriptions.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/item_descriptions.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/item_upgrades.tra~
 LOAD_TRA ~item_rev/languages/%LANGUAGE%/potion_descriptions.tra~
+
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+  LOAD_TRA ~item_rev/languages/english/enhanced_editions.tra~
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/enhanced_editions.tra~
 END
+
+ACTION_IF ee_style_descriptions=1 BEGIN
+  LOAD_TRA ~item_rev/languages/english/ee_item_descriptions.tra~
+  LOAD_TRA ~item_rev/languages/english/ee_description_updates.tra~
+  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_item_descriptions.tra~
+  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_description_updates.tra~
+END
+
 INCLUDE ~item_rev/components/main_component.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -78,7 +88,6 @@ BEGIN @33
 DESIGNATED 1030
 REQUIRE_PREDICATE (GAME_IS ~soa tob bgt bgee bg2ee eet~) @9002
 
-// a bit rough for now... will fine-tune once BG1 revision is complete
 ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
   LOAD_TRA ~item_rev/languages/english/store_revisions.tra~
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/store_revisions.tra~
