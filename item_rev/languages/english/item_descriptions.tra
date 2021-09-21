@@ -3613,7 +3613,7 @@ Combat Abilities:
 
 THAC0: +2 bonus
 Damage: 1D4 + 2
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 1
 Speed Factor: 0
@@ -3634,7 +3634,7 @@ Combat Abilities:
 
 THAC0: +2 bonus
 Damage: 1D4 + 2
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 1
 Speed Factor: 0
@@ -3655,7 +3655,7 @@ Combat Abilities:
 
 THAC0: +3 bonus
 Damage: 1D4 + 3
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 1
 Speed Factor: 0
@@ -3815,7 +3815,7 @@ Combat Abilities:
 
 THAC0: +5 bonus
 Damage: 1D4 + 5
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 1
 Speed Factor: 0
@@ -8265,7 +8265,7 @@ Combat Abilities:
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 5
 Speed Factor: 3
@@ -8289,7 +8289,7 @@ Combat Abilities:
 
 THAC0: +2 bonus
 Damage: 1D6 + 2
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 5
 Speed Factor: 4
@@ -13316,7 +13316,7 @@ Combat Abilities:
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
-Damage type (melee): piercing
+Damage Type (Melee): Piercing
 Damage Type (Thrown): Missile
 Weight: 10
 Speed Factor: 3
