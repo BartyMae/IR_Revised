@@ -2041,7 +2041,7 @@ Weight: 2
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 8
+ - Armor Class: 8
 
 Weight: 1
 
@@ -2052,7 +2052,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 7
+ - Armor Class: 7
 
 Weight: 1
 
@@ -2063,7 +2063,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 6
+ - Armor Class: 6
 
 Weight: 1
 
@@ -2138,7 +2138,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 5
+ - Armor Class: 5
 
 Weight: 1
 
@@ -2148,7 +2148,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 5 (+1 bonus)
+ - Armor Class: 5 (+1 bonus)
 
 Weight: 1
 
@@ -2159,7 +2159,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 4
+ - Armor Class: 4
 
 Weight: 1
 
@@ -2169,7 +2169,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 4 (+1 bonus)
+ - Armor Class: 4 (+1 bonus)
 
 Weight: 1
 
@@ -2180,7 +2180,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 3
+ - Armor Class: 3
 
 Weight: 1
 
@@ -2190,7 +2190,7 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
- Armor Class: 3 (+1 bonus)
+ - Armor Class: 3 (+1 bonus)
 
 Weight: 1
 
@@ -2217,7 +2217,7 @@ Special abilities:
  - Whirlwind Attack (1x per day)
 
 Equipped abilities:
- Armor Class: 5 (+1 bonus)
+ - Armor Class: 5 (+1 bonus)
 
 Weight: 1
 
@@ -10351,10 +10351,9 @@ Weight: 10
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Regeneration: 1 hp/2 rounds
  - Protects Against: Confusion and Feeblemindedness
-
-Armor Class Bonus: 1
 
 Weight: 0
 
@@ -10720,10 +10719,9 @@ Weight: 1
 STATISTICS:
 
 Equipped abilities:
+ - Armor Class: +1 bonus
  - Maximum Hit Points: +10 bonus
  - Protects Against: Poison
-
-Armor Class Bonus: 1
 
 Weight: 1
 
