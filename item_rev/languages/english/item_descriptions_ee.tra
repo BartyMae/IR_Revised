@@ -7935,8 +7935,7 @@ Combat abilities:
  - Backstabbing (thieves and rangers): +1 bonus to backstab multiplier
 
 THAC0: +3
-Damage: 1D6 + 3
-Damage type piercing
+Damage: 1D6 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -8732,8 +8731,7 @@ Combat abilities:
  - Stealthblade: 25% chance that the wielder becomes invisible for 5 rounds
 
 THAC0: +5
-Damage: 1D6 + 5
-Damage type piercing
+Damage: 1D6 + 5 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -12044,8 +12042,7 @@ Combat abilities:
  - Pulse Ammunition: 5 Attacks per Round
 
 THAC0: +5
-Damage: 1D4 + 1
-Damage Type: magic
+Damage: 1D4 + 1 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0
@@ -12062,8 +12059,7 @@ Combat abilities:
  - Frag Grenade: 1 Attack per Round
 
 THAC0: +5
-Damage: 6D6
-Damage Type: magic
+Damage: 6D6 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0
@@ -12078,8 +12074,7 @@ Combat abilities:
  - Scorcher Ammunition: 3 Attacks per Round
 
 THAC0: +5
-Damage: 3D6
-Damage Type: magic
+Damage: 3D6 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0
