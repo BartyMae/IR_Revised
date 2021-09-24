@@ -9049,7 +9049,7 @@ Combat Abilities:
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
-Damage type piercing
+Damage Type: piercing
 Weight: 3
 Speed Factor: 0
 Proficiency Type: Short Sword
@@ -9428,7 +9428,7 @@ Special Characteristics:
 
 THAC0: +2 bonus
 Damage: 1D8 + 2
-Damage type: slashing
+Damage Type: slashing
 Weight: 4
 Speed Factor: 3
 Proficiency Type: Long Sword
@@ -9966,7 +9966,7 @@ Combat Abilities:
 
 THAC0: +5 bonus
 Damage: 1D6 + 5
-Damage type piercing
+Damage Type: piercing
 Weight: 3
 Speed Factor: 0
 Proficiency Type: Short Sword
