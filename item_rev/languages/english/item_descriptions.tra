@@ -7037,8 +7037,19 @@ Equipped Abilities:
 Armor Class: -1
 Weight: 60
 Requires: 15 Strength
-Usable By:
- Lawful Good characters~
+Not Usable By:
+ Evil-aligned characters
+ Chaotic-aligned characters
+ Bard
+ Druid
+ Mage
+ Monk
+ Thief
+ Archer
+ Barbarian
+ Beast Master
+ Kensai
+ Stalker~
 @1848 = ~Casiel's Soul +3~
 @1849 = ~This armor of blackened steel was known to be worn by Lord Casiel the Vile in his campaign against the Purple Dragon Knights of Cormyr. Upon Lord Casiel's death, the armor was said to have been destroyed, though it is also rumored that the vicious blackguard has joined the undead and still serves his unknown master.
 
@@ -9888,8 +9899,8 @@ Proficiency Type: Long Sword
 Type: One-Handed
 Requires: 6 Strength
 Not Usable By:
- Lawful Good/Evil characters
- Chaotic Good/Evil characters
+ Lawful good or evil-aligned characters
+ Chaotic good or evil-aligned characters
  Cleric
  Druid
  Mage
@@ -10751,7 +10762,7 @@ Proficiency Type: Two-Handed Sword
 Type: Two-Handed
 Requires: 16 Strength
 Usable By:
- Paladin~
+ Good-aligned paladins~
 @2201 = ~Two-Handed Sword +2~
 @2202 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
 
@@ -10958,7 +10969,7 @@ Proficiency Type: Two-Handed Sword
 Type: Two-Handed
 Requires: 16 Strength
 Usable By:
- Paladin~
+ Good-aligned paladins~
 @2217 = ~Two-Handed Sword +3~
 @2218 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
 
@@ -13728,7 +13739,7 @@ Weight: 0
 Launcher: Big Metal Rod~
 @2562 = ~Combined Pantaloons~
 @2563 = ~Long has the world marveled at the Golden Pantaloons, the Silver Pantaloons, and to a lesser extent, the Bronze Pantalettes. Revealed here for the first time are the secrets of their gregariously girding gussets that so softly shield your shanks. Ye gods! Get to identifyin' already! Now it can be told!~
-@2564 = ~Big Metal Unit~
+@2564 = ~Big Metal Unit +5~
 @2565 = ~Found within a long forgotten pocket of our collected pantology, herein tales the lie of the Metal "Unit".
 
 Gargantua was self-proclaimed lord of his immeasurable lower regions until his son, Pantagruel, questioned the accuracy of the ruler. With his shortcomings exposed, great Gargantua lay prostrate upon the ground while Pantagruel sought to cover his cuirass in case his now governing body lost its sway. He was warned that the people would cut him no slacks, but he never listened, and had burned his britches behind him. Undaunted, he fulfilled his animus with the robes of his father, as uncomfortable as that might sound, and shaped the Metal "Unit" with his own hands.
