@@ -330,7 +330,8 @@ Damage: 1D8 (slashing)
 Speed Factor: 7
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -346,7 +347,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -361,7 +363,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -375,7 +378,8 @@ Damage: 1D6 + 1 (slashing or missile)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -393,7 +397,8 @@ Damage: 1D8 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -416,7 +421,8 @@ Damage: 1D6 + 2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -435,7 +441,8 @@ Damage: 1D6 + 3 (slashing or missile)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -457,7 +464,8 @@ Damage: 1D6 + 2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -476,7 +484,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -495,7 +504,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -515,7 +525,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -540,7 +551,8 @@ Damage: 1D8 + 5 (slashing)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -560,7 +572,8 @@ Damage: 1D6 + 5 (slashing or missile)
 Speed Factor: 0
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -575,7 +588,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -705,7 +719,8 @@ Damage: 1D6 (crushing)
 Speed Factor: 4
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -719,7 +734,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -735,7 +751,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -749,7 +766,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 7
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -765,7 +783,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -779,7 +798,8 @@ Damage: 2D4 (crushing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -795,7 +815,8 @@ Damage: 2D4 + 1 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -816,7 +837,8 @@ Damage: 2D4 + 3 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 9
 
@@ -838,7 +860,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -861,7 +884,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -876,7 +900,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -898,7 +923,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -914,7 +940,8 @@ Damage: 2D4 + 2 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -932,7 +959,8 @@ Damage: 2D4 + 2 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -950,7 +978,8 @@ Damage: 2D4 + 2 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -972,7 +1001,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -990,7 +1020,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -1008,7 +1039,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -1023,7 +1055,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -1042,7 +1075,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -1063,7 +1097,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -1081,7 +1116,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -1109,7 +1145,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -1139,7 +1176,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 0
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -1173,7 +1211,8 @@ Damage: 1D6 + 5 (crushing)
 Speed Factor: 0
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -1197,7 +1236,8 @@ Damage: 1D6 + 5 (crushing)
 Speed Factor: 3
 Proficiency Type: Mace
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -1224,7 +1264,8 @@ Damage: 1D6 + 6 (crushing)
 Speed Factor: 2
 Proficiency Type: Mace
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -1250,7 +1291,8 @@ Damage: 1D6 + 6 (crushing)
 Speed Factor: 2
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -1275,7 +1317,8 @@ Damage: 1D6 + 5 (crushing)
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -1299,7 +1342,8 @@ Damage: 1D6 + 5 (crushing)
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -1314,7 +1358,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -1329,7 +1374,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -1344,7 +1390,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 4
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -1359,7 +1406,8 @@ Damage: 2D4 + 3 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -1381,7 +1429,8 @@ Damage: 2D4 + 4 (crushing)
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -1592,7 +1641,8 @@ Damage: +1 (missile)
 Speed Factor: 7
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 4
 
@@ -1608,7 +1658,8 @@ Damage: +1 (missile)
 Speed Factor: 6
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 4
 
@@ -1622,7 +1673,8 @@ THAC0: +1
 Speed Factor: 7
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1637,7 +1689,8 @@ THAC0: +2
 Speed Factor: 6
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1650,7 +1703,8 @@ STATISTICS:
 Speed Factor: 6
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1665,7 +1719,8 @@ THAC0: +1
 Speed Factor: 5
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1683,7 +1738,8 @@ THAC0: +3
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1701,7 +1757,8 @@ THAC0: +2
 Speed Factor: 4
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1720,7 +1777,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 5
 
@@ -1739,7 +1797,8 @@ Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 4
 
@@ -1757,7 +1816,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 19 Strength
+Requires:
+ 19 Strength
 
 Weight: 6
 
@@ -1774,7 +1834,8 @@ THAC0: +4
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1794,7 +1855,8 @@ THAC0: +5
 Speed Factor: 3
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1811,7 +1873,8 @@ THAC0: +1
 Speed Factor: 5
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 2
 
@@ -1831,7 +1894,8 @@ Damage: 1D6 (missile)
 Speed Factor: 3
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 2
 
@@ -1846,7 +1910,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 4
 
@@ -1860,7 +1925,8 @@ THAC0: +3
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1874,7 +1940,8 @@ THAC0: +2
 Speed Factor: 4
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1896,7 +1963,8 @@ Damage: 1D6 (missile)
 Speed Factor: 2
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1916,7 +1984,8 @@ THAC0: +4
 Speed Factor: 2
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1942,7 +2011,8 @@ THAC0: +5
 Speed Factor: 1
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -1962,7 +2032,8 @@ THAC0: +5
 Speed Factor: 3
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -1985,7 +2056,8 @@ THAC0: +6
 Speed Factor: 2
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -2000,7 +2072,8 @@ Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 4
 
@@ -2014,7 +2087,8 @@ THAC0: +4
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -2028,7 +2102,8 @@ THAC0: +3
 Speed Factor: 3
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -2247,7 +2322,8 @@ Equipped abilities:
 
 NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf's Minute Meteors can be deflected, while magical projectiles like Lightning Bolts, Fireballs, and Magic Missiles cannot be.
 
-Requires: 16 Dexterity
+Requires:
+ 16 Dexterity
 
 Weight: 1
 
@@ -2468,7 +2544,8 @@ Weight: 0
 STATISTICS:
 
 Armor Class: 5
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2480,7 +2557,8 @@ Weight: 40
 STATISTICS:
 
 Armor Class: 4
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2495,7 +2573,8 @@ Equipped abilities:
  - Protects Against: Critical Hits
 
 Armor Class: 3
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2506,7 +2585,8 @@ Weight: 40
 STATISTICS:
 
 Armor Class: 4
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 45
 
@@ -2518,7 +2598,8 @@ Weight: 45
 STATISTICS:
 
 Armor Class: 3
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 45
 
@@ -2532,7 +2613,8 @@ Equipped abilities:
  - Mithral: +1 bonus to AC
 
 Armor Class: 2
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -2543,7 +2625,8 @@ Weight: 20
 STATISTICS:
 
 Armor Class: 2
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2554,7 +2637,8 @@ Weight: 40
 STATISTICS:
 
 Armor Class: 3
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2568,7 +2652,8 @@ Equipped abilities:
  - Protects Against: Disease and Fear
 
 Armor Class: 2
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2589,7 +2674,8 @@ Equipped abilities:
  - Spell Immunity: Color Spray, Chromatic Orb, and Prismatic Spray
 
 Armor Class: 1
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2604,7 +2690,8 @@ Equipped abilities:
  - Blood Rage: 5% chance when struck the wearer enrages, gaining a +2 bonus to THAC0 and damage for 5 rounds
 
 Armor Class: 0
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -2615,7 +2702,8 @@ Weight: 40
 STATISTICS:
 
 Armor Class: 5
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -2627,7 +2715,8 @@ Weight: 15
 STATISTICS:
 
 Armor Class: 4
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -2641,7 +2730,8 @@ Equipped abilities:
  - Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
 
 Armor Class: 2
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -2655,7 +2745,8 @@ Equipped abilities:
  - Protects Against: Silence
 
 Armor Class: 3
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -2669,7 +2760,8 @@ Equipped abilities:
  - Casting Speed: +1 bonus
 
 Armor Class: 1
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -2683,7 +2775,8 @@ Equipped abilities:
  - Protects Against: Poison
 
 Armor Class: 2
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 35
 
@@ -2697,7 +2790,8 @@ Equipped abilities:
  - Casting Speed: +1 bonus
 
 Armor Class: 1
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 45
 
@@ -2714,7 +2808,8 @@ Equipped abilities:
  - Spell: Protection from Normal Weapons
 
 Armor Class: 0
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -2728,7 +2823,8 @@ Equipped abilities:
  - Cold Resistance: +50% bonus
 
 Armor Class: -1
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 35
 
@@ -2738,7 +2834,8 @@ Weight: 35
 STATISTICS:
 
 Armor Class: 2
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -3129,7 +3226,8 @@ Damage: 1D4 (piercing)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3145,7 +3243,8 @@ Damage: 1D4 + 1 (piercing)
 Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3165,7 +3264,8 @@ Damage: 1D4 + 2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 2
 
@@ -3179,7 +3279,8 @@ Damage: 1D4 (missile)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3219,7 +3320,8 @@ Damage: 1D4 + 2 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3238,7 +3340,8 @@ Damage: 1D4 + 3 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3257,7 +3360,8 @@ Damage: 1D4 + 2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3278,7 +3382,8 @@ Damage: 1D4 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3293,7 +3398,8 @@ Damage: 1D4 + 2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3310,7 +3416,8 @@ Damage: 1D4 (missile)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3329,7 +3436,8 @@ Damage: 1D4 + 2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3348,7 +3456,8 @@ Damage: 1D4 + 1 (piercing)
 Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3367,7 +3476,8 @@ Damage: 1D4 + 4 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3390,7 +3500,8 @@ Damage: 1D4 + 5 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3408,7 +3519,8 @@ Damage: 1D4 + 3
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3423,7 +3535,8 @@ Damage: 1D4 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -3541,7 +3654,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -3612,7 +3726,8 @@ Equipped abilities:
  - Drowcraft: +2 bonus to AC
 
 Armor Class: 4
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -3633,7 +3748,8 @@ Equipped abilities:
  - Drowcraft: +2 bonus to AC
 
 Armor Class: 2
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 40
 
@@ -3670,7 +3786,8 @@ Damage: 1D10 + 3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 15
 
@@ -3693,7 +3810,8 @@ Equipped abilities:
  - Drowcraft: +2 bonus to AC
 
 Armor Class: -2
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -3713,7 +3831,8 @@ Equipped abilities:
  - Armor Class: +4 bonus
  - Drowcraft: +1 bonus to AC
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -3737,7 +3856,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -3761,7 +3881,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 3
 
@@ -3785,7 +3906,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -3810,7 +3932,8 @@ Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -3823,7 +3946,8 @@ Damage: 1D10 (piercing)
 Speed Factor: 9
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3838,7 +3962,8 @@ Damage: 1D10 + 1 (piercing)
 Speed Factor: 8
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3857,7 +3982,8 @@ THAC0: +2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3879,7 +4005,8 @@ Damage: 1D10 + 1 (piercing)
 Speed Factor: 8
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3897,7 +4024,8 @@ Damage: 1D10 + 3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3919,7 +4047,8 @@ Damage: 1D10 + 4 (piercing)
 Speed Factor: 5
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3934,7 +4063,8 @@ Damage: 1D10 + 2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3952,7 +4082,8 @@ Damage: 1D10 + 2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3974,7 +4105,8 @@ Damage: 1D10 + 4 (piercing)
 Speed Factor: 5
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -3994,7 +4126,8 @@ Damage: 1D10 + 4 (piercing)
 Speed Factor: 5
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -4017,7 +4150,8 @@ Damage: 1D10 + 5 (piercing)
 Speed Factor: 4
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -4032,7 +4166,8 @@ Damage: 1D10 + 3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 12
 
@@ -4046,7 +4181,8 @@ Damage: 1D4 + 1 (crushing)
 Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4062,7 +4198,8 @@ Damage: 1D4 + 2 (crushing)
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4080,7 +4217,8 @@ Damage: 1D4 + 3 (crushing)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4099,7 +4237,8 @@ Damage: 1D4 + 2 (crushing)
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4118,7 +4257,8 @@ Damage: 1D4 + 3 (crushing)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4138,7 +4278,8 @@ Damage: 1D4 + 3 (crushing or missile)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4156,7 +4297,8 @@ Damage: 1D4 + 4 (crushing)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4171,7 +4313,8 @@ Damage: 1D4 + 3 (crushing)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4196,7 +4339,8 @@ Damage: 1D4 + 5 (crushing or missile)
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4218,7 +4362,8 @@ Damage: 1D4 + 5 (crushing)
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4247,7 +4392,8 @@ Damage: 1D4 + 6 (crushing)
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4262,7 +4408,8 @@ Damage: 1D4 + 4 (crushing)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -4657,7 +4804,8 @@ Weight: 3
 STATISTICS:
 
 Armor Class: 8
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4669,7 +4817,8 @@ Weight: 15
 STATISTICS:
 
 Armor Class: 7
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4684,7 +4833,8 @@ Equipped abilities:
  - Protects Against: Critical Hits
 
 Armor Class: 6
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4696,7 +4846,8 @@ Weight: 15
 STATISTICS:
 
 Armor Class: 7
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4708,7 +4859,8 @@ Weight: 20
 STATISTICS:
 
 Armor Class: 6
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4724,7 +4876,8 @@ Equipped abilities:
  - Missile Attraction: wearer suffers a -10 penalty to AC vs. missile weapons and everyone within 20' gains a +4 bonus to AC vs. missile weapons
 
 Armor Class: 4
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4735,7 +4888,8 @@ Weight: 20
 STATISTICS:
 
 Armor Class: 5
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4767,7 +4921,8 @@ Equipped abilities:
  - Dexterity: +1 bonus
 
 Armor Class: 5
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4778,7 +4933,8 @@ Weight: 15
 STATISTICS:
 
 Armor Class: 6
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -4789,7 +4945,8 @@ Weight: 25
 STATISTICS:
 
 Armor Class: 6
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4800,7 +4957,8 @@ Weight: 15
 STATISTICS:
 
 Armor Class: 5
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4816,7 +4974,8 @@ Equipped abilities:
  - Charisma: -1 penalty
 
 Armor Class: 4
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -4833,7 +4992,8 @@ Equipped abilities:
 NOTE: Multiple Barkskin effects are not cumulative.
 
 Armor Class: 5
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4848,7 +5008,8 @@ Equipped abilities:
  - Charisma: -1 penalty
 
 Armor Class: 5
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4862,7 +5023,8 @@ Equipped abilities:
  - Protects Against: Backstabs
 
 Armor Class: 2
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4881,7 +5043,8 @@ Equipped abilities:
  - Protects Against: Poison
 
 Armor Class: 3
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4896,7 +5059,8 @@ Equipped abilities:
  - Spell: Negative Plane Protection
 
 Armor Class: 1
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -4912,7 +5076,8 @@ Equipped abilities:
  - Strength: +1 bonus
 
 Armor Class: 3
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 30
 
@@ -4928,7 +5093,8 @@ Equipped abilities:
  - Hideous: +2 bonus to AC and saving throws vs. humanoids
 
 Armor Class: 3
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4939,7 +5105,8 @@ Weight: 15
 STATISTICS:
 
 Armor Class: 8
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4954,7 +5121,8 @@ Equipped abilities:
  - Thorns: creatures who strike the wearer in melee suffer 2 piercing damage every round for 5 rounds
 
 Armor Class: 2
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -4970,7 +5138,8 @@ Equipped abilities:
 NOTE: Multiple Haste effects are not cumulative.
 
 Armor Class: 3
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -4993,7 +5162,8 @@ Damage: 1D4 + 4 (crushing or missile)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 5
 
@@ -5007,7 +5177,8 @@ Equipped abilities:
  - Mithral: +1 bonus to AC
 
 Armor Class: -1
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 30
 
@@ -5035,7 +5206,8 @@ Equipped abilities:
  - Casting Speed: +1 bonus
 
 Armor Class: 2
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 15
 
@@ -5454,7 +5626,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -5610,7 +5783,8 @@ Damage: 1D10 + 5 (slashing)
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 10
 
@@ -5620,43 +5794,50 @@ Weight: 10
 @1766 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud the protective magic is released upon the reader. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
 @1767 = ~This scroll protects its user from all acid-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as acidic dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Melf's Acid Arrow and Acid Fog. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1768 = ~Protection from Cold~
 @1769 = ~This scroll protects its user from all cold-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as icy dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Ice Storm and Cone of Cold. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1770 = ~Protection from Electricity~
 @1771 = ~This scroll protects its reader from all electricity-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as electrical dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Lightning Bolt, Glyph of Warding, Call Lightning, and Chain Lightning. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1772 = ~Protection from Fire~
 @1773 = ~This scroll protects its reader from all fire-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as fiery dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Burning Hands, Agannazar's Scorcher, Fireball, Flame Strike, and Fire Storm. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1774 = ~Protection from Magic~
 @1775 = ~This scroll creates a very powerful globe of anti-magic in a 3' radius around the reader. No form of magic can pass into it or out from it, and any spell effects currently affecting the target will be removed. The globe cannot be dispelled, nor breached by most anti-magic attacks, but a Spellstrike spell can destroy it. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1776 = ~Protection from Ailments~
 @1777 = ~This scroll will protect the reader from all forms of poison and disease, be they of a natural or magical nature. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1778 = ~Protection from Undead~
 @1779 = ~This scroll creates a magical barrier around the reader at a distance of one foot. The barrier moves with the recipient and protects him from all forms of attack made by undead creatures. The recipient is immune to level drain effects, attacks made by undead creatures against the user receive a -2 penalty to THAC0, and any saving throws caused by such attacks are made by the user with a +2 bonus. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @1780 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -5697,7 +5878,8 @@ Equipped abilities:
  - Armor Class: +4 bonus vs. missile weapons
  - Physical Resistance: +20% bonus
 
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 5
 
@@ -5714,7 +5896,8 @@ THAC0: +2
 Speed Factor: 4
 Proficiency Type: Short Bow
 Type: Two-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 2
 
@@ -5738,7 +5921,8 @@ Equipped abilities:
  - Mithral: +1 bonus to AC
 
 Armor Class: 3
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -5803,7 +5987,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -5818,7 +6003,8 @@ Equipped abilities:
  - Retribution: creatures who strike the wearer in melee suffer 1D4 magic damage
 
 Armor Class: -1
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -5847,7 +6033,8 @@ Equipped abilities:
  - Fire Resistance: +25% bonus
  - Cold Resistance: +25% bonus
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -5865,7 +6052,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -5884,7 +6072,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -5904,7 +6093,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -5925,7 +6115,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -5944,7 +6135,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -5963,7 +6155,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -5982,7 +6175,8 @@ Equipped abilities:
  - Protects Against: Blindness
 
 Armor Class: 4
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -6000,7 +6194,8 @@ Damage: +2 (missile)
 Speed Factor: 3
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -6011,7 +6206,8 @@ Weight: 4
 STATISTICS:
 
 Armor Class: 3
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6023,7 +6219,8 @@ Weight: 50
 STATISTICS:
 
 Armor Class: 2
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6033,7 +6230,8 @@ Weight: 50
 STATISTICS:
 
 Armor Class: 1
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6044,7 +6242,8 @@ Weight: 60
 STATISTICS:
 
 Armor Class: 0
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6058,7 +6257,8 @@ Equipped abilities:
  - Acid Resistance: +50% bonus
 
 Armor Class: 1
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 25
 
@@ -6074,7 +6274,8 @@ Equipped abilities:
 NOTE: Multiple Protection from Evil effects are not cumulative.
 
 Armor Class: 1
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6087,7 +6288,8 @@ Equipped abilities:
  - Mithral: +1 bonus to AC
 
 Armor Class: -1
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 30
 
@@ -6098,7 +6300,8 @@ Weight: 30
 STATISTICS:
 
 Armor Class: 1
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6112,7 +6315,8 @@ Equipped abilities:
  - Magic Damage Resistance: +50% bonus
 
 Armor Class: 1
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6129,7 +6333,8 @@ Equipped abilities:
 NOTE: The Aura of Despair effect is not cumulative with other Doom effects.
 
 Armor Class: 0
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6145,7 +6350,8 @@ Equipped abilities:
  - Spell Level Immunity: 1st, 2nd, and 3rd level spells are unable to affect the wearer
 
 Armor Class: -1
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6160,7 +6366,8 @@ Equipped abilities:
  - Protects Against: Berserk and Confusion
 
 Armor Class: -1
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6177,7 +6384,8 @@ Equipped abilities:
  - Spell School Immunity: Necromancy
 
 Armor Class: -2
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6192,7 +6400,8 @@ Equipped abilities:
  - Protects Against: Fear
 
 Armor Class: -2
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6206,7 +6415,8 @@ Equipped abilities:
  - Fire Resistance: +50% bonus
 
 Armor Class: -2
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 40
 
@@ -6217,7 +6427,8 @@ Weight: 40
 STATISTICS:
 
 Armor Class: -1
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6231,7 +6442,8 @@ Equipped abilities:
  - Electricity Resistance: +50%
 
 Armor Class: -4
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 50
 
@@ -6246,7 +6458,8 @@ Equipped abilities:
  - Protects Against: Backstabs and Critical Hits
 
 Armor Class: -3
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6263,7 +6476,8 @@ Equipped abilities:
  - Mithral: +1 bonus to AC
 
 Armor Class: -1
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -6273,7 +6487,8 @@ Weight: 25
 STATISTICS:
 
 Armor Class: -2
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -6587,7 +6802,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -6600,7 +6816,8 @@ STATISTICS:
 Speed Factor: 6
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6616,7 +6833,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6631,7 +6849,8 @@ Damage: +3 (missile)
 Speed Factor: 3
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6646,7 +6865,8 @@ Damage: +2 (missile)
 Speed Factor: 4
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6670,7 +6890,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6690,7 +6911,8 @@ Damage: +2 (missile)
 Speed Factor: 4
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6710,7 +6932,8 @@ Damage: +2 (missile)
 Speed Factor: 4
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6735,7 +6958,8 @@ Damage: 1D4 + 5
 Speed Factor: 2
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6761,7 +6985,8 @@ Damage: 1D4 + 6
 Speed Factor: 1
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -6775,7 +7000,8 @@ Equipped abilities:
  - Armor Class: +1 bonus
  - No protection against missile attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 6
 
@@ -6790,7 +7016,8 @@ Equipped abilities:
  - Armor Class: +2 bonus
  - No protection against missile attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 6
 
@@ -6802,7 +7029,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +1 bonus
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -6815,7 +7043,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +2 bonus
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -6828,7 +7057,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +1 bonus, an extra +1 vs. missile attacks
 
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 45
 
@@ -6842,7 +7072,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +2 bonus, an extra +1 vs. missile attacks
 
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 45
 
@@ -6857,7 +7088,8 @@ Equipped abilities:
  - Armor Class: +3 bonus, an extra +1 vs. missile attacks
  - Shield Others: allies within 10' gain a +2 bonus to AC
 
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 45
 
@@ -6871,7 +7103,8 @@ Equipped abilities:
  - Armor Class: +1 bonus
  - No protection against missile and piercing attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -6886,7 +7119,8 @@ Equipped abilities:
  - Armor Class: +2 b onus
  - No protection against missile and piercing attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -6902,7 +7136,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +3 bonus, an extra +1 vs. missile attacks
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -6917,7 +7152,8 @@ Equipped abilities:
  - No protection against missile and piercing attacks
  - Protects Against: Hold and Stun
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -6932,7 +7168,8 @@ Equipped abilities:
  - Fire Resistance: +25% bonus
  - Force Absorbing: wielder gains a +3 bonus to saves vs. breath and is immune to everything that pushes them away
 
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 10
 
@@ -6949,7 +7186,8 @@ Equipped abilities:
  - Saving Throws: +1 bonus
  - Magic Resistance: +10% bonus
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -6963,7 +7201,8 @@ Equipped abilities:
  - Armor Class: +4 bonus, an extra +1 vs. missile attacks
  - Physical Resistance: +10% bonus
 
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 45
 
@@ -6981,7 +7220,8 @@ NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf
 Equipped abilities:
  - Armor Class: +2 bonus
 Special: No Piercing Attack Protection
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -6996,7 +7236,8 @@ Equipped abilities:
  - No protection against missile attacks
  - Protects Against: Charm, Confusion, and Domination
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 6
 
@@ -7010,7 +7251,8 @@ Equipped abilities:
  - Armor Class: +3 bonus
  - Deflect Magic: one spell cast against the wearer is absorbed per turn
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -7026,7 +7268,8 @@ Equipped abilities:
  - Armor Class: +4 bonus
  - Searing Light: creatures who strike the wearer in melee are blinded for 1 round, and undead creatures also suffer 2D6 magic damage (save vs. spell neg. blindness)
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -7040,7 +7283,8 @@ Equipped abilities:
  - Armor Class: +3 bonus
  - No protection against missile attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 6
 
@@ -7053,7 +7297,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +3 bonus
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -7066,7 +7311,8 @@ STATISTICS:
 Equipped abilities:
  - Armor Class: +3 bonus, an extra +1 vs. missile attacks
 
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 45
 
@@ -7088,7 +7334,8 @@ Equipped abilities:
  - Armor Class: +5 bonus, an extra +1 vs. missile attacks
  - Elemental Resistance: +25% bonus
 
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 45
 
@@ -7103,7 +7350,8 @@ Equipped abilities:
  - Protection from Demons: +2 bonus to AC and saving throws vs. demonic creatures and fallen celestials
  - Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -7116,7 +7364,8 @@ Damage: 1D6 (piercing)
 Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7131,7 +7380,8 @@ Damage: 1D6 + 1 (piercing)
 Speed Factor: 5
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7152,7 +7402,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7167,7 +7418,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7182,7 +7434,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7201,7 +7454,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -7222,7 +7476,8 @@ Damage: 1D6 + 3 (piercing or missile)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7241,7 +7496,8 @@ Damage: 1D6 + 2 (piercing or missile)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7262,7 +7518,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7288,7 +7545,8 @@ Damage: 1D6 + 4 (piercing)
 Speed Factor: 2
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7318,7 +7576,8 @@ Damage: 1D6 + 5 (piercing)
 Speed Factor: 1
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -7332,7 +7591,8 @@ Damage: 1D6 (crushing)
 Speed Factor: 4
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7348,7 +7608,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7366,7 +7627,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7381,7 +7643,8 @@ Damage: 1D6 + 2
 Speed Factor: 2 (crushing)
 Proficiency Type: Quarterstaff
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7396,7 +7659,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7417,7 +7681,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7445,7 +7710,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7466,7 +7732,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7492,7 +7759,8 @@ Damage: 1D6 + 5 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7515,7 +7783,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7538,7 +7807,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7571,7 +7841,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 2
 
@@ -7593,7 +7864,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7615,7 +7887,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7637,7 +7910,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7652,7 +7926,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7676,7 +7951,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7700,7 +7976,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7718,7 +7995,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7739,7 +8017,8 @@ Damage: 1D6 + 5 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7758,7 +8037,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7773,7 +8053,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -7787,7 +8068,8 @@ Damage: 2D4 (slashing)
 Speed Factor: 8
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -7803,7 +8085,8 @@ Damage: 2D4 + 1 (slashing)
 Speed Factor: 7
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -7827,7 +8110,8 @@ Damage: 2D4 + 2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -7840,7 +8124,8 @@ Damage: 1D8 (slashing)
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -7855,7 +8140,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -7873,7 +8159,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -7887,7 +8174,8 @@ Damage: 1D6 (piercing)
 Speed Factor: 3
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -7903,7 +8191,8 @@ Damage: 1D6 + 1 (piercing)
 Speed Factor: 2
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -7918,7 +8207,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -7939,7 +8229,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -7961,7 +8252,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -7980,7 +8272,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -7993,7 +8286,8 @@ Damage: 1D8 (slashing)
 Speed Factor: 5
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -8008,7 +8302,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -8026,7 +8321,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -8047,7 +8343,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8066,7 +8363,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8090,7 +8388,8 @@ Damage: 1D6 + 1 (piercing)
 Speed Factor: 2
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8114,7 +8413,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8133,7 +8433,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8147,7 +8448,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8165,7 +8467,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -8189,7 +8492,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8215,7 +8519,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -8246,7 +8551,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8276,7 +8582,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: 1-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8297,7 +8604,8 @@ Damage: 2D4 + 1 (slashing)
 Speed Factor: 7
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8321,7 +8629,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8345,7 +8654,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8364,7 +8674,8 @@ Damage: 2D4 + 2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8382,7 +8693,8 @@ Damage: 2D4 + 2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8400,7 +8712,8 @@ Damage: 2D4 + 3 (slashing)
 Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8421,7 +8734,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8436,7 +8750,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8451,7 +8766,8 @@ Damage: 2D4 + 2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8464,7 +8780,8 @@ Damage: 1D10 (slashing)
 Speed Factor: 4
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -8480,7 +8797,8 @@ Damage: 1D10 + 1 (slashing)
 Speed Factor: 3
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -8501,7 +8819,9 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength, 16 Dexterity
+Requires:
+ 6 Strength
+ 16 Dexterity
 
 Weight: 5
 
@@ -8515,7 +8835,8 @@ Damage: 1D8 (piercing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8531,7 +8852,8 @@ Damage: 1D8 + 1 (piercing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8545,7 +8867,8 @@ Damage: 1D8 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -8561,7 +8884,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -8590,7 +8914,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 1
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -8614,7 +8939,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -8634,7 +8960,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -8661,7 +8988,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8676,7 +9004,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -8704,7 +9033,8 @@ Damage: 1D6 + 4 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8735,7 +9065,8 @@ Damage: 1D6 + 5 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8757,7 +9088,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8783,7 +9115,8 @@ Damage: 1D8 + 5 (slashing)
 Speed Factor: 0
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -8813,7 +9146,8 @@ Damage: 2D4 + 2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8844,7 +9178,8 @@ Damage: 2D4 + 3 (slashing)
 Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8872,7 +9207,8 @@ Damage: 2D4 + 4 (slashing)
 Speed Factor: 4
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8906,7 +9242,8 @@ Damage: 2D4 + 5 (slashing)
 Speed Factor: 3
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -8924,7 +9261,8 @@ Damage: 1D8 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -8946,7 +9284,8 @@ Damage: 1D8 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -8981,7 +9320,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -9015,7 +9355,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -9056,7 +9397,8 @@ Damage: 1D8 + 5 (slashing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -9096,7 +9438,8 @@ Damage: 1D8 + 5 (slashing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -9122,7 +9465,8 @@ Damage: 1D10 + 4 (slashing)
 Speed Factor: 0
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -9151,7 +9495,8 @@ Damage: 1D10 + 5 (slashing)
 Speed Factor: 0
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -9166,7 +9511,8 @@ Damage: 2D4 + 3 (slashing)
 Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -9181,7 +9527,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -9196,7 +9543,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -9211,7 +9559,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 1
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -9226,7 +9575,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -9248,7 +9598,8 @@ Damage: 1D8 + 4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -9261,7 +9612,8 @@ Damage: 1D10 (slashing)
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9276,7 +9628,8 @@ Damage: 1D10 + 1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9299,7 +9652,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9317,7 +9671,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9342,7 +9697,8 @@ Damage: 1D10 + 1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9361,7 +9717,8 @@ Damage: 1D10 + 4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 10
 
@@ -9380,7 +9737,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 12
 
@@ -9407,7 +9765,8 @@ Damage: 1D10 + 4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 10
 
@@ -9422,7 +9781,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9441,7 +9801,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9463,7 +9824,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9482,7 +9844,8 @@ Damage: 1D10 + 4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9500,7 +9863,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9522,7 +9886,8 @@ Damage: 1D10 + 4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9547,7 +9912,8 @@ Damage: 1D10 + 5 (slashing)
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9576,7 +9942,8 @@ Damage: 1D10 + 5 (slashing)
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 10
 
@@ -9591,7 +9958,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9614,7 +9982,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -9649,7 +10018,8 @@ Damage: 1D10 + 2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 5
 
@@ -9685,7 +10055,8 @@ Equipped abilities:
  - Charisma: +1 bonus
 
 Armor Class: -1
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -9738,7 +10109,8 @@ Damage: 1D8 + 2 (piercing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -9754,7 +10126,8 @@ Equipped abilities:
  - Armor Class: +4 bonus
  - Protects Against: Gaze/ray attacks
 
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 15
 
@@ -9771,7 +10144,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Horror: 5 rounds (save vs. wand neg.)
 
-Requires: 12 Intelligence
+Requires:
+ 12 Intelligence
 
 ~
 @2243 = ~Wand of Magic Missiles~
@@ -9784,7 +10158,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Magic Missile: 3 missiles
 
-Requires: 11 Intelligence
+Requires:
+ 11 Intelligence
 
 ~
 @2245 = ~Wand of Paralyzation~
@@ -9797,7 +10172,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Paralyze: 5 rounds (save vs. wand at -2 neg.)
 
-Requires: 13 Intelligence
+Requires:
+ 13 Intelligence
 
 ~
 @2247 = ~Wand of Fire~
@@ -9810,7 +10186,8 @@ STATISTICS:
 Special abilities (consume charges):
  - Fireball: 6D6 (save vs. wand at -2 half)
 
-Requires: 13 Intelligence
+Requires:
+ 13 Intelligence
 
 ~
 @2249 = ~Wand of Frost~
@@ -9823,7 +10200,8 @@ STATISTICS:
 Special abilities (consume charges):
  - Cone of Cold: 6D4 + 6 (save vs. wand at -4 half)
 
-Requires: 13 Intelligence
+Requires:
+ 13 Intelligence
 
 ~
 @2251 = ~Wand of Lightning~
@@ -9836,7 +10214,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Lightning Bolt: 6D6 (save vs. wand at -4 half)
 
-Requires: 13 Intelligence
+Requires:
+ 13 Intelligence
 
 ~
 @2253 = ~Wand of Sleep~
@@ -9849,7 +10228,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Sleep: 5 rounds (save vs. wand neg.)
 
-Requires: 11 Intelligence
+Requires:
+ 11 Intelligence
 
 ~
 @2255 = ~Wand of Polymorphing~
@@ -9862,7 +10242,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Polymorph Other: permanent (save vs. wand at -2 neg.)
 
-Requires: 14 Intelligence
+Requires:
+ 14 Intelligence
 
 ~
 @2257 = ~Wand of Monster Summoning~
@@ -9875,7 +10256,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Monster Summoning: 1 turn
 
-Requires: 14 Intelligence
+Requires:
+ 14 Intelligence
 
 ~
 @2259 = ~Wand of the Heavens~
@@ -9888,7 +10270,9 @@ STATISTICS:
 Special abilities (consume charges):
  - Flame Strike: 10D6 (save vs. wand at -4 half)
 
-Requires: 10 Intelligence, 15 Wisdom
+Requires:
+ 10 Intelligence
+ 15 Wisdom
 
 ~
 @2261 = ~Rod of Wonder~
@@ -9899,7 +10283,8 @@ STATISTICS:
 Special abilities:
  - Random effects (3x per day)
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 Weight: 3
 
@@ -9914,7 +10299,8 @@ STATISTICS:
 Special abilities (consumes charges):
  - Cloudkill: 1 turn
 
-Requires: 15 Intelligence
+Requires:
+ 15 Intelligence
 
 ~
 @2265 = ~Wand of Spell Striking~
@@ -9928,7 +10314,8 @@ Special abilities (consume charges):
  - Breach
  - Pierce Magic
 
-Requires: 16 Intelligence
+Requires:
+ 16 Intelligence
 
 ~
 @2267 = ~Wand of Cursing~
@@ -9941,7 +10328,8 @@ STATISTICS:
 Special abilities (consume charges):
  - Curse: target is blinded, deafened, and silenced for 1 turn (save vs. wand at -2 neg.)
 
-Requires: 12 Intelligence
+Requires:
+ 12 Intelligence
 
 ~
 @2269 = ~Heavy Crossbow~
@@ -9953,7 +10341,8 @@ Damage: +2 (missile)
 Speed Factor: 10
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 8
 
@@ -9969,7 +10358,8 @@ Damage: +3 (missile)
 Speed Factor: 9
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 8
 
@@ -9989,7 +10379,8 @@ Damage: +3 (missile)
 Speed Factor: 9
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 8
 
@@ -10001,7 +10392,8 @@ STATISTICS:
 Speed Factor: 5
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10016,7 +10408,8 @@ Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10035,7 +10428,8 @@ Damage: +1 (missile)
 Speed Factor: 4
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10050,7 +10444,8 @@ Damage: +4 (missile)
 Speed Factor: 8
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 8
 
@@ -10069,7 +10464,8 @@ Damage: +5 (missile)
 Speed Factor: 7
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 12
 
@@ -10084,7 +10480,8 @@ Damage: +2 (missile)
 Speed Factor: 3
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10106,7 +10503,8 @@ Damage: +2 (missile)
 Speed Factor: 3
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10127,7 +10525,8 @@ Damage: +4 (missile)
 Speed Factor: 1
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10145,7 +10544,8 @@ Damage: +4 (missile)
 Speed Factor: 8
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 8
 
@@ -10167,7 +10567,8 @@ Damage: 1D8 + 4 (missile)
 Speed Factor: 1
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10189,7 +10590,8 @@ Damage: 1D8 + 5 (missile)
 Speed Factor: 0
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10204,7 +10606,8 @@ Damage: +5 (missile)
 Speed Factor: 7
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 12 Strength
+Requires:
+ 12 Strength
 
 Weight: 8
 
@@ -10219,7 +10622,8 @@ Damage: +3 (missile)
 Speed Factor: 2
 Proficiency Type: Crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -10240,7 +10644,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10260,7 +10665,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10280,7 +10686,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10300,7 +10707,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10319,7 +10727,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10338,7 +10747,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10369,7 +10779,8 @@ Damage: 1D6 + 2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -10394,7 +10805,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10412,7 +10824,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -10435,7 +10848,8 @@ Damage: 2D4 + 2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 6
 
@@ -10479,7 +10893,8 @@ Damage: 1D6 + 3 (slashing or missile)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -10599,7 +11014,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -10619,7 +11035,8 @@ THAC0: +4
 Speed Factor: 4
 Proficiency Type: Long Bow
 Type: Two-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -10659,7 +11076,8 @@ Damage: 1D4 + 2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -10673,7 +11091,8 @@ Damage: 1D4 (piercing)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -10687,7 +11106,8 @@ Damage: 1D4 (piercing)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -10706,7 +11126,8 @@ Damage: 1D4 + 4 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -10790,7 +11211,8 @@ Weight: 1
 STATISTICS:
 
 Armor Class: 4
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -10831,7 +11253,8 @@ Weight: 1
 @2375 = ~Protection from Alterations~
 @2376 = ~This scroll offers protection to the reader from most transmutation attacks, such as slow, polymorph, disintegration, and petrification. The effect is not permanent, however, and will wear off after 5 turns.
 
-Requires: 10 Intelligence
+Requires:
+ 10 Intelligence
 
 ~
 @2377 = ~Sling of Seeking +1~
@@ -10847,7 +11270,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -10870,7 +11294,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -10891,7 +11316,9 @@ Damage: 1D8 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 5 Strength, 16 Dexterity
+Requires:
+ 5 Strength
+ 16 Dexterity
 
 Weight: 3
 
@@ -10909,7 +11336,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -10920,7 +11348,8 @@ Weight: 6
 Special abilities:
  - Web (1x per day)
 
-Requires: 12 Intelligence
+Requires:
+ 12 Intelligence
 
 Weight: 3
 
@@ -10933,7 +11362,8 @@ STATISTICS:
 Special abilities:
  - Spell Absorption (1x per day): 1 turn
 
-Requires: 15 Intelligence
+Requires:
+ 15 Intelligence
 
 Weight: 3
 
@@ -10958,7 +11388,9 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength, 10 Intelligence
+Requires:
+ 5 Strength
+ 10 Intelligence
 
 Weight: 10
 
@@ -10971,7 +11403,9 @@ STATISTICS:
 Special abilities:
  - Raise Dead (1x per day)
 
-Requires: 10 Intelligence, 15 Wisdom
+Requires:
+ 10 Intelligence
+ 15 Wisdom
 
 Weight: 3
 
@@ -10992,7 +11426,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -11005,7 +11440,8 @@ STATISTICS:
 Special abilities:
  - Reverse Magic (1x per day): removes all magical effects from the target (save vs. rod at -4 neg.)
 
-Requires: 15 Intelligence
+Requires:
+ 15 Intelligence
 
 Weight: 3
 
@@ -11018,7 +11454,8 @@ Special abilities:
  - Lightning Bolt (1x per day)
  - Cone of Cold (1x per day)
 
-Requires: 15 Intelligence
+Requires:
+ 15 Intelligence
 
 Weight: 3
 
@@ -11039,7 +11476,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -11071,7 +11509,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -11122,7 +11561,8 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 4
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -11143,7 +11583,8 @@ Damage: 1D10 + 4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 8
 
@@ -11185,7 +11626,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 12
 
@@ -11269,7 +11711,8 @@ Damage: 1D6 (crushing)
 Speed Factor: 4
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -11344,7 +11787,8 @@ Damage: 1D10 + 3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 18 Strength
+Requires:
+ 18 Strength
 
 Weight: 16
 
@@ -11372,7 +11816,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -11393,7 +11838,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -11412,7 +11858,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -11431,7 +11878,8 @@ Damage: 1D10 + 3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -11449,7 +11897,8 @@ Damage: +3 (missile)
 Speed Factor: 3
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -11467,7 +11916,8 @@ Damage: 1D6 + 3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -11486,7 +11936,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -11507,7 +11958,8 @@ Damage: 2D4 + 3 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 11 Strength
+Requires:
+ 11 Strength
 
 Weight: 9
 
@@ -11533,7 +11985,8 @@ Special Characteristics:
  - Protected Against: Backstabs, Normal Weapons, and Poison
  - Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
-Requires: 16 Intelligence
+Requires:
+ 16 Intelligence
 
 ~
 @2475 = ~Clay Golem Manual~
@@ -11558,7 +12011,8 @@ Special Characteristics:
  - Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  - Cursing: target is cursed and cannot recover from their wounds permanently
 
-Requires: 16 Intelligence
+Requires:
+ 16 Intelligence
 
 ~
 @2477 = ~Stone Golem Manual~
@@ -11582,7 +12036,8 @@ Special Characteristics:
  - Protected Against: Backstabs, Normal/+1 Weapons, Petrification, and Poison
  - Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
-Requires: 16 Intelligence
+Requires:
+ 16 Intelligence
 
 ~
 @2479 = ~Juggernaut Golem Manual~
@@ -11607,7 +12062,8 @@ Special Characteristics:
  - Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  - Stunning: target is stunned for 1 round (save vs. spell neg.)
 
-Requires: 16 Intelligence
+Requires:
+ 16 Intelligence
 
 ~
 @2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
@@ -11629,7 +12085,9 @@ Damage: 1D6 + 4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength, 10 Intelligence
+Requires:
+ 13 Strength
+ 10 Intelligence
 
 Weight: 10
 
@@ -11653,7 +12111,9 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength, 10 Intelligence
+Requires:
+ 6 Strength
+ 10 Intelligence
 
 Weight: 10
 
@@ -11679,7 +12139,9 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength, 10 Intelligence
+Requires:
+ 10 Strength
+ 10 Intelligence
 
 Weight: 10
 
@@ -11704,7 +12166,9 @@ Damage: 1D6 + 3 (piercing or missile)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength, 10 Intelligence
+Requires:
+ 5 Strength
+ 10 Intelligence
 
 Weight: 10
 
@@ -11809,7 +12273,8 @@ Damage: 1D4 (piercing)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 1
 
@@ -11940,7 +12405,8 @@ Damage: 1D6 (crushing)
 Speed Factor: 4
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -11963,7 +12429,8 @@ Damage: 1D8 (slashing)
 Speed Factor: 5
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -12026,7 +12493,8 @@ Damage: +5 (missile)
 Speed Factor: 0
 Proficiency Type: crossbow
 Type: Two-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
@@ -12098,7 +12566,8 @@ Equipped abilities:
  - Protects Against: Backstabs
 
 Armor Class: -10
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -12133,7 +12602,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -12148,7 +12618,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -12159,7 +12630,8 @@ Weight: 8
 STATISTICS:
 
 Armor Class: 5
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 20
 
@@ -12168,7 +12640,8 @@ Weight: 20
 @2576 = ~Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area.
 
 Armor Class: 2
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 30
 
@@ -12182,7 +12655,8 @@ Equipped abilities:
  - Protection from Good: +2 bonus to AC and saving throws vs. good creatures
 
 Armor Class: 0
-Requires: 15 Strength
+Requires:
+ 15 Strength
 
 Weight: 60
 
@@ -12196,7 +12670,8 @@ Equipped abilities:
  - Acid Resistance: +50% bonus
 
 Armor Class: 2
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 25
 
@@ -12212,7 +12687,8 @@ Damage: 1D6 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -12402,7 +12878,8 @@ Equipped abilities:
  - No protection against missile attacks
  - Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 6
 
@@ -12481,7 +12958,8 @@ Damage: 1D6 (piercing or missile)
 Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 5
 
@@ -12499,7 +12977,8 @@ Damage: 1D4 + 4 (crushing)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -12765,7 +13244,8 @@ Damage: 1D6 + 3 (slashing or missile)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -12780,7 +13260,8 @@ Damage: 1D6 + 2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 3
 
@@ -12798,7 +13279,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 6
 
@@ -12840,7 +13322,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -12858,7 +13341,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 5
 
@@ -12876,7 +13360,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -12891,7 +13376,8 @@ Damage: 1D6 + 3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
-Requires: 13 Strength
+Requires:
+ 13 Strength
 
 Weight: 10
 
@@ -12909,7 +13395,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 2
 
@@ -12928,7 +13415,8 @@ Damage: 1D6 + 2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 8
 
@@ -12948,7 +13436,8 @@ Damage: 1D10 + 2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 14
 
@@ -12969,7 +13458,8 @@ Damage: 1D4 + 2 (crushing)
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 5
 
@@ -12984,7 +13474,8 @@ Equipped abilities:
  - Move Silently: -20% penalty
 
 Armor Class: 6
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 15
 
@@ -13006,7 +13497,8 @@ Weight: 1
 STATISTICS:
 
 Armor Class: 1
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 30
 
@@ -13056,7 +13548,8 @@ Equipped abilities:
  - No protection against missile and piercing attacks
  - Constitution: +1 bonus
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -13074,7 +13567,8 @@ Damage: +1 (missile)
 Speed Factor: 5
 Proficiency Type: Sling
 Type: One-handed
-Requires: 3 Strength
+Requires:
+ 3 Strength
 
 Weight: 0
 
@@ -13095,7 +13589,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -13113,7 +13608,8 @@ Damage: 1D6 + 1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 4
 
@@ -13132,7 +13628,8 @@ Damage: 1D8 + 1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 4
 
@@ -13151,7 +13648,8 @@ Damage: 1D10 + 1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 16 Strength
+Requires:
+ 16 Strength
 
 Weight: 10
 
@@ -13169,7 +13667,8 @@ Damage: 1D10 + 1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
-Requires: 14 Strength
+Requires:
+ 14 Strength
 
 Weight: 8
 
@@ -13180,7 +13679,8 @@ Weight: 8
 STATISTICS:
 
 Armor Class: 2
-Requires: 10 Strength
+Requires:
+ 10 Strength
 
 Weight: 45
 
@@ -13219,7 +13719,8 @@ Weight: 0
 STATISTICS:
 
 Armor Class: 5
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -13230,7 +13731,8 @@ Weight: 25
 STATISTICS:
 
 Armor Class: 4
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -13241,7 +13743,8 @@ Weight: 25
 STATISTICS:
 
 Armor Class: 3
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 25
 
@@ -13255,7 +13758,8 @@ Equipped abilities:
  - Armor Class: +3 bonus
  - No protection against missile and piercing attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -13269,7 +13773,8 @@ Equipped abilities:
  - Armor Class: +4 bonus
  - No protection against missile and piercing attacks
 
-Requires: 4 Strength
+Requires:
+ 4 Strength
 
 Weight: 4
 
@@ -13284,7 +13789,8 @@ Damage: 1D8 + 2 (piercing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -13299,7 +13805,8 @@ Damage: 1D8 + 3 (piercing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 5 Strength
+Requires:
+ 5 Strength
 
 Weight: 3
 
@@ -13314,7 +13821,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -13329,7 +13837,8 @@ Damage: 1D8 + 3 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 6 Strength
+Requires:
+ 6 Strength
 
 Weight: 3
 
@@ -13344,7 +13853,8 @@ Damage: 1D8 + 2 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
-Requires: 8 Strength
+Requires:
+ 8 Strength
 
 Weight: 4
 
