@@ -957,7 +957,7 @@ END
 
 /////////////////////////////////////
 
-ACTION_IF install_item_reallocation BEGIN // reallocate items to match with SCS
+ACTION_IF item_reallocation BEGIN // reallocate items to match with SCS
 
 // Remove Shadow Veil and Robe of Larloch from Deidre
 ACTION_IF (FILE_EXISTS_IN_GAME ~wmart2.sto~) BEGIN

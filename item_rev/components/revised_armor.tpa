@@ -161,7 +161,7 @@ ACTION_PHP_EACH armor AS ind => res BEGIN
 END
 
 //////////////////////////
-// handle special cases
+// Handle special cases
 
 ACTION_IF armor_ac_modifiers BEGIN
 
@@ -340,4 +340,7 @@ END
 
 END
 
-END // ACTION_IF ac_mod
+END // armor_ac_mod
+
+/*----------------DavidW's itemdesc----------------*/
+INCLUDE ~item_rev/components/itemdesc.tpa~

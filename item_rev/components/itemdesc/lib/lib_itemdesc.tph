@@ -1,0 +1,936 @@
+DEFINE_PATCH_FUNCTION itemdesc BEGIN 
+
+	// get data 
+	LPF itemdesc_get_item_data RET_ARRAY itemdesc_item_data=item_data END
+	// initialize strref; get data from it
+	READ_LONG 0x54 desc_strref
+	PATCH_IF desc_strref<=0 BEGIN
+		READ_LONG 0x50 desc_strref
+	END
+	PATCH_IF desc_strref<=0 BEGIN
+		PATCH_WARN "itemdesc: Unable to update the description for %SOURCE_RES%.itm as it doesn't have one"
+	END ELSE BEGIN
+		GET_STRREF desc_strref desc
+		INNER_PATCH "%desc%" BEGIN
+			LPF itemdesc_get_desc_data RET special_string thac0_string damage_string END
+		END
+		INNER_PATCH_SAVE desc "%desc%" BEGIN
+			LPF itemdesc_reset END
+		END
+		// make string
+		PATCH_IF enhanced_edition BEGIN
+			LPF itemdesc_make_ee_block RET block END
+		END ELSE BEGIN
+			LPF itemdesc_make_classic_block RET block END
+		END
+		SPRINT desc "%desc%%block%"
+		// patch into item
+		INNER_ACTION BEGIN
+			STRING_SET_EVALUATE desc_strref "%desc%"
+		END
+	END
+
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_armor BEGIN
+
+	// get data
+	LPF itemdesc_get_item_data RET_ARRAY itemdesc_item_data=item_data END
+	// make armor string
+	LPF itemdesc_get_armor_line RET line END
+	// sub it into string
+	READ_LONG 0x54 desc_strref
+	PATCH_IF desc_strref<=0 BEGIN
+		READ_LONG 0x50 desc_strref
+	END
+	PATCH_IF desc_strref<=0 BEGIN
+		PATCH_WARN "itemdesc_armor: Unable to update the description for %SOURCE_RES%.itm as it doesn't have one"
+	END ELSE BEGIN
+		GET_STRREF desc_strref desc
+		INNER_PATCH_SAVE desc "%desc%" BEGIN
+			REPLACE_TEXTUALLY "^%string_array_armor_class%.*" "%line%"
+		END
+		// patch into item
+		INNER_ACTION BEGIN
+			STRING_SET_EVALUATE desc_strref "%desc%"
+		END
+	END
+
+END
+
+
+DEFINE_PATCH_FUNCTION itemdesc_get_desc_data
+	RET special_string
+		thac0_string
+		damage_string
+BEGIN
+	SPRINT thac0_string ""
+	REPLACE_EVALUATE "%string_array_thac0% +\(.*,.*\)" BEGIN
+		SPRINT thac0_string "%MATCH1%"
+	END
+	""
+	SPRINT damage_string ""
+	REPLACE_EVALUATE "%string_array_damage% +\(.*,.*\)" BEGIN
+		SPRINT damage_string "%MATCH1%"
+	END
+	""
+	SPRINT special_string ""
+	// on non-EE, get any 'special' or 'bonus' string
+	PATCH_IF !enhanced_edition BEGIN
+		REPLACE_EVALUATE "^\(%special%.*\)" BEGIN
+			SPRINT special_string "%MATCH1%"
+		END
+		""
+		REPLACE_EVALUATE "^\(%bonus%.*\)" BEGIN
+			SPRINT special_string "%MATCH1%"
+		END
+		""
+	END
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_reset
+BEGIN
+	// on EE, wipe anything following the 'Requires:' bit
+	PATCH_IF enhanced_edition BEGIN
+		index=INDEX_BUFFER ("%string_array_requires%")
+		PATCH_IF index>=0 BEGIN
+			DELETE_BYTES index (BUFFER_LENGTH - index)	
+		END
+	END
+	// on non-EE, wipe the usable stuff
+	FOR (n=0;n<10;++n) BEGIN
+		SPRINT string $usable_by("%n%")
+		index=INDEX_BUFFER ("^%string%")
+		PATCH_IF index>=0 BEGIN
+			DELETE_BYTES index (BUFFER_LENGTH - index)
+		END
+	END
+	FOR (n=0;n<10;++n) BEGIN
+		SPRINT string $not_usable_by("%n%")
+		index=INDEX_BUFFER ("^%string%")
+		PATCH_IF index>=0 BEGIN
+			DELETE_BYTES index (BUFFER_LENGTH - index)
+		END
+	END	
+	// on non-EE, wipe specials
+	PATCH_IF !enhanced_edition BEGIN
+		REPLACE_TEXTUALLY "^\(%special%.*\)" ""
+		REPLACE_TEXTUALLY "^\(%bonus%.*\)" ""
+	END
+	// wipe any strings associated with main entries
+	PHP_EACH string_array AS label=>string BEGIN
+		PATCH_MATCH "%string%" WITH ".*:" BEGIN
+			REPLACE_TEXTUALLY "^%string%.*" ""
+		END
+		DEFAULT
+		END
+	END
+	
+	// clear any surplus spaces
+	
+	REPLACE_TEXTUALLY "[%WNL%%LNL%%MNL%][%WNL%%LNL%%MNL%]+" "%WNL%%WNL%"
+
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_get_armor_line 
+	RET line
+BEGIN
+	// do we mess with AC at all? If not return ""
+	PATCH_IF !VARIABLE_IS_SET $itemdesc_item_data("base_ac") BEGIN
+		SPRINT line ""
+	END ELSE BEGIN
+		acbase=$itemdesc_item_data("base_ac")
+		SPRINT line $string_array("armor_class")
+		SPRINT line "%line% %acbase%"
+		PATCH_IF enhanced_edition BEGIN
+			PATCH_FOR_EACH type IN slashing piercing crushing missile BEGIN
+				PATCH_IF !IS_AN_INT $itemdesc_item_data("%type%_ac") BEGIN
+					SET $itemdesc_item_data("%type%_ac")=100
+				END
+			END
+			SPRINT total_string ""
+			FOR (acmod="20";acmod>"-20";acmod=acmod - 1) BEGIN
+				SPRINT label ""
+				PATCH_FOR_EACH type IN slashing piercing crushing missile BEGIN
+					PATCH_IF $itemdesc_item_data("%type%_ac")=acmod BEGIN
+						PATCH_IF "%label%" STR_EQ "" BEGIN
+							SPRINT label "%type%"
+						END ELSE BEGIN
+							SPRINT label "%label%_%type%"
+						END
+					END
+				END
+				PATCH_IF "%label%" STR_CMP "" BEGIN
+					ac=acbase - acmod
+					SPRINT label_string $ac_type_array("%label%")
+					PATCH_IF "%total_string%" STR_EQ "" BEGIN
+						SPRINT total_string "%ac% %label_string%"
+					END ELSE BEGIN
+						SPRINT total_string "%total_string%, %ac% %label_string%"
+					END
+				END
+			END
+			PATCH_IF "%total_string%" STR_CMP "" BEGIN
+				SPRINT line "%line% (%total_string%)"
+			END
+		END
+	END
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_make_ee_block
+	RET block
+BEGIN
+	SPRINT block ""
+	// the AC bit
+	LPF itemdesc_get_armor_line RET line END
+	PATCH_IF "%line%" STR_CMP "" BEGIN
+		SPRINT block "%block%%line%%WNL%"
+	END
+	// the weapon bits
+	
+	// thac0
+	PATCH_IF "%thac0_string%" STR_EQ "" BEGIN
+		PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("thac0_bonus") BEGIN
+			bonus=$itemdesc_item_data("thac0_bonus")
+			PATCH_IF bonus>0 BEGIN
+				SPRINT block "%block%%string_array_thac0% +%itemdesc_item_data_thac0_bonus%%WNL%"			
+			END ELSE
+			PATCH_IF bonus<0 BEGIN
+				SPRINT block "%block%%string_array_thac0% %itemdesc_item_data_thac0_bonus%%WNL%"
+			END
+		END
+	END ELSE BEGIN
+		SPRINT block "%block%%string_array_thac0% %thac0_string%%WNL%"
+	END
+	// damage
+	separate_damage_type=0
+	PATCH_IF "%damage_string%" STR_EQ "" BEGIN
+		PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("dicenumber") BEGIN
+			dicenumber=$itemdesc_item_data("dicenumber")
+			dicesize=$itemdesc_item_data("dicesize")
+			damagebonus=$itemdesc_item_data("damagebonus")
+			found_damage_type=0
+			PATCH_FOR_EACH type IN melee ranged launcher BEGIN
+				PATCH_IF EVAL "itemdesc_item_data_is_%type%" BEGIN
+					PATCH_IF found_damage_type BEGIN
+						separate_damage_type=1
+						SPRINT type_addendum ""
+					END ELSE BEGIN
+						found_damage_type=1
+						
+						damagetype=EVAL "itemdesc_item_data_damage_type_%type%"
+						PATCH_MATCH damagetype WITH
+						1 BEGIN 
+							SPRINT type_string "%string_array_piercing%"
+						END
+						2 BEGIN 
+							SPRINT type_string "%string_array_crushing%"
+						END
+						3 BEGIN 
+							SPRINT type_string "%string_array_slashing%"
+						END
+						4 BEGIN 
+							SPRINT type_string "%string_array_missile%"
+						END
+						DEFAULT
+							PATCH_WARN "unrecognized damage type %damagetype%"
+							SPRINT type_string "%string_array_crushing%"
+						END
+						SPRINT type_addendum " (%type_string%)"
+					END
+				END
+			END
+			PATCH_IF damagebonus=0 BEGIN
+				SPRINT bonus_string ""
+			END ELSE
+			PATCH_IF damagebonus>0 BEGIN
+				SPRINT bonus_string "+%damagebonus%"
+			END ELSE BEGIN
+				SPRINT bonus_string "%damagebonus%"
+			END
+			PATCH_IF dicenumber>0 BEGIN
+				SPRINT dice_string "%dicenumber%%string_array_dice%%dicesize%"
+			END ELSE BEGIN
+				SPRINT dice_string ""
+			END
+			PATCH_IF dicenumber>0 || !(damagebonus=0) BEGIN
+				SPRINT block "%block%%string_array_damage% %dice_string%%bonus_string%%type_addendum%%WNL%"		
+			END
+		END
+	END ELSE BEGIN
+		separate_damage_type=1
+		INNER_PATCH_SAVE damage_string "%damage_string%" BEGIN
+			REPLACE_TEXTUALLY "\([0-9]\)[A-Za-z]\([0-9]\)" "\1%string_array_dice%\2"
+		END	
+		SPRINT block "%block%%string_array_damage% %damage_string%%WNL%"
+	END
+	PATCH_IF separate_damage_type BEGIN
+		PATCH_FOR_EACH type IN melee ranged launcher BEGIN
+			PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("damage_type_%type%") BEGIN
+				damagetype=$itemdesc_item_data("damage_type_%type%")
+				PATCH_MATCH damagetype WITH
+				1 BEGIN 
+					SPRINT type_string "%string_array_piercing_mixed%"
+				END
+				2 BEGIN 
+					SPRINT type_string "%string_array_crushing_mixed%"
+				END
+				3 BEGIN 
+					SPRINT type_string "%string_array_slashing_mixed%"
+				END
+				4 BEGIN 
+					SPRINT type_string "%string_array_missile_mixed%"
+				END
+				DEFAULT
+					PATCH_WARN "unrecognized damage type %damagetype%"
+					SPRINT type_string "%string_array_crushing_mixed%"
+				END
+				
+				SPRINT EVAL "type_string_%type%" "%type_string%"
+			END
+		END
+		PATCH_IF (itemdesc_item_data_is_melee && itemdesc_item_data_is_ranged) BEGIN
+			SPRINT block "%block%%string_array_damage_type_melee% %type_string_melee%%WNL%%string_array_damage_type_ranged% %type_string_ranged%%WNL%"
+		END ELSE 
+		PATCH_IF itemdesc_item_data_is_melee BEGIN
+			SPRINT block "%block%%string_array_damage_type% %type_string_melee%%WNL%"
+		END ELSE
+		PATCH_IF itemdesc_item_data_is_ranged BEGIN
+			SPRINT block "%block%%string_array_damage_type% %type_string_ranged%%WNL%"
+		END ELSE
+		PATCH_IF itemdesc_item_data_is_launcher BEGIN
+			SPRINT block "%block%%string_array_damage_type% %type_string_launcher%%WNL%"
+		END 
+	
+	
+	
+	END
+	// other weapon features
+	PATCH_IF itemdesc_item_data_is_ranged || itemdesc_item_data_is_melee || itemdesc_item_data_is_launcher BEGIN
+		// use proficiency as gate for these
+		PATCH_IF VARIABLE_IS_SET $weapprof_name("%itemdesc_item_data_prof_type%") BEGIN
+			// speed factor
+			SPRINT block "%block%%string_array_speed_factor% %itemdesc_item_data_speed%%WNL%"
+			// proficiency type 
+			SPRINT prof_name $weapprof_name("%itemdesc_item_data_prof_type%")
+			SPRINT block "%block%%string_array_proficiency_type% %prof_name%%WNL%"
+			//weapon type
+			PATCH_IF itemdesc_item_data_is_two_handed BEGIN
+				SPRINT block "%block%%string_array_type% %string_array_two_handed%%WNL%"
+			END ELSE BEGIN
+				SPRINT block "%block%%string_array_type% %string_array_one_handed%%WNL%"		
+			END
+		END
+		PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("launcher") BEGIN
+			SPRINT launcher $itemdesc_item_data("launcher")
+			SPRINT block "%block%%string_array_launcher% %launcher%%WNL%"
+		END
+	END
+	// requirements
+	SPRINT req_string ""
+	PATCH_FOR_EACH abil IN strength intelligence wisdom dexterity constitution charisma BEGIN
+		SPRINT var "itemdesc_item_data_min_%abil%"
+		PATCH_IF (EVAL "%var%")>0 BEGIN
+			val=EVAL "%var%"
+			SPRINT label $string_array("%abil%")
+			SPRINT req_string "%req_string% %val% %label%%WNL%"
+		END
+	END
+	PATCH_IF "%req_string%" STR_CMP "" BEGIN
+		SPRINT block "%block%%string_array_requires%%WNL%%req_string%"
+	END
+	//weight
+	SPRINT block "%block%%WNL%%string_array_weight% %itemdesc_item_data_weight%"
+
+END
+
+
+DEFINE_PATCH_FUNCTION itemdesc_make_classic_block
+	RET block
+BEGIN
+	SPRINT block ""
+	// the AC bit
+	LPF itemdesc_get_armor_line RET line END
+	PATCH_IF "%line%" STR_CMP "" BEGIN
+		SPRINT block "%block%%line%%WNL%"
+		// weight
+		SPRINT block "%block%%string_array_weight% %itemdesc_item_data_weight%%WNL%"
+	END
+	// the weapon bits
+	
+	// thac0
+	PATCH_IF "%thac0_string%" STR_EQ "" BEGIN
+		PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("thac0_bonus") BEGIN
+			bonus=$itemdesc_item_data("thac0_bonus")
+			PATCH_IF bonus>0 BEGIN
+				SPRINT block "%block%%string_array_thac0%  +%itemdesc_item_data_thac0_bonus%%WNL%"			
+			END ELSE
+			PATCH_IF bonus<0 BEGIN
+				SPRINT block "%block%%string_array_thac0%  %itemdesc_item_data_thac0_bonus%%WNL%"
+			END
+		END
+	END ELSE BEGIN
+		SPRINT block "%block%%string_array_thac0% %thac0_string%%WNL%"
+	END
+	// damage
+	PATCH_IF "%damage_string%" STR_EQ "" BEGIN
+		PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("dicenumber") BEGIN
+			dicenumber=$itemdesc_item_data("dicenumber")
+			dicesize=$itemdesc_item_data("dicesize")
+			damagebonus=$itemdesc_item_data("damagebonus")
+			PATCH_IF damagebonus=0 BEGIN
+				SPRINT bonus_string ""
+			END ELSE
+			PATCH_IF damagebonus>0 BEGIN
+				SPRINT bonus_string " +%damagebonus%"
+			END ELSE BEGIN
+				SPRINT bonus_string " %damagebonus%"
+			END
+			PATCH_IF dicenumber>0 BEGIN
+				SPRINT dice_string "%dicenumber%%string_array_dice%%dicesize%"
+			END ELSE BEGIN
+				SPRINT dice_string ""
+			END
+			PATCH_IF dicenumber>0 || !(damagebonus=0) BEGIN
+				SPRINT block "%block%%string_array_damage%  %dice_string%%bonus_string%%WNL%"		
+			END
+			
+		END
+	END ELSE BEGIN
+		INNER_PATCH_SAVE damage_string "%damage_string%" BEGIN
+			REPLACE_TEXTUALLY "\([0-9]\)[A-Za-z]\([0-9]\)" "\1%string_array_dice%\2"
+		END	
+		SPRINT block "%block%%string_array_damage%  %damage_string%%WNL%"
+	END
+
+	// other weapon features
+	PATCH_IF itemdesc_item_data_is_ranged || itemdesc_item_data_is_melee || itemdesc_item_data_is_launcher BEGIN
+		//damage type
+		PATCH_FOR_EACH type IN melee ranged BEGIN
+			PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("damage_type_%type%") BEGIN
+				damagetype=$itemdesc_item_data("damage_type_%type%")
+				PATCH_MATCH damagetype WITH
+				1 BEGIN 
+					SPRINT type_string "%string_array_piercing%"
+				END
+				2 BEGIN 
+					SPRINT type_string "%string_array_crushing%"
+				END
+				3 BEGIN 
+					SPRINT type_string "%string_array_slashing%"
+				END
+				4 BEGIN 
+					SPRINT type_string "%string_array_missile%"
+				END
+				DEFAULT
+					PATCH_WARN "unrecognized damage type %damagetype%"
+					SPRINT type_string "%string_array_crushing%"
+				END
+				
+				SPRINT EVAL "type_string_%type%" "%type_string%"
+			END
+		END
+		PATCH_IF (itemdesc_item_data_is_melee && itemdesc_item_data_is_ranged) BEGIN
+			SPRINT block "%block%%string_array_damage_type_melee% %type_string_melee%%WNL%%string_array_damage_type_ranged% %type_string_ranged%%WNL%"
+		END ELSE 
+		PATCH_IF itemdesc_item_data_is_melee BEGIN
+			SPRINT block "%block%%string_array_damage_type% %type_string_melee%%WNL%"
+		END ELSE
+		PATCH_IF itemdesc_item_data_is_ranged BEGIN
+			SPRINT block "%block%%string_array_damage_type% %type_string_ranged%%WNL%"
+		END
+
+		// special string
+		PATCH_IF "%special_string%" STR_CMP "" BEGIN
+			SPRINT block "%block%%special_string%%WNL%"
+		END
+		// weight
+		SPRINT block "%block%%string_array_weight% %itemdesc_item_data_weight%%WNL%"
+		
+		// use proficiency as gate for these
+		PATCH_IF VARIABLE_IS_SET $weapprof_name("%itemdesc_item_data_prof_type%") BEGIN
+			// speed factor
+			SPRINT block "%block%%string_array_speed_factor% %itemdesc_item_data_speed%%WNL%"
+			// proficiency type
+			SPRINT prof_name $weapprof_name("%itemdesc_item_data_prof_type%")
+			SPRINT block "%block%%string_array_proficiency_type% %prof_name%%WNL%"
+			//weapon type
+			PATCH_IF itemdesc_item_data_is_two_handed BEGIN
+				SPRINT block "%block%%string_array_type%  %string_array_two_handed%%WNL%"
+			END ELSE BEGIN
+				SPRINT block "%block%%string_array_type%  %string_array_one_handed%%WNL%"		
+			END
+		END
+		PATCH_IF VARIABLE_IS_SET $itemdesc_item_data("launcher") BEGIN
+			SPRINT launcher $itemdesc_item_data("launcher")
+			SPRINT block "%block%%string_array_launcher% %launcher%%WNL%"
+		END
+	END
+	// requirements
+	SPRINT req_string ""
+	PATCH_FOR_EACH abil IN strength intelligence wisdom dexterity constitution charisma BEGIN
+		SPRINT var "itemdesc_item_data_min_%abil%"
+		PATCH_IF (EVAL "%var%")>0 BEGIN
+			val=EVAL "%var%"
+			SPRINT label $string_array("%abil%")
+			SPRINT req_string "%req_string% %val% %label% "
+		END
+	END
+	PATCH_IF "%req_string%" STR_CMP "" BEGIN
+		SPRINT block "%block%%string_array_requires%%req_string%%WNL%"
+	END
+	LPF itemdesc_make_usability_string RET usability_string END
+	SPRINT block "%block%%usability_string%"
+END
+
+
+
+DEFINE_PATCH_FUNCTION itemdesc_get_item_data
+	RET_ARRAY item_data
+BEGIN
+	// ability score minima
+	SET $item_data("min_strength")=SHORT_AT 0x26
+	SET $item_data("min_intelligence")=BYTE_AT 0x2a
+	SET $item_data("min_wisdom")=BYTE_AT 0x2e
+	SET $item_data("min_dexterity")=BYTE_AT 0x2c
+	SET $item_data("min_constitution")=BYTE_AT 0x30
+	SET $item_data("min_charisma")=SHORT_AT 0x32
+	// misc
+	SET $item_data("prof_type")=BYTE_AT 0x31
+	SET $item_data("weight")=LONG_AT 0x4c
+	SET $item_data("is_two_handed")=!(((BYTE_AT 0x18) BAND 0b00000010)=0)
+	// armor class modifiers
+	GET_OFFSET_ARRAY fx_arr ITM_V10_GEN_EFFECTS
+	PHP_EACH fx_arr AS fx_ind=>fx_off BEGIN
+		READ_SHORT fx_off opcode
+		PATCH_IF opcode=0 BEGIN
+			READ_BYTE (0x8+fx_off) type
+			READ_LONG (0x4+fx_off) val
+			PATCH_IF !((type BAND 0b00010000) =0) BEGIN
+				SET $item_data("base_ac")=val
+			END
+			PATCH_IF !((type BAND 0b00001000) =0) BEGIN
+				SET $item_data("slashing_ac")=val
+			END
+			PATCH_IF !((type BAND 0b00000100) =0) BEGIN
+				SET $item_data("piercing_ac")=val
+			END
+			PATCH_IF !((type BAND 0b00000010) =0) BEGIN
+				SET $item_data("missile_ac")=val
+			END
+			PATCH_IF !((type BAND 0b00000001) =0) BEGIN
+				SET $item_data("crushing_ac")=val
+			END
+		END
+	END
+	// weapon features
+	SET $item_data("is_melee")=0
+	SET $item_data("is_ranged")=0
+	SET $item_data("is_launcher")=0
+	GET_OFFSET_ARRAY ab_arr ITM_V10_HEADERS
+	PHP_EACH ab_arr AS ab_ind=>ab_off BEGIN
+		READ_BYTE ab_off ab_type
+		PATCH_IF ab_type=1 BEGIN // melee
+			SET $item_data("is_melee")=1
+			SET $item_data("speed")=BYTE_AT (ab_off + 0x12) 
+			SET $item_data("damage_type_melee")=SHORT_AT (ab_off+0x1c)
+			SET $item_data("thac0_bonus")=SHORT_AT (ab_off+0x14)
+			SET $item_data("dicesize")=BYTE_AT (ab_off+0x16)
+			SET $item_data("dicenumber")=BYTE_AT (ab_off+0x18)
+			SET $item_data("damagebonus")=SHORT_AT (ab_off+0x1a) 
+		END
+		PATCH_IF ab_type=2 BEGIN // thrown/ranged
+			SET $item_data("is_ranged")=1
+			SET $item_data("speed")=BYTE_AT (ab_off + 0x12) 
+			SET $item_data("damage_type_ranged")=SHORT_AT (ab_off+0x1c)
+			SET $item_data("thac0_bonus")=SHORT_AT (ab_off+0x14)
+			SET $item_data("dicesize")=BYTE_AT (ab_off+0x16)
+			SET $item_data("dicenumber")=BYTE_AT (ab_off+0x18)
+			SET $item_data("damagebonus")=SHORT_AT (ab_off+0x1a) 
+			PATCH_IF SHORT_AT (ab_off+0x32) BEGIN
+				SPRINT $item_data("launcher") "%string_array_bow%"
+			END ELSE
+			PATCH_IF SHORT_AT (ab_off+0x34) BEGIN
+				SPRINT $item_data("launcher") "%string_array_crossbow%"
+			END ELSE 
+			PATCH_IF SHORT_AT (ab_off+0x36) BEGIN
+				SPRINT $item_data("launcher") "%string_array_sling%"
+			END
+		END	
+		PATCH_IF ab_type=4 BEGIN // launcher
+			SET $item_data("is_launcher")=1
+			SET $item_data("speed")=BYTE_AT (ab_off + 0x12) 
+			SET $item_data("damage_type_launcher")=SHORT_AT (ab_off+0x1c)
+			SET $item_data("thac0_bonus")=SHORT_AT (ab_off+0x14)
+			SET $item_data("dicesize")=0
+			SET $item_data("dicenumber")=0
+			SET $item_data("damagebonus")=SHORT_AT (ab_off+0x1a) 
+		END		
+	END
+
+
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_make_usability_string
+	RET usability_string
+BEGIN
+	SPRINT pos_string ""
+	SPRINT neg_string ""
+	PATCH_FOR_EACH type IN class race BEGIN
+		LPF itemdesc_make_usability_string_helper STR_VAR type RET usability_string positive END
+		PATCH_IF positive BEGIN
+			SPRINT pos_string "%pos_string%%usability_string%"
+		END ELSE BEGIN
+			SPRINT neg_string "%neg_string%%usability_string%"		
+		END
+	END
+	LPF itemdesc_make_usability_string_helper STR_VAR type=lc_align RET usability_string_lcn=usability_string positive_lcn=positive END
+	LPF itemdesc_make_usability_string_helper STR_VAR type=ge_align RET usability_string_gen=usability_string positive_gen=positive END
+	PATCH_IF "%usability_string_lcn%" STR_EQ "" BEGIN
+		positive=positive_gen
+		SPRINT usability_string "%usability_string_gen%"
+	END ELSE
+	PATCH_IF "%usability_string_gen%" STR_EQ "" BEGIN
+		positive=positive_lcn
+		SPRINT usability_string "%usability_string_lcn%"
+	END ELSE BEGIN
+		LPF itemdesc_make_usability_string_helper STR_VAR type=combined_align RET usability_string positive END	
+	END
+	PATCH_IF positive BEGIN
+		SPRINT pos_string "%pos_string%%usability_string%"
+	END ELSE BEGIN
+		SPRINT neg_string "%neg_string%%usability_string%"		
+	END
+	
+	SPRINT usability_string ""
+	PATCH_IF "%pos_string%" STR_CMP "" BEGIN
+		SPRINT usability_string "%usability_string%%usable_by_0%%WNL%%pos_string%"
+	END
+	PATCH_IF "%neg_string%" STR_CMP "" BEGIN
+		SPRINT usability_string "%usability_string%%not_usable_by_0%%WNL%%neg_string%"
+	END
+
+
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_get_usability
+	INT_VAR combined=0
+	STR_VAR flag_array=""
+	RET usable_count
+	RET_ARRAY unusable_by
+BEGIN
+	usable_count=0
+	CLEAR_ARRAY unusable_by
+	READ_LONG 0x1e flags
+	PATCH_IF combined BEGIN
+		PHP_EACH combined_align_flags_lcn AS class=>flag_lcn BEGIN
+			SET flag_gen=$combined_align_flags_gen("%class%")
+			bit1=2**flag_lcn
+			bit2=2**flag_gen
+			SET $unusable_by("%class%")=( (flags BAND bit1) || (flags BAND bit2) )?1:0
+		END		
+	END ELSE BEGIN
+		PHP_EACH "%flag_array%" AS class=>flag_num BEGIN
+			bit=2**flag_num
+			SET $unusable_by("%class%")=(flags BAND bit)?1:0
+		END
+	END
+	PHP_EACH unusable_by AS k=>v BEGIN
+		PATCH_IF !v BEGIN
+			++usable_count
+		END
+	END
+END
+
+DEFINE_PATCH_FUNCTION itemdesc_make_usability_string_helper
+	STR_VAR type=""
+	RET usability_string positive
+BEGIN
+	CLEAR_ARRAY usable_list
+	SPRINT usability_string ""
+	SPRINT flag_array "%type%_flags"
+	SPRINT name_array "%type%_names"
+	combined=("%type%" STR_EQ combined_align)
+	SET threshold=$usability_threshold("%type%")
+	LPF itemdesc_get_usability INT_VAR combined STR_VAR flag_array RET usable_count RET_ARRAY unusable_by END
+	PATCH_IF usable_count<=threshold BEGIN
+		positive=1
+		PHP_EACH unusable_by AS class=>val BEGIN
+			PATCH_IF !val BEGIN
+				SPRINT temp $"%name_array%"("%class%")
+				SPRINT $usable_list("%temp%") ""
+			END
+		END
+	END ELSE BEGIN
+		positive=0
+		PHP_EACH unusable_by AS class=>val BEGIN
+			PATCH_IF val BEGIN
+				SPRINT temp $"%name_array%"("%class%")
+				SPRINT $usable_list("%temp%") ""
+			END
+		END
+	END
+	SORT_ARRAY_INDICES usable_list LEXICOGRAPHICALLY
+	PHP_EACH usable_list AS name=>discard BEGIN
+		SPRINT usability_string "%usability_string% %name%%WNL%"
+	END
+END
+
+
+
+DEFINE_ACTION_MACRO itemdesc_initialize
+BEGIN
+	LOCAL_SPRINT label ""
+	LOCAL_SPRINT tra_ref ""
+	ACTION_IF !VARIABLE_IS_SET sfo_tra_loc BEGIN
+		FAIL "sfo_tra_loc must be set to the path to your tra folder (in which should be found dw_itemdesc.tra)"
+	END
+	WITH_TRA "%sfo_tra_loc%/english/dw_itemdesc.tra" "%sfo_tra_loc%/%LANGUAGE%/dw_itemdesc.tra" BEGIN
+		ACTION_CLEAR_ARRAY string_labels
+		ACTION_CLEAR_ARRAY string_array
+		ACTION_CLEAR_ARRAY ac_type_labels
+		ACTION_CLEAR_ARRAY ac_type_array
+		OUTER_SET enhanced_edition = GAME_IS "EET BG2EE BGEE IWDEE"
+		ACTION_IF !enhanced_edition BEGIN
+			ACTION_DEFINE_ASSOCIATIVE_ARRAY string_labels BEGIN
+				armor_class=>1
+				weight=>2
+				requires=>3
+				thac0=>4
+				damage=>5
+				damage_type=>6
+				speed_factor=>8
+				proficiency_type=>9
+				type=>10
+				dice=>11
+				slashing=>16
+				piercing=>17
+				crushing=>18
+				missile=>19
+				one_handed=>20
+				two_handed=>21
+				thaco_with_an_o=>22
+				damage_type_melee=>23
+				damage_type_ranged=>24
+				strength=>31
+				dexterity=>32
+				constitution=>33
+				intelligence=>34
+				wisdom=>35
+				charisma=>36
+				bow=>40
+				crossbow=>41
+				sling=>42
+				launcher=>43
+			END
+		END ELSE BEGIN
+			ACTION_DEFINE_ASSOCIATIVE_ARRAY string_labels BEGIN
+				armor_class=>1001
+				weight=>1002
+				requires=>1003
+				thac0=>1004
+				damage=>1005
+				damage_type=>1006
+				speed_factor=>1008
+				proficiency_type=>1009
+				type=>1010
+				dice=>1011
+				slashing=>1016
+				piercing=>1017
+				crushing=>1018
+				missile=>1019
+				damage_type_melee=>1023
+				damage_type_ranged=>1024
+				slashing_mixed=>1026
+				piercing_mixed=>1027
+				crushing_mixed=>1028
+				missile_mixed=>1029
+				one_handed=>1020
+				two_handed=>1021
+				strength=>1031
+				dexterity=>1032
+				constitution=>1033
+				intelligence=>1034
+				wisdom=>1035
+				charisma=>1036	
+				bow=>1040
+				crossbow=>1041
+				sling=>1042
+				launcher=>1043
+			END
+		END
+		ACTION_PHP_EACH string_labels AS label=>tra_ref BEGIN
+			OUTER_SPRINT $string_array("%label%") (AT tra_ref)
+		END
+		COPY_EXISTING - weapprof.2da nowhere
+			COUNT_2DA_COLS colcount
+			READ_2DA_ENTRIES_NOW weapprof_data colcount
+			FOR (row=0;row<weapprof_data;++row) BEGIN
+				READ_2DA_ENTRY_FORMER weapprof_data row 1 id
+				PATCH_IF (id>88 && id<116) BEGIN
+					READ_2DA_ENTRY_FORMER weapprof_data row 2 name_strref
+					GET_STRREF name_strref name
+					SPRINT $weapprof_name("%id%") "%name%"
+				END
+			END
+		
+		ACTION_IF enhanced_edition BEGIN
+			ACTION_DEFINE_ASSOCIATIVE_ARRAY ac_type_labels BEGIN
+				slashing=>1101
+				piercing=>1102
+				crushing=>1103
+				missile=>1104
+				slashing_crushing=>1105
+				slashing_piercing=>1106
+				slashing_missile=>1107
+				piercing_crushing=>1108
+				piercing_missile=>1109
+				crushing_missile=>1110
+				slashing_piercing_crushing=>1111
+				slashing_piercing_missile=>1112
+				slashing_crushing_missile=>1113
+				piercing_crushing_missile=>1114	
+			END
+			ACTION_PHP_EACH ac_type_labels AS label=>tra_ref BEGIN
+				OUTER_SPRINT $ac_type_array("%label%") (AT tra_ref)
+			END
+		END ELSE BEGIN
+			OUTER_FOR (n=0;n<10;++n) BEGIN
+				OUTER_SET tra_ref=n+101
+				OUTER_SPRINT $usable_by("%n%") (AT tra_ref)
+			END
+			OUTER_FOR (n=0;n<10;++n) BEGIN
+				OUTER_SET tra_ref=n+151
+				OUTER_SPRINT $not_usable_by("%n%") (AT tra_ref)
+			END
+			OUTER_SPRINT special @201
+			OUTER_SPRINT bonus @202
+			OUTER_SPRINT thac0_bonus_string @50
+			COPY - ".../stratagems-inline/itemdesc_class_data" nowhere
+				READ_2DA_ENTRIES_NOW itemdesc_class_data 3
+				FOR (row=0;row<itemdesc_class_data;++row) BEGIN
+					READ_2DA_ENTRY_FORMER itemdesc_class_data row 0 class
+					READ_2DA_ENTRY_FORMER itemdesc_class_data row 1 class_strref
+					GET_STRREF class_strref class_name
+					SPRINT $class_names("%class%") "%class_name%"
+					READ_2DA_ENTRY_FORMER itemdesc_class_data row 2 class_flag
+					SET $class_flags("%class%")=class_flag			
+				END
+			BUT_ONLY
+			COPY - ".../stratagems-inline/itemdesc_race_data" nowhere
+				READ_2DA_ENTRIES_NOW itemdesc_race_data 3
+				FOR (row=0;row<itemdesc_race_data;++row) BEGIN
+					READ_2DA_ENTRY_FORMER itemdesc_race_data row 0 race
+					READ_2DA_ENTRY_FORMER itemdesc_race_data row 1 race_strref
+					GET_STRREF race_strref race_name
+					SPRINT $race_names("%race%") "%race_name%"
+					READ_2DA_ENTRY_FORMER itemdesc_race_data row 2 race_flag
+					SET $race_flags("%race%")=race_flag			
+				END
+			BUT_ONLY
+			COPY - ".../stratagems-inline/itemdesc_ge_align_data" nowhere
+				READ_2DA_ENTRIES_NOW itemdesc_ge_align_data 3
+				FOR (row=0;row<itemdesc_ge_align_data;++row) BEGIN
+					READ_2DA_ENTRY_FORMER itemdesc_ge_align_data row 0 align
+					READ_2DA_ENTRY_FORMER itemdesc_ge_align_data row 1 align_tra_ref
+					SPRINT $ge_align_names("%align%") (AT align_tra_ref)
+					READ_2DA_ENTRY_FORMER itemdesc_ge_align_data row 2 align_flag
+					SET $ge_align_flags("%align%")=align_flag			
+				END
+			BUT_ONLY
+			COPY - ".../stratagems-inline/itemdesc_lc_align_data" nowhere
+				READ_2DA_ENTRIES_NOW itemdesc_lc_align_data 3
+				FOR (row=0;row<itemdesc_lc_align_data;++row) BEGIN
+					READ_2DA_ENTRY_FORMER itemdesc_lc_align_data row 0 align
+					READ_2DA_ENTRY_FORMER itemdesc_lc_align_data row 1 align_tra_ref
+					SPRINT $lc_align_names("%align%") (AT align_tra_ref)
+					READ_2DA_ENTRY_FORMER itemdesc_lc_align_data row 2 align_flag
+					SET $lc_align_flags("%align%")=align_flag			
+				END
+			BUT_ONLY
+			COPY - ".../stratagems-inline/itemdesc_combined_align_data" nowhere
+				READ_2DA_ENTRIES_NOW itemdesc_combined_align_data 4
+				FOR (row=0;row<itemdesc_combined_align_data;++row) BEGIN
+					READ_2DA_ENTRY_FORMER itemdesc_combined_align_data row 0 align
+					READ_2DA_ENTRY_FORMER itemdesc_combined_align_data row 1 align_tra_ref
+					SPRINT $combined_align_names("%align%") (AT align_tra_ref)
+					READ_2DA_ENTRY_FORMER itemdesc_combined_align_data row 2 align_flag_1
+					SET $combined_align_flags_lcn("%align%")=align_flag_1		
+					READ_2DA_ENTRY_FORMER itemdesc_combined_align_data row 3 align_flag_2
+					SET $combined_align_flags_gen("%align%")=align_flag_2	
+				END
+			BUT_ONLY
+			ACTION_CLEAR_ARRAY usability_threshold 
+			ACTION_DEFINE_ASSOCIATIVE_ARRAY usability_threshold BEGIN
+				class=>2
+				ge_align=>1
+				lc_align=>1
+				race=>2
+				combined_align=>2
+			END
+		END
+	END
+
+
+
+END
+
+<<<<<<<<.../stratagems-inline/itemdesc_class_data
+2DA V1.0
+*
+			obg2_strref		flag	
+FIGHTER		10174			11
+RANGER		1077			21
+PALADIN		1078			20
+CLERIC		1079			7
+DRUID		1080			30
+MAGE		3139			18
+THIEF		1082			22
+BARD		1083			6
+MONK		45858			29
+>>>>>>>>
+<<<<<<<<.../stratagems-inline/itemdesc_ge_align_data
+2DA V1.0
+*
+			tra_ref			flag	
+GOOD		301				2
+EVIL		302				1
+GENEUTRAL	303				5
+>>>>>>>>
+<<<<<<<<.../stratagems-inline/itemdesc_lc_align_data
+2DA V1.0
+*
+			tra_ref			flag	
+LAWFUL		304				4
+CHAOTIC		305				0
+LCNEUTRAL	306				3
+>>>>>>>>
+
+
+<<<<<<<<.../stratagems-inline/itemdesc_combined_align_data
+2DA V1.0
+*
+				tra_ref			flag1	flag2	
+LAWFUL_GOOD		311				4		2
+NEUTRAL_GOOD	312				3		2
+CHAOTIC_GOOD	313				0		2
+LAWFUL_NEUTRAL	314				4		5
+NEUTRAL_NEUTRAL	315				3		5
+CHAOTIC_NEUTRAL	316				0		5
+LAWFUL_EVIL		317				4		1
+NEUTRAL_EVIL	318				3		1
+CHAOTIC_EVIL	319				0		1
+>>>>>>>>
+
+<<<<<<<<.../stratagems-inline/itemdesc_race_data
+2DA V1.0
+*
+			obg2_strref		flag	
+HUMAN		1096			27
+ELF			1097			23
+DWARF		1100			24
+HALFELF		1098			25
+GNOME		1099			28
+HALFLING	1101			26
+HALF_ORC	53212			31
+>>>>>>>>

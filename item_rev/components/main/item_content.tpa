@@ -625,7 +625,7 @@ COPY ~%source%/MOON_DOG_FIGURINE.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/EDWINS_AMULET.tpa
-  ACTION_IF nerf_edwins_amulet = 1 BEGIN
+  ACTION_IF nerfed_edwins_amulet = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/misc89.itm~ ~override~
       SAY NAME1 @1649    SAY NAME2 @1649
       SAY UNIDENTIFIED_DESC @178000000 SAY IDENTIFIED_DESC @178000000
@@ -1804,7 +1804,7 @@ COPY ~%source%/POTION_OF_SUPERIOR_HEALING.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/EDWINS_AMULET#BGT.tpa
-  ACTION_IF nerf_edwins_amulet = 1 BEGIN
+  ACTION_IF nerfed_edwins_amulet = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/bgmisc89.itm~ ~override~
     SAY NAME1 @1649    SAY NAME2 @1649
     SAY UNIDENTIFIED_DESC @178000000 SAY IDENTIFIED_DESC @178000000

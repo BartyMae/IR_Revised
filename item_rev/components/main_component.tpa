@@ -7,25 +7,24 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
   INCLUDE ~item_rev/components/main/palette_compatibility.tph~
 END
 
-/*------------------Additional Content-----------------*/
+/*----------------Additional Content----------------*/
 
-ACTION_IF install_sensible_lore BEGIN
+ACTION_IF sensible_lore BEGIN
   COPY ~item_rev/components/main/lore.2da~ ~override~
 END
 
-ACTION_IF install_ioun_stone_animations BEGIN
+ACTION_IF ioun_stone_animations BEGIN
   COPY ~item_rev/components/main/ioun_stones~ ~override~
 END
 
 INCLUDE ~item_rev/components/main/item_reallocation.tpa~ // item reallocations
 INCLUDE ~item_rev/components/main/shared_effects.tpa~ // new effects that multiple items use
-INCLUDE ~item_rev/components/main/demon_patch.tpa~ // remove an unusual weapon immunity from underdark demon lord
 
 COPY ~item_rev/components/1pp/animations~ ~override~ // animations borrowed from 1pp
 COPY ~item_rev/components/main/new_bams~ ~override~ // item icons borrowed from 1pp & elsewhere
 COPY ~item_rev/itm/ir_mc.mrk~ ~override~ // main component mark file
 
-/*------------------Items-----------------*/
+/*----------------Items----------------*/
 
 INCLUDE ~item_rev/components/main/item_content.tpa~ // generate files that contain code for installing specific item content
 
@@ -181,8 +180,11 @@ COPY - ~item_rev/components/main/items.2da~ ~item_rev/components/main~
   END
 
 
-/*------------------Iron Crisis-----------------*/
+/*----------------Iron Crisis----------------*/
 INCLUDE ~item_rev/lib/iron_crisis.tpa~
 
-/*------------------IRR Fixes-------------------*/
+/*----------------IRR Fixes----------------*/
 INCLUDE ~item_rev/components/main/fixes.tpa~
+
+/*----------------DavidW's itemdesc----------------*/
+INCLUDE ~item_rev/components/itemdesc.tpa~
