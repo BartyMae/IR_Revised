@@ -79,10 +79,10 @@ Weight:~
 @100119 = ~%odamage%\([ %tab%]*[Pp]enalty\)?~
 
 // %new_line%
-@100120 = ~%ndice%D%nsize% + %ndamage%~
-@100121 = ~%ndice%D%nsize%~
-@100122 = ~+%ndamage%~
-@100123 = ~%ndamage%~
+@100120 = ~%ndice%d%nsize%+%ndamage%~
+@100121 = ~%ndice%d%nsize%~
+@100122 = ~+%ndamage% bonus~
+@100123 = ~%ndamage% penalty~
 
 // catch the main damage line
 @100124 = ~\([%lnl%%mnl%%wnl%]Damage%colon%.*\)~
@@ -190,10 +190,10 @@ Speed Factor\1~
 @100157 = ~[%sign%][ %tab%]*%old_damage%~
 
 // replace @100154
-@100158 = ~%new_dice%D%new_size% %sign% %new_damage%~
+@100158 = ~%new_dice%d%new_size% %sign% %new_damage%~
 
 // replace @100154
-@100159 = ~%new_dice%D%new_size%~
+@100159 = ~%new_dice%d%new_size%~
 
 // replace @100154
 @100160 = ~%sign%%new_damage%~
@@ -214,17 +214,17 @@ Speed Factor\1~
 @100165 = ~THAC0: +3~
 
 // @1032143 from "gtu.tra", BG2Fixpack
-@100166 = ~Damage: 1D4 + 3 (+2 bonus missile damage)~
+@100166 = ~Damage: 1d4+3 (+2 bonus missile damage)~
 
 // replace @100166
-@100167 = ~Damage: 1D4 + 2~
+@100167 = ~Damage: 1d4+2~
 
 
 //////////////////
 // Proficiency  //
 //////////////////
 
- // catch ~Proficiency type:~
+// catch ~Proficiency type:~
 @100146 = ~Proficiency[ %tab%]+[Tt]ype:.*~
 
 // replace @100146
@@ -358,7 +358,7 @@ Weight:~
 @100312 = ~Special:[ %tab%]*No Missile.*~
 
 // catch ~Special: No Missile Weapon Protection~
-@100313 = ~Special: No Missile Weapon Protection~
+@100313 = ~- No protection against missile attacks~
 
 // catch ~Special: No Missile~
 @100314 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*No Missile.*~
@@ -367,20 +367,20 @@ Weight:~
 @100315 = ~Armor Class\([ %tab%]*Bonus[ %tab%]*\)?:.*~
 
 // replace @100315
-@100316 = ~Armor Class Bonus: %new_ac%~
+@100316 = ~- Armor Class: +%new_ac%~
 
 // replace @100315
-@100317 = ~Armor Class Bonus: 2~
+@100317 = ~- Armor Class: +2~
 
 // replace @100315
-@100318 = ~Armor Class Bonus: 3~
+@100318 = ~- Armor Class: +3~
 
 // catch ~Armor Class Bonus:~
 @100319 = ~\(Armor Class\([ %tab%]*Bonus[ %tab%]*\)?:.*\)~
 
 // add thaco line to @100319
 @100320 = ~\1
-THAC0: -2 Penalty~
+- THAC0: -2~
 
 // catch ~Special: +1 vs. Missile Weapons~
 @100321 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*\+[0-9]* vs. Missile Weapons~
@@ -393,7 +393,7 @@ THAC0: -2 Penalty~
 
 // add thaco line to @100319
 @100324 = ~\1
-THAC0: -1 Penalty~
+- THAC0: -1~
 
 // replace @100321
 @100407 = ~
@@ -633,7 +633,7 @@ Weight:~
 /////////////////////////////////////
 
 // remove ~Protects Against Critical Hits~ from the description
-@100422 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)\(Special:[ %TAB%]+\)?Protects[ %TAB%]+[Aa]gainst[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
+@100422 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)\?Protects[ %TAB%]+[Aa]gainst[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
 
 // remove ~Armor Class Bonus: None~ from the description
 @100423 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass[ %TAB%]+[Bb]onus:[ %TAB%]+[Nn]one~
