@@ -5,7 +5,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.560)~
+VERSION ~V4 Beta 10 (Revised V1.3.561)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -46,7 +46,7 @@ LANGUAGE ~Russian~
 
 
 ///////////////////////////////////////////////////////////////////////////
-// Item Revisions by Demivrgvs (Main Component) -  Installs all items    //
+// Item Revisions by Demivrgvs (Main Component)                          //
 ///////////////////////////////////////////////////////////////////////////
 
 BEGIN @1
@@ -71,11 +71,11 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/enhanced_editions.tra~
 END
 
-ACTION_IF ee_style_descriptions=1 BEGIN
-  LOAD_TRA ~item_rev/languages/english/ee_item_descriptions.tra~
-  LOAD_TRA ~item_rev/languages/english/ee_description_updates.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_item_descriptions.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_description_updates.tra~
+ACTION_IF ee_style_item_descriptions=1 BEGIN
+  LOAD_TRA ~item_rev/languages/english/item_descriptions_ee.tra~
+  LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
+  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_item_descriptions_ee.tra~
+  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_description_updates_ee.tra~
 END
 
 INCLUDE ~item_rev/components/main_component.tpa~
@@ -86,22 +86,16 @@ INCLUDE ~item_rev/components/main_component.tpa~
 
 BEGIN @33
 DESIGNATED 1030
-REQUIRE_PREDICATE (GAME_IS ~soa tob bgt bgee bg2ee eet~) @9002
+REQUIRE_PREDICATE (GAME_IS ~tob bgt bg2ee eet~) @9002
 
 ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
   LOAD_TRA ~item_rev/languages/english/store_revisions.tra~
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/store_revisions.tra~
   INCLUDE ~item_rev/components/store_revisions.tpa~
   INCLUDE ~item_rev/components/item_reallocation.tpa~
-  /*COPY_EXISTING_REGEXP GLOB ~.*\.sto~ override
-    LPF items_to_order END
-  BUT_ONLY*/
 END ELSE BEGIN
   INCLUDE ~item_rev/lib/identify_item.tpa~
   INCLUDE ~item_rev/lib/store_rev_macros.tpa~
-  /*COPY_EXISTING_REGEXP GLOB ~.*\.sto~ override
-    LPF items_to_order END
-  BUT_ONLY*/
 END
 
 ACTION_IF install_masterwork_weapons BEGIN
