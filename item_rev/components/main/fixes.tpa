@@ -364,13 +364,13 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc~ AND NOT GAME_IS ~bg2 tob bgt bgee bg2ee eet
   COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
     SAY NAME1 @1780    SAY NAME2 @1780
     SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
-  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~ // Arla's Dragonbane
+  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~   // Arla's Dragonbane
     SAY NAME1 @1920    SAY NAME2 @1929
     SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
   COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
     SAY NAME1 @1760    SAY NAME2 @2426
     SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~ // Telbar's Armor
+  COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~  // Telbar's Armor
     SAY NAME1 @1636    SAY NAME2 @2573
     SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574
 END
@@ -392,6 +392,15 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~X#RINGRO.itm~) BEGIN // BG1 NPC Project Ring of 
   ACTION_IF (FILE_EXISTS_IN_GAME ~ring30.itm~) BEGIN
     COPY_EXISTING ~ring30.itm~ ~override/X#RINGRO.itm~
   END
+END
+
+// Remove underdark Demon Lord's immunity to +4 enchanted weapons (but keep immunity to unenchanted and +1 and +2 enchanted weapons)
+ACTION_IF (FILE_EXISTS_IN_GAME ~uddemon.cre~) BEGIN
+  COPY_EXISTING ~uddemon.cre~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+      LPF DELETE_CRE_EFFECT INT_VAR opcode_to_delete = 120 END
+    END
+    BUT_ONLY
 END
 
 /*----------------1pp/EE Fixes-----------------*/
