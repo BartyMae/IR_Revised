@@ -2123,7 +2123,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Rapid Shot: +1 Attack per Round
+– Rapid Shot: +1 attack per round
 
 THAC0: +1
 Speed Factor: 5
@@ -2354,7 +2354,7 @@ Equipped abilities:
 – Movement Rate: +2
 
 Combat abilities:
-– Rapid Shot: +1 Attack per Round
+– Rapid Shot: +1 attack per round
 – Crippling: 25% chance to reduce target's movement rate by half for 5 rounds
 
 THAC0: +6
@@ -4467,7 +4467,7 @@ A drowcraft weapon is energized by local earth nodes and the surrounding aura of
 STATISTICS:
 
 Combat abilities:
-– Rapid Reload: +1 Attack per Round
+– Rapid Reload: +1 attack per round
 – Drowcraft: +2 to THAC0 and damage
 
 THAC0: +1
@@ -9104,7 +9104,7 @@ Special abilities:
 – Cloudkill (once per day)
 
 Combat abilities:
-– Quickness: +1/2 Attack per Round
+– Quickness: +1/2 attack per round
 – Whirlwind Strike: 33% chance of dealing 1d6+2 crushing damage to opponents within 5 ft.
 
 THAC0: +2
@@ -9656,7 +9656,7 @@ Disfigured as a child, Dramnek Olk was ostracized and ridiculed by his peers. In
 STATISTICS:
 
 Combat abilities:
-– Quickness: +1/2 Attack per Round
+– Quickness: +1/2 attack per round
 
 THAC0: +2
 Damage: 1d6+2 (piercing)
@@ -9775,7 +9775,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Quickness: +1/2 Attack per Round
+– Quickness: +1/2 attack per round
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -11130,7 +11130,7 @@ Equipped abilities:
 – Berserking: the wielder goes berserk and totally out of control when in combat
 
 Combat abilities:
-– Speed: +1 Attack per Round
+– Speed: +1 attack per round
 
 THAC0: +3
 Damage: 1d10+3 (slashing)
@@ -12059,7 +12059,7 @@ A short lived outpost of humans in the Frozen Forest unearthed this weapon, and 
 STATISTICS:
 
 Combat abilities:
-– Rapid Reload: +1 Attack per Round
+– Rapid Reload: +1 attack per round
 
 THAC0: +1
 Damage: +1 (missile)
@@ -13700,7 +13700,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Rapid Shot: +1 Attack per Round
+– Rapid Shot: +1 attack per round
 
 THAC0: +3
 Damage: +3 (missile)
@@ -13994,7 +13994,7 @@ Special abilities:
 
 Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
-– Speed: +1 Attack per Round
+– Speed: +1 attack per round
 
 THAC0: +3
 Damage: 1d6+3 (piercing or missile)
@@ -14388,7 +14388,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Frag Grenade: 1 Attack per Round
+– Frag Grenade: 1 attack per round
 
 THAC0: +5
 Damage: 6d6 (magic)
@@ -15384,7 +15384,7 @@ STATISTICS:
 
 Combat abilities:
 – Powerful Weapon: +2 to damage
-– Unwieldy: -1/2 Attack per Round
+– Unwieldy: -1/2 attack per round
 
 THAC0: +2
 Damage: 1d10+2 (piercing)
