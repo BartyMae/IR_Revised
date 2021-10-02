@@ -1807,15 +1807,15 @@ NOTE: Multiple Stoneskin effects are not cumulative.
 Weight: 2
 Usable By:
  All~
-@1212 = ~Composite Long Bow~
-@1213 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. Wielding such a powerful bow requires great strength.
+@1212 = ~Composite Longbow~
+@1213 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. Wielding such a powerful bow requires great strength.
 
 STATISTICS:
 
 THAC0: +1
 Damage: +1 (missile)
 Speed Factor: 7
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  16 Strength
@@ -1830,16 +1830,16 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1214 = ~Composite Long Bow +1~
-@1215 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. Wielding such a powerful bow requires great strength.~
-@1216 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
+@1214 = ~Composite Longbow +1~
+@1215 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. Wielding such a powerful bow requires great strength.~
+@1216 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
 
 THAC0: +2
 Damage: +1 (missile)
 Speed Factor: 6
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  16 Strength
@@ -1854,14 +1854,14 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1217 = ~Long Bow~
-@1218 = ~The long bow is similar to the short bow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the long bow is slightly slower than the short bow, it has better range and is more damaging.
+@1217 = ~Longbow~
+@1218 = ~The longbow is similar to the shortbow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the longbow is slightly slower than the shortbow, it has better range and is more damaging.
 
 STATISTICS:
 
 THAC0: +1
 Speed Factor: 7
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -1875,15 +1875,15 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1219 = ~Long Bow +1~
-@1220 = ~The long bow is similar to the short bow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the long bow is slightly slower than the short bow, it has better range and is more damaging.~
-@1221 = ~The long bow is similar to the short bow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the long bow is slightly slower than the short bow, it has better range and is more accurate. This one has been enhanced with magical properties, giving it an air of perfection.
+@1219 = ~Longbow +1~
+@1220 = ~The longbow is similar to the shortbow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the longbow is slightly slower than the shortbow, it has better range and is more damaging.~
+@1221 = ~The longbow is similar to the shortbow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the longbow is slightly slower than the shortbow, it has better range and is more accurate. This one has been enhanced with magical properties, giving it an air of perfection.
 
 STATISTICS:
 
 THAC0: +2
 Speed Factor: 6
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -1897,13 +1897,13 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1222 = ~Short Bow~
-@1223 = ~Short bows were the first bows to be developed, although they were not called such. 'Short bow' is more of a default term that refers to anything which is not a long bow. Short bow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the long bow.
+@1222 = ~Shortbow~
+@1223 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow.
 
 STATISTICS:
 
 Speed Factor: 6
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -1916,15 +1916,15 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1224 = ~Short Bow +1~
-@1225 = ~Short bows were the first bows to be developed, although they were not called such. 'Short bow' is more of a default term that refers to anything which is not a long bow. Short bow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the long bow.~
-@1226 = ~Short bows were the first bows to be developed, although they were not called such. 'Short bow' is more of a default term that refers to anything which is not a long bow. Short bow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the long bow. This particular bow is enchanted.
+@1224 = ~Shortbow +1~
+@1225 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow.~
+@1226 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow is enchanted.
 
 STATISTICS:
 
 THAC0: +1
 Speed Factor: 5
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -1937,7 +1937,7 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1227 = ~Long Bow of Marksmanship +2~
+@1227 = ~Longbow of Marksmanship +2~
 @1228 = ~The Dead Shot
 Driven by years of rivalry, the Dukes of Spandeliyon and Delthuntle decided to organize a private contest that would proclaim the better archer between them. Both boasted the power of their magical bows, but that wasn't enough for Edwall Dest, Duke of Spandeliyon. He arranged for the theft of his opponent's bow, and on the day of the contest he couldn't help gloating about his advantage. The Duke of Delthuntle, known only as Raymond, demanded a demonstration of Edwall's skill on a scarecrow that he had placed. Edwall Dest drew his longbow and released the arrow with determination, not stopping to think how uncannily the target resembled himself. The missile split the large voodoo doll's head in twain, and at that moment Edwall's head did much the same.
 
@@ -1948,7 +1948,7 @@ Equipped abilities:
 
 THAC0: +3
 Speed Factor: 5
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -1973,7 +1973,7 @@ Combat abilities:
 
 THAC0: +2
 Speed Factor: 4
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -1998,7 +1998,7 @@ Combat abilities:
 THAC0: +3
 Damage: +1 (missile)
 Speed Factor: 5
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  18 Strength
@@ -2025,7 +2025,7 @@ Combat abilities:
 THAC0: +4
 Damage: +1 (missile)
 Speed Factor: 4
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  16 Strength
@@ -2051,7 +2051,7 @@ Combat abilities:
 THAC0: +3
 Damage: +1 (missile)
 Speed Factor: 5
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  19 Strength
@@ -2076,7 +2076,7 @@ Equipped abilities:
 
 THAC0: +4
 Speed Factor: 4
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2103,7 +2103,7 @@ Combat abilities:
 
 THAC0: +5
 Speed Factor: 3
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2127,7 +2127,7 @@ Combat abilities:
 
 THAC0: +1
 Speed Factor: 5
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2153,7 +2153,7 @@ Combat abilities:
 THAC0: +3
 Damage: 1d6 (missile)
 Speed Factor: 3
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2166,15 +2166,15 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1245 = ~Composite Long Bow +2~ // BG2: This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
-@1246 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
+@1245 = ~Composite Longbow +2~ // BG2: This longbow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
+@1246 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
 
 THAC0: +3
 Damage: +1 (missile)
 Speed Factor: 5
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  16 Strength
@@ -2189,14 +2189,14 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1247 = ~Long Bow +2~
-@1248 = ~The long bow is similar to the short bow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the long bow is slightly slower than the short bow, it has better range and is more accurate. The smooth staff of this bow is warm to the touch, hinting at the energy which surges through the wood.
+@1247 = ~Longbow +2~
+@1248 = ~The longbow is similar to the shortbow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the longbow is slightly slower than the shortbow, it has better range and is more accurate. The smooth staff of this bow is warm to the touch, hinting at the energy which surges through the wood.
 
 STATISTICS:
 
 THAC0: +3
 Speed Factor: 5
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2210,14 +2210,14 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1249 = ~Short Bow +2~
-@1250 = ~Short bows were the first bows to be developed, although they were not called such. 'Short bow' is more of a default term that refers to anything which is not a long bow. Short bow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the long bow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
+@1249 = ~Shortbow +2~
+@1250 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
 
 STATISTICS:
 
 THAC0: +2
 Speed Factor: 4
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -2245,7 +2245,7 @@ Combat abilities:
 THAC0: +4
 Damage: 1d6 (missile)
 Speed Factor: 2
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -2259,7 +2259,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1253 = ~Darkfire Bow +4~
-@1254 = ~Through arcane sorcery, the contradictory elements of fire and ice have been combined within this magnificent short bow.
+@1254 = ~Through arcane sorcery, the contradictory elements of fire and ice have been combined within this magnificent shortbow.
 
 STATISTICS:
 
@@ -2271,7 +2271,7 @@ Combat abilities:
 
 THAC0: +4
 Speed Factor: 2
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -2285,9 +2285,9 @@ Not Usable By:
  Cavalier
  Kensai~
 @1255 = ~Darkfire Bow +5~
-@1256 = ~Through arcane sorcery, the contradictory elements of fire and ice have been combined within this magnificent short bow.
+@1256 = ~Through arcane sorcery, the contradictory elements of fire and ice have been combined within this magnificent shortbow.
 
-The magical bowstring of Gond makes even this strongly enchanted short bow more accurate and powerful.
+The magical bowstring of Gond makes even this strongly enchanted shortbow more accurate and powerful.
 
 STATISTICS:
 
@@ -2303,7 +2303,7 @@ Combat abilities:
 
 THAC0: +5
 Speed Factor: 1
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -2329,7 +2329,7 @@ Combat abilities:
 
 THAC0: +5
 Speed Factor: 3
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2359,7 +2359,7 @@ Combat abilities:
 
 THAC0: +6
 Speed Factor: 2
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2373,15 +2373,15 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1261 = ~Composite Long Bow +3~ // BG2: This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
-@1262 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
+@1261 = ~Composite Longbow +3~ // BG2: This longbow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
+@1262 = ~Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
 
 THAC0: +4
 Damage: +1 (missile)
 Speed Factor: 4
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  16 Strength
@@ -2396,14 +2396,14 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1263 = ~Long Bow +3~
-@1264 = ~The long bow is similar to the short bow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the long bow is slightly slower than the short bow, it has better range and is more damaging. The smooth staff of this bow is warm to the touch, hinting at the energy which surges through the wood.
+@1263 = ~Longbow +3~
+@1264 = ~The longbow is similar to the shortbow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. Though the longbow is slightly slower than the shortbow, it has better range and is more damaging. The smooth staff of this bow is warm to the touch, hinting at the energy which surges through the wood.
 
 STATISTICS:
 
 THAC0: +4
 Speed Factor: 4
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
@@ -2417,14 +2417,14 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1265 = ~Short Bow +3~
-@1266 = ~Short bows were the first bows to be developed, although they were not called such. 'Short bow' is more of a default term that refers to anything which is not a long bow. Short bow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the long bow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
+@1265 = ~Shortbow +3~
+@1266 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
 
 STATISTICS:
 
 THAC0: +3
 Speed Factor: 3
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -6738,7 +6738,7 @@ Equipped abilities:
 
 THAC0: +2
 Speed Factor: 4
-Proficiency Type: Short Bow
+Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
@@ -12770,7 +12770,7 @@ Combat abilities:
 
 THAC0: +4
 Speed Factor: 4
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: Two-handed
 Requires:
  6 Strength
