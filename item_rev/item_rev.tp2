@@ -1,11 +1,10 @@
-BACKUP ~item_rev/backup~
+BACKUP ~weidu_external/backup/item_rev~
 AUTHOR ~Bartimaeus in the IR Revised thread at forums.gibberlings3.net~
-
 README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.566)~
+VERSION ~V4 Beta 10 (Revised V1.3.567)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
