@@ -56,7 +56,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Silver Glow: +2 to AC and saving throws vs. vampires and werewolves
+– Silver Glow: +2 to Armor Class and saving throws vs. vampires and werewolves
 
 Not Usable By:
  Wizard Slayer~
@@ -353,7 +353,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
@@ -374,7 +374,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -394,7 +394,7 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1d6 + 1 (slashing or missile)
+Damage: 1d6+1 (slashing or missile)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -447,7 +447,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
-Damage: 1d6 + 2 (slashing or missile)
+Damage: 1d6+2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -472,7 +472,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d6 + 3 (slashing or missile)
+Damage: 1d6+3 (slashing or missile)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -500,7 +500,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
-Damage: 1d6 + 2 (slashing or missile)
+Damage: 1d6+2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -525,7 +525,7 @@ Combat abilities:
 – Incendiary: target suffers 1 fire damage every round for 5 rounds
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -550,7 +550,7 @@ Combat abilities:
 – Chilling: target is slowed for 1 round (save vs. polymorph neg.)
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
@@ -576,7 +576,7 @@ Equipped abilities:
 – Regeneration: 1 hp/2 rounds
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -607,7 +607,7 @@ Combat abilities:
 – Vorpal: 15% chance target dies (save vs. death at -2 for 3d8 slashing damage)
 
 THAC0: +5
-Damage: 1d8 + 5 (slashing)
+Damage: 1d8+5 (slashing)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -633,7 +633,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4
-Damage: 1d6 + 5 (slashing or missile)
+Damage: 1d6+5 (slashing or missile)
 Speed Factor: 0
 Proficiency Type: Axe
 Type: One-handed
@@ -654,7 +654,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -765,7 +765,7 @@ STATISTICS:
 Equipped abilities:
 – Save vs. Breath: +3
 – Missile Damage Resistance: +20%
-– Inertial Barrier: opponents within 10' suffer -1 to AC, THAC0, damage, movement speed, and speed factor
+– Inertial Barrier: opponents within 10' suffer -1 to Armor Class, THAC0, damage, movement speed, and speed factor
 
 Weight: 1
 Not Usable By:
@@ -805,7 +805,7 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 7
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -826,7 +826,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -845,7 +845,7 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 7
 Proficiency Type: Mace
 Type: One-handed
@@ -866,7 +866,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
@@ -959,7 +959,7 @@ Combat abilities:
 – Entangling: target is entangled for 1 round (save vs. breath neg.)
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
@@ -984,7 +984,7 @@ Combat abilities:
 – Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
@@ -1004,7 +1004,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1026,12 +1026,12 @@ STATISTICS:
 Combat Abilities (33% chance each):
 – Fire Head: target suffers 1d6 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d6 cold damage and is slowed for 1 round
-– Acid Head: target suffers 1d6 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
 
 NOTE: The target can save vs. spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +3
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1125,7 +1125,7 @@ Combat abilities:
 – Crushing Blow: 15% chance of dealing 3d8 crushing damage
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
@@ -1148,7 +1148,7 @@ Equipped abilities:
 – Strength: +2 (+75 exceptional)
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
@@ -1171,7 +1171,7 @@ Combat abilities:
 – Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
@@ -1191,7 +1191,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
@@ -1215,7 +1215,7 @@ Combat abilities:
 – Acid Splash: 15% chance of dealing 4d4 acid damage to target and opponents within 5'
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
@@ -1237,7 +1237,7 @@ Combat abilities:
 – Dooming: target suffers -1 to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
@@ -1256,7 +1256,7 @@ Combat abilities:
 – Slivers: target suffers 1 piercing damage every round for 5 rounds
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
@@ -1285,7 +1285,7 @@ Combat abilities:
 – Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
@@ -1320,7 +1320,7 @@ Combat abilities:
 – Detonation: 5% chance of dealing 6d6 fire damage to those within 20' (save vs. breath half)
 
 THAC0: +4
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 0
 Proficiency Type: Club
 Type: One-handed
@@ -1355,7 +1355,7 @@ Combat abilities:
 – Detonation: 15% chance of dealing 6d6 fire damage to target and opponents within 20' (save vs. breath half)
 
 THAC0: +5
-Damage: 1d6 + 5 (crushing)
+Damage: 1d6+5 (crushing)
 Speed Factor: 0
 Proficiency Type: Club
 Type: One-handed
@@ -1380,7 +1380,7 @@ Combat abilities:
 – Chain Lightning: 5% chance lightning leaps at the target dealing 6d6 electrical damage before arcing towards other enemies within 30' who suffer 3d6 electrical damage
 
 THAC0: +4
-Damage: 1d6 + 5 (crushing)
+Damage: 1d6+5 (crushing)
 Speed Factor: 3
 Proficiency Type: Mace
 Type: One-handed
@@ -1412,7 +1412,7 @@ Combat abilities:
 – Chain Lightning: 15% chance lightning leaps at the target dealing 6d6 electrical damage before arcing towards other enemies within 30' who suffer 3d6 electrical damage
 
 THAC0: +5
-Damage: 1d6 + 6 (crushing)
+Damage: 1d6+6 (crushing)
 Speed Factor: 2
 Proficiency Type: Mace
 Type: One-handed
@@ -1436,14 +1436,14 @@ STATISTICS:
 Combat Abilities (20% chance each):
 – Fire Head: target suffers 1d8 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d8 cold damage and is slowed for 1 round
-– Acid Head: target suffers 1d8 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d8 acid damage and -2 to Armor Class for 2 rounds
 – Poison Head: target suffers 1d8 poison damage and 1 hp/second poison for 2 rounds
 – Electric Head: target suffers 1d8 electrical damage and is stunned for 1 round
 
 NOTE: The target can save vs. spell at -2 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +5
-Damage: 1d6 + 6 (crushing)
+Damage: 1d6+6 (crushing)
 Speed Factor: 2
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1467,13 +1467,13 @@ STATISTICS:
 Combat Abilities (25% chance each):
 – Fire Head: target suffers 1d6 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d6 cold damage and is slowed for 1 round
-– Acid Head: target suffers 1d6 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
 – Poison Head: target suffers 1d6 poison damage and 1 hp/second poison for 2 rounds
 
 NOTE: The target can save vs. spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +4
-Damage: 1d6 + 5 (crushing)
+Damage: 1d6+5 (crushing)
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1496,13 +1496,13 @@ STATISTICS:
 Combat Abilities (25% chance each):
 – Fire Head: target suffers 1d6 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d6 cold damage and is slowed for 1 round
-– Acid Head: target suffers 1d6 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
 – Electric Head: target suffers 1d6 electrical damage and is stunned for 1 round
 
 NOTE: The target can save vs. spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +4
-Damage: 1d6 + 5 (crushing)
+Damage: 1d6+5 (crushing)
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1522,7 +1522,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
@@ -1538,7 +1538,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1558,7 +1558,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 4
 Proficiency Type: Mace
 Type: One-handed
@@ -1993,7 +1993,7 @@ STATISTICS:
 
 Combat abilities:
 – Powerful Weapon: +2 to damage
-– Sundering: target suffers cumulative -1 to AC for 2 rounds
+– Sundering: target suffers cumulative -1 to Armor Class for 2 rounds
 
 THAC0: +3
 Damage: +1 (missile)
@@ -2072,7 +2072,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Elvencraft: +4 to AC (none vs. missile attacks)
+– Elvencraft: +4 to Armor Class (none vs. missile attacks)
 
 THAC0: +4
 Speed Factor: 4
@@ -2524,7 +2524,7 @@ It was the infamous swashbuckler, Eisneid Clume, who first requested magical ass
 STATISTICS:
 
 Equipped abilities:
-– Parrying: +2 to AC (none vs. missile attacks)
+– Parrying: +2 to Armor Class (none vs. missile attacks)
 
 Weight: 1
 Not Usable By:
@@ -2821,7 +2821,7 @@ Usable By:
 
 STATISTICS:
 
-Damage: 1d4 + 1 (missile)
+Damage: 1d4+1 (missile)
 Launcher: Sling
 
 Weight: 0~
@@ -2832,7 +2832,7 @@ Weight: 0~
 STATISTICS:
 
 THAC0: +1
-Damage: 1d4 + 2 (missile)
+Damage: 1d4+2 (missile)
 Launcher: Sling
 
 Weight: 0~
@@ -2842,7 +2842,7 @@ Weight: 0~
 STATISTICS:
 
 THAC0: +2
-Damage: 1d4 + 3 (missile)
+Damage: 1d4+3 (missile)
 Launcher: Sling
 
 Weight: 0~
@@ -2855,7 +2855,7 @@ Combat abilities:
 – Sunscorch: target suffers 2d6 fire damage (save vs. breath half)
 
 THAC0: +2
-Damage: 1d4 + 3 (missile)
+Damage: 1d4+3 (missile)
 Launcher: Sling
 
 Weight: 0~
@@ -2865,7 +2865,7 @@ Weight: 0~
 STATISTICS:
 
 THAC0: +3
-Damage: 1d4 + 4 (missile)
+Damage: 1d4+4 (missile)
 Launcher: Sling
 
 Weight: 0~
@@ -2878,7 +2878,7 @@ Combat abilities:
 – Smiting: target suffers 1d6 crushing damage
 
 THAC0: +3
-Damage: 1d4 + 4 (missile)
+Damage: 1d4+4 (missile)
 Launcher: Sling
 
 Weight: 0~
@@ -2992,7 +2992,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Mithral: +1 to AC
+– Mithral: +1 to Armor Class
 
 Armor Class: 2
 Requires:
@@ -3163,7 +3163,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Nature's Blessing: +2 to AC and saving throws vs. unnatural creatures
+– Nature's Blessing: +2 to Armor Class and saving throws vs. unnatural creatures
 
 Armor Class: 2
 Requires:
@@ -3716,7 +3716,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d4 + 1 (piercing)
+Damage: 1d4+1 (piercing)
 Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
@@ -3738,7 +3738,7 @@ Combat abilities:
 – Oversized: +2 to damage, -1 to THAC0
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing)
+Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3777,7 +3777,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing or missile)
+Damage: 1d4+2 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3797,7 +3797,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing or missile)
+Damage: 1d4+2 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3818,7 +3818,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d4 + 3 (piercing or missile)
+Damage: 1d4+3 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3839,7 +3839,7 @@ Combat abilities:
 – Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing)
+Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3862,7 +3862,7 @@ Combat abilities:
 – Webbing: 33% chance target is held for 2 rounds (save vs. breath neg.)
 
 THAC0: +3
-Damage: 1d4 + 3 (piercing)
+Damage: 1d4+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3879,7 +3879,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing)
+Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3919,7 +3919,7 @@ Combat abilities:
 – Paralyzing: 33% chance target is held for 2 rounds (save vs. paralyzation neg.)
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing)
+Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3940,7 +3940,7 @@ Equipped abilities:
 – Saving Throws: +1
 
 THAC0: +1
-Damage: 1d4 + 1 (piercing)
+Damage: 1d4+1 (piercing)
 Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
@@ -3960,7 +3960,7 @@ Combat abilities:
 – Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
 
 THAC0: +4
-Damage: 1d4 + 4 (piercing)
+Damage: 1d4+4 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3985,7 +3985,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +5
-Damage: 1d4 + 5 (piercing or missile)
+Damage: 1d4+5 (piercing or missile)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -4005,7 +4005,7 @@ Combat abilities:
 – Keen: +5% chance to score critical hits
 
 THAC0: +3
-Damage: 1d4 + 3
+Damage: 1d4+3
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -4022,7 +4022,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d4 + 3 (piercing)
+Damage: 1d4+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -4055,7 +4055,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d3 + 1 (missile)
+Damage: 1d3+1 (missile)
 Speed Factor: 1
 Proficiency Type: Dart
 Type: One-handed
@@ -4074,7 +4074,7 @@ Combat abilities:
 – Stunning: target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d3 + 1 (missile)
+Damage: 1d3+1 (missile)
 Speed Factor: 1
 Proficiency Type: Dart
 Type: One-handed
@@ -4111,7 +4111,7 @@ Combat abilities:
 – Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)
 
 THAC0: +2
-Damage: 1d3 + 2 (missile)
+Damage: 1d3+2 (missile)
 Speed Factor: 0
 Proficiency Type: Dart
 Type: One-handed
@@ -4131,7 +4131,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d3 + 3 (missile)
+Damage: 1d3+3 (missile)
 Speed Factor: 0
 Proficiency Type: Dart
 Type: One-handed
@@ -4154,7 +4154,7 @@ Combat abilities:
 – Drowcraft: +2 to THAC0 and damage
 
 THAC0: +3
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -4226,7 +4226,7 @@ STATISTICS:
 Equipped abilities:
 – Magic Resistance: +10%
 – Casting Speed: +1
-– Drowcraft: +2 to AC
+– Drowcraft: +2 to Armor Class
 
 Armor Class: 4
 Requires:
@@ -4254,7 +4254,7 @@ STATISTICS:
 
 Equipped abilities:
 – Physical Resistance: +10%
-– Drowcraft: +2 to AC
+– Drowcraft: +2 to Armor Class
 
 Armor Class: 2
 Requires:
@@ -4297,7 +4297,7 @@ Combat abilities:
 – Drowcraft: +2 to THAC0 and damage
 
 THAC0: +3
-Damage: 1d10 + 3 (piercing)
+Damage: 1d10+3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4327,7 +4327,7 @@ STATISTICS:
 
 Equipped abilities:
 – Physical Resistance: +10%
-– Drowcraft: +2 to AC
+– Drowcraft: +2 to Armor Class
 
 Armor Class: -2
 Requires:
@@ -4358,7 +4358,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +4
-– Drowcraft: +1 to AC
+– Drowcraft: +1 to Armor Class
 
 Requires:
  12 Strength
@@ -4386,7 +4386,7 @@ Combat abilities:
 – Drowcraft: +2 to THAC0 and damage
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -4415,7 +4415,7 @@ Combat abilities:
 – Drowcraft: +2 to THAC0 and damage
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -4442,7 +4442,7 @@ Combat abilities:
 – Drowcraft: +2 to THAC0 and damage
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
@@ -4511,7 +4511,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d10 + 1 (piercing)
+Damage: 1d10+1 (piercing)
 Speed Factor: 8
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4535,7 +4535,7 @@ Combat abilities:
 – Slashing: target suffers 1d4 slashing damage
 – Staggering: target suffers -1/2 to APR and -2 to movement and casting speed for 1 round (save vs. breath neg.)
 
-Damage: 1d10 + 2
+Damage: 1d10+2
 THAC0: +2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
@@ -4564,7 +4564,7 @@ Combat abilities:
 – Cleaving: 33% chance upon each successful hit of gaining an extra attack per round in the next round
 
 THAC0: +1
-Damage: 1d10 + 1 (piercing)
+Damage: 1d10+1 (piercing)
 Speed Factor: 8
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4588,7 +4588,7 @@ Combat abilities:
 – Dragon's Breath: deals 1d10 of either fire, cold, electrical, acid, or poison damage
 
 THAC0: +3
-Damage: 1d10 + 3 (piercing)
+Damage: 1d10+3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4616,7 +4616,7 @@ Combat abilities:
 – Blackmist: 15% chance of blinding opponents within 10' for 1 turn (save vs. spell at -2 neg.)
 
 THAC0: +4
-Damage: 1d10 + 4 (piercing)
+Damage: 1d10+4 (piercing)
 Speed Factor: 5
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4637,7 +4637,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d10 + 2 (piercing)
+Damage: 1d10+2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4661,7 +4661,7 @@ Combat abilities:
 – Creeping Cold: target suffers 1 cold damage every round for 5 rounds
 
 THAC0: +2
-Damage: 1d10 + 2 (piercing)
+Damage: 1d10+2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4690,7 +4690,7 @@ Combat abilities:
 – Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave die (save vs. death at -2 neg.)
 
 THAC0: +4
-Damage: 1d10 + 4 (piercing)
+Damage: 1d10+4 (piercing)
 Speed Factor: 5
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4716,7 +4716,7 @@ Combat abilities:
 – Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
 
 THAC0: +4
-Damage: 1d10 + 4 (piercing)
+Damage: 1d10+4 (piercing)
 Speed Factor: 5
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4746,7 +4746,7 @@ Combat abilities:
 – Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
 
 THAC0: +5
-Damage: 1d10 + 5 (piercing)
+Damage: 1d10+5 (piercing)
 Speed Factor: 4
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4768,7 +4768,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d10 + 3 (piercing)
+Damage: 1d10+3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
@@ -4788,7 +4788,7 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1d4 + 1 (crushing)
+Damage: 1d4+1 (crushing)
 Speed Factor: 4
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4809,7 +4809,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d4 + 2 (crushing)
+Damage: 1d4+2 (crushing)
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4832,7 +4832,7 @@ Combat abilities:
 – Shocking: target suffers 1d4 electrical damage
 
 THAC0: +2
-Damage: 1d4 + 3 (crushing)
+Damage: 1d4+3 (crushing)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4853,10 +4853,10 @@ STATISTICS:
 
 Combat abilities:
 – Acidic: target suffers 1d4 acid damage
-– Corrosive: 33% chance target suffers -1 to AC for 5 rounds
+– Corrosive: 33% chance target suffers -1 to Armor Class for 5 rounds
 
 THAC0: +1
-Damage: 1d4 + 2 (crushing)
+Damage: 1d4+2 (crushing)
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4880,7 +4880,7 @@ Combat abilities:
 – Smite Evil: 15% chance against evil creatures to deal 5d6 magic damage
 
 THAC0: +2
-Damage: 1d4 + 3 (crushing)
+Damage: 1d4+3 (crushing)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4905,7 +4905,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d4 + 3 (crushing or missile)
+Damage: 1d4+3 (crushing or missile)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4928,7 +4928,7 @@ Combat abilities:
 – Shocking: target suffers 1d6 electrical damage
 
 THAC0: +3
-Damage: 1d4 + 4 (crushing)
+Damage: 1d4+4 (crushing)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4948,7 +4948,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d4 + 3 (crushing)
+Damage: 1d4+3 (crushing)
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4978,7 +4978,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4
-Damage: 1d4 + 5 (crushing or missile)
+Damage: 1d4+5 (crushing or missile)
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
@@ -5005,7 +5005,7 @@ Combat abilities:
 – Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +4
-Damage: 1d4 + 5 (crushing)
+Damage: 1d4+5 (crushing)
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
@@ -5039,7 +5039,7 @@ Combat abilities:
 – Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +5
-Damage: 1d4 + 6 (crushing)
+Damage: 1d4+6 (crushing)
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
@@ -5059,7 +5059,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d4 + 4 (crushing)
+Damage: 1d4+4 (crushing)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
@@ -5612,7 +5612,7 @@ STATISTICS:
 *CURSED*
 
 Equipped abilities:
-– Missile Attraction: wearer suffers -10 to AC vs. missile attacks and everyone within 20' gains +4 to AC vs. missile attacks
+– Missile Attraction: wearer suffers -10 to Armor Class vs. missile attacks and everyone within 20' gains +4 to Armor Class vs. missile attacks
 
 Armor Class: 4
 Requires:
@@ -5873,7 +5873,7 @@ STATISTICS:
 Equipped abilities:
 – Saving Throws: +2
 – Magic Resistance: +20%
-– Hideous: +2 to AC and saving throws vs. humanoids
+– Hideous: +2 to Armor Class and saving throws vs. humanoids
 
 Armor Class: 3
 Requires:
@@ -5955,7 +5955,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d4 + 4 (crushing or missile)
+Damage: 1d4+4 (crushing or missile)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
@@ -5975,7 +5975,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Mithral: +1 to AC
+– Mithral: +1 to Armor Class
 
 Armor Class: -1
 Requires:
@@ -6189,7 +6189,7 @@ Special abilities:
 Joolon (8 HD):
  ST19, DE14, CO17, IN9, WI11, CH8
  HP 107, AC 2, THAC0 11, APR 3
- 1d10 + 2 Piercing (Claws & Bite +2)
+ 1d10+2 Piercing (Claws & Bite +2)
  Saving Throws 8/12/8/12/12, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6215,7 +6215,7 @@ Special abilities:
 Kitthix (8 HD):
  ST17, DE17, CO16, IN9, WI11, CH6
  HP 82, AC 1, THAC0 11, APR 5
- 1d8 + 1 Piercing (Legs & Bite +1)
+ 1d8+1 Piercing (Legs & Bite +1)
  Saving Throws 8/12/8/12/12, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6252,7 +6252,7 @@ Special abilities:
 Berserker (5 HD):
  ST18, DE16, CO16, IN10, WI10, CH10
  HP 60, AC 3, THAC0 12, APR 3/2
- 1d8 + 4 Slashing (Long Sword +1)
+ 1d8+4 Slashing (Long Sword +1)
  Saving Throws 11/15/11/13/15, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6272,7 +6272,7 @@ Special abilities:
 Berserker (5 HD):
  ST18, DE16, CO16, IN10, WI10, CH10
  HP 60, AC 3, THAC0 12, APR 3/2
- 1d8 + 4 Slashing (Long Sword +1)
+ 1d8+4 Slashing (Long Sword +1)
  Saving Throws 11/13/12/13/14, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6293,7 +6293,7 @@ Special abilities:
 Berserker (7 HD):
  ST18, DE17, CO17, IN11, WI12, CH11
  HP 84, AC 2, THAC0 9, APR 3
- 1d8 + 6 Slashing (Battle Axe +2)
+ 1d8+6 Slashing (Battle Axe +2)
  Saving Throws 10/14/10/12/14, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6313,7 +6313,7 @@ Special abilities:
 Berserker (7 HD):
  ST18, DE17, CO17, IN11, WI12, CH11
  HP 84, AC 2, THAC0 9, APR 3
- 1d8 + 6 Slashing (Battle Axe +2)
+ 1d8+6 Slashing (Battle Axe +2)
  Saving Throws 10/12/11/12/13, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6334,7 +6334,7 @@ Special abilities:
 Berserker (9 HD):
  ST18, DE18, CO18, IN12, WI14, CH12
  HP 117, AC 1, THAC0 6, APR 7/2
- 1d10 + 8 Slashing (2H Sword +3)
+ 1d10+8 Slashing (2H Sword +3)
  Saving Throws 9/13/9/11/13, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6354,7 +6354,7 @@ Special abilities:
 Berserker (9 HD):
  ST18, DE18, CO18, IN12, WI14, CH12
  HP 117, AC 1, THAC0 6, APR 7/2
- 1d10 + 8 Slashing (2H Sword +3)
+ 1d10+8 Slashing (2H Sword +3)
  Saving Throws 8/10/9/9/11, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -6447,7 +6447,7 @@ Combat abilities:
 – Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing)
+Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -6469,7 +6469,7 @@ Combat abilities:
 – Soul Drinking: 15% chance target is drained one level, granting the wielder +5 to maximum hit points, +1 to Strength, and hasting them for 1 turn
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
@@ -6493,7 +6493,7 @@ Combat abilities:
 – Diseasing: target suffers 1 damage every round and is slowed for 5 rounds (save vs. poison neg.)
 
 THAC0: +1
-Damage: 1d4 + 1 (piercing)
+Damage: 1d4+1 (piercing)
 Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
@@ -6584,7 +6584,7 @@ Equipped abilities:
 – Bag of Plenty: endless +1 bullets
 
 THAC0: +1
-Damage: 1d4 + 2 (missile)
+Damage: 1d4+2 (missile)
 Launcher: Sling
 
 Weight: 2~
@@ -6599,7 +6599,7 @@ Equipped abilities:
 – Bag of Plenty: endless +3 bullets
 
 THAC0: +3
-Damage: 1d4 + 4 (missile)
+Damage: 1d4+4 (missile)
 Launcher: Sling
 
 Weight: 2~
@@ -6620,7 +6620,7 @@ Combat abilities:
 – Dispelling: removes all magical effects from the target (save vs. spell neg.)
 
 THAC0: +5
-Damage: 1d10 + 5 (slashing)
+Damage: 1d10+5 (slashing)
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -6768,7 +6768,7 @@ STATISTICS:
 Equipped abilities:
 – Spell: Non-Detection
 – Protects Against: Charm and Domination
-– Mithral: +1 to AC
+– Mithral: +1 to Armor Class
 
 Armor Class: 3
 Requires:
@@ -6839,7 +6839,7 @@ Equipped abilities:
 – Casting Speed: +1
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -6910,7 +6910,7 @@ Combat abilities:
 – Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -6934,7 +6934,7 @@ Combat abilities:
 – Toxins: target suffers 1 poison damage every second for 1 round (save vs. poison neg.)
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
@@ -6955,7 +6955,7 @@ Combat abilities:
 – Heretic's Doom: target is silenced for 2 rounds (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -6977,7 +6977,7 @@ Combat abilities:
 – Spell Disruption: target suffers +10% cumulative chance of spell failure for 5 rounds
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
@@ -7000,7 +7000,7 @@ Combat abilities:
 – Entropy: target suffers -1 to saving throws for 2 rounds
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -7023,7 +7023,7 @@ Combat abilities:
 – Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -7218,7 +7218,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Mithral: +1 to AC
+– Mithral: +1 to Armor Class
 
 Armor Class: -1
 Requires:
@@ -7340,7 +7340,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protection from Chaos: +2 to AC and saving throws vs. chaotic creatures
+– Protection from Chaos: +2 to Armor Class and saving throws vs. chaotic creatures
 – Protects Against: Berserk and Confusion
 
 Armor Class: -1
@@ -7517,7 +7517,7 @@ STATISTICS:
 
 Equipped abilities:
 – Spell: Free Action
-– Mithral: +1 to AC
+– Mithral: +1 to Armor Class
 
 Armor Class: -1
 Requires:
@@ -7733,7 +7733,7 @@ Special abilities:
 
 Equipped abilities:
 – Charisma: +2
-– Human Influence: +2 to AC and saving throws vs. humans
+– Human Influence: +2 to Armor Class and saving throws vs. humans
 
 Not Usable By:
  Wizard Slayer~
@@ -7890,7 +7890,7 @@ Combat abilities:
 – Shattering: golems are destroyed (save vs. rod neg.)
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
@@ -8053,7 +8053,7 @@ Combat abilities:
 – Energy Bullet: target suffers 1d6 magic damage
 
 THAC0: +4
-Damage: 1d4 + 5
+Damage: 1d4+5
 Speed Factor: 2
 Proficiency Type: Sling
 Type: One-handed
@@ -8081,7 +8081,7 @@ Combat abilities:
 – Disintegration: 15% chance target suffers 20D6 magic damage (save vs. breath at -2 for 5d6 magic damage)
 
 THAC0: +5
-Damage: 1d4 + 6
+Damage: 1d4+6
 Speed Factor: 1
 Proficiency Type: Sling
 Type: One-handed
@@ -8217,7 +8217,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +3, an extra +1 vs. missile attacks
-– Shield Others: allies within 10' gain +2 to AC
+– Shield Others: allies within 10' gain +2 to Armor Class
 
 Requires:
  15 Strength
@@ -8544,7 +8544,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +5
-– Protection from Demons: +2 to AC and saving throws vs. demonic creatures and fallen celestials
+– Protection from Demons: +2 to Armor Class and saving throws vs. demonic creatures and fallen celestials
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Requires:
@@ -8583,7 +8583,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 1 (piercing)
+Damage: 1d6+1 (piercing)
 Speed Factor: 5
 Proficiency Type: Spear
 Type: Two-handed
@@ -8609,7 +8609,7 @@ Combat abilities:
 – Vicious: target suffers 2d6 piercing damage, wielder suffers 1d6 piercing damage
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -8629,7 +8629,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
@@ -8649,7 +8649,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -8673,7 +8673,7 @@ Equipped abilities:
 – Protects Against: Charm, Domination, and Hold
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
@@ -8699,7 +8699,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing or missile)
+Damage: 1d6+3 (piercing or missile)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -8723,7 +8723,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing or missile)
+Damage: 1d6+2 (piercing or missile)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
@@ -8749,7 +8749,7 @@ Combat abilities:
 – Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -8781,7 +8781,7 @@ Equipped abilities:
 – Spell: Free Action
 
 THAC0: +4
-Damage: 1d6 + 4 (piercing)
+Damage: 1d6+4 (piercing)
 Speed Factor: 2
 Proficiency Type: Spear
 Type: Two-handed
@@ -8813,10 +8813,10 @@ Equipped abilities:
 
 Combat abilities:
 – Keen: +5% chance to score critical hits
-– Pinning: target is held for 2 rounds, taking 1d6 + 5 damage every round (save vs. death at -2 neg.)
+– Pinning: target is held for 2 rounds, taking 1d6+5 damage every round (save vs. death at -2 neg.)
 
 THAC0: +5
-Damage: 1d6 + 5 (piercing)
+Damage: 1d6+5 (piercing)
 Speed Factor: 1
 Proficiency Type: Spear
 Type: Two-handed
@@ -8852,7 +8852,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -8871,7 +8871,7 @@ Combat Abilities (consumes charges):
 – Striking: target suffers 6 crushing damage
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -8887,7 +8887,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 2
+Damage: 1d6+2
 Speed Factor: 2 (crushing)
 Proficiency Type: Quarterstaff
 Type: One-handed
@@ -8903,7 +8903,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -8919,13 +8919,13 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Parrying: +2 to AC (none vs. missile attacks)
+– Parrying: +2 to Armor Class (none vs. missile attacks)
 
 Combat abilities:
 – Impactful: +10% chance to score critical hits
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -8954,7 +8954,7 @@ Combat abilities:
 – Mindbreaking: 15% chance target is feebleminded permanently (save vs. spell at -4 neg.)
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -8976,7 +8976,7 @@ Equipped abilities:
 – Healing Aura: wielder and allies within 20' heal 1 hit point every 2 rounds
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9003,7 +9003,7 @@ Combat abilities:
 – Dispelling: removes all magical effects from the target (save vs. spell neg.)
 
 THAC0: +5
-Damage: 1d6 + 5 (crushing)
+Damage: 1d6+5 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9027,7 +9027,7 @@ Equipped abilities:
 – Saving Throws: +2
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9051,7 +9051,7 @@ Combat abilities:
 – Thunderclap: 33% chance target and opponents within 5' are stunned for 1 round (save vs. breath neg.)
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9085,7 +9085,7 @@ Combat abilities:
 – Animal Empathy: animals within 30' are charmed (save vs. spell at -2 neg.)
 
 THAC0: +4
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9105,10 +9105,10 @@ Special abilities:
 
 Combat abilities:
 – Quickness: +1/2 Attack per Round
-– Whirlwind Strike: 33% chance of dealing 1d6 + 2 crushing damage to opponents within 5'
+– Whirlwind Strike: 33% chance of dealing 1d6+2 crushing damage to opponents within 5'
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9131,7 +9131,7 @@ Combat abilities:
 – Earthshaking: 15% chance target and opponents within 5' fall to the ground for 1 round (save vs. breath at -2 neg.)
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9154,7 +9154,7 @@ Combat abilities:
 – Burst of Flames: 15% chance of dealing 3d6 fire damage to target and opponents within 5'
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9170,7 +9170,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9188,14 +9188,14 @@ NOTE: Cleric's Staff is always considered to be of +3 enchantment when determini
 STATISTICS:
 
 Equipped abilities:
-– Protection from Undead: +2 to AC and saving throws vs. undead creatures
+– Protection from Undead: +2 to Armor Class and saving throws vs. undead creatures
 
 Combat abilities:
 – Undead Bane: +3 to THAC0 and +5 to damage against undead
 – Halt Undead: undead creatures are held for 2 rounds (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9220,7 +9220,7 @@ Combat abilities:
 – Horrifying: target flees in terror for 2 rounds (save vs. spell neg.)
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9241,7 +9241,7 @@ Combat abilities:
 – Striking: target suffers 6 crushing damage
 
 THAC0: +4
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9263,7 +9263,7 @@ Combat abilities:
 – Battering Ram: 33% chance target suffers 2d6 crushing damage and is knocked back unconscious for 1 round (save vs. death neg. unconsciousness)
 
 THAC0: +5
-Damage: 1d6 + 5 (crushing)
+Damage: 1d6+5 (crushing)
 Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9283,7 +9283,7 @@ Combat abilities:
 – Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9299,7 +9299,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -9405,7 +9405,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9427,7 +9427,7 @@ Combat abilities:
 – Icy: target suffers 1d4 cold damage
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9465,7 +9465,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 1 (piercing)
+Damage: 1d6+1 (piercing)
 Speed Factor: 2
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9484,7 +9484,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9509,7 +9509,7 @@ Combat abilities:
 – Backstabbing (thieves and rangers): +1 to backstab multiplier
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9535,7 +9535,7 @@ Combat abilities:
 – Icy: target suffers 1d6 cold damage
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -9557,7 +9557,7 @@ Equipped abilities:
 – Armor Class: +2
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -9591,7 +9591,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -9612,7 +9612,7 @@ Combat abilities:
 – Cleaving: 33% chance upon each successful hit of gaining an extra attack per round in the next round
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -9636,7 +9636,7 @@ Combat abilities:
 – Flame Tongue: +3 to THAC0 and +5 damage against regenerating creatures, cold creatures, and undead
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9659,7 +9659,7 @@ Combat abilities:
 – Quickness: +1/2 Attack per Round
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9684,10 +9684,10 @@ Special abilities:
 – Mirror Image (1x per day): 5 turns
 
 Equipped abilities:
-– Translucent: +2 to AC
+– Translucent: +2 to Armor Class
 
 THAC0: +1
-Damage: 1d6 + 1 (piercing)
+Damage: 1d6+1 (piercing)
 Speed Factor: 2
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9715,7 +9715,7 @@ Combat abilities:
 – Hastening: 15% chance that the wielder is hasted for 5 rounds
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9738,7 +9738,7 @@ Combat abilities:
 – Cutthroat: target is silenced and suffers 1 bleeding damage every round for 5 rounds (save vs. death neg. silence)
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9756,7 +9756,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -9778,7 +9778,7 @@ Combat abilities:
 – Quickness: +1/2 Attack per Round
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -9805,7 +9805,7 @@ Combat abilities:
 – Bane of Evil: +3 to THAC0 and +5 to damage against evil creatures
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9835,7 +9835,7 @@ Combat abilities:
 – Deadly Strike: 15% chance of dealing 3d8 slashing damage
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9859,7 +9859,7 @@ Special abilities:
 
 Ras (7 HD):
  HP 35, AC 0, THAC0 9, APR 2
- 1d8 + 5 Slashing (Ras +2)
+ 1d8+5 Slashing (Ras +2)
  Saving Throws 10/14/10/12/14, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -9870,7 +9870,7 @@ Special Characteristics:
 – Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9893,7 +9893,7 @@ Special abilities:
 
 Ras (7 HD):
  HP 35, AC 0, THAC0 9, APR 2
- 1d8 + 5 Slashing (Ras +2)
+ 1d8+5 Slashing (Ras +2)
  Saving Throws 10/12/11/12/13, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -9904,7 +9904,7 @@ Special Characteristics:
 – Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: 1-handed
@@ -9926,7 +9926,7 @@ Equipped abilities:
 – Protects Against: Poison
 
 Combat abilities:
-– Luminous: target is outlined by a pale glowing light for 5 rounds, suffering -2 to AC and being unable to hide (save vs. spell neg.)
+– Luminous: target is outlined by a pale glowing light for 5 rounds, suffering -2 to Armor Class and being unable to hide (save vs. spell neg.)
 
 THAC0: +1
 Damage: 2d4 + 1 (slashing)
@@ -9959,7 +9959,7 @@ Combat abilities:
 – Spell Drinker: arcane casters struck lose one memorized spell chosen at random from the highest level possible, raising wielder's maximum hit points by 2 for 1 hour (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -9987,7 +9987,7 @@ Combat abilities:
 – Silencing: opponents within 20' are silenced for 2 rounds (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -10085,7 +10085,7 @@ Combat abilities:
 – Singing Sword: allies within 30' gain +1 to THAC0, damage, and saves vs. spell
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
@@ -10104,7 +10104,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -10162,7 +10162,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d10 + 1 (slashing)
+Damage: 1d10+1 (slashing)
 Speed Factor: 3
 Proficiency Type: Katana
 Type: One-handed
@@ -10181,13 +10181,13 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Parrying: +2 to AC (none vs. missile attacks)
+– Parrying: +2 to Armor Class (none vs. missile attacks)
 
 Combat abilities:
 – Keen: +5% chance to score critical hits
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
@@ -10226,7 +10226,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d8 + 1 (piercing)
+Damage: 1d8+1 (piercing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10264,7 +10264,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10297,7 +10297,7 @@ Combat abilities:
 – Electrocution: 15% chance of dealing 3d6 electrical damage
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 1
 Proficiency Type: Katana
 Type: One-handed
@@ -10325,7 +10325,7 @@ Combat abilities:
 – Armor Piercing: +3 to THAC0
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10348,7 +10348,7 @@ Combat abilities:
 – Immolation: 15% chance of dealing 3d6 fire damage
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10378,7 +10378,7 @@ Combat abilities:
  +6 vs. Lawful/Chaotic Good/Evil
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
@@ -10399,7 +10399,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
@@ -10431,7 +10431,7 @@ Combat abilities:
 – Stealthblade: 15% chance that the wielder becomes invisible for 5 rounds
 
 THAC0: +4
-Damage: 1d6 + 4 (piercing)
+Damage: 1d6+4 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -10466,7 +10466,7 @@ Combat abilities:
 – Stealthblade: 25% chance that the wielder becomes invisible for 5 rounds
 
 THAC0: +5
-Damage: 1d6 + 5 (piercing)
+Damage: 1d6+5 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -10492,7 +10492,7 @@ Combat abilities:
 – Fiery: target suffers 1d6 fire damage
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
@@ -10522,7 +10522,7 @@ Combat abilities:
 – Flame Whip: target is entangled in flames for 2 rounds (save vs. breath at -2 neg.)
 
 THAC0: +5
-Damage: 1d8 + 5 (slashing)
+Damage: 1d8+5 (slashing)
 Speed Factor: 0
 Proficiency Type: Long Sword
 Type: One-handed
@@ -10690,10 +10690,10 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Counterattack: creatures who strike the wielder in melee suffer 1d8 + 3 slashing damage
+– Counterattack: creatures who strike the wielder in melee suffer 1d8+3 slashing damage
 
 THAC0: +3
-Damage: 1d8 + 3 (piercing)
+Damage: 1d8+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10719,7 +10719,7 @@ Combat abilities:
 – Electrocution: 15% chance of dealing 3d6 electrical damage
 
 THAC0: +3
-Damage: 1d8 + 3 (piercing)
+Damage: 1d8+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10744,7 +10744,7 @@ Special abilities:
 
 Spectral Brand (10 HD):
  HP 48, AC 0, THAC0 4, APR 2
- 1d8 + 8 Magic (Spectral Brand +4)
+ 1d8+8 Magic (Spectral Brand +4)
  Saving Throws 9/13/9/11/13, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -10758,7 +10758,7 @@ Combat abilities:
 – Spectral Blade: +3 to THAC0
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10781,7 +10781,7 @@ Special abilities:
 
 Spectral Brand (10 HD):
  HP 48, AC 0, THAC0 4, APR 2
- 1d8 + 8 Magic (Spectral Brand +4)
+ 1d8+8 Magic (Spectral Brand +4)
  Saving Throws 8/10/9/9/11, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -10795,7 +10795,7 @@ Combat abilities:
 – Spectral Blade: +3 to THAC0
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10822,7 +10822,7 @@ Special abilities:
 
 Spectral Brand (12 HD):
  HP 54, AC 0, THAC0 1, APR 3
- 1d8 + 10 Magic (Spectral Brand +5)
+ 1d8+10 Magic (Spectral Brand +5)
  Saving Throws 8/12/8/10/12, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -10839,7 +10839,7 @@ Combat abilities:
 – Spectral Blade: +3 to THAC0
 
 THAC0: +5
-Damage: 1d8 + 5 (slashing)
+Damage: 1d8+5 (slashing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10865,7 +10865,7 @@ Special abilities:
 
 Spectral Brand (12 HD):
  HP 54, AC 0, THAC0 1, APR 3
- 1d8 + 10 Magic (Spectral Brand +5)
+ 1d8+10 Magic (Spectral Brand +5)
  Saving Throws 7/9/8/8/10, AL TN
  SR 100%, CR 100%, PR 100%, MR 100%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -10882,7 +10882,7 @@ Combat abilities:
 – Spectral Blade: +3 to THAC0
 
 THAC0: +5
-Damage: 1d8 + 5 (slashing)
+Damage: 1d8+5 (slashing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -10911,7 +10911,7 @@ Combat abilities:
 – Tenchu: 5% chance of casting Holy Smite upon the target
 
 THAC0: +4
-Damage: 1d10 + 4 (slashing)
+Damage: 1d10+4 (slashing)
 Speed Factor: 0
 Proficiency Type: Katana
 Type: One-handed
@@ -10944,7 +10944,7 @@ Combat abilities:
 – Tenchu: 15% chance of casting Holy Smite upon the target
 
 THAC0: +5
-Damage: 1d10 + 5 (slashing)
+Damage: 1d10+5 (slashing)
 Speed Factor: 0
 Proficiency Type: Katana
 Type: One-handed
@@ -10984,7 +10984,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
@@ -11003,7 +11003,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Short Sword
 Type: One-handed
@@ -11022,7 +11022,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 1
 Proficiency Type: Katana
 Type: One-handed
@@ -11041,7 +11041,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -11063,10 +11063,10 @@ Equipped abilities:
 
 Combat abilities:
 – Pierce Magic: target suffers -5% to magic resistance for 5 rounds
-– Sundering: target suffers cumulative -1 to AC for 2 rounds
+– Sundering: target suffers cumulative -1 to Armor Class for 2 rounds
 
 THAC0: +4
-Damage: 1d8 + 4 (slashing)
+Damage: 1d8+4 (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
@@ -11104,7 +11104,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d10 + 1 (slashing)
+Damage: 1d10+1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11133,7 +11133,7 @@ Combat abilities:
 – Speed: +1 Attack per Round
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11157,7 +11157,7 @@ Equipped abilities:
 – Protects Against: Poison and Web
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11188,7 +11188,7 @@ Combat abilities:
 – Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +1
-Damage: 1d10 + 1 (slashing)
+Damage: 1d10+1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11213,7 +11213,7 @@ Combat abilities:
 – Enervating: living creatures struck suffer 1d6 magic damage and are drained 1 level (save vs. death neg. level loss)
 
 THAC0: +4
-Damage: 1d10 + 4 (slashing)
+Damage: 1d10+4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11239,7 +11239,7 @@ Combat abilities:
 – Oversized: +4 to damage, -2 to THAC0
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11272,7 +11272,7 @@ Combat abilities:
 – Dispelling: removes all magical effects from the target (save vs. spell neg.)
 
 THAC0: +4
-Damage: 1d10 + 4 (slashing)
+Damage: 1d10+4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11288,7 +11288,7 @@ Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11313,7 +11313,7 @@ Combat Abilities
 – Freezing: 33% chance target is held for 1 round (save vs. polymorph neg.)
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11341,7 +11341,7 @@ Equipped abilities:
 – Protects Against: Charm, Confusion, and Domination
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11366,7 +11366,7 @@ Combat abilities:
 – Vorpal: 15% chance target dies (save vs. death at -2 for 3d8 slashing damage)
 
 THAC0: +4
-Damage: 1d10 + 4 (slashing)
+Damage: 1d10+4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11390,7 +11390,7 @@ Combat abilities:
 – Vampiric: target is drained 1d4 hit points and transfers them to the wielder
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 8
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11419,7 +11419,7 @@ Combat abilities:
 – Wounding: target suffers 1 bleeding damage every round for 5 rounds
 
 THAC0: +4
-Damage: 1d10 + 4 (slashing)
+Damage: 1d10+4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11451,7 +11451,7 @@ Combat abilities:
 – Grevious Poison: 15% chance of dealing 5d6 poison damage
 
 THAC0: +5
-Damage: 1d10 + 5 (slashing)
+Damage: 1d10+5 (slashing)
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11487,7 +11487,7 @@ Combat abilities:
 – Dispelling: removes all magical effects from the target (save vs. spell neg.)
 
 THAC0: +5
-Damage: 1d10 + 5 (slashing)
+Damage: 1d10+5 (slashing)
 Speed Factor: 5
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11503,7 +11503,7 @@ Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11526,13 +11526,13 @@ The illithid brain known as Kwukgixrin sent its followers to scouring the underd
 STATISTICS:
 
 Equipped abilities:
-– Mind Barrier: +2 to AC and saving throws vs. psionics
+– Mind Barrier: +2 to Armor Class and saving throws vs. psionics
 
 Combat abilities:
 – Mindbreaking: 15% chance target is feebleminded (save vs. spell at -4 neg.)
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -11574,7 +11574,7 @@ Combat abilities:
 – Spell Stealer: arcane casters struck lose one memorized spell chosen at random from the highest level possible, allowing the wielder to re-memorize a spell that has been previously cast (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d10 + 2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 2
 Proficiency Type: Katana
 Type: One-handed
@@ -11683,7 +11683,7 @@ Combat abilities:
 – Keen: +5% chance to score critical hits
 
 THAC0: +2
-Damage: 1d8 + 2 (piercing)
+Damage: 1d8+2 (piercing)
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-handed
@@ -11737,7 +11737,7 @@ Usable By:
  Bard
  Mage~
 @2243 = ~Wand of Magic Missiles~
-@2244 = ~When activated, this wand will eject three missiles of magical energy that dart forth and unerringly strike its target, which must be visible to be hit. Each missile will deal 1d4 + 1 magic damage. Almost anyone of moderate intelligence can learn how to use this wand.
+@2244 = ~When activated, this wand will eject three missiles of magical energy that dart forth and unerringly strike its target, which must be visible to be hit. Each missile will deal 1d4+1 magic damage. Almost anyone of moderate intelligence can learn how to use this wand.
 
 Like all wands, the Wand of Magic Missiles can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
@@ -12239,7 +12239,7 @@ Combat abilities:
 – Fire Bolt: target suffers 1d6 fire damage
 
 THAC0: +4
-Damage: 1d8 + 4 (missile)
+Damage: 1d8+4 (missile)
 Speed Factor: 1
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -12267,7 +12267,7 @@ Combat abilities:
 – Fire Bolt: target and opponents within 5' suffer 1d8 fire damage
 
 THAC0: +5
-Damage: 1d8 + 5 (missile)
+Damage: 1d8+5 (missile)
 Speed Factor: 0
 Proficiency Type: Crossbow
 Type: Two-handed
@@ -12337,7 +12337,7 @@ Combat Abilities (50% chance each):
 NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12357,12 +12357,12 @@ STATISTICS:
 
 Combat Abilities (50% chance each):
 – Cold Head: target suffers 1d4 cold damage and is slowed for 1 round
-– Acid Head: target suffers 1d4 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d4 acid damage and -2 to Armor Class for 2 rounds
 
 NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12382,12 +12382,12 @@ STATISTICS:
 
 Combat Abilities (50% chance each):
 – Fire Head: target suffers 1d4 fire damage and -2 to THAC0 for 2 rounds
-– Acid Head: target suffers 1d4 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d4 acid damage and -2 to Armor Class for 2 rounds
 
 NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12412,7 +12412,7 @@ Combat abilities:
 NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12436,7 +12436,7 @@ Combat abilities:
 NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12455,12 +12455,12 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Acid Head: target suffers 1d4 acid damage and -2 to AC for 2 rounds
+– Acid Head: target suffers 1d4 acid damage and -2 to Armor Class for 2 rounds
 
 NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12497,7 +12497,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
-Damage: 1d6 + 2 (slashing or missile)
+Damage: 1d6+2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -12528,7 +12528,7 @@ Combat abilities:
 – Cleaving: 33% chance upon each successful hit of gaining an extra attack per round in the next round
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12548,10 +12548,10 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Domineering: target suffers -2 to AC and THAC0 for 2 rounds (save vs. spell neg.)
+– Domineering: target suffers -2 to Armor Class and THAC0 for 2 rounds (save vs. spell neg.)
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -12627,7 +12627,7 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d6 + 3 (slashing or missile)
+Damage: 1d6+3 (slashing or missile)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -12657,7 +12657,7 @@ Combat abilities:
 – Stunning: target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d4 + 1 (missile)
+Damage: 1d4+1 (missile)
 Launcher: Crossbow
 
 Weight: 0~
@@ -12726,7 +12726,7 @@ STATISTICS:
 Equipped abilities:
 – Attacks per Round: +1
 – THAC0: -4
-– Exhausting: 5% chance with each hit to make the wearer exhausted and suffer -2 to AC, THAC0, damage, and casting speed for 2 rounds
+– Exhausting: 5% chance with each hit to make the wearer exhausted and suffer -2 to Armor Class, THAC0, damage, and casting speed for 2 rounds
 
 Weight: 1
 Not Usable By:
@@ -12742,7 +12742,7 @@ Combat abilities:
 – Keen: +5% chance to score critical hits
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -12815,7 +12815,7 @@ Equipped abilities:
 – Magic Resistance: +5%
 
 THAC0: +2
-Damage: 1d4 + 2 (piercing)
+Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -12868,7 +12868,7 @@ Combat abilities:
 – Vampiric: target is drained 1d4 hit points and transfers them to the wielder
 
 THAC0: +4
-Damage: 1d4 + 4 (piercing)
+Damage: 1d4+4 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -13035,7 +13035,7 @@ Combat abilities:
 – Vampiric: target is drained 1d4 hit points and transfers them to the wielder
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
@@ -13054,13 +13054,13 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Parrying: +2 to AC (none vs. missile attacks)
+– Parrying: +2 to Armor Class (none vs. missile attacks)
 
 Combat abilities:
 – Keen: +5% chance to score critical hits
 
 THAC0: +2
-Damage: 1d8 + 2 (piercing)
+Damage: 1d8+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -13083,7 +13083,7 @@ Combat abilities:
 – Bloodlust: with each hit, the wielder gains cumulative +1 to melee damage for 2 rounds
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -13142,7 +13142,7 @@ Equipped abilities:
 – Armor Class: +2
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
@@ -13180,7 +13180,7 @@ Combat abilities:
 – Horrifying: target flees in terror for 2 rounds (save vs. spell neg.)
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-handed
@@ -13231,7 +13231,7 @@ Combat abilities:
 – Song Slayer: bards struck die (save vs. death at -2 neg.)
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -13266,7 +13266,7 @@ Equipped abilities:
 – Fire Resistance: +50%
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
@@ -13307,7 +13307,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Globe of Power (1x per day): user loses 15% of their hit points, but gains +2 to AC and saving throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
+– Globe of Power (1x per day): user loses 15% of their hit points, but gains +2 to Armor Class and saving throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
 
 Weight: 1
 Not Usable By:
@@ -13322,7 +13322,7 @@ Combat abilities:
 – Webbing: 33% chance target is held for 2 rounds (save vs. breath neg.)
 
 THAC0: +3
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 4
 Proficiency Type: Mace
 Type: One-handed
@@ -13348,7 +13348,7 @@ Combat abilities:
 – Vampiric: target is drained 1d4 hit points and transfers them to the wielder
 
 THAC0: +4
-Damage: 1d10 + 4 (slashing)
+Damage: 1d10+4 (slashing)
 Speed Factor: 6
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -13393,7 +13393,7 @@ Combat abilities:
 – Mighty Weapon: +4 to damage
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -13511,7 +13511,7 @@ Special abilities:
 Astral Hound (7 HD):
  ST15, DE16, CO15, IN14, WI12, CH13
  HP 55, AC 3, THAC0 12, APR 3/2
- 1d8 + 1 Piercing (Bite +1)
+ 1d8+1 Piercing (Bite +1)
  Saving Throws 10/12/11/12/13, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -13534,7 +13534,7 @@ Special abilities:
 Cerebus (9 HD):
  ST16, DE15, CO12, IN16, WI16, CH17
  HP 74, AC 1, THAC0 9, APR 2
- 1d8 + 2 Piercing (Bite +2)
+ 1d8+2 Piercing (Bite +2)
  Saving Throws 8/10/9/10/11, AL NG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -13570,7 +13570,7 @@ Combat abilities:
 – Mighty Weapon: +4 to damage
 
 THAC0: +3
-Damage: 1d10 + 3 (piercing)
+Damage: 1d10+3 (piercing)
 Speed Factor: 6
 Proficiency Type: Halberd
 Type: Two-handed
@@ -13605,7 +13605,7 @@ Equipped abilities:
 – Magic Resistance: +5%
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -13632,7 +13632,7 @@ Combat abilities:
 – Demon Bane: +3 to THAC0 and +5 to damage against demons
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
@@ -13656,7 +13656,7 @@ Combat abilities:
 – Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -13679,7 +13679,7 @@ Combat abilities:
 – Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
 
 THAC0: +3
-Damage: 1d10 + 3 (slashing)
+Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -13723,7 +13723,7 @@ Equipped abilities:
 – Physical Resistance: +10%
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -13747,7 +13747,7 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
 THAC0: +3
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -13904,7 +13904,7 @@ Combat abilities:
 – Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +3
-Damage: 1d6 + 4 (crushing)
+Damage: 1d6+4 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -13934,7 +13934,7 @@ Combat abilities:
 – Fiery: target suffers 1d6 fire damage
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
@@ -13965,7 +13965,7 @@ Combat abilities:
 – Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -13997,7 +13997,7 @@ Combat abilities:
 – Speed: +1 Attack per Round
 
 THAC0: +3
-Damage: 1d6 + 3 (piercing or missile)
+Damage: 1d6+3 (piercing or missile)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -14079,7 +14079,7 @@ Special abilities:
 Gladiator (11 HD):
  ST16, DE18, CO18, IN14, WI16, CH14
  HP 128, AC -2, THAC0 3, APR 4
- 1d6 + 8 Slashing (Short Sword +3)
+ 1d6+8 Slashing (Short Sword +3)
  Saving Throws 8/12/8/10/12, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -14096,7 +14096,7 @@ Special abilities:
 Gladiator (11 HD):
  ST16, DE18, CO18, IN14, WI16, CH14
  HP 128, AC -2, THAC0 3, APR 4
- 1d6 + 8 Slashing (Short Sword +3)
+ 1d6+8 Slashing (Short Sword +3)
  Saving Throws 7/9/8/8/10, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -14378,7 +14378,7 @@ Combat abilities:
 – Pulse Ammunition: 5 Attacks per Round
 
 THAC0: +5
-Damage: 1d4 + 1 (magic)
+Damage: 1d4+1 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0~
@@ -14459,7 +14459,7 @@ Combat abilities:
 – Knockdown: 33% chance target is knocked unconscious for 1 round (save vs. death neg.)
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -14480,7 +14480,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Mace
 Type: One-handed
@@ -14535,7 +14535,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protection from Good: +2 to AC and saving throws vs. good creatures
+– Protection from Good: +2 to Armor Class and saving throws vs. good creatures
 
 Armor Class: 0
 Requires:
@@ -14583,7 +14583,7 @@ Combat abilities:
 – Whistling Sword: wielder and allies within 30' are immune to fear
 
 THAC0: +2
-Damage: 1d6 + 2 (piercing)
+Damage: 1d6+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Short Sword
 Type: One-handed
@@ -14794,7 +14794,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +3
 – No protection against missile attacks
-– Nature's Blessing: +2 to AC and saving throws vs. unnatural creatures
+– Nature's Blessing: +2 to Armor Class and saving throws vs. unnatural creatures
 
 Requires:
  4 Strength
@@ -14901,7 +14901,7 @@ Combat abilities:
 – Resonating: 15% chance target and opponents within 10' are blasted with a powerful sonic wave dealing 4d4 crushing and deafening them for 2 rounds (save vs. breath neg. deafness)
 
 THAC0: +3
-Damage: 1d4 + 4 (crushing)
+Damage: 1d4+4 (crushing)
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
@@ -15172,7 +15172,7 @@ Combat abilities:
 – Frenzy: the wielder gains +5 to THAC0 for 2 rounds upon a critical hit
 
 THAC0: +2
-Damage: 1d6 + 3 (slashing or missile)
+Damage: 1d6+3 (slashing or missile)
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -15193,7 +15193,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 2 (slashing or missile)
+Damage: 1d6+2 (slashing or missile)
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -15217,7 +15217,7 @@ Combat abilities:
 – Dispelling: 33% chance of removing all magical effects from the target (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: One-handed
@@ -15265,7 +15265,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
@@ -15284,7 +15284,7 @@ Equipped abilities:
 – Oversized: +2 to damage, -1 to THAC0
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
@@ -15303,7 +15303,7 @@ Combat abilities:
 – Night Club: +2 to THAC0 at night
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Club
 Type: One-handed
@@ -15319,7 +15319,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d6 + 3 (crushing)
+Damage: 1d6+3 (crushing)
 Speed Factor: 5
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -15342,7 +15342,7 @@ Combat abilities:
 – Icy: target suffers 1d4 cold damage
 
 THAC0: +2
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 2
 Proficiency Type: Club
 Type: One-handed
@@ -15362,7 +15362,7 @@ Combat abilities:
 – Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +1
-Damage: 1d6 + 2 (crushing)
+Damage: 1d6+2 (crushing)
 Speed Factor: 6
 Proficiency Type: Mace
 Type: One-handed
@@ -15387,7 +15387,7 @@ Combat abilities:
 – Unwieldy: -1/2 Attack per Round
 
 THAC0: +2
-Damage: 1d10 + 2 (piercing)
+Damage: 1d10+2 (piercing)
 Speed Factor: 7
 Proficiency Type: Halberd
 Type: Two-handed
@@ -15414,7 +15414,7 @@ Combat abilities:
 – Knockback: 33% chance target is knocked away unconscious for 1 round (save vs. death neg.)
 
 THAC0: +1
-Damage: 1d4 + 2 (crushing)
+Damage: 1d4+2 (crushing)
 Speed Factor: 3
 Proficiency Type: War Hammer
 Type: One-handed
@@ -15565,7 +15565,7 @@ Combat abilities:
 – Ossifying: upon each successful hit, Barkskin is cast on the target
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -15584,7 +15584,7 @@ Combat abilities:
 – Touch of Fire: 50% chance upon each successful hit that either the target or the wielder will suffer 1 fire damage
 
 THAC0: +1
-Damage: 1d6 + 1 (crushing)
+Damage: 1d6+1 (crushing)
 Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
@@ -15604,7 +15604,7 @@ Combat abilities:
 – The Harrower: +2 to enchantment level against undead
 
 THAC0: +1
-Damage: 1d8 + 1 (slashing)
+Damage: 1d8+1 (slashing)
 Speed Factor: 4
 Proficiency Type: Long Sword
 Type: One-handed
@@ -15627,7 +15627,7 @@ Combat abilities:
 – Powerful Weapon: +2 to damage
 
 THAC0: +1
-Damage: 1d10 + 1 (slashing)
+Damage: 1d10+1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -15651,7 +15651,7 @@ Combat abilities:
 – Bloodthirsty: when Dorn holds this blade, any death that Rancor causes grants Dorn +1 to THAC0 for 24 hours
 
 THAC0: +1
-Damage: 1d10 + 1 (slashing)
+Damage: 1d10+1 (slashing)
 Speed Factor: 9
 Proficiency Type: Two-handed Sword
 Type: Two-handed
@@ -15692,7 +15692,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d3 + 2 (missile)
+Damage: 1d3+2 (missile)
 Speed Factor: 0
 Proficiency Type: Dart
 Type: One-handed
@@ -15708,7 +15708,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d3 + 3 (missile)
+Damage: 1d3+3 (missile)
 Speed Factor: 0
 Proficiency Type: Dart
 Type: One-handed
@@ -15803,7 +15803,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d8 + 2 (piercing)
+Damage: 1d8+2 (piercing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -15822,7 +15822,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8 + 3 (piercing)
+Damage: 1d8+3 (piercing)
 Speed Factor: 0
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -15841,7 +15841,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -15860,7 +15860,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8 + 3 (slashing)
+Damage: 1d8+3 (slashing)
 Speed Factor: 1
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
@@ -15879,7 +15879,7 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +2
-Damage: 1d8 + 2 (slashing)
+Damage: 1d8+2 (slashing)
 Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: One-handed
