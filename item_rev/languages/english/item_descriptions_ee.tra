@@ -573,7 +573,7 @@ STATISTICS:
 
 Equipped abilities:
 – Maximum Hit Points: +10
-– Regeneration: 1 hp/2 rounds
+– Regeneration: 1 HP/2 rounds
 
 THAC0: +4
 Damage: 1d8+4 (slashing)
@@ -601,7 +601,7 @@ STATISTICS:
 
 Equipped abilities:
 – Maximum Hit Points: +15
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 
 Combat abilities:
 – Vorpal: 15% chance target dies (save vs. Death at -2 for 3d8 slashing damage)
@@ -1437,7 +1437,7 @@ Combat Abilities (20% chance each):
 – Fire Head: target suffers 1d8 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d8 cold damage and is slowed for 1 round
 – Acid Head: target suffers 1d8 acid damage and -2 to Armor Class for 2 rounds
-– Poison Head: target suffers 1d8 poison damage and 1 hp/second poison for 2 rounds
+– Poison Head: target suffers 1d8 poison damage and 1 HP/second poison for 2 rounds
 – Electric Head: target suffers 1d8 electrical damage and is stunned for 1 round
 
 NOTE: The target can save vs. Spell at -2 to avoid the secondary effect but will still suffer the extra damage.
@@ -1468,7 +1468,7 @@ Combat Abilities (25% chance each):
 – Fire Head: target suffers 1d6 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d6 cold damage and is slowed for 1 round
 – Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
-– Poison Head: target suffers 1d6 poison damage and 1 hp/second poison for 2 rounds
+– Poison Head: target suffers 1d6 poison damage and 1 HP/second poison for 2 rounds
 
 NOTE: The target can save vs. Spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
@@ -1785,7 +1785,7 @@ Said to be sewn together from scraps of the planes themselves, these strange boo
 STATISTICS:
 
 Special abilities:
-– Etherealness (1x per day): the wearer is effectively invulnerable, cannot be seen, and regenerates 2 hp/second, but cannot attack or use abilities for 5 rounds
+– Etherealness (1x per day): the wearer is effectively invulnerable, cannot be seen, and regenerates 2 HP/second, but cannot attack or use abilities for 5 rounds
 
 Equipped abilities:
 – Dimensional Anchor: wearer is unaffected by Teleport Field, Maze, Imprisonment, and other similar effects
@@ -2698,7 +2698,7 @@ Special abilities:
 – Heal (1x per day)
 
 Equipped abilities:
-– Regeneration: 1 hp/5 rounds
+– Regeneration: 1 HP/5 rounds
 
 Weight: 1
 Usable By:
@@ -3377,7 +3377,7 @@ Special Characteristics:
 – Protected Against: Normal Weapons
 
 Equipped abilities:
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 
 Weight: 3
 Not Usable By:
@@ -3392,7 +3392,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +1
 – Magic Resistance: +10%
-– Regeneration: 1 hp/2 rounds
+– Regeneration: 1 HP/2 rounds
 
 Weight: 3
 Not Usable By:
@@ -5331,11 +5331,11 @@ Troll (7 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Regeneration: 1 hp/second
+– Regeneration: 1 HP/second
 – Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Equipped abilities:
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 – Fire Resistance: -25%
 – Acid Resistance: -25%
 
@@ -5908,7 +5908,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 – Thorns: creatures who strike the wearer in melee suffer 2 piercing damage every round for 5 rounds
 
 Armor Class: 2
@@ -6462,7 +6462,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 – Protects Against: Charm, Domination, and Fear
 
 Combat abilities:
@@ -6790,7 +6790,7 @@ STATISTICS:
 
 Equipped abilities:
 – Elemental Resistance: +15%
-– Regeneration: 1 hp/5 rounds
+– Regeneration: 1 HP/5 rounds
 – Spell Immunity: Summon Insects, Insect Plague, and Creeping Doom
 
 Weight: 3
@@ -7743,7 +7743,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 
 Not Usable By:
  Wizard Slayer~
@@ -7808,7 +7808,7 @@ Special abilities:
 Equipped abilities:
 – Armor Class: +2
 – Saving Throws: +2
-– Regeneration: 1 hp/round
+– Regeneration: 1 HP/round
 – Protects Against: Disease and Poison
 
 Not Usable By:
@@ -9079,7 +9079,7 @@ Lesser Shambling Mound (8 HD):
  FR 50%, CR 0%, ER 125%, AR 0%
 
 Equipped abilities:
-– Regeneration: 1 hp/2 rounds
+– Regeneration: 1 HP/2 rounds
 
 Combat abilities:
 – Animal Empathy: animals within 30' are charmed (save vs. Spell at -2 negates)
@@ -12481,7 +12481,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Regeneration: 1 hp/2 rounds
+– Regeneration: 1 HP/2 rounds
 – Protects Against: Confusion and Feeblemindedness
 
 Weight: 0
