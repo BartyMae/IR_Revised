@@ -56,7 +56,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Silver Glow: +2 to Armor Class and saving throws vs. vampires and werewolves
+– Silver Glow: +2 to Armor Class and Saving Throws vs. vampires and werewolves
 
 Not Usable By:
  Wizard Slayer~
@@ -236,7 +236,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 Damage: 1d6 (missile)
 Launcher: Bow
@@ -248,7 +248,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Explosion: 6d6 fire damage to those within 30' (save vs. breath half)
+– Explosion: 6d6 fire damage to those within 30' (save vs. Breath for half)
 
 Damage: 1d6 (missile)
 Launcher: Bow
@@ -260,7 +260,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Dispelling: removes all magical effects from the target (save vs. spell neg.)
+– Dispelling: removes all magical effects from the target (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d6 (missile)
@@ -416,7 +416,7 @@ Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a c
 STATISTICS:
 
 Combat abilities:
-– Dispelling: removes all magical effects from the target (save vs. spell neg.)
+– Dispelling: removes all magical effects from the target (save vs. Spell negates)
 
 Damage: 1d8 (slashing)
 Speed Factor: 6
@@ -468,7 +468,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Horrifying: 33% chance target flees in terror for 2 rounds (save vs. spell neg.)
+– Horrifying: 33% chance target flees in terror for 2 rounds (save vs. Spell negates)
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
@@ -496,7 +496,7 @@ STATISTICS:
 
 Combat abilities:
 – Undead Bane: +3 to THAC0 and +5 to damage against undead
-– Disruption: undead creatures are destroyed (save vs. spell neg.)
+– Disruption: undead creatures are destroyed (save vs. Spell negates)
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
@@ -547,7 +547,7 @@ STATISTICS:
 
 Combat abilities:
 – Icy: target suffers 1d4 cold damage
-– Chilling: target is slowed for 1 round (save vs. polymorph neg.)
+– Chilling: target is slowed for 1 round (save vs. Polymorph negates)
 
 THAC0: +1
 Damage: 1d8+1 (slashing)
@@ -604,7 +604,7 @@ Equipped abilities:
 – Regeneration: 1 hp/round
 
 Combat abilities:
-– Vorpal: 15% chance target dies (save vs. death at -2 for 3d8 slashing damage)
+– Vorpal: 15% chance target dies (save vs. Death at -2 for 3d8 slashing damage)
 
 THAC0: +5
 Damage: 1d8+5 (slashing)
@@ -629,7 +629,7 @@ STATISTICS:
 
 Combat abilities:
 – Slashing: target suffers 1d6 slashing damage
-– Knockback: target is knocked away unconscious for 1 round (save vs. death neg.)
+– Knockback: target is knocked away unconscious for 1 round (save vs. Death negates)
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4
@@ -956,7 +956,7 @@ STATISTICS:
 
 Combat abilities:
 – Monster Bane: +3 to THAC0 and +5 to damage against monsters
-– Entangling: target is entangled for 1 round (save vs. breath neg.)
+– Entangling: target is entangled for 1 round (save vs. Breath negates)
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -981,7 +981,7 @@ STATISTICS:
 
 Combat abilities:
 – Undead Bane: +3 to THAC0 and +5 to damage against undead
-– Disruption: undead creatures are destroyed (save vs. spell neg.)
+– Disruption: undead creatures are destroyed (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d6+2 (crushing)
@@ -1028,7 +1028,7 @@ Combat Abilities (33% chance each):
 – Cold Head: target suffers 1d6 cold damage and is slowed for 1 round
 – Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
 
-NOTE: The target can save vs. spell at -1 to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +3
 Damage: 1d6+4 (crushing)
@@ -1072,7 +1072,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
+– Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 2d4 + 2 (crushing)
@@ -1095,7 +1095,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 THAC0: +2
 Damage: 2d4 + 2 (crushing)
@@ -1168,7 +1168,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. spell neg.)
+– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -1234,7 +1234,7 @@ STATISTICS:
 
 Combat abilities:
 – Undead Bane: +3 to THAC0 and +5 to damage against undead
-– Dooming: target suffers -1 to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
+– Dooming: target suffers -1 to THAC0, damage, and Saving Throws for 5 rounds (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -1282,7 +1282,7 @@ Equipped abilities:
 
 Combat abilities:
 – Undead Bane: +3 to THAC0 and +5 to damage against undead
-– Disruption: undead creatures are destroyed (save vs. spell neg.)
+– Disruption: undead creatures are destroyed (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -1317,7 +1317,7 @@ Equipped abilities:
 
 Combat abilities:
 – Fiery: target suffers 1d6 fire damage
-– Detonation: 5% chance of dealing 6d6 fire damage to those within 20' (save vs. breath half)
+– Detonation: 5% chance of dealing 6d6 fire damage to those within 20' (save vs. Breath for half)
 
 THAC0: +4
 Damage: 1d6+4 (crushing)
@@ -1352,7 +1352,7 @@ Equipped abilities:
 
 Combat abilities:
 – Fiery: target suffers 1d8 fire damage
-– Detonation: 15% chance of dealing 6d6 fire damage to target and opponents within 20' (save vs. breath half)
+– Detonation: 15% chance of dealing 6d6 fire damage to target and opponents within 20' (save vs. Breath for half)
 
 THAC0: +5
 Damage: 1d6+5 (crushing)
@@ -1440,7 +1440,7 @@ Combat Abilities (20% chance each):
 – Poison Head: target suffers 1d8 poison damage and 1 hp/second poison for 2 rounds
 – Electric Head: target suffers 1d8 electrical damage and is stunned for 1 round
 
-NOTE: The target can save vs. spell at -2 to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell at -2 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +5
 Damage: 1d6+6 (crushing)
@@ -1470,7 +1470,7 @@ Combat Abilities (25% chance each):
 – Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
 – Poison Head: target suffers 1d6 poison damage and 1 hp/second poison for 2 rounds
 
-NOTE: The target can save vs. spell at -1 to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +4
 Damage: 1d6+5 (crushing)
@@ -1499,7 +1499,7 @@ Combat Abilities (25% chance each):
 – Acid Head: target suffers 1d6 acid damage and -2 to Armor Class for 2 rounds
 – Electric Head: target suffers 1d6 electrical damage and is stunned for 1 round
 
-NOTE: The target can save vs. spell at -1 to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell at -1 to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +4
 Damage: 1d6+5 (crushing)
@@ -1602,7 +1602,7 @@ Equipped abilities:
 
 Combat abilities:
 – Bitter Cold: target suffers 1d3 cold and piercing damage
-– Frozen Doom: 15% chance target is turned to ice and dies (save vs. polymorph for 1 round hold and 3d6 cold damage)
+– Frozen Doom: 15% chance target is turned to ice and dies (save vs. Polymorph for 1 round hold and 3d6 cold damage)
 
 THAC0: +4
 Damage: 2d4 + 4 (crushing)
@@ -1658,7 +1658,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 Damage: 1d8 (missile)
 Launcher: Crossbow
@@ -1969,7 +1969,7 @@ In order to protect their community from an encroaching orc logging encampment, 
 STATISTICS:
 
 Combat abilities:
-– Entangling: 50% chance target is entangled for 1 round (save vs. breath neg.)
+– Entangling: 50% chance target is entangled for 1 round (save vs. Breath negates)
 
 THAC0: +2
 Speed Factor: 4
@@ -2020,7 +2020,7 @@ STATISTICS:
 
 Combat abilities:
 – Accuracy: +3 to THAC0
-– Heartseeking: 15% chance target dies (save vs. death neg.)
+– Heartseeking: 15% chance target dies (save vs. Death negates)
 
 THAC0: +4
 Damage: +1 (missile)
@@ -2148,7 +2148,7 @@ NOTE: Tansheron's Bow requires no ammunition, but normal arrows cannot be fired 
 STATISTICS:
 
 Combat abilities:
-– Phantom Arrow: target either flees or is frozen in terror for 1 round (save vs. spell neg.)
+– Phantom Arrow: target either flees or is frozen in terror for 1 round (save vs. Spell negates)
 
 THAC0: +3
 Damage: 1d6 (missile)
@@ -2852,7 +2852,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Sunscorch: target suffers 2d6 fire damage (save vs. breath half)
+– Sunscorch: target suffers 2d6 fire damage (save vs. Breath for half)
 
 THAC0: +2
 Damage: 1d4+3 (missile)
@@ -3163,7 +3163,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Nature's Blessing: +2 to Armor Class and saving throws vs. unnatural creatures
+– Nature's Blessing: +2 to Armor Class and Saving Throws vs. unnatural creatures
 
 Armor Class: 2
 Requires:
@@ -3415,7 +3415,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Blinding Beauty (1x per day): blinds opponents within 20' for 1 turn (save vs. spell at -2 neg.)
+– Blinding Beauty (1x per day): blinds opponents within 20' for 1 turn (save vs. Spell at -2 negates)
 
 Equipped abilities:
 – Save vs. Spell: +3
@@ -3594,7 +3594,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Nature's Vengeance: 33% chance creatures who strike the wearer are struck by lightning for 6d6 electrical damage (save vs. breath at -2 half)
+– Nature's Vengeance: 33% chance creatures who strike the wearer are struck by lightning for 6d6 electrical damage (save vs. Breath at -2 for half)
 
 Weight: 3
 Not Usable By:
@@ -3639,8 +3639,8 @@ Special Characteristics:
 – Magic Resistance: 100%
 – Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, and Poison
 – Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
-– Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
-– Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
+– Slowing: target is slowed for 1 turn (save vs. Breath at -2 negates)
+– Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. Poison negates)
 
 Equipped abilities:
 – Armor Class: +1
@@ -3836,7 +3836,7 @@ STATISTICS:
 
 Combat abilities:
 – Pixie Dust: 15% chance of making the user invisible for 5 rounds
-– Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
+– Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d4+2 (piercing)
@@ -3859,7 +3859,7 @@ STATISTICS:
 
 Combat abilities:
 – Acidic: target suffers 1d6 acid damage
-– Webbing: 33% chance target is held for 2 rounds (save vs. breath neg.)
+– Webbing: 33% chance target is held for 2 rounds (save vs. Breath negates)
 
 THAC0: +3
 Damage: 1d4+3 (piercing)
@@ -3896,7 +3896,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 Damage: 1d4 (missile)
 Speed Factor: 2
@@ -3916,7 +3916,7 @@ STATISTICS:
 
 Combat abilities:
 – Lacerating: target suffers 1 bleeding damage every round for 2 rounds
-– Paralyzing: 33% chance target is held for 2 rounds (save vs. paralyzation neg.)
+– Paralyzing: 33% chance target is held for 2 rounds (save vs. Paralyzation negates)
 
 THAC0: +2
 Damage: 1d4+2 (piercing)
@@ -3957,7 +3957,7 @@ STATISTICS:
 
 Combat abilities:
 – Starmetal: +5 to damage against extraplanar creatures
-– Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
+– Stardust: target and opponents within 5' are blinded for 1 round (save vs. Breath at -2 negates)
 
 THAC0: +4
 Damage: 1d4+4 (piercing)
@@ -3980,7 +3980,7 @@ STATISTICS:
 
 Combat abilities:
 – Starmetal: +5 to damage against extraplanar creatures
-– Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
+– Stardust: target and opponents within 5' are blinded for 1 round (save vs. Breath at -2 negates)
 – Starbolt: 15% chance of dealing 5d6 magic damage
 – Returning: returns to the wielder's hand instantly after an attack is made
 
@@ -4071,7 +4071,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Stunning: target is stunned for 1 round (save vs. spell neg.)
+– Stunning: target is stunned for 1 round (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d3+1 (missile)
@@ -4108,7 +4108,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)
+– Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. Poison at -2 negates)
 
 THAC0: +2
 Damage: 1d3+2 (missile)
@@ -4177,7 +4177,7 @@ Drowcraft ammunition will dissolve to dust if exposed to sunlight and shouldn't 
 STATISTICS:
 
 Combat abilities:
-– Sleeping: target falls asleep for 2 rounds (save vs. spell neg.)
+– Sleeping: target falls asleep for 2 rounds (save vs. Spell negates)
 – Drowcraft: +1 to THAC0 and damage
 
 THAC0: +1
@@ -4191,7 +4191,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Stunning: target is stunned for 1 round (save vs. spell neg.)
+– Stunning: target is stunned for 1 round (save vs. Spell negates)
 – Drowcraft: +1 to THAC0 and damage
 
 THAC0: +2
@@ -4533,7 +4533,7 @@ STATISTICS:
 
 Combat abilities:
 – Slashing: target suffers 1d4 slashing damage
-– Staggering: target suffers -1/2 to APR and -2 to movement and casting speed for 1 round (save vs. breath neg.)
+– Staggering: target suffers -1/2 to APR and -2 to movement and casting speed for 1 round (save vs. Breath negates)
 
 Damage: 1d10+2
 THAC0: +2 (piercing)
@@ -4613,7 +4613,7 @@ Equipped abilities:
 
 Combat abilities:
 – Weakening: target suffers cumulative -1 to THAC0 and damage for 2 rounds
-– Blackmist: 15% chance of blinding opponents within 10' for 1 turn (save vs. spell at -2 neg.)
+– Blackmist: 15% chance of blinding opponents within 10' for 1 turn (save vs. Spell at -2 negates)
 
 THAC0: +4
 Damage: 1d10+4 (piercing)
@@ -4686,8 +4686,8 @@ Equipped abilities:
 – Spell Immunity: Horrid Wilting
 
 Combat abilities:
-– Smashing Wave: 15% chance target and opponents within 5' suffer 5d4 crushing damage and are knocked unconscious for 1 round (save vs. breath at -2 neg. unconsciousness)
-– Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave die (save vs. death at -2 neg.)
+– Smashing Wave: 15% chance target and opponents within 5' suffer 5d4 crushing damage and are knocked unconscious for 1 round (save vs. Breath at -2 neg. unconsciousness)
+– Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave die (save vs. Death at -2 negates)
 
 THAC0: +4
 Damage: 1d10+4 (piercing)
@@ -4712,8 +4712,8 @@ STATISTICS:
 
 Combat abilities:
 – Poisonous: target suffers 1d6 poison damage
-– Dooming: target suffers -1 to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
-– Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
+– Dooming: target suffers -1 to THAC0, damage, and Saving Throws for 5 rounds (save vs. Spell negates)
+– Terrifying Aura: opponents within 10' are frozen in terror (save vs. Spell at -2 negates)
 
 THAC0: +4
 Damage: 1d10+4 (piercing)
@@ -4741,9 +4741,9 @@ STATISTICS:
 
 Combat abilities:
 – Poisonous: target suffers 1d8 poison damage
-– Dooming: target suffers -1 to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
-– Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
-– Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
+– Dooming: target suffers -1 to THAC0, damage, and Saving Throws for 5 rounds (save vs. Spell negates)
+– Terrifying Aura: opponents within 10' are frozen in terror (save vs. Spell at -2 negates)
+– Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. Poison at -4 negates)
 
 THAC0: +5
 Damage: 1d10+5 (piercing)
@@ -4974,7 +4974,7 @@ Equipped abilities:
 
 Combat abilities:
 – Shocking: target suffers 1d6 electrical damage
-– Thunderclap: target and opponents within 5' are stunned for 1 round when thrown (save vs. breath neg.)
+– Thunderclap: target and opponents within 5' are stunned for 1 round when thrown (save vs. Breath negates)
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4
@@ -5002,7 +5002,7 @@ Equipped abilities:
 
 Combat abilities:
 – Starmetal: +5 to damage against extraplanar creatures
-– Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
+– Banishing: summoned and gated creatures are dismissed (save vs. Spell at -2 negates)
 
 THAC0: +4
 Damage: 1d4+5 (crushing)
@@ -5036,7 +5036,7 @@ Equipped abilities:
 
 Combat abilities:
 – Starmetal: +5 to damage against extraplanar creatures
-– Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
+– Banishing: summoned and gated creatures are dismissed (save vs. Spell at -2 negates)
 
 THAC0: +5
 Damage: 1d4+6 (crushing)
@@ -5296,7 +5296,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Gaze of Death (1x per day): target must die (save vs. death at -2 neg.)
+– Gaze of Death (1x per day): target must die (save vs. Death at -2 negates)
 
 Equipped abilities:
 – Protects against critical hits
@@ -5509,7 +5509,7 @@ With the addition of the horns, the Helm of the Rock is even more powerful. Gene
 STATISTICS:
 
 Special abilities:
-– Gaze of Despair (3x per day): target is paralyzed with fear for 5 rounds (save vs. spell at -2 neg.)
+– Gaze of Despair (3x per day): target is paralyzed with fear for 5 rounds (save vs. Spell at -2 negates)
 
 Equipped abilities:
 – Protects against critical hits
@@ -5729,7 +5729,7 @@ STATISTICS:
 
 Equipped abilities:
 – Save vs. Paralyzation: +5
-– Stench: opponents within 10' suffer -2 to THAC0 and 25% spell failure (save vs. death neg.)
+– Stench: opponents within 10' suffer -2 to THAC0 and 25% spell failure (save vs. Death negates)
 – Charisma: -1
 
 Armor Class: 4
@@ -5873,7 +5873,7 @@ STATISTICS:
 Equipped abilities:
 – Saving Throws: +2
 – Magic Resistance: +20%
-– Hideous: +2 to Armor Class and saving throws vs. humanoids
+– Hideous: +2 to Armor Class and Saving Throws vs. humanoids
 
 Armor Class: 3
 Requires:
@@ -6223,8 +6223,8 @@ Kitthix (8 HD):
 Special Characteristics:
 – Magic Resistance: 10%
 – Protected Against: Charm, Confusion, Domination, Fear, Poison, and Web
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
-– Web Tangle (3x per day): target is held for 2 rounds (save vs. breath neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
+– Web Tangle (3x per day): target is held for 2 rounds (save vs. Breath negates)
 
 Not Usable By:
  Wizard Slayer~
@@ -6236,7 +6236,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Sonic Blast (3x per day): an area of 10' around the user is blasted with a powerful sonic wave, dealing 4d4 crushing and stunning opponents for 1 round (save vs. breath neg. stun)
+– Sonic Blast (3x per day): an area of 10' around the user is blasted with a powerful sonic wave, dealing 4d4 crushing and stunning opponents for 1 round (save vs. Breath neg. stun)
 
 Not Usable By:
  Wizard Slayer~
@@ -6370,7 +6370,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Silence 15' Radius (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
+– Silence 15' Radius (3x per day): opponents within 15' are silenced for 1 turn (save vs. Spell at -4 negates)
 
 Not Usable By:
  Wizard Slayer~
@@ -6382,7 +6382,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Confusion (3x per day): opponents within 30' are confused for 5 rounds (save vs. spell at -2 neg.)
+– Confusion (3x per day): opponents within 30' are confused for 5 rounds (save vs. Spell at -2 negates)
 
 Usable By:
  Bard~
@@ -6444,7 +6444,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 THAC0: +2
 Damage: 1d4+2 (piercing)
@@ -6490,7 +6490,7 @@ STATISTICS:
 
 Combat abilities:
 – Keen: +5% chance to score critical hits
-– Diseasing: target suffers 1 damage every round and is slowed for 5 rounds (save vs. poison neg.)
+– Diseasing: target suffers 1 damage every round and is slowed for 5 rounds (save vs. Poison negates)
 
 THAC0: +1
 Damage: 1d4+1 (piercing)
@@ -6617,7 +6617,7 @@ Equipped abilities:
 Combat abilities:
 – Powerful Weapon: +2 to damage
 – Unholy: +5 to damage against good creatures
-– Dispelling: removes all magical effects from the target (save vs. spell neg.)
+– Dispelling: removes all magical effects from the target (save vs. Spell negates)
 
 THAC0: +5
 Damage: 1d10+5 (slashing)
@@ -6675,7 +6675,7 @@ Requires:
 Not Usable By:
  Wizard Slayer~
 @1778 = ~Protection from Undead~
-@1779 = ~This scroll creates a magical barrier around the reader at a distance of one foot. The barrier moves with the recipient and protects him from all forms of attack made by undead creatures. The recipient is immune to level drain effects, attacks made by undead creatures against the user receive -2 to THAC0, and any saving throws caused by such attacks are made by the user with a +2 bonus. The effect is not permanent, however, and will wear off after 5 turns.
+@1779 = ~This scroll creates a magical barrier around the reader at a distance of one foot. The barrier moves with the recipient and protects him from all forms of attack made by undead creatures. The recipient is immune to level drain effects, attacks made by undead creatures against the user receive -2 to THAC0, and any Saving Throws caused by such attacks are made by the user with a +2 bonus. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
  10 Intelligence
@@ -6907,7 +6907,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. spell neg.)
+– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d6+2 (piercing)
@@ -6931,7 +6931,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Toxins: target suffers 1 poison damage every second for 1 round (save vs. poison neg.)
+– Toxins: target suffers 1 poison damage every second for 1 round (save vs. Poison negates)
 
 THAC0: +2
 Damage: 1d10+2 (slashing)
@@ -6952,7 +6952,7 @@ STATISTICS:
 
 Combat abilities:
 – Righteous: +3 to damage against evil creatures
-– Heretic's Doom: target is silenced for 2 rounds (save vs. spell neg.)
+– Heretic's Doom: target is silenced for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d10+2 (slashing)
@@ -6997,7 +6997,7 @@ STATISTICS:
 
 Combat abilities:
 – Poisonous: target suffers 1d4 poison damage
-– Entropy: target suffers -1 to saving throws for 2 rounds
+– Entropy: target suffers -1 to Saving Throws for 2 rounds
 
 THAC0: +2
 Damage: 1d6+2 (piercing)
@@ -7020,7 +7020,7 @@ STATISTICS:
 
 Combat abilities:
 – Lacerating: target suffers 1 bleeding damage every round for 2 rounds
-– Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+– Confusing: 33% chance target is confused for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d6+2 (piercing)
@@ -7067,7 +7067,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Blinding: 33% chance target blinded for 2 rounds (save vs. breath neg.)
+– Blinding: 33% chance target blinded for 2 rounds (save vs. Breath negates)
 
 THAC0: +2
 Damage: +2 (missile)
@@ -7287,7 +7287,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Aura of Despair: opponents within 10' suffer -2 to saving throws, THAC0, and damage
+– Aura of Despair: opponents within 10' suffer -2 to Saving Throws, THAC0, and damage
 – Luck: -1 (-5% for skills)
 
 NOTE: The Aura of Despair effect is not cumulative with other Doom effects.
@@ -7340,7 +7340,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protection from Chaos: +2 to Armor Class and saving throws vs. chaotic creatures
+– Protection from Chaos: +2 to Armor Class and Saving Throws vs. chaotic creatures
 – Protects Against: Berserk and Confusion
 
 Armor Class: -1
@@ -7395,7 +7395,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Heroic Inspiration: when the wearer drops below 50% hit points, they gain +2 to saving throws, THAC0, and damage
+– Heroic Inspiration: when the wearer drops below 50% hit points, they gain +2 to Saving Throws, THAC0, and damage
 – Protects Against: Fear
 
 Armor Class: -2
@@ -7733,7 +7733,7 @@ Special abilities:
 
 Equipped abilities:
 – Charisma: +2
-– Human Influence: +2 to Armor Class and saving throws vs. humans
+– Human Influence: +2 to Armor Class and Saving Throws vs. humans
 
 Not Usable By:
  Wizard Slayer~
@@ -7756,7 +7756,7 @@ Special abilities:
 – Battering Ram (3x per day)
 
 Combat Abilities (monks only):
-– Knockdown: 33% chance creatures struck by the wearer in melee are knocked unconscious for 1 round (save vs. death neg.)
+– Knockdown: 33% chance creatures struck by the wearer in melee are knocked unconscious for 1 round (save vs. Death negates)
 
 Not Usable By:
  Wizard Slayer~
@@ -7887,7 +7887,7 @@ STATISTICS:
 
 Combat abilities:
 – Golem Bane: +3 to THAC0 and +5 to damage against golems
-– Shattering: golems are destroyed (save vs. rod neg.)
+– Shattering: golems are destroyed (save vs. Rod negates)
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -8001,7 +8001,7 @@ The sling has the ability to rend the senses of the wielder's enemies with a wal
 STATISTICS:
 
 Combat abilities:
-– Sonic Blast: 15% chance target and opponents within 10' are blasted with a powerful sonic wave, dealing 4d4 crushing and stunning them for 1 round (save vs. breath neg. stun)
+– Sonic Blast: 15% chance target and opponents within 10' are blasted with a powerful sonic wave, dealing 4d4 crushing and stunning them for 1 round (save vs. Breath neg. stun)
 
 THAC0: +2
 Damage: +2 (missile)
@@ -8078,7 +8078,7 @@ Equipped abilities:
 
 Combat abilities:
 – Energy Bullet: target suffers 1d8 magic damage
-– Disintegration: 15% chance target suffers 20D6 magic damage (save vs. breath at -2 for 5d6 magic damage)
+– Disintegration: 15% chance target suffers 20D6 magic damage (save vs. Breath at -2 for 5d6 magic damage)
 
 THAC0: +5
 Damage: 1d4+6
@@ -8438,7 +8438,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +4
-– Searing Light: creatures who strike the wearer in melee are blinded for 1 round, and undead creatures also suffer 2d6 magic damage (save vs. spell neg. blindness)
+– Searing Light: creatures who strike the wearer in melee are blinded for 1 round, and undead creatures also suffer 2d6 magic damage (save vs. Spell neg. blindness)
 
 Requires:
  12 Strength
@@ -8544,7 +8544,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +5
-– Protection from Demons: +2 to Armor Class and saving throws vs. demonic creatures and fallen celestials
+– Protection from Demons: +2 to Armor Class and Saving Throws vs. demonic creatures and fallen celestials
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Requires:
@@ -8695,7 +8695,7 @@ The Impaler has a palpable aura of magic that hints at the nature of the weapon 
 STATISTICS:
 
 Combat abilities:
-– Impaling: target suffers 1d10 piercing damage, 15% chance target dies (save vs. death neg.)
+– Impaling: target suffers 1d10 piercing damage, 15% chance target dies (save vs. Death negates)
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
@@ -8746,7 +8746,7 @@ STATISTICS:
 
 Combat abilities:
 – Poisonous: target suffers 1d6 poison damage
-– Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
+– Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. Death at -2 negates)
 
 THAC0: +3
 Damage: 1d6+3 (piercing)
@@ -8813,7 +8813,7 @@ Equipped abilities:
 
 Combat abilities:
 – Keen: +5% chance to score critical hits
-– Pinning: target is held for 2 rounds, taking 1d6+5 damage every round (save vs. death at -2 neg.)
+– Pinning: target is held for 2 rounds, taking 1d6+5 damage every round (save vs. Death at -2 negates)
 
 THAC0: +5
 Damage: 1d6+5 (piercing)
@@ -8951,7 +8951,7 @@ Equipped abilities:
 – Aura of Command: opponents within 30' suffer -2 to saves vs. spell
 
 Combat abilities:
-– Mindbreaking: 15% chance target is feebleminded permanently (save vs. spell at -4 neg.)
+– Mindbreaking: 15% chance target is feebleminded permanently (save vs. Spell at -4 negates)
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
@@ -9000,7 +9000,7 @@ Equipped abilities:
 – Spell: True Seeing
 
 Combat abilities:
-– Dispelling: removes all magical effects from the target (save vs. spell neg.)
+– Dispelling: removes all magical effects from the target (save vs. Spell negates)
 
 THAC0: +5
 Damage: 1d6+5 (crushing)
@@ -9044,11 +9044,11 @@ STATISTICS:
 
 Special abilities:
 – Lightning Bolt (1x per day)
-– Thunder & Lightning (1x per day): each lightning bolt deals 6d6 electrical damage (save vs. breath at -2 half) and stuns for 1 round (save vs. polymorph at -2 neg.)
+– Thunder & Lightning (1x per day): each lightning bolt deals 6d6 electrical damage (save vs. Breath at -2 for half) and stuns for 1 round (save vs. Polymorph at -2 negates)
 
 Combat abilities:
 – Shocking: target suffers 1d4 electrical damage
-– Thunderclap: 33% chance target and opponents within 5' are stunned for 1 round (save vs. breath neg.)
+– Thunderclap: 33% chance target and opponents within 5' are stunned for 1 round (save vs. Breath negates)
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -9082,7 +9082,7 @@ Equipped abilities:
 – Regeneration: 1 hp/2 rounds
 
 Combat abilities:
-– Animal Empathy: animals within 30' are charmed (save vs. spell at -2 neg.)
+– Animal Empathy: animals within 30' are charmed (save vs. Spell at -2 negates)
 
 THAC0: +4
 Damage: 1d6+4 (crushing)
@@ -9127,8 +9127,8 @@ Special abilities:
 – Flesh to Stone (1x per day)
 
 Combat abilities:
-– Stonehold: 33% chance target is held for 2 rounds (save vs. petrification neg.)
-– Earthshaking: 15% chance target and opponents within 5' fall to the ground for 1 round (save vs. breath at -2 neg.)
+– Stonehold: 33% chance target is held for 2 rounds (save vs. Petrification negates)
+– Earthshaking: 15% chance target and opponents within 5' fall to the ground for 1 round (save vs. Breath at -2 negates)
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -9188,11 +9188,11 @@ NOTE: Cleric's Staff is always considered to be of +3 enchantment when determini
 STATISTICS:
 
 Equipped abilities:
-– Protection from Undead: +2 to Armor Class and saving throws vs. undead creatures
+– Protection from Undead: +2 to Armor Class and Saving Throws vs. undead creatures
 
 Combat abilities:
 – Undead Bane: +3 to THAC0 and +5 to damage against undead
-– Halt Undead: undead creatures are held for 2 rounds (save vs. spell neg.)
+– Halt Undead: undead creatures are held for 2 rounds (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -9217,7 +9217,7 @@ Equipped abilities:
 – Hexproof: wielder is immune to hostile hexes and curses such as Doom, Malison, Symbols, Polymorph or similar effects
 
 Combat abilities:
-– Horrifying: target flees in terror for 2 rounds (save vs. spell neg.)
+– Horrifying: target flees in terror for 2 rounds (save vs. Spell negates)
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
@@ -9260,7 +9260,7 @@ STATISTICS:
 
 Combat abilities:
 – Striking: target suffers 6 crushing damage
-– Battering Ram: 33% chance target suffers 2d6 crushing damage and is knocked back unconscious for 1 round (save vs. death neg. unconsciousness)
+– Battering Ram: 33% chance target suffers 2d6 crushing damage and is knocked back unconscious for 1 round (save vs. Death neg. unconsciousness)
 
 THAC0: +5
 Damage: 1d6+5 (crushing)
@@ -9280,7 +9280,7 @@ STATISTICS:
 
 Combat abilities:
 – Poisonous: target suffers 1d6 poison damage
-– Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
+– Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. Poison at -4 negates)
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
@@ -9735,7 +9735,7 @@ STATISTICS:
 
 Combat abilities:
 – Slashing: target suffers 1d6 slashing damage
-– Cutthroat: target is silenced and suffers 1 bleeding damage every round for 5 rounds (save vs. death neg. silence)
+– Cutthroat: target is silenced and suffers 1 bleeding damage every round for 5 rounds (save vs. Death neg. silence)
 
 THAC0: +3
 Damage: 1d6+3 (piercing)
@@ -9926,7 +9926,7 @@ Equipped abilities:
 – Protects Against: Poison
 
 Combat abilities:
-– Luminous: target is outlined by a pale glowing light for 5 rounds, suffering -2 to Armor Class and being unable to hide (save vs. spell neg.)
+– Luminous: target is outlined by a pale glowing light for 5 rounds, suffering -2 to Armor Class and being unable to hide (save vs. Spell negates)
 
 THAC0: +1
 Damage: 2d4 + 1 (slashing)
@@ -9956,7 +9956,7 @@ Equipped abilities:
 – Maximum Hit Points: +5
 
 Combat abilities:
-– Spell Drinker: arcane casters struck lose one memorized spell chosen at random from the highest level possible, raising wielder's maximum hit points by 2 for 1 hour (save vs. spell neg.)
+– Spell Drinker: arcane casters struck lose one memorized spell chosen at random from the highest level possible, raising wielder's maximum hit points by 2 for 1 hour (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -9984,7 +9984,7 @@ Equipped abilities:
 – Wall of Silence: wielder is immune to sound-based spells or attacks such as Command, Holy Word, Unholy Word, Power Word, Wail of the Banshee, and other similar effects
 
 Combat abilities:
-– Silencing: opponents within 20' are silenced for 2 rounds (save vs. spell neg.)
+– Silencing: opponents within 20' are silenced for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -10055,7 +10055,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Burning Wounds: target suffers -2 to THAC0 and 1 fire damage every second for 1 round (save vs. death neg.)
+– Burning Wounds: target suffers -2 to THAC0 and 1 fire damage every second for 1 round (save vs. Death negates)
 
 THAC0: +3
 Damage: 2d4 + 3 (slashing)
@@ -10289,11 +10289,11 @@ Yet the dragon had its revenge. Hoshi was skilled in battle but weak of will. Ce
 STATISTICS:
 
 Special abilities:
-– Batto (3x per day): thunder and lightning explode from Celestial Fury, blinding and deafening opponents within 10' for 5 rounds (save vs. breath at -2 neg.)
+– Batto (3x per day): thunder and lightning explode from Celestial Fury, blinding and deafening opponents within 10' for 5 rounds (save vs. Breath at -2 negates)
 – Lightning Bolt (1x per day)
 
 Combat abilities:
-– Booming Thunder: target and opponents within 5' are stunned for 1 round (save vs. breath neg.)
+– Booming Thunder: target and opponents within 5' are stunned for 1 round (save vs. Breath negates)
 – Electrocution: 15% chance of dealing 3d6 electrical damage
 
 THAC0: +3
@@ -10462,7 +10462,7 @@ STATISTICS:
 
 Combat abilities:
 – Poisonous: target suffers 1d8 poison damage
-– Paralyzing: 33% chance target is held for 2 rounds (save vs. paralyzation neg.)
+– Paralyzing: 33% chance target is held for 2 rounds (save vs. Paralyzation negates)
 – Stealthblade: 25% chance that the wielder becomes invisible for 5 rounds
 
 THAC0: +5
@@ -10519,7 +10519,7 @@ Equipped abilities:
 Combat abilities:
 – Fiery: target suffers 1d8 fire damage
 – Incendiary: target suffers 1 fire damage every round for 5 rounds
-– Flame Whip: target is entangled in flames for 2 rounds (save vs. breath at -2 neg.)
+– Flame Whip: target is entangled in flames for 2 rounds (save vs. Breath at -2 negates)
 
 THAC0: +5
 Damage: 1d8+5 (slashing)
@@ -10618,7 +10618,7 @@ Equipped abilities:
 
 Combat abilities:
 – Righteous: +3 to damage against evil creatures
-– Cleansing: 15% chance evil creatures struck suffer various effects depending upon their level (save vs. spell at -4 neg.)
+– Cleansing: 15% chance evil creatures struck suffer various effects depending upon their level (save vs. Spell at -4 negates)
 
 Target's Hit Dice - Effects of Cleansing
  More than 15 - Deafened for 1 turn
@@ -10659,7 +10659,7 @@ Equipped abilities:
 
 Combat abilities:
 – Holy: +5 to damage against evil creatures
-– Cleansing: 15% chance evil creatures struck suffer various effects depending upon their level (save vs. spell at -4 neg.)
+– Cleansing: 15% chance evil creatures struck suffer various effects depending upon their level (save vs. Spell at -4 negates)
 
 Target's Hit Dice - Effects of Cleansing
  More than 20 - Deafened
@@ -11180,12 +11180,12 @@ NOTE: Harbinger is always considered to be of +3 enchantment when determining wh
 STATISTICS:
 
 Equipped abilities:
-– Hellfire: 5% chance wielder suffers 3d6 fire damage (save vs. spell neg.)
+– Hellfire: 5% chance wielder suffers 3d6 fire damage (save vs. Spell negates)
 
 Combat abilities:
 – Starmetal: +5 to damage against extraplanar creatures
 – Demon Bane: +3 to THAC0 and +5 to damage against demons
-– Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
+– Banishing: summoned and gated creatures are dismissed (save vs. Spell at -2 negates)
 
 THAC0: +1
 Damage: 1d10+1 (slashing)
@@ -11210,7 +11210,7 @@ STATISTICS:
 
 Combat abilities:
 – Powerful Weapon: +2 to damage
-– Enervating: living creatures struck suffer 1d6 magic damage and are drained 1 level (save vs. death neg. level loss)
+– Enervating: living creatures struck suffer 1d6 magic damage and are drained 1 level (save vs. Death neg. level loss)
 
 THAC0: +4
 Damage: 1d10+4 (slashing)
@@ -11269,7 +11269,7 @@ Equipped abilities:
 Combat abilities:
 – Powerful Weapon: +2 to damage
 – Righteous: +3 to damage against evil creatures
-– Dispelling: removes all magical effects from the target (save vs. spell neg.)
+– Dispelling: removes all magical effects from the target (save vs. Spell negates)
 
 THAC0: +4
 Damage: 1d10+4 (slashing)
@@ -11310,7 +11310,7 @@ STATISTICS:
 
 Combat Abilities
 – Icy: target suffers 1d4 cold damage
-– Freezing: 33% chance target is held for 1 round (save vs. polymorph neg.)
+– Freezing: 33% chance target is held for 1 round (save vs. Polymorph negates)
 
 THAC0: +2
 Damage: 1d10+2 (slashing)
@@ -11363,7 +11363,7 @@ STATISTICS:
 
 Combat abilities:
 – Very Keen: +10% chance to score critical hits
-– Vorpal: 15% chance target dies (save vs. death at -2 for 3d8 slashing damage)
+– Vorpal: 15% chance target dies (save vs. Death at -2 for 3d8 slashing damage)
 
 THAC0: +4
 Damage: 1d10+4 (slashing)
@@ -11484,7 +11484,7 @@ Equipped abilities:
 Combat abilities:
 – Powerful Weapon: +2 to damage
 – Holy: +5 to damage against evil creatures
-– Dispelling: removes all magical effects from the target (save vs. spell neg.)
+– Dispelling: removes all magical effects from the target (save vs. Spell negates)
 
 THAC0: +5
 Damage: 1d10+5 (slashing)
@@ -11526,10 +11526,10 @@ The illithid brain known as Kwukgixrin sent its followers to scouring the underd
 STATISTICS:
 
 Equipped abilities:
-– Mind Barrier: +2 to Armor Class and saving throws vs. psionics
+– Mind Barrier: +2 to Armor Class and Saving Throws vs. psionics
 
 Combat abilities:
-– Mindbreaking: 15% chance target is feebleminded (save vs. spell at -4 neg.)
+– Mindbreaking: 15% chance target is feebleminded (save vs. Spell at -4 negates)
 
 THAC0: +3
 Damage: 1d10+3 (slashing)
@@ -11571,7 +11571,7 @@ Equipped abilities:
 – Armor Class: +1
 
 Combat abilities:
-– Spell Stealer: arcane casters struck lose one memorized spell chosen at random from the highest level possible, allowing the wielder to re-memorize a spell that has been previously cast (save vs. spell neg.)
+– Spell Stealer: arcane casters struck lose one memorized spell chosen at random from the highest level possible, allowing the wielder to re-memorize a spell that has been previously cast (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d10+2 (slashing)
@@ -11721,14 +11721,14 @@ Not Usable By:
 @2239 = ~Wand~
 @2240 = ~Wand of Fear~
 @2241 = ~Wands are 1 1/4 feet long and slender. They are made of ivory, bone, or wood and are usually tipped with something - metal, crystal, stone, etc. They are fragile and tend to break easily. Because of this, they are often kept in cases. Wands generally store one or more magical effects powered by charges, each use costing one or more charges (depending in the item). When a wand runs out of charges, it is consumed and destroyed.~
-@2242 = ~A Wand of Fear strikes terror into the heart of the target and any creatures within a 30' radius. Opponents within the area must save vs. wand or flee in terror for 5 rounds. This panic is not universal, however, as the stout of heart have been known to resist its magic.
+@2242 = ~A Wand of Fear strikes terror into the heart of the target and any creatures within a 30' radius. Opponents within the area must save vs. Wand or flee in terror for 5 rounds. This panic is not universal, however, as the stout of heart have been known to resist its magic.
 
 Like all wands, the Wand of Fear can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
 STATISTICS:
 
 Special abilities (consumes charges):
-– Horror: 5 rounds (save vs. wand neg.)
+– Horror: 5 rounds (save vs. Wand negates)
 
 Requires:
  12 Intelligence
@@ -11752,14 +11752,14 @@ Requires:
 Not Usable By:
  Wizard Slayer~
 @2245 = ~Wand of Paralyzation~
-@2246 = ~When used, this wand shoots forth a thin ray of bluish color to a maximum range of 30 feet. When a creature is touched by the ray, it must save vs. wand at -2 in order to avoid being stunned for 5 rounds.
+@2246 = ~When used, this wand shoots forth a thin ray of bluish color to a maximum range of 30 feet. When a creature is touched by the ray, it must save vs. Wand at -2 in order to avoid being stunned for 5 rounds.
 
 Like all wands, the Wand of Paralyzation can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
 STATISTICS:
 
 Special abilities (consumes charges):
-– Paralyze: 5 rounds (save vs. wand at -2 neg.)
+– Paralyze: 5 rounds (save vs. Wand at -2 negates)
 
 Requires:
  13 Intelligence
@@ -11768,14 +11768,14 @@ Usable By:
  Bard
  Mage~
 @2247 = ~Wand of Fire~
-@2248 = ~When used, this wand will cough forth a huge, burning ball of fire that streaks out to the desired range (a maximum of 30 feet) and bursts in a fiery, violent blast of a 30' radius. Creatures within the area take 6d6 fire damage, while those who successfully save vs. wand at -2 take only half damage.
+@2248 = ~When used, this wand will cough forth a huge, burning ball of fire that streaks out to the desired range (a maximum of 30 feet) and bursts in a fiery, violent blast of a 30' radius. Creatures within the area take 6d6 fire damage, while those who successfully save vs. Wand at -2 take only half damage.
 
 Like all wands, the Wand of Fire can only be used a limited number of times before it is expended. Once these have been used, it dissolves into a pile of ash.
 
 STATISTICS:
 
 Special abilities (consume charges):
-– Fireball: 6d6 (save vs. wand at -2 half)
+– Fireball: 6d6 (save vs. Wand at -2 for half)
 
 Requires:
  13 Intelligence
@@ -11784,14 +11784,14 @@ Usable By:
  Bard
  Mage~
 @2249 = ~Wand of Frost~
-@2250 = ~A Wand of Frost acts in a similar fashion to the Cone of Cold spell. Crystallized particles of snow and ice fan out from the wand's tip, defining an area wherein the temperature drops to -100 degrees F. When used, white crystalline motes spray forth from the wand in a column towards the victim, striking him or her square in the chest with numbing force. The temperature inside the column is deadly, and deals 6d4 + 6 cold damage. A successful save vs. wand at -4 reduces the damage by half.
+@2250 = ~A Wand of Frost acts in a similar fashion to the Cone of Cold spell. Crystallized particles of snow and ice fan out from the wand's tip, defining an area wherein the temperature drops to -100 degrees F. When used, white crystalline motes spray forth from the wand in a column towards the victim, striking him or her square in the chest with numbing force. The temperature inside the column is deadly, and deals 6d4 + 6 cold damage. A successful save vs. Wand at -4 reduces the damage by half.
 
 Like all wands, the Wand of Frost can only be used a limited number of times before it is expended. Once these have been used, it melts into a harmless pool of water.
 
 STATISTICS:
 
 Special abilities (consume charges):
-– Cone of Cold: 6d4 + 6 (save vs. wand at -4 half)
+– Cone of Cold: 6d4 + 6 (save vs. Wand at -4 for half)
 
 Requires:
  13 Intelligence
@@ -11800,14 +11800,14 @@ Usable By:
  Bard
  Mage~
 @2251 = ~Wand of Lightning~
-@2252 = ~A Wand of Lightning causes bolts of electrical energy to be discharged from its tip to strike at specified opponents. The possessor of the wand can a lightning bolt that does 6d6 electrical damage, with a save vs. wand at -4 for half damage.
+@2252 = ~A Wand of Lightning causes bolts of electrical energy to be discharged from its tip to strike at specified opponents. The possessor of the wand can a lightning bolt that does 6d6 electrical damage, with a save vs. Wand at -4 for half damage.
 
 Like all wands, the Wand of Lightning can only be used a limited number of times before it is expended. Once these have been used, it is reduced to little more than a chunk of scarred and twisted metal.
 
 STATISTICS:
 
 Special abilities (consumes charges):
-– Lightning Bolt: 6d6 (save vs. wand at -4 half)
+– Lightning Bolt: 6d6 (save vs. Wand at -4 for half)
 
 Requires:
  13 Intelligence
@@ -11816,14 +11816,14 @@ Usable By:
  Bard
  Mage~
 @2253 = ~Wand of Sleep~
-@2254 = ~When used, this wand emits a gold beam of energy at its targets up to a maximum range of 30 feet, affecting a 30' radius. If the target creatures fail their save vs. wand, they will fall into a deep, comatose sleep for 5 rounds. Creatures with more than 10 Hit Dice are unaffected. Almost anyone of moderate intelligence can learn how to use this wand.
+@2254 = ~When used, this wand emits a gold beam of energy at its targets up to a maximum range of 30 feet, affecting a 30' radius. If the target creatures fail their save vs. Wand, they will fall into a deep, comatose sleep for 5 rounds. Creatures with more than 10 Hit Dice are unaffected. Almost anyone of moderate intelligence can learn how to use this wand.
 
 Like all wands, the Wand of Sleep can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
 STATISTICS:
 
 Special abilities (consumes charges):
-– Sleep: 5 rounds (save vs. wand neg.)
+– Sleep: 5 rounds (save vs. Wand negates)
 
 Requires:
  11 Intelligence
@@ -11831,14 +11831,14 @@ Requires:
 Not Usable By:
  Wizard Slayer~
 @2255 = ~Wand of Polymorphing~
-@2256 = ~When used, this wand emits a thin, green beam that darts forth to a nearby target. Any creature touched by this beam must make a save vs. wand at -2 or be polymorphed permanently into a squirrel.
+@2256 = ~When used, this wand emits a thin, green beam that darts forth to a nearby target. Any creature touched by this beam must make a save vs. Wand at -2 or be polymorphed permanently into a squirrel.
 
 Like all wands, the Wand of Polymorphing can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
 STATISTICS:
 
 Special abilities (consumes charges):
-– Polymorph Other: permanent (save vs. wand at -2 neg.)
+– Polymorph Other: permanent (save vs. Wand at -2 negates)
 
 Requires:
  14 Intelligence
@@ -11864,14 +11864,14 @@ Usable By:
  Bard
  Mage~
 @2259 = ~Wand of the Heavens~
-@2260 = ~When used, this wand will cause a pillar of flame to shoot down from the sky and strike the target of the invoker. The flames will do 10d6 fire damage to the target unless the target makes a save vs. wand at -4, in which case it will only deal half damage.
+@2260 = ~When used, this wand will cause a pillar of flame to shoot down from the sky and strike the target of the invoker. The flames will do 10d6 fire damage to the target unless the target makes a save vs. Wand at -4, in which case it will only deal half damage.
 
 Like all wands, the Wand of the Heavens can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
 STATISTICS:
 
 Special abilities (consume charges):
-– Flame Strike: 10d6 (save vs. wand at -4 half)
+– Flame Strike: 10d6 (save vs. Wand at -4 for half)
 
 Requires:
  10 Intelligence
@@ -11895,7 +11895,7 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @2263 = ~Wand of Cloudkill~
-@2264 = ~This wand emits a vapor bubble that travels towards the target exploding into a deadly cloud of noxious gas that expands to fill an area roughly 20 feet in radius. The cloud will instantly kill any creature with 4 HD or less with no saving throw. Any creature within 5 to 6 HD must make a save vs. wands at -4 or be slain. Creatures with greater than 6 HD simply take 1d10 poison damage for every round that they remain within the cloud. The cloud will dissipate after approximately 1 turn.
+@2264 = ~This wand emits a vapor bubble that travels towards the target exploding into a deadly cloud of noxious gas that expands to fill an area roughly 20 feet in radius. The cloud will instantly kill any creature with 4 HD or less with no saving throw. Any creature within 5 to 6 HD must make a save vs. Wands at -4 or be slain. Creatures with greater than 6 HD simply take 1d10 poison damage for every round that they remain within the cloud. The cloud will dissipate after approximately 1 turn.
 
 Like all wands, the Wand of Cloudkill can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
@@ -11928,14 +11928,14 @@ Usable By:
  Bard
  Mage~
 @2267 = ~Wand of Cursing~
-@2268 = ~This wand instantly afflicts targets with blindness and deafness, and renders them mute for 1 turn unless a successful save vs. wand at -2 is made. Perhaps the most dangerous aspect of this terrible device is that almost anyone can use it.
+@2268 = ~This wand instantly afflicts targets with blindness and deafness, and renders them mute for 1 turn unless a successful save vs. Wand at -2 is made. Perhaps the most dangerous aspect of this terrible device is that almost anyone can use it.
 
 Like all wands, the Wand of Cursing can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
 STATISTICS:
 
 Special abilities (consume charges):
-– Curse: target is blinded, deafened, and silenced for 1 turn (save vs. wand at -2 neg.)
+– Curse: target is blinded, deafened, and silenced for 1 turn (save vs. Wand at -2 negates)
 
 Requires:
  12 Intelligence
@@ -12105,7 +12105,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Knockback: target is knocked away unconscious for 1 round (save vs. death neg.)
+– Knockback: target is knocked away unconscious for 1 round (save vs. Death negates)
 – Oversized: +4 to damage, -2 to THAC0
 
 THAC0: +3
@@ -12183,7 +12183,7 @@ Equipped abilities:
 – Maximum Hit Points: -10 penalty
 
 Combat abilities:
-– Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
+– Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. Death at -2 negates)
 
 THAC0: +4
 Damage: +4 (missile)
@@ -12334,7 +12334,7 @@ Combat Abilities (50% chance each):
 – Fire Head: target suffers 1d4 fire damage and -2 to THAC0 for 2 rounds
 – Cold Head: target suffers 1d4 cold damage and is slowed for 1 round
 
-NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -12359,7 +12359,7 @@ Combat Abilities (50% chance each):
 – Cold Head: target suffers 1d4 cold damage and is slowed for 1 round
 – Acid Head: target suffers 1d4 acid damage and -2 to Armor Class for 2 rounds
 
-NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -12384,7 +12384,7 @@ Combat Abilities (50% chance each):
 – Fire Head: target suffers 1d4 fire damage and -2 to THAC0 for 2 rounds
 – Acid Head: target suffers 1d4 acid damage and -2 to Armor Class for 2 rounds
 
-NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -12409,7 +12409,7 @@ STATISTICS:
 Combat abilities:
 – Cold Head: target suffers 1d4 cold damage and is slowed for 1 round
 
-NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +1
 Damage: 1d6+2 (crushing)
@@ -12433,7 +12433,7 @@ STATISTICS:
 Combat abilities:
 – Fire Head: target suffers 1d4 fire damage and -2 to THAC0 for 2 rounds
 
-NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +1
 Damage: 1d6+2 (crushing)
@@ -12457,7 +12457,7 @@ STATISTICS:
 Combat abilities:
 – Acid Head: target suffers 1d4 acid damage and -2 to Armor Class for 2 rounds
 
-NOTE: The target can save vs. spell to avoid the secondary effect but will still suffer the extra damage.
+NOTE: The target can save vs. Spell to avoid the secondary effect but will still suffer the extra damage.
 
 THAC0: +1
 Damage: 1d6+2 (crushing)
@@ -12548,7 +12548,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Domineering: target suffers -2 to Armor Class and THAC0 for 2 rounds (save vs. spell neg.)
+– Domineering: target suffers -2 to Armor Class and THAC0 for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d6+3 (crushing)
@@ -12611,7 +12611,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Slaying: target dies (save vs. death at -2 neg.)
+– Slaying: target dies (save vs. Death at -2 negates)
 
 THAC0: +1
 Damage: 1d6 (missile)
@@ -12641,7 +12641,7 @@ Weight: 3~
 STATISTICS:
 
 Combat abilities:
-– Polymorphing: target permanently turns into a squirrel (save vs. polymorph at -2 neg.)
+– Polymorphing: target permanently turns into a squirrel (save vs. Polymorph at -2 negates)
 
 THAC0: +2
 Damage: 1d8 (missile)
@@ -12654,7 +12654,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Stunning: target is stunned for 1 round (save vs. spell neg.)
+– Stunning: target is stunned for 1 round (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d4+1 (missile)
@@ -12898,7 +12898,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Paralyzing: target is held for 2 rounds (save vs. paralyzation neg.)
+– Paralyzing: target is held for 2 rounds (save vs. Paralyzation negates)
 
 THAC0: +1
 Damage: 1d10 (missile)
@@ -12911,7 +12911,7 @@ Weight: 1~
 STATISTICS:
 
 Combat abilities:
-– Paralyzing: target is held for 2 rounds (save vs. paralyzation neg.)
+– Paralyzing: target is held for 2 rounds (save vs. Paralyzation negates)
 
 THAC0: +1
 Damage: 1d10 (missile)
@@ -12924,7 +12924,7 @@ Weight: 1~
 STATISTICS:
 
 Combat abilities:
-– Paralyzing: target is held for 2 rounds (save vs. paralyzation neg.)
+– Paralyzing: target is held for 2 rounds (save vs. Paralyzation negates)
 
 THAC0: +2
 Damage: 1d10 (missile)
@@ -12937,7 +12937,7 @@ Weight: 1~
 STATISTICS:
 
 Combat abilities:
-– Paralyzing: target is held for 2 rounds (save vs. paralyzation neg.)
+– Paralyzing: target is held for 2 rounds (save vs. Paralyzation negates)
 
 THAC0: +3
 Damage: 1d10 (missile)
@@ -13099,7 +13099,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2385 = ~Web Sack~
-@2386 = ~When used, this rod shoots forth many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. They cover an area of about 30' in radius, and creatures caught within webs, or simply touching them, become stuck among the gluey fibers. For every round that a creature remains in the web, they must make a save vs. rod at or be unable to move. The webs will dissipate after approximately 1 turn.
+@2386 = ~When used, this rod shoots forth many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. They cover an area of about 30' in radius, and creatures caught within webs, or simply touching them, become stuck among the gluey fibers. For every round that a creature remains in the web, they must make a save vs. Rod at or be unable to move. The webs will dissipate after approximately 1 turn.
 
 Special abilities:
 – Web (1x per day)
@@ -13134,9 +13134,9 @@ The rod is currently untransformed.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. rod at -2 neg.)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. rod at -2 neg.)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
+– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Equipped abilities:
 – Armor Class: +2
@@ -13177,7 +13177,7 @@ Equipped abilities:
 – Charisma: -1
 
 Combat abilities:
-– Horrifying: target flees in terror for 2 rounds (save vs. spell neg.)
+– Horrifying: target flees in terror for 2 rounds (save vs. Spell negates)
 
 THAC0: +3
 Damage: 1d6+3 (crushing)
@@ -13196,7 +13196,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Reverse Magic (1x per day): removes all magical effects from the target (save vs. rod at -4 neg.)
+– Reverse Magic (1x per day): removes all magical effects from the target (save vs. Rod at -4 negates)
 
 Requires:
  15 Intelligence
@@ -13220,7 +13220,7 @@ Usable By:
  Bard
  Mage~
 @2399 = ~Shazzellim +1~
-@2400 = ~This scimitar seems of rather poor quality but beneath its surface lies great power and evil. Created for the sole purpose of slaying Harpers, Shazzellim is more than capable of that task. With one strike of the blade a bard must make a save vs. death at -2 or die. Crafted by a Red Wizard of Thay, the sword also has the ability to vocalize, which is why it was often given to fighter-mages in the service of the Wizards. Needless to say, possession of this sword would not be looked upon very highly by Harpers.
+@2400 = ~This scimitar seems of rather poor quality but beneath its surface lies great power and evil. Created for the sole purpose of slaying Harpers, Shazzellim is more than capable of that task. With one strike of the blade a bard must make a save vs. Death at -2 or die. Crafted by a Red Wizard of Thay, the sword also has the ability to vocalize, which is why it was often given to fighter-mages in the service of the Wizards. Needless to say, possession of this sword would not be looked upon very highly by Harpers.
 
 STATISTICS:
 
@@ -13228,7 +13228,7 @@ Equipped abilities:
 – Protects Against: Silence
 
 Combat abilities:
-– Song Slayer: bards struck die (save vs. death at -2 neg.)
+– Song Slayer: bards struck die (save vs. Death at -2 negates)
 
 THAC0: +1
 Damage: 1d8+1 (slashing)
@@ -13302,12 +13302,12 @@ Not Usable By:
 @2409 = ~The Horn~
 @2410 = ~The Horn of Kazgaroth~
 @2411 = ~This seems to be the horn of some monster. It is blackened and twisted.~
-@2412 = ~This horn is thought to be made from one of the tusks of the great beast Kazgaroth. Who imbued it with enchantments is unknown, but it is a very potent item. When blown upon, no sound issues from the horn. Instead, the user of the horn is incased in a globe of power for a short duration. The bubble gives the user partial spell immunity and a bonus to saving throws, and it also partially deflects incoming attacks. The effect only lasts for a short duration, however, and the horn draws from the life force of the user every time it is used.
+@2412 = ~This horn is thought to be made from one of the tusks of the great beast Kazgaroth. Who imbued it with enchantments is unknown, but it is a very potent item. When blown upon, no sound issues from the horn. Instead, the user of the horn is incased in a globe of power for a short duration. The bubble gives the user partial spell immunity and a bonus to Saving Throws, and it also partially deflects incoming attacks. The effect only lasts for a short duration, however, and the horn draws from the life force of the user every time it is used.
 
 STATISTICS:
 
 Special abilities:
-– Globe of Power (1x per day): user loses 15% of their hit points, but gains +2 to Armor Class and saving throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
+– Globe of Power (1x per day): user loses 15% of their hit points, but gains +2 to Armor Class and Saving Throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
 
 Weight: 1
 Not Usable By:
@@ -13318,8 +13318,8 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
-– Webbing: 33% chance target is held for 2 rounds (save vs. breath neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
+– Webbing: 33% chance target is held for 2 rounds (save vs. Breath negates)
 
 THAC0: +3
 Damage: 1d6+4 (crushing)
@@ -13518,7 +13518,7 @@ Astral Hound (7 HD):
 
 Special Characteristics:
 – Protected Against: Backstabs and Normal Weapons
-– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. spell neg.)
+– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. Spell negates)
 – Soul Drainer: 15% chance to drain one level from the target
 
 Not Usable By:
@@ -13591,7 +13591,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Pandemonium (3x per day): opponents within 30' are pushed away and confused for 5 rounds (save vs. spell at -2 neg. confusion)
+– Pandemonium (3x per day): opponents within 30' are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
 
 Usable By:
  Bard~
@@ -13653,7 +13653,7 @@ STATISTICS:
 
 Combat abilities:
 – Vampiric: target is drained 1d4 hit points and transfers them to the wielder
-– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 THAC0: +3
 Damage: 1d8+3 (slashing)
@@ -13676,7 +13676,7 @@ STATISTICS:
 
 Combat abilities:
 – Fiery: target suffers 1d6 fire damage
-– Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+– Confusing: 33% chance target is confused for 2 rounds (save vs. Spell negates)
 
 THAC0: +3
 Damage: 1d10+3 (slashing)
@@ -13766,7 +13766,7 @@ Equipped abilities:
 – Magic Damage Resistance: +50%
 
 Combat abilities:
-– Spell Drainer: arcane casters struck lose one memorized spell chosen at random from the highest level possible (save vs. spell neg.)
+– Spell Drainer: arcane casters struck lose one memorized spell chosen at random from the highest level possible (save vs. Spell negates)
 
 THAC0: +3
 Damage: 2d4 + 3 (crushing)
@@ -13882,7 +13882,7 @@ Special Characteristics:
 – Magic Resistance: 100%
 – Protected Against: Backstabs, Normal/+1/+2 Weapons, Petrification, and Poison
 – Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
-– Stunning: target is stunned for 1 round (save vs. spell neg.)
+– Stunning: target is stunned for 1 round (save vs. Spell negates)
 
 Requires:
  16 Intelligence
@@ -13896,12 +13896,12 @@ The rod is currently transformed into a flail.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. rod at -2 neg.)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. rod at -2 neg.)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
+– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
-– Disruption: undead creatures are destroyed (save vs. spell neg.)
+– Disruption: undead creatures are destroyed (save vs. Spell negates)
 
 THAC0: +3
 Damage: 1d6+4 (crushing)
@@ -13926,9 +13926,9 @@ The rod is currently transformed into a long sword.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. rod at -2 neg.)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. rod at -2 neg.)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
+– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
 – Fiery: target suffers 1d6 fire damage
@@ -13955,14 +13955,14 @@ The rod is currently transformed into a battle axe.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. rod at -2 neg.)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. rod at -2 neg.)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
+– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
-– Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
-– Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
-– Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
+– Confusing: 33% chance target is confused for 2 rounds (save vs. Spell negates)
+– Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. Spell negates)
+– Stunning: 33% chance target is stunned for 1 round (save vs. Spell negates)
 
 THAC0: +3
 Damage: 1d8+3 (slashing)
@@ -13988,9 +13988,9 @@ The rod is currently transformed into a spear.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. rod at -2 neg.)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. rod at -2 neg.)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
+– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
@@ -14146,7 +14146,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Toxins: target suffers 1 poison damage every second for 1 round (save vs. poison neg.)
+– Toxins: target suffers 1 poison damage every second for 1 round (save vs. Poison negates)
 
 Damage: 1d6 (missile)
 Launcher: Bow
@@ -14456,7 +14456,7 @@ Usable By:
 STATISTICS:
 
 Combat abilities:
-– Knockdown: 33% chance target is knocked unconscious for 1 round (save vs. death neg.)
+– Knockdown: 33% chance target is knocked unconscious for 1 round (save vs. Death negates)
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -14535,7 +14535,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protection from Good: +2 to Armor Class and saving throws vs. good creatures
+– Protection from Good: +2 to Armor Class and Saving Throws vs. good creatures
 
 Armor Class: 0
 Requires:
@@ -14794,7 +14794,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +3
 – No protection against missile attacks
-– Nature's Blessing: +2 to Armor Class and saving throws vs. unnatural creatures
+– Nature's Blessing: +2 to Armor Class and Saving Throws vs. unnatural creatures
 
 Requires:
  4 Strength
@@ -14820,7 +14820,7 @@ Usable By:
  Bard
  Thief~
 @2607 = ~Ioun Stone of Good Luck~
-@2608 = ~Also knowed as Luckstones, these ioun stones are mostly appreciated by thieves and bards as they often find themselves at the mercy of the fortune. The floating stone grants the wearer a luck bonus to any of his actions increasing saving throws, hit chances, damage rolls, thieving skills, etc.
+@2608 = ~Also knowed as Luckstones, these ioun stones are most appreciated by thieves and bards as they often find themselves at the mercy of their fortune. The floating stone grants the wearer a luck bonus to any of their actions, making them more likely to succeed in any and all endeavours.
 
 STATISTICS:
 
@@ -14898,7 +14898,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Resonating: 15% chance target and opponents within 10' are blasted with a powerful sonic wave dealing 4d4 crushing and deafening them for 2 rounds (save vs. breath neg. deafness)
+– Resonating: 15% chance target and opponents within 10' are blasted with a powerful sonic wave dealing 4d4 crushing and deafening them for 2 rounds (save vs. Breath neg. deafness)
 
 THAC0: +3
 Damage: 1d4+4 (crushing)
@@ -15214,7 +15214,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Dispelling: 33% chance of removing all magical effects from the target (save vs. spell neg.)
+– Dispelling: 33% chance of removing all magical effects from the target (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d8+1 (slashing)
@@ -15359,7 +15359,7 @@ This mace isn't just sleek and elegant, it's stunning. With a hit to just the ri
 STATISTICS:
 
 Combat abilities:
-– Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
+– Stunning: 33% chance target is stunned for 1 round (save vs. Spell negates)
 
 THAC0: +1
 Damage: 1d6+2 (crushing)
@@ -15411,7 +15411,7 @@ Equipped abilities:
 – Spell: Non-Detection
 
 Combat abilities:
-– Knockback: 33% chance target is knocked away unconscious for 1 round (save vs. death neg.)
+– Knockback: 33% chance target is knocked away unconscious for 1 round (save vs. Death negates)
 
 THAC0: +1
 Damage: 1d4+2 (crushing)
