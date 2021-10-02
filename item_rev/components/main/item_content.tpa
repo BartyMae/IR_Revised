@@ -485,7 +485,7 @@ COPY ~%source%/SKIN_OF_THE_GHOUL_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/TROLLHIDE_ARMOR_4.tpa
-  COPY ~item_rev/itm/leat23.spl~ ~override~
+  COPY ~item_rev/itm/leat23.spl~ ~override~ // Thorns
   COPY ~item_rev/itm/leat23a.spl~ ~override~
   COPY ~item_rev/itm/leat23.eff~ ~override~
 >>>>>>>>

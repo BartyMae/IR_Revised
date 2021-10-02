@@ -2677,7 +2677,7 @@ Equipped Abilities:
 Armor Class: 2
 Weight: 1
 Usable By:
- True Fighter
+ Fighter (true class)
  Monk
  Kensai~
 @131400000 = ~Bands of the Master
@@ -2695,7 +2695,7 @@ Equipped Abilities:
 Armor Class: 2 (+2 bonus)
 Weight: 1
 Usable By:
- True Fighter
+ Fighter (true class)
  Monk
  Kensai~
 @1315 = ~Bullet~
@@ -5218,6 +5218,7 @@ Equipped Abilities:
  Dexterity: +1 bonus
 
 Armor Class Bonus: None
+Weight: 0
 Usable By:
  All~
 @1614 = ~Bronze Ioun Stone~ // BG2: The powerful enchantments on this ioun stone make it a treasure eagerly sought after by wizards and mages.
@@ -6598,7 +6599,7 @@ Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Luck: +2 bonus (+10% for skills)
+ Luck: +2 bonus (+10% bonus for skills)
 
 Usable By:
  Nalia~
@@ -6983,7 +6984,7 @@ STATISTICS:
 
 Equipped Abilities:
  Aura of Despair: opponents within 10' suffer a -2 penalty to saving throws, THAC0, and damage
- Luck: -1 penalty (-5% for skills)
+ Luck: -1 penalty (-5% penalty for skills)
 
 NOTE: The Aura of Despair effect is not cumulative with other Doom effects.
 
@@ -12728,7 +12729,7 @@ Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Luck: +1 bonus (+5% for skills)
+ Luck: +1 bonus (+5% bonus for skills)
 
 Not Usable By:
  Wizard Slayer~
@@ -13507,7 +13508,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Luck: +2 bonus (+10% for skills)
+ Luck: +2 bonus (+10% bonus for skills)
 
 Usable By:
  Alora~
@@ -14139,7 +14140,7 @@ Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Luck: +1 bonus (+5% for skills)
+ Luck: +1 bonus (+5% bonus for skills)
 
 Armor Class Bonus: None
 Weight: 0
