@@ -76,7 +76,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Magic Resistance (1x per day): 1 turn
+– Magic Resistance (once per day): 1 turn
 
 Equipped abilities:
 – Magic Resistance: +10%
@@ -141,7 +141,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Spell Deflection (1x per day): 5 turns
+– Spell Deflection (once per day): 5 turns
 
 Equipped abilities:
 – Saving Throws: +2
@@ -156,7 +156,7 @@ Thus a group of barbarian shamans once congregated to find a way to better harne
 STATISTICS:
 
 Special abilities:
-– Improved Haste (1x per day)
+– Improved Haste (once per day)
 
 Equipped abilities:
 – Save vs. Breath: +3
@@ -749,7 +749,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Regeneration (1x per day): 1 turn
+– Regeneration (once per day): 1 turn
 
 Equipped abilities:
 – Maximum Hit Points: +20
@@ -1120,7 +1120,7 @@ NOTE: Skullcrusher is always considered to be of +3 enchantment when determining
 STATISTICS:
 
 Combat abilities:
-– Bone Breaking: target suffers -3 to maximum hit points for 1 turn
+– Bone Breaking: target suffers -3 to Maximum Hit Points for 1 turn
 – Human Bane: +3 to THAC0 and +5 to damage against humanoids
 – Crushing Blow: 15% chance of dealing 3d8 crushing damage
 
@@ -1344,7 +1344,7 @@ The enchantments from the Ring of Fire Resistance makes the demon spirit trapped
 STATISTICS:
 
 Special abilities:
-– Protection from Magical Weapons (1x per day)
+– Protection from Magical Weapons (once per day)
 
 Equipped abilities:
 – Fire Resistance: +50%
@@ -1785,7 +1785,7 @@ Said to be sewn together from scraps of the planes themselves, these strange boo
 STATISTICS:
 
 Special abilities:
-– Etherealness (1x per day): the wearer is effectively invulnerable, cannot be seen, and regenerates 2 HP/second, but cannot attack or use abilities for 5 rounds
+– Etherealness (once per day): the wearer is effectively invulnerable, cannot be seen, and regenerates 2 HP/second, but cannot attack or use abilities for 5 rounds
 
 Equipped abilities:
 – Dimensional Anchor: wearer is unaffected by Teleport Field, Maze, Imprisonment, and other similar effects
@@ -2264,7 +2264,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Darkfire Shield (1x per day): conjures a shield of crackling violet flames that grants the wielder +50% fire and cold resistance and deals 1d6 fire and cold damage to all who strike the wielder in melee for 1 turn
+– Darkfire Shield (once per day): conjures a shield of crackling violet flames that grants the wielder +50% fire and cold resistance and deals 1d6 fire and cold damage to all who strike the wielder in melee for 1 turn
 
 Combat abilities:
 – Darkfire: target suffers 1d6 of either fire or cold damage
@@ -2292,7 +2292,7 @@ The magical bowstring of Gond makes even this strongly enchanted shortbow more a
 STATISTICS:
 
 Special abilities:
-– Darkfire Shield (1x per day): conjures a shield of crackling violet flames that grants the wielder +50% fire and cold resistance and deals 1d6 fire and cold damage to all who strike the wielder in melee for 1 turn
+– Darkfire Shield (once per day): conjures a shield of crackling violet flames that grants the wielder +50% fire and cold resistance and deals 1d6 fire and cold damage to all who strike the wielder in melee for 1 turn
 
 Equipped abilities:
 – Fire Resistance: +25%
@@ -2619,7 +2619,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Whirlwind Attack (1x per day)
+– Whirlwind Attack (once per day)
 
 Equipped abilities:
  Armor Class: 5
@@ -2633,7 +2633,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Whirlwind Attack (1x per day)
+– Whirlwind Attack (once per day)
 
 Equipped abilities:
 – Armor Class: 5 (+1)
@@ -2695,7 +2695,7 @@ These armored gloves are usually given to members of the Most Noble Order of the
 STATISTICS:
 
 Special abilities:
-– Heal (1x per day)
+– Heal (once per day)
 
 Equipped abilities:
 – Regeneration: 1 HP/5 rounds
@@ -2742,8 +2742,8 @@ The willing sacrifice of a vast fortune in gold, combined with the holy venerati
 STATISTICS:
 
 Special abilities:
-– Righteous Magic (1x per day): 1 turn
-– Resurrection (1x per day)
+– Righteous Magic (once per day): 1 turn
+– Resurrection (once per day)
 
 Equipped abilities:
 – Saving Throws: +2
@@ -3077,7 +3077,7 @@ This multicolored armor is infused with the wizard's spell Prismatic Spray. Ever
 STATISTICS:
 
 Special abilities:
-– Prismatic Explosion (1x per day)
+– Prismatic Explosion (once per day)
 
 Equipped abilities:
 – Elemental Resistance: +15%
@@ -3364,7 +3364,7 @@ A great amount of irony surrounds the creation of this magical cloak. Relair was
 STATISTICS:
 
 Special abilities:
-– Shapeshifts Wolfwere (1x per day): 5 turns
+– Shapeshifts Wolfwere (once per day): 5 turns
 
 Wolfwere (7 HD):
  STR 19, DEX 16, CON 15
@@ -3415,7 +3415,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Blinding Beauty (1x per day): blinds opponents within 20' for 1 turn (save vs. Spell at -2 negates)
+– Blinding Beauty (once per day): blinds opponents within 20' for 1 turn (save vs. Spell at -2 negates)
 
 Equipped abilities:
 – Save vs. Spell: +3
@@ -3430,7 +3430,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Charm Person (1x per day)
+– Charm Person (once per day)
 
 Equipped abilities:
 – Charisma: +1
@@ -3618,8 +3618,8 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Shapeshifts Rat (1x per day): 5 turns
-– Shapeshifts Mustard Jelly (1x per day): 5 turns
+– Shapeshifts Rat (once per day): 5 turns
+– Shapeshifts Mustard Jelly (once per day): 5 turns
 
 Rat (1 HD):
  STR 10, DEX 10, CON 10
@@ -5027,8 +5027,8 @@ The Rune of Clangeddin, the dwarven god of battle and bravery, is now inscribed 
 STATISTICS:
 
 Special abilities:
-– Mass Cure (1x per day)
-– Champion's Strength (1x per day): +6 for 1 turn
+– Mass Cure (once per day)
+– Champion's Strength (once per day): +6 for 1 turn
 
 Equipped abilities:
 – Magic Resistance: +10%
@@ -5274,9 +5274,9 @@ The few such helms reported to still exist have been traced back to a great cler
 STATISTICS:
 
 Special abilities:
-– Fireball (1x per day)
-– Prismatic Spray (1x per day)
-– False Dawn (1x per day)
+– Fireball (once per day)
+– Prismatic Spray (once per day)
+– False Dawn (once per day)
 
 Equipped abilities:
 – Protects against critical hits
@@ -5296,7 +5296,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Gaze of Death (1x per day): target must die (save vs. Death at -2 negates)
+– Gaze of Death (once per day): target must die (save vs. Death at -2 negates)
 
 Equipped abilities:
 – Protects against critical hits
@@ -5321,7 +5321,7 @@ Although the dark rites bind the troll's regenerative properties into this stone
 STATISTICS:
 
 Special abilities:
-– Shapeshifts Troll (1x per day): 5 turns
+– Shapeshifts Troll (once per day): 5 turns
 
 Troll (7 HD):
  STR 18, DEX 16, CON 20
@@ -5476,7 +5476,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Shadow Door (1x per day): 1 turn
+– Shadow Door (once per day): 1 turn
 
 Equipped abilities:
 – Armor Class: +1 boonus
@@ -5509,7 +5509,7 @@ With the addition of the horns, the Helm of the Rock is even more powerful. Gene
 STATISTICS:
 
 Special abilities:
-– Gaze of Despair (3x per day): target is paralyzed with fear for 5 rounds (save vs. Spell at -2 negates)
+– Gaze of Despair (three times per day): target is paralyzed with fear for 5 rounds (save vs. Spell at -2 negates)
 
 Equipped abilities:
 – Protects against critical hits
@@ -5810,7 +5810,7 @@ Raroh taught everything he knew about the art of killing and the secrets to crea
 STATISTICS:
 
 Special abilities:
-– Cloudkill (1x per day)
+– Cloudkill (once per day)
 
 Equipped abilities:
 – Protects Against: Poison
@@ -6043,7 +6043,7 @@ The spell on this page is Fireball.
 STATISTICS:
 
 Special abilities:
-– Fireball (1x per day)
+– Fireball (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6056,7 +6056,7 @@ The spell on this page is Improved Invisibility.
 STATISTICS:
 
 Special abilities:
-– Improved Invisibility (1x per day)
+– Improved Invisibility (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6069,7 +6069,7 @@ The spell on this page is Stoneskin.
 STATISTICS:
 
 Special abilities:
-– Stoneskin (1x per day)
+– Stoneskin (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6082,7 +6082,7 @@ The spell on this page is True Seeing.
 STATISTICS:
 
 Special abilities:
-– True Seeing (1x per day)
+– True Seeing (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6095,7 +6095,7 @@ The spell on this page is Confusion.
 STATISTICS:
 
 Special abilities:
-– Confusion (1x per day)
+– Confusion (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6108,7 +6108,7 @@ The spell on this page is Spell Shield.
 STATISTICS:
 
 Special abilities:
-– Spell Shield (1x per day)
+– Spell Shield (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6121,7 +6121,7 @@ The spell on this page is Invisible Stalker.
 STATISTICS:
 
 Special abilities:
-– Invisible Stalker (1x per day)
+– Invisible Stalker (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6134,7 +6134,7 @@ The spell on this page is Cloudkill.
 STATISTICS:
 
 Special abilities:
-– Cloudkill (1x per day)
+– Cloudkill (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6147,7 +6147,7 @@ The spell on this page is Domination.
 STATISTICS:
 
 Special abilities:
-– Domination (1x per day)
+– Domination (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6160,7 +6160,7 @@ The spell on this page is Skull Trap.
 STATISTICS:
 
 Special abilities:
-– Skull Trap (1x per day)
+– Skull Trap (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6172,7 +6172,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Efreeti (1x per day): 1 turn
+– Summon Efreeti (once per day): 1 turn
 
 Not Usable By:
  Wizard Slayer~
@@ -6184,7 +6184,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Joolon (1x per day): 5 turns
+– Summon Joolon (once per day): 5 turns
 
 Joolon (8 HD):
  ST19, DE14, CO17, IN9, WI11, CH8
@@ -6210,7 +6210,7 @@ The spider will obey its master's commands for five turns or until slain, after 
 STATISTICS:
 
 Special abilities:
-– Summon Kitthix (1x per day): 5 turns
+– Summon Kitthix (once per day): 5 turns
 
 Kitthix (8 HD):
  ST17, DE17, CO16, IN9, WI11, CH6
@@ -6224,7 +6224,7 @@ Special Characteristics:
 – Magic Resistance: 10%
 – Protected Against: Charm, Confusion, Domination, Fear, Poison, and Web
 – Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
-– Web Tangle (3x per day): target is held for 2 rounds (save vs. Breath negates)
+– Web Tangle (three times per day): target is held for 2 rounds (save vs. Breath negates)
 
 Not Usable By:
  Wizard Slayer~
@@ -6236,7 +6236,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Sonic Blast (3x per day): an area of 10' around the user is blasted with a powerful sonic wave, dealing 4d4 crushing and stunning opponents for 1 round (save vs. Breath neg. stun)
+– Sonic Blast (three times per day): an area of 10' around the user is blasted with a powerful sonic wave, dealing 4d4 crushing and stunning opponents for 1 round (save vs. Breath neg. stun)
 
 Not Usable By:
  Wizard Slayer~
@@ -6247,7 +6247,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Berserker (1x per day): 5 turns
+– Summon Berserker (once per day): 5 turns
 
 Berserker (5 HD):
  ST18, DE16, CO16, IN10, WI10, CH10
@@ -6258,7 +6258,7 @@ Berserker (5 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Enrage (1x per day)
+– Enrage (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6267,7 +6267,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Berserker (1x per day): 5 turns
+– Summon Berserker (once per day): 5 turns
 
 Berserker (5 HD):
  ST18, DE16, CO16, IN10, WI10, CH10
@@ -6278,7 +6278,7 @@ Berserker (5 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Enrage (1x per day)
+– Enrage (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6288,7 +6288,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Berserker (1x per day): 5 turns
+– Summon Berserker (once per day): 5 turns
 
 Berserker (7 HD):
  ST18, DE17, CO17, IN11, WI12, CH11
@@ -6299,7 +6299,7 @@ Berserker (7 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Enrage (2x per day)
+– Enrage (twice per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6308,7 +6308,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Berserker (1x per day): 5 turns
+– Summon Berserker (once per day): 5 turns
 
 Berserker (7 HD):
  ST18, DE17, CO17, IN11, WI12, CH11
@@ -6319,7 +6319,7 @@ Berserker (7 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Enrage (2x per day)
+– Enrage (twice per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6329,7 +6329,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Berserker (1x per day): 5 turns
+– Summon Berserker (once per day): 5 turns
 
 Berserker (9 HD):
  ST18, DE18, CO18, IN12, WI14, CH12
@@ -6340,7 +6340,7 @@ Berserker (9 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Enrage (3x per day)
+– Enrage (three times per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6349,7 +6349,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Berserker (1x per day): 5 turns
+– Summon Berserker (once per day): 5 turns
 
 Berserker (9 HD):
  ST18, DE18, CO18, IN12, WI14, CH12
@@ -6360,7 +6360,7 @@ Berserker (9 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Enrage (3x per day)
+– Enrage (three times per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6370,7 +6370,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Silence 15' Radius (3x per day): opponents within 15' are silenced for 1 turn (save vs. Spell at -4 negates)
+– Silence 15' Radius (three times per day): opponents within 15' are silenced for 1 turn (save vs. Spell at -4 negates)
 
 Not Usable By:
  Wizard Slayer~
@@ -6382,7 +6382,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Confusion (3x per day): opponents within 30' are confused for 5 rounds (save vs. Spell at -2 negates)
+– Confusion (three times per day): opponents within 30' are confused for 5 rounds (save vs. Spell at -2 negates)
 
 Usable By:
  Bard~
@@ -6396,7 +6396,7 @@ Devotees of Helm finally lashed out against Azlaer and his cruel practices, dest
 STATISTICS:
 
 Special abilities:
-– Resist Fear (3x per day): allies within 30' are immune to fear for 1 turn
+– Resist Fear (three times per day): allies within 30' are immune to fear for 1 turn
 
 Usable By:
  Bard~
@@ -6408,7 +6408,7 @@ As he played, he focussed his attention first on the king. As the song played on
 STATISTICS:
 
 Special abilities:
-– Break Enchantment (3x per day): an ally within 10' is freed from enchantments and/or curses currently affecting them
+– Break Enchantment (three times per day): an ally within 10' is freed from enchantments and/or curses currently affecting them
 
 Usable By:
  Bard~
@@ -6418,7 +6418,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Identify (3x per day)
+– Identify (three times per day)
 
 Usable By:
  All~
@@ -6466,7 +6466,7 @@ Equipped abilities:
 – Protects Against: Charm, Domination, and Fear
 
 Combat abilities:
-– Soul Drinking: 15% chance target is drained one level, granting the wielder +5 to maximum hit points, +1 to Strength, and hasting them for 1 turn
+– Soul Drinking: 15% chance target is drained one level, granting the wielder +5 to Maximum Hit Points, +1 to Strength, and hasting them for 1 turn
 
 THAC0: +4
 Damage: 1d8+4 (slashing)
@@ -6804,7 +6804,7 @@ Another one of Jan Jansen's inventions, these glasses allow Jan to detect invisi
 STATISTICS:
 
 Special abilities:
-– Detect Invisibility (1x per day)
+– Detect Invisibility (once per day)
 
 Equipped abilities:
 – Protects against critical hits
@@ -6883,7 +6883,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Protection from Normal Missiles (1x per day): 1 turn
+– Protection from Normal Missiles (once per day): 1 turn
 
 Equipped abilities:
 – Armor Class: +3
@@ -7043,7 +7043,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Mental Domination (1x per day)
+– Mental Domination (once per day)
 
 Equipped abilities:
 – Saving Throws: +2
@@ -7395,7 +7395,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Heroic Inspiration: when the wearer drops below 50% hit points, they gain +2 to Saving Throws, THAC0, and damage
+– Heroic Inspiration: when the wearer drops below 50% Hit Points, they gain +2 to Saving Throws, THAC0, and damage
 – Protects Against: Fear
 
 Armor Class: -2
@@ -7585,7 +7585,7 @@ Held by a master thief for the better part of a generation, this ring was put to
 STATISTICS:
 
 Special abilities:
-– Invisibility (3x per day): 5 turns
+– Invisibility (three times per day): 5 turns
 
 Not Usable By:
  Wizard Slayer~
@@ -7641,7 +7641,7 @@ Crafted by drow mages of the Underdark, this weapon was used in an arranged batt
 STATISTICS:
 
 Special abilities:
-– Energy Blast (1x per day): deals 3d6 magic damage to one target
+– Energy Blast (once per day): deals 3d6 magic damage to one target
 
 Equipped abilities:
 – Magic Damage Resistance: +25%
@@ -7677,7 +7677,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Limited Wish (1x per day)
+– Limited Wish (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -7687,8 +7687,8 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Fire Shield (1x per day): 1 turn
-– Conjure Lesser Fire Elemental (1x per day): 1 turn
+– Fire Shield (once per day): 1 turn
+– Conjure Lesser Fire Elemental (once per day): 1 turn
 
 Equipped abilities:
 – Fire Resistance: +50%
@@ -7701,8 +7701,8 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Zone of Sweet Air (1x per day)
-– Conjure Lesser Air Elemental (1x per day): 1 turn
+– Zone of Sweet Air (once per day)
+– Conjure Lesser Air Elemental (once per day): 1 turn
 
 Equipped abilities:
 – Spell Immunity: Stinking Cloud, Cloudkill, Acid Fog, and Incendiary Cloud
@@ -7715,8 +7715,8 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Stoneskin (1x per day): 5 turns
-– Conjure Lesser Earth Elemental (1x per day): 1 turn
+– Stoneskin (once per day): 5 turns
+– Conjure Lesser Earth Elemental (once per day): 1 turn
 
 Equipped abilities:
 – Armor Class: +2
@@ -7729,7 +7729,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Charm Person (1x per day)
+– Charm Person (once per day)
 
 Equipped abilities:
 – Charisma: +2
@@ -7753,7 +7753,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Battering Ram (3x per day)
+– Battering Ram (three times per day)
 
 Combat Abilities (monks only):
 – Knockdown: 33% chance creatures struck by the wearer in melee are knocked unconscious for 1 round (save vs. Death negates)
@@ -7766,7 +7766,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Spell Turning (1x per day): 5 turns
+– Spell Turning (once per day): 5 turns
 
 Equipped abilities:
 – Magic Resistance: +10%
@@ -7803,7 +7803,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Energy Drain (1x per day)
+– Energy Drain (once per day)
 
 Equipped abilities:
 – Armor Class: +2
@@ -7843,7 +7843,7 @@ A ruthless assassin of Tethyr known only as the Specter used this ring to great 
 STATISTICS:
 
 Special abilities:
-– Improved Invisibility (1x per day): 1 turn
+– Improved Invisibility (once per day): 1 turn
 
 Equipped abilities:
 – Wraith Form: the wearer moves silently and cannot be backstabbed, is vulnerable only to magical weapons or attacks, and is immune to spells and abilities that don't affect incorporeal creatures
@@ -7872,7 +7872,7 @@ Equipped abilities:
 – Maximum Hit Points: +10
 
 Combat abilities:
-– Vampiric: creatures struck by the wearer in melee are drained 1d4 hit points and transfer them to the wearer
+– Vampiric: creatures struck by the wearer in melee are drained 1d4 Hit Points and transfer them to the wearer
 
 Not Usable By:
  Wizard Slayer~
@@ -8945,7 +8945,7 @@ Possessing the power to manipulate other's minds doesn't ensure immunity to the 
 STATISTICS:
 
 Special abilities:
-– Domination (1x per day)
+– Domination (once per day)
 
 Equipped abilities:
 – Aura of Command: opponents within 30' suffer -2 to saves vs. spell
@@ -8970,10 +8970,10 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Mass Cure (1x per day)
+– Mass Cure (once per day)
 
 Equipped abilities:
-– Healing Aura: wielder and allies within 20' heal 1 hit point every 2 rounds
+– Healing Aura: wielder and allies within 20' heal 1 Hit Point every 2 rounds
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -8992,8 +8992,8 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Remove Magic (3x per day)
-– Spell Trap (1x per day): 1 turn
+– Remove Magic (three times per day)
+– Spell Trap (once per day): 1 turn
 
 Equipped abilities:
 – Magic Resistance: +20%
@@ -9019,8 +9019,8 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Globe of Invulnerability (1x per day): 1 turn
-– Hold Monster (1x per day)
+– Globe of Invulnerability (once per day): 1 turn
+– Hold Monster (once per day)
 
 Equipped abilities:
 – Armor Class: +2
@@ -9043,8 +9043,8 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Lightning Bolt (1x per day)
-– Thunder & Lightning (1x per day): each lightning bolt deals 6d6 electrical damage (save vs. Breath at -2 for half) and stuns for 1 round (save vs. Polymorph at -2 negates)
+– Lightning Bolt (once per day)
+– Thunder & Lightning (once per day): each lightning bolt deals 6d6 electrical damage (save vs. Breath at -2 for half) and stuns for 1 round (save vs. Polymorph at -2 negates)
 
 Combat abilities:
 – Shocking: target suffers 1d4 electrical damage
@@ -9067,8 +9067,8 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Barkskin (1x per day): 5 turns
-– Summon Lesser Shambling Mound (1x per day): 1 turn
+– Barkskin (once per day): 5 turns
+– Summon Lesser Shambling Mound (once per day): 1 turn
 
 Lesser Shambling Mound (8 HD):
  ST19, DE10, CO17, IN7, WI10, CH9
@@ -9101,7 +9101,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Cloudkill (1x per day)
+– Cloudkill (once per day)
 
 Combat abilities:
 – Quickness: +1/2 Attack per Round
@@ -9124,7 +9124,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Flesh to Stone (1x per day)
+– Flesh to Stone (once per day)
 
 Combat abilities:
 – Stonehold: 33% chance target is held for 2 rounds (save vs. Petrification negates)
@@ -9147,7 +9147,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Fireball (1x per day)
+– Fireball (once per day)
 
 Combat abilities:
 – Incendiary: target suffers 1 fire damage every round for 5 rounds
@@ -9211,7 +9211,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Greater Malison (1x per day): 1 turn
+– Greater Malison (once per day): 1 turn
 
 Equipped abilities:
 – Hexproof: wielder is immune to hostile hexes and curses such as Doom, Malison, Symbols, Polymorph or similar effects
@@ -9681,7 +9681,7 @@ Ilbratha was created by unknown hands at the behest of Azoun the First, long dea
 STATISTICS:
 
 Special abilities:
-– Mirror Image (1x per day): 5 turns
+– Mirror Image (once per day): 5 turns
 
 Equipped abilities:
 – Translucent: +2 to Armor Class
@@ -9798,7 +9798,7 @@ NOTE: Daystar is always considered to be of +4 enchantment when determining what
 STATISTICS:
 
 Special abilities:
-– Sunray (1x per day)
+– Sunray (once per day)
 
 Combat abilities:
 – Sunblade: +5 to damage against undead creatures
@@ -9855,7 +9855,7 @@ Beroalf was a barbarian who traveled from the cold north in search of adventure.
 STATISTICS:
 
 Special abilities:
-– Dancing Blade (1x per day): the sword can attack on its own for 1 turn
+– Dancing Blade (once per day): the sword can attack on its own for 1 turn
 
 Ras (7 HD):
  HP 35, AC 0, THAC0 9, APR 2
@@ -9889,7 +9889,7 @@ Beroalf was a barbarian who traveled from the cold north in search of adventure.
 STATISTICS:
 
 Special abilities:
-– Dancing Blade (1x per day): the sword can attack on its own for 1 turn
+– Dancing Blade (once per day): the sword can attack on its own for 1 turn
 
 Ras (7 HD):
  HP 35, AC 0, THAC0 9, APR 2
@@ -9956,7 +9956,7 @@ Equipped abilities:
 – Maximum Hit Points: +5
 
 Combat abilities:
-– Spell Drinker: arcane casters struck lose one memorized spell chosen at random from the highest level possible, raising wielder's maximum hit points by 2 for 1 hour (save vs. Spell negates)
+– Spell Drinker: arcane casters struck lose one memorized spell chosen at random from the highest level possible, raising wielder's Maximum Hit Points by 2 for 1 hour (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -10289,8 +10289,8 @@ Yet the dragon had its revenge. Hoshi was skilled in battle but weak of will. Ce
 STATISTICS:
 
 Special abilities:
-– Batto (3x per day): thunder and lightning explode from Celestial Fury, blinding and deafening opponents within 10' for 5 rounds (save vs. Breath at -2 negates)
-– Lightning Bolt (1x per day)
+– Batto (three times per day): thunder and lightning explode from Celestial Fury, blinding and deafening opponents within 10' for 5 rounds (save vs. Breath at -2 negates)
+– Lightning Bolt (once per day)
 
 Combat abilities:
 – Booming Thunder: target and opponents within 5' are stunned for 1 round (save vs. Breath negates)
@@ -10552,7 +10552,7 @@ Equipped abilities:
 – Saving Throws: +1
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 – Foe Bane: +3 to THAC0 and +5 to damage against undead, shapeshifters, and extraplanar beings
 
 THAC0: +2
@@ -10588,7 +10588,7 @@ Equipped abilities:
 – Saving Throws: +2
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 – Holy: +5 to damage against evil creatures
 – Foe Bane: +3 to THAC0 and +5 to damage against undead, shapeshifters, and extraplanar beings
 
@@ -10651,8 +10651,8 @@ With the Eye of Tyr set into its pommel, Purifier is perhaps the greatest single
 STATISTICS:
 
 Special abilities:
-– Draw Upon Holy Might (1x per day)
-– Greater Restoration (1x per day)
+– Draw Upon Holy Might (once per day)
+– Greater Restoration (once per day)
 
 Equipped abilities:
 – Magic Resistance: +15%
@@ -10740,7 +10740,7 @@ Legend has it that the souls of those who fall beneath this dark blade are forev
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (1x per day): the sword can attack on its own for 1 turn
+– Spectral Blade (once per day): the sword can attack on its own for 1 turn
 
 Spectral Brand (10 HD):
  HP 48, AC 0, THAC0 4, APR 2
@@ -10777,7 +10777,7 @@ Legend has it that the souls of those who fall beneath this dark blade are forev
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (1x per day): the sword can attack on its own for 1 turn
+– Spectral Blade (once per day): the sword can attack on its own for 1 turn
 
 Spectral Brand (10 HD):
  HP 48, AC 0, THAC0 4, APR 2
@@ -10817,8 +10817,8 @@ Drawing upon the necromancy of the Skull of the Lich the seal has been broken, a
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (1x per day): the sword can attack on its own for 1 turn
-– Dark Swarm (1x per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
+– Spectral Blade (once per day): the sword can attack on its own for 1 turn
+– Dark Swarm (once per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
 
 Spectral Brand (12 HD):
  HP 54, AC 0, THAC0 1, APR 3
@@ -10860,8 +10860,8 @@ Drawing upon the necromancy of the Skull of the Lich the seal has been broken, a
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (1x per day): the sword can attack on its own for 1 turn
-– Dark Swarm (1x per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
+– Spectral Blade (once per day): the sword can attack on its own for 1 turn
+– Dark Swarm (once per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
 
 Spectral Brand (12 HD):
  HP 54, AC 0, THAC0 1, APR 3
@@ -10902,7 +10902,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Lesser Restoration (1x per day)
+– Lesser Restoration (once per day)
 
 Equipped abilities:
 – Magic Resistance: +5%
@@ -10934,7 +10934,7 @@ Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of
 STATISTICS:
 
 Special abilities:
-– Greater Restoration (1x per day)
+– Greater Restoration (once per day)
 
 Equipped abilities:
 – Magic Resistance: +10%
@@ -11261,7 +11261,7 @@ Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever for
 STATISTICS:
 
 Special abilities:
-– Dispel Magic (3x per day)
+– Dispel Magic (three times per day)
 
 Equipped abilities:
 – Magic Resistance: +10%
@@ -11387,7 +11387,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 
 THAC0: +2
 Damage: 1d10+2 (slashing)
@@ -11476,7 +11476,7 @@ Even a Holy Relic as powerful as Carsomyr is made even greater when combined wit
 STATISTICS:
 
 Special abilities:
-– Dispel Magic (3x per day)
+– Dispel Magic (three times per day)
 
 Equipped abilities:
 – Magic Resistance: +20%
@@ -11595,7 +11595,7 @@ The helm is capable of absorbing significant amounts of cold damage, and with a 
 STATISTICS:
 
 Special abilities:
-– Simulacrum (1x per day): 1 turn
+– Simulacrum (once per day): 1 turn
 
 Equipped abilities:
 – Protects against critical hits
@@ -11886,7 +11886,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Random effects (3x per day)
+– Random effects (three times per day)
 
 Requires:
  10 Intelligence
@@ -12680,7 +12680,7 @@ Weight: 0~
 STATISTICS:
 
 Special abilities:
-– Earthquake (1x per day)
+– Earthquake (once per day)
 
 Equipped abilities:
 – Spell Immunity: Earthquake
@@ -12865,7 +12865,7 @@ This emerald-studded dagger is Entreri's signature weapon, and is the most recog
 STATISTICS:
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 
 THAC0: +4
 Damage: 1d4+4 (piercing)
@@ -13029,10 +13029,10 @@ STATISTICS:
 *CURSED*
 
 Equipped abilities:
-– Bloodsucking: living wielders lose 1 hit point every 2 rounds
+– Bloodsucking: living wielders lose 1 Hit Point every 2 rounds
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 
 THAC0: +3
 Damage: 1d8+3 (slashing)
@@ -13102,7 +13102,7 @@ Not Usable By:
 @2386 = ~When used, this rod shoots forth many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. They cover an area of about 30' in radius, and creatures caught within webs, or simply touching them, become stuck among the gluey fibers. For every round that a creature remains in the web, they must make a save vs. Rod at or be unable to move. The webs will dissipate after approximately 1 turn.
 
 Special abilities:
-– Web (1x per day)
+– Web (once per day)
 
 Requires:
  12 Intelligence
@@ -13117,7 +13117,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Spell Absorption (1x per day): 1 turn
+– Spell Absorption (once per day): 1 turn
 
 Requires:
  15 Intelligence
@@ -13134,9 +13134,9 @@ The rod is currently untransformed.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
+– Terrify (once per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Equipped abilities:
 – Armor Class: +2
@@ -13159,7 +13159,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Raise Dead (1x per day)
+– Raise Dead (once per day)
 
 Requires:
  10 Intelligence
@@ -13196,7 +13196,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Reverse Magic (1x per day): removes all magical effects from the target (save vs. Rod at -4 negates)
+– Reverse Magic (once per day): removes all magical effects from the target (save vs. Rod at -4 negates)
 
 Requires:
  15 Intelligence
@@ -13208,9 +13208,9 @@ Not Usable By:
 @2398 = ~This rod was created for you by your apprentices, and will cast a variety of three different spells, each from a separate elemental source.
 
 Special abilities:
-– Fireball (1x per day)
-– Lightning Bolt (1x per day)
-– Cone of Cold (1x per day)
+– Fireball (once per day)
+– Lightning Bolt (once per day)
+– Cone of Cold (once per day)
 
 Requires:
  15 Intelligence
@@ -13307,7 +13307,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Globe of Power (1x per day): user loses 15% of their hit points, but gains +2 to Armor Class and Saving Throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
+– Globe of Power (once per day): user loses 15% of their Hit Points, but gains +2 to Armor Class and Saving Throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
 
 Weight: 1
 Not Usable By:
@@ -13345,7 +13345,7 @@ Equipped abilities:
 – Saving Throws: +2
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 
 THAC0: +4
 Damage: 1d10+4 (slashing)
@@ -13478,7 +13478,7 @@ This finely made harp is well known among the nomadic peoples of the east, thoug
 STATISTICS:
 
 Special abilities:
-– Domination (1x per day)
+– Domination (once per day)
 
 Usable By:
  Bard~
@@ -13488,7 +13488,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Goodberries (1x per day)
+– Goodberries (once per day)
 
 Damage: 1d6 (crushing)
 Speed Factor: 4
@@ -13506,7 +13506,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Astral Hound (1x per day): 5 turns
+– Summon Astral Hound (once per day): 5 turns
 
 Astral Hound (7 HD):
  ST15, DE16, CO15, IN14, WI12, CH13
@@ -13529,7 +13529,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Cerebus (1x per day): 5 turns
+– Summon Cerebus (once per day): 5 turns
 
 Cerebus (9 HD):
  ST16, DE15, CO12, IN16, WI16, CH17
@@ -13542,11 +13542,11 @@ Cerebus (9 HD):
 Special Characteristics:
 – Magic Resistance: 25%
 – Protected Against: Backstabs, Fear, and Normal/+1 Weapons
-– Healing Lick (3x per day)
-– Moon Dog Sight (3x per day)
-– Moon Dog Howl (1x per day)
-– Mirror Image (3x per day)
-– Improved Invisibility (1x per day)
+– Healing Lick (three times per day)
+– Moon Dog Sight (three times per day)
+– Moon Dog Howl (once per day)
+– Mirror Image (three times per day)
+– Improved Invisibility (once per day)
 
 Not Usable By:
  Evil-aligned characters
@@ -13557,7 +13557,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Dire Charm (3x per day)
+– Dire Charm (three times per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -13591,7 +13591,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Pandemonium (3x per day): opponents within 30' are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
+– Pandemonium (three times per day): opponents within 30' are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
 
 Usable By:
  Bard~
@@ -13652,7 +13652,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Vampiric: target is drained 1d4 hit points and transfers them to the wielder
+– Vampiric: target is drained 1d4 Hit Points and transfers them to the wielder
 – Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 
 THAC0: +3
@@ -13789,7 +13789,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Flesh Golem (1x per day): 1 turn
+– Summon Flesh Golem (once per day): 1 turn
 
 Flesh Golem (7 HD):
  ST20, DE10, CO-, IN-, WI-, CH-
@@ -13815,7 +13815,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Clay Golem (1x per day): 1 turn
+– Summon Clay Golem (once per day): 1 turn
 
 Clay Golem (9 HD):
  ST21, DE10, CO-, IN-, WI-, CH-
@@ -13842,7 +13842,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Stone Golem (1x per day): 1 turn
+– Summon Stone Golem (once per day): 1 turn
 
 Stone Golem (12 HD):
  ST22, DE10, CO-, IN-, WI-, CH-
@@ -13868,7 +13868,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Juggernaut Golem (1x per day): 1 turn
+– Summon Juggernaut Golem (once per day): 1 turn
 
 Juggernaut Golem (14 HD):
  ST23, DE10, CO-, IN-, WI-, CH-
@@ -13896,9 +13896,9 @@ The rod is currently transformed into a flail.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
+– Terrify (once per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
 – Disruption: undead creatures are destroyed (save vs. Spell negates)
@@ -13926,9 +13926,9 @@ The rod is currently transformed into a long sword.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
+– Terrify (once per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
 – Fiery: target suffers 1d6 fire damage
@@ -13955,9 +13955,9 @@ The rod is currently transformed into a battle axe.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
+– Terrify (once per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
 – Confusing: 33% chance target is confused for 2 rounds (save vs. Spell negates)
@@ -13988,9 +13988,9 @@ The rod is currently transformed into a spear.
 STATISTICS:
 
 Special abilities:
-– Terrify (1x per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (1x per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
-– Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. Rod at -2 for half)
+– Terrify (once per day): opponents within 30' of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target within 30' is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
@@ -14074,7 +14074,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Gladiator (1x per day): 5 turns
+– Summon Gladiator (once per day): 5 turns
 
 Gladiator (11 HD):
  ST16, DE18, CO18, IN14, WI16, CH14
@@ -14091,7 +14091,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Summon Gladiator (1x per day): 5 turns
+– Summon Gladiator (once per day): 5 turns
 
 Gladiator (11 HD):
  ST16, DE18, CO18, IN14, WI16, CH14
@@ -14347,7 +14347,7 @@ STATISTICS:
 Usable By:
  All~
 @2550 = ~Tree of Life Fruit~
-@2551 = ~A beautiful glittering fruit taken from the section of the Tree of Life that grows through the palace. The fruit has a tantalizing smell and looks ripe enough to eat. When consumed, this fruit restores 50 hit points to the user.
+@2551 = ~A beautiful glittering fruit taken from the section of the Tree of Life that grows through the palace. The fruit has a tantalizing smell and looks ripe enough to eat. When consumed, this fruit restores 50 Hit Points to the user.
 
 Usable By:
  All~
@@ -14665,7 +14665,7 @@ The spell on this page is Vocalize.
 STATISTICS:
 
 Special abilities:
-– Vocalize (1x per day)
+– Vocalize (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14678,7 +14678,7 @@ The spell on this page is Cone of Cold.
 STATISTICS:
 
 Special abilities:
-– Cone of Cold (1x per day)
+– Cone of Cold (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14691,7 +14691,7 @@ The spell on this page is Animate Dead.
 STATISTICS:
 
 Special abilities:
-– Animate Dead (1x per day)
+– Animate Dead (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14704,7 +14704,7 @@ The spell on this page is Lower Resistance.
 STATISTICS:
 
 Special abilities:
-– Lower Resistance (1x per day)
+– Lower Resistance (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14717,7 +14717,7 @@ The spell on this page is Greater Malison.
 STATISTICS:
 
 Special abilities:
-– Greater Malison (1x per day)
+– Greater Malison (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14730,7 +14730,7 @@ The spell on this page is Mirror Image.
 STATISTICS:
 
 Special abilities:
-– Mirror Image (1x per day)
+– Mirror Image (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14743,7 +14743,7 @@ The spell on this page is Breach.
 STATISTICS:
 
 Special abilities:
-– Breach (1x per day)
+– Breach (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14756,7 +14756,7 @@ The spell on this page is Haste.
 STATISTICS:
 
 Special abilities:
-– Haste (1x per day)
+– Haste (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14769,7 +14769,7 @@ The spell on this page is Hold Monster.
 STATISTICS:
 
 Special abilities:
-– Hold Monster (1x per day)
+– Hold Monster (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14782,7 +14782,7 @@ The spell on this page is Pierce Magic.
 STATISTICS:
 
 Special abilities:
-– Pierce Magic (1x per day)
+– Pierce Magic (once per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -14855,7 +14855,7 @@ Usable By:
 STATISTICS:
 
 Special abilities:
-– Shield of the Archon (1x per day): 1 turn
+– Shield of the Archon (once per day): 1 turn
 
 Weight: 1
 Usable By:
