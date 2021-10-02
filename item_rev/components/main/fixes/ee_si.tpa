@@ -68,7 +68,7 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
     ~wand18~ // Wand of Spell Striking (1/2)
     ~wand19~ // Wand of Cursing (1)
     ~wa2helm~ // Shadow Veil (1)
-    ~potn26~ // Potion of Fiery Burning(1)
+    ~potn26~ // Potion of Fiery Burning (1)
     ~potn27~ // Potion of Firebreath (1)
     ~potn30~ // Potion of Sight (1)
     ~bgwand12~ // BGT Wand of Magic Missiles (1)
