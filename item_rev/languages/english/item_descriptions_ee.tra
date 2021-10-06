@@ -11731,7 +11731,7 @@ Special abilities (consumes charges):
 – Horror: 5 rounds (save vs. Wand negates)
 
 Requires:
- 12 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11747,7 +11747,7 @@ Special abilities (consumes charges):
 – Magic Missile: 3 missiles
 
 Requires:
- 11 Intelligence
+ 9 Intelligence
 
 Not Usable By:
  Wizard Slayer~
@@ -11762,7 +11762,7 @@ Special abilities (consumes charges):
 – Paralyze: 5 rounds (save vs. Wand at -2 negates)
 
 Requires:
- 13 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11778,7 +11778,7 @@ Special abilities (consume charges):
 – Fireball: 6d6 (save vs. Wand at -2 for half)
 
 Requires:
- 13 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11794,7 +11794,7 @@ Special abilities (consume charges):
 – Cone of Cold: 6d4 + 6 (save vs. Wand at -4 for half)
 
 Requires:
- 13 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11810,7 +11810,7 @@ Special abilities (consumes charges):
 – Lightning Bolt: 6d6 (save vs. Wand at -4 for half)
 
 Requires:
- 13 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11826,7 +11826,7 @@ Special abilities (consumes charges):
 – Sleep: 5 rounds (save vs. Wand negates)
 
 Requires:
- 11 Intelligence
+ 9 Intelligence
 
 Not Usable By:
  Wizard Slayer~
@@ -11841,7 +11841,7 @@ Special abilities (consumes charges):
 – Polymorph Other: permanent (save vs. Wand at -2 negates)
 
 Requires:
- 14 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11858,7 +11858,7 @@ Special abilities (consumes charges):
 – Monster Summoning: 1 turn
 
 Requires:
- 14 Intelligence
+ 9 Intelligence
 
 Usable By:
  Bard
@@ -11874,8 +11874,8 @@ Special abilities (consume charges):
 – Flame Strike: 10d6 (save vs. Wand at -4 for half)
 
 Requires:
- 10 Intelligence
- 15 Wisdom
+ 9 Intelligence
+ 10 Wisdom
 
 Usable By:
  Cleric
@@ -11889,7 +11889,7 @@ Special abilities:
 – Random effects (three times per day)
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
 
 Weight: 3
 Not Usable By:
@@ -11905,7 +11905,7 @@ Special abilities (consumes charges):
 – Cloudkill: 1 turn
 
 Requires:
- 15 Intelligence
+ 10 Intelligence
 
 Usable By:
  Bard
@@ -11922,7 +11922,7 @@ Special abilities (consume charges):
 – Pierce Magic
 
 Requires:
- 16 Intelligence
+ 12 Intelligence
 
 Usable By:
  Bard
@@ -11938,7 +11938,7 @@ Special abilities (consume charges):
 – Curse: target is blinded, deafened, and silenced for 1 turn (save vs. Wand at -2 negates)
 
 Requires:
- 12 Intelligence
+ 9 Intelligence
  
 Not Usable By:
  Wizard Slayer~
@@ -13105,7 +13105,7 @@ Special abilities:
 – Web (once per day)
 
 Requires:
- 12 Intelligence
+ 9 Intelligence
 
 Weight: 3
 Usable By:
@@ -13120,7 +13120,7 @@ Special abilities:
 – Spell Absorption (once per day): 1 turn
 
 Requires:
- 15 Intelligence
+ 12 Intelligence
 
 Weight: 3
 Usable By:
@@ -13148,7 +13148,7 @@ Proficiency Type: Club
 Type: One-handed
 Requires:
  5 Strength
- 10 Intelligence
+ 9 Intelligence
 
 Weight: 10
 Not Usable By:
@@ -13162,8 +13162,8 @@ Special abilities:
 – Raise Dead (once per day)
 
 Requires:
- 10 Intelligence
- 15 Wisdom
+ 9 Intelligence
+ 10 Wisdom
 
 Weight: 3
 Not Usable By:
@@ -13199,7 +13199,7 @@ Special abilities:
 – Reverse Magic (once per day): removes all magical effects from the target (save vs. Rod at -4 negates)
 
 Requires:
- 15 Intelligence
+ 9 Intelligence
 
 Weight: 3
 Not Usable By:
@@ -13213,7 +13213,7 @@ Special abilities:
 – Cone of Cold (once per day)
 
 Requires:
- 15 Intelligence
+ 10 Intelligence
 
 Weight: 3
 Usable By:
@@ -13910,7 +13910,7 @@ Proficiency Type: Flail/Morning Star
 Type: One-handed
 Requires:
  13 Strength
- 10 Intelligence
+ 9 Intelligence
 
 Weight: 10
 Not Usable By:
@@ -13940,7 +13940,7 @@ Proficiency Type: Long Sword
 Type: One-handed
 Requires:
  6 Strength
- 10 Intelligence
+ 9 Intelligence
 
 Weight: 10
 Not Usable By:
@@ -13971,7 +13971,7 @@ Proficiency Type: Axe
 Type: One-handed
 Requires:
  10 Strength
- 10 Intelligence
+ 9 Intelligence
 
 Weight: 10
 Not Usable By:
@@ -14003,7 +14003,7 @@ Proficiency Type: Spear
 Type: Two-handed
 Requires:
  5 Strength
- 10 Intelligence
+ 9 Intelligence
 
 Weight: 10
 Not Usable By:

@@ -11196,7 +11196,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Horror: 5 rounds (save vs. wand neg.)
 
-Requires: 12 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11210,7 +11210,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Magic Missile: 3 missiles
 
-Requires: 11 Intelligence
+Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
 @2245 = ~Wand of Paralyzation~
@@ -11223,7 +11223,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Paralyze: 5 rounds (save vs. wand at -2 neg.)
 
-Requires: 13 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11237,7 +11237,7 @@ STATISTICS:
 Special Abilities (consume charges):
  Fireball: 6D6 (save vs. wand at -2 half)
 
-Requires: 13 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11251,7 +11251,7 @@ STATISTICS:
 Special Abilities (consume charges):
  Cone of Cold: 6D4 + 6 (save vs. wand at -4 half)
 
-Requires: 13 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11265,7 +11265,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Lightning Bolt: 6D6 (save vs. wand at -4 half)
 
-Requires: 13 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11279,7 +11279,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Sleep: 5 rounds (save vs. wand neg.)
 
-Requires: 11 Intelligence
+Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
 @2255 = ~Wand of Polymorphing~
@@ -11292,7 +11292,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Polymorph Other: permanent (save vs. wand at -2 neg.)
 
-Requires: 14 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Druid
@@ -11307,7 +11307,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Monster Summoning: 1 turn
 
-Requires: 14 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11321,7 +11321,7 @@ STATISTICS:
 Special Abilities (consume charges):
  Flame Strike: 10D6 (save vs. wand at -4 half)
 
-Requires: 10 Intelligence, 15 Wisdom
+Requires: 9 Intelligence, 10 Wisdom
 Usable By:
  Cleric
  Druid~
@@ -11334,7 +11334,7 @@ Special Abilities:
  Random effects (3x per day)
 
 Weight: 3
-Requires: 10 Intelligence
+Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
 @2263 = ~Wand of Cloudkill~
@@ -11347,7 +11347,7 @@ STATISTICS:
 Special Abilities (consumes charges):
  Cloudkill: 1 turn
 
-Requires: 15 Intelligence
+Requires: 10 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11362,7 +11362,7 @@ Special Abilities (consume charges):
  Breach
  Pierce Magic
 
-Requires: 16 Intelligence
+Requires: 12 Intelligence
 Usable By:
  Bard
  Mage~
@@ -11376,7 +11376,7 @@ STATISTICS:
 Special Abilities (consume charges):
  Curse: target is blinded, deafened, and silenced for 1 turn (save vs. wand at -2 neg.)
 
-Requires: 12 Intelligence
+Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
 @2269 = ~Heavy Crossbow~
@@ -12492,7 +12492,7 @@ Special Abilities:
  Web (1x per day)
 
 Weight: 3
-Requires: 12 Intelligence
+Requires: 9 Intelligence
 Usable By:
  Bard
  Mage~
@@ -12505,7 +12505,7 @@ Special Abilities:
  Spell Absorption (1x per day): 1 turn
 
 Weight: 3
-Requires: 15 Intelligence
+Requires: 12 Intelligence
 Usable By:
  Bard
  Mage~
@@ -12531,7 +12531,7 @@ Weight: 10
 Speed Factor: 1
 Proficiency Type: Club
 Type: One-Handed
-Requires: 5 Strength, 10 Intelligence
+Requires: 5 Strength, 9 Intelligence
 Not Usable By:
  Mage~
 @2391 = ~Rod of Resurrection~
@@ -12543,7 +12543,7 @@ Special Abilities:
  Raise Dead (1x per day)
 
 Weight: 3
-Requires: 10 Intelligence, 15 Wisdom
+Requires: 9 Intelligence, 10 Wisdom
 Not Usable By:
  Wizard Slayer~
 @2393 = ~Rod of Terror +3~
@@ -12576,7 +12576,7 @@ Special Abilities:
  Reverse Magic (1x per day): removes all magical effects from the target (save vs. rod at -4 neg.)
 
 Weight: 3
-Requires: 15 Intelligence
+Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
 @2397 = ~Rod of the Apprenti~
@@ -12588,7 +12588,7 @@ Special Abilities:
  Cone of Cold (1x per day)
 
 Weight: 3
-Requires: 15 Intelligence
+Requires: 10 Intelligence
 Usable By:
  Bard
  Mage~
@@ -13255,7 +13255,7 @@ Weight: 10
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-Handed
-Requires: 13 Strength, 10 Intelligence
+Requires: 13 Strength, 9 Intelligence
 Not Usable By:
  Druid
  Mage
@@ -13283,7 +13283,7 @@ Weight: 10
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-Handed
-Requires: 6 Strength, 10 Intelligence
+Requires: 6 Strength, 9 Intelligence
 Not Usable By:
  Cleric
  Druid
@@ -13312,7 +13312,7 @@ Weight: 10
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-Handed
-Requires: 10 Strength, 10 Intelligence
+Requires: 10 Strength, 9 Intelligence
 Not Usable By:
  Cleric
  Druid
@@ -13343,7 +13343,7 @@ Weight: 10
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-Handed
-Requires: 5 Strength, 10 Intelligence
+Requires: 5 Strength, 9 Intelligence
 Not Usable By:
  Cleric
  Mage
