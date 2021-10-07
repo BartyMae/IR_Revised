@@ -378,11 +378,11 @@ Weight:~
 
 // Add THAC0 penalty line to @100319 (large shield)
 @100320 = ~\1
--- THAC0: -2~
+– THAC0: -2~
 
 // Add THAC0 penalty line to @100319 (medium shield)
 @100324 = ~\1
--- THAC0: -1~
+– THAC0: -1~
 
 
 //////////////////

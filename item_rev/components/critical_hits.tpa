@@ -1,7 +1,7 @@
 INCLUDE ~item_rev/lib/descriptions.tpa~
 
 //////////////////////////////////////////////
-//  descriptions
+// Descriptions
 
 DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
 
