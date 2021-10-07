@@ -2,17 +2,17 @@ INCLUDE ~item_rev/lib/descriptions.tpa~
 INCLUDE ~item_rev/lib/usability_description.tpa~
 
 //////////////////////////////////////////////
-//  descriptions
+// Descriptions
 
 DEFINE_PATCH_MACRO wand BEGIN
   PATCH_IF ident BEGIN
 
-    // make usable by thieves
+    // Make usable by thieves
     SPRINT add_class @100402
     SPRINT catch_class @100404
     LPF usable_desc INT_VAR make_usable=1 STR_VAR add_class catch_class END
 
-    // add INT requirement
+    // Add intelligence requirement
     exists=0
     SPRINT t1 @100405
     REPLACE_EVALUATE ~%t1%~ BEGIN
@@ -27,7 +27,6 @@ DEFINE_PATCH_MACRO wand BEGIN
         REPLACE_TEXTUALLY ~\(%t1%\|%t2%\)~ ~%t3%~
       END
     END
-
   END
 END
 
@@ -51,30 +50,30 @@ DEFINE_PATCH_MACRO wand_of_heaven BEGIN
 END
 
 //////////////////////////////////////////////
-//  patching
+// Patching
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY wand BEGIN
-  wand02 => 12 // fear
-  wand03 => 11 // magic missiles
-  wand04 => 13 // paralyzation
-  wand05 => 13 // fire
-  wand06 => 13 // frost
-  wand07 => 13 // lightning
-  wand08 => 11 // sleep
-  wand09 => 14 // polymorphing
-  wand10 => 14 // monster summoning
-  wand12 => 10 // wonder
-  wand13 => 15 // cloudkill
-  wand14 => 11 // web
-  wand15 => 15 // apprenti
-  wand18 => 16 // spell striking
-  wand19 => 12 // cursing
-  wand99 => 11 // magic missile
-  ohdwand1 => 11 // glitterdust
-  ohnwand1 => 14 // whips
-  o#llwa => 14 // from sellswords
-  bgwand12 => 11 // from bgt
-  wand12_ => 11 // from bgt
+  wand02   => 9  // Wand of Fear
+  wand03   => 9  // Wand of Magic Missiles
+  wand04   => 9  // Wand of Paralyzation
+  wand05   => 9  // Wand of Fire
+  wand06   => 9  // Wand of Frost
+  wand07   => 9  // Wand of Lightning
+  wand08   => 9  // Wand of Sleep
+  wand09   => 9  // Wand of Polymorphing
+  wand10   => 9  // Wand of Monster Summoning
+  wand12   => 10 // Rod of Wonder
+  wand13   => 10 // Wand of Cloudkill
+  wand14   => 9  // Web Sack
+  wand15   => 10 // Rod of the Apprenti
+  wand18   => 12 // Wand of Spell Striking
+  wand19   => 9  // Wand of Cursing
+  wand99   => 9  // Wand of Magic Missile
+  ohdwand1 => 11 // Glitterdust
+  ohnwand1 => 10 // Whips
+  o#llwa   => 10 // From Sellswords
+  bgwand12 => 9  // from BGT
+  wand12_  => 9  // from EET
 END
 
 ACTION_PHP_EACH wand AS ind => res BEGIN
@@ -91,7 +90,7 @@ COPY_EXISTING ttwand.itm override
               wand11.itm override
 PATCH_IF SOURCE_SIZE>0x71 BEGIN
   WRITE_BYTE 0x2a 9  // INT req
-  WRITE_BYTE 0x2e 14 // WIS req
+  WRITE_BYTE 0x2e 10 // WIS req
   SPRINT text_update wand_of_heaven
   LPM update_item_descriptions
 END
