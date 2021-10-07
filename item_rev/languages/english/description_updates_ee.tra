@@ -358,7 +358,7 @@ Weight:~
 @100312 = ~Special:[ %tab%]*No Missile.*~
 
 // catch ~Special: No Missile Weapon Protection~
-@100313 = ~-[ %tab%]No protection against missile attacks~
+@100313 = ~- No protection against missile attacks~
 
 // catch ~Special: No Missile~
 @100314 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*No Missile.*~
