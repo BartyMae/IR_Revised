@@ -118,19 +118,19 @@ Speed Factor\1~
 //////////////////
 
 // catch ~Damage type: slashing~
-@100132 = ~ ([Ss]lashing)~
+@100132 = ~(slashing)~
 
 // replace @100132
 @100133 = ~ (piercing)~
 
 // catch ~Damage type: piercing~
-@100134 = ~ ([Pp]iercing)~
+@100134 = ~(piercing)~
 
 // replace @100134
 @100135 = ~ (slashing)~
 
 // catch ~Damage type: crushing~
-@100136 = ~ ([Cc]rushing)~
+@100136 = ~(crushing)~
 
 // replace @100136
 @100137 = ~ (crushing and piercing)~
@@ -358,7 +358,7 @@ Weight:~
 @100312 = ~Special:[ %tab%]*No Missile.*~
 
 // catch ~Special: No Missile Weapon Protection~
-@100313 = ~- No protection against missile attacks~
+@100313 = ~-[ %tab%]No protection against missile attacks~
 
 // catch ~Special: No Missile~
 @100314 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*No Missile.*~
