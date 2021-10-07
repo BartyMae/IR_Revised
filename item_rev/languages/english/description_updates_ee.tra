@@ -349,55 +349,40 @@ Weight:~
 //   Shields    //
 //////////////////
 
-// 321-323 are disabled for v3, unless Demi or Mike uncomment them in macros
+// Disabled, catch buckler ~No protection against missile and piercing attacks~
+@100311 = ~~
 
-// catch ~Special: No Piercing Attack Protection~
-@100311 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*No Piercing \(Attack\|Weapon\) Protection.*~
+// Catch buckler ~No protection against missile and piercing attacks~
+@100312 = ~[ %tab%]No protection against missile and piercing attacks~
 
-// catch ~Special: No Missile~
-@100312 = ~Special:[ %tab%]*No Missile.*~
+// Replace above buckler with "no protection against missile attacks"
+@100313 = ~ No protection against missile attacks~
 
-// catch ~Special: No Missile Weapon Protection~
-@100313 = ~- No protection against missile attacks~
+// Catch small shield ~No protection against missile attacks~
+@100314 = ~[%lnl%%mnl%%wnl%]...[ %tab%]No protection against missile attacks~
 
-// catch ~Special: No Missile~
-@100314 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*No Missile.*~
+// Catch shield ~Armor Class:~
+@100315 = ~[ %tab%]Armor Class?:.*~
 
-// catch ~Armor Class Bonus:~
-@100315 = ~Armor Class\([ %tab%]*Bonus[ %tab%]*\)?:.*~
+// Replace @100315 with new AC (identified)
+@100316 = ~ Armor Class: +%new_ac%~
 
-// replace @100315
-@100316 = ~- Armor Class: +%new_ac%~
+// Replace @100315 with new AC (medium shield unidentified)
+@100317 = ~ Armor Class: +2~
 
-// replace @100315
-@100317 = ~- Armor Class: +2~
+// Replace @100315 with new AC (large shield unidentified)
+@100318 = ~ Armor Class: +3~
 
-// replace @100315
-@100318 = ~- Armor Class: +3~
+// Catch ~Armor Class~ for THAC0 penalty
+@100319 = ~\(Armor Class\([ %tab%]*[ %tab%]*\)?:.*\)~
 
-// catch ~Armor Class Bonus:~
-@100319 = ~\(Armor Class\([ %tab%]*Bonus[ %tab%]*\)?:.*\)~
-
-// add thaco line to @100319
+// Add THAC0 penalty line to @100319 (large shield)
 @100320 = ~\1
-- THAC0: -2~
+-- THAC0: -2~
 
-// catch ~Special: +1 vs. Missile Weapons~
-@100321 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*\+[0-9]* vs. Missile Weapons~
-
-// catch ~Special: +1 AC bonus vs. Missile Weapons~
-@100322 = ~Special:[ %tab%]*\+[0-9]* \(AC \)?\(bonus \)?vs. Missile Weapons~
-
-// replace @100322
-@100323 = ~Special: +%new_type% vs. Missile Weapons~
-
-// add thaco line to @100319
+// Add THAC0 penalty line to @100319 (medium shield)
 @100324 = ~\1
-- THAC0: -1~
-
-// replace @100321
-@100407 = ~
-Special: +2 vs. Missile Weapons~
+-- THAC0: -1~
 
 
 //////////////////

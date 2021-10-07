@@ -4,7 +4,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.584)~
+VERSION ~V4 Beta 10 (Revised V1.3.583)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -21,6 +21,11 @@ ALWAYS
     LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~item_rev/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
   END
 
+  LOAD_TRA ~item_rev/languages/english/description_updates.tra~
+  ACTION_IF ee_style_item_descriptions=1 BEGIN
+    LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
+  END
+
 END
 
 NO_IF_EVAL_BUG
@@ -28,21 +33,6 @@ NO_IF_EVAL_BUG
 LANGUAGE ~English~
          ~english~
          ~item_rev/languages/english/setup.tra~
-         ~item_rev/languages/english/description_updates.tra~
-
-/*LANGUAGE ~French~
-         ~french~
-         ~item_rev/languages/english/setup.tra~
-         ~item_rev/languages/french/setup.tra~
-         ~item_rev/languages/english/description_updates.tra~
-         ~item_rev/languages/french/description_updates.tra~
-
-LANGUAGE ~Russian~
-         ~russian~
-         ~item_rev/languages/english/setup.tra~
-         ~item_rev/languages/russian/setup.tra~
-         ~item_rev/languages/english/description_updates.tra~
-         ~item_rev/languages/russian/description_updates.tra~*/
 
 
 ///////////////////////////////////////////////////////////////////////////
