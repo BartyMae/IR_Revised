@@ -1,23 +1,21 @@
-
-//    !!! WARNING !!!
-//
-//  Do NOT translate this blindly! Refer to "description_updates.doc" to see which exact symbols need translation!
-//  In fact, you may want to translate DOC and then copypaste the result to TRA.
-
+// WARNING!
+// Do NOT translate this blindly! Refer to "description_updates.doc" to see which exact symbols need translation! In fact, you may want to translate DOC and then copypaste the result to .tra.
 
 //////////////////
 //    Colon     //
 //////////////////
 
-// %colon%, catch it along with preceding text in parenthesis after "Damage" (or smth else) in ~Damage(Piercing) :~, ~Damage:~, but not in ~Damage type:~
+// %colon%, catch it along with preceding text in parenthesis after "Damage" (or something else) in ~Damage(Piercing) :~, ~Damage:~, but not in ~Damage type:~
 @100100 = ~[ %tab]*\(([ %tab%a-zA-Z]*)\)?[ %tab]*:~
+
 
 //////////////////
 // Speed Factor //
 //////////////////
 
-// catch the main speed factor line
+// Catch the main speed factor line
 @100101 = ~\([%lnl%%mnl%%wnl%]Speed[ %tab%]+[Ff]actor%colon%.*\)~
+
 
 //////////////////
 //    THAC0     //
@@ -117,26 +115,27 @@ Speed Factor\1~
 // Damage Type  //
 //////////////////
 
-// catch ~Damage type: slashing~
-@100132 = ~(slashing)~
+// Catch ~(slashing)~
+@100132 = ~[ %tab%](slashing)~
 
-// replace @100132
+// Replace @100132 with piercing
 @100133 = ~ (piercing)~
 
-// catch ~Damage type: piercing~
-@100134 = ~(piercing)~
+// Catch ~(piercing)~
+@100134 = ~[ %tab%](piercing)~
 
-// replace @100134
+// Replace @100134 with slashing
 @100135 = ~ (slashing)~
 
-// catch ~Damage type: crushing~
+// Catch ~(crushing)~
 @100136 = ~(crushing)~
 
-// replace @100136
+// Replace @100136 with crushing and piercing
 @100137 = ~ (crushing and piercing)~
 
-// replace @100132 or @100134
+// Replace @100132 or @100134 with slashing and piercing
 @1001380 = ~ (slashing and piercing)~
+
 
 //////////////////
 //    Fixes     //
@@ -324,22 +323,22 @@ Weight:~
 // Encumbrance //
 //////////////////
 
-// add DEX penalty line to @100114
+// Add dexterity penalty line to @100114
 @100308 = ~
 Dexterity Penalty: %xdex%%
 Weight:~
 
-// add movement penalty line to @100114
+// Add movement penalty line to @100114
 @100309 = ~
 Movement Rate Penalty: %xmove%%
 Weight:~
 
-// add speed factor penalty line to @100114
+// Add speed factor penalty line to @100114
 @100310 = ~
 Speed Factor Penalty: +%xsf%
 Weight:~
 
-// add speed factor penalty line to @100114
+// Add speed factor penalty line to @100114
 @100299 = ~
 Physical Resistance Bonus: +%xres%%
 Weight:~
@@ -355,14 +354,14 @@ Weight:~
 // Catch buckler ~No protection against missile and piercing attacks~
 @100312 = ~[ %tab%]No protection against missile and piercing attacks~
 
-// Replace above buckler with "no protection against missile attacks"
+// Replace above buckler
 @100313 = ~ No protection against missile attacks~
 
 // Catch small shield ~No protection against missile attacks~
 @100314 = ~[%lnl%%mnl%%wnl%]...[ %tab%]No protection against missile attacks~
 
 // Catch shield ~Armor Class:~
-@100315 = ~[ %tab%]Armor Class?:.*~
+@100315 = ~[ %tab%]Armou?r Class?:.*~
 
 // Replace @100315 with new AC (identified)
 @100316 = ~ Armor Class: +%new_ac%~
@@ -384,30 +383,34 @@ Weight:~
 @100324 = ~\1
 – THAC0: -1~
 
+// Replace @100321
+@100407 = ~
+Special: +2 vs. Missile Weapons~
+
 
 //////////////////
 //   Thieving   //
 //////////////////
 
-// catch ~Lock Picking:~
+// Catch ~Lock Picking:~
 @100325 = ~[%lnl%%mnl%%wnl%]Lock Picking:.*~
 
-// catch ~Find/Remove Traps:~
+// Catch ~Find/Remove Traps:~
 @100326 = ~[%lnl%%mnl%%wnl%]\(Find/\)?Remove Traps:.*~
 
-// catch ~Pick Pockets:~
+// Catch ~Pick Pockets:~
 @100327 = ~[%lnl%%mnl%%wnl%]Pick Pockets:.*~
 
-// catch ~Move Silently:~
+// Catch ~Move Silently:~
 @100328 = ~[%lnl%%mnl%%wnl%]Move Silently:.*~
 
-// catch ~Hide in Shadows:~
+// Catch ~Hide in Shadows:~
 @100329 = ~[%lnl%%mnl%%wnl%]Hide\( in Shadows\)?:.*~
 
-// catch ~Stealth:~
+// Catch ~Stealth:~
 @100330 = ~[%lnl%%mnl%%wnl%]Stealth:.*~
 
-// add stealth line to @100114
+// Add stealth line to @100114
 @100331 = ~
 Stealth Penalty: -%value%%
 Weight:~
@@ -524,78 +527,76 @@ STATISTICS:~
 
 STATISTICS:~
 
+
 //////////////////
 //    Wands     //
 //////////////////
 
-// catch ~Usable by:~
+// Catch ~Usable by:~
 @100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
 
-// catch ~Not usable by~
+// Catch ~Not usable by~
 @100401 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 
-// add "Thief" to \(@100400\|@100401\)
+// Add "Thief" to \(@100400\|@100401\)
 @100402 = ~Thief~
 
-// catch any letter
+// Catch any letter
 @100403 = ~[a-zA-Z]~
 
-// catch ~Thief~
+// Catch ~Thief~
 @100404 = ~[Tt]hief~
 
-// catch ~Requires:\(anything\)~
+// Catch ~Requires:\(anything\)~
 @100405 = ~[ %tab%]*Requires[ %tab%]*:\(.*\)~
 
-// replace @100405
-@100406 = ~Requires:  %res% Intelligence~
+// Replace @100405
+@100406 = ~Requires: %res% Intelligence~
 
-// add requirement line to \(@100400\|@100401\)
-@100408 = ~Requires:  %res% Intelligence
+// Add requirement line to \(@100400\|@100401\)
+@100408 = ~Requires: %res% Intelligence
 \1~
 
-// replace @100405
-@100409 = ~Requires: 9 Intelligence, 14 Wisdom~
-
-// add requirement line to \(@100400\|@100401\)
-@100410 = ~Requires:  9 Intelligence, 14 Wisdom
-\1~
 
 //////////////////
 //    Druids    //
 //////////////////
 
-// add "Druid" to \(@100400\|@100401\)
+// Add "Druid" to \(@100400\|@100401\)
 @100411 = ~Druid~
 
-// catch ~Druid~
+// Catch ~Druid~
 @100412 = ~[Dd]ruid~
+
 
 //////////////////
 //    Kensai    //
 //////////////////
 
-// catch from kit description
-// get the string number from "kitlist.2da" table, line #3 (KENSAI), column #4 (HELP) - unless changed by mods, it's 25204
+// Catch from kit description
+// Get the string number from "kitlist.2da" table, line #3 (KENSAI), column #4 (HELP) - unless changed by mods, it's 25204
 @100413 = ~May not wear gauntlets or bracers~
 
-// replace @100413
+// Replace @100413
 @100414 = ~May not wear gauntlets~
 
-// add "Kensai" to \(@100400\|@100401\)
+// Add "Kensai" to \(@100400\|@100401\)
 @100415 = ~Kensai~
 
-// catch ~Kensai~
+// Catch ~Kensai~
 @100416 = ~[Kk]ensai~
+
 
 //////////////////
 //  Beastmaster //
 //////////////////
 
-// add "Beast Master" to \(@100400\|@100401\)
+// Add "Beast Master" to \(@100400\|@100401\)
 @100417 = ~Beast Master~
 
-// catch ~Beastmaster~ or ~Beast Master~
+// Catch ~Beastmaster~ or ~Beast Master~
 @100418 = ~[Bb]east[ %tab%]*[Mm]aster~
+
 
 //////////////////
 //  Shield Bash //
@@ -617,50 +618,16 @@ Weight:~
 //  Revised Critical Hit Aversion  //
 /////////////////////////////////////
 
-// remove ~Protects Against Critical Hits~ from the description
-@100422 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)\?Protects[ %TAB%]+[Aa]gainst[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
+// Catch lonely ~Protects against critical hits~
+@100422 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Protects against critical hits~
 
-// remove ~Armor Class Bonus: None~ from the description
-@100423 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass[ %TAB%]+[Bb]onus:[ %TAB%]+[Nn]one~
+// Catch "Equipped abilities"
+@100423 = ~Equipped abilities:~
 
-// replace @100422 or @100423, \1 matches [ %TAB%%emdash%]*
-@100424 = ~
-\1Armor Class Bonus: +1~
+// Replace @100422
+@100424 = ~Equipped abilities:
+– Armor Class: +1~
 
-// add AC line to @100114
-@100425 = ~
-Armor Class Bonus: +1
-Weight:~
-
-/*
-
-// 
-@100426 = ~~
-
-// 
-@100427 = ~~
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Add AC line to @100423
+@100425 = ~Equipped abilities:
+– Armor Class: +1~

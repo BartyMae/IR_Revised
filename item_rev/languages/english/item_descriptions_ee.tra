@@ -5095,10 +5095,10 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Charisma: +1
 – Spell: Bless
+– Protects against critical hits
 
 NOTE: Multiple Bless effects are not cumulative.
 
@@ -5117,10 +5117,10 @@ Named for its original owner, Sir Tain the Noble, this helm saw many great battl
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Charisma: +1
 – Spell: Bless
+– Protects against critical hits
 
 NOTE: Multiple Bless effects are not cumulative.
 
@@ -5139,9 +5139,9 @@ Prized for its noble origin as much as for its benefits to the wearer, this helm
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Saving Throws: +1
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5157,9 +5157,9 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Protects Against: Blindness and Deafness
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5175,9 +5175,9 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Protects Against: Charm and Domination
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5195,10 +5195,10 @@ The fabled helm of Balduran has long been rumored to wield powerful protective m
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Magic Resistance: +10%
 – Maximum Hit Points: +5
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5255,9 +5255,9 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Protects Against: Fear
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5279,9 +5279,9 @@ Special abilities:
 – False Dawn (once per day)
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Fire Resistance: +50%
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5299,9 +5299,9 @@ Special abilities:
 – Gaze of Death (once per day): target must die (save vs. Death at -2 negates)
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Spell: Death Ward
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5371,10 +5371,10 @@ Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Fire Resistance: +25%
 – Protects Against: Sleep and Unconsciousness
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -5495,9 +5495,9 @@ This helm grants a warrior immunities far beyond mere physical protections. It i
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Damage Resistance: +5%
+– Protects against critical hits
 
 Weight: 3
 Usable By:
@@ -5512,9 +5512,9 @@ Special abilities:
 – Gaze of Despair (three times per day): target is paralyzed with fear for 5 rounds (save vs. Spell at -2 negates)
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Damage Resistance: +10%
+– Protects against critical hits
 
 Weight: 3
 Usable By:
@@ -5999,9 +5999,9 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +2
 – Elemental Resistance: +15%
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:
@@ -6807,9 +6807,9 @@ Special abilities:
 – Detect Invisibility (once per day)
 
 Equipped abilities:
-– Protects against critical hits
 – Find Traps: +20%
 – Detect Illusions: +20%
+– Protects against critical hits
 
 Weight: 1
 Usable By:
@@ -11599,10 +11599,10 @@ Special abilities:
 – Simulacrum (once per day): 1 turn
 
 Equipped abilities:
-– Protects against critical hits
 – Armor Class: +1
 – Cold Resistance: +50%
 – Spell: Infravision
+– Protects against critical hits
 
 Weight: 3
 Not Usable By:

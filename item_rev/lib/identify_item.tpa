@@ -5,9 +5,9 @@
 
 // PS screw the last bit, can tell NOT a dual-wieldable version of handaxe from a battleaxe
 // really, why do they have to be allowed to be used offhands? sigh...
-// 
+//
 // ok, lets do the STR check here as well. i sure hope it will suffice (4 for handaxe, 10 for battleaxe)
-// 
+//
 // and let us not to forget i wanted to slightly raise minimum STR reqs on most of the items - just to keep it in mind
 
 // more updates - identify everything, not just weapons/ammo
