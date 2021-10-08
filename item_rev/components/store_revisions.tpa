@@ -9798,9 +9798,9 @@ EXTEND_BOTTOM hprelate 24
   ReputationGT(Player1,16)~+ @200204 + paladin_highrep
 // Not a paladin & good OR neutral & reputation = 20
 +~!Class(Player1,PALADIN_ALL)
-  Reputation(Player1,20)
+  ReputationGT(Player1,18)
+  OR(2)
   Alignment(Player1,MASK_GOOD)
-  OR(1)
   Alignment(Player1,MASK_GENEUTRAL)~+ @200204 + good_neutral_highrep
 // Reputation > 10 & reputation < 17 & paladin & not a member or disgraced
 +~ReputationGT(Player1,10)
