@@ -33,7 +33,7 @@ COPY ~%source%/AMULET_OF_HEALTH.tpa~ ~%target%~
 
   // add charge to item
   ACTION_IF (FILE_EXISTS_IN_GAME ~uddrow24.sto~) BEGIN
-    COPY_EXISTING ~uddrow24.sto~ ~override~ // store
+    COPY_EXISTING ~uddrow24.sto~ ~override~
       PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
         READ_LONG 0x34 items_offset
         READ_LONG 0x38 num_items
@@ -132,12 +132,12 @@ COPY ~%source%/BELT_OF_INERTIAL_BARRIER.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/HOLY_SYMBOL_OF_HELM#ANOMEN.tpa
-  COPY_EXISTING anomen.bcs override // fix Anomen's Holy Symbol for BG2 Fixpack
+  COPY_EXISTING anomen.bcs override // Fix Anomen's Holy Symbol for BG2 Fixpack
     DECOMPILE_BCS_TO_BAF
       REPLACE_TEXTUALLY CASE_INSENSITIVE ~belt13~ ~j#belt13~
     COMPILE_BAF_TO_BCS
 
-  COPY_EXISTING anom25.bcs override // fix ToB Anomen's Holy Symbol for BG2 Fixpack
+  COPY_EXISTING anom25.bcs override // Fix ToB Anomen's Holy Symbol for BG2 Fixpack
     DECOMPILE_BCS_TO_BAF
       REPLACE_TEXTUALLY CASE_INSENSITIVE ~belt13~ ~j#belt13~
     COMPILE_BAF_TO_BCS
@@ -226,13 +226,6 @@ COPY ~%source%/BRACERS_OF_DEFENSE_AC_5.tpa~ ~%target%~
   END
 >>>>>>>>
 COPY ~%source%/BRACERS_OF_THE_BLINDING_STRIKE.tpa~ ~%target%~
-
-
-<<<<<<<< .../item_rev-inlined/item/BLESSED_BRACERS.tpa
-  COPY ~item_rev/itm/brac23.spl~ ~override~ // Righteous Fury
-    SAY NAME1 @4012
->>>>>>>>
-COPY ~%source%/BLESSED_BRACERS.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/BANDS_OF_FOCUS.tpa
@@ -787,7 +780,7 @@ COPY ~%source%/RING_OF_INVISIBILITY.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/RING_OF_ENERGY.tpa
   ACTION_IF (FILE_EXISTS_IN_GAME ~ribald.sto~) BEGIN
-    COPY_EXISTING ~ribald.sto~ ~override~ // store
+    COPY_EXISTING ~ribald.sto~ ~override~
       PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
         READ_LONG 0x34 items_offset
         READ_LONG 0x38 num_items
@@ -1288,13 +1281,6 @@ COPY ~%source%/CELESTIAL_FURY_3.tpa~ ~%target%~
 COPY ~%source%/THE_EQUALIZER_4.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/PURIFIER_5.tpa
-  COPY ~item_rev/itm/sw1h65.spl~ ~override~ // Draw Upon Holy Might
-    SAY NAME2 @4073
->>>>>>>>
-COPY ~%source%/PURIFIER_5.tpa~ ~%target%~
-
-
 <<<<<<<< .../item_rev-inlined/item/YAMATO_3.tpa
   COPY ~item_rev/itm/sw1h66.spl~ ~override~ // Counterattack
 >>>>>>>>
@@ -1434,7 +1420,7 @@ COPY ~%source%/ROD_OF_THE_APPRENTI.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/WEB_SACK.tpa
-  COPY ~item_rev/itm/wand14.spl~     ~override~  // Web
+  COPY ~item_rev/itm/wand14.spl~     ~override~ // Web
     SAY NAME1 @4109
   COPY ~item_rev/itm/wand14.eff~     ~override~
 >>>>>>>>
