@@ -1106,9 +1106,7 @@ COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_THE_WOODLANDS_4.tpa
   COPY ~item_rev/itm/staf14.spl~ ~override~ // Animal Empathy
   COPY ~item_rev/itm/staf14.eff~ ~override~
-
-  COPY ~item_rev/itm/staf14a.spl~ ~override~ // Barkskin
-    SAY NAME1 @4061
+  COPY ~item_rev/itm/staf14a.spl~ ~override~
 
   COPY ~item_rev/itm/smound02.cre~ ~override~ // Lesser Shambling Mound
     SAY NAME1 @4518   SAY NAME2 @4518
