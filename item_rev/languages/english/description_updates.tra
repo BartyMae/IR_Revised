@@ -561,7 +561,7 @@ STATISTICS:~
 @100409 = ~Requires: 9 Intelligence, 14 Wisdom~
 
 // Add requirement line to \(@100400\|@100401\)
-@100410 = ~Requires: 9 Intelligence, 14 Wisdom
+@100410 = ~Requires: 9 Intelligence, 14 Wisdom~
 
 
 //////////////////
