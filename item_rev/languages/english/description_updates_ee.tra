@@ -379,6 +379,15 @@ Weight:~
 @100320 = ~\1
 – THAC0: -2~
 
+// Catch, disabled
+@100321 = ~PLACEHOLDER~
+
+// Catch, disabled
+@100322 = ~PLACEHOLDER~
+
+// Replace, disabled
+@100323 = ~PLACEHOLDER~
+
 // Add THAC0 penalty line to @100319 (medium shield)
 @100324 = ~\1
 – THAC0: -1~

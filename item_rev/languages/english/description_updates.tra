@@ -379,6 +379,15 @@ Weight:~
 @100320 = ~\1
 THAC0: -2 Penalty~
 
+// Catch ~Special: +1 vs. Missile Weapons~
+@100321 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*\+[0-9]* vs. Missile Weapons~
+
+// Catch ~Special: +1 AC bonus vs. Missile Weapons~
+@100322 = ~Special:[ %tab%]*\+[0-9]* \(AC \)?\(bonus \)?vs. Missile Weapons~
+
+// Replace @100322
+@100323 = ~Special: +%new_type% vs. Missile Weapons~
+
 // Add THAC0 penalty line to @100319 (medium shield)
 @100324 = ~\1
 THAC0: -1 Penalty~
