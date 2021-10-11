@@ -557,6 +557,12 @@ STATISTICS:~
 @100408 = ~Requires: %res% Intelligence
 \1~
 
+// Replace @100405
+@100409 = ~Requires: 9 Intelligence, 14 Wisdom~
+
+// Add requirement line to \(@100400\|@100401\)
+@100410 = ~Requires: 9 Intelligence, 14 Wisdom
+
 
 //////////////////
 //    Druids    //
