@@ -31,7 +31,6 @@ COPY ~%source%/AMULET_OF_HEALTH.tpa~ ~%target%~
   COPY ~item_rev/itm/amul20.spl~ ~override~ // Magic Resistance
     SAY NAME1 @4001
 
-  // add charge to item
   ACTION_IF (FILE_EXISTS_IN_GAME ~uddrow24.sto~) BEGIN
     COPY_EXISTING ~uddrow24.sto~ ~override~
       PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
@@ -57,7 +56,6 @@ COPY ~%source%/KALIGUNS_AMULET_OF_MAGIC_RESISTANCE.tpa~ ~%target%~
     SAY NAME1 @4002
   COPY ~item_rev/itm/amul25b.spl~ ~override~
 
-  // add charge to item
   ACTION_IF (FILE_EXISTS_IN_GAME ~ar2101.are~) BEGIN
     COPY_EXISTING ~ar2101.are~ ~override~ // Underdark, Beholder Dungeon
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
@@ -175,7 +173,7 @@ COPY ~%source%/TANSHERONS_BOW_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/IRON_BOW_OF_GESEN_4.tpa
-  ADD_PROJECTILE ~item_rev/itm/bow19.pro~ // Shocking Arrows
+  ADD_PROJECTILE ~item_rev/itm/bow19.pro~ // Lightning Spear
   COPY_EXISTING ~%IRON_BOW_OF_GESEN_4%.itm~ ~override~
     WRITE_SHORT 0x9c %bow19%
 >>>>>>>>
@@ -595,6 +593,9 @@ COPY ~%source%/METHILDS_HARP.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/HORN_OF_KAZGAROTH.tpa
+  COPY ~item_rev/itm/misc73.spl~ ~override~ // Globe of Power
+    SAY NAME1 @4000
+
   ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
     COPY_EXISTING highhedg.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
       REMOVE_STORE_ITEM
@@ -1026,6 +1027,11 @@ COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_POWER_3.tpa
+  COPY ~item_rev/itm/staf12.spl~ ~override~ // Hold Monster
+    SAY NAME1 @4058
+  COPY ~item_rev/itm/staf12d.eff~ ~override~
+  COPY ~item_rev/itm/staf12d.spl~ ~override~
+
   ACTION_IF (FILE_EXISTS_IN_GAME ~chsam01.cre~) BEGIN
     COPY_EXISTING ~chsam01.cre~ ~override~ // Semaj
       PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
@@ -1035,8 +1041,8 @@ COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
           READ_ASCII (items_offset + (i*0x014) + 0x00) filename
           PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF12~) BEGIN
             WRITE_SHORT (items_offset + (i*0x014) + 0x0a) 0 // Melee
-            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Hold Monster
-            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Globe of Invulnerability
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Globe of Invulnerability
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Hold Monster
           END
         END
       END
@@ -1052,8 +1058,8 @@ COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
           READ_ASCII (items_offset + (i*0x014) + 0x00) filename
           PATCH_IF (~%filename%~ STRING_EQUAL_CASE ~STAF12~) BEGIN
             WRITE_SHORT (items_offset + (i*0x014) + 0x0a) 0 // Melee
-            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Hold Monster
-            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Globe of Invulnerability
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0c) 1 // Globe of Invulnerability
+            WRITE_SHORT (items_offset + (i*0x014) + 0x0e) 1 // Hold Monster
           END
         END
       END

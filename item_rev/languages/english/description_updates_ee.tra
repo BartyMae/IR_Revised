@@ -349,7 +349,7 @@ Weight:~
 //////////////////
 
 // Disabled, catch buckler ~No protection against missile and piercing attacks~
-@100311 = ~~
+@100311 = ~PLACEHOLDER~
 
 // Catch buckler ~No protection against missile and piercing attacks~
 @100312 = ~[ %tab%]No protection against missile and piercing attacks~
