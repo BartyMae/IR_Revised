@@ -85,7 +85,7 @@ COPY ~%source%/AMULET_OF_CHEETAH_SPEED.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/AMULET_OF_PROTECTION_2.tpa
   COPY_EXISTING ~itemexcl.2da~ ~override~
-    APPEND ~itemexcl.2da~ ~DVAMUL01   1          ~
+    APPEND ~itemexcl.2da~ ~DVAMUL01  1~
 >>>>>>>>
 COPY ~%source%/AMULET_OF_PROTECTION_2.tpa~ ~%target%~
 
@@ -319,7 +319,7 @@ COPY ~%source%/CLOAK_OF_THE_SEWERS.tpa~ ~%target%~
     STRING_SET ~66934~ @208
   END
   COPY_EXISTING ~itemexcl.2da~ ~override~
-    APPEND ~itemexcl.2da~ ~CLCK31     1          ~
+    APPEND ~itemexcl.2da~ ~CLCK31  1~
 >>>>>>>>
 COPY ~%source%/CLOAK_OF_PROTECTION_3.tpa~ ~%target%~
 
@@ -800,6 +800,20 @@ COPY ~%source%/RING_OF_INVISIBILITY.tpa~ ~%target%~
 COPY ~%source%/RING_OF_ENERGY.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/RING_OF_OPPORTUNITY.tpa
+  COPY_EXISTING ~itemexcl.2da~ ~override~
+    READ_2DA_ENTRIES_NOW num_rows 2
+    FOR (i = 1; i < num_rows; i += 1) BEGIN
+      READ_2DA_ENTRY_FORMER num_rows i 0 ring25
+      PATCH_IF (FILE_EXISTS_IN_GAME ~ring25.itm~) BEGIN
+        REMOVE_2DA_ROW i 2
+      END
+    END
+  BUT_ONLY
+>>>>>>>>
+COPY ~%source%/RING_OF_OPPORTUNITY.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/RING_OF_FIRE_CONTROL.tpa
   COPY ~item_rev/itm/ring27.eff~ ~override~ // Conjure Lesser Fire Elemental
   COPY ~item_rev/itm/ring27.spl~ ~override~ // Fire Shield
@@ -823,7 +837,7 @@ COPY ~%source%/RING_OF_EARTH_CONTROL.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/RING_OF_PROTECTION_3.tpa
   COPY_EXISTING ~itemexcl.2da~ ~override~
-    APPEND ~itemexcl.2da~ ~RING41     1          ~
+    APPEND ~itemexcl.2da~ ~RING41  1~
 >>>>>>>>
 COPY ~%source%/RING_OF_PROTECTION_3.tpa~ ~%target%~
 
