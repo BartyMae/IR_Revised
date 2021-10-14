@@ -804,9 +804,11 @@ COPY ~%source%/RING_OF_ENERGY.tpa~ ~%target%~
   COPY_EXISTING ~itemexcl.2da~ ~override~
     READ_2DA_ENTRIES_NOW num_rows 2
     FOR (i = 1; i < num_rows; i += 1) BEGIN
-      READ_2DA_ENTRY_FORMER num_rows i 0 ring25
-      PATCH_IF (FILE_EXISTS_IN_GAME ~ring25.itm~) BEGIN
-        REMOVE_2DA_ROW i 2
+      READ_2DA_ENTRY_FORMER num_rows i 0 current_item
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%current_item%.itm~) BEGIN
+        PATCH_IF (~%current_item%~ STRING_EQUAL_CASE ~ring25~) BEGIN
+          REMOVE_2DA_ROW i 2
+        END
       END
     END
   BUT_ONLY
