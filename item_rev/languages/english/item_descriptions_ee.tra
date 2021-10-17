@@ -394,7 +394,9 @@ Not Usable By:
 
 STATISTICS:
 
-Damage: 1d6+1 (slashing or missile)
+Damage: 1d6+1
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 4
 Proficiency Type: Axe
 Type: One-handed
@@ -447,7 +449,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
-Damage: 1d6+2 (slashing or missile)
+Damage: 1d6+2
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -472,7 +476,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d6+3 (slashing or missile)
+Damage: 1d6+3
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -500,7 +506,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
-Damage: 1d6+2 (slashing or missile)
+Damage: 1d6+2
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -633,7 +641,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4
-Damage: 1d6+5 (slashing or missile)
+Damage: 1d6+5
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Axe
 Type: One-handed
@@ -3777,7 +3787,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d4+2 (piercing or missile)
+Damage: 1d4+2
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3797,7 +3809,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d4+2 (piercing or missile)
+Damage: 1d4+2
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3818,7 +3832,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d4+3 (piercing or missile)
+Damage: 1d4+3
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -3985,7 +4001,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +5
-Damage: 1d4+5 (piercing or missile)
+Damage: 1d4+5
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -4905,7 +4923,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d4+3 (crushing or missile)
+Damage: 1d4+3
+Damage Type (melee): Crushing
+Damage Type (thrown): Missile
 Speed Factor: 2
 Proficiency Type: War Hammer
 Type: One-handed
@@ -4978,7 +4998,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +4
-Damage: 1d4+5 (crushing or missile)
+Damage: 1d4+5
+Damage Type (melee): Crushing
+Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: War Hammer
 Type: One-handed
@@ -5955,7 +5977,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d4+4 (crushing or missile)
+Damage: 1d4+4
+Damage Type (melee): Crushing
+Damage Type (thrown): Missile
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: One-handed
@@ -6603,7 +6627,7 @@ Damage: 1d4+4 (missile)
 Launcher: Sling
 
 Weight: 2~
-@1760 = ~Two-Handed Sword~
+@1760 = ~Two-handed Sword~
 @1761 = ~Unholy Reaver +5~ // BG2: This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
 @1762 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
 @1763 = ~Ir'revrykal
@@ -6944,7 +6968,7 @@ Requires:
 Weight: 5
 Usable By:
  Yoshimo~
-@1811 = ~Two-Handed Sword~
+@1811 = ~Unused~
 @1812 = ~Hallowed Redeemer +2~ // BG2: Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. It is exceptionally accurate, but also protects him in battle with a special Fireshield, and any that strike him while he wields it suffer Torm's wrath in the form of magical damage. None but Keldorn may use this sword.
 @1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenceless while judgement falls upon them.
 
@@ -8700,7 +8724,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
-Damage: 1d6+3 (piercing or missile)
+Damage: 1d6+3
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -8724,7 +8750,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d6+2 (piercing or missile)
+Damage: 1d6+2
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
@@ -11099,7 +11127,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2187 = ~Two-Handed Sword +1~
+@2187 = ~Two-handed Sword +1~
 @2188 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This sword is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -11283,7 +11311,7 @@ Requires:
 Weight: 10
 Usable By:
  Good-aligned paladins~
-@2201 = ~Two-Handed Sword +2~
+@2201 = ~Two-handed Sword +2~
 @2202 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
 
 STATISTICS:
@@ -11498,7 +11526,7 @@ Requires:
 Weight: 10
 Usable By:
  Good-aligned paladins~
-@2217 = ~Two-Handed Sword +3~
+@2217 = ~Two-handed Sword +3~
 @2218 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
 
 STATISTICS:
@@ -12498,7 +12526,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1
-Damage: 1d6+2 (slashing or missile)
+Damage: 1d6+2
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed
@@ -12628,7 +12658,9 @@ Combat abilities:
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2
-Damage: 1d6+3 (slashing or missile)
+Damage: 1d6+3
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -13998,7 +14030,9 @@ Combat abilities:
 – Speed: 1 extra attack per round
 
 THAC0: +3
-Damage: 1d6+3 (piercing or missile)
+Damage: 1d6+3
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
@@ -14879,7 +14913,9 @@ Usable By:
 
 STATISTICS:
 
-Damage: 1d6 (piercing or missile)
+Damage: 1d6
+Damage Type (melee): Piercing
+Damage Type (thrown): Missile
 Speed Factor: 6
 Proficiency Type: Spear
 Type: Two-handed
@@ -15173,7 +15209,9 @@ Combat abilities:
 – Frenzy: the wielder gains +5 to THAC0 for 2 rounds upon a critical hit
 
 THAC0: +2
-Damage: 1d6+3 (slashing or missile)
+Damage: 1d6+3
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-handed
@@ -15194,7 +15232,9 @@ Not Usable By:
 STATISTICS:
 
 THAC0: +1
-Damage: 1d6+2 (slashing or missile)
+Damage: 1d6+2
+Damage Type (melee): Slashing
+Damage Type (thrown): Missile
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-handed

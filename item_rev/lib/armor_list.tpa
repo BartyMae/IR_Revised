@@ -519,7 +519,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 ~tg#gwer~  => 0   // ????????
 ~tg#spi2~  => 0   // ????????
 ~tg#were~  => 0   // ????????
-~trollarm~ => 7   // Troll Flesh !?!?!?!?
+~trollarm~ => 7   // Troll Flesh
 ~tzchan01~ => 36  // Elven Chainmail +1
 ~tzchan02~ => 12  // Dwarven Mithril Chain
 ~tzplat01~ => 7   // Wise man's plate
@@ -588,6 +588,22 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 ~s!plat05~ => 23  // Green Wyrm Plate +4
 ~s!plat06~ => 23  // Great Wyrm Armor +5
 
+// TeamBG
+~CMTCH01~  => 4  // Chain Mail +2
+~CMTCH02~  => 36 // Elven Chain +2
+~CMTCH03~  => 36 // Elven Chainmail of the Hand +3
+~CMTCH04~  => 21 // Ashen Scales
+~CMTCH05~  => 36 // Elven Chain Mail +3
+~CMTCH06~  => 4  // Chain Mail
+~CMTPL01~  => 7  // Elemental Plate Mail Armor
+~CMTPL02~  => 14 // Dwarven Mithral Field Plate Armor +2
+~CMTPL03~  => 22 // Wyvern Plate Mail
+~CMTPL04~  => 7  // Durlag's Full Plate
+~CMTPL05~  => 23 // Full Plate Mail
+~CMTPL06~  => 7  // Full Plate Mail
+~CMTPL07~  => 6  // Plate Mail +1
+~CMTPL08~  => 6  // Plate Mail Armor
+
 // Enhanced Edition
 ~ohchan50~ => 5   // Splint Mail +2
 ~ohdarmor~ => 22  // Silver Dragon Scale
@@ -598,40 +614,40 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 ~ohplat50~ => 6   // Plate Mail +2
 
 // SoD (added by Kreso 2017-05-02)
-~bdchan01~ => 2   // Jegg's Leather (studded)
-~bdchan02~ => 1   // Kruntur (leather)
-~bdchan04~ => 4   // Commander's Chain (chain)
-~bdchan05~ => 4   // Corwin's armor (chain)
-~bdchan06~ => 5   // Stalwart Scale (splint)
-~bdchanca~ => 4   // Hallowed Hero (chain)
-~bdchanel~ => 4   // elven chain
-~bdchangh~ => 5   // splint +1
-~bdleat01~ => 3   // Cornugon Revenge (hide)
-~bdleat02~ => 3   // Goblin Hide (hide)
-~bdleat03~ => 2   // Raconteur Regaila (studded)
-~bdleat04~ => 2   // Changeling Vest (studded)
-~bdleat05~ => 2   // Dragonscale (studded)
+~bdchan01~ => 2   // Jegg's Leather
+~bdchan02~ => 1   // Kruntur
+~bdchan04~ => 4   // Commander's Chain
+~bdchan05~ => 4   // Corwin's Armor
+~bdchan06~ => 5   // Stalwart Scale
+~bdchanca~ => 4   // Hallowed Hero
+~bdchanel~ => 4   // Elven Chain
+~bdchangh~ => 5   // Splint +1
+~bdleat01~ => 3   // Cornugon Revenge
+~bdleat02~ => 3   // Goblin Hide
+~bdleat03~ => 2   // Raconteur Regaila
+~bdleat04~ => 2   // Changeling Vest
+~bdleat05~ => 2   // Dragonscale
 ~bdleat06~ => 1   // Goblin Leathers
 ~bdleat07~ => 1   // Night's Embrace
-~bdleat08~ => 3   // Hide +1 (hide)
-~bdplat01~ => 7   // Daeros full plate
-~bdplat03~ => 6   // Bone plate
-~bdplat04~ => 6   // Beetle plate
+~bdleat08~ => 3   // Hide +1
+~bdplat01~ => 7   // Daeros Full Plate
+~bdplat03~ => 6   // Bone Plate
+~bdplat04~ => 6   // Beetle Plate
 
 // SoD to BG2EE Item Upgrade (added by Cahir 2020-05-10)
 ~dtklea02~ => 1   // The Night's Embrace +6
-~dtklea1a~ => 21  // Chromatic Shadow Dragonscale (red)
-~dtklea1b~ => 21  // Chromatic Shadow Dragonscale (blue)
-~dtklea1c~ => 21  // Chromatic Shadow Dragonscale (white)
-~dtklea1d~ => 21  // Chromatic Shadow Dragonscale (silver)
+~dtklea1a~ => 21  // Chromatic Shadow Dragonscale (Red)
+~dtklea1b~ => 21  // Chromatic Shadow Dragonscale (Blue)
+~dtklea1c~ => 21  // Chromatic Shadow Dragonscale (White)
+~dtklea1d~ => 21  // Chromatic Shadow Dragonscale (Silver)
 ~dtklea1e~ => 21  // Umbral Viridian Dragonscale
 ~dtkleat1~ => 21  // Verdant Shadow Dragonscale
 ~dtkleat2~ => 21  // Green Dragonscale +4
-~dtkplat1~ => 22  // Verdant Crimson Dragon Plate (red
-~dtkplt1a~ => 22  // Verdant Crimson Dragon Plate (shadow)
-~dtkplt1b~ => 22  // Verdant Crimson Dragon Plate (blue)
-~dtkplt1c~ => 22  // Verdant Crimson Dragon Plate (white)
-~dtkplt1d~ => 22  // Verdant Crimson Dragon Plate (silver)
+~dtkplat1~ => 22  // Verdant Crimson Dragon Plate (Red)
+~dtkplt1a~ => 22  // Verdant Crimson Dragon Plate (Shadow)
+~dtkplt1b~ => 22  // Verdant Crimson Dragon Plate (Blue)
+~dtkplt1c~ => 22  // Verdant Crimson Dragon Plate (White)
+~dtkplt1d~ => 22  // Verdant Crimson Dragon Plate (Silver)
 ~dtkplt1e~ => 22  // Carmine Viridian Dragon Plate
 
 
