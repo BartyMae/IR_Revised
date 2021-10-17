@@ -24,43 +24,49 @@
 // %old_line%, catch ~4 bonus~ and ~+ 4~
 @100102 = ~\([+]\|[+][ %tab%]+\)?%othaco%\([ %tab%]+[Bb]onus\)?~
 
-// %old_line%, catch ~-3   Penalty~
+// %old_line%, catch ~-3 Penalty~
 @100103 = ~%othaco%\([ %tab%]+[Pp]enalty\)?~
 
 // %new_line%
 @100104 = ~+%nthaco%~
 @100105 = ~%nthaco%~
 
-// catch the main thaco line
+// Catch the main THAC0 line
 @100106 = ~\([%lnl%%mnl%%wnl%]T[Hh][Aa][Cc][Oo0]%colon%.*\)~
 
-// old thaco, catch ~Thac0%colon%  %old_line%~ and ~THACO%colon%  %old_line% (some text in here),~
+// Old THAC0, catch ~Thac0%colon%  %old_line%~ and ~THACO%colon%  %old_line% (some text in here),~
 @100107 = ~T[Hh][Aa][Cc][Oo0]\(%colon%\)[ %tab%]+%old_line%\([ %tab%a-zA-Z()]*,\)?~
 
-// replace @100107 with ~THAC0%colon%~, %col% here matches %colon%
+// Replace @100107 with ~THAC0%colon%~, %col% here matches %colon%
 @100108 = ~THAC0%col%~
 
-// catch ~ThAc0%colon%~
+// Catch ~THAC0%colon%~
 @100109 = ~T[Hh][Aa][Cc][Oo0]\(%colon%\)~
 
-// add %new_line% to @100109
+// Add %new_line% to @100109
 @100110 = ~THAC0%col% %new_line%~
 
-// catch any integer except 0
+// Catch any integer except 0
 @100111 = ~[1-9]~
 
-// catch the main damage line
+// Catch the main damage line
 @100112 = ~[%lnl%%mnl%%wnl%]Damage\(%colon%\)~
 
-// add thaco line to @100112
+// Add THAC0 line to @100112
 @100113 = ~
 THAC0: %new_line%
 Damage\1~
 
-// catch the main weight line
+// Catch the main weight line
 @100114 = ~[%lnl%%mnl%%wnl%]Weight:~
 
-// add thaco line to @100114
+// Catch the main requires line
+@1001140 = ~[%lnl%%mnl%%wnl%]Requires:~
+
+// Catch the main speed factor line
+@10011400 = ~[%lnl%%mnl%%wnl%]Speed Factor:~
+
+// Add THAC0 line to @100114
 @100115 = ~
 THAC0: %new_line%
 Weight:~
@@ -79,33 +85,33 @@ Weight:~
 // %new_line%
 @100120 = ~%ndice%d%nsize%+%ndamage%~
 @100121 = ~%ndice%d%nsize%~
-@100122 = ~+%ndamage% bonus~
-@100123 = ~%ndamage% penalty~
+@100122 = ~+%ndamage%~
+@100123 = ~%ndamage%~
 
-// catch the main damage line
+// Catch the main damage line
 @100124 = ~\([%lnl%%mnl%%wnl%]Damage%colon%.*\)~
 
-// catch ~(Phantom Arrows) %old_line%~ and ~%old_line% piercing~
+// Catch ~(Phantom Arrows) %old_line%~ and ~%old_line% piercing~
 @100125 = ~Damage\(%colon%\)\([ %tab%a-zA-Z()]*\)?%old_line%\([ %tab%a-zA-Z()]*,\)?~
 
-// replace @100125 with ~Damage%colon%~
+// Replace @100125 with ~Damage%colon%~
 @100126 = ~Damage%col%~
 
-// catch ~Damage%colon%~
+// Catch ~Damage%colon%~
 @100127 = ~Damage\(%colon%\)~
 
-// add %new_line% to @100127
+// Add %new_line% to @100127
 @100128 = ~Damage%col% %new_line%~
 
-// add damage line to @100114
+// Add damage line to @10011400
 @100129 = ~
 Damage: %new_line%
-Weight:~
+Speed Factor:~
 
-// catch the main speed factor line
+// Catch the main speed factor line
 @100130 = ~[%lnl%%mnl%%wnl%]Speed[ %tab%]+[Ff]actor\(%colon%\)~
 
-// add damage line to @100130
+// Add damage line to @100130
 @100131 = ~
 Damage: %new_line%
 Speed Factor\1~
@@ -206,48 +212,48 @@ Speed Factor\1~
 // #10303, Moonblade (SW1H13) description, use regexp for the space if necessary
 @100163 = ~[%lnl%%mnl%%wnl%]Bonus to damage:  3~
 
-// #10303, Moonblade (SW1H13) description, use regexp for the space if necessary
-@100164 = ~Bonus to hit:  3~
+// Disabled, #10303, Moonblade (SW1H13) description, use regexp for the space if necessary
+@100164 = ~PLACEHOLDER~
 
-// replace @100164
+// Replace @100164
 @100165 = ~THAC0: +3~
 
-// @1032143 from "gtu.tra", BG2Fixpack
-@100166 = ~Damage: 1d4+3 (+2 bonus missile damage)~
+// Disabled, @1032143 from "gtu.tra", BG2Fixpack
+@100166 = ~PLACEHOLDER~
 
-// replace @100166
-@100167 = ~Damage: 1d4+2~
+// Disabled, replace @100166
+@100167 = ~PLACEHOLDER~
 
 
 //////////////////
 // Proficiency  //
 //////////////////
 
-// catch ~Proficiency type:~
+// Catch ~Proficiency type:~
 @100146 = ~Proficiency[ %tab%]+[Tt]ype:.*~
 
-// replace @100146
+// Replace @100146
 @100147 = ~Proficiency Type: Katana~
 
-// replace @100146
+// Replace @100146
 @100148 = ~Proficiency Type: Flail~
 
-// replace @100146
+// Replace @100146
 @100149 = ~Proficiency Type: Scimitar~
 
-// replace @100146
+// Replace @100146
 @100150 = ~Proficiency Type: Mace~
 
-// replace @100146
+// Replace @100146
 @100199 = ~Proficiency Type: Short Sword~
 
-// replace @100146
+// Replace @100146
 @100168 = ~Proficiency Type: Wakizashi~
 
-// replace @100146
+// Replace @100146
 @100169 = ~Proficiency Type: Morning Star~
 
-// replace @100146
+// Replace @100146
 @100170 = ~Proficiency Type: Ninja-To~
 
 
@@ -288,35 +294,35 @@ Speed Factor (Slashing)\1~
 // Spellcasting //
 //////////////////
 
-// catch ~ Miscast Arcane Magic:\(anything\)~
+// Catch ~ Miscast Arcane Magic:\(anything\)~
 @100300 = ~[%lnl%%mnl%%wnl%][ %tab%]*Miscast[ %tab%]*\([Aa]rcane[ %tab%]*\)?[Mm]agic:.*~
 
-// catch ~ Arcane Spell Failure:\(anything\)~
+// Catch ~ Arcane Spell Failure:\(anything\)~
 @100301 = ~[%lnl%%mnl%%wnl%][ %tab%]*Arcane[ %tab%]*[Ss]pell[ %tab%]*[Ff]ailure:.*~
 
-// catch ~ Spellcasting Time:\(anything\)~
+// Catch ~ Spellcasting Time:\(anything\)~
 @100302 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spellcasting[ %tab%]*[Tt]ime:.*~
 
-// catch ~ Spell failure:\(anything\)~
+// Catch ~ Spell Failure:\(anything\)~
 @100303 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spell[ %tab%]*[Ff]ailure:.*~
 
-// catch ~ Allows arcane spellcasting without penalties\(anything\)~
+// Catch ~ Allows arcane spellcasting without penalties\(anything\)~
 @100304 = ~[%lnl%%mnl%%wnl%][ %tab%]*Allows arcane spellcasting without penalties.*~
 
-// add spellcasting failure line to @100114
+// Add spellcasting failure line to @100114
 @100305 = ~
 Arcane Spell Failure: %xfail%%
-Weight:~
+Requires:~
 
-// add spellcasting speed line to @100114
+// Add spellcasting speed line to @100114
 @100306 = ~
 Arcane Casting Time Penalty: +%xspd%
-Weight:~
+Requires:~
 
-// add spellcasting speed line to @100114
+// Add spellcasting speed line to @100114
 @100307 = ~
 Casting Time Penalty: +%xspd%
-Weight:~
+Requires:~
 
 
 //////////////////
@@ -326,22 +332,22 @@ Weight:~
 // Add dexterity penalty line to @100114
 @100308 = ~
 Dexterity Penalty: %xdex%%
-Weight:~
+Requires:~
 
 // Add movement penalty line to @100114
 @100309 = ~
 Movement Rate Penalty: %xmove%%
-Weight:~
+Requires:~
 
 // Add speed factor penalty line to @100114
 @100310 = ~
 Speed Factor Penalty: +%xsf%
-Weight:~
+Requires:~
 
-// Add speed factor penalty line to @100114
+// Add physical resistance line to @100114
 @100299 = ~
 Physical Resistance Bonus: +%xres%%
-Weight:~
+Requires:~
 
 
 //////////////////
@@ -379,13 +385,13 @@ Weight:~
 @100320 = ~\1
 – THAC0: -2~
 
-// Catch, disabled
+// Disabled, catch ~Special: +1 vs. Missile Weapons~
 @100321 = ~PLACEHOLDER~
 
-// Catch, disabled
+// Disabled, catch ~Special: +1 AC bonus vs. Missile Weapons~
 @100322 = ~PLACEHOLDER~
 
-// Replace, disabled
+// Disabled, replace @100322
 @100323 = ~PLACEHOLDER~
 
 // Add THAC0 penalty line to @100319 (medium shield)
@@ -422,7 +428,7 @@ Special: +2 vs. Missile Weapons~
 // Add stealth line to @100114
 @100331 = ~
 Stealth Penalty: -%value%%
-Weight:~
+Requires:~
 
 
 //////////////////
@@ -637,7 +643,7 @@ Weight:~
 //  Revised Critical Hit Aversion  //
 /////////////////////////////////////
 
-// Catch lonely ~Protects against critical hits~
+// Catch ~Protects against critical hits~
 @100422 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Protects against critical hits~
 
 // Catch "Equipped abilities"

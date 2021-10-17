@@ -2,26 +2,26 @@ INCLUDE ~item_rev/lib/descriptions.tpa~
 INCLUDE ~item_rev/lib/armor_list.tpa~
 
 //////////////////////////////////////////////
-//  descriptions
+// Descriptions
 
 DEFINE_PATCH_MACRO encumbrance BEGIN
   PATCH_IF xdex<0 BEGIN
-    SPRINT t1 @100114
+    SPRINT t1 @1001140
     SPRINT t2 @100308
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
   PATCH_IF xmove<0 BEGIN
-    SPRINT t1 @100114
+    SPRINT t1 @1001140
     SPRINT t2 @100309
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
   PATCH_IF xsf>0 BEGIN
-    SPRINT t1 @100114
+    SPRINT t1 @1001140
     SPRINT t2 @100310
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
   PATCH_IF xres>0 BEGIN
-    SPRINT t1 @100114
+    SPRINT t1 @1001140
     SPRINT t2 @100299
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
@@ -29,7 +29,7 @@ END
 
 
 //////////////////////////////////////////////
-//  reading table
+// Reading table
 
 DEFINE_PATCH_MACRO calc BEGIN
   READ_2DA_ENTRY_FORMER rn armor column value
@@ -43,7 +43,7 @@ COPY - ~item_rev/lib/armor_penalty_table.txt~ override
   READ_2DA_ENTRIES_NOW rn 11
 
 //////////////////////////////////////////////
-//  patching
+// Patching
 
 ACTION_PHP_EACH armor AS ind => res BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%ind%.itm~ BEGIN
