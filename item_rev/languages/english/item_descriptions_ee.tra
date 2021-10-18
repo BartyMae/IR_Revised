@@ -9,6 +9,7 @@ Equipped abilities:
 – Armor Class: +1
 – Saving Throws: +1
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell 'Shield'. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
@@ -21,6 +22,7 @@ Equipped abilities:
 
 NOTE: Multiple Shield effects are not cumulative.
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1006 = ~Amulet of Metaspell Influence~
@@ -33,6 +35,7 @@ Equipped abilities:
 – Casting Speed: +1
 – Protects Against: Silence
 
+Weight: 0
 Usable By:
  Bard
  Cleric
@@ -48,6 +51,7 @@ STATISTICS:
 Equipped abilities:
 – Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1010 = ~Silver Charm~ // BG1: Wolfsbane Charm: A silver amulet containing powdered wolfsbane.
@@ -58,6 +62,7 @@ STATISTICS:
 Equipped abilities:
 – Silver Glow: +2 to Armor Class and Saving Throws vs. vampires and werewolves
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1012 = ~Amulet of Energy Shielding~
@@ -68,6 +73,7 @@ STATISTICS:
 Equipped abilities:
 – Energy Resistance: +25%
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1014 = ~Kaligun's Amulet of Magic Resistance~
@@ -81,6 +87,7 @@ Special abilities:
 Equipped abilities:
 – Magic Resistance: +10%
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!" It has seen much use, and changed hands many times through blood and battle.
@@ -96,6 +103,7 @@ Equipped abilities:
 – Caster Level: +2
 – Spell Memorization: arcane and divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
+Weight: 0
 Usable By:
  Bard
  Cleric
@@ -111,6 +119,7 @@ STATISTICS:
 Equipped abilities:
 – Protects Against: Poison
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1020 = ~Periapt of Life Protection~
@@ -123,6 +132,7 @@ STATISTICS:
 Equipped abilities:
 – Protects Against: Death and Level Drain
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1022 = ~Periapt of Form Stability~ // BG2: Necklace of Form Stability
@@ -133,6 +143,7 @@ STATISTICS:
 Equipped abilities:
 – Protects Against: Disintegration, Petrification, and Polymorph
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1024 = ~Amulet of Spell Warding~
@@ -146,6 +157,7 @@ Special abilities:
 Equipped abilities:
 – Saving Throws: +2
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1026 = ~Amulet of Cheetah Speed~ // BG2: This amulet grants its wearer fleetness of foot. Not surprisingly, it is popular among fleeing felons, travelers, and cowards.
@@ -164,6 +176,7 @@ Equipped abilities:
 – Movement Rate: +2
 – Speed Factor: +1
 
+Weight: 0
 Not Usable By:
  Monk
  Wizard Slayer~
@@ -179,6 +192,7 @@ Equipped abilities:
 
 NOTE: Multiple Protection from Evil effects are not cumulative.
 
+Weight: 0
 Usable By:
  All~
 @1030 = ~Amulet of the Master Harper~ // BG2: This medallion is highly sought after by both thieves and bards, though for different reasons. In addition to providing powerful magical protection against physical attacks, the amulet increases the wearer's proficiency in several rogue skills. But even more valuable, from the bard's perspective, is the amulet's ability to grant the wearer immunity to all forms of silence.
@@ -194,6 +208,7 @@ Equipped abilities:
 – Find Traps: +20%
 – Detect Illusions: +20%
 
+Weight: 0
 Usable By:
  Bard
  Thief~
@@ -1756,7 +1771,7 @@ STATISTICS:
 Equipped abilities:
 – Electricity Resistance: +50%
 
-Weight: 3
+Weight: 2
 Usable By:
  All~
 @1204 = ~Boots of Elvenkind~ // BG2: These soft boots make the wearer move as silently as the woodland elves. Thieves love to get their hands on these boots, but the elves are reluctant about exporting them, fearful that they may be used for illegal purposes.
@@ -3793,6 +3808,8 @@ Damage Type (thrown): Missile
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
+Requires:
+ 3 Strength
 
 Weight: 1
 Not Usable By:
@@ -6069,6 +6086,7 @@ STATISTICS:
 Special abilities:
 – Fireball (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1692 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6082,6 +6100,7 @@ STATISTICS:
 Special abilities:
 – Improved Invisibility (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1693 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6095,6 +6114,7 @@ STATISTICS:
 Special abilities:
 – Stoneskin (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1694 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6108,6 +6128,7 @@ STATISTICS:
 Special abilities:
 – True Seeing (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1695 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6121,6 +6142,7 @@ STATISTICS:
 Special abilities:
 – Confusion (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1696 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6134,6 +6156,7 @@ STATISTICS:
 Special abilities:
 – Spell Shield (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1697 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6147,6 +6170,7 @@ STATISTICS:
 Special abilities:
 – Invisible Stalker (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1698 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6160,6 +6184,7 @@ STATISTICS:
 Special abilities:
 – Cloudkill (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1699 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6173,6 +6198,7 @@ STATISTICS:
 Special abilities:
 – Domination (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1700 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6186,6 +6212,7 @@ STATISTICS:
 Special abilities:
 – Skull Trap (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1701 = ~Bottle~
@@ -6198,6 +6225,7 @@ STATISTICS:
 Special abilities:
 – Summon Efreeti (once per day): 1 turn
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1705 = ~Figurine~
@@ -6222,6 +6250,7 @@ Special Characteristics:
 – Magic Resistance: 10%
 – Protected Against: Normal Weapons
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1709 = ~Black Spider Figurine~
@@ -6250,6 +6279,7 @@ Special Characteristics:
 – Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
 – Web Tangle (three times per day): target is held for 2 rounds (save vs. Breath negates)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1711 = ~Horn~
@@ -6262,6 +6292,7 @@ STATISTICS:
 Special abilities:
 – Sonic Blast (three times per day): an area of 10 ft. around the user is blasted with a powerful sonic wave, dealing 4d4 crushing and stunning opponents for 1 round (save vs. Breath neg. stun)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1715 = ~Gloves~
@@ -6284,6 +6315,7 @@ Berserker (5 HD):
 Special Characteristics:
 – Enrage (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @171700000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a fifth level warrior who will fight for the summoner for five turns.
@@ -6304,6 +6336,7 @@ Berserker (5 HD):
 Special Characteristics:
 – Enrage (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1718 = ~Bronze Horn of Valhalla~
@@ -6325,6 +6358,7 @@ Berserker (7 HD):
 Special Characteristics:
 – Enrage (twice per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @171900000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a seventh level warrior who will fight for the summoner for five turns.
@@ -6345,6 +6379,7 @@ Berserker (7 HD):
 Special Characteristics:
 – Enrage (twice per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1720 = ~Iron Horn of Valhalla~
@@ -6366,6 +6401,7 @@ Berserker (9 HD):
 Special Characteristics:
 – Enrage (three times per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @172100000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a ninth level warrior who will fight for the summoner for five turns.
@@ -6386,6 +6422,7 @@ Berserker (9 HD):
 Special Characteristics:
 – Enrage (three times per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1722 = ~Horn of Silence~
@@ -6396,6 +6433,7 @@ STATISTICS:
 Special abilities:
 – Silence 15' Radius (three times per day): opponents within 15 ft. are silenced for 1 turn (save vs. Spell at -4 negates)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1724 = ~Harp~
@@ -6408,6 +6446,7 @@ STATISTICS:
 Special abilities:
 – Confusion (three times per day): opponents within 30 ft. are confused for 5 rounds (save vs. Spell at -2 negates)
 
+Weight: 1
 Usable By:
  Bard~
 @1728 = ~Azlaer's Harp~
@@ -6422,6 +6461,7 @@ STATISTICS:
 Special abilities:
 – Resist Fear (three times per day): allies within 30 ft. are immune to fear for 1 turn
 
+Weight: 1
 Usable By:
  Bard~
 @1730 = ~Methild's Harp~
@@ -6434,6 +6474,7 @@ STATISTICS:
 Special abilities:
 – Break Enchantment (three times per day): an ally within 10 ft. is freed from enchantments and/or curses currently affecting them
 
+Weight: 1
 Usable By:
  Bard~
 @1732 = ~Glasses of Identification~
@@ -6444,6 +6485,7 @@ STATISTICS:
 Special abilities:
 – Identify (three times per day)
 
+Weight: 1
 Usable By:
  All~
 @1734 = ~Harper Pin~
@@ -6458,6 +6500,7 @@ Equipped abilities:
 – Spell: Non-Detection
 – Spell Immunity: Magic Missile
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1737 = ~Wooden Stake~
@@ -6475,6 +6518,8 @@ Damage: 1d4+2 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
+Requires:
+ 3 Strength
 
 Weight: 1
 Not Usable By:
@@ -6521,6 +6566,8 @@ Damage: 1d4+1 (piercing)
 Speed Factor: 1
 Proficiency Type: Dagger
 Type: One-handed
+Requires:
+ 3 Strength
 
 Weight: 1
 Not Usable By:
@@ -6660,49 +6707,63 @@ Usable By:
 @1767 = ~This scroll protects its user from all acid-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as acidic dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Melf's Acid Arrow and Acid Fog. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1768 = ~Protection from Cold~
 @1769 = ~This scroll protects its user from all cold-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as icy dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Ice Storm and Cone of Cold. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1770 = ~Protection from Electricity~
 @1771 = ~This scroll protects its reader from all electricity-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as electrical dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Lightning Bolt, Glyph of Warding, Call Lightning, and Chain Lightning. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1772 = ~Protection from Fire~
 @1773 = ~This scroll protects its reader from all fire-based attacks, whether magical or non-magical in origin. All of the damage from attacks such as fiery dragon breath will be absorbed, and the user will become completely immune to the effects of spells such as Burning Hands, Agannazar's Scorcher, Fireball, Flame Strike, and Fire Storm. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1774 = ~Protection from Magic~
 @1775 = ~This scroll creates a very powerful globe of anti-magic in a 3' radius around the reader. No form of magic can pass into it or out from it, and any spell effects currently affecting the target will be removed. The globe cannot be dispelled, nor breached by most anti-magic attacks, but a Spellstrike spell can destroy it. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1776 = ~Protection from Ailments~
 @1777 = ~This scroll will protect the reader from all forms of poison and disease, be they of a natural or magical nature. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1778 = ~Protection from Undead~
 @1779 = ~This scroll creates a magical barrier around the reader at a distance of one foot. The barrier moves with the recipient and protects him from all forms of attack made by undead creatures. The recipient is immune to level drain effects, attacks made by undead creatures against the user receive -2 to THAC0, and any Saving Throws caused by such attacks are made by the user with a +2 bonus. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1780 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -6712,6 +6773,7 @@ STATISTICS:
 Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize two extra spells of each level from 1st to 9th
 
+Weight: 0
 Usable By:
  Edwin~
 @178000000 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -6722,6 +6784,7 @@ Equipped abilities:
 – Save vs. Death: +3
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 9th
 
+Weight: 0
 Usable By:
  Edwin~
 @1781 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -6731,6 +6794,7 @@ STATISTICS:
 Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 9th
 
+Weight: 0
 Usable By:
  Edwin~
 @1782 = ~Jansen AdventureWear~ // BG2: This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant a +25% resistance to all physical damage and an additional +5 bonus to Jan's armor class against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
@@ -6777,6 +6841,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1786 = ~Imoen's Belt~
+Weight: 0
 @1787 = ~Imoen does not know when or how she acquired this belt, and despite all of her efforts and magic, it cannot be removed or unbuckled.
 
 STATISTICS:
@@ -7587,18 +7652,19 @@ STATISTICS:
 Equipped abilities:
 – Fire Resistance: +50%
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1865 = ~Band of the Forest~ // BG1/BG2: Ring of Animal Friendship
 @1866 = ~Druid's Ring
 This slender band of green metal has a strange, organic warmth to it - more like a vine than a circle of steel. A druid order in Cormanthor is said to cautiously guard the secret to the construction of these rings, which have never been seen in the possession of anyone outside their immediate membership. How this particular ring escaped the protection of their forest is unknown, but there are rumors that an outcast could have brought it into exile with him.
 
-
 STATISTICS:
 
 Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
+Weight: 0
 Usable By:
  Druid
  Ranger~
@@ -7611,6 +7677,7 @@ STATISTICS:
 Special abilities:
 – Invisibility (three times per day): 5 turns
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1869 = ~Ring of Protection +1~ // BG1/BG2: Ring of the Princes: This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.
@@ -7622,6 +7689,7 @@ Equipped abilities:
 – Armor Class: +1
 – Saving Throws: +1
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1871 = ~Ring of Protection +2~
@@ -7634,6 +7702,7 @@ Equipped abilities:
 – Armor Class: +2
 – Saving Throws: +2
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1873 = ~Ring of Wizardry~ // BG1/BG2: Reaching Ring: This ring is masterfully enchanted, allowing the wearer to memorize more spells than normally possible. It was originally commissioned by spellcaster <CHARNAME>, apparently at great monetary and personal cost.
@@ -7645,6 +7714,7 @@ STATISTICS:
 Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 4th
 
+Weight: 0
 Usable By:
  Mage~
 @1875 = ~Ring of Free Action~
@@ -7656,6 +7726,7 @@ STATISTICS:
 Equipped abilities:
 – Spell: Free Action
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1877 = ~Ring of Energy~
@@ -7670,6 +7741,7 @@ Special abilities:
 Equipped abilities:
 – Magic Damage Resistance: +25%
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1879 = ~Ring of Night's Embrace~ // BG1/BG2: Ring of Infravision: Topsider's Crutch: Merchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground.
@@ -7681,6 +7753,7 @@ Equipped abilities:
 – Hide in Shadows: +40%
 – Spell: Infravision
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1881 = ~Ring of Holiness~ // BG1/BG2: Honorary Ring of Sune: Rings of this type were given to faithful priests of Sune who demonstrated actions of astounding integrity and kindness.
@@ -7692,6 +7765,7 @@ STATISTICS:
 Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
+Weight: 0
 Usable By:
  Cleric
  Paladin~
@@ -7703,6 +7777,7 @@ STATISTICS:
 Special abilities:
 – Limited Wish (once per day)
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1885 = ~Ring of Fire Control~
@@ -7717,6 +7792,7 @@ Special abilities:
 Equipped abilities:
 – Fire Resistance: +50%
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1887 = ~Ring of Air Control~
@@ -7731,6 +7807,7 @@ Special abilities:
 Equipped abilities:
 – Spell Immunity: Stinking Cloud, Cloudkill, Acid Fog, and Incendiary Cloud
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1889 = ~Ring of Earth Control~
@@ -7745,6 +7822,7 @@ Special abilities:
 Equipped abilities:
 – Armor Class: +2
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1891 = ~Ring of Human Influence~
@@ -7759,6 +7837,7 @@ Equipped abilities:
 – Charisma: +2
 – Human Influence: +2 to Armor Class and Saving Throws vs. humans
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1893 = ~Ring of Regeneration~
@@ -7769,6 +7848,7 @@ STATISTICS:
 Equipped abilities:
 – Regeneration: 1 HP/round
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1895 = ~Ring of the Ram~
@@ -7782,6 +7862,7 @@ Special abilities:
 Combat Abilities (monks only):
 – Knockdown: 33% chance creatures struck by the wearer in melee are knocked unconscious for 1 round (save vs. Death negates)
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1897 = ~Ring of Spell Turning~
@@ -7795,6 +7876,7 @@ Special abilities:
 Equipped abilities:
 – Magic Resistance: +10%
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1899 = ~Ring of the Burglar~ // BG2: Ring of Lock Picks
@@ -7806,6 +7888,7 @@ Equipped abilities:
 – Dexterity: +1
 – Open Locks: +20%
 
+Weight: 0
 Usable By:
  Thief~
 @1901 = ~Ring of Danger Sense~
@@ -7818,6 +7901,7 @@ Equipped abilities:
 – Find Traps: +20%
 – Protects Against: Backstabs
 
+Weight: 0
 Usable By:
  Monk
  Thief~
@@ -7835,6 +7919,7 @@ Equipped abilities:
 – Regeneration: 1 HP/round
 – Protects Against: Disease and Poison
 
+Weight: 0
 Not Usable By:
  Paladin
  Wizard Slayer~
@@ -7846,6 +7931,7 @@ STATISTICS:
 Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 0
 Usable By:
  Mage~
 @1907 = ~Ring of Protection +3~
@@ -7858,6 +7944,7 @@ Equipped abilities:
 – Armor Class: +3
 – Saving Throws: +3
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1909 = ~Ring of the Wraith~ // BG2: Ring of Improved Invisibility
@@ -7872,6 +7959,7 @@ Special abilities:
 Equipped abilities:
 – Wraith Form: the wearer moves silently and cannot be backstabbed, is vulnerable only to magical weapons or attacks, and is immune to spells and abilities that don't affect incorporeal creatures
 
+Weight: 0
 Usable By:
  Thief~
 @1911 = ~Heartwood Ring~
@@ -7883,6 +7971,7 @@ Equipped abilities:
 – Elemental Resistance: +25%
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 1
 Usable By:
  Druid
  Ranger~
@@ -7898,6 +7987,7 @@ Equipped abilities:
 Combat abilities:
 – Vampiric: creatures struck by the wearer in melee are drained 1d4 Hit Points and transfer them to the wearer
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1915 = ~Rod~
@@ -11585,6 +11675,7 @@ Equipped abilities:
 – Charisma: +1
 – Protects Against: Hold and Stun
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2223 = ~Dak'kon's Zerth Blade +2~
@@ -11678,6 +11769,7 @@ Equipped abilities:
 – Detect Illusions: +20%
 – Set Traps: +20%
 
+Weight: 0
 Usable By:
  Thief~
 @2231 = ~Robe of Larloch~
@@ -11762,6 +11854,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11778,6 +11871,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2245 = ~Wand of Paralyzation~
@@ -11793,6 +11887,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11809,6 +11904,7 @@ Special abilities (consume charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11825,6 +11921,7 @@ Special abilities (consume charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11841,6 +11938,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11857,6 +11955,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2255 = ~Wand of Polymorphing~
@@ -11872,6 +11971,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Druid
@@ -11889,6 +11989,7 @@ Special abilities (consumes charges):
 Requires:
  9 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11906,6 +12007,7 @@ Requires:
  9 Intelligence
  10 Wisdom
 
+Weight: 1
 Usable By:
  Cleric
  Druid~
@@ -11936,6 +12038,7 @@ Special abilities (consumes charges):
 Requires:
  10 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11953,6 +12056,7 @@ Special abilities (consume charges):
 Requires:
  12 Intelligence
 
+Weight: 1
 Usable By:
  Bard
  Mage~
@@ -11969,6 +12073,7 @@ Special abilities (consume charges):
 Requires:
  9 Intelligence
  
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2269 = ~Heavy Crossbow~
@@ -12634,6 +12739,8 @@ STATISTICS:
 
 Equipped abilities:
 – Maximum Hit Points: +10
+
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2323 = ~Arrow of Slaying +1~ // BG1/BG2: This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
@@ -13008,7 +13115,7 @@ Equipped abilities:
 – THAC0: -2
 – Casting Speed: -1
 
-Weight: 1
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2373 = ~Ring of Folly~
@@ -13023,14 +13130,14 @@ Equipped abilities:
 – Casting Speed: +1
 – Wild Magic: any spell cast by the wearer is affected by wild surges
 
-Weight: 1
+Weight: 0
 Usable By:
  Mage~
 @2375 = ~Protection from Alterations~
 @2376 = ~This scroll offers protection to the reader from most transmutation attacks, such as slow, polymorph, disintegration, and petrification. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
- 10 Intelligence
+ 9 Intelligence
 
 Not Usable By:
  Wizard Slayer~
@@ -13399,6 +13506,7 @@ STATISTICS:
 Equipped abilities:
 – Luck: +1 (+5% for skills)
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2419 = ~Nester's Dagger~
@@ -13415,6 +13523,7 @@ STATISTICS:
 Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize twice as many 1st level spells
 
+Weight: 0
 Usable By:
  Mage~
 @2426 = ~The World's Edge +3~
@@ -13451,6 +13560,7 @@ STATISTICS:
 Special abilities (consumes charge):
 – Raise Constitution: permanent
 
+Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2432 = ~Manual of Gainful Exercise~
@@ -13461,6 +13571,7 @@ STATISTICS:
 Special abilities (consumes charge):
 – Raise Strength: permanent
 
+Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2434 = ~Manual of Quickness of Action~
@@ -13471,6 +13582,7 @@ STATISTICS:
 Special abilities (consumes charge):
 – Raise Dexterity: permanent
 
+Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2436 = ~Tome~
@@ -13482,6 +13594,7 @@ STATISTICS:
 Special abilities (consumes charge):
 – Raise Intelligence: permanent
 
+Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2439 = ~Tome of Leadership and Influence~
@@ -13492,6 +13605,7 @@ STATISTICS:
 Special abilities (consumes charge):
 – Raise Charisma: permanent
 
+Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2441 = ~Tome of Understanding~
@@ -13502,6 +13616,7 @@ STATISTICS:
 Special abilities (consumes charge):
 – Raise Wisdom: permanent
 
+Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2443 = ~Greagan's Harp~
@@ -13513,6 +13628,7 @@ STATISTICS:
 Special abilities:
 – Domination (once per day)
 
+Weight: 1
 Usable By:
  Bard~
 @2445 = ~Shaman's Staff~
@@ -13581,6 +13697,7 @@ Special Characteristics:
 – Mirror Image (three times per day)
 – Improved Invisibility (once per day)
 
+Weight: 1
 Not Usable By:
  Evil-aligned characters
  Wizard Slayer~
@@ -13592,6 +13709,7 @@ STATISTICS:
 Special abilities:
 – Dire Charm (three times per day)
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2453 = ~Harmonium Halberd +3~
@@ -13626,6 +13744,7 @@ STATISTICS:
 Special abilities:
 – Pandemonium (three times per day): opponents within 30 ft. are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
 
+Weight: 1
 Usable By:
  Bard~
 @2457 = ~Axe of Hrothgar +3~
@@ -13840,6 +13959,7 @@ Special Characteristics:
 Requires:
  16 Intelligence
 
+Weight: 1
 Usable By:
  Mage~
 @2475 = ~Clay Golem Manual~
@@ -13867,6 +13987,7 @@ Special Characteristics:
 Requires:
  16 Intelligence
 
+Weight: 1
 Usable By:
  Mage~
 @2477 = ~Stone Golem Manual~
@@ -13893,6 +14014,7 @@ Special Characteristics:
 Requires:
  16 Intelligence
 
+Weight: 1
 Usable By:
  Mage~
 @2479 = ~Juggernaut Golem Manual~
@@ -13920,6 +14042,7 @@ Special Characteristics:
 Requires:
  16 Intelligence
 
+Weight: 1
 Usable By:
  Mage~
 @2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
@@ -14055,6 +14178,7 @@ STATISTICS:
 Equipped abilities:
 – Elemental Resistance: +15%
 
+Weight: 1
 Usable By:
  Druid
  Ranger~
@@ -14063,6 +14187,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2489 = ~Dawn Ring~
@@ -14070,6 +14195,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2491 = ~Delryn Family Ring~
@@ -14077,6 +14203,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2493 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
@@ -14092,7 +14219,6 @@ Usable By:
 STATISTICS:
 
 Weight: 2
-
 Usable By:
  All~
 @2496 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
@@ -14119,6 +14245,7 @@ Gladiator (11 HD):
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @249900000 = ~This statue is a replica of a fierce gladiator, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue armored warrior wielding magical short swords.
@@ -14136,6 +14263,7 @@ Gladiator (11 HD):
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2500 = ~Shadow Thief Cloak~
@@ -14173,6 +14301,7 @@ Equipped abilities:
 – Armor Class: +2
 – Saving Throws: +2
 
+Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2507 = ~Poisoned Arrow~ // BG1: These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows. He is the only person who can safely handle them.
@@ -14208,6 +14337,7 @@ STATISTICS:
 Equipped abilities:
 – Luck: +2 (+10% for skills)
 
+Weight: 0
 Usable By:
  Alora~
 @2513 = ~Necklace of Talos~
@@ -14223,6 +14353,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2517 = ~Keepsake Locket~
@@ -14230,6 +14361,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2519 = ~Mask of King Strohm III~
@@ -14261,6 +14393,7 @@ STATISTICS:
 Equipped abilities:
 – Domination
 
+Weight: 0
 Usable By:
  All~
 @2527 = ~Mantle of Waukeen~
@@ -14276,6 +14409,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2531 = ~Pendant~
@@ -14283,6 +14417,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2533 = ~This is a long staff made of thick, sturdy oak. It is crawling with a strange, black radiance and feels quite warm and tingly to the touch. Small runes of arcane origin have been carved in various places at both ends.
@@ -14336,11 +14471,13 @@ STATISTICS:
 Special abilities:
 – Domination (consumes charges): permanent
 
+Weight: 0
 Usable By:
  All~
 @2538 = ~Brine Potion~
 @2539 = ~A potion obtained from a briny pool in which young illithids, tadpole like creatures, live and grow. When used, the potion will temporarily make the user immune to psionics.
 
+Weight: 1
 Usable By:
  All~
 @2540 = ~Patrol Leader's Helm~
@@ -14363,6 +14500,7 @@ Not Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2544 = ~Golden Circlet~
@@ -14372,6 +14510,7 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2548 = ~Sword Medallion~
@@ -14379,11 +14518,13 @@ Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2550 = ~Tree of Life Fruit~
 @2551 = ~A beautiful glittering fruit taken from the section of the Tree of Life that grows through the palace. The fruit has a tantalizing smell and looks ripe enough to eat. When consumed, this fruit restores 50 Hit Points to the user.
 
+Weight: 0
 Usable By:
  All~
 @2552 = ~Big Metal Rod +5~
@@ -14483,6 +14624,7 @@ Not Usable By:
 
 STATISTICS:
 
+Weight: 0
 Usable By:
  All~
 @2569 = ~Battle Axe of Mauletar +2~
@@ -14641,6 +14783,7 @@ Equipped abilities:
 – Casting Speed: +1
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 0
 Usable By:
  Good-aligned clerics~
 @2585 = ~Holy Symbol of Helm~
@@ -14653,6 +14796,7 @@ Equipped abilities:
 – Casting Speed: +1
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 0
 Usable By:
  Neutral-aligned clerics~
 @2587 = ~Holy Symbol of Talos~
@@ -14665,6 +14809,7 @@ Equipped abilities:
 – Casting Speed: +1
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 0
 Usable By:
  Evil-aligned clerics~
 @2589 = ~Holy Symbol of Baervan~
@@ -14677,6 +14822,7 @@ Equipped abilities:
 – Casting Speed: +1
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 0
 Usable By:
  Good-aligned clerics~
 @2591 = ~Holy Symbol of Shar~
@@ -14689,6 +14835,7 @@ Equipped abilities:
 – Casting Speed: +1
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
+Weight: 0
 Usable By:
  Evil-aligned clerics~
 @2593 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14702,6 +14849,7 @@ STATISTICS:
 Special abilities:
 – Vocalize (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2594 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14715,6 +14863,7 @@ STATISTICS:
 Special abilities:
 – Cone of Cold (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2595 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14728,6 +14877,7 @@ STATISTICS:
 Special abilities:
 – Animate Dead (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2596 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14741,6 +14891,7 @@ STATISTICS:
 Special abilities:
 – Lower Resistance (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2597 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14754,6 +14905,7 @@ STATISTICS:
 Special abilities:
 – Greater Malison (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2598 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14767,6 +14919,7 @@ STATISTICS:
 Special abilities:
 – Mirror Image (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2599 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14780,6 +14933,7 @@ STATISTICS:
 Special abilities:
 – Breach (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2600 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14793,6 +14947,7 @@ STATISTICS:
 Special abilities:
 – Haste (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2601 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14806,6 +14961,7 @@ STATISTICS:
 Special abilities:
 – Hold Monster (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2602 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -14819,6 +14975,7 @@ STATISTICS:
 Special abilities:
 – Pierce Magic (once per day)
 
+Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2603 = ~Nature's Ward +2~
@@ -14952,6 +15109,14 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
+@2621 = ~Talisman of Rillifane~
+@2622 = ~This is the holy symbol of the elven god Rillifane.
+
+STATISTICS:
+
+Weight: 0
+Usable By:
+ All~
 @4000 = ~Globe of Power~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
@@ -15452,7 +15617,7 @@ Equipped abilities:
 – Spell: Non-Detection
 
 Combat abilities:
-– Knockback: 33% chance target is knocked away unconscious for 1 round (save vs. Death negates)
+– Knockdown: 33% chance target is knocked unconscious for 1 round (save vs. death neg.)
 
 THAC0: +1
 Damage: 1d4+2 (crushing)
@@ -15529,6 +15694,7 @@ STATISTICS:
 *CURSED*
 
 Equipped abilities:
+– Protects Against: Poison
 – Zombification: wearer's appearance is set to that of a zombie
 – Charisma: -4
 
@@ -15622,7 +15788,7 @@ Not Usable By:
 STATISTICS:
 
 Combat abilities:
-– Touch of Fire: 50% chance upon each successful hit that either the target or the wielder will suffer 1 fire damage
+– Touch of Fire: each successful hit either the target or the wielder will suffer 1 fire damage
 
 THAC0: +1
 Damage: 1d6+1 (crushing)

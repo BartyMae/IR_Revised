@@ -494,6 +494,7 @@ GOLDEN_CIRCLET                             *        miscaa   1        1        0
 SUN_MEDALLION                              AMULET   miscad   1        1        0        0        1        1        @2546    @2546    @2547    @2547    *        *        *        *
 SWORD_MEDALLION                            AMULET   miscae   1        1        0        0        1        1        @2548    @2548    @2549    @2549    *        *        *        *
 WORN_OUT_BOOTS#QUEST                       BOOTS    miscai   1        1        0        0        1        1        @2494    @2494    @2495    @2495    *        *        *        *
+TALISMAN_OF_RILLIFANE#QUEST                AMULET   miscb1   1        1        0        0        1        1        @2621    @2621    @2622    @2622    *        *        *        *
 BLACKRAZOR_4                               SWORDL   miscbc   1        1        0        0        1        1        @1513    @1741    @1515    @1742    *        *        *        *
 TREE_OF_LIFE_FRUIT                         *        miscbq   1        1        0        0        1        1        @2550    @2550    @2551    @2551    *        *        *        *
 MANUAL_OF_BODILY_HEALTH                    *        book03   1        1        1        1        1        1        @2428    @2430    @2429    @2431    *        *        *        *
