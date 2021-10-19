@@ -466,7 +466,7 @@ EMBARLS_DAGGER                             DAGGER   misc4u   1        1        0
 NECKLACE_OF_TALOS                          AMULET   misc4y   1        1        0        0        1        1        @2513    @2513    @2514    @2514    *        *        *        *
 HARPER_AMULET                              AMULET   misc5e   1        1        0        0        1        1        @2567    @2567    @2568    @2568    *        *        *        *
 LOVERS_RING                                RING     misc5r   1        1        0        0        1        1        @2515    @2515    @2516    @2516    *        *        *        *
-SHAMANS_STAFF                              STAFF    misc5t   1        1        0        0        1        1        @2445    @2445    #-1      @2446    @2445    @4032    *        *
+SHAMANS_STAFF                              STAFF    misc5t   1        1        0        0        1        1        @2445    @2445    @2446    @2446    @2445    @4032    *        *
 KEEPSAKE_LOCKET                            AMULET   misc5w   1        1        0        0        1        1        @2517    @2517    @2518    @2518    *        *        *        *
 AMULET_OF_A_HARPER_PIN                     AMULET   misc5x   1        1        0        0        1        1        @1734    @1735    @1736    @1736    *        *        *        *
 WOODEN_STAKE                               *        misc6w   1        1        0        0        1        1        @1737    @1737    @1738    @1738    *        *        *        *

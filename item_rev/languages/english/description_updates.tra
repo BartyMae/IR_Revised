@@ -367,7 +367,7 @@ Weight:~
 @100314 = ~[%lnl%%mnl%%wnl%]Special:[ %tab%]*No Missile.*~
 
 // Catch shield ~Armor Class Bonus:~
-@100315 = ~Armor Class\([ %tab%]*Bonus[ %tab%]*\)?:.*~
+@100315 = ~Armou?r Class\([ %tab%]*Bonus[ %tab%]*\)?:.*~
 
 // Replace @100315 with new AC (identified)
 @100316 = ~Armor Class Bonus: %new_ac%~
@@ -379,7 +379,7 @@ Weight:~
 @100318 = ~Armor Class Bonus: 3~
 
 // Catch ~Armor Class Bonus:~ for THAC0 penalty
-@100319 = ~\(Armor Class\([ %tab%]*Bonus[ %tab%]*\)?:.*\)~
+@100319 = ~\(Armou?r Class\([ %tab%]*Bonus[ %tab%]*\)?:.*\)~
 
 // Add THAC0 penalty line to @100319 (large shield)
 @100320 = ~\1

@@ -122,26 +122,29 @@ Speed Factor\1~
 //////////////////
 
 // Catch ~(slashing)~
-@100132 = ~[ %tab%](slashing)~
+@100132 = ~[ %tab%]([Ss]lashing)[%lnl%%mnl%%wnl%]~
 
 // Replace @100132 with piercing
-@100133 = ~ (piercing)~
+@100133 = ~ (piercing)
+~
 
 // Catch ~(piercing)~
-@100134 = ~[ %tab%](piercing)[%lnl%%mnl%%wnl%]~
+@100134 = ~[ %tab%]([Pp]iercing)[%lnl%%mnl%%wnl%]~
 
 // Replace @100134 with slashing
 @100135 = ~ (slashing)
 ~
 
 // Catch ~(crushing)~
-@100136 = ~(crushing)~
+@100136 = ~[ %tab%]([Cc]rushing)[%lnl%%mnl%%wnl%]~
 
 // Replace @100136 with crushing and piercing
-@100137 = ~ (crushing and piercing)~
+@100137 = ~ (crushing and piercing)
+~
 
 // Replace @100132 or @100134 with slashing and piercing
-@1001380 = ~ (slashing and piercing)~
+@1001380 = ~ (slashing and piercing)
+~
 
 
 //////////////////
@@ -381,7 +384,7 @@ Requires:~
 @100318 = ~ Armor Class: +3~
 
 // Catch ~Armor Class~ for THAC0 penalty
-@100319 = ~\(Armor Class\([ %tab%]*[ %tab%]*\)?:.*\)~
+@100319 = ~\(Armou?r Class\([ %tab%]*[ %tab%]*\)?:.*\)~
 
 // Add THAC0 penalty line to @100319 (large shield)
 @100320 = ~\1

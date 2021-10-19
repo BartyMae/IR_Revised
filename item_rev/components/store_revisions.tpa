@@ -4,7 +4,7 @@ INCLUDE ~item_rev/lib/store_rev_macros.tpa~
 
 ///////////////////////////////////////////////////////////////////
 
-// use this detection check - 'FILE_EXISTS_IN_GAME ag#store_revisions.mrk'
+// Use this detection check - 'FILE_EXISTS_IN_GAME ag#store_revisions.mrk'
 COPY ag#dummy ~override/ag#store_revisions.mrk~
 
 COPY ~item_rev/components/store/chrmodst.2da~ ~override~
@@ -13,7 +13,6 @@ COPY ~item_rev/components/store/repmodst.2da~ ~override~
 LAM buy_group
 LAM spelldesc
 LAF make_scrolls END
-
 
 // Increase bag capacity a little
 ACTION_FOR_EACH resource IN
