@@ -1,0 +1,28 @@
+[0;99] - TP2 components
+
+[100;999] - Item upgrades
+
+[1000;2999] - Item Revisions (core component)
+
+[3000;3999] - Potions
+
+[4000;4999] - Tooltips
+
+[5000;5999] - Muliclasses
+
+[6000;6999] - BG1:EE items
+
+[7000;7999] - BG2:EE items
+
+[9000;9999] - Installation warnings
+
+[50000;50099] - Masterwork Weapons
+
+[100000;100099] - Proficiencies
+
+[100100;109999] - Description updates
+
+[200000;209999] - Store Revisions
+
+Free space:
+[8000;8999], [10000;21650], [21652;49999], [50100;99999], [110000;199999], [210000;+]

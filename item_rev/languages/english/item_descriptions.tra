@@ -6719,7 +6719,7 @@ Type: One-Handed
 Requires: 6 Strength
 Usable By:
  Yoshimo~
-@1811 = ~Unused~
+@1811 = ~Usuno's Blade +3~
 @1812 = ~Hallowed Redeemer +2~ // BG2: Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. It is exceptionally accurate, but also protects him in battle with a special Fireshield, and any that strike him while he wields it suffer Torm's wrath in the form of magical damage. None but Keldorn may use this sword.
 @1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenceless while judgement falls upon them.
 
@@ -10287,7 +10287,6 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@21651 = ~Usuno's Blade +3~
 @2165 = ~The daughter of a high-ranking official within the bureaucratic society of Kara-Tur, Usuno rejected her family's station and carved a legend for herself among the Yakuza of the underworld. The blade of this enchanted ninja-to crackles with electrical energy.
 
 STATISTICS:
@@ -12951,12 +12950,12 @@ Weight: 1
 Usable By:
  Bard~
 @2445 = ~Shaman's Staff~
-@2446 = ~This is a Staff of Goodberries that belonged to the Kobold Shaman in the sewers below the slums.
+@2446 = ~This is a Staff of Goodberry that belonged to the Kobold Shaman in the sewers below the slums.
 
 STATISTICS:
 
 Special Abilities:
- Goodberries (1x per day)
+ Goodberry (1x per day)
 
 Damage: 1D6
 Damage Type: Crushing
@@ -14376,6 +14375,14 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
+@2621 = ~Talisman of Rillifane~
+@2622 = ~This is the holy symbol of the elven god Rillifane.
+
+STATISTICS:
+
+Weight: 0
+Usable By:
+ All~
 @4000 = ~Globe of Power~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
@@ -14408,7 +14415,7 @@ Not Usable By:
 @4029 = ~Shadow Door~
 @4030 = ~Cloudkill~
 @4031 = ~Dire Charm~
-@4032 = ~Goodberries~
+@4032 = ~Goodberry~
 @4033 = ~Protection from Normal Missiles~
 @4034 = ~Domination~
 @4035 = ~Invisibility~
@@ -14551,8 +14558,8 @@ Not Usable By:
 @4540 = ~Gladiator~
 @4541 = ~Reserved~
 
-@60000 = ~Rhyte's Last Arrow +2~
-@60001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
+@6000 = ~Rhyte's Last Arrow +2~
+@6001 = ~The tale of this weapon lost its significance in the sea of great stories that are told about the High Forest, but some bards still sing the song of the skilled archer Adaniss Rhyte.
 
 "Oh, shocked from the strike of his powerful bow,
 The slain game sought by Adaniss falls.
@@ -14648,8 +14655,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60002 = ~Bereul's Retort +1~
-@60003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
+@6002 = ~Bereul's Retort +1~
+@6003 = ~The only thing dwarven warriors love more than a cool pint of ale is a short-hafted blade of cold steel. Perfect for penetrating the thick skulls of orcs, these axes serve equally well when thrown or held in one hand.
 
 STATISTICS:
 
@@ -14669,8 +14676,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60004 = ~Golden Axe +1~
-@60005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
+@6004 = ~Golden Axe +1~
+@6005 = ~To counter the spells of the hated drow, the gold dwarves developed the sturdy and relatively inexpensive battle axe imbued with rare alloys and enchantments allowing a keen strike to dispel a foe's magic. The twin axes of Clangeddin Silverbeard are stamped on the butt of each of these weapons.
 
 STATISTICS:
 
@@ -14692,8 +14699,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60006 = ~Big-Fisted Belt~
-@60007 = ~Cursed Girdle of Giant Strength
+@6006 = ~Big-Fisted Belt~
+@6007 = ~Cursed Girdle of Giant Strength
 A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodstains on the leather hint at unspeakable carnage, but the misspelled graffiti scratched into its surface suggests that the girdle's former owners were none too bright.
 
 STATISTICS:
@@ -14707,8 +14714,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@60008 = ~Belt of Antipode~
-@60009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
+@6008 = ~Belt of Antipode~
+@6009 = ~Trimmed in the fur of a polar bear, this sturdy belt is tooled with images of blue moons and white ice floes. The wearer is immune to all cold-based effects but suffers double any fire damage.
 
 STATISTICS:
 
@@ -14719,8 +14726,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@60010 = ~Club +1~
-@60011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
+@6010 = ~Club +1~
+@6011 = ~From chair legs to felled trees, clubs are the universal weapons of everyone from tavern brawlers to hill giants. A little extra weight, maybe a spike or two, and a little enchantment never hurt. Which is to say, it always hurts.
 
 STATISTICS:
 
@@ -14734,8 +14741,8 @@ Type: One-Handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@60012 = ~Mighty Oak +2~
-@60013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
+@6012 = ~Mighty Oak +2~
+@6013 = ~Fashioned from the hardest old oak in the High Forest, this gnarled cudgel can fell an adult grizzly when wielded by a skilled warrior.
 
 STATISTICS:
 
@@ -14752,8 +14759,8 @@ Type: One-Handed
 Requires: 8 Strength
 Not Usable By:
  Mage~
-@60014 = ~Night Club +1~
-@60015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
+@6014 = ~Night Club +1~
+@6015 = ~This darkwood shaft surrounds a core of lead, giving it both stealth and heft. Its enchantment connects the club to the Shadow Weave, lending it greater power under cloak of night.
 
 STATISTICS:
 
@@ -14770,8 +14777,8 @@ Type: One-Handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@60016 = ~The Thresher +2~
-@60017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
+@6016 = ~The Thresher +2~
+@6017 = ~With one rod of steel and another of bronze, this double-headed flail metes out punishment right and left. The weapon's carved wooden haft depicts scenes of battle in which champions of Helm, each wielding an identical flail, wade through a field of orcs, threshing them like so much wheat.
 
 STATISTICS:
 
@@ -14789,8 +14796,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60018 = ~Chanserv's Fish +2~
-@60019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
+@6018 = ~Chanserv's Fish +2~
+@6019 = ~Those who claim something is better than a slap in the face with a wet fish never took a frozen fish to the noggin. This hefty halibut packs a wallop with a chill worthy of the North Wind.
 
 STATISTICS:
 
@@ -14807,8 +14814,8 @@ Type: One-Handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@60020 = ~The Stupefier +1~
-@60021 = ~Mace of Stunning
+@6020 = ~The Stupefier +1~
+@6021 = ~Mace of Stunning
 This mace isn't just sleek and elegant, it's stunning. With a hit to just the right spot, it can render a foe completely paralyzed.
 
 STATISTICS:
@@ -14830,8 +14837,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60022 = ~The Chesley Crusher +2~
-@60023 = ~Heavy Halberd
+@6022 = ~The Chesley Crusher +2~
+@6023 = ~Heavy Halberd
 First wielded by the much-maligned Ensign Chesley of the first exploratory fleet of Waterdeep, this famous halberd has been passed around for generations, but only to those strong enough to carry its considerable weight. The iron haft of this heavy polearm makes the weapon slow and unwieldy, but its sheer mass smashes skulls and shatters limbs.
 
 STATISTICS:
@@ -14855,8 +14862,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60024 = ~Hammer of Dawn +1~
-@60025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
+@6024 = ~Hammer of Dawn +1~
+@6025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
 
 STATISTICS:
 
@@ -14880,8 +14887,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60026 = ~Rugged Leathers +2~
-@60027 = ~Squeaky Leather Armor
+@6026 = ~Rugged Leathers +2~
+@6027 = ~Squeaky Leather Armor
 This rigid suit of leather armor squeaks like a new pair of shoes. What it lacks in stealth it makes up for in toughness, protecting its wearer against the most punishing blows.
 
 STATISTICS:
@@ -14897,8 +14904,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@60028 = ~Adoy's Belt~
-@60029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
+@6028 = ~Adoy's Belt~
+@6029 = ~This slender deer hide belt lined with rabbit fur grants its wearer resistance to polymorph effects: the perfect gift for wild mages or those who stand near them.
 
 STATISTICS:
 
@@ -14908,8 +14915,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@60030 = ~The Magma Bulwark +2~
-@60031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
+@6030 = ~The Magma Bulwark +2~
+@6031 = ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
 
 STATISTICS:
 
@@ -14927,8 +14934,8 @@ Not Usable By:
  Barbarian
  Beast Master
  Kensai~
-@60032 = ~Iron Thorn Ring~
-@60033 = ~Cursed Ring of Slight Monsterism
+@6032 = ~Iron Thorn Ring~
+@6033 = ~Cursed Ring of Slight Monsterism
 This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
 
 STATISTICS:
@@ -14942,8 +14949,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@60034 = ~Moonlight Walkers~
-@60035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
+@6034 = ~Moonlight Walkers~
+@6035 = ~These comfortable boots provide monks of the Sun Soul with exceptional arch support, allowing them to perform feats that would lead to crippling back pain in ordinary people.
 
 STATISTICS:
 
@@ -14953,8 +14960,8 @@ Equipped Abilities:
 Weight: 2
 Usable By:
  Rasaad yn Bashir~
-@60036 = ~Glimmering Bands~
-@60037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
+@6036 = ~Glimmering Bands~
+@6037 = ~These polished bracers reflect harsh light into the eyes of the wearer's foes, distracting them from parrying incoming fists.
 
 STATISTICS:
 
@@ -14964,8 +14971,8 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Rasaad yn Bashir~
-@60038 = ~Buckley's Buckler~
-@60039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
+@6038 = ~Buckley's Buckler~
+@6039 = ~A rectangle of mammoth hide forms this small shield. No amount of cleansing can dispel the pong of decay from this poorly tanned device, yet somehow the malodorous shield fortifies its wielder.
 
 STATISTICS:
 
@@ -14980,8 +14987,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@60040 = ~Sling of Unerring Accuracy +1~
-@60041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
+@6040 = ~Sling of Unerring Accuracy +1~
+@6041 = ~Dandifox was one of the greatest heroes of the hin, the small people also known as halflings. From the concealment of forest arbors, he would attack rich caravans for a "tithe," which he then distributed among the local poor. The heroic robber finally met his end on the point of a guardsman's spear, but not before the constabulary had learned to fear and hate his infallible aim.
 
 STATISTICS:
 
@@ -14998,8 +15005,8 @@ Requires: 3 Strength
 Not Usable By:
  Cavalier
  Kensai~
-@60042 = ~The Ossifier +1~
-@60043 = ~Cursed Staff of Petrification
+@6042 = ~The Ossifier +1~
+@6043 = ~Cursed Staff of Petrification
 The surface of this seven-foot shaft more resembles stone than wood, but in the hands of a skilled wielder it weighs little more than a staff of oak. Along its length appear the ghost-like images of various foes caught in defensive postures, appearing almost as thought they had been suddenly turned to stone.
 
 STATISTICS:
@@ -15019,8 +15026,8 @@ Type: Two-Handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@60044 = ~Neera's Staff +1~
-@60045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
+@6044 = ~Neera's Staff +1~
+@6045 = ~This finely crafted and intricately engraved quarterstaff was "improved" upon by Neera herself. Her intent was to create a staff that would inflict fiery pain upon its victims, but she fell slightly short of that goal. While it can light enemies aflame, there is also the chance that the staff will backfire and incinerate its wielder.
 
 STATISTICS:
 
@@ -15037,8 +15044,8 @@ Type: Two-Handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@60046 = ~The Harrower +1~
-@60047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
+@6046 = ~The Harrower +1~
+@6047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
 
 STATISTICS:
 
@@ -15059,8 +15066,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@60048 = ~The Gold Digger +1~
-@60049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
+@6048 = ~The Gold Digger +1~
+@6049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
 
 STATISTICS:
 
@@ -15083,8 +15090,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@60050 = ~Rancor +1~
-@60051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
+@6050 = ~Rancor +1~
+@6051 = ~This ebony two-handed sword is covered with inscriptions that you cannot decipher. It hums softly in the presence of Dorn Il-Khan. Individuals who are good of heart are overcome with feelings of guilt and anxiety when they hold this blade.
 
 STATISTICS:
 
@@ -15106,8 +15113,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@70000 = ~Splint Mail +2~
-@70001 = ~Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the human body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. Extra protection is given by magical enchantments placed on this armor.
+@7000 = ~Splint Mail +2~
+@7001 = ~Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the human body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. Extra protection is given by magical enchantments placed on this armor.
 
 STATISTICS:
 
@@ -15124,8 +15131,8 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@70002 = ~Dart +2~
-@70003 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+@7002 = ~Dart +2~
+@7003 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
 
 STATISTICS:
 
@@ -15140,8 +15147,8 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@70004 = ~Dart +3~
-@70005 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+@7004 = ~Dart +3~
+@7005 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
 
 STATISTICS:
 
@@ -15156,8 +15163,8 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@70006 = ~Hide Armor +1~
-@70007 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@7006 = ~Hide Armor +1~
+@7007 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -15169,8 +15176,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@70008 = ~Hide Armor +2~
-@70009 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@7008 = ~Hide Armor +2~
+@7009 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -15182,8 +15189,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@70010 = ~Hide Armor +3~
-@70011 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@7010 = ~Hide Armor +3~
+@7011 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -15195,8 +15202,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@70012 = ~Buckler +2~
-@70013 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+@7012 = ~Buckler +2~
+@7013 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
 
 STATISTICS:
 
@@ -15208,8 +15215,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@70014 = ~Buckler +3~
-@70015 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+@7014 = ~Buckler +3~
+@7015 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
 
 STATISTICS:
 
@@ -15221,8 +15228,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@70016 = ~Wakizashi +2~
-@70017 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
+@7016 = ~Wakizashi +2~
+@7017 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
 
 STATISTICS:
 
@@ -15239,8 +15246,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70018 = ~Wakizashi +3~
-@70019 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
+@7018 = ~Wakizashi +3~
+@7019 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
 
 STATISTICS:
 
@@ -15257,8 +15264,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70020 = ~Ninja-To +2~
-@70021 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@7020 = ~Ninja-To +2~
+@7021 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 
@@ -15275,8 +15282,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70022 = ~Ninja-To +3~
-@70023 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@7022 = ~Ninja-To +3~
+@7023 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 
@@ -15293,8 +15300,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70024 = ~Scimitar +2~
-@70025 = ~The long, curved, single-edged blade is characteristic of both the sabre and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the sabre was intended mainly for horsemen due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. Thus, it is slightly slower, but tends to be more effective and deadly in combat. This scimitar is particularly good at its job, as it has been enchanted with a few magical properties.
+@7024 = ~Scimitar +2~
+@7025 = ~The long, curved, single-edged blade is characteristic of both the sabre and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the sabre was intended mainly for horsemen due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. Thus, it is slightly slower, but tends to be more effective and deadly in combat. This scimitar is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
