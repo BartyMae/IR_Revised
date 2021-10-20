@@ -407,6 +407,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     HELM16    // Helm of Brilliance
     PLAT05    // Full Plate Mail +1
     PLAT14    // Full Plate Mail +1
+    PLAT16    // Armor of the Hart +3
     PLAT17    // T'rahcie's Plate +5
     LEAT15    // Studded Leather Armor +3
     LEAT11    // Leather Armor +2
@@ -649,7 +650,9 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SLNG06   LAST #0 #0 #0 IDENTIFIED #1   // Sling of Arvoreen +2
   ADD_STORE_ITEM LEAT17   LAST #0 #0 #0 IDENTIFIED #1   // Armor of Deep Night +5
   ADD_STORE_ITEM CHAN11   LAST #0 #0 #0 IDENTIFIED #1   // Crimson Chain +5
-  PATCH_IF comp_cursed=0 BEGIN
+  PATCH_IF comp_ir=1 BEGIN
+    ADD_STORE_ITEM PLAT16   LAST #0 #0 #0 IDENTIFIED #1   // Armor of the Hart +3
+  END ELSE BEGIN
     ADD_STORE_ITEM PLAT17   LAST #0 #0 #0 IDENTIFIED #1   // T'rahcie's Plate +5 / Armor of the Hart +3
   END
   ADD_STORE_ITEM HELM16   LAST #1 #1 #1 IDENTIFIED #1   // Helm of Brilliance
@@ -3520,6 +3523,7 @@ COPY_EXISTING govwau01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
 
   ADD_STORE_ITEM CLCK14   LAST #0 #0 #0 IDENTIFIED #1   // Adventurer's Robe
   PATCH_IF 1pp_circlets=1 BEGIN
+    ADD_STORE_ITEM XOBAND01 LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Circlet
     ADD_STORE_ITEM XOBAND02 LAST #0 #0 #0 IDENTIFIED #1   // Silver Circlet
   END
 
@@ -4381,6 +4385,7 @@ COPY_EXISTING ppumb01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
   ADD_STORE_ITEM CLCK11   LAST #0 #0 #0 IDENTIFIED #1   // Mage Robe of Electric Resistance
   PATCH_IF 1pp_circlets=1 BEGIN
+    ADD_STORE_ITEM XOBAND01 LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Circlet
     ADD_STORE_ITEM XOBAND02 LAST #0 #0 #0 IDENTIFIED #1   // Silver Circlet
   END
 
@@ -7815,6 +7820,7 @@ COPY_EXISTING udsvir05.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SHLD26   LAST #0 #0 #0 IDENTIFIED #1   // Shield of the Lost +2
 
   PATCH_IF 1pp_circlets=1 BEGIN
+    ADD_STORE_ITEM XOBAND01 LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Circlet
     ADD_STORE_ITEM XOBAND03 LAST #1 #0 #0 IDENTIFIED #1   // Eilistraee's Boon
   END
   PATCH_IF comp_ir=1 BEGIN

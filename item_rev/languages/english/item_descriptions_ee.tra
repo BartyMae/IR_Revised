@@ -4349,7 +4349,7 @@ Not Usable By:
  Beast Master~
 @1497 = ~Full Plate Mail~
 @1498 = ~Drowcraft Adamantine Full Plate Mail +3~
-@1499 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.~
+@1499 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.~
 @1500 = ~Many parts of the Underdark of Faerûn are suffused with a magical radiation that the drow call faerzress. A remnant of the mighty forces that originally shaped the terrain of the Underdark, faerzress distorts and interferes with certain types of magic.
 
 The drow have long sought out places of powerful faerzress in which to raise their cities, since the magical radiation helps to frustrate spying and protect against enemy assaults. The magical energy can also be used in the construction of various powerful magic items.
@@ -7170,7 +7170,7 @@ Weight: 4
 Usable By:
  Jan Jansen~
 @1825 = ~Plate Mail~
-@1826 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.
+@1826 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.
 
 STATISTICS:
 
@@ -7191,8 +7191,8 @@ Not Usable By:
  Kensai
  Stalker~
 @1827 = ~Plate Mail +1~
-@1828 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.~
-@1829 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. In addition, this suit of plate mail is enchanted and gives additional bonuses to the wearer's armor class.
+@1828 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.~
+@1829 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. In addition, this suit of plate mail is enchanted and gives additional bonuses to the wearer's armor class.
 
 STATISTICS:
 
@@ -7212,7 +7212,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1830 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
+@1830 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.
 
 STATISTICS:
 
@@ -7233,7 +7233,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1831 = ~Full Plate Mail +1~
-@1832 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. With its magical enchantments, this suit of full plate is ideal for warriors.
+@1832 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. With its magical enchantments, this suit of full plate is ideal for warriors.
 
 STATISTICS:
 
@@ -7302,7 +7302,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1837 = ~Full plate is the heaviest of all mundane armor, and despite its great weight, it offers unparalleled protection against attacks. Mobility is not very easy in this type of armor and as such dexterity while wearing full plates is highly restricted but they are to be worn by heavy infantry, and movement is not a priority. However, this magical specimen is made of mithral, a very rare, silvery, glistening metal that is lighter than iron but just as hard. As a result this full plate does not encumber more than a chain mail and is treated as a medium armor for purposes of movement and other limitations.
+@1837 = ~Full plate is the heaviest of all mundane armor, and despite its great weight, it offers unparalleled protection against attacks. Mobility is not very easy in this type of armor and as such dexterity while wearing full plates is highly restricted but they are to be worn by heavy infantry, and movement is not a priority. However, this magical specimen is made of mithral, a very rare, silvery, glistening metal that is lighter than iron but just as hard. As a result, this full plate does not encumber more than a chain mail and is treated as a medium armor for purposes of movement and other limitations.
 
 STATISTICS:
 
@@ -7326,7 +7326,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1838 = ~Plate Mail +2~
-@1839 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. This suit of plate mail is highly enchanted and gives additional bonuses to the wearer's armor class.
+@1839 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. This suit of plate mail is highly enchanted and gives additional bonuses to the wearer's armor class.
 
 STATISTICS:
 
@@ -7347,7 +7347,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1840 = ~Delver's Plate +2~
-@1841 = ~This armor has been worn by many a fine soldier, but among the best known, and for whom it was named, was Delver Kinlake. He was a vagabond whose strong sword-arm and keen wits made him a respected general to the Lords of Waterdeep. A gift from Lord Baeron, the armor served Delver well for thirty years, and after his death, it passed to his eldest son. It has since made its way into the hands of a variety of adventurers, being much-desired for its strength and the magical defense it provides.
+@1841 = ~This armor has been worn by many a fine soldier, but among the best known, and for whom it was named, was Delver Kinlake. He was a vagabond whose strong sword arm and keen wits made him a respected general to the Lords of Waterdeep. A gift from Lord Baeron, the armor served Delver well for thirty years, and after his death, it passed to his eldest son. It has since made its way into the hands of a variety of adventurers.
 
 STATISTICS:
 
@@ -7370,7 +7370,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1842 = ~Doom Plate +3~
+@1842 = ~Doom Plate +3~ // BG2: Doomplate +3
 @1843 = ~Named by Adarius Shin, the Doom Plate is deserving of its foreboding title. He had hoped to strike fear in his enemies, but Adarius set a grim precedent when he mysteriously died soon after donning the suit, just as every adventurer who has worn it since has done. It might be said, however, that most adventurers die in their armor and are not known for their longevity.
 
 STATISTICS:
@@ -7397,7 +7397,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1844 = ~Deep Guardian's Plate +4~
+@1844 = ~Deep Guardian's Plate +4~ // BG2: Gorgon Plate +4: Hunting gorgons is a highly dangerous drow sport. Often, after a successful hunt, the blood of the gorgon is taken and used in the creation of a new suit of plate. This special type of drow plate is actually able to withstand the light of the surface world.
 @1845 = ~In an effort to better protect their soldiers, the artificers of ancient Imaskar set about creating a kind of living symbiote, something that would bond with their user and protect them from harm. Using specimens pulled from the deepest pits of the ocean, the Imaskari spellcasters slowly began to graft these magically-enhanced creatures onto suits of plate mail, weaning them off of salt water and forcing them to rely on magic for nourishment. This technique worked well, allowing the user a far greater resistance to spells than normal... but other magewrights looked upon this creation with a growing fear, worried that a creature that fed on magic might soon grow too hungry and feed upon its masters instead. Because of this, only a few suits of this armor were ever made, and the creatures created by the Imaskari sealed away and forgotten.
 
 The living symbiote feeds itself with low level spells and consumes them in the process, thus making the wearer completely immune to their effects. Unfortunately, it doesn't distinguish between harmful and friendly magic, but at least doesn't seem to interfere with spells cast by the wearer.
@@ -7423,7 +7423,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1846 = ~Pride of the Order +2~
+@1846 = ~Pride of the Order +2~ // BG2: Pride of the Legion +2: Not many suits of this armor, originally used by the legions of Unther, remain in use today. The few suits that exist are usually in the hands of rich collectors. Simply finding a suit of this armor is enough to earn an adventurer a small fortune.
 @1847 = ~Bastion of Law, as it is called by those who do not belong to the Order, was originally created to be used by the most respected members of the Order of the Radiant Heart. The suit gained its name in a glorious though bloody battle when few knights, all wearing armor of this type, stood against a seemingly unbeatable army of orcs. Even when defeat was certain and all others allied troops ran amok in chaos, the small group of deadpan knights continued to follow their commander's orders and fought until the sun set. Most of them died but their devotion to duty allowed the flying troops to reorganize themselves and when reinforcements finally arrived, the orc army was crushed.
 
 STATISTICS:
@@ -7450,8 +7450,33 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1848 = ~Casiel's Soul +3~
-@1849 = ~This armor of blackened steel was known to be worn by Lord Casiel the Vile in his campaign against the Purple Dragon Knights of Cormyr. Upon Lord Casiel's death, the armor was said to have been destroyed, though it is also rumored that the vicious blackguard has joined the undead and still serves his unknown master.
+@1848 = ~Armor of the Hart +3~
+@1849 = ~Few suits of armor in all the Realms are the equal of this full plate. All that remains of the origin of the Hart are folktales and legends. The most popular of these is that an impossible battle was once fought against an army of orcs surging through the Three Trees Pass. Arngor of the Oak led the armies of men and elves and it is said that he dueled with the orc commander till the sun set and the land was bathed in a bloody mist. Finally the orc fell but Arngor had sustained wounds too vast for any to save him. His blood soaked through the armor he wore, infusing it with his courage and nobility. Thus the Armor of the Hart became known to men.
+
+STATISTICS:
+
+Equipped abilities:
+– Heroic Inspiration: when the wearer drops below 50% Hit Points, they gain +2 to Saving Throws, THAC0, and damage
+– Protects Against: Fear
+
+Armor Class: -2
+Requires:
+ 15 Strength
+
+Weight: 60
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Monk
+ Thief
+ Archer
+ Barbarian
+ Beast Master
+ Kensai
+ Stalker~
+@1850 = ~Casiel's Soul +3~ // BG2: T'rachie's Plate +5: In his aging years, Baron T'rachie coveted the wife of the lowly foot soldier Libol. Instead of openly pursuing her and causing a scandal, he instead created this suit of armor. He gifted it to the soldier. This armor's curse sickened Libol and hideously disfigured him, and his wife fled from him in disgust. Libol, trapped in the armor but not certain of T'rachie's treachery, asked to be sent to the wastes for a dangerous tour of duty against marauding ogres. He never returned, and Baron T'rachie was free to pursue Libol's widow. This armor is cursed and requires powerful magic to remove.
+@1851 = ~This armor of blackened steel was known to be worn by Lord Casiel the Vile in his campaign against the Purple Dragon Knights of Cormyr. Upon Lord Casiel's death, the armor was said to have been destroyed, though it is also rumored that the vicious blackguard has joined the undead and still serves his unknown master.
 
 The armor surrounds the wearer with crackling black energy from the negative plane that damages any living creature who strikes it, and makes its owner unaffected by spells and effects that deal with the necromantic arts.
 
@@ -7478,32 +7503,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1850 = ~Armor of the Hart +3~
-@1851 = ~Few suits of armor in all the Realms are the equal of this full plate. All that remains of the origin of the Hart are folktales and legends. The most popular of these is that an impossible battle was once fought against an army of orcs surging through the Three Trees Pass. Arngor of the Oak led the armies of men and elves and it is said that he dueled with the orc commander till the sun set and the land was bathed in a bloody mist. Finally the orc fell but Arngor had sustained wounds too vast for any to save him. His blood soaked through the armor he wore, infusing it with his courage and nobility. Thus the Armor of the Hart became known to men.
-
-STATISTICS:
-
-Equipped abilities:
-– Heroic Inspiration: when the wearer drops below 50% Hit Points, they gain +2 to Saving Throws, THAC0, and damage
-– Protects Against: Fear
-
-Armor Class: -2
-Requires:
- 15 Strength
-
-Weight: 60
-Not Usable By:
- Bard
- Druid
- Mage
- Monk
- Thief
- Archer
- Barbarian
- Beast Master
- Kensai
- Stalker~
-@1852 = ~Red Dragonplate Armor +5~
+@1852 = ~Red Dragonplate Armor +5~ // BG2: Red Dragon Scale: Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 @1853 = ~Red dragon hide is light of weight, strong, and resistant to fire. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 
 STATISTICS:
@@ -7527,7 +7527,7 @@ Not Usable By:
  Kensai
  Shapeshifter
  Stalker~
-@1854 = ~Full Plate Mail +2~ // BG2: This +2 armor was created with the limited wish spell.
+@1854 = ~Full Plate Mail +2~ // BG2: Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. This +2 armor was created with the Limited Wish spell.
 @1855 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection, and the enchantments on this suit are particularly powerful. The intricate engraving and spectacular embossing adorning the suit are of indeterminate origin, as is the armor itself.
 
 STATISTICS:
@@ -7548,7 +7548,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1856 = ~Blue Dragonplate Armor +5~
+@1856 = ~Blue Dragonplate Armor +5~ // BG2: Blue Dragon Plate: The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
 @1857 = ~Blue dragon hide is lightweight, strong, and highly resistant to electricity. These suits are much sought after, but few smiths are willing to craft them. The necessary materials are rare and dangerous to acquire, and dragons have long memories where their kin are concerned. Most smiths would prefer not to even risk association with the trade in dragon hide. This full plate mail of natural-source can be worn by more classes than other similarly protective armors.
 
 STATISTICS:
@@ -7572,7 +7572,7 @@ Not Usable By:
  Kensai
  Shapeshifter
  Stalker~
-@1858 = ~Enkidu's Plate +4~
+@1858 = ~Enkidu's Plate +4~ // BG2: Enkidu's Full Plate +3: This armor was created for Enkidu, a famed warrior from Kara-Tur. While none dared challenge him in fair combat, Enkidu was often subject to cowardly sneak attacks from assassins, ninjas and Wu-Jen.
 @1859 = ~The first example of this item was created for Enkidu, a famed warrior of Kara-Tur. None dared challenge him in fair combat, but he was often subject to sneak attacks from assassins, ninjas, and wu-jen. His armor was designed to prevent such cowardly action from succeeding, protecting the wearer as well as the honor of the attacker who would otherwise shame himself. Copies have been made, though they vary in power when compared to the original.
 
 STATISTICS:
@@ -7597,7 +7597,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1860 = ~Shuruppak's Mail +5~
+@1860 = ~Shuruppak's Mail +5~ // BG2: Shuruppak's Plate
 @1861 = ~Shuruppak, the infamous right hand of the now dead god Gilgeam, earned the title of "Reaper" for his savage butchery of any who opposed him... an identity the bloodthirsty madman eagerly embraced. Before Gilgeam's destruction, the god presented Shuruppak with an enchanted suit of armor, to better enable the Reaper to slaughter his foes.
 
 Shuruppak's mithral splint mail is surprisingly light and allows the wearer an unnatural quickness and grace for a heavy armor. It is not known how Shuruppak lost this treasured item, but one could safely assume he is still looking for it...

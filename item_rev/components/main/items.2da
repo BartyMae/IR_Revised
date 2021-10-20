@@ -552,12 +552,12 @@ RADIANT_PLATE_2                            PLATE    plat08   1        1        1
 MITHRAL_FULL_PLATE_MAIL_2                  PLATEF   plat09   1        1        0        0        1        1        @1825    @1683    @1828    @1837    *        *        *        *
 PLATE_MAIL_2                               PLATE    plat10   1        1        0        0        1        1        @1825    @1838    @1828    @1839    *        *        *        *
 DELVERS_PLATE_2                            PLATE    plat11   1        1        0        0        1        1        @1825    @1840    @1828    @1841    *        *        *        *
-DOOMPLATE_3                                PLATE    plat12   1        1        0        0        1        1        @1825    @1842    @1828    @1843    *        *        *        *
+DOOM_PLATE_3                               PLATE    plat12   1        1        0        0        1        1        @1825    @1842    @1828    @1843    *        *        *        *
 DEEP_GUARDIANS_PLATE_4                     PLATE    plat13   1        1        0        0        1        1        @1825    @1844    @1828    @1845    *        *        *        *
 FULL_PLATE_MAIL_1                          PLATEF   plat14   1        1        1        1        1        1        @1497    @1831    @1499    @1832    *        *        *        *
 PRIDE_OF_THE_ORDER_2                       PLATEF   plat15   1        1        0        0        1        1        @1497    @1846    @1499    @1847    *        *        *        *
-CASIELS_SOUL_3                             PLATEF   plat16   1        1        0        0        1        1        @1497    @1848    @1499    @1849    *        *        *        *
-ARMOR_OF_THE_HART_4                        PLATEF   plat17   1        1        0        0        1        1        @1497    @1850    @1499    @1851    *        *        *        cursed
+ARMOR_OF_THE_HART_3                        PLATEF   plat16   1        1        0        0        1        1        @1497    @1848    @1499    @1849    *        *        *        *
+CASIELS_SOUL_3                             PLATEF   plat17   1        1        0        0        1        1        @1497    @1850    @1499    @1851    *        *        *        cursed
 RED_DRAGONPLATE_ARMOR_5                    PLATE    plat18   1        1        0        0        1        1        @1825    @1852    @1828    @1853    *        *        *        *
 FULL_PLATE_MAIL_2                          PLATEF   plat19   1        1        0        0        1        1        @1497    @1854    @1499    @1855    *        *        *        *
 BLUE_DRAGONPLATE_ARMOR_5                   PLATEF   plat20   1        1        0        0        1        1        @1497    @1856    @1499    @1857    *        *        *        *

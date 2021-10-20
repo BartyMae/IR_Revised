@@ -741,35 +741,43 @@ COPY ~%source%/FIRECAM_FULL_PLATE_MAIL_2.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/DELRYN_FAMILY_SHIELD_2.tpa
-  COPY ~item_rev/itm/npshld.spl~ ~override~ // Protection from Missiles
+  COPY ~item_rev/itm/npshld.spl~ ~override~ // Protection from Normal Missiles
     SAY NAME1 @4033
 >>>>>>>>
 COPY ~%source%/DELRYN_FAMILY_SHIELD_2.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/DOOMPLATE_3.tpa
+<<<<<<<< .../item_rev-inlined/item/DOOM_PLATE_3.tpa
   ADD_PROJECTILE ~item_rev/itm/plat12.pro~ // Aura of Despair
   COPY ~item_rev/itm/plat12.spl~ ~override~
   COPY ~item_rev/itm/plat12a.spl~ ~override~
     WRITE_SHORT 0x98 %plat12%
   COPY ~item_rev/itm/plat12.eff~ ~override~
 >>>>>>>>
-COPY ~%source%/DOOMPLATE_3.tpa~ ~%target%~
+COPY ~%source%/DOOM_PLATE_3.tpa~ ~%target%~
+
+
+<<<<<<<< .../item_rev-inlined/item/ARMOR_OF_THE_HART_3.tpa
+  COPY ~item_rev/itm/plat16.spl~ ~override~ // Heroic Inspiration
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ribald3.sto~) BEGIN
+    COPY_EXISTING ~ribald3.sto~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat17~ ~plat16~
+      END
+      BUT_ONLY
+  END
+>>>>>>>>
+COPY ~%source%/ARMOR_OF_THE_HART_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/CASIELS_SOUL_3.tpa
-  COPY ~item_rev/itm/plat16.spl~ ~override~ // Death Armor
-  COPY ~item_rev/itm/plat16a.spl~ ~override~
-  COPY ~item_rev/itm/plat16.eff~ ~override~
-  COPY ~item_rev/itm/plat16a.eff~ ~override~
+  COPY ~item_rev/itm/plat17.spl~ ~override~ // Death Armor
+  COPY ~item_rev/itm/plat17a.spl~ ~override~
+  COPY ~item_rev/itm/plat17.eff~ ~override~
+  COPY ~item_rev/itm/plat17a.eff~ ~override~
 >>>>>>>>
 COPY ~%source%/CASIELS_SOUL_3.tpa~ ~%target%~
-
-
-<<<<<<<< .../item_rev-inlined/item/ARMOR_OF_THE_HART_4.tpa
-COPY ~item_rev/itm/plat17.spl~ ~override~ // Heroic Inspiration
->>>>>>>>
-COPY ~%source%/ARMOR_OF_THE_HART_4.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/RING_OF_INVISIBILITY.tpa
@@ -1168,7 +1176,7 @@ COPY ~%source%/STAFF_OF_AIR_2.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_EARTH_2.tpa
   ACTION_IF (FILE_EXISTS_IN_GAME ~uddrow23.sto~) BEGIN
-    COPY_EXISTING ~uddrow23.sto~ ~override~ // store
+    COPY_EXISTING ~uddrow23.sto~ ~override~
       PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
         READ_LONG 0x34 items_offset
         READ_LONG 0x38 num_items

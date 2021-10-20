@@ -38,7 +38,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~uddeath2.cre~) BEGIN
     PATCH_IF comp_ir=1 && comp_cursed=0 BEGIN
       ADD_CRE_ITEM helm02 #0 #0 #0 NONE HELMET
     END
-    ADD_CRE_ITEM plat16 #0 #0 #0 NONE ARMOR
+    ADD_CRE_ITEM plat17 #0 #0 #0 NONE ARMOR
     ADD_CRE_ITEM sw2h08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
     LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=93 END
   END BUT_ONLY

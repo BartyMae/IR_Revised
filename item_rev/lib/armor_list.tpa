@@ -861,7 +861,7 @@ OUTER_SET $armor("leat13")   = 3  // Skin of the Ghoul +4
 OUTER_SET $armor("leat19")   = 3  // Shadow Dragon Scale
 OUTER_SET $armor("leat23")   = 3  // Trollhide +4
 OUTER_SET $armor("leat24")   = 1  // Grandmaster's Armor +5
-OUTER_SET $armor("plat17")   = 7  // Armor of the Hart +3
+OUTER_SET $armor("plat17")   = 7  // Casiel's Soul
 
 END
 
