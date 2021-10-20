@@ -1521,6 +1521,8 @@ COPY_EXISTING ~xoband01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~JB~
     WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1BAND01~
+    WRITE_LONG  0x5C 0
   END
   BUT_ONLY_IF_IT_CHANGES
   END
@@ -1530,6 +1532,8 @@ COPY_EXISTING ~xoband02.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~JB~
     WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1BAND02~
+    WRITE_LONG  0x5C 0
   END
   BUT_ONLY_IF_IT_CHANGES
   END
@@ -1539,6 +1543,8 @@ COPY_EXISTING ~xoband03.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~JB~
     WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1BAND03~
+    WRITE_LONG  0x5C 0
   END
   BUT_ONLY_IF_IT_CHANGES
   END
@@ -1548,6 +1554,8 @@ COPY_EXISTING ~xoband04.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~JB~
     WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1BAND04~
+    WRITE_LONG  0x5C 0
   END
   BUT_ONLY_IF_IT_CHANGES
   END

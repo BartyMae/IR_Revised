@@ -726,7 +726,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14.itm~) BEGIN
 COPY_EXISTING ~blun14.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -753,7 +757,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14d.itm~) BEGIN
 COPY_EXISTING ~blun14d.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F1~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F1~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 243		// colour index
     SET location = wgrey	// location
@@ -771,7 +779,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14e.itm~) BEGIN
 COPY_EXISTING ~blun14e.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F1~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F1~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 252		// colour index
     SET location = wgrey	// location
@@ -789,7 +801,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14f.itm~) BEGIN
 COPY_EXISTING ~blun14f.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F1~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F1~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246		// colour index
     SET location = wgrey	// location
@@ -807,7 +823,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14g.itm~) BEGIN
 COPY_EXISTING ~blun14g.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246		// colour index
     SET location = wgrey	// location
@@ -825,7 +845,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14h.itm~) BEGIN
 COPY_EXISTING ~blun14h.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246		// colour index
     SET location = wgrey	// location
@@ -843,7 +867,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun14i.itm~) BEGIN
 COPY_EXISTING ~blun14i.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 246		// colour index
     SET location = wgrey	// location
@@ -1097,7 +1125,12 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun30.itm~) BEGIN
 COPY_EXISTING ~blun30.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    // WRITE_ASCII 0x22 ~F3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -1124,7 +1157,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files    // WRI
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun30c.itm~) BEGIN
 COPY_EXISTING ~blun30c.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -1151,7 +1188,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~blun30d.itm~) BEGIN
 COPY_EXISTING ~blun30d.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F3~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F3~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET setr = 229
     SET setg = 215
@@ -1178,7 +1219,11 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   ACTION_IF (FILE_EXISTS_IN_GAME ~dwblun01.itm~) BEGIN
 COPY_EXISTING ~dwblun01.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~F0~    // WRITE_LONG  0x3E 0    // WRITE_ASCII 0x3A ~IBLUN13B~    // WRITE_LONG  0x7A 0    // WRITE_ASCII 0x76 ~IBLUN13B~
+    // WRITE_ASCII 0x22 ~F0~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~IBLUN13B~
+    // WRITE_LONG  0x7A 0
+    // WRITE_ASCII 0x76 ~IBLUN13B~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 218		// colour index
     SET location = wgrey	// location
@@ -1193,7 +1238,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~waflail.itm~) BEGIN // originally blun16, but it overwrote the description and erroneously turned it into a flail - better to use on waflail instead
+  ACTION_IF (FILE_EXISTS_IN_GAME ~waflail.itm~) BEGIN
 COPY_EXISTING ~waflail.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~F0~
@@ -1201,9 +1246,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_LONG  0x8 0x1a30
     WRITE_SHORT  0x1c 0x17
     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~IWAFLAIL~
+    WRITE_ASCII 0x3A ~IBLUN16~
     WRITE_LONG  0x7A 0
-    WRITE_ASCII 0x76 ~IWAFLAIL~
+    WRITE_ASCII 0x76 ~IBLUN16~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 90		// colour index
     SET location = wgrey	// location
@@ -4003,6 +4048,26 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 COPY_EXISTING ~plat16.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~~
+    // WRITE_LONG  0x3E 0
+    // WRITE_ASCII 0x3A ~1plat23B~
+    LAUNCH_PATCH_MACRO ~clear~
+    SET gradient = 226		// colour index
+    SET location = agrey	// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 24		// colour index
+    SET location = ared		// location
+    LAUNCH_PATCH_MACRO ~colour~
+    SET gradient = 110		// colour index
+    SET location = ablue	// location
+    LAUNCH_PATCH_MACRO ~colour~
+    END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~plat17.itm~) BEGIN
+COPY_EXISTING ~plat17.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    // WRITE_ASCII 0x22 ~~
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~1plat23B~
     WRITE_LONG  0x5C 0
@@ -4015,26 +4080,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     SET location = ared		// location
     LAUNCH_PATCH_MACRO ~colour~
     SET gradient = 249		// colour index
-    SET location = ablue	// location
-    LAUNCH_PATCH_MACRO ~colour~
-    END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~plat17.itm~) BEGIN
-COPY_EXISTING ~plat17.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    // WRITE_ASCII 0x22 ~~
-    // WRITE_LONG  0x3E 0
-    // WRITE_ASCII 0x3A ~1plat23B~
-    LAUNCH_PATCH_MACRO ~clear~
-    SET gradient = 226		// colour index
-    SET location = agrey	// location
-    LAUNCH_PATCH_MACRO ~colour~
-    SET gradient = 24		// colour index
-    SET location = ared		// location
-    LAUNCH_PATCH_MACRO ~colour~
-    SET gradient = 110		// colour index
     SET location = ablue	// location
     LAUNCH_PATCH_MACRO ~colour~
     END
