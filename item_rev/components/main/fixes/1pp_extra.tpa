@@ -1,3 +1,29 @@
+// Leather armor fix
+/* ACTION_IF (FILE_EXISTS_IN_GAME ~1gleat01.bam~) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~leat01~
+    ~leat02~
+    ~leat03~
+    ~leat09~
+    ~leat11~
+    ~leat12~
+    ~leat14~
+    ~leat21~
+    ~leat22~
+    ~leat24~
+    ~vicarm~
+    ~leat07_~
+    ~leat25~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN 
+    	WRITE_ASCII 0x44 ~1GLEAT01~ #8
+      END
+    END
+  END
+END */
+
 // Short bows fix
 ACTION_IF (FILE_EXISTS_IN_GAME ~wplbsg1.bam~) BEGIN
   COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
