@@ -3935,7 +3935,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~1plat04~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CPLAT04~ // Used to be cplat02, but cplat04 seems more correct
+    WRITE_ASCII 0x58 ~CPLAT04~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 226		// colour index
     SET location = agrey	// location
@@ -3997,7 +3997,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~1plat13~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CPLAT13~ // Used to be cplat15, but cplat13 seems more correct
+    WRITE_ASCII 0x58 ~CPLAT13~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 98		// colour index
     SET location = agrey	// location
@@ -4017,7 +4017,7 @@ COPY_EXISTING ~plat14.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CPLAT14~ // Used to be CPLAT04, but CPLAT14 seems more correct
+    WRITE_ASCII 0x58 ~CPLAT14~
     END
   BUT_ONLY_IF_IT_CHANGES
   END
@@ -4027,9 +4027,9 @@ COPY_EXISTING ~plat15.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~~
     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~IPLAT15~ // Seems like an error that it was set to iplat23
+    WRITE_ASCII 0x3A ~IPLAT15~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CPLAT15~ // Used to be CPLAT05, but CPLAT15 seems more correct
+    WRITE_ASCII 0x58 ~CPLAT15~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 91		// colour index
     SET location = agrey	// location
@@ -4071,7 +4071,7 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~1plat23B~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CPLAT04~ // Used to be cplat05, but cplat04 seems more correct
+    WRITE_ASCII 0x58 ~CPLAT04~
     LAUNCH_PATCH_MACRO ~clear~
     SET gradient = 104		// colour index
     SET location = agrey	// location
@@ -4195,7 +4195,7 @@ COPY_EXISTING ~plat23.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     // WRITE_ASCII 0x22 ~~
     WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CPLAT04~ // Used to be cplat05, but cplat04 seems more correct
+    WRITE_ASCII 0x58 ~CPLAT04~
     END
   BUT_ONLY_IF_IT_CHANGES
   END
