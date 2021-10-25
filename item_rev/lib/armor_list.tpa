@@ -160,7 +160,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 // IRR / EET armors
 ~leat07_~  => 2   // Telbar's Studded Leather +2 (Studded Leather Armor +2)
 ~plat02_~  => 6   // Fallorain's Plate +1 (Plate Mail +1)
-~plat06_~  => 22  // Ankheg Plate Mail +1 (Taerom Fuiruim of Beregost)
+~plat05_~  => 7   // Plate of the Dark +1 (Full Plate Mail +1)
+~plat06_~  => 22  // Ankheg Plate Mail +1 (Scale Plate Mail +1)
 
 // BG:EE armors
 ~leat25~   => 1   // Rugged Leathers +2
