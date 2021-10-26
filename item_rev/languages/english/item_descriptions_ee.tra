@@ -4839,7 +4839,7 @@ Not Usable By:
  Beast Master~
 @1546 = ~War Hammer +1~
 @1547 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.~
-@1548 = ~Like others of its type, this war hammer is made entirely of steel, with a bone-crushing hammer mounted upon an 18" shaft. This warhammer is particularly good at its job, as it has been enchanted with a few magical properties.
+@1548 = ~Like others of its type, this war hammer is made entirely of steel, with a bone-crushing hammer mounted upon an 18" shaft. This war hammer is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -8030,7 +8030,7 @@ Not Usable By:
  Kensai~
 @1922 = ~Sling +1~
 @1923 = ~Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends.~
-@1924 = ~Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. This particular sling is enchanted.
+@1924 = ~Slings have existed since the beginning of recorded history. The basic sling consists of a leather or fabric strap with a pouch for holding the missile. The weapon is held by both ends of the strap and twirled around the wielder's head. When top speed is attained, the missile is launched by releasing one of the strap's ends. This sling is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -9517,8 +9517,9 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2062 = ~Long Sword +1~
-@2063 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
+@2062 = ~Long Sword +1~ // BG2: These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
+@2063 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. This long sword is particularly good at its job, as it has been enchanted with a few magical properties.
+
 
 STATISTICS:
 
@@ -12097,7 +12098,7 @@ Not Usable By:
  Kensai~
 @2271 = ~Heavy Crossbow +1~
 @2272 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft called a tiller. The bow is usually made of ash or yew. The crossbow fires a type of projectile known as a quarrel or bolt.~
-@2273 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft called a tiller. The bow is usually made of ash or yew. The crossbow fires a type of projectile known as a quarrel or bolt. This crossbow is magical.
+@2273 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft called a tiller. The bow is usually made of ash or yew. The crossbow fires a type of projectile known as a quarrel or bolt. This crossbow is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -12164,7 +12165,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @2277 = ~Light Crossbow +1~
-@2278 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft called a tiller. The bow is usually made of ash or yew. The crossbow fires a type of projectile known as a quarrel or bolt. Light crossbows not only weigh less than their heavier counterparts, but they fire faster as well. This light crossbow has been enchanted.
+@2278 = ~A crossbow is a bow mounted crosswise on a wooden or metal shaft called a tiller. The bow is usually made of ash or yew. The crossbow fires a type of projectile known as a quarrel or bolt. Light crossbows not only weigh less than their heavier counterparts, but they fire faster as well. This crossbow is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -15607,7 +15608,7 @@ Not Usable By:
  Thief
  Beast Master~
 @6024 = ~Hammer of Dawn +1~
-@6025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this warhammer sometimes channels the power of the ancient wyrm's mighty wings.
+@6025 = ~Crafted from the scales and bones of a gold dragon servant of Lathander, this war hammer sometimes channels the power of the ancient wyrm's mighty wings.
 
 STATISTICS:
 

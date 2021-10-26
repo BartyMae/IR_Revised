@@ -445,79 +445,85 @@ Requires:~
 // in any case, we were going (i think) to re-do the Masterwork component, so these strings may not be needed for v4
 
 // Catch ~Damage:~
-@100332 = ~Damage:.*~
+@100332 = ~[%lnl%%mnl%%wnl%]Damage:.*~
 
 // Replace @100332
-@100333 = ~Damage: %a%D%b% + %c%~
+@100333 = ~
+Damage: %a%D%b% + %c%~
 
 // Replace @100332
-@100334 = ~Damage: %a%D%b%~
+@100334 = ~
+Damage: %a%D%b%~
+
+// Replace @100332
+@1003340 = ~
+Damage: +%c%~
 
 // Catch
 @100335 = ~This \([^.]+\) is particularly good at its job, as it has been enchanted with a few magical properties.~
 
 // Replace @100335
-@100336 = ~This weapon in particular is of masterwork quality and offers better performance than common \1s.~
+@100336 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100337 = ~This particular weapon has been enhanced magically to compliment the skill of the wielder.~
 
 // Replace @100337
-@100338 = ~This weapon in particular is of masterwork quality and offers better performance than common ones.~
+@100338 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100339 = ~The blade hums slightly in your hand, the only overt evidence that magic runs through it.~
 
 // Replace @100339
-@100340 = ~This weapon in particular is of masterwork quality and offers better performance than common swords.~
+@100340 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
 
 // Catch
 @100341 = ~This is a magical bastard sword.~
 
 // Replace @100341
-@100342 = ~This particular blade is of masterwork quality and offers better performance than common swords.~
+@100342 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
 
 // Catch
 @100343 = ~This short blade is magical, improving accuracy and damage.~
 
 // Replace @100343
-@100344 = ~This short sword is of masterwork quality, boasting improved accuracy.~
+@100344 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
 
 // Catch
 @100345 = ~This is a magical axe.~
 
 // Replace @100345
-@100346 = ~This axe in particular is of masterwork quality and offers better performance than common ones.~
+@100346 = ~This axe in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100347 = ~The weapon has been enhanced magically, effectively forming a bond between the weapon and its wielder.~
 
 // Replace @100347
-@100348 = ~This one in particular is of masterwork quality and offers better performance than common flails.~
+@100348 = ~This flail in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100349 = ~In this case, the head is pyramidal and seems to glow with an inner blue light, as it sits atop a polished oak shaft.~
 
 // Replace @100349
-@100350 = ~The design of the head varies: some are spiked, others flanged, and still others have pyramidal knobs. This one in particular is of masterwork quality and offers better performance than common maces.~
+@100350 = ~The design of the head varies: some are spiked, others flanged, and still others have pyramidal knobs. This mace in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100351 = ~This particular one is mounted with a golden head that has been magically enhanced so as to improve performance and escape the malleability of gold.~
 
 // Replace @100351
-@100352 = ~Such weapons have round, oval, or cylindrical shaped heads studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting. This morning star in particular is of masterwork quality and offers better performance than common ones.~
+@100352 = ~Such weapons have round, oval, or cylindrical shaped heads studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting. This morning star in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100353 = ~This particular dagger is magical, having special bonuses to its speed, accuracy, and damage it causes.  Also, since it is magical, is it capable of striking opponents that are immune to normal weapons, such as vampires, elementals and mummies.~
 
 // Replace @100353
-@100354 = ~This dagger in particular is of masterwork quality and offers better performance than common ones.~
+@100354 = ~This dagger in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100355 = ~This particular \([^.]+\) is magical, having special bonuses to its speed, accuracy, and damage it causes.~
 
-// replace @100355
-@100356 = ~This \1 in particular is of masterwork quality and offers better performance than common ones.~
+// Replace @100355
+@100356 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100357 = ~It has also been bestowed with a small number of magical properties, however, thus~
@@ -529,13 +535,13 @@ Requires:~
 @100359 = ~This spear is slightly different though, as it has been imbued with certain magical properties.~
 
 // Replace @100359
-@100360 = ~This particular weapon is of masterwork quality and offers better performance than common spears.~
+@100360 = ~This spear in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100361 = ~This one is particularly special as it has been imbued with magical properties.~
 
 // Replace @100361
-@100362 = ~This one is particularly special, as it has been finely crafted and performs better than common staves. ~
+@100362 = ~This staff in particular is of masterwork quality and offers superior performance over common ones.~
 
 // Catch
 @100363 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. 
@@ -543,9 +549,63 @@ Requires:~
 STATISTICS:~
 
 // Replace @100363
-@100364 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. This dagger in particular is of masterwork quality and offers better performance than common ones.
+@100364 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. This dagger in particular is of masterwork quality and offers superior performance over common ones.
 
 STATISTICS:~
+
+// Catch
+@100365 = ~Magical enchantments guarantee these arrows improved accuracy and damage.~
+
+// Replace 100365
+@100366 = ~These arrows in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100367 = ~However, this bolt has been imbued with a small amount of magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.~
+
+// Replace @100367
+@100368 = ~These bolts in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100369 = ~This one has been enhanced with magical properties, giving it an air of perfection.~
+
+// Replace @100369
+@100370 = ~This great bow in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100371 = ~This one has been enhanced with magical properties, giving it an air of perfection.~
+
+// Catch
+@100372 = ~This particular bow is enchanted.~
+
+// Replace @100371 or @100372
+@100373 = ~This bow in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100374 = ~Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent.~
+
+// Replace @100374
+@100375 = ~These bullets in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100376 = ~Magical darts, such as this one, are sought after by thieves and mages.~
+
+// Replace 100376
+@100377 = ~These darts in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100378 = ~This particular sling is enchanted.~
+
+// Replace @100378
+@100379 = ~This sling in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100380 = ~This crossbow is magical.~
+
+// Catch
+@100381 = ~This light crossbow has been enchanted.~
+
+// Replace @100380 or @100381
+@100382 = ~This crossbow in particular is of masterwork quality and offers superior performance over common ones.~
 
 
 //////////////////

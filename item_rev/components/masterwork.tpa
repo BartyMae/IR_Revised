@@ -1,0 +1,739 @@
+INCLUDE ~item_rev/lib/macros.tpa~
+
+// Requires a, b, c: replaces damage line with Damage: aDb + c and updates magical lines
+DEFINE_PATCH_MACRO ~masterwork_english~ BEGIN
+  PATCH_IF (%index% != 0x50) BEGIN // Identified descriptions
+    PATCH_IF (c > 0) BEGIN
+      SPRINT t1 @100332
+      SPRINT t2 @100333
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    END ELSE BEGIN
+      SPRINT t1 @100332
+      SPRINT t2 @100334
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    END
+  
+  SPRINT t1 @100335
+  SPRINT t2 @100336
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100337
+  SPRINT t2 @100338
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100339
+  SPRINT t2 @100340
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100341
+  SPRINT t2 @100342
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    
+  SPRINT t1 @100343
+  SPRINT t2 @100344
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    
+  SPRINT t1 @100345
+  SPRINT t2 @100346
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100347
+  SPRINT t2 @100348
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    
+  SPRINT t1 @100349
+  SPRINT t2 @100350
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100351
+  SPRINT t2 @100352
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100353
+  SPRINT t2 @100354
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100355
+  SPRINT t2 @100356
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100357
+  SPRINT t2 @100358
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100359
+  SPRINT t2 @100360
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100361
+  SPRINT t2 @100362
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100363
+  SPRINT t2 @100364
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100365
+  SPRINT t2 @100366
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100367
+  SPRINT t2 @100368
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100369
+  SPRINT t2 @100370
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100371
+  SPRINT t2 @100373
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100372
+  SPRINT t2 @100373
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100374
+  SPRINT t2 @100375
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100376
+  SPRINT t2 @100377
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100378
+  SPRINT t2 @100379
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100380
+  SPRINT t2 @100382
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100381
+  SPRINT t2 @100382
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  END
+END
+
+DEFINE_PATCH_MACRO ~masterwork_launcher_english~ BEGIN
+  PATCH_IF (%index% != 0x50) BEGIN // Identified descriptions
+    PATCH_IF (c > 0) BEGIN
+      SPRINT t1 @100332
+      SPRINT t2 @1003340
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    END ELSE BEGIN
+      SPRINT t1 @100332
+      SPRINT t2 ~~
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    END
+  
+  SPRINT t1 @100335
+  SPRINT t2 @100336
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100337
+  SPRINT t2 @100338
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100339
+  SPRINT t2 @100340
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100341
+  SPRINT t2 @100342
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    
+  SPRINT t1 @100343
+  SPRINT t2 @100344
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    
+  SPRINT t1 @100345
+  SPRINT t2 @100346
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100347
+  SPRINT t2 @100348
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+    
+  SPRINT t1 @100349
+  SPRINT t2 @100350
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100351
+  SPRINT t2 @100352
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100353
+  SPRINT t2 @100354
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100355
+  SPRINT t2 @100356
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100357
+  SPRINT t2 @100358
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100359
+  SPRINT t2 @100360
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  
+  SPRINT t1 @100361
+  SPRINT t2 @100362
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100363
+  SPRINT t2 @100364
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100365
+  SPRINT t2 @100366
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100367
+  SPRINT t2 @100368
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100369
+  SPRINT t2 @100370
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100371
+  SPRINT t2 @100373
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100372
+  SPRINT t2 @100373
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100374
+  SPRINT t2 @100375
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100376
+  SPRINT t2 @100377
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100378
+  SPRINT t2 @100379
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100380
+  SPRINT t2 @100382
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  SPRINT t1 @100381
+  SPRINT t2 @100382
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+
+  END
+END
+
+DEFINE_PATCH_MACRO ~MAKE_MASTERWORK~ BEGIN
+  READ_BYTE  0x18 flags1
+  READ_LONG  0x64 abilities_offset
+  READ_SHORT 0x68 num_abilities
+  
+  WRITE_BYTE  0x18 (flags1 BAND 0b10111111) // Remove magical flag
+  
+  PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+    WRITE_LONG  0x34 500 // Set cost to purchase
+    WRITE_SHORT 0x42 10 // Set lore to identify
+  END
+  
+  WRITE_LONG  0x60 0 // Set enchantment level
+  
+  FOR (i = 0; i < num_abilities; i += 1) BEGIN
+    READ_SHORT (abilities_offset + 0x38*i + 0x1a) damage_bonus
+    WRITE_SHORT (abilities_offset + 0x38*i + 0x1a) (damage_bonus - 1)
+  END
+  
+  // Update description
+  SPRINT text_update ~masterwork_english~
+  LAUNCH_PATCH_MACRO ~update_item_descriptions~
+END
+
+DEFINE_PATCH_MACRO ~MAKE_MASTERWORK_LAUNCHER~ BEGIN
+  READ_BYTE  0x18 flags1
+  READ_LONG  0x64 abilities_offset
+  READ_SHORT 0x68 num_abilities
+  
+  WRITE_BYTE  0x18 (flags1 BAND 0b10111111) // Remove magical flag
+  
+  PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+    WRITE_LONG  0x34 500 // Set cost to purchase
+    WRITE_SHORT 0x42 10 // Set lore to identify
+  END
+  
+  WRITE_LONG  0x60 0 // Set enchantment level
+  
+  FOR (i = 0; i < num_abilities; i += 1) BEGIN
+    READ_SHORT (abilities_offset + 0x38*i + 0x1a) damage_bonus
+    WRITE_SHORT (abilities_offset + 0x38*i + 0x1a) (damage_bonus - 1)
+  END
+  
+  // Update description
+  SPRINT text_update ~masterwork_launcher_english~
+  LAUNCH_PATCH_MACRO ~update_item_descriptions~
+END
+
+COPY_EXISTING ~arow02.itm~ ~override/arow02_.itm~ // Arrow
+COPY_EXISTING ~arow02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50000
+    SET a = 1
+    SET b = 6
+    SET c = 1
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 3 // Cost to purchase (ammunition is cheaper)
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwarow01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwwarow01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ax1h02.itm~ ~override/ax1h02_.itm~ // Battle Axe
+COPY_EXISTING ~ax1h02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50002
+    SET a = 1
+    SET b = 8
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwax1h01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwax1h01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~blun03.itm~ ~override/blun03_.itm~ // Flail  
+COPY_EXISTING ~blun03.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50004
+    SET a = 1
+    SET b = 6
+    SET c = 1
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwblun01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwblun01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~blun05.itm~ ~override/blun05_.itm~ // Mace
+COPY_EXISTING ~blun05.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50006
+    SET a = 1
+    SET b = 6
+    SET c = 1
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwblun02~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwblun02~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~blun07.itm~ ~override/blun07_.itm~ // Morning Star
+COPY_EXISTING ~blun07.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50008
+    SET a = 2
+    SET b = 4
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwblun03~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwblun03~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bolt02.itm~ ~override/bolt02_.itm~ // Bolt
+COPY_EXISTING ~bolt02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50010
+    SET a = 1
+    SET b = 8
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 3 // Cost to purchase (ammunition is cheaper)
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwbolt01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwbolt01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bow02.itm~ ~override/bow02_.itm~ // Composite Long Bow
+COPY_EXISTING ~bow02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50012
+    READ_BYTE  0x18 flags1
+    WRITE_BYTE  0x18 (flags1 BAND 0b10111111) // Remove magical flag
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 500 // Set cost to purchase
+      WRITE_SHORT 0x42 10 // Set lore to identify
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwbow01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwbow01~
+    END
+    WRITE_LONG  0x60 0 // Set enchantment level
+  SPRINT t1 @100369
+  SPRINT t2 @100370
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bow04.itm~ ~override/bow04_.itm~ // Long Bow
+COPY_EXISTING ~bow04.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50014
+    READ_BYTE  0x18 flags1
+    WRITE_BYTE  0x18 (flags1 BAND 0b10111111) // Remove magical flag
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 500 // Set cost to purchase
+      WRITE_SHORT 0x42 10 // Set lore to identify
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwbow02~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwbow02~
+    END
+    WRITE_LONG  0x60 0 // Set enchantment level
+  SPRINT t1 @100371
+  SPRINT t2 @100373
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bow06.itm~ ~override/bow06_.itm~ // Short Bow
+COPY_EXISTING ~bow06.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50016
+    READ_BYTE  0x18 flags1
+    WRITE_BYTE  0x18 (flags1 BAND 0b10111111) // Remove magical flag
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 500 // Set cost to purchase
+      WRITE_SHORT 0x42 10 // Set lore to identify
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwbow03~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwbow03~
+    END
+    WRITE_LONG  0x60 0 // Set enchantment level
+  SPRINT t1 @100372
+  SPRINT t2 @100373
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bull02.itm~ ~override/bull02_.itm~ // Bullet
+COPY_EXISTING ~bull02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50018
+    SET a = 1
+    SET b = 4
+    SET c = 1
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 3 // Cost to purchase (ammunition is cheaper)
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwbull01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwbull01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dagg02.itm~ ~override/dagg02_.itm~ // Dagger
+COPY_EXISTING ~dagg02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50020
+    SET a = 1
+    SET b = 4
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 250 // Cost to purchase (daggers are cheaper)
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwdagg01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwdagg01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dart02.itm~ ~override/dart02_.itm~ // Dart
+COPY_EXISTING ~dart02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50022
+    SET a = 1
+    SET b = 3
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 3 // Cost to purchase (ammunition is cheaper)
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwdart01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwdart01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~halb02.itm~ ~override/halb02_.itm~ // Halberd
+COPY_EXISTING ~halb02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50024
+    SET a = 1
+    SET b = 10
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwhalb01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwhalb01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hamm02.itm~ ~override/hamm02_.itm~ // War Hammer
+COPY_EXISTING ~hamm02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50026
+    SET a = 1
+    SET b = 4
+    SET c = 1
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwhamm01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwhamm01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~slng02.itm~ ~override/slng02_.itm~ // Sling
+COPY_EXISTING ~slng02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50028
+    SET a = 0
+    SET b = 0
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK_LAUNCHER~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x34 250 // Set cost to purchase (slings are cheaper)
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwslng01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwslng01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sper02.itm~ ~override/sper02_.itm~ // Spear
+COPY_EXISTING ~sper02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50030
+    SET a = 1
+    SET b = 6
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwsper01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwsper01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~staf02.itm~ ~override/staf02_.itm~ // Quarterstaff
+COPY_EXISTING ~staf02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50032
+    SET a = 1
+    SET b = 6
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwstaf01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwstaf01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sw1h02.itm~ ~override/sw1h02_.itm~ // Bastard Sword
+COPY_EXISTING ~sw1h02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50034
+    SET a = 2
+    SET b = 4
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwsw1h01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwsw1h01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sw1h05.itm~ ~override/sw1h05_.itm~ // Long Sword
+COPY_EXISTING ~sw1h05.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50036
+    SET a = 1
+    SET b = 8
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwsw1h02~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwsw1h02~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sw1h08.itm~ ~override/sw1h08_.itm~ // Short Sword
+COPY_EXISTING ~sw1h08.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50038
+    SET a = 1
+    SET b = 6
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwsw1h03~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwsw1h03~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sw1h22.itm~ ~override/sw1h22_.itm~ // Scimitar
+COPY_EXISTING ~sw1h22.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50040
+    SET a = 1
+    SET b = 8
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwsw1h04~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwsw1h04~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/* COPY_EXISTING ~sw1h44.itm~ ~override~ // Katana
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50042
+    SET a = 1
+    SET b = 10
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sw1h47.itm~ ~override~ // Wakizashi
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50044
+    SET a = 1
+    SET b = 8
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~sw1h49.itm~ ~override~ // Ninja-To
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50046
+    SET a = 1
+    SET b = 8
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+  END
+  BUT_ONLY_IF_IT_CHANGES */
+
+COPY_EXISTING ~sw2h02.itm~ ~override/sw2h02_.itm~ // Two-Handed Sword
+COPY_EXISTING ~sw2h02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50048
+    SET a = 1
+    SET b = 10
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwsw2h01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwsw2h01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~xbow02.itm~ ~override/xbow02_.itm~ // Heavy Crossbow
+COPY_EXISTING ~xbow02.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50050
+    SET a = 0
+    SET b = 0
+    SET c = 2
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK_LAUNCHER~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwxbow01~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwxbow01~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~xbow05.itm~ ~override/xbow05_.itm~ // Light Crossbow
+COPY_EXISTING ~xbow05.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    SAY NAME2 @50052
+    SET a = 0
+    SET b = 0
+    SET c = 0
+    LAUNCH_PATCH_MACRO ~MAKE_MASTERWORK_LAUNCHER~
+    PATCH_IF (MOD_IS_INSTALLED ~item_rev/item_rev.tp2~ 0) BEGIN
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~mwxbow02~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~mwxbow02~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/* COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN */
