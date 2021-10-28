@@ -15,11 +15,8 @@ END
 
 <<<<<<<< .../item_rev-inlined/item/AMULET_OF_HEALTH.tpa
   COPY ~item_rev/itm/arow12.itm~ ~override~ // Arrow of Biting, unusable
-    SAY NAME2 @1039
   COPY ~item_rev/itm/arow16.itm~ ~override~ // Arrow of Ice, unusable
-    SAY NAME2 @1047
   COPY ~item_rev/itm/arowkc.itm~ ~override~ // Arrow of Fire, unusable
-    SAY NAME2 @1045
   COPY ~item_rev/itm/aegis.itm~ ~override~ // Wulfgar's Aegis-fang +5, unusable
   COPY ~item_rev/itm/sw2h05.itm~ ~override~ // Sarevok's BG1 Sword of Chaos +5, unusable
   COPY ~item_rev/itm/finsrv.itm~ ~override~ // Sarevok's BG2 Sword of Chaos +5, unusable

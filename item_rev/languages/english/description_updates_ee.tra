@@ -1,25 +1,26 @@
 // WARNING!
 // Do NOT translate this blindly! Refer to "description_updates.doc" to see which exact symbols need translation! In fact, you may want to translate DOC and then copypaste the result to .tra.
 
-//////////////////
-//    Colon     //
-//////////////////
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Weapon Changes ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Colon ---------------- */
 
 // %colon%, catch it along with preceding text in parenthesis after "Damage" (or something else) in ~Damage(Piercing) :~, ~Damage:~, but not in ~Damage type:~
 @100100 = ~[ %tab]*\(([ %tab%a-zA-Z]*)\)?[ %tab]*:~
 
-
-//////////////////
-// Speed Factor //
-//////////////////
+/* ---------------- Speed Factor ---------------- */
 
 // Catch the main speed factor line
 @100101 = ~\([%lnl%%mnl%%wnl%]Speed[ %tab%]+[Ff]actor%colon%.*\)~
 
-
-//////////////////
-//    THAC0     //
-//////////////////
+/* ---------------- THAC0 ---------------- */
 
 // %old_line%, catch ~4 bonus~ and ~+ 4~
 @100102 = ~\([+]\|[+][ %tab%]+\)?%othaco%\([ %tab%]+[Bb]onus\)?~
@@ -71,10 +72,7 @@ Damage\1~
 THAC0: %new_line%
 Weight:~
 
-
-//////////////////
-//    Damage    //
-//////////////////
+/* ---------------- Damage ---------------- */
 
 // %old_line%, catch ~2D4  +1~, ~2d4~, ~+ 1 Bonus~ and ~-2 penalty~ respectively
 @100116 = ~%odice%[Dd]%osize%[ %tab%]*[+][ %tab%]*%odamage%~
@@ -116,10 +114,7 @@ Speed Factor:~
 Damage: %new_line% (missile)
 Speed Factor\1~
 
-
-//////////////////
-// Damage Type  //
-//////////////////
+/* ---------------- Damage Type ---------------- */
 
 // Catch ~(slashing)~
 @100132 = ~[ %tab%]([Ss]lashing)[%lnl%%mnl%%wnl%]~
@@ -143,13 +138,10 @@ Speed Factor\1~
 ~
 
 // Replace @100132 or @100134 with slashing and piercing
-@1001380 = ~ (slashing and piercing)
+@1001370 = ~ (slashing and piercing)
 ~
 
-
-//////////////////
-//    Fixes     //
-//////////////////
+/* ---------------- Fixes ---------------- */
 
 // 138-145, 151-199
 
@@ -228,10 +220,7 @@ Speed Factor\1~
 // Replace @100166
 @100167 = ~Damage: 1d4+2~
 
-
-//////////////////
-// Proficiency  //
-//////////////////
+/* ---------------- Proficiency ---------------- */
 
 // Catch ~Proficiency type:~
 @100146 = ~Proficiency[ %tab%]+[Tt]ype:.*~
@@ -260,10 +249,7 @@ Speed Factor\1~
 // Replace @100146
 @100170 = ~Proficiency Type: Ninjato~
 
-
-//////////////////
-//   Halberds   //
-//////////////////
+/* ---------------- Halberds ---------------- */
 
 // Catch ~Damage:\(anything\)
 @100200 = ~[%lnl%%mnl%%wnl%]Damage[ %tab%]*\(:.*\)~
@@ -295,23 +281,29 @@ Speed Factor (slashing)\1~
 @100207 = ~Halberd~
 
 
-//////////////////
-// Spellcasting //
-//////////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-// Catch ~Miscast Arcane Magic:\(anything\)~
+/* ---------------- Revised Armor ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Spellcasting ---------------- */
+
+// Catch ~ Miscast Arcane Magic:\(anything\)~
 @100300 = ~[%lnl%%mnl%%wnl%][ %tab%]*Miscast[ %tab%]*\([Aa]rcane[ %tab%]*\)?[Mm]agic:.*~
 
-// Catch ~Arcane Spell Failure:\(anything\)~
+// Catch ~ Arcane Spell Failure:\(anything\)~
 @100301 = ~[%lnl%%mnl%%wnl%][ %tab%]*Arcane[ %tab%]*[Ss]pell[ %tab%]*[Ff]ailure:.*~
 
-// Catch ~Spellcasting Time:\(anything\)~
+// Catch ~ Spellcasting Time:\(anything\)~
 @100302 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spellcasting[ %tab%]*[Tt]ime:.*~
 
-// Catch ~Spell Failure:\(anything\)~
+// Catch ~ Spell Failure:\(anything\)~
 @100303 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spell[ %tab%]*[Ff]ailure:.*~
 
-// Catch ~Allows arcane spellcasting without penalties\(anything\)~
+// Catch ~ Spellcasting is not disabled\(anything\)~
 @100304 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Spellcasting is not disabled*~
 
 // Add spellcasting failure line to @100114
@@ -330,9 +322,7 @@ Casting Time Penalty: +%xspd%
 Requires:~
 
 
-//////////////////
-// Encumbrance //
-//////////////////
+/* ---------------- Encumbrance ---------------- */
 
 // Add dexterity penalty line to @100114
 @100308 = ~
@@ -350,14 +340,12 @@ Speed Factor Penalty: +%xsf%
 Requires:~
 
 // Add physical resistance line to @100114
-@100299 = ~
+@100383 = ~
 Physical Resistance Bonus: +%xres%%
 Requires:~
 
 
-//////////////////
-//   Shields    //
-//////////////////
+/* ---------------- Shields ---------------- */
 
 // Disabled, catch buckler ~No protection against missile and piercing attacks~
 @100311 = ~PLACEHOLDER~
@@ -404,13 +392,62 @@ Requires:~
 – THAC0: -1~
 
 // Replace @100321
-@100407 = ~
+@100332 = ~
 Special: +2 vs. Missile Weapons~
 
+// Catch small shields weight (3)
+@100333 = ~[%lnl%%mnl%%wnl%]Weight:.*~
 
-//////////////////
-//   Thieving   //
-//////////////////
+// Replace @100333
+@100334 = ~
+Weight: 6~
+
+// Catches small shield strength (4)
+@100335 = ~4[ %tab%][Ss]trength~
+
+// Replaces @100335
+@100336 = ~%new_strength% Strength~
+
+// Catch medium shields weight (7)
+@100337 = ~[%lnl%%mnl%%wnl%]Weight:.*~
+
+// Replace @100337
+@100338 = ~
+Weight: %new_weight%~
+
+// Catches medium shield strength (12)
+@100339 = ~12[ %tab%][Ss]trength~
+
+// Replaces @100339
+@100340 = ~%new_strength% Strength~
+
+// Catch large shields weight (15)
+@100341 = ~[%lnl%%mnl%%wnl%]Weight:.*~
+
+// Replace @100341
+@100342 = ~
+Weight: %new_weight%~
+
+// Catches large shield strength (15)
+@100343 = ~15[ %tab%][Ss]trength~
+
+// Replaces @100343
+@100344 = ~%new_strength% Strength~
+
+// Catch bucklers weight (2)
+@100345 = ~[%lnl%%mnl%%wnl%]Weight:.*~
+
+// Replace @100345
+@100346 = ~
+Weight: %new_weight%~
+
+// Catches bucklers strength (4)
+@100347 = ~4[ %tab%][Ss]trength~
+
+// Replaces @100347
+@100348 = ~%new_strength% Strength~
+
+/* ---------------- Thieving ---------------- */
 
 // Catch ~Open Locks:~
 @100325 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Open Locks:.*~
@@ -436,181 +473,13 @@ Stealth Penalty: -%value%%
 Requires:~
 
 
-//////////////////
-//  Masterwork  //
-//////////////////
-// 335-363 catches are for identified weapon descriptions, +1 items
-// the list of replacements was assembled by Mike1072, so i (Ardanis) can't tell offhand which string is for which ITM
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-// in any case, we were going (i think) to re-do the Masterwork component, so these strings may not be needed for v4
+/* ---------------- Wands ---------------- */
 
-// Catch ~Damage:~
-@100332 = ~[%lnl%%mnl%%wnl%]Damage:.*~
-
-// Replace @100332
-@100333 = ~
-Damage: %a%D%b% + %c%~
-
-// Replace @100332
-@100334 = ~
-Damage: %a%D%b%~
-
-// Replace @100332
-@1003340 = ~
-Damage: +%c%~
-
-// Catch
-@100335 = ~This \([^.]+\) is particularly good at its job, as it has been enchanted with a few magical properties.~
-
-// Replace @100335
-@100336 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100337 = ~This particular weapon has been enhanced magically to compliment the skill of the wielder.~
-
-// Replace @100337
-@100338 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100339 = ~The blade hums slightly in your hand, the only overt evidence that magic runs through it.~
-
-// Replace @100339
-@100340 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
-
-// Catch
-@100341 = ~This is a magical bastard sword.~
-
-// Replace @100341
-@100342 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
-
-// Catch
-@100343 = ~This short blade is magical, improving accuracy and damage.~
-
-// Replace @100343
-@100344 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
-
-// Catch
-@100345 = ~This is a magical axe.~
-
-// Replace @100345
-@100346 = ~This axe in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100347 = ~The weapon has been enhanced magically, effectively forming a bond between the weapon and its wielder.~
-
-// Replace @100347
-@100348 = ~This flail in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100349 = ~In this case, the head is pyramidal and seems to glow with an inner blue light, as it sits atop a polished oak shaft.~
-
-// Replace @100349
-@100350 = ~The design of the head varies: some are spiked, others flanged, and still others have pyramidal knobs. This mace in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100351 = ~This particular one is mounted with a golden head that has been magically enhanced so as to improve performance and escape the malleability of gold.~
-
-// Replace @100351
-@100352 = ~Such weapons have round, oval, or cylindrical shaped heads studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting. This morning star in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100353 = ~This particular dagger is magical, having special bonuses to its speed, accuracy, and damage it causes.  Also, since it is magical, is it capable of striking opponents that are immune to normal weapons, such as vampires, elementals and mummies.~
-
-// Replace @100353
-@100354 = ~This dagger in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100355 = ~This particular \([^.]+\) is magical, having special bonuses to its speed, accuracy, and damage it causes.~
-
-// Replace @100355
-@100356 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100357 = ~It has also been bestowed with a small number of magical properties, however, thus~
-
-// Replace @100357
-@100358 = ~This weapon in particular is of masterwork quality, thus~
-
-// Catch
-@100359 = ~This spear is slightly different though, as it has been imbued with certain magical properties.~
-
-// Replace @100359
-@100360 = ~This spear in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100361 = ~This one is particularly special as it has been imbued with magical properties.~
-
-// Replace @100361
-@100362 = ~This staff in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100363 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. 
-
-STATISTICS:~
-
-// Replace @100363
-@100364 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. This dagger in particular is of masterwork quality and offers superior performance over common ones.
-
-STATISTICS:~
-
-// Catch
-@100365 = ~Magical enchantments guarantee these arrows improved accuracy and damage.~
-
-// Replace 100365
-@100366 = ~These arrows in particular are of masterwork quality and offer superior performance over common ones.~
-
-// Catch
-@100367 = ~However, this bolt has been imbued with a small amount of magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.~
-
-// Replace @100367
-@100368 = ~These bolts in particular are of masterwork quality and offer superior performance over common ones.~
-
-// Catch
-@100369 = ~This one has been enhanced with magical properties, giving it an air of perfection.~
-
-// Replace @100369
-@100370 = ~This great bow in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100371 = ~This one has been enhanced with magical properties, giving it an air of perfection.~
-
-// Catch
-@100372 = ~This particular bow is enchanted.~
-
-// Replace @100371 or @100372
-@100373 = ~This bow in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100374 = ~Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent.~
-
-// Replace @100374
-@100375 = ~These bullets in particular are of masterwork quality and offer superior performance over common ones.~
-
-// Catch
-@100376 = ~Magical darts, such as this one, are sought after by thieves and mages.~
-
-// Replace 100376
-@100377 = ~These darts in particular are of masterwork quality and offer superior performance over common ones.~
-
-// Catch
-@100378 = ~This particular sling is enchanted.~
-
-// Replace @100378
-@100379 = ~This sling in particular is of masterwork quality and offers superior performance over common ones.~
-
-// Catch
-@100380 = ~This crossbow is magical.~
-
-// Catch
-@100381 = ~This light crossbow has been enchanted.~
-
-// Replace @100380 or @100381
-@100382 = ~This crossbow in particular is of masterwork quality and offers superior performance over common ones.~
-
-
-//////////////////
-//    Wands     //
-//////////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 // Catch ~Usable by:~
 @100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
@@ -648,9 +517,15 @@ STATISTICS:~
  14 Wisdom~
 
 
-//////////////////
-//    Druids    //
-//////////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Classes ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Druid ---------------- */
 
 // Add "Druid" to \(@100400\|@100401\)
 @100411 = ~Druid~
@@ -658,10 +533,7 @@ STATISTICS:~
 // Catch ~Druid~
 @100412 = ~[Dd]ruid~
 
-
-//////////////////
-//    Kensai    //
-//////////////////
+/* ---------------- Kensai ---------------- */
 
 // Catch from kit description
 // Get the string number from "kitlist.2da" table, line #3 (KENSAI), column #4 (HELP) - unless changed by mods, it's 25204
@@ -676,10 +548,7 @@ STATISTICS:~
 // Catch ~Kensai~
 @100416 = ~[Kk]ensai~
 
-
-//////////////////
-//  Beastmaster //
-//////////////////
+/* ---------------- Beast Master ---------------- */
 
 // Add "Beast Master" to \(@100400\|@100401\)
 @100417 = ~Beast Master~
@@ -687,6 +556,14 @@ STATISTICS:~
 // Catch ~Beastmaster~ or ~Beast Master~
 @100418 = ~[Bb]east[ %tab%]*[Mm]aster~
 
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Shield Bash ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 //////////////////
 //  Shield Bash //
@@ -704,9 +581,13 @@ Weight:~
 @100421 = ~Unaffected By Weapon.~
 
 
-/////////////////////////////////////
-//  Revised Critical Hit Aversion  //
-/////////////////////////////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Revised Critical Hit Aversion ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 // Catch ~Protects against critical hits~
 @100422 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Protects against critical hits~
@@ -721,3 +602,175 @@ Weight:~
 // Add AC line to @100423
 @100425 = ~Equipped abilities:
 – Armor Class: +1~
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Masterwork ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+// Catch ~Damage:~
+@100500 = ~[%lnl%%mnl%%wnl%]Damage:.*~
+
+// Replace @100500
+@100501 = ~
+Damage: %a%D%b% + %c%~
+
+// Replace @100500
+@100502 = ~
+Damage: %a%D%b%~
+
+// Replace @100500
+@100503 = ~
+Damage: +%c%~
+
+// Catch
+@100504 = ~This \([^.]+\) is particularly good at its job, as it has been enchanted with a few magical properties.~
+
+// Replace @100504
+@100505 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100506 = ~This particular weapon has been enhanced magically to compliment the skill of the wielder.~
+
+// Replace @100506
+@100507 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100508 = ~The blade hums slightly in your hand, the only overt evidence that magic runs through it.~
+
+// Replace @100508
+@100509 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
+
+// Catch
+@100510 = ~This is a magical bastard sword.~
+
+// Replace @100510
+@100511 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
+
+// Catch
+@100512 = ~This short blade is magical, improving accuracy and damage.~
+
+// Replace @100512
+@100513 = ~This blade in particular is of masterwork quality and offers superior performance over common swords.~
+
+// Catch
+@100514 = ~This is a magical axe.~
+
+// Replace @100514
+@100515 = ~This axe in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100516 = ~The weapon has been enhanced magically, effectively forming a bond between the weapon and its wielder.~
+
+// Replace @100516
+@100517 = ~This flail in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100518 = ~In this case, the head is pyramidal and seems to glow with an inner blue light, as it sits atop a polished oak shaft.~
+
+// Replace @100518
+@100519 = ~The design of the head varies: some are spiked, others flanged, and still others have pyramidal knobs. This mace in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100520 = ~This particular one is mounted with a golden head that has been magically enhanced so as to improve performance and escape the malleability of gold.~
+
+// Replace @100520
+@100521 = ~Such weapons have round, oval, or cylindrical shaped heads studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting. This morning star in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100522 = ~This particular dagger is magical, having special bonuses to its speed, accuracy, and damage it causes.  Also, since it is magical, is it capable of striking opponents that are immune to normal weapons, such as vampires, elementals and mummies.~
+
+// Replace @100522
+@100523 = ~This dagger in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100524 = ~This particular \([^.]+\) is magical, having special bonuses to its speed, accuracy, and damage it causes.~
+
+// Replace @100524
+@100525 = ~This weapon in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100526 = ~It has also been bestowed with a small number of magical properties, however, thus~
+
+// Replace @100526
+@100527 = ~This weapon in particular is of masterwork quality, thus~
+
+// Catch
+@100528 = ~This spear is slightly different though, as it has been imbued with certain magical properties.~
+
+// Replace @100528
+@100529 = ~This spear in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100530 = ~This one is particularly special as it has been imbued with magical properties.~
+
+// Replace @100530
+@100531 = ~This staff in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100532 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. 
+
+STATISTICS:~
+
+// Replace @100532
+@100533 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. This dagger in particular is of masterwork quality and offers superior performance over common ones.
+
+STATISTICS:~
+
+// Catch
+@100534 = ~Magical enchantments guarantee these arrows improved accuracy and damage.~
+
+// Replace 100534
+@100535 = ~These arrows in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100536 = ~However, this bolt has been imbued with a small amount of magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.~
+
+// Replace @100536
+@100537 = ~These bolts in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100538 = ~This magical bow requires requires great strength to use.~
+
+// Replace @100538
+@100539 = ~This great bow in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100540 = ~This one has been enhanced with magical properties, giving it an air of perfection.~
+
+// Catch
+@100541 = ~This particular bow is enchanted.~
+
+// Replace @100540 or @100541
+@100542 = ~This bow in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100543 = ~Magical currents are embedded inside this bullet so that it seems a little more balanced and lighter as it flies towards an opponent.~
+
+// Replace @100543
+@100544 = ~These bullets in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100545 = ~Magical darts, such as this one, are sought after by thieves and mages.~
+
+// Replace 100545
+@100546 = ~These darts in particular are of masterwork quality and offer superior performance over common ones.~
+
+// Catch
+@100547 = ~This particular sling is enchanted.~
+
+// Replace @100547
+@100548 = ~This sling in particular is of masterwork quality and offers superior performance over common ones.~
+
+// Catch
+@100549 = ~This crossbow is magical.~
+
+// Catch
+@100550 = ~This light crossbow has been enchanted.~
+
+// Replace @100549 or @100550
+@100551 = ~This crossbow in particular is of masterwork quality and offers superior performance over common ones.~

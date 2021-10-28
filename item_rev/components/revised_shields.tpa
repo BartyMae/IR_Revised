@@ -6,7 +6,7 @@ INCLUDE ~item_rev/lib/identify_item.tpa~
 //////////////////////////////////////////////
 // Descriptions
 
-DEFINE_PATCH_MACRO ~revised_shield_bonuses_buckler_english~ BEGIN
+DEFINE_PATCH_MACRO ~revised_shields_bonuses_buckler_english~ BEGIN
   SPRINT t1 @100311
   REPLACE_TEXTUALLY ~%t1%~ ~~
   SPRINT t1 @100312
@@ -14,13 +14,13 @@ DEFINE_PATCH_MACRO ~revised_shield_bonuses_buckler_english~ BEGIN
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
-DEFINE_PATCH_MACRO ~revised_shield_bonuses_small_english~ BEGIN
+DEFINE_PATCH_MACRO ~revised_shields_bonuses_small_english~ BEGIN
   SPRINT t1 @100314
   REPLACE_TEXTUALLY ~%t1%~ ~~
 END
 
 // Requires "new_ac", the new AC bonus
-DEFINE_PATCH_MACRO ~revised_shield_bonuses_medium_english~ BEGIN
+DEFINE_PATCH_MACRO ~revised_shields_bonuses_medium_english~ BEGIN
   PATCH_IF (%index% != 0x50) BEGIN // Identified descriptions
     SPRINT t1 @100315
     SPRINT t2 @100316
@@ -30,14 +30,14 @@ DEFINE_PATCH_MACRO ~revised_shield_bonuses_medium_english~ BEGIN
     SPRINT t2 @100317
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
-  
+
   SPRINT t1 @100319
   SPRINT t2 @100324
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
 // Requires "new_ac", the new AC bonus, and "new_type", the new missile bonus
-DEFINE_PATCH_MACRO ~revised_shield_bonuses_large_english~ BEGIN
+DEFINE_PATCH_MACRO ~revised_shields_bonuses_large_english~ BEGIN
   PATCH_IF (%index% != 0x50) BEGIN // Identified descriptions
     SPRINT t1 @100315
     SPRINT t2 @100316
@@ -47,21 +47,68 @@ DEFINE_PATCH_MACRO ~revised_shield_bonuses_large_english~ BEGIN
     SPRINT t2 @100318
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
-  
+
   SPRINT t1 @100319
   SPRINT t2 @100320
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
-  
+
   PATCH_IF (new_type == 0 || %index% == 0x50) BEGIN // Unidentified descriptions
     SPRINT t1 @100321
-    SPRINT t2 @100407
+    SPRINT t2 @100332
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END ELSE BEGIN // Identified that had a non-standard missile bonus beforehand
     SPRINT t1 @100322
     SPRINT t2 @100323
     REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
   END
+END
 
+DEFINE_PATCH_MACRO ~revised_shields_small_shields_weight~ BEGIN
+  SPRINT t1 @100333
+  SPRINT t2 @100334
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_small_shields_strength~ BEGIN
+  SPRINT t1 @100335
+  SPRINT t2 @100336
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_medium_shields_weight~ BEGIN
+  SPRINT t1 @100337
+  SPRINT t2 @100338
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_medium_shields_strength~ BEGIN
+  SPRINT t1 @100339
+  SPRINT t2 @100340
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_large_shields_weight~ BEGIN
+  SPRINT t1 @100341
+  SPRINT t2 @100342
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_large_shields_strength~ BEGIN
+  SPRINT t1 @100343
+  SPRINT t2 @100344
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_bucklers_weight~ BEGIN
+  SPRINT t1 @100345
+  SPRINT t2 @100346
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_shields_bucklers_strength~ BEGIN
+  SPRINT t1 @100347
+  SPRINT t2 @100348
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
 //////////////////////////////////////////////
@@ -135,19 +182,56 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
       SET specific_amount = 0
       LAUNCH_PATCH_MACRO ~ADD_AC_VS_TYPE~
 
+      // Update weight
+      READ_LONG 0x4c weight
+      PATCH_IF (weight = 2) BEGIN
+        SET new_weight = 4
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_shields_bucklers_weight
+        LPM update_item_descriptions
+      END
+
+      // Update strength requirement
+      READ_LONG 0x26 strength
+      PATCH_IF (strength = 4) BEGIN
+        SET new_strength = 4
+        WRITE_LONG 0x26 %new_strength%
+        SPRINT text_update revised_shields_bucklers_strength
+        LPM update_item_descriptions
+      END
+
       // Update description
-      SPRINT text_update ~revised_shield_bonuses_buckler_english~
+      SPRINT text_update ~revised_shields_bonuses_buckler_english~
       LAUNCH_PATCH_MACRO ~update_item_descriptions~
     END
 
     PATCH_IF small_shield BEGIN // Small shields
+
       // Remove +X penalty to missile weapons
       SET type = 2 // missile
       SET specific_amount = 0
       LAUNCH_PATCH_MACRO ~ADD_AC_VS_TYPE~
 
+      // Update weight
+      READ_LONG 0x4c weight
+      PATCH_IF (weight = 3) BEGIN
+        SET new_weight = 6
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_shields_small_shields_weight
+        LPM update_item_descriptions
+      END
+
+      // Update strength requirement
+      READ_LONG 0x26 strength
+      PATCH_IF (strength = 4) BEGIN
+        SET new_strength = 6
+        WRITE_LONG 0x26 %new_strength%
+        SPRINT text_update revised_shields_small_shields_strength
+        LPM update_item_descriptions
+      END
+
       // Update description
-      SPRINT text_update ~revised_shield_bonuses_small_english~
+      SPRINT text_update ~revised_shields_bonuses_small_english~
       LAUNCH_PATCH_MACRO ~update_item_descriptions~
     END
 
@@ -165,11 +249,30 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
           SET found = 1 // Prevents the loop from continuing
         END
       END
+
       // Add -1 penalty to THAC0
       LPF ADD_ITEM_EQEFFECT INT_VAR opcode=54 target=1 timing=2 parameter1= 0 - 1 END
 
+      // Update weight
+      READ_LONG 0x4c weight
+      PATCH_IF (weight = 7) BEGIN
+        SET new_weight = 15
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_shields_medium_shields_weight
+        LPM update_item_descriptions
+      END
+
+      // Update strength requirement
+      READ_LONG 0x26 strength
+      PATCH_IF (strength = 12) BEGIN
+        SET new_strength = 12
+        WRITE_LONG 0x26 %new_strength%
+        SPRINT text_update revised_shields_medium_shields_strength
+        LPM update_item_descriptions
+      END
+
       // Update description
-      SPRINT text_update ~revised_shield_bonuses_medium_english~
+      SPRINT text_update ~revised_shields_bonuses_medium_english~
       LAUNCH_PATCH_MACRO ~update_item_descriptions~
     END
 
@@ -178,6 +281,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
       SET type = 2 // missile
       SET specific_amount = 1
       LAUNCH_PATCH_MACRO ~ADD_AC_VS_TYPE~
+
       // Increase AC by 2
       SET found = 0
       SET new_ac = 0
@@ -191,15 +295,35 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
           SET found = 1 // Prevents the loop from continuing
         END
       END
+
       // Add -2 penalty to THAC0
       LPF ADD_ITEM_EQEFFECT INT_VAR opcode=54 target=1 timing=2 parameter1= 0 - 2 END
-    PATCH_IF
-      ~%SOURCE_RES%~ STRING_EQUAL ~shld19~
-    BEGIN
-      LPF ADD_ITEM_EQEFFECT INT_VAR opcode=54 target=1 timing=2 parameter1= 0 - 1 END
-    END
+      PATCH_IF
+        ~%SOURCE_RES%~ STRING_EQUAL ~shld19~
+      BEGIN
+        LPF ADD_ITEM_EQEFFECT INT_VAR opcode=54 target=1 timing=2 parameter1= 0 - 1 END
+      END
+
+      // Update weight
+      READ_LONG 0x4c weight
+      PATCH_IF (weight = 15) BEGIN
+        SET new_weight = 45
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_shields_large_shields_weight
+        LPM update_item_descriptions
+      END
+
+      // Update strength requirement
+      READ_LONG 0x26 strength
+      PATCH_IF (strength = 15) BEGIN
+        SET new_strength = 15
+        WRITE_LONG 0x26 %new_strength%
+        SPRINT text_update revised_shields_large_shields_strength
+        LPM update_item_descriptions
+      END
+
       // Update description
-      SPRINT text_update ~revised_shield_bonuses_large_english~
+      SPRINT text_update ~revised_shields_bonuses_large_english~
       LAUNCH_PATCH_MACRO ~update_item_descriptions~
     END
 
