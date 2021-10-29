@@ -100,7 +100,7 @@ SET resist_dispel = 2	// dispel/resitance
 SET duration = 60		// duration
 SET probability1 = 100	// probability 1
 SET probability2 = 0	// probability 2
-SPRINT "resource" "staf11a" 		// resource
+SPRINT "resource" "staf11d" 		// resource
 SET dicenumber = 0		// dice number
 SET dicesize = 0		// dice size
 SET savingthrow = 0   // saving throw

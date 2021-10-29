@@ -65,7 +65,7 @@ Weight: 1
 Usable By:
  Warrior~
 @3022=~Oil of Fiery Burning~
-@3023=~This oil is applied on melee and ranged weapons and sets them aflame without harming the wielder. Weapons coated with this oil of fiery burning deal 1D6 additional points of fire damage upon contact. Multiple uses of this potion are not cumulative. The effect lasts for 1 turn and cannot be dispelled.
+@3023=~This oil is applied on melee and ranged weapons and sets them aflame without harming the wielder. Weapons coated with this oil of fiery burning deal an additional 1D6 fire damage upon contact. Multiple uses of this potion are not cumulative. The effect lasts for 1 turn and cannot be dispelled.
 
 Weight: 1
 Usable By:

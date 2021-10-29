@@ -60,7 +60,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Silver Glow: +2 bonus to AC and saving throws vs. vampires and werewolves
+ Silver Glow: +2 bonus to AC and saving throws vs. lycanthropes and vampires
 
 Weight: 0
 Not Usable By:
@@ -1014,7 +1014,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1131 = ~Flail of Ages +3~
-@1132 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity with magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1132 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 STATISTICS:
 
@@ -1289,7 +1289,7 @@ Completely immune to any and all weapons used against him, Nysrogh rampaged thro
 
 Unileth's champion issued a challenge to Nysrogh, which the demon readily accepted, confident it could not be harmed by any weaponry known to the Realms. On the field of battle they met and beneath the fierce gaze of Nysrogh, Unileth's champion promptly dropped his weapon and fled in terror.
 
-Nysrogh reached out to claim the champion's discarded club as a symbol of his victory. But as the demon's clawed hand touched the surface of the club he was encircled by a spell of imprisonment, for which he was completely unprepared. Unileth's ploy had worked, and the demon that could not be harmed by any weapon was forever trapped inside the magic club.
+Nysrogh reached out to claim the champion's discarded club as a symbol of his victory. But as the demon's clawed hand touched the surface of the club, he unleashed a spell of imprisonment, for which he was completely unprepared. Unileth's ploy had worked, and the demon that could not be harmed by any weapon was forever trapped inside the magic club.
 
 The crude wooden club still burns with the raging spirit of the demon forever trapped within by the powerful enchantments placed on the weapon. Occasionally, however, the demon's wrath manages to escape in a fiery blast.
 
@@ -1319,7 +1319,7 @@ Completely immune to any and all weapons used against him, Nysrogh rampaged thro
 
 Unileth's champion issued a challenge to Nysrogh, which the demon readily accepted, confident it could not be harmed by any weaponry known to the Realms. On the field of battle they met and beneath the fierce gaze of Nysrogh, Unileth's champion promptly dropped his weapon and fled in terror.
 
-Nysrogh reached out to claim the champion's discarded club as a symbol of his victory. But as the demon's clawed hand touched the surface of the club he was encircled by a spell of imprisonment, for which he was completely unprepared. Unileth's ploy had worked, and the demon that could not be harmed by any weapon was forever trapped inside the magic club.
+Nysrogh reached out to claim the champion's discarded club as a symbol of his victory. But as the demon's clawed hand touched the surface of the club, he unleashed a spell of imprisonment, for which he was completely unprepared. Unileth's ploy had worked, and the demon that could not be harmed by any weapon was forever trapped inside the magic club.
 
 The enchantments from the Ring of Fire Resistance makes the demon spirit trapped within this weapon easier to control, though the wrath of the creature may occasionally still be released without warning.
 
@@ -1349,7 +1349,7 @@ Not Usable By:
 @1160 = ~Storm Star +4~
 @1161 = ~This magical weapon is of ancient design, which scholars have linked to Netheril itself. Though such electrum plated maces as Storm Star are usually found in the North, there are whispered rumors of this particularly powerful specimen being lost in the Southern reaches of the Realms.
 
-Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular arcs of lightning when wielded, a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
+Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular, though harmless, arcs of lightning when wielded - a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
 
 STATISTICS:
 
@@ -1377,7 +1377,7 @@ Not Usable By:
 @1162 = ~Storm Star +5~
 @1163 = ~This magical weapon is of ancient design, which scholars have linked to Netheril itself. Though such electrum plated maces as Storm Star are usually found in the North, there are whispered rumors of this particularly powerful specimen being lost in the Southern reaches of the Realms.
 
-Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular arcs of lightning when wielded, a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
+Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular, though harmless, arcs of lightning when wielded - a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
 
 Storm Star's already formidable abilities have been further enhanced by the addition of the otherworldly Starfall Ore. This strange material comes from the core of a meteorite, which fell from the heavens. The malleable ore is surprisingly strong, and radiates an inner heat. Any item forged from the alien matter would undoubtedly possess mysterious and unearthly properties.
 
@@ -1406,7 +1406,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1164 = ~Flail of Ages +5~
-@1165 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity with magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1165 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 With the addition of the fifth and final head, the true potential of the Flail of Ages is finally realized.
 
@@ -1436,7 +1436,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1166 = ~Flail of Ages +4~
-@1167 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity with magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1167 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
 
@@ -1464,7 +1464,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1168 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity with magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1168 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
 
@@ -8431,7 +8431,7 @@ Not Usable By:
 
 Rumors and legends quickly spread about the invincible Ixil, who rode at the head of every raiding party brandishing his infamous magical spear. Some believe he was not truly a man, but a demon in human form, drawn to Faerûn by the chaos and confusion of the Time of Troubles.
 
-Ixil's own sadism and savagery did little to quell these allegations. During battle the head of Ixil's Spike, his mighty spear, would detach to pin opponents to the ground even as a new head magically reformed on the end of the spear. Often in the thick of combat, Ixil would pause to savor the helpless struggles of an enemy impaled by the point of his spear, seeming to delight in the writhing agony of his enemy.
+Ixil's own sadism and savagery did little to quell these allegations. During battle the head of Ixil's Spike, his mighty spear, would detach to pin opponents to the ground even as a new head magically reformed on the end of the spear. Often in the thick of combat, Ixil would pause to savor the helpless struggles of an enemy impaled by the point of his spear... seeming to delight in the writhing agony of his enemy.
 
 The warlord was finally defeated when he was lured into attacking a contingent of powerful priests and knights from the Order of the Radiant Heart, posing as simple pilgrims. Witnesses to the battle claim Ixil was not slain, but was in fact banished to some hellish outer plane by the holy magic of the Order.
 
@@ -8461,7 +8461,7 @@ Not Usable By:
 
 Rumors and legends quickly spread about the invincible Ixil, who rode at the head of every raiding party brandishing his infamous magical spear. Some believe he was not truly a man, but a demon in human form, drawn to Faerûn by the chaos and confusion of the Time of Troubles.
 
-Ixil's own sadism and savagery did little to quell these allegations. During battle the head of Ixil's Spike, his mighty spear, would detach to pin opponents to the ground even as a new head magically reformed on the end of the spear. Often in the thick of combat, Ixil would pause to savor the helpless struggles of an enemy impaled by the point of his spear, seeming to delight in the writhing agony of his enemy.
+Ixil's own sadism and savagery did little to quell these allegations. During battle the head of Ixil's Spike, his mighty spear, would detach to pin opponents to the ground even as a new head magically reformed on the end of the spear. Often in the thick of combat, Ixil would pause to savor the helpless struggles of an enemy impaled by the point of his spear... seeming to delight in the writhing agony of his enemy.
 
 The warlord was finally defeated when he was lured into attacking a contingent of powerful priests and knights from the Order of the Radiant Heart, posing as simple pilgrims. Witnesses to the battle claim Ixil was not slain, but was in fact banished to some hellish outer plane by the holy magic of the Order.
 
@@ -9320,7 +9320,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2090 = ~Arbane's Sword +2~
+@2090 = ~Arbane's Sword +2~ // BG2: Arbane's Sword of Agility: One of many created in the name of the mage who first discovered how to enchant a blade in this manner, this was the weapon of the outlaw Garno, and many a cleric died at its edge. Garno became disillusioned with the gods when his family was put to the torch by clerics of Loviatar, and spent his life seeking revenge. Despite his focussed hatred of the devout, it is thought that one of the gods of chaos had a hand in Garno's acquisition of this sword, delighting in the havoc that followed the young man.
 @2091 = ~Sword of Agility
 The first of these swords were created by the elf wizard, Lord Arbane of Myth Drannor many centuries ago. His first was stolen, so he made a second with the aid of an apprentice, who sold the secret to two other wizard-swordsmiths. The form of manufacture is thought to be forgotten now -Elminster has heard of no one making one in the last 500 years- but there are over a dozen in existence. Some have even been created with sentience and further powers.
 
@@ -10124,11 +10124,11 @@ Not Usable By:
 @2155 = ~Foebane +4~
 @2156 = ~The Archmage Demron crafted this magical bastard sword for the elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
 
-Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death, though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
+Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death - though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
 
 Yet even the power of Foebane was not enough to withstand the dark hordes which overran Myth Drannor. When the elven city fell, Captain Fflar met a grisly, gruesome end and the sword itself was lost beneath the rubble of the once great metropolis.
 
-Legend holds that Foebane's considerable powers are further augmented when the sword is reunited with the enchanted holy Scabbard of Fflar, its original owner.
+Legend holds that Foebane's considerable powers are further augmented when the sword is reunited with the enchanted Scabbard of Fflar, its original owner.
 
 NOTE: Foebane is always considered to be of +4 enchantment when determining what it can hit.
 
@@ -10159,7 +10159,7 @@ Not Usable By:
 @2157 = ~Foebane +5~
 @2158 = ~The Archmage Demron crafted this magical bastard sword for the elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
 
-Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death, though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
+Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death - though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
 
 Yet even the power of Foebane was not enough to withstand the dark hordes which overran Myth Drannor. When the elven city fell, Captain Fflar met a grisly, gruesome end and the sword itself was lost beneath the rubble of the once great metropolis.
 
@@ -10267,7 +10267,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2163 = ~Yamato +3~
-@2164 = ~The name of the mighty Wu Jen who fashioned this "companion sword" is long forgotten. However, the name Yamato, loosely translated, means "Guardian" or "Defender."
+@2164 = ~The name of the mighty Wu Jen who fashioned this "companion sword" is long forgotten. However, the name Yamato, loosely translated, means "Guardian" or "Defender".
 
 STATISTICS:
 
@@ -12580,7 +12580,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2385 = ~Web Sack~
-@2386 = ~When used, this rod shoots forth many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. They cover an area of about 30' in radius, and creatures caught within webs, or simply touching them, become stuck among the gluey fibers. For every round that a creature remains in the web, they must make a save vs. rod at or be unable to move. The webs will dissipate after approximately 1 turn.
+@2386 = ~When used, this rod emits a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. For every round that a creature remains in the web, they must make a save vs. rod or be unable to move. The webs will dissipate after approximately 1 turn.
 
 Special Abilities:
  Web (1x per day)
@@ -12687,12 +12687,12 @@ Usable By:
  Bard
  Mage~
 @2399 = ~Shazzellim +1~
-@2400 = ~This scimitar seems of rather poor quality but beneath its surface lies great power and evil. Created for the sole purpose of slaying Harpers, Shazzellim is more than capable of that task. With one strike of the blade a bard must make a save vs. death at a -2 penalty or die. Crafted by a Red Wizard of Thay, the sword also has the ability to vocalize, which is why it was often given to fighter-mages in the service of the Wizards. Needless to say, possession of this sword would not be looked upon very highly by Harpers.
+@2400 = ~This scimitar is of rather poor quality, but beneath its surface lies great power and evil. Created for the sole purpose of slaying Harpers, Shazzellim is more than capable of that task. With one strike of the blade, a bard must make a save vs. death or die. Crafted by a Red Wizard of Thay, the sword also has the ability to vocalize, which is why it was often given to fighter-mages in the service of the Wizards. Needless to say, possession of this sword would not be looked upon very highly by Harpers.
 
 STATISTICS:
 
 Equipped Abilities:
- Protects Against: Silence
+ Spell: Vocalize
 
 Combat Abilities:
  Song Slayer: bards struck die (save vs. death at -2 neg.)
@@ -12753,7 +12753,7 @@ STATISTICS:
 *CURSED*
 
 Equipped Abilities:
- Armor Class: +2 bonus (+4 vs. missile weapons)
+ Armor Class: +2 bonus (+4 bonus vs. missile weapons)
  Saving Throws: +3 bonus vs. breath, polymorph, wand, and spell; -5 penalty vs. death
  Maximum Hit Points: -15% penalty
 
@@ -13521,7 +13521,7 @@ Usable By:
  All~
 @2497 = ~This is a small figurine depicting an eastern style warrior with two swords.~
 @2498 = ~Shakti Figurine~
-@2499 = ~This statue is a replica of a fierce gladiator, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue armored warrior wielding magical short swords.
+@2499 = ~There is strong evidence this item was fashioned by a powerful Wu Jen in the mysterious lands to the East of Faerûn, as the figurine is an intricately detailed replica of a fierce Kara-Tur warrior in full battle dress, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue-armored warrior wielding magical short swords.
 
 STATISTICS:
 
@@ -14383,6 +14383,25 @@ STATISTICS:
 Weight: 0
 Usable By:
  All~
+@2623 = ~Helm of Opposite Alignment~
+@2624 = ~The cursed Helm of Alignment Change is a truly fearsome item. As its name suggests, it has the power to alter the fundamental ethical framework, nay, the very identity of anyone unlucky enough to wear it. It can ruin homes, friendships, even entire cities or nations. Should the legions of evil ever force one onto the head of a benevolent Solar, the multiverse, as we know it, will surely meet an abrupt and painful end.
+
+STATISTICS:
+
+*CURSED*
+
+Equipped Abilities:
+ Reverse Alignment: wearer's alignment is set to their opposite
+
+Armor Class Bonus: 1
+Protects Against Critical Hits
+Weight: 3
+Not Usable By:
+ Bard
+ Mage
+ Monk
+ Thief
+ Kensai~
 @4000 = ~Globe of Power~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~

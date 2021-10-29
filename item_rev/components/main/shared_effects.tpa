@@ -363,6 +363,9 @@ COPY ~item_rev/itm/dvdchari.spl~ ~override~
 COPY ~item_rev/itm/dvdcharm.eff~ ~override~
 COPY ~item_rev/itm/dvdcharm.spl~ ~override~
 
+COPY ~item_rev/itm/dvdomina.spl~ ~override~ // Domination
+  SAY NAME1 @4053
+
 COPY ~item_rev/itm/dvdlifea.spl~ ~override~ // Drain Life
   SAY NAME1 @4050
 COPY ~item_rev/itm/dvdlifeb.spl~ ~override~
