@@ -222,7 +222,7 @@ Speed Factor\1~
 @100146 = ~Proficiency[ %tab%]+[Tt]ype:.*~
 
 // Replace @100146
-@100147 = ~Proficiency Type: Katana~
+@100147 = ~Proficiency Type: Katana / Wakizashi~
 
 // Replace @100146
 @100148 = ~Proficiency Type: Flail~
@@ -231,19 +231,19 @@ Speed Factor\1~
 @100149 = ~Proficiency Type: Scimitar~
 
 // Replace @100146
-@100150 = ~Proficiency Type: Mace~
+@100150 = ~Proficiency Type: Mace / Morning Star~
 
 // Replace @100146
-@100199 = ~Proficiency Type: Short Sword~
+@100199 = ~Proficiency Type: Short Sword / Ninja-To~
 
 // Replace @100146
-@100168 = ~Proficiency Type: Wakizashi~
+@100168 = ~Proficiency Type: Katana / Wakizashi~
 
 // Replace @100146
-@100169 = ~Proficiency Type: Morning Star~
+@100169 = ~Proficiency Type: Mace / Morning Star~
 
 // Replace @100146
-@100170 = ~Proficiency Type: Ninja-To~
+@100170 = ~Proficiency Type: Short Sword / Ninja-To~
 
 /* ---------------- Halberds ---------------- */
 
