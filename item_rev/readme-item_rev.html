@@ -134,17 +134,17 @@
   <p>
   <strong>Item Revisions by Demivrgvs</strong>
     <br />
-	<em>Any modifications made to items prior to installing this component will be overwritten.</em>
+    <em>Any modifications made to official items prior to installing this component will be overwritten.</em>
     <br /><br />
-	This component contains all of the changes made to specific items, and it also automatically includes the executable patch ToBEx (the engine modification is needed for several changes to function properly) for non-EE games. Listed below are some of the philosophical changes.
+    This component contains all of the changes made to specific items, and it also automatically includes the executable patch ToBEx (the engine modification is needed for several changes to function properly) for non-EE games. Listed below are some of the broad philosophical changes.
     <ul>
       <li class="spaced_item"><strong>Characteristics Set by Items</strong>
         <br />
-		Items that previously set character attributes to X now increase the base value by Y. This change is aimed to remove some exploits (like having characters with 3 charisma suddenly becoming more charismatic than King Arthur just by equipping a standard magic item), and to make characters' starting attributes more important. Items that previously set characteristics to 18 or 19 will now grant +2 instead, 20 to 21 are now +3, 22 to 23 are +4, and 24 to 25 become +5.
-		<br />
+        Items that previously set character attributes to X now increase the base value by Y. This change is aimed to remove some exploits (like having characters with 3 charisma suddenly becoming more charismatic than King Arthur just by equipping a standard magic item), and to make characters' starting attributes more important. Items that previously set characteristics to 18 or 19 will now grant +2 instead, 20 to 21 are now +3, 22 to 23 are +4, and 24 to 25 become +5.
+        <br />
       <li class="spaced_item"><strong>Sensible Prices</strong>
         <br />
-		I found the prices of items in vanilla <acronym title="Baldur's Gate II">BG2</acronym> to often be quite random, and I wanted to tie them to the actual value of the item. I've used the following table as a guideline to standardize item prices, adjusting it a little when needed.
+        I found the prices of items in vanilla <acronym title="Baldur's Gate II">BG2</acronym> to often be quite random, and I wanted to tie them to the actual value of the item. The following table is used as a guideline to standardize item prices, adjusting it a little when needed.
         <br />
         <table>
           <tr>
@@ -155,12 +155,12 @@
           <tr>
             <td class="leftalign">Base Item</td>
             <td>As Per <acronym title="Advanced Dungeons &amp; Dragons">AD&amp;D</acronym> 2nd Edition Player's Handbook</td>
-            <td>&nbsp;
-          </td></tr>
+            <td>&nbsp;</td>
+          </tr>
           <tr>
             <td class="leftalign">Masterwork</td>
             <td>500gp</td>
-            <td>Daggers: Half-Price</td>
+            <td>Daggers and Slings: Half-Price</td>
           </tr>
           <tr>
             <td class="leftalign">+1</td>
@@ -195,60 +195,171 @@
       <br />
       <li class="spaced_item"><strong>Sensible Lore System</strong>
         <br />
-		In my opinion, the lore system in the vanilla game was broken, having random lore values and allowing a level 10 bard to identify just about everything. I've changed both the lore table and the required lore to identify every item. The effect of intelligence and wisdom on lore is unchanged.
-        <br /><br />
+        In my opinion, the lore system in the vanilla game was broken, having random lore values and allowing a level 10 bard to identify just about everything. I've changed both the lore table and the required lore to identify every item. The effect of intelligence and wisdom on lore is unchanged.
+        <br />
+        <table>
+          <tr>
+            <th class="leftalign">Class</th>
+            <th>New Lore</th>
+            <th>Old Lore</th>
+          </tr>
+          <tr>
+            <td class="leftalign">Fighters</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Paladins</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Rangers</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Clerics</td>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Druids</td>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Thieves</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Mages</td>
+            <td>4</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Bards</td>
+            <td>6</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td class="leftalign">Blades</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+        </table>
         <ul>
-          Class Lore Tables: Fighters/Paladins/Rangers (+1 lore/level), Clerics/Druids (+2 lore/level), Thieves/Blades (+3 lore/level), Mages (+4 lore/level), Bards (+6 lore/level).
-		  <br /><br />
-          Lore to Identify: Every item will require 10 lore per enchantment bonus, plus an additional 5, 10, or 15 depending on whether the item is common, rare, or unique. For example, Arrows +1 have a +1 bonus and are pretty common, so they require only 15 lore to be identified.
-		  <br />
+          Lore to Identify: Every item will require 10 lore per enchantment bonus, plus an additional 5, 10, or 15 depending on whether the item is common, rare, or unique. For example, Arrow +1 has a +1 bonus and is pretty common, so it requires only 15 lore to be identified.
+          <br />
         </ul>
       <br />
     </ul>
   </p>
 
   <h3>Store Revisions</h3>
-  <p>The structure of this component may be a subject to change in future versions, with possibility of splitting it into several components. Full documentation of changes is pending.
-  <br /><br />Due to the nature of this component, it is conceptually incompatible with mods that add new items into vanilla stores. Nothing drastic will happen, though - you simply may discover that a merchant, who was supposed to sell scrolls, now also offers a sword, even if there is a blacksmith standing nearby.
-  <br /><br />At the moment this component is only fully compatible with Spell Revisions (main component), aTweaks (Expanded Temple Services component) and Rogue Rebalancing (Additional equipment for Thieves and Bards component) if installed after them.
+  <p>Due to the nature of this component, it is conceptually incompatible with mods that add new items into vanilla stores. Nothing drastic will happen, though - you simply may discover that a merchant, who was supposed to sell scrolls with <acronym title="Item Revisions">IR</acronym>'s</a> Store Revisions, now also inexplicably offers a sword, even if there is a blacksmith standing nearby.
+  <br /><br />At the moment, this component is fully compatible with Spell Revisions (main component), aTweaks (Expanded Temple Services component), and Rogue Rebalancing (Additional equipment for Thieves and Bards component) if installed after them.
   </p>
   <p><strong>Store Revisions</strong>
     <br />Changes made by this component can be grouped into the following categories.
     <ul>
-      <li class="spaced_item"><strong>Revised assortiment in stores</strong>
-        <br />Each shop offers more unique selection of goods, than they generally did in vanilla BG2. Some also have their price mark-up changed.
+      <li class="spaced_item"><strong>Thematic assortments in stores</strong>
+        <br />Each shop offers more thematically-fitting and unique selections of goods than they generally did in vanilla BG2. Blacksmiths will sell armors and weapons, fletchers will sell missile weapons, jewelers will sell jewelry and gems, etc. Some also have their price mark-ups changed.
       <br />
-      <li class="spaced_item"><strong>Re-allocation of lootable items</strong>
-        <br />Some items, potions and scrolls are moved between crates, enemies and stores. Some powerful items have been sensibly removed from stores and are now effectively used by enemies, others have been moved to more appropriate locations based on their background. A number of ToB items are made available during the late stage of SoA.
+      <li class="spaced_item"><strong>Reallocation of lootable items</strong>
+        <br />Some items are moved between crates, enemies, and stores. A few powerful items have been sensibly removed from stores and are now more effectively used by enemies where thematically and functionally appropriate, while others have been moved to more fitting locations based on their background. A few <acronym title="Throne of Bhaal">ToB</acronym></a> items are made available during the late stage of <acronym title="Shadows of Amn">SoA</acronym></a>.
       <br />
-      <li class="spaced_item"><strong>Re-ordering of items by their type in stores</strong>
-        <br />Items will be ordered by their type and, to certain extent, enchantment level.
+      <li class="spaced_item"><strong>Re-ordering of items by their type and value in stores</strong>
+        <br />Items will be ordered by their type and, to a certain extent, enchantment level and/or value.
       <br />
       <li class="spaced_item"><strong>Revised temple services</strong>
-        <br />Temples will offer spells (and items in some cases) more suitable to their deities.
+        <br />Temples will offer spells more suitable to their deities, and at more sensible prices.
       <br />
-      <li class="spaced_item"><strong>More scrolls with divine spells</strong>
-	    <br />A wider selection of divine spells may be cast from scrolls.
+      <li class="spaced_item"><strong>More divine spell scrolls</strong>
+        <br />A wider selection of divine spells may be cast from newly added priest spell scrolls.
       <br />
       <li class="spaced_item"><strong>Effect of Charisma and Reputation on Store Prices</strong>
-	        <br />Reputation will no longer provide any discount (most stores shouldn't even know charname's reputation, and it doesn't make sense that neutral or evil parties are so heavily penalized). Charisma will still give a small discount.
-	        <br /><br />
-	        <ul>
-	          
-	            <acronym title="Charisma">CHR</acronym> 15/16 (-5%), <acronym title="Charisma">CHR</acronym> 17/18 (-10%), <acronym title="Charisma">CHR</acronym> 19/20 (-15%), <acronym title="Charisma">CHR</acronym> 21/22 (-20%), <acronym title="Charisma">CHR</acronym> 23/24 (-25%), <acronym title="Charisma">CHR</acronym> 25 (-30%).
-	          <br />
-	        </ul>
+        <br />Reputation will no longer provide any discount (most stores shouldn't even know the protagonist's reputation, and it doesn't really make sense that neutral or evil parties are so heavily penalized). However, Charisma will still give a small discount.
+        <br />
+        <table>
+          <tr>
+            <th class="leftalign">Charisma</th>
+            <th>New Sale Price</th>
+            <th>Old Sale Price</th>
+          </tr>
+          <tr>
+            <td class="leftalign">0-14</td>
+            <td>0%</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">15</td>
+            <td>-5%</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">16</td>
+            <td>-5%</td>
+            <td>-5%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">17</td>
+            <td>-10%</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">18</td>
+            <td>-10%</td>
+            <td>-15%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">19</td>
+            <td>-15%</td>
+            <td>-20%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">20</td>
+            <td>-15%</td>
+            <td>-25%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">21</td>
+            <td>-20%</td>
+            <td>-25%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">22</td>
+            <td>-20%</td>
+            <td>-25%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">23</td>
+            <td>-25%</td>
+            <td>-25%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">24</td>
+            <td>-25%</td>
+            <td>-25%</td>
+          </tr>
+          <tr>
+            <td class="leftalign">25</td>
+            <td>-30%</td>
+            <td>-25%</td>
+          </tr>
+        </table>
       <br />
     </ul>
   </p>
 
-
   <h3>Global Changes </h3>
-  <p>These components are designed to affect all items in game, and should be installed after other mods that add items.</p>
+  <p>These components are designed to affect all items in game, and should be installed after other mods that add items, including <acronym title="Item Revisions">IR</acronym>'s</a> main component.</p>
 
   <p><strong>Revised Armors</strong>
-    <br />This component aims at making each armor type appealing in its own way: light armors allow high mobility while heavier armors offer higher protection in exchange for reduced mobility.
+    <br />This component aims at making each armor type appealing in its own way: light armors allow high mobility while heavier armors offer better protection in exchange for reduced mobility.
     <br /><br /><em>Note: This is one of the components that relies on a user-submitted list to categorize armors into their proper type. If you find an item that appears unaffected by this change, or miscategorized, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a> and include whether you have installed the main <acronym title="Item Revisions">IR</acronym> component or not.</em>
+  </p>
   <ul>
   <p><strong>With Movement Speed Penalties</strong>
     <br />This option applies a reduction to movement speed, dexterity and speed factor while adding a small amount of damage resistance while wearing armor. The following table elaborates on the penalties and damage resistance.
@@ -269,7 +380,7 @@
       <td>5%</td>
     </tr>
     <tr>
-      <td class="leftalign">Studded Leather</td>
+      <td class="leftalign">Studded Leather Armor</td>
       <td>0%</td>
       <td>0%</td>
       <td>1</td>
@@ -304,7 +415,7 @@
       <td>15%</td>
     </tr>
     <tr>
-      <td class="leftalign">Full Plate Armor</td>
+      <td class="leftalign">Full Plate Mail</td>
       <td>20%</td>
       <td>15%</td>
       <td>5</td>
@@ -312,9 +423,9 @@
     </tr>
     <tr>
       <th class="leftalign">Special Types of Armor</th>
-      <th>Movement Speed Penalty is Reduced by</th>
-      <th>Dexterity Penalty is Reduced by</th>
-      <th>Speed Factor Penalty is Reduced by</th>
+      <th>Movement Speed Penalty Is Reduced By</th>
+      <th>Dexterity Penalty Is Reduced By</th>
+      <th>Speed Factor Penalty Is Reduced By</th>
     </tr>
     <tr>
       <td class="leftalign">Made from Scales</td>
@@ -336,130 +447,175 @@
     </tr>
   </table>
   <p><strong>Without Movement Speed Penalties</strong>
-    <br />This option applies all the above changes except the reduction to movement speed.
+    <br />This option applies all of the above changes except for the reduction to movement speed.
   </p>
   </ul>
+  <br />
 
-    <p><strong>Revised Armor Bonuses</strong>
-      <br />As of V4 this component is an integral part of the above Revised Armors. This component changes the hidden <acronym title="Armor Class">AC</acronym> bonuses vs different weapon types.
-    </p>
+  <p><strong>Revised Armor Bonuses</strong>
+    <br />As of Item Revisions V4, this component is an integral part of the above Revised Armors. This component changes the hidden <acronym title="Armor Class">AC</acronym> bonuses vs. the different damage types (values with "+" preceding them are bonuses, while those with "-" are penalties).
+  </p>
     <table>
       <tr>
         <th class="leftalign">Armor</th>
-        <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs Slashing</th>
-        <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs Piercing</th>
-        <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs Crushing</th>
-        <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs Missiles</th>
+        <th>New AC Bonuses</th>
+        <th>Old AC Bonuses</th>
       </tr>
       <tr>
-        <td class="leftalign">Leather</th>
-        <td>&nbsp;</th>
-        <td>+2</th>
-        <td>&nbsp;</th>
-        <td>+2</th>
+        <td class="leftalign">Leather Armor</td>
+        <td>-1 vs. piercing, +1 vs. crushing, -1. vs missile</td>
+        <td>-2 vs. piercing, -2 vs. missile</td>
       </tr>
       <tr>
-        <td class="leftalign">Studded Leather</th>
-        <td>-2</th>
-        <td>-1</th>
-        <td>&nbsp;</th>
-        <td>-1</th>
+        <td class="leftalign">Studded Leather Armor</td>
+        <td>+2 vs. slashing, +1 vs. piercing, -1. vs crushing, +1 vs. missile</td>
+        <td>+2 vs. slashing, +1 vs. piercing, +1. vs missile</td>
       </tr>
       <tr>
-        <td class="leftalign">Hide Armor</th>
-        <td>&nbsp;</th>
-        <td>+2</th>
-        <td>&nbsp;</th>
-        <td>+2</th>
+        <td class="leftalign">Hide Armor</td>
+        <td>-1 vs. piercing, +1 vs. crushing, -1 vs. missile</td>
+        <td>-2 vs. piercing, -2. vs. missile</td>
       </tr>
       <tr>
-        <td class="leftalign">Chain Mail</th>
-        <td>-2</th>
-        <td>&nbsp;</th>
-        <td>+2</th>
-        <td>&nbsp;</th>
+        <td class="leftalign">Chain Mail</td>
+        <td>+2 vs. slashing, +1 vs. piercing, -1 vs. crushing, +1 vs. missile</td>
+        <td>+2 vs. slashing, -2. vs. crushing</td>
       </tr>
       <tr>
-        <td class="leftalign">Splint Mail</th>
-        <td>&nbsp;</th>
-        <td>-1</th>
-        <td>-2</th>
-        <td>-1</th>
+        <td class="leftalign">Splint Mail</td>
+        <td>+1 vs. slashing, +2 vs. crushing</td>
+        <td>+1 vs. piercing, +2. vs crushing, +1. vs missile</td>
       </tr>
       <tr>
-        <td class="leftalign">Plate Mail</th>
-        <td>-3</th>
-        <td>&nbsp;</th>
-        <td>&nbsp;</th>
-        <td>&nbsp;</th>
+        <td class="leftalign">Plate Mail</td>
+        <td>+2 vs. slashing, +1 vs. piercing, +1 vs. missile</td>
+        <td>+3 vs. slashing</td>
       </tr>
       <tr>
-        <td class="leftalign">Full Plate Armor</th>
-        <td>-4</th>
-        <td>-3</th>
-        <td>&nbsp;</th>
-        <td>-3</th>
+        <td class="leftalign">Full Plate Mail</td>
+        <td>+3 vs. slashing, +2 vs. piercing, +2 vs. missile</td>
+        <td>+4 vs. slashing, +3. vs piercing, +3. vs missile</td>
       </tr>
-      <tr>
-        <th class="leftalign">Armor</th>
-        <th>New <acronym title="Armor Class">AC</acronym> Bonus vs Slashing</th>
-        <th>New <acronym title="Armor Class">AC</acronym> Bonus vs Piercing</th>
-        <th>New <acronym title="Armor Class">AC</acronym> Bonus vs Crushing</th>
-        <th>New <acronym title="Armor Class">AC</acronym> Bonus vs Missiles</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Leather</th>
-        <td>&nbsp;</th>
-        <td>+1</th>
-        <td>-1</th>
-        <td>+1</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Studded Leather</th>
-        <td>-2</th>
-        <td>-1</th>
-        <td>+1</th>
-        <td>-1</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Hide Armor</th>
-        <td>&nbsp;</th>
-        <td>+1</th>
-        <td>-1</th>
-        <td>+1</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Chain Mail</th>
-        <td>-2</th>
-        <td>-1</th>
-        <td>+1</th>
-        <td>-1</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Splint Mail</th>
-        <td>-1</th>
-        <td>&nbsp;</th>
-        <td>-2</th>
-        <td>&nbsp;</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Plate Mail</th>
-        <td>-2</th>
-        <td>-1</th>
-        <td>&nbsp;</th>
-        <td>-1</th>
-      </tr>
-      <tr>
-        <td class="leftalign">Full Plate Armor</th>
-        <td>-3</th>
-        <td>-2</th>
-        <td>&nbsp;</th>
-        <td>-2</th>
-      </tr>
+    </table>
+  <table>
+    <tr>
+      <th class="leftalign">Armor</th>
+      <th>New <acronym title="Armor Class">AC</acronym> Bonus vs. Slashing</th>
+      <th>New <acronym title="Armor Class">AC</acronym> Bonus vs. Piercing</th>
+      <th>New <acronym title="Armor Class">AC</acronym> Bonus vs. Crushing</th>
+      <th>New <acronym title="Armor Class">AC</acronym> Bonus vs. Missiles</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Leather Armor</th>
+      <td>&nbsp;</th>
+      <td>-1</th>
+      <td>+1</th>
+      <td>-1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Studded Leather Armor</th>
+      <td>+2</th>
+      <td>+1</th>
+      <td>-1</th>
+      <td>+1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Hide Armor</th>
+      <td>&nbsp;</th>
+      <td>-1</th>
+      <td>+1</th>
+      <td>-1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Chain Mail</th>
+      <td>+2</th>
+      <td>+1</th>
+      <td>-1</th>
+      <td>+1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Splint Mail</th>
+      <td>+1</th>
+      <td>&nbsp;</th>
+      <td>+2</th>
+      <td>&nbsp;</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Plate Mail</th>
+      <td>+2</th>
+      <td>+1</th>
+      <td>&nbsp;</th>
+      <td>+1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Full Plate Mail</th>
+      <td>+3</th>
+      <td>+2</th>
+      <td>&nbsp;</th>
+      <td>+2</th>
+    </tr>
+    <tr>
+      <th class="leftalign">Armor</th>
+      <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs. Slashing</th>
+      <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs. Piercing</th>
+      <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs. Crushing</th>
+      <th>Old <acronym title="Armor Class">AC</acronym> Bonus vs. Missiles</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Leather Armor</th>
+      <td>&nbsp;</th>
+      <td>-2</th>
+      <td>&nbsp;</th>
+      <td>-2</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Studded Leather Armor</th>
+      <td>+2</th>
+      <td>+1</th>
+      <td>&nbsp;</th>
+      <td>+1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Hide Armor</th>
+      <td>&nbsp;</th>
+      <td>-2</th>
+      <td>&nbsp;</th>
+      <td>-2</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Chain Mail</th>
+      <td>+2</th>
+      <td>&nbsp;</th>
+      <td>-2</th>
+      <td>&nbsp;</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Splint Mail</th>
+      <td>&nbsp;</th>
+      <td>+1</th>
+      <td>+2</th>
+      <td>+1</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Plate Mail</th>
+      <td>+3</th>
+      <td>&nbsp;</th>
+      <td>&nbsp;</th>
+      <td>&nbsp;</th>
+    </tr>
+    <tr>
+      <td class="leftalign">Full Plate Mail</th>
+      <td>+4</th>
+      <td>+3</th>
+      <td>&nbsp;</th>
+      <td>+3</th>
+    </tr>
   </table>
+  </ul>
+  </p>
 
   <p><strong>Allow Spellcasting in Armor</strong>
-    <br />Normally, wearing armor prevents casting arcane spells. These components enable arcane spellcasting while wearing armor, with some limitations. Bards ignore all limitations associated with spellcasting in leather, studded leather, hide, or chain mail armor.
+    <br />Normally, wearing armor prevents arcane spellcasting. This component enables arcane spellcasting while wearing armor, but with some limitations. Bards will ignore all limitations associated with spellcasting in leather, studded leather, hide, or chain mail armor.
     <br /><br /><em>Note: This is one of the components that relies on a user-submitted list to categorize shields and armors into their proper type. If you find an item that appears unaffected by this change, or miscategorized, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a> and include whether you have installed the main <acronym title="Item Revisions">IR</acronym> component or not.</em>
     <ul><strong>With a Chance of Arcane Casting Failure</strong>
     <br />With this option, arcane spells cast while wearing armor have a chance to completely fail. The chance of failure depends on the type of armor worn.
@@ -471,19 +627,19 @@
     </tr>
     <tr>
       <td class="leftalign">Buckler</td>
-      <td>0%</td>
+      <td>+0%</td>
     </tr>
     <tr>
-      <td class="leftalign">Small Shield </td>
-      <td>5%</td>
+      <td class="leftalign">Small Shield</td>
+      <td>+5%</td>
     </tr>
     <tr>
       <td class="leftalign">Medium Shield</td>
-      <td>15%</td>
+      <td>+15%</td>
     </tr>
     <tr>
-      <td class="leftalign">Large Shield </td>
-      <td>50%</td>
+      <td class="leftalign">Large Shield</td>
+      <td>+50%</td>
     </tr>
     <tr>
       <th class="leftalign">Armor</th>
@@ -491,35 +647,35 @@
     </tr>
     <tr>
       <td class="leftalign">Leather Armor</td>
-      <td>10%</td>
+      <td>+10%</td>
     </tr>
     <tr>
-      <td class="leftalign">Studded Leather</td>
-      <td>15%</td>
+      <td class="leftalign">Studded Leather Armor</td>
+      <td>+15%</td>
     </tr>
     <tr>
       <td class="leftalign">Hide Armor</td>
-      <td>20%</td>
+      <td>+20%</td>
     </tr>
     <tr>
       <td class="leftalign">Chain Mail</td>
-      <td>30%</td>
+      <td>+30%</td>
     </tr>
     <tr>
       <td class="leftalign">Splint Mail</td>
-      <td>40%</td>
+      <td>+35%</td>
     </tr>
     <tr>
       <td class="leftalign">Plate Mail</td>
-      <td>40%</td>
+      <td>+40%</td>
     </tr>
     <tr>
-      <td class="leftalign">Full Plate Armor</td>
-      <td>50%</td>
+      <td class="leftalign">Full Plate Mail</td>
+      <td>+50%</td>
     </tr>
     <tr>
       <th class="leftalign">Special Types of Armor</th>
-      <th>Chance of Arcane Casting Failure Modification</th>
+      <th>Arcane Casting Failure Is Reduced By</th>
     </tr>
     <tr>
       <td class="leftalign">Made from Scales</td>
@@ -535,7 +691,7 @@
     </tr>
   </table>
   <p><strong>With Casting Speed Penalties for Arcane Casters</strong>
-    <br />With this option, spells cast while wearing armor take longer to complete. The casting time penalty depends on the type of armor worn. Spells with longer casting times are easier for enemies to interrupt. A casting time of 10 is equivalent to a full round. Due to engine limitations, innate abilities and divine spells cast by arcane casters while wearing armor will also be affected by this change.</strong>
+    <br />With this option, spells cast while wearing armor will take longer to complete. The casting time penalty depends on the type of armor worn. Spells with longer casting times are easier for enemies to interrupt. A casting time of 10 is equivalent to a full round. Due to engine limitations, innate abilities and divine spells cast by arcane casters while wearing armor will also be affected by this change.</strong>
   </p>
   <table>
     <tr>
@@ -547,7 +703,7 @@
       <td>0</td>
     </tr>
     <tr>
-      <td class="leftalign">Small Shield </td>
+      <td class="leftalign">Small Shield</td>
       <td>+1</td>
     </tr>
     <tr>
@@ -555,7 +711,7 @@
       <td>+2</td>
     </tr>
     <tr>
-      <td class="leftalign">Large Shield </td>
+      <td class="leftalign">Large Shield</td>
       <td>+3</td>
     </tr>
     <tr>
@@ -567,7 +723,7 @@
       <td>+1</td>
     </tr>
     <tr>
-      <td class="leftalign">Studded Leather</td>
+      <td class="leftalign">Studded Leather Armor</td>
       <td>+2</td>
     </tr>
     <tr>
@@ -587,7 +743,7 @@
       <td>+3</td>
     </tr>
     <tr>
-      <td class="leftalign">Full Plate Armor</td>
+      <td class="leftalign">Full Plate Mail</td>
       <td>+4</td>
     </tr>
     <tr>
@@ -604,13 +760,13 @@
     </tr>
     <tr>
       <td class="leftalign">Elven-crafted</td>
-      <td>-3</td>
+      <td>-2</td>
     </tr>
   </table>
   </ul>
 
   <p><strong>Allow Thieving Skills in Armor</strong>
-    <br />This component allows the use of all thieving skills in all armors, but with a penalty to the Move Silently and Hide skills (denoted in-game as a Stealth penalty). The following table elaborates on the penalties.
+    <br />This component allows the use of all thieving skills in all armors, but with penalties to the Move Silently and Hide in Shadow skills (denoted in-game as a "Stealth" penalty). The following table elaborates on the penalties.
     <br /><br /><em>Note: This is one of the components that relies on a user-submitted list to categorize armors into their proper type. If you find an item that appears unaffected by this change, or miscategorized, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a> and include whether you have installed the main <acronym title="Item Revisions">IR</acronym> component or not.</em>
   </p>
   <table>
@@ -625,7 +781,7 @@
       <td>0%</td>
     </tr>
     <tr>
-      <td class="leftalign">Studded Leather</td>
+      <td class="leftalign">Studded Leather Armor</td>
       <td>20%</td>
       <td>20%</td>
     </tr>
@@ -650,7 +806,7 @@
       <td>60%</td>
     </tr>
     <tr>
-      <td class="leftalign">Full Plate Armor</td>
+      <td class="leftalign">Full Plate Mail</td>
       <td>80%</td>
       <td>80%</td>
     </tr>
@@ -666,8 +822,8 @@
     </tr>
     <tr>
       <td class="leftalign">Made from Mithral</td>
-      <td>-30%</td>
-      <td>-30%</td>
+      <td>-20%</td>
+      <td>-20%</td>
     </tr>
     <tr>
       <td class="leftalign">Elven-crafted</td>
@@ -683,38 +839,38 @@
   <table>
     <tr>
       <th class="leftalign">Shield</th>
-      <th>Old <acronym title="Armor Class">AC</acronym> Bonus</th>
       <th>New <acronym title="Armor Class">AC</acronym> Bonus</th>
-      <th>Old Abilities</th>
+      <th>Old <acronym title="Armor Class">AC</acronym> Bonus</th>
       <th>New Abilities</th>
+      <th>Old Abilities</th>
     </tr>
     <tr>
       <td class="leftalign">Buckler</td>
       <td>1</td>
       <td>1</td>
-      <td>No Missile/Piercing Protection</td>
       <td>No Missile Protection</td>
+      <td>No Missile/Piercing Protection</td>
     </tr>
     <tr>
       <td class="leftalign">Small Shield</td>
       <td>1</td>
       <td>1</td>
-      <td>No Missile Protection</td>
       <td>&nbsp;</td>
+      <td>No Missile Protection</td>
     </tr>
     <tr>
       <td class="leftalign">Medium Shield</td>
-      <td>1</td>
       <td>2</td>
-      <td>&nbsp;</td>
+      <td>1</td>
       <td>-1 <acronym title="To Hit Armor Class 0">THAC0</acronym></td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td class="leftalign">Large Shield</td>
-      <td>1</td>
       <td>3</td>
-      <td>+1 vs. Missile Weapons</td>
+      <td>1</td>
       <td>+2 vs. Missile Weapons and -2 <acronym title="To Hit Armor Class 0">THAC0</acronym></td>
+      <td>+1 vs. Missile Weapons</td>
     </tr>
   </table>
 
@@ -731,135 +887,135 @@
       </tr>
       <tr>
         <td class="leftalign">Dagger</td>
-        <td>1d4</td>
-        <td>from 2 to 1</td>
+        <td>1D4</td>
+        <td>From 2 to 1</td>
         <td>Light</td>
       </tr>
       <tr>
-	    <td class="leftalign">Short Sword</td>
-	    <td>1d6</td>
-	    <td>3</td>
-	    <td>Light</td>
+        <td class="leftalign">Short Sword</td>
+        <td>1D6</td>
+        <td>3</td>
+        <td>Light; damage type from piercing to slashing</td>
       </tr>
       <tr>
-	    <td class="leftalign">Hand-Axe</td>
-	    <td>from 1d6+1 to 2d3</td>
-	    <td>4</td>
-	    <td>Light</td>
+        <td class="leftalign">Hand Axe</td>
+        <td>From 1D6 + 1 to 2D3</td>
+        <td>4</td>
+        <td>Light</td>
       </tr>
       <tr>
-	    <td class="leftalign">Long Sword</td>
-	    <td>1d8</td>
-	    <td>5</td>
-	    <td></td>
+        <td class="leftalign">Long Sword</td>
+        <td>1D8</td>
+        <td>5</td>
+        <td>Medium</td>
       </tr>
       <tr>
-	    <td class="leftalign">Scimitar</td>
-	    <td>1d8</td>
-	    <td>5</td>
-	    <td></td>
+        <td class="leftalign">Scimitar</td>
+        <td>1D8</td>
+        <td>5</td>
+        <td>Medium</td>
       </tr>
       <tr>
-	    <td class="leftalign">Battle-Axe</td>
-	    <td>from 1d8 to 2d4</td>
-	    <td>from 7 to 6</td>
-	    <td>Heavy</td>
+        <td class="leftalign">Battle Axe</td>
+        <td>From 1D8 to 2D4</td>
+        <td>From 7 to 6</td>
+        <td>Heavy</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Bastard Sword</td>
- 	    <td>from 2d4 to 1d10</td>
- 	    <td>from 8 to 7</td>
- 	    <td>Heavy</td>
-      </tr>
-      <tr>
-        <td class="leftalign"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
- 	    <td class="leftalign">Ninja-to</td>
- 	    <td>from 1d8 to 1d6</td>
- 	    <td>from 4 to 2</td>
- 	    <td>Light; dmg type from slashing to piercing</td>
-      </tr>
-      <tr>
- 	    <td class="leftalign">Wakizashi</td>
- 	    <td>1d8</td>
- 	    <td>3</td>
- 	    <td>Light; dmg type from piercing to slashing</td>
-      </tr>
-      <tr>
- 	    <td class="leftalign">Katana</td>
- 	    <td>1d10</td>
- 	    <td>5</td>
- 	    <td>Heavy</td>
+         <td class="leftalign">Bastard Sword</td>
+         <td>From 2D4 to 1D10</td>
+         <td>From 8 to 7</td>
+         <td>Heavy</td>
       </tr>
       <tr>
         <td class="leftalign"></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
       </tr>
       <tr>
-	    <td class="leftalign">Club</td>
-	    <td>from 1d6 to 1d4</td>
-	    <td>from 4 to 3</td>
-	    <td>Light</td>
+         <td class="leftalign">Ninja-To</td>
+         <td>From 1D8 to 1D6</td>
+         <td>From 4 to 2</td>
+         <td>Light; damage type from slashing to piercing</td>
       </tr>
       <tr>
-	    <td class="leftalign">Warhammer</td>
-	    <td>1d4+1</td>
-	    <td>from 4 to 5</td>
-	    <td></td>
+         <td class="leftalign">Wakizashi</td>
+         <td>1D8</td>
+         <td>3</td>
+         <td>Light; damage type from piercing to slashing</td>
       </tr>
       <tr>
-	    <td class="leftalign">Mace</td>
-	    <td>from 1d6+1 to 2d3</td>
-	    <td>from 7 to 6</td>
-	    <td></td>
-      </tr>
-      <tr>
-	    <td class="leftalign">Morningstar</td>
-	    <td>from 2d4 to 1d6+1</td>
-	    <td>7</td>
-	    <td></td>
-      </tr>
-      <tr>
- 	    <td class="leftalign">Flail</td>
- 	    <td>from 1d6+1 to 2d4</td>
- 	    <td>from 7 to 8</td>
- 	    <td>Heavy</td>
+         <td class="leftalign">Katana</td>
+         <td>1D10</td>
+         <td>5</td>
+         <td>Heavy</td>
       </tr>
       <tr>
         <td class="leftalign"></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Staff</td>
- 	    <td>1d6</td>
- 	    <td>4</td>
- 	    <td></td>
+        <td class="leftalign">Club</td>
+        <td>From 1D6 to 1D4</td>
+        <td>From 4 to 3</td>
+        <td>Light</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Spear</td>
- 	    <td>from 1d6 to 1d8</td>
- 	    <td>6</td>
- 	    <td>range increased from 2 to 3</td>
+        <td class="leftalign">War Hammer</td>
+        <td>1D4 + 1</td>
+        <td>From 4 to 5</td>
+        <td>Medium</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Halberd</td>
- 	    <td>1d10</td>
- 	    <td>from 9 to 8</td>
- 	    <td>range increased from 2 to 3</td>
+        <td class="leftalign">Mace</td>
+        <td>From 1D6 + 1 to 2D3</td>
+        <td>From 7 to 6</td>
+        <td>Medium</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Two-handed Sword</td>
- 	    <td>from 1d12 to 2d6</td>
- 	    <td>10</td>
- 	    <td></td>
+        <td class="leftalign">Morning Star</td>
+        <td>From 2D4 to 1D6 + 1</td>
+        <td>7</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+         <td class="leftalign">Flail</td>
+         <td>From 1D6 + 1 to 2D4</td>
+         <td>From 7 to 8</td>
+         <td>Heavy; damage type from crushing to crushing + piercing</td>
+      </tr>
+      <tr>
+        <td class="leftalign"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <td class="leftalign">Staff</td>
+         <td>1D6</td>
+         <td>4</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td class="leftalign">Spear</td>
+         <td>From 1D6 to 1D8</td>
+         <td>6</td>
+         <td>Range increased from 2 to 3</td>
+      </tr>
+      <tr>
+         <td class="leftalign">Halberd</td>
+         <td>1D10</td>
+         <td>From 9 to 8</td>
+         <td>Range increased from 2 to 3</td>
+      </tr>
+      <tr>
+         <td class="leftalign">Two-Handed Sword</td>
+         <td>From 1D10 to 2D6</td>
+         <td>10</td>
+         <td></td>
       </tr>
       <tr>
         <th class="leftalign">Ranged Weapons</th>
@@ -868,92 +1024,94 @@
         <th>Special</th>
       </tr>
       <tr>
- 	    <td class="leftalign">Dart</td>
- 	    <td>1d3</td>
- 	    <td>1</td>
- 	    <td>3 attacks per round</td>
+         <td class="leftalign">Dart</td>
+         <td>1D3</td>
+         <td>2</td>
+         <td>3 attacks per round</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Throwing Dagger</td>
- 	    <td>1d4</td>
- 	    <td>2</td>
- 	    <td>2 attacks per round</td>
+         <td class="leftalign">Throwing Dagger</td>
+         <td>1D4</td>
+         <td>From 2 to 1</td>
+         <td>2 attacks per round</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Throwing Axe</td>
- 	    <td>from 1d6+1 to 2d3</td>
- 	    <td>4</td>
- 	    <td>allow STR bonus to dmg</td>
+         <td class="leftalign">Throwing Axe</td>
+         <td>From 1D6 + 1 to 2D3</td>
+         <td>4</td>
+         <td>Allow strength bonus for damage</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Throwing Spear</td>
- 	    <td>1d8</td>
- 	    <td>6</td>
- 	    <td>allow STR bonus to dmg</td>
+         <td class="leftalign">Throwing Spear</td>
+         <td>From 1D6 to 1D8</td>
+         <td>6</td>
+         <td>Allow strength bonus for damage</td>
       </tr>
       <tr>
         <td class="leftalign"></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Sling</td>
- 	    <td>1d4+1</td>
- 	    <td>from 6 to 10</td>
- 	    <td></td>
+         <td class="leftalign">Sling</td>
+         <td>1D4 + 1</td>
+         <td>6</td>
+         <td></td>
       </tr>
       <tr>
- 	    <td class="leftalign">Short Bow</td>
- 	    <td>1d6</td>
- 	    <td>6</td>
- 	    <td>1.5 attacks per round</td>
+         <td class="leftalign">Short Bow</td>
+         <td>1D6</td>
+         <td>6</td>
+         <td>1.5 attacks per round</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Long Bow</td>
- 	    <td>1d6+1</td>
- 	    <td>9</td>
- 	    <td>1.5 attacks per round</td>
+         <td class="leftalign">Long Bow</td>
+         <td>1D6 + 1</td>
+         <td>9</td>
+         <td>1.5 attacks per round</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Composite Long Bow</td>
- 	    <td>1d6+x</td>
- 	    <td>10</td>
- 	    <td>1.5 attacks per round</td>
+         <td class="leftalign">Composite Long Bow</td>
+         <td>1D6 + 2</td>
+         <td>10</td>
+         <td>1.5 attacks per round</td>
       </tr>
       <tr>
- 	    <td class="leftalign">Light Crossbow</td>
- 	    <td>from 1d8 to 1d10</td>
- 	    <td>from 5 to 1</td>
- 	    <td>+1 thac0, 1 sec. reload time</td>
+         <td class="leftalign">Light Crossbow</td>
+         <td>From 1D8 to 1D10</td>
+         <td>From 5 to 1</td>
+         <td>+1 THAC0, 1 second reload time</td>
       </tr>
       <tr>
         <td class="leftalign">Heavy Crossbow</td>
-        <td>from 1d8+2 to 1d10+2</td>
-        <td>from 10 to 1</td>
-        <td>+1 thac0, 2 sec. reload time</td>
+        <td>From 1D8 + 2 to 1D10 + 2</td>
+        <td>From 10 to 1</td>
+        <td>+1 THAC0, 2 second reload time</td>
       </tr>
   </table>
   <ul>
-    Ninja-to: Proficiency changed from Scimitar/Wakizashi/Ninja-To to Short Sword.<br />
+    Ninja-To: Proficiency changed from Scimitar/Wakizashi/Ninja-To to Short Sword/Ninja-To.<br />
     Wakizashi: Proficiency changed from Scimitar/Wakizashi/Ninja-To to Katana/Wakizashi.<br />
-    Morningstar: Proficiency changed from Flail/Morning Star to Mace/Morning Star.<br />
-    Flail: Damage type changed from crushing to crushing and piercing. Proficiency changed from Flail/Morning Star to Flail.<br />
-    Spear: There was not a single specimen of throwable spear in vanilla.<br />
+    Morning Star: Proficiency changed from Flail/Morning Star to Mace/Morning Star.<br />
+    Flail: Proficiency changed from Flail/Morning Star to Flail.<br />
+    Spear: There was not a single specimen of a throwable spear in the vanilla game.<br />
     All Bows: Now cause bonus damage equal to enchantment level, but provide only an extra half attack per round instead of an extra full attack.<br />
     Long Bow: Added +1 base damage bonus. Base +1 <acronym title="To Hit Armor Class 0">THAC0</acronym> bonus is removed.<br />
-    Composite Bow: Deal additional damage, equal to the bonus provided by the strength required to equip them. Base +1 <acronym title="To Hit Armor Class 0">THAC0</acronym> bonus is removed.<br />
+    Composite Bow: Deals additional damage equal to the bonus provided by the strength required to equip them (typically but not always +2). Base +1 <acronym title="To Hit Armor Class 0">THAC0</acronym> bonus is removed.<br />
     Arrows: Now receive bonus damage equal to the enchantment level.<br />
-    Bolts: Now receive bonus damage equal to the enchantment level. Base damage increased from 1d8 to 1d10.<br />
+    Bolts: Now receive bonus damage equal to the enchantment level. Base damage increased from 1D8 to 1D10.<br />
   </ul>
+  <br />
 
   <p><strong>Enchantment Doesn't Affect Speed Factor of Weapons</strong>
-    <br />This component removes the enchantment bonus to speed factor from magical weapons.
+    <br />This component removes the enchantment bonus to speed factor from magical weapons, making it so that all enchanted weapons have their base weapon class speed factors (unless modified by another item/spell effect).
     <br /><br /><em>Note: If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
+  <br /><br />
   </p>
 
   <p><strong>Dual Wielding Changes for Light and Heavy Weapons</strong> <br />
-    This component alters the penalties for dual-wielding by assigning off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym> bonuses and penalties to all weapons based on their size/weight. Daggers, short swords, wakizashis, ninja-tos, clubs and handaxes are considered light and give a +1 bonus to off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym>. Bastard swords, flails, katanas and battleaxes are considered heavy and give a -1 penalty to off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym>. All other melee weapons are classified as medium and have no bonuses or penalties. The table below summarizes the main hand/off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym> results.
+    This component alters the penalties for dual-wielding by assigning off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym> bonuses and penalties to all weapons based on their size/weight. Daggers, short swords, wakizashis, ninja-tos, clubs, and handaxes are considered light and give a +1 bonus to off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym>. Bastard swords, flails, katanas, and battle axes are considered heavy and give a -1 penalty to off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym>. All other melee weapons are classified as medium and have no bonuses or penalties. The table below summarizes the main-hand/off-hand <acronym title="To Hit Armor Class 0">THAC0</acronym> results.
   </p>
   <table>
     <tr>
@@ -1005,10 +1163,10 @@
 
   <p><strong>Revised Backstabbing</strong>
   <br /><em>This component is conceptually incompatible with the Improved Backstabbing component from Ding0's Tweak Pack (d0tweak).</em>
-  <br /><br />
+  <br />
   <ul>
   <p><strong>Thief-only Weapons</strong>
-  <br />This option applies a penalty to backstabbing with certain weapon types as listed below. It does not enable backstabbing with weapons that single-class thieves cannot normally use - everything on the table at a -2 or worse modifier with the exception of quarterstaffs will remain unsuitable for backstabbing.
+  <br />This option applies a penalty to backstabbing with certain weapon types as listed below. It does not enable backstabbing with weapons that single-class thieves cannot normally use - everything on the table at a -2 or worse modifier with the exception of quarterstaves will remain unsuitable for backstabbing.
   </p>
   <table>
     <tr>
@@ -1024,7 +1182,7 @@
       <td>-1 Backstab Multiplier</td>
     </tr>
     <tr>
-      <td class="leftalign">Battleaxes, Bastard Swords, Maces, Morning Stars, Quarterstaffs, and War Hammers</td>
+      <td class="leftalign">Battle Axes, Bastard Swords, Maces, Morning Stars, Quarterstaves, and War Hammers</td>
       <td>-2 Backstab Multiplier</td>
     </tr>
     <tr>
@@ -1033,46 +1191,52 @@
     </tr>
   </table>
   <p><strong>More Weapons Usable for Backstabbing</strong>
-    <br />This optiont applies a penalty to backstabbing with certain weapon types as listed above. It also enables the use of backstabbing with weapons traditionally unsuitable for backstabbing.
+    <br />This option applies a penalty to backstabbing with certain weapon types as listed above. It also enables the use of backstabbing with weapons traditionally unsuitable for backstabbing.
   </p>
-  <p><strong>All Melee and Ranged Weapons Usable For Backstabbing</strong>
-    <br />This optiont applies a penalty to backstabbing with certain weapon types as listed above. It also enables the use of backstabbing with any weapon, including ranged ones.
+  <p><strong>All Melee and Ranged Weapons Usable For Backstabbing</strong> (ToBEx games only)
+    <br />This option applies a penalty to backstabbing with certain weapon types as listed above. It also enables the use of backstabbing with any weapon, including ranged ones.
   </p>
   </ul>
+  <br />
 
   <p><strong>Revised Critical Hit Aversion</strong>
-    <br />This component will remove "immunity to critical hits" feature from all head slot items, making criticals something players should fear again (right now the whole party is immune to it because even Ioun Stones protect from them), and allowing the Main Component to use "immunity to critical hits" as a valuable special feature of selected items (e.g. a fortified armor). In exchange for losing the protection from critical hits, helmets will get 1 point of AC bonus. Circlets, ioun stones, and similar items won't get this AC bonus.
+    <br />This component will remove the "protection from critical hits" feature from all head slot items, making criticals something players should fear again (typically, the entire party is immune to them), and allowing IR's <acronym title="Item Revisions">IR</acronym>'s</a> main component to use "protection from critical hits" as a valuable special feature of selected items (e.g. a unique armor). In exchange for losing the protection from critical hits, helmets will gain a +1 bonus to AC. Circlets, ioun stones, and similar items won't get this AC bonus.
     <br /><br /><em>Note: If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
+  <br /><br />
   </p>
 
-    <p><strong>Items of Protection Can Be Worn with Magical Armor</strong>
-      <br />This allows one to equip Necklaces, Rings, and Cloaks of Protection alongside magical armor, but it does not allow more than one item of Protection to be worn at the same time.
-    </p>
+  <p><strong>Items of Protection Can Be Worn with Magical Armor</strong>
+    <br />This allows characters to equip Amulets, Rings, and Cloaks of Protection together with magical armor, but will not allow more than one such item of Protection to be worn at the same time.
+  <br /><br />
+  </p>
 
-    <p><strong>Remove Cleric Weapon Restrictions from Multi-Classed Clerics</strong>
-      <br />Fighter/clerics with swords? Yes.
-    </p>
+  <p><strong>Remove Cleric Weapon Restrictions from Multi-Classed Clerics</strong>
+    <br />In <acronym title="Advanced Dungeons &amp; Dragons">AD&amp;D</acronym>, all clerics are restricted from using edged weapons by their deity. With this component, multi-classed clerics such as fighter/clerics will be to do so.
+  <br /><br />
+  </p>
 
-    <p><strong>PnP Equipment for Druids</strong>
-    <br />According to PnP, druids shun metal, but instead may wear equipment made from natural sources (namely scales of beasts). Items include armor, shields and headgear.
-    <br /><br /><em>Note: This is one of the components that relies on a user-submitted list of items. If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
+  <p><strong>PnP Equipment for Druids</strong>
+  <br />According to PnP, druids shun metal, but instead may wear equipment made from natural sources (namely scales of beasts), including armor, shields, and headgear.
+  <br /><br /><em>Note: This is one of the components that relies on a user-submitted list of items. If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
+  </p>
+  <ul>
+    <p><strong>Druids Only</strong>
+      <br />This option affects only single-class druids.
     </p>
-    <ul>
-      <p><strong>Druids only</strong>
-        <br />This option affects only single-class druids.
-      </p>
-      <p><strong>Druids and Fighter/Druids</strong>
-        <br />This option affects both single-class druids and their fighter multiclass.
-      </p>
-    </ul>
+    <p><strong>Druids and Fighter/Druids</strong>
+      <br />This option affects both single-class druids and their fighter multi-class.
+    </p>
+  </ul>
+  <br />
 
-    <p><strong>Kensai Can Wear Bracers</strong>
-      <br />This component allows the kensai kit to wear bracers.
-      <br /><br /><em>Note: This is one of the components that relies on a user-submitted list of bracers. If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
-    </p>
+  <p><strong>Kensai Can Wear Bracers</strong>
+    <br />This component allows the kensai kit to wear bracers (but not gloves/gauntlets).
+    <br /><br /><em>Note: This is one of the components that relies on a user-submitted list of bracers. If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
+  </p>
+  <br />
 
     <p><strong>Thieves Can Use Wands</strong>
-      <br />Thieves can use magic wands, as long as they meet the intelligence requirement.
+      <br />Thieves can use magic wands, so long as they meet the intelligence requirement.
       <br /><br /><em>Note: This is one of the components that relies on a user-submitted list of wands. If you find an item that appears unaffected by this change, please submit a report <a href="http://gibberlings3.net/forums/index.php?showforum=157">here</a>.</em>
   </p>
 
