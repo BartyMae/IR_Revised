@@ -567,6 +567,7 @@ FULL_PLATE_MAIL_3                          PLATEF   plat23   1        1        0
 
 BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03_  1        1        0        0        1        1        @1055    @2569    @1058    @2570    *        *        *        *
 KROTANS_SKULLCRUSHER_2                     MACE     blun11_  1        1        0        0        1        1        @1112    @2571    @1115    @2572    *        *        *        *
+HELM_OF_OPPOSITE_ALIGNMENT                 HELM     helm02_  1        1        0        0        1        1        @1569    @2623    @1572    @2624    *        *        *        cursed
 TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0        0        1        1        @1636    @2573    @1640    @2574    *        *        *        *
 FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        0        0        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 PLATE_OF_THE_DARK_1                        PLATEF   plat05_  1        1        0        0        1        1        @1497    @2577    @1499    @2578    *        *        *        *

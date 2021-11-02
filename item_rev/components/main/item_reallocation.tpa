@@ -730,7 +730,7 @@ BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargal in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Place Whistling Sword on Zargal in BG1
   COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~sw1h09~
     REMOVE_CRE_ITEM ~sw1h09_~
@@ -748,6 +748,40 @@ END
 /////////////////////////////////////
 
 // Various fixes
+
+// Place Krotan's Skullcrusher in BG1
+ACTION_FOR_EACH resource IN
+  ~ard014~
+  ~bg0514~
+  ~fw0514~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun11~ new_item = ~blun11_~ END
+      END
+    BUT_ONLY
+  END
+END
+
+// Place Helm of Opposite Alignment on Demon Knight in BG1
+ACTION_FOR_EACH resource IN
+  ~deathk~
+  ~deathk1~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.cre~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+      REMOVE_CRE_ITEM ~helm02~
+      REMOVE_CRE_ITEM ~helm02_~
+      PATCH_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+        ADD_CRE_ITEM ~helm02_~ #0 #0 #0 ~unstealable~ HELMET
+      END ELSE BEGIN
+        ADD_CRE_ITEM ~helm02~ #0 #0 #0 ~unstealable~ HELMET
+      END
+    END
+    BUT_ONLY
+  END
+END
 
 // Place Telbar's Armor +2 on Sendai in BG1
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
@@ -769,34 +803,6 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
       REMOVE_CRE_ITEM ~plat02_~
       ADD_CRE_ITEM ~plat02_~ #0 #0 #0 NONE ARMOR
     END
-    BUT_ONLY
-  END
-END
-
-// Place both Ring of Sorcery and Ring of Wizardry in BG1
-ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
-  COPY_EXISTING sunin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REMOVE_CRE_ITEM ~ring08~
-    REMOVE_CRE_ITEM ~bgring08~
-    REMOVE_CRE_ITEM ~ring08_~
-    REMOVE_CRE_ITEM ~ohringwi~
-    ADD_CRE_ITEM ~ring08~ #0 #0 #0 NONE RING
-  END
-END
-
-ACTION_FOR_EACH resource IN
-  ~ar6800~
-  ~bg2300~
-  ~fw2300~
-  ~ar2300~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
-    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
-      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
-        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
-      END
     BUT_ONLY
   END
 END
@@ -827,16 +833,29 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   END
 END
 
-// Place Krotan's Skullcrusher in BG1
+// Place both Ring of Sorcery and Ring of Wizardry in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
+  COPY_EXISTING sunin.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
+    REMOVE_CRE_ITEM ~ring08~
+    REMOVE_CRE_ITEM ~bgring08~
+    REMOVE_CRE_ITEM ~ring08_~
+    REMOVE_CRE_ITEM ~ohringwi~
+    ADD_CRE_ITEM ~ring08~ #0 #0 #0 NONE RING
+  END
+END
+
 ACTION_FOR_EACH resource IN
-  ~ard014~
-  ~bg0514~
-  ~fw0514~
+  ~ar6800~
+  ~bg2300~
+  ~fw2300~
+  ~ar2300~
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
     COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun11~ new_item = ~blun11_~ END
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
       END
     BUT_ONLY
   END

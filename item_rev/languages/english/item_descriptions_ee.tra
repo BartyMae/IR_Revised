@@ -3375,9 +3375,7 @@ Aside from being an effective defense in combat situations, it has also been the
 STATISTICS:
 
 Equipped abilities:
-– Spell: Blur
-
-NOTE: Multiple Blur effects are not cumulative.
+– Displacement: wearer gains a +2 bonus to AC (+4 vs. missile weapons) and a +3 bonus to saves vs. breath and wand
 
 Weight: 3
 Not Usable By:
@@ -5127,7 +5125,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1571 = ~Helm of Despair~ // BG1/2: Helm of Opposite Alignment: The cursed Helm of Alignment Change is a truly fearsome item. As its name suggests, it has the power to alter the fundamental ethical framework, nay, the very identity of anyone unlucky enough to wear it. It can ruin homes, friendships, even entire cities or nations. Should the legions of evil ever force one onto the head of a benevolent Solar, the multiverse, as we know it, will surely meet an abrupt and painful end.
+@1571 = ~Helm of Despair~
 @1572 = ~This class of open-faced helmet, made of reinforced leather or metal, covers most of the head, save the face and neck. These helmets commonly provide protection for the nose as well.~
 @1573 = ~The evil form of the paladin, the blackguard, is opposite in every way. As the image of the paladin often takes the form of a knight in shining armor, so the blackguard wears the dark plate that blends with the night. Blackguard's helmets are fashioned to increase the intimidating presence of their wearer, and are blessed by evil gods.
 
@@ -8323,7 +8321,7 @@ Not Usable By:
  Thief
  Kensai~
 @1952 = ~A glove is a garment covering the hand, and usually usually have separate sheaths or openings for each finger and the thumb. Gloves protect and comfort hands against cold or heat, disease, or damage by friction and abrasion, and provide a guard for what a bare hand should not touch.~
-@1953 = ~Shield of the Falling Stars +2~
+@1953 = ~Shield of the Falling Stars +2~ // BG1: Large Shield +1, +4 vs. Missiles: Shield of the Falling Stars: Ilmater himself enchanted this shield upon seeing a young squire's willingness to endure untold agony for the well-being of his mount. During a fierce battle between a human cavalry division and a hobgoblin horde, the young man was sent for reinforcements. He was beset by a cascade of arrows that nearly blocked out the sun, and he knew that even if he avoided the arrows himself, should his horse fall he would surely be doomed. With his shield and body, he positioned himself to take the brunt of the onslaught, and was mortally wounded for it. His horse remained unscathed allowing for their escape, and his body was carried back to the nearest town, where he was resurrected from death. 
 @1954 = ~Ilmater himself enchanted this shield upon seeing a young squire's willingness to endure untold agony for the well-being of his mount. During a fierce battle between a human cavalry division and a hobgoblin horde, the young man was sent for reinforcements. He was beset by a cascade of arrows that nearly blocked out the sun, and he knew that even if he avoided the arrows himself, should his horse fall he would surely be doomed. With his shield and body he positioned himself to take the brunt of the onslaught, and was mortally wounded for it. His horse remained unscathed allowing for their escape, and his body was carried back to the nearest town, where he was resurrected from death.
 
 STATISTICS:
@@ -8400,7 +8398,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1962 = ~Kiel's Buckler +2~
+@1962 = ~Kiel's Buckler +2~  // BG1: This is the buckler of Kiel the Legion-Killer, first-born son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. Its light weight and excellent craftmanship increase the dexterity of all who bear it by a single point.
 @1963 = ~This is the buckler of Kiel the Legion-Killer, first-born son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. He was wielding it in his final hour as he rushed to warn his father of the doppelgangers' infiltration of their Clan-home. This light weight shield of excellent craftsmanship bears powerful magical enhancements, and it is said that part of Kiel's force of will imprinted itself upon this shield.
 
 STATISTICS:
@@ -15125,7 +15123,6 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Saving Throws: +1
 – Reverse Alignment: wearer's alignment is set to their opposite
 – Protects against critical hits
 

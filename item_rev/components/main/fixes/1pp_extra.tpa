@@ -955,6 +955,31 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   BUT_ONLY_IF_IT_CHANGES
   END
 
+  ACTION_IF (FILE_EXISTS_IN_GAME ~helm02_.itm~) BEGIN
+COPY_EXISTING ~helm02_.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~J3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1HELM25~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CHELM04~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 209  // colour index
+  SET location = hgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 0    // colour index
+  SET location = hpink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 232  // colour index
+  SET location = hblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 0    // colour index
+  SET location = hred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
   ACTION_IF (FILE_EXISTS_IN_GAME ~helm15.itm~) BEGIN
 COPY_EXISTING ~helm15.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files

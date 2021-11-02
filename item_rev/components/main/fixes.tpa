@@ -240,31 +240,23 @@ END // EE fixes
 
 // Item resource fixes
 ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet~) BEGIN
+  COPY ~item_rev/itm/ax1h03_.itm~ ~override/ax1h03.itm~  // Battle Axe of Mauletar
+    SAY NAME1 @1055    SAY NAME2 @2569
+    SAY UNIDENTIFIED_DESC @1058 SAY IDENTIFIED_DESC @2570
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/belt09.itm~ ~override/belt06.itm~ // Girdle of Trollish Fortitude
     SAY NAME1 @1085    SAY NAME2 @1099
     SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
     LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/belt09.spl~ ~override~ // Regeneration
     SAY NAME1 @4004
-  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
-    SAY NAME1 @1780    SAY NAME2 @1780
-    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~   // Arla's Dragonbane
-    SAY NAME1 @1920    SAY NAME2 @1929
-    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
-    SAY NAME1 @1760    SAY NAME2 @2426
-    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
-    LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/ax1h03_.itm~ ~override/ax1h03.itm~  // Battle Axe of Mauletar
-    SAY NAME1 @1055    SAY NAME2 @2569
-    SAY UNIDENTIFIED_DESC @1058 SAY IDENTIFIED_DESC @2570
-    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/blun11_.itm~ ~override/blun11.itm~  // Krotan's Skullcrusher
     SAY NAME1 @1112    SAY NAME2 @2571
     SAY UNIDENTIFIED_DESC @1115 SAY IDENTIFIED_DESC @2572
+    LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/helm02_.itm~ ~override/helm02.itm~  // Helm of Opposite Alignment
+    SAY NAME1 @1569    SAY NAME2 @1572
+    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2624
     LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~  // Telbar's Armor
     SAY NAME1 @1636    SAY NAME2 @2573
@@ -282,6 +274,14 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
     SAY NAME1 @1825    SAY NAME2 @2579
     SAY UNIDENTIFIED_DESC @1828 SAY IDENTIFIED_DESC @2580
     LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/bgmisc89.itm~ ~override/misc89.itm~ // Edwin's Amulet
+    SAY NAME1 @1780    SAY NAME2 @1780
+    SAY UNIDENTIFIED_DESC @1781 SAY IDENTIFIED_DESC @1781
+    LPF update_item_descriptions_to_bgee END
+  COPY ~item_rev/itm/slng05.itm~ ~override/slng03.itm~   // Arla's Dragonbane
+    SAY NAME1 @1920    SAY NAME2 @1929
+    SAY UNIDENTIFIED_DESC @1923 SAY IDENTIFIED_DESC @1930
+    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/sw1h09_.itm~ ~override/sw1h09.itm~  // The Whistling Sword
     SAY NAME1 @2066    SAY NAME2 @2581
     SAY UNIDENTIFIED_DESC @2069 SAY IDENTIFIED_DESC @2582
@@ -290,6 +290,10 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
   COPY ~item_rev/itm/sw1h09.spl~ ~override~
     WRITE_SHORT 0x98 %sw1h09%
   COPY ~item_rev/itm/sw1h09.eff~ ~override~
+  COPY ~item_rev/itm/bgsw2h07.itm~ ~override/sw2h07.itm~ // World's Edge
+    SAY NAME1 @1760    SAY NAME2 @2426
+    SAY UNIDENTIFIED_DESC @1762 SAY IDENTIFIED_DESC @2427
+    LPF update_item_descriptions_to_bgee END
 END
 
 
