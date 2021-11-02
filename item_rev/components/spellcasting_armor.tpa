@@ -133,7 +133,7 @@ ACTION_PHP_EACH armor AS ind => res BEGIN
               PATCH_IF bards_armor_spell_penalties || (class != 5 || (res != 4 && res != 1 && res != 12 && res != 3 && res != 2 && res != 12 && res != 36)) BEGIN
                 LPF ADD_ITEM_EQEFFECT INT_VAR opcode=177 target=1 timing=2 parameter1=class parameter2=5 STR_VAR resource=EVAL ~7c#IR%value%~ END
               END
-	    END
+        END
           END
         END
 
@@ -151,9 +151,9 @@ ACTION_PHP_EACH armor AS ind => res BEGIN
               17 // Fighter/Mage/Cleric
             BEGIN
               // CrevsDaak: avoid patching leather, studded, hide and chain (both mithral and elven) when it comes to Bards, as per Demi's request
-		PATCH_IF bards_armor_spell_penalties || (class != 5 || (res != 4 && res != 1 && res != 12 && res != 3 && res != 2 && res != 12 && res != 36)) BEGIN
+        PATCH_IF bards_armor_spell_penalties || (class != 5 || (res != 4 && res != 1 && res != 12 && res != 3 && res != 2 && res != 12 && res != 36)) BEGIN
                   LPF ADD_ITEM_EQEFFECT INT_VAR opcode=177 target=1 timing=2 parameter1=class parameter2=5 STR_VAR resource=EVAL ~ag#irs%value%~ END
-		END
+        END
             END
             PATCH_IF option=3 BEGIN
               PATCH_FOR_EACH class IN

@@ -2,7 +2,7 @@ INCLUDE ~item_rev/lib/identify_fix.tpa~
 INCLUDE ~item_rev/lib/identify_item.tpa~
 
 //////////////////////////////////////////////
-//  patching
+// Patching
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
@@ -19,7 +19,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
       END
     END
 
-    PATCH_IF (bastard_sword || flail || morning_star) BEGIN
+    PATCH_IF (bastard_sword || flail || morning_star || katana || battleaxe) BEGIN
       LPF ~ADD_ITEM_EQEFFECT~
         INT_VAR
           opcode = 305

@@ -564,7 +564,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
     COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM ~ax1h03~
-	  REMOVE_CRE_ITEM ~ax1h03_~
+      REMOVE_CRE_ITEM ~ax1h03_~
       REMOVE_CRE_ITEM ~ax1h11~
       ADD_CRE_ITEM ~ax1h03_~ #0 #0 #0 NONE WEAPON1 EQUIP
     END
@@ -586,24 +586,17 @@ BEGIN
   END
 END
 
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar0602.are~) BEGIN
-    COPY_EXISTING ~ar0602.are~ ~override~ // Irenicus' Dungeon
+ACTION_FOR_EACH resource IN
+  ~ar0602~
+  ~xr0602~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
         LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun08~ new_item = ~blun02~ END
       END
-      BUT_ONLY
-    END
-END
-
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
-  ACTION_IF (FILE_EXISTS_IN_GAME ~xr0602.are~) BEGIN
-    COPY_EXISTING ~xr0602.are~ ~override~ // Irenicus' Dungeon #2
-      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun08~ new_item = ~blun02~ END
-      END
-      BUT_ONLY
-    END
+    BUT_ONLY
+  END
 END
 
 // Replace bad copies of Dagger +2
@@ -672,22 +665,15 @@ BEGIN
 END
 
 // Replace bad copies of Short Sword +2
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar0303.are~) BEGIN
-    COPY_EXISTING ~ar0303.are~ ~override~ // Mae'var's Guildhouse
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h09~ new_item = ~sw1h29~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // BG2
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2210.are~) BEGIN
-    COPY_EXISTING ~ar2210.are~ ~override~ // ?
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h09~ new_item = ~sw1h29~ END
-    END
+ACTION_FOR_EACH resource IN
+  ~ar0303~
+  ~ar2210~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h09~ new_item = ~sw1h29~ END
+      END
     BUT_ONLY
   END
 END
@@ -744,17 +730,19 @@ BEGIN
   END
 END
 
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargal in BG1
-    COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-      REMOVE_CRE_ITEM ~sw1h09~
-      REMOVE_CRE_ITEM ~sw1h09_~
-      REMOVE_CRE_ITEM ~sw1h14~
-	  REMOVE_CRE_ITEM ~sw1h29~
+ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Zargal in BG1
+  COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM ~sw1h09~
+    REMOVE_CRE_ITEM ~sw1h09_~
+    REMOVE_CRE_ITEM ~sw1h14~
+    REMOVE_CRE_ITEM ~sw1h29~
+    PATCH_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
       ADD_CRE_ITEM ~sw1h09_~ #0 #0 #0 NONE WEAPON1 EQUIP
+    END ELSE BEGIN
+      ADD_CRE_ITEM ~sw1h09~ #0 #0 #0 NONE WEAPON1 EQUIP
     END
-    BUT_ONLY
   END
+  BUT_ONLY
 END
 
 /////////////////////////////////////
@@ -796,59 +784,34 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sunin.cre~) BEGIN
   END
 END
 
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar6800.are~) BEGIN
-    COPY_EXISTING ~ar6800.are~ ~override~ // Friendly Arm Inn (BGT)
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar2300.are~) BEGIN
-    COPY_EXISTING ~ar2300.are~ ~override~ // Friendly Arm Inn (BGEE)
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~bg2300.are~) BEGIN
-    COPY_EXISTING ~bg2300.are~ ~override~ // Friendly Arm Inn (EET)
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
-    END
+ACTION_FOR_EACH resource IN
+  ~ar6800~
+  ~bg2300~
+  ~fw2300~
+  ~ar2300~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08~ new_item = ~bgring08~ END
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ring08_~ new_item = ~bgring08~ END
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~ohringwi~ new_item = ~bgring08~ END
+      END
     BUT_ONLY
   END
 END
 
 // Place Ankheg Plate Mail +1 in BG1
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3700.are~) BEGIN // Nashkel (BGT)
-    COPY_EXISTING ~ar3700.are~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
-    END
-    BUT_ONLY
-  END
-END
-
-ACTION_IF (GAME_IS ~bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~bg4800.are~) BEGIN // Nashkel (EET)
-    COPY_EXISTING ~bg4800.are~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
-    END
+ACTION_FOR_EACH resource IN
+  ~ar3700~
+  ~bg4800~
+  ~fw4800~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~plat06~ new_item = ~plat06_~ END
+      END
     BUT_ONLY
   END
 END
@@ -860,6 +823,21 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
         REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06_~ ~plat06~
         REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat06~ ~plat06_~
       COMPILE_D_TO_DLG
+    BUT_ONLY
+  END
+END
+
+// Place Krotan's Skullcrusher in BG1
+ACTION_FOR_EACH resource IN
+  ~ard014~
+  ~bg0514~
+  ~fw0514~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
+      PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+        LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~blun11~ new_item = ~blun11_~ END
+      END
     BUT_ONLY
   END
 END
@@ -890,13 +868,17 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~lothan.cre~) BEGIN // Lothander
 END
 
 // Replace extra Lawgiver in Ulgoth's Beard home with Bastard Sword +1
-ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
-  ACTION_IF (FILE_EXISTS_IN_GAME ~aru006.are~) BEGIN
-    COPY_EXISTING ~aru006.are~ ~override~ // Ulgoth's Beard home
+ACTION_FOR_EACH resource IN
+  ~aru006~
+  ~bg1006~
+  ~fw1006~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.are~) BEGIN
+    COPY_EXISTING ~%resource%.are~ ~override\%resource%.are~
       PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
         LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~sw1h03~ new_item = ~sw1h02~ END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 END
 

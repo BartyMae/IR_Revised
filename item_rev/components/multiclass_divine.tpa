@@ -2,13 +2,11 @@ INCLUDE ~item_rev/lib/multiclass_standard.tpa~
 
 //////////////////////////////////////////////
 
-// requires R2EN ~r2en_weapprof~ be run, and variables single_col and multi_col defined,
-// the column numbers for e.g. Fighters and Fighter/Clerics respectively
+// Requires R2EN ~r2en_weapprof~ be run, and variables single_col and multi_col define the column numbers for e.g. Fighters and Fighter/Clerics respectively
 DEFINE_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~ BEGIN
   SET max_stars = 0
   
-  // determine how many stars this multiclass can put in weapons (especially important for
-  // warrior multi-classes and those affected by the multi-class grandmastery component of tweak pack) 
+  // Determine how many stars this multiclass can put in weapons (especially important for warrior multi-classes and those affected by the multi-class grandmastery component of Tweak Anthology) 
   FOR (i = 3; i < 31; i += 1) BEGIN
     READ_2DA_ENTRY_FORMER ~r2en_weapprof~ i multi_col current
     PATCH_IF (current > max_stars) BEGIN
@@ -23,8 +21,7 @@ DEFINE_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~ BEGIN
     END
   END
 
-  // give max_stars in a proficiency if the single class can put more points in it than the multi can (note for
-  // both loops: our indices should ensure we hit all the valid proficiencies and don't go into weapon style territory)
+  // Give max_stars in a proficiency if the single class can put more points in it than the multi can (note for both loops: our indices should ensure we hit all the valid proficiencies and don't go into weapon style territory)
   FOR (i = 3; i < 31; i += 1) BEGIN
     READ_2DA_ENTRY_FORMER ~r2en_weapprof~ i single_col single_stars
     READ_2DA_ENTRY_FORMER ~r2en_weapprof~ i multi_col multi_stars
@@ -34,28 +31,28 @@ DEFINE_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~ BEGIN
   END
 END
 
-// patch items to allow use
+// Patch items to allow use
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     READ_SHORT 0x1c item
     PATCH_IF item=0x5 || (item>0xd && item<0x20) BEGIN
       READ_LONG  0x1e usabilities
-      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT13) == 0) BEGIN // usable by f/m
-        usabilities &= `BIT15                     // make usable by f/m/c
+      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT13) == 0) BEGIN // Usable by F/M
+        usabilities &= `BIT15                     // Make usable by F/M/C
       END
-      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT11) == 0) BEGIN // usable by f
-        usabilities &= `BIT14                     // make usable by f/c
+      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT11) == 0) BEGIN // Usable by F
+        usabilities &= `BIT14                     // Make usable by F/C
       END
-      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT22) == 0) BEGIN // usable by t
-        usabilities &= `BIT9                      // make usable by c/t
+      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT22) == 0) BEGIN // Usable by T
+        usabilities &= `BIT9                      // Make usable by C/T
       END
-      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT21) == 0) BEGIN // usable by r
-        usabilities &= `BIT10                     // make usable by c/r
+      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT21) == 0) BEGIN // Usable by R
+        usabilities &= `BIT10                     // Make usable by C/R
       END
-      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT18) == 0) BEGIN // usable by m
-        usabilities &= `BIT8                      // make usable by c/m
+      PATCH_IF (option=2 || option=4 || option=1 || option=3) && ((usabilities & BIT18) == 0) BEGIN // Usable by M
+        usabilities &= `BIT8                      // Make usable by C/M
       END
-      PATCH_IF (option=2 || option=4 || option=5 || option=6) && ((usabilities & BIT11)=0) BEGIN // usable by f
+      PATCH_IF (option=2 || option=4 || option=5 || option=6) && ((usabilities & BIT11)=0) BEGIN // Usable by F
         usabilities &= `BIT12
       END
       WRITE_LONG 0x1e usabilities
@@ -63,50 +60,50 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   END
 BUT_ONLY_IF_IT_CHANGES
 
-// patch 2da to allow profiency points in those items
+// Patch 2da to allow profiency points in those items
 COPY_EXISTING ~weapprof.2da~ ~override~
   READ_2DA_ENTRIES_NOW ~r2en_weapprof~ 1
   
-  // cleric/mage
+  // Cleric/Mage
   PATCH_IF option=2 || option=4 || option=1 || option=3 BEGIN
   SET single_col = 4
   SET multi_col = 17
   LAUNCH_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~
   END
   
-  // fighter/cleric
+  // Fighter/Cleric
   PATCH_IF option=2 || option=4 || option=1 || option=3 BEGIN
   SET single_col = 5
   SET multi_col = 13
   LAUNCH_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~
   END
   
-  // cleric/thief
+  // Cleric/Thief
   PATCH_IF option=2 || option=4 || option=1 || option=3 BEGIN
   SET single_col = 7
   SET multi_col = 18
   LAUNCH_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~
   END
 
-  // cleric/ranger
+  // Cleric/Ranger
   PATCH_IF option=2 || option=4 || option=1 || option=3 BEGIN
   SET single_col = 11
   SET multi_col = 21
   LAUNCH_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~
   END
   
-  // fighter/mage/cleric
+  // Fighter/Mage/Cleric
   PATCH_IF option=2 || option=4 || option=1 || option=3 BEGIN
   SET single_col = 12
   SET multi_col = 20
   LAUNCH_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~
   END
 
+  // Fighter/Druid
   PATCH_IF option=2 || option=4 || option=5 || option=6 BEGIN
-    // fighter/druid
-    single_col = 5
-    multi_col = 19
-    LPM ~MC_CLERIC_PROFICIENCIES~
+  SET single_col = 5
+  SET multi_col = 19
+  LAUNCH_PATCH_MACRO ~MC_CLERIC_PROFICIENCIES~
   END
 
   SET_2DA_ENTRIES_NOW ~s2el_weapprof~ 1
@@ -114,9 +111,8 @@ COPY_EXISTING ~weapprof.2da~ ~override~
 BUT_ONLY_IF_IT_CHANGES
 
 
-
 //////////////////////////////////////////////
-//  class descriptions
+// Class descriptions
 
 OUTER_PATCH ~~ BEGIN
 

@@ -1,0 +1,33 @@
+2DA V1.0
+*
+                                           TYPE     ITM      INSTALL  NAME     ID_NAME  DESC     ID_DESC  TOOLTIP1 TOOLTIP2 TOOLTIP3 RESTRICTION 
+FADING_GLORY_1#RR                          SHIELDB  RR#BUC01 0        *        @10000   *        @10001   *        *        *        *
+BUCKLER_2#RR                               SHIELDB  RR#BUC02 0        *        @10002   *        @10003   *        *        *        *
+BUCKLER_3#RR                               SHIELDB  RR#BUC03 0        *        @10004   *        @10005   *        *        *        *
+ROGUES_WARD_2#RR                           SHIELDB  RR#RWARD 0        *        @10006   *        @10007   *        *        *        *
+THE_STALWART_DEFENDER_1#RR                 SHIELDB  RR#SHL01 0        *        @10008   *        @10009   *        *        *        *
+SAFEGUARD_2#RR                             SHIELDB  RR#SHL02 0        *        @10010   *        @10011   *        *        *        *
+THE_GUARDIAN_1#RR                          SHIELDB  RR#GUARA 0        *        @10012   *        @10013   *        *        *        *
+HARP_OF_DESCANT#RR                         *        RR#HRP01 0        *        @10014   *        @10015   *        *        *        *
+LYRE_OF_PROGRESSION#RR                     *        RR#LYRE  0        *        @10016   *        @10017   *        *        *        *
+MASTERBELT#RR                              BELT     RR#BEL01 0        *        @10018   *        @10019   *        *        *        *
+TRI_SOULED_SAPPHIRE                        HELM     RR#HEL01 0        *        @10020   *        @10021   *        *        *        *
+COWL_OF_ACUITY#RR                          HELM     RR#HEL02 0        *        @10022   *        @10023   *        *        *        *
+DARKVEIL#RR                                HELM     RR#HEL03 0        *        @10024   *        @10025   *        *        *        *
+FRAGMENT_OF_ENLIGHTEMENT#RR                HELM     RR#HEL04 0        *        @10026   *        @10027   *        *        *        *
+DEEP_RED_IOUN_STONE#RR                     HELM     RR#HEL05 0        *        @10028   *        @10029   *        *        *        *
+SAP#RR                                     CLUB     RR#SAP01 0        *        @10030   *        @10031   *        *        *        *
+STONESMASHER_2#RR                          CLUB     RR#STON  0        *        @10032   *        @10033   *        *        *        *
+THE_WEARY_CUDGEL_1#RR                      CLUB     RR#WEAR  0        *        @10034   *        @10035   *        *        *        *
+RETURNING_FROST_DART_1#RR                  DART     RR#FDART 0        *        @10036   *        @10037   *        *        *        *
+DAGGER_OF_ACUMEN_3#RR                      DAGGER   RR#ACUMN 0        *        @10038   *        @10039   *        *        *        *
+PLAGUEBEARER_3#RR                          DAGGER   RR#PLAG  0        *        @10040   *        @10041   *        *        *        *
+TROLLMELTER_2#RR                           DAGGER   RR#TROL  0        *        @10042   *        @10043   *        *        *        *
+SILVERBLAZE_3#RR                           DAGGER   RR#SILV  0        *        @10044   *        @10045   *        *        *        *
+BLACK_CATS_CLAW_2#RR                       NINJATO  RR#CATC  0        *        @10046   *        @10047   *        *        *        *
+KEEPER_OF_THE_LAW_2#RR                     WAKI     RR#KEEP  0        *        @10048   *        @10049   *        *        *        *
+COMPOSITE_SHORT_BOW#RR                     BOWSHORT RR#BOW02 0        *        @10050   *        @10051   *        *        *        *
+COMPOSITE_SHORT_BOW_1#RR                   BOWSHORT RR#BOW03 0        *        @10052   *        @10053   *        *        *        *
+COMPOSITE_SHORT_BOW_2#RR                   BOWSHORT RR#BOW04 0        *        @10054   *        @10055   *        *        *        *
+COMPOSITE_SHORT_BOW_3#RR                   BOWSHORT RR#BOW05 0        *        @10056   *        @10057   *        *        *        *
+SPARKBURST_2#RR                            BOWSHORT RR#BOW06 0        *        @10058   *        @10059   *        *        *        *

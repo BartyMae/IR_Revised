@@ -10,27 +10,27 @@ INCLUDE ~item_rev/components/wakizashis_ninjatos.tpa~
 OUTER_SPRINT debug_file ~item_rev/debug/weapon_debug.log~
 
 /////////////////////////////////////////////////////
-//  Halberds can slash too
+// Halberds can slash too
 
 ACTION_IF halberds_can_slash_too = 1 BEGIN
   INCLUDE ~item_rev/components/halberds.tpa~
 END
 
 /////////////////////////////////////////////////////
-//  Read tables
+// Read tables
 
 OUTER_SPRINT old_weapon_table ~item_rev/lib/bg2_weapon_stats.txt~
 OUTER_SPRINT new_weapon_table ~item_rev/lib/ir_weapon_stats.txt~
 LAM wc_table_read
 
-//                           !!! IMPORTANT NOTE !!!
-// 
+// !!! IMPORTANT NOTE !!!
+//
 // Weapon names in old/new weapon table must match those in 'identify_weapon.tpa'!
 // It wasn't strictly necessary, but in the end I thought it was easier this way
-// 
-// 
+//
+//
 // Following variables are available:
-// 
+//
 //   direct readings from ITM (they might have been prefixed with 'iden_old_'), don't change them:
 //     off               - ability header's starting offset
 //     type              - ability header's attack type (1 is melee, 2 is ranged, 4 is bow/launcher)
@@ -39,14 +39,14 @@ LAM wc_table_read
 //     dice              - ability header's dice count
 //     size              - ability header's dice size
 //     damage            - ability header's bonus damage
-// 
+//
 //   readings from '%old_weapon_table%', only change if the item has unique unidentified description (there should be none):
 //     unid_old_speed    - basic speed factor for this (identified by 'identify_weapon' macro) type of weapon
 //     unid_old_thaco    - ditto for thaco
 //     unid_old_dice     - ditto for dice count
 //     unid_old_size     - ditto for dice size
 //     unid_old_damage   - ditto for bonus damage
-// 
+//
 //   readings from '%new_weapon_table%' and deltas with old table's '%unid_old_%' values;
 //   with deltas it's better to add to/detract from than to override them;
 //   'unid' and 'iden' pairs are equal, change one when for whatever reason identified and
@@ -62,14 +62,14 @@ LAM wc_table_read
 //     iden_delta_damage - ditto for damage
 //     iden_new_dice     - the new dice count that will be written in ITM's header and identified desc
 //     iden_new_size     - ditto for dice size
-// 
+//
 //   use these when for whatever reason header shouldn't match the description, like IR's
 //   items with "Accuracy" ability; set to the difference between ITM and desc (0 by default):
 //     iden_bonus_speed  - by how much speed factor in ITM's header is greater than in identified desc
 //     iden_bonus_thaco  - ditto for thaco
 //     iden_bonus_damage - ditto for damage
-// 
-// 
+//
+//
 // Following variables can also be set:
 //     reupdate    - if set to 1, then description will be updated for every attack header found in ITM;
 //                   this is useful when the weapon has several attacking modes that you want to patch in
@@ -79,8 +79,8 @@ LAM wc_table_read
 //     update_line - 1 by default, this is the index of duplicated text line in description (speed factor,
 //                   thaco or damage) that contains the information you want to update; see halberds, it
 //                   assumes the "Halberds can slash" component might have been installed
-// 
-// 
+//
+//
 // Known issues:
 // 1) Will not work with incorrect descriptions (vanilla Carsomyr+5 claims to deal 1d12+5
 //    damage, but only does 1d10+5). Items with invalid descriptions are stored in the debug log.
@@ -94,11 +94,11 @@ LAM wc_table_read
 // 3) If new damage (thaco) is reduced to zero, then "Damage: 1d6, double damage vs undead"
 //    type of line will be removed completely, instead of just "1d6". But really, I can't
 //    do a thing about "double" amount - such bonus isn't even listed in the extended header.
-// 
+//
 
 
 //////////////////////////////////////////////
-//  descriptions
+// Descriptions
 
  DEFINE_PATCH_MACRO wc_slash_to_pierce BEGIN
   SPRINT t1 @100132
@@ -174,26 +174,26 @@ END
 
 
 /////////////////////////////////////////////////////
-//  Special cases
+// Special cases
 
 DEFINE_PATCH_MACRO special BEGIN
   TO_LOWER ~SOURCE_RES~
 
-  PATCH_IF type=1 || type=2 || type=4 BEGIN // melee/ranged/launcher
+  PATCH_IF type=1 || type=2 || type=4 BEGIN // Melee, ranged, launcher
 
-  // mark the item as ready for updating
-  // also we can unflag it later if needed
+  // Mark the item as ready for updating
+  // Can unflag it later if needed
   patched=1
 
   /////////////////////////
-  //    global stuff     //
+  //    Global stuff     //
   /////////////////////////
 
-  // add enchantment bonus damage to arrows, bolts and bows
-  // add STR bonus damage to composite bows
+  // Add enchantment bonus damage to arrows, bolts and bows
+  // Add strength bonus damage to composite bows
   PATCH_IF arrow || bolt || short_bow || long_bow || comp_long_bow BEGIN
     READ_LONG 0x60 ench
-    // calculate STR bonus damage for composite bows, including composite shorts from Rogue Rebalancing
+    // Calculate strength bonus damage for composite bows, including composite shorts from Rogue Rebalancing
     strbon=0
     PATCH_IF (short_bow || comp_long_bow) && strreq>10 BEGIN
       INNER_PATCH_FILE strmod.2da BEGIN
@@ -213,71 +213,68 @@ DEFINE_PATCH_MACRO special BEGIN
     END
   END
 
-  // change damage type to "piercing"
+  // Change damage type to "piercing"
   PATCH_IF ninjato BEGIN
-    WRITE_SHORT off+0x1c 1  // piercing
-    WRITE_SHORT off+0x2c 10 // overhand
-    WRITE_SHORT off+0x2e 25 // backhand
-    WRITE_SHORT off+0x30 65 // thrust
+    WRITE_SHORT off+0x1c 1  // Piercing
+    WRITE_SHORT off+0x2c 10 // Overhand
+    WRITE_SHORT off+0x2e 25 // Backhand
+    WRITE_SHORT off+0x30 65 // Thrust
   END
 
-  // change damage type to "slashing"
+  // Change damage type to "slashing"
   PATCH_IF wakizashi || short_sword BEGIN
-    WRITE_SHORT off+0x1c 3  // slashing
-    WRITE_SHORT off+0x2c 50 // overhand
-    WRITE_SHORT off+0x2e 50 // backhand
-    WRITE_SHORT off+0x30 0  // thrust
+    WRITE_SHORT off+0x1c 3  // Slashing
+    WRITE_SHORT off+0x2c 50 // Overhand
+    WRITE_SHORT off+0x2e 50 // Backhand
+    WRITE_SHORT off+0x30 0  // Thrust
   END
 
-  // change damage type to "crushing and piercing" - it picks either crushing or piercing AC/resistance (two separate checks)
-  // of the target, whichever is weaker; probably the most effective weapon damage type in game
+  // Change damage type to "crushing and piercing", it picks either the crushing or piercing AC/resistance (two separate checks) of the target, whichever is weaker; probably the most effective weapon damage type in game
   PATCH_IF morning_star BEGIN
     WRITE_SHORT off+0x1c 6
   END
 
-  // change damage type to "crushing and piercing"
-  // commented out is increased range - flails should easily afford it (watch LotR's "Eowyn vs Witchking" scene)
+  // Change damage type to "crushing and piercing"; commented out is increased range, flails should easily afford it
   PATCH_IF flail BEGIN
     WRITE_SHORT off+0x1c 6
 
-    // specially for Ardanis - flails get extended range
+    // Specially for Ardanis - flails get extended range
     PATCH_IF flails_have_extended_range = 1 BEGIN
-      WRITE_SHORT off+0xe 2 // increase range
+      WRITE_SHORT off+0xe 2 // Increase range
     END
   END
 
-  // extend spear's (melee only) range
-  PATCH_IF spear BEGIN // melee
+  // Extend spear's (melee only) range
+  PATCH_IF spear BEGIN // Melee
     PATCH_IF type=1 BEGIN
-      WRITE_SHORT off+0xe 3 // range
+      WRITE_SHORT off+0xe 3 // Range
     END
     PATCH_IF type=2 BEGIN
-      WRITE_BYTE off+0x26 THIS|1 // use STR bonus
-      WRITE_SHORT off+0xe 15 // range
+      WRITE_BYTE off+0x26 THIS|1 // Use strength bonus
+      WRITE_SHORT off+0xe 15 // Range
     END
   END
 
-  // change range of throwing weapons
-  PATCH_IF dart || dagger || handaxe || hammer BEGIN // spears are handled one block above
-    PATCH_IF type=2 BEGIN // ranged
-      WRITE_SHORT off+0xe 15 // range
+  // Change range of throwing weapons
+  PATCH_IF dart || dagger || handaxe || hammer BEGIN // Spears are handled above
+    PATCH_IF type=2 BEGIN // Ranged
+      WRITE_SHORT off+0xe 15 // Range
     END
   END
-  
+
   PATCH_IF scimitar BEGIN
-    // specially for Ardanis, change scimitars to DnD 3.5 version
+    // Specially for Ardanis, change scimitars to DnD 3.5's 1D6 + keen
     PATCH_IF dnd_3e_scimitars = 1 BEGIN
       unid_new_size = 6
       iden_new_size = 6
     END
   END
 
-  // halberds, dual mode
-  // I think their slashing and piercing modes may be kept in a single header with damage type changed to "slashing and piercing"?
-  PATCH_IF halberd && type=1 BEGIN // melee
+  // Halberds, dual mode
+  PATCH_IF halberd && type=1 BEGIN // Melee
 
     READ_SHORT off+0x1c damtype
-    PATCH_IF damtype=3 BEGIN // slashing
+    PATCH_IF damtype=3 BEGIN // Slashing
       unid_delta_speed +=1
       iden_delta_speed +=1
       unid_new_size = 12
@@ -291,9 +288,9 @@ DEFINE_PATCH_MACRO special BEGIN
       SPRINT text_update wc_pierce_to_slashpierce
       LPM update_item_descriptions
     END
-    WRITE_SHORT off+0xe 3 // range
+    WRITE_SHORT off+0xe 3 // Range
   END
-  
+
   PATCH_IF dual_mode_wakizashis=1 BEGIN
     PATCH_IF wakizashi BEGIN
       WRITE_SHORT off+0x1c 7
@@ -302,23 +299,21 @@ DEFINE_PATCH_MACRO special BEGIN
     END
   END
 
-  // 1d12 twohanded swords - change to 2d8, not 2d6
+  // 1D12 two-handed swords - change to 2D8 instead of 2D6
   PATCH_IF twohanded_sword && dice=1 && size=12 BEGIN
     iden_new_dice = 2
     iden_new_size = 8
   END
-  
+
   /////////////////////////
-  //    weird things     //
+  //    Weird things     //
   /////////////////////////
 
-  // vanilla bugs that i'm too lazy to deal with in 'fixpack.tpa'
-  // Demi had kindly fixed most of them within IR's main component :bow: , so I see no reason to bother 
-  // also items that intentionally don't match their descriptions
+  // Vanilla bugs that I'm too lazy to deal with in 'fixpack.tpa'; also items that intentionally don't match their descriptions
 
   PATCH_IF comp_ir=0 BEGIN
 
-    // Arrow of Slaying - has hidden +15 thaco bonus
+    // Arrow of Slaying - has hidden +15 THAC0 bonus
     PATCH_IF
       ~%SOURCE_RES%~ STRING_EQUAL ~arow03~
     BEGIN
@@ -332,8 +327,7 @@ DEFINE_PATCH_MACRO special BEGIN
       iden_bonus_damage=1
     END
 
-    // Throwing Axe +2, Mace, Werebane, Sling +3, Spear, Sword of Balduran, The Vampire's Revenge,
-    // Spider's Bane - bugged and seemingly unused, don't touch
+    // Throwing Axe +2, Mace, Werebane, Sling +3, Spear, Sword of Balduran, The Vampire's Revenge, Spider's Bane - bugged and seemingly unused, don't touch
     PATCH_IF
       ~%SOURCE_RES%~ STRING_EQUAL ~sper04~ ||
       ~%SOURCE_RES%~ STRING_EQUAL ~ax1h06~ ||
@@ -370,13 +364,13 @@ DEFINE_PATCH_MACRO special BEGIN
   END // comp_ir=1
 
   /////////////////////////
-  //  "hardcoded" items  //
+  //  "Hardcoded" items  //
   /////////////////////////
 
-  // hardcode special items
-  
+  // Special item issues
+
   PATCH_IF comp_ir=0 BEGIN
-  
+
   // Tansheron's Bow +3 - use arrow's damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow15~
@@ -386,7 +380,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_damage += new_arrow_damage - old_arrow_damage
   END
 
-  // throwing spear from Tactics, keep melee range at 2
+  // Throwing spear from Tactics - keep melee range at 2
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~solasna5~
   BEGIN
@@ -395,7 +389,7 @@ DEFINE_PATCH_MACRO special BEGIN
     END
   END
 
-  // Staff Mace - use mace's damage
+  // Staff Mace - use mace damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~staf06~
   BEGIN
@@ -403,7 +397,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_new_size = 3
   END
 
-  // Staff Spear +2 - use spear's damage and range
+  // Staff Spear +2 - use spear damage and range
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~staf07~
   BEGIN
@@ -412,7 +406,7 @@ DEFINE_PATCH_MACRO special BEGIN
     WRITE_SHORT off+0xe 3 // range
   END
 
-  // Moonblade - use longsword's stats
+  // Moonblade - use longsword stats
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sw1h13~
   BEGIN
@@ -449,7 +443,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_speed = 10 - speed
   END
 
-  // Sling of Everard +5 - use bullet's damage
+  // Sling of Everard +5 - use bullet damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~wasling~
   BEGIN
@@ -458,7 +452,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_damage += new_bullet_damage - old_bullet_damage
   END
 
-  // Firetooth +4, Firetooth +5 - use bolt's damage
+  // Firetooth +4, Firetooth +5 - use bolt damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~xbow15~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~xbow16~
@@ -468,7 +462,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_damage += new_bolt_damage - old_bolt_damage
   END
 
-  // now, installation-specific things
+  // Installation-specific things
 
   // Arrow of Detonation - should have no direct damage
   PATCH_IF
@@ -478,7 +472,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_new_dice = 0
   END
 
-  // Kuo-Toa Bolts, Kuo-Toa Bolts +2, Kuo-Toa Bolts +3 - no thaco bonus, so fix damage too
+  // Kuo-Toa Bolts, Kuo-Toa Bolts +2, Kuo-Toa Bolts +3 - no THAC0 bonus, so fix damage too
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~kuobolt~  ||
     ~%SOURCE_RES%~ STRING_EQUAL ~kuobolt2~ ||
@@ -489,14 +483,14 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_damage = 0
   END
 
-  // Paralytic Bolt - they'll have normal damage (1d10) with this component, so add missing +1 thaco
+  // Paralytic Bolt - they'll have normal damage (1D10) with this component, so add missing +1 thaco
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sahbolt~
   BEGIN
     iden_delta_thaco +=1
   END
 
-  // The Equalizer - lock thaco and damage at 0
+  // The Equalizer - lock THAC0 and damage at 0
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sw1h54~
   BEGIN
@@ -507,17 +501,14 @@ DEFINE_PATCH_MACRO special BEGIN
   END // comp_ir=0
 
   /////////////////
-  //    fixes    //
+  //    Fixes    //
   /////////////////
 
-  // here we adjust things to match vanilla BG2 rules
-  // they aren't exactly bugs, just inconsistent with rules, but why not to make them look prettier?
+  // Here we adjust things to match vanilla BG2 rules; they aren't exactly bugs, just inconsistent with rules, but why not to make them look prettier? Vanilla only, we can fix IR's resources ourselves before distributing the mod
 
-  // vanilla only, we can fix IR's resources ourselves before distributing the mod
   PATCH_IF comp_ir=0 BEGIN
 
-  // Hangard's Axe +2, Rifthome Axe +3, K'logarath +4, Dwarven Thrower +3,
-  // Hammer of Thunderbolts +3, Runehammer +4, Runehammer +5 - add missing +1 damage
+  // Hangard's Axe +2, Rifthome Axe +3, K'logarath +4, Dwarven Thrower +3, Hammer of Thunderbolts +3, Runehammer +4, Runehammer +5 - add missing +1 damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~ax1h08~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~ax1h09~ ||
@@ -549,9 +540,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_speed -=2
   END
 
-  // Mace of Disruption +2, Boomerang Dagger +2, Fire Tooth +3, Crom Faeyr, Erinne Sling +5, Staff of the Magi,
-  // Staff of the Woodlands +4, Staff of Rynn +4, Staff of the Ram +4, Staff of the Ram +6, Dart +5, Cutthroat +4,
-  // The Equalizer, Lilarcor, Defender of Easthaven +2, Firetooth +5 - decrease speed factor to match the enchantment
+  // Mace of Disruption +2, Boomerang Dagger +2, Fire Tooth +3, Crom Faeyr, Erinne Sling +5, Staff of the Magi, Staff of the Woodlands +4, Staff of Rynn +4, Staff of the Ram +4, Staff of the Ram +6, Dart +5, Cutthroat +4, The Equalizer, Lilarcor, Defender of Easthaven +2, Firetooth +5 - decrease speed factor to match the enchantment
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~blun25~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~dagg11~ ||
@@ -580,20 +569,19 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_speed -=4
   END
 
-  // Ripper +2, Mana Bow +4, Long Bow +2, Taralash +4, Taralash +5, Long Bow +3 - add missing +1 thaco
+  // Ripper +2, Mana Bow +4, Long Bow +2, Taralash +4, Taralash +5, Long Bow +3 - add missing +1 THAC0
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow09~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~bow13~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~bow17~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~bow22~ ||
-    ~%SOURCE_RES%~ STRING_EQUAL ~bow23~ || 
+    ~%SOURCE_RES%~ STRING_EQUAL ~bow23~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~bow25~
   BEGIN
     iden_delta_thaco +=1
   END
 
-  // Drow Crossbow of Speed, War Hammer +1 vs Giantkin, Staff of Command, Staff of Power, Flame Tongue,
-  // Sling of Everard +5, Staff of Arundel, Light Crossbow of Speed  - increase speed factor to match the enchantment
+  // Drow Crossbow of Speed, War Hammer +1 vs Giantkin, Staff of Command, Staff of Power, Flame Tongue, Sling of Everard +5, Staff of Arundel, Light Crossbow of Speed  - increase speed factor to match the enchantment
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dwxbow01~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~hamm04~   ||
@@ -643,10 +631,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_speed -=5
   END
 
-/*
-  // things that fall into the "fixes" category, but I'm less so sure about
-  // for instance, bow/xbow damage is overwritten in the "global" section, so there's no
-  // need to adjust it
+  // Issues that fall into the "fixes" category, but I'm less so sure about; for instance, bow/xbow damage is overwritten in the "global" section, so there's no need to adjust it
 
   // Ripper +2, Heartseeker +3, Tuigan Bow +1 - remove extra +1 damage
   PATCH_IF
@@ -657,7 +642,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_damage -=1
   END
 
-  // Strong Arm +2 - it has extra +2 damage, but I think it's intended due to 19 STR requirement
+  // Strong Arm +2 - it has an extra +2 damage, but I think it's intended due to 19 strength requirement
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow11~
   BEGIN
@@ -680,7 +665,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_delta_damage -=1
   END
 
-  // Shadow Thief Dagger - increase speed factor to match the enchantment, but let's keep it
+  // Shadow Thief Dagger - increase speed factor to match the enchantment
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dagg18~
   BEGIN
@@ -693,7 +678,6 @@ DEFINE_PATCH_MACRO special BEGIN
   BEGIN
     iden_delta_damage +=3
   END
-*/
 
   END // comp_ir=0
 
@@ -711,7 +695,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_new_size = new_bolt_size
     iden_delta_damage += new_bolt_damage - old_bolt_damage
   END
-  
+
   // Heartseeker +3, Water's Edge +3, Spectral Brand +4, Spectral Brand +5, Gram the Sword of Grief +4, Gram the Sword of Grief +5, Heavy Crossbow of Accuracy +1 - special +3 THAC0 bonus
   PATCH_IF
   ~%SOURCE_RES%~ STRING_EQUAL ~bow10~ ||
@@ -772,7 +756,7 @@ DEFINE_PATCH_MACRO special BEGIN
   BEGIN
     iden_bonus_thaco +=1
   END
-  
+
   // Longtooth +2 - special +2 THAC0 and +2 damage bonus
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dagg04~
@@ -797,7 +781,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_bonus_thaco -=2
     iden_bonus_damage =4
   END
-  
+
   // Drowcraft Weapons - special +2 THAC0 and damage bonuses
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dwblun01~ ||
@@ -810,7 +794,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_bonus_thaco +=2
     iden_bonus_damage =2
   END
-  
+
   // Drowcraft Ammunition - special +1 THAC0 and damage bonuses
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~dwbolt01~ ||
@@ -829,7 +813,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_bonus_damage =2
     iden_delta_damage +=1
   END
-  
+
   // Strong Arm +2 - broken if not set
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow11~
@@ -837,8 +821,8 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_bonus_damage =4
     iden_delta_damage -=2
   END
-  
-  // Iron Bow of Gesen +4 - use spear's XdY damage (don't ask me why :rolleyes:)
+
+  // Iron Bow of Gesen +4 - use spear damage
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~bow19~
   BEGIN
@@ -847,8 +831,7 @@ DEFINE_PATCH_MACRO special BEGIN
     //WRITE_SHORT 0x4ea 08 // electricity damage
   END
 
-  // Paralytic Bolt - they'll have normal damage (1d10) with this component, so increase it
-  // imo quite resonable, seeing how heavy these things are (1 lb each)
+  // Paralytic Bolt - they'll have normal damage (1D10) with this component, so increase it
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sahbolt~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~kuobolt~ ||
@@ -859,8 +842,7 @@ DEFINE_PATCH_MACRO special BEGIN
     iden_new_size = 12
   END
 
-  // Impaler +3, Talos' Fury +2 - keep melee range at 2
-  // Ixil's Nail +4 is said to be missing it's tip, so I presume it is shorter than normal spears
+  // Impaler +3, Talos' Fury +2, Ixil's Nail +4 - keep melee range at 2
   PATCH_IF
     ~%SOURCE_RES%~ STRING_EQUAL ~sper08~ ||
     ~%SOURCE_RES%~ STRING_EQUAL ~sper09~ ||
@@ -870,38 +852,37 @@ DEFINE_PATCH_MACRO special BEGIN
       WRITE_SHORT off+0xe 2 // range
     END
   END
-  
+
   END
-  
+
   END // type=1 || type=2 || type=4
 
 END
 
 /////////////////////////////////////////////////////
-//  Patching
+// Patching
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
-//COPY_EXISTING bow01.itm override PATCH_IF SOURCE_SIZE>0x71 BEGIN
   LPM identify_item
 
-  // first, do stuff unrelated directly to changing weapon stats
+  // First, do stuff unrelated directly to changing weapon stats
   PATCH_MATCH 1 WITH
 
     scimitar
-    // change proficiency to "scimitar"
+    // Change proficiency to "Scimitar"
     BEGIN
       SPRINT text_update scimitar_prof
       LPM update_item_descriptions
 
-      // specially for Ardanis, change scimitars to DnD 3.5 version
+      // Specially for Ardanis, change scimitars to DnD 3.5 1D6 + keen
       PATCH_IF dnd_3e_scimitars = 1 BEGIN
-        LPF ADD_ITEM_EQEFFECT INT_VAR opcode=301 target=1 timing=2 parameter1=1 END // +5% crit
+        LPF ADD_ITEM_EQEFFECT INT_VAR opcode=301 target=1 timing=2 parameter1=1 END // +5% critical hit chance
       END
     END
 
     ninjato
-    // change damage type to piercing
-    // change proficiency to "short sword"
+    // Change damage type to piercing
+    // Change proficiency to "Short Sword/Ninja-To"
     BEGIN
       WRITE_BYTE 0x31 0x5b
       SPRINT text_update ninjato_prof
@@ -911,8 +892,8 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     END
 
     wakizashi
-    // change damage type to slashing
-    // change proficiency to "katana/wakizashi"
+    // Change damage type to slashing
+    // Change proficiency to "Katana/Wakizashi"
     BEGIN
       WRITE_BYTE 0x31 0x5e
       SPRINT text_update waki_prof
@@ -926,29 +907,31 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     END
 
     short_sword
-    // change damage type to slashing
+    // Change damage type to slashing
     BEGIN
+      SPRINT text_update ninjato_prof
+      LPM update_item_descriptions
       SPRINT text_update wc_pierce_to_slash
       LPM update_item_descriptions
     END
 
     katana
-    // change proficiency to "katana/wakizashi"
+    // Change proficiency to "Katana/Wakizashi"
     BEGIN
       SPRINT text_update katana_prof
       LPM update_item_descriptions
     END
 
     mace
-    // change proficiency to "mace/morning star"
+    // Change proficiency to "Mace/Morning Star"
     BEGIN
       SPRINT text_update mace_prof
       LPM update_item_descriptions
     END
 
     morning_star
-    // change proficiency to "mace/morning star"
-    // change damage type to "crushing and piercing"
+    // Change proficiency to "Mace/Morning Star"
+    // Change damage type to "crushing and piercing"
     BEGIN
       WRITE_ASCII 0x22 ~MS~ (2)
       WRITE_BYTE 0x31 0x65
@@ -959,17 +942,17 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     END
 
     flail
-    // change proficiency to "flail"
-    // change damage type to "crushing and piercing"
+    // Change proficiency to "Flail"
+    // Change damage type to "crushing and piercing"
     BEGIN
       SPRINT text_update wc_crush_to_crushpierce
       LPM update_item_descriptions
       SPRINT text_update flail_prof
       LPM update_item_descriptions
     END
-    
+
     (short_bow || long_bow || comp_long_bow)
-    // reduce ApR of bows by 0.5 if it's above 1
+    // Reduce ApR of bows by 0.5 if it's above 1
     BEGIN
       GET_OFFSET_ARRAY global ITM_V10_GEN_EFFECTS
       PHP_EACH global AS ind => res BEGIN
@@ -978,53 +961,48 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
         END
       END
     END
-    
+
     light_xbow
-    // add reload time to crossbows, duration = 1 second
+    // Add reload time to crossbows, duration = 1 second
     BEGIN
       PATCH_IF xbow_reload_pause = 1 BEGIN
-        LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=2 END // type 2 = ranged, no ammo required
-        LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=4 END // type 4 = ranged, requires ammo
+        LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=2 END // Type 2 = ranged, no ammo required
+        LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=1 parameter1=0 parameter2=1 type=4 END // Type 4 = ranged, requires ammo
       END
     END
-    
+
     heavy_xbow
-    // add reload time to crossbows, duration = 2 seconds
+    // Add reload time to crossbows, duration = 2 seconds
     BEGIN
       PATCH_IF xbow_reload_pause = 1 BEGIN
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=2 parameter1=0 parameter2=1 type=2 END
         LPF ADD_ITEM_EFFECT INT_VAR opcode=165 target=1 duration=2 parameter1=0 parameter2=1 type=4 END
       END
     END
-    
 
-    // if ammo's prof is 0 (none), then archer suffers no thaco penalty even without any points in launcher's proficiency
+    // If ammo's proficiency is 0 (none), then archer suffers no THAC0 penalty even without any points in launcher's proficiency
 
     arrow
-    // with arrows it is more difficult, because they're used by different bow proficiencies, so a point in longbow prof
-    // will allow to shoot a shortbow with no points in shortbow prof; still, i think if you have put points in longbow
-    // prof, then you want to use more powerful longbows, than cheat and shoot Tuigan (which has +1 ApR) for free, until
-    // you obtain a highly enchanted composite longbow with damage far surpassing benefits of that extra attack
-    // so, all things considered, use longbow proficiency for arrows - the exploit window is far more narrow now anyway
+    // With arrows it is more difficult, because they're used by different bow proficiencies, so a point in longbow will allow shooting a shortbow with no points in shortbow; still, I think if you have put points in longbow, then you want to use more powerful longbows, than cheat and shoot Tuigan (+1 ApR) for free, until you obtain a highly enchanted composite longbow with damage far surpassing benefits of that extra attack, so all things considered, use longbow proficiency for arrows - the exploit window is far more narrow now anyway
     BEGIN
       WRITE_BYTE 0x31 0x68
     END
 
     bolt
-    // use crossbow proficiency
+    // Use crossbow proficiency
     BEGIN
       WRITE_BYTE 0x31 0x67
     END
 
     bullet
-    // use sling proficiency
+    // Use sling proficiency
     BEGIN
       WRITE_BYTE 0x31 0x6b
     END
 
   DEFAULT END
 
-  // now, that sorted out, execute the main part
+  // Now, with that sorted out, execute the main part
   PATCH_IF is_weapon || is_ammo BEGIN
     SPRINT macro special
     LPM wc_patch
@@ -1032,21 +1010,21 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
 
 END BUT_ONLY
 
-  // increase speed of throwing weapons
+  // Increase speed of throwing weapons
   COPY_EXISTING ~axe.pro~ ~override~  // Throwing Axe
     WRITE_SHORT 0x0a 40  // Increase speed from 20 to 40
     BUT_ONLY_IF_IT_CHANGES
-    
+
   COPY_EXISTING ~dagger.pro~ ~override~  // Throwing Dagger
     WRITE_SHORT 0x0a 40  // Increase speed from 20 to 40
     BUT_ONLY_IF_IT_CHANGES
-  
+
   COPY_EXISTING ~dart.pro~ ~override~  // Dart
     WRITE_SHORT 0x0a 40  // Increase speed from 20 to 40
   BUT_ONLY_IF_IT_CHANGES
 
 /////////////////////////////////////////////////////
-// update strings for proficiency changes
+// Update strings for proficiency changes
 
 COPY_EXISTING ~weapprof.2da~ ~override~
   SET_2DA_ENTRY 11 2 20 ~mi_ss_name~
@@ -1059,7 +1037,7 @@ COPY_EXISTING ~weapprof.2da~ ~override~
   SET_2DA_ENTRY 21 3 20 ~mi_flail_desc~
   SET_2DA_ENTRY 22 2 20 ~mi_mace_name~
   SET_2DA_ENTRY 22 3 20 ~mi_mace_desc~
-  
+
   REPLACE ~mi_ss_name~       @100000
   REPLACE ~mi_ss_desc~       @100001
   REPLACE ~mi_katana_name~   @100002

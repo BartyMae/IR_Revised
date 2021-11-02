@@ -35,11 +35,11 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     PATCH_IF tobex=1 BEGIN
       GET_OFFSET_ARRAY abil ITM_V10_HEADERS
       PHP_EACH abil AS ind => res BEGIN
-        PATCH_IF (BYTE_AT res)=1 && (us3 & 64)=64 BEGIN // melee & unusable by thieves
+        PATCH_IF (BYTE_AT res)=1 && (us3 & 64)=64 BEGIN // Melee & unusable by thieves
           WRITE_BYTE res+0x29 (THIS | 2)
         END
         PATCH_IF option=3 BEGIN
-          PATCH_IF BYTE_AT res=2 || BYTE_AT res=4 BEGIN // ranged
+          PATCH_IF BYTE_AT res=2 || BYTE_AT res=4 BEGIN // Ranged
             WRITE_BYTE res+0x29 (THIS | 2)
           END
         END
@@ -47,7 +47,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
     END ELSE BEGIN
       READ_BYTE 0x1f us2
       READ_BYTE 0x31 prof
-      PATCH_IF (us2 & 2)!=2 || (us3 & 11)!=11 BEGIN // usable by any thief multiclass
+      PATCH_IF (us2 & 2)!=2 || (us3 & 11)!=11 BEGIN // Usable by any thief multi-class
         PATCH_IF (IS_AN_INT %prof%) BEGIN
           PATCH_IF (prof > 88) && (prof < 116) BEGIN
             WRITE_BYTE 0x20 (us3 & `64)

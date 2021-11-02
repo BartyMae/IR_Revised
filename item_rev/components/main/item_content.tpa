@@ -17,7 +17,7 @@ END
   COPY ~item_rev/itm/arow12.itm~ ~override~ // Arrow of Biting, unusable
   COPY ~item_rev/itm/arow16.itm~ ~override~ // Arrow of Ice, unusable
   COPY ~item_rev/itm/arowkc.itm~ ~override~ // Arrow of Fire, unusable
-  COPY ~item_rev/itm/aegis.itm~ ~override~ // Wulfgar's Aegis-fang +5, unusable
+  COPY ~item_rev/itm/aegis.itm~  ~override~ // Wulfgar's Aegis-fang +5, unusable
   COPY ~item_rev/itm/sw2h05.itm~ ~override~ // Sarevok's BG1 Sword of Chaos +5, unusable
   COPY ~item_rev/itm/finsrv.itm~ ~override~ // Sarevok's BG2 Sword of Chaos +5, unusable
 >>>>>>>>
@@ -1828,7 +1828,7 @@ COPY ~%source%/EDWINS_AMULET#BGT.tpa~ ~%target%~
   COPY ~item_rev/itm/ohreaver.itm~ ~override/reaver.itm~
     SAY NAME1 @1085    SAY NAME2 @1099
     SAY UNIDENTIFIED_DESC @1087 SAY IDENTIFIED_DESC @1100
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN
       READ_BYTE 0x18 flags
       // WRITE_BYTE 0x18 (%flags% BXOR 0b00100000) // Add unusable flag
     END

@@ -6,7 +6,7 @@ INCLUDE ~item_rev/lib/identify_item.tpa~
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/*----------------EE Fixes-----------------*/
+/* ---------------- EE Fixes ---------------- */
 
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 
@@ -46,19 +46,19 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~amul25.spl~) BEGIN // Amulet of Spell Warding's Spell Deflection
 COPY_EXISTING ~amul25.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET opcode = 201			// Set opcode
-SET target = 1			// target type
-SET timing = 0			// timing type
-SET power = 5			// power
-SET resist_dispel = 2	// dispel/resitance
-SET duration = 60		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "amul25b" 		// resource
-SET dicenumber = 0		// dice number
-SET dicesize = 0		// dice size
+  SET opcode = 201            // Set opcode
+SET target = 1            // target type
+SET timing = 0            // timing type
+SET power = 5            // power
+SET resist_dispel = 2    // dispel/resitance
+SET duration = 60        // duration
+SET probability1 = 100    // probability 1
+SET probability2 = 0    // probability 2
+SPRINT "resource" "amul25b"         // resource
+SET dicenumber = 0        // dice number
+SET dicesize = 0        // dice size
 SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus
+SET savebonus = 0        // saving throw bonus
 SET parameter1 = 9 // param1
 SET parameter2 = 1 // param2
 SET header = 1
@@ -69,19 +69,19 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~rods01.spl~) BEGIN // Rod of Absorption's Spell Absorption
 COPY_EXISTING ~rods01.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET opcode = 201			// Set opcode
-SET target = 1			// target type
-SET timing = 0			// timing type
-SET power = 5			// power
-SET resist_dispel = 2	// dispel/resitance
-SET duration = 0		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "rods01b" 		// resource
-SET dicenumber = 0		// dice number
-SET dicesize = 0		// dice size
+  SET opcode = 201            // Set opcode
+SET target = 1            // target type
+SET timing = 0            // timing type
+SET power = 5            // power
+SET resist_dispel = 2    // dispel/resitance
+SET duration = 0        // duration
+SET probability1 = 100    // probability 1
+SET probability2 = 0    // probability 2
+SPRINT "resource" "rods01b"         // resource
+SET dicenumber = 0        // dice number
+SET dicesize = 0        // dice size
 SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus
+SET savebonus = 0        // saving throw bonus
 SET parameter1 = 9 // param1
 SET parameter2 = 1 // param2
 SET header = 1
@@ -92,19 +92,19 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~staf11.spl~) BEGIN // Staff of the Magi's Spell Trap
 COPY_EXISTING ~staf11.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET opcode = 201			// Set opcode
-SET target = 1			// target type
-SET timing = 0			// timing type
-SET power = 9			// power
-SET resist_dispel = 2	// dispel/resitance
-SET duration = 60		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "staf11d" 		// resource
-SET dicenumber = 0		// dice number
-SET dicesize = 0		// dice size
+  SET opcode = 201            // Set opcode
+SET target = 1            // target type
+SET timing = 0            // timing type
+SET power = 9            // power
+SET resist_dispel = 2    // dispel/resitance
+SET duration = 60        // duration
+SET probability1 = 100    // probability 1
+SET probability2 = 0    // probability 2
+SPRINT "resource" "staf11d"         // resource
+SET dicenumber = 0        // dice number
+SET dicesize = 0        // dice size
 SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus
+SET savebonus = 0        // saving throw bonus
 SET parameter1 = 100 // param1
 SET parameter2 = 1 // param2
 SET header = 1
@@ -236,7 +236,7 @@ END
 END // EE fixes
 
 
-/*----------------BG1EE Fixes-----------------*/
+/* ---------------- BG1EE Fixes ---------------- */
 
 // Item resource fixes
 ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet~) BEGIN
@@ -293,7 +293,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
 END
 
 
-/*----------------EET Fixes-----------------*/
+/* ---------------- EET Fixes ---------------- */
 
 // Item resource fixes
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee~) BEGIN
@@ -324,7 +324,7 @@ END
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/*----------------Non-EE Fixes-----------------*/
+/* ---------------- Non-EE Fixes ---------------- */
 
 // Invalid opcodes fix
 ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
@@ -352,7 +352,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
 END
 
 
-/*----------------BG1 Fixes-----------------*/
+/* ---------------- BG1 Fixes ---------------- */
 
 // Item resource fixes
 ACTION_IF (GAME_IS ~tutu tutu_totsc~ AND NOT GAME_IS ~bg2 tob bgt bgee bg2ee eet~) BEGIN
@@ -379,7 +379,7 @@ END
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/*----------------All Games-----------------*/
+/* ---------------- All Games Fixes ---------------- */
 
 // BG2 broken areas fix
 ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
@@ -403,7 +403,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~uddemon.cre~) BEGIN
     BUT_ONLY
 END
 
-/*----------------1pp/EE Fixes-----------------*/
+/* ---------------- 1pp/EE Fixes ---------------- */
 
 DEFINE_ACTION_MACRO ~Locations~ BEGIN
 // for weapons
@@ -524,7 +524,7 @@ INCLUDE ~item_rev/components/main/fixes/1pp_main.tpa~
 INCLUDE ~item_rev/components/main/fixes/1pp_extra.tpa~
 INCLUDE ~item_rev/components/main/fixes/1pp_projectiles.tpa~
 
-/*----------------Miscellaneous-----------------*/
+/* ---------------- Miscellaneous ---------------- */
 
 INCLUDE ~item_rev/components/main/fixes/stacking.tpa~
 INCLUDE ~item_rev/components/main/fixes/item_charges.tpa~

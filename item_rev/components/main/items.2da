@@ -389,10 +389,10 @@ WONG_FEIS_IOUN_STONE                       IOUN     helm34   1        1        0
 MALLAS_SOUL_STONE                          IOUN     amsoul01 1        1        0        0        1        1        @1596    @2357    @1598    @2358    *        *        *        *
 RORANACHS_HORN                             HELMET   compon05 1        1        0        0        1        1        @1569    @1685    @1579    @1686    *        *        *        *
 IOUN_STONE_OF_GOOD_LUCK                    IOUN     dvhelm01 1        1        0        1        1        1        @1596    @2607    @1598    @2608    *        *        *        *
-CIRCLET                                    CIRCLET  XOBAND01 1        1        0        0        1        1        @2609    @2609    @2610    @2610    *        *        *        *
-SILVER_CIRCLET                             CIRCLET  XOBAND02 1        1        0        0        1        1        @2609    @2611    @2234    @2612    *        *        *        *
-EILISTRAEES_BOON                           CIRCLET  XOBAND03 1        1        0        0        1        1        @2609    @2613    @2234    @2614    @4047    *        *        *
-CIRCLET_OF_THE_ARCHMAGI                    CIRCLET  XOBAND04 1        1        0        0        1        1        @2609    @2615    @2234    @2616    *        *        *        *
+CIRCLET                                    CIRCLET  xoband01 1        1        0        0        1        1        @2609    @2609    @2610    @2610    *        *        *        *
+SILVER_CIRCLET                             CIRCLET  xoband02 1        1        0        0        1        1        @2609    @2611    @2234    @2612    *        *        *        *
+EILISTRAEES_BOON                           CIRCLET  xoband03 1        1        0        0        1        1        @2609    @2613    @2234    @2614    @4047    *        *        *
+CIRCLET_OF_THE_ARCHMAGI                    CIRCLET  xoband04 1        1        0        0        1        1        @2609    @2615    @2234    @2616    *        *        *        *
 
 LEATHER_ARMOR                              LEATHER  leat01   1        1        1        1        1        1        @1629    @1629    @1630    @1630    *        *        *        *
 LEATHER_ARMOR_1                            LEATHER  leat02   1        1        1        1        1        1        @1629    @1631    @1632    @1633    *        *        *        *
@@ -505,7 +505,7 @@ TOME_OF_LEADERSHIP_AND_INFLUENCE           *        book07   1        1        1
 TOME_OF_UNDERSTANDING                      *        book08   1        1        1        1        1        1        @2436    @2441    @2429    @2442    *        *        *        *
 SHAKTI_WARRIOR_FIGURINE                    MISC     figure01 1        1        0        0        1        1        @1705    @2498    @2497    @2499    *        *        *        *
 IMOENS_BELT                                BELT     imoenhp1 1        1        0        0        1        1        @1786    @1786    @1787    @1787    *        *        *        *
-MASK_OF_KING_STROHM_III                    *        KEY20    1        1        0        0        1        1        @2519    @2519    @2520    @2520    *        *        *        *
+MASK_OF_KING_STROHM_III                    *        key20    1        1        0        0        1        1        @2519    @2519    @2520    @2520    *        *        *        *
 GOLEM_MANUAL_FLESH                         MISC     tome01   1        1        0        0        1        1        @2428    @2473    @2429    @2474    *        *        *        *
 GOLEM_MANUAL_CLAY                          MISC     tome02   1        1        0        0        1        1        @2475    @2475    @2476    @2476    *        *        *        *
 GOLEM_MANUAL_STONE                         MISC     tome03   1        1        0        0        1        1        @2477    @2477    @2478    @2478    *        *        *        *

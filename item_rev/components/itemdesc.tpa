@@ -738,8 +738,8 @@ BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       // LPF itemdesc END
-	  LPF itemdesc_armor END
-	END
+      LPF itemdesc_armor END
+    END
   END
 END
 
