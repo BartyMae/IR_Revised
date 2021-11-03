@@ -770,7 +770,7 @@ ACTION_FOR_EACH resource IN
   ~deathk1~
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.cre~) BEGIN
-    COPY_EXISTING ~%resource%.are~ ~override\%resource%.cre~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM ~helm02~
       REMOVE_CRE_ITEM ~helm02_~
       PATCH_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
