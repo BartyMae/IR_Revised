@@ -773,6 +773,7 @@ BEGIN
     COPY_EXISTING ~%resource%.cre~ ~override\%resource%.cre~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM ~helm02~
       REMOVE_CRE_ITEM ~helm02_~
+      REMOVE_CRE_ITEM ~helm15~
       PATCH_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
         ADD_CRE_ITEM ~helm02_~ #0 #0 #0 ~unstealable~ HELMET
       END ELSE BEGIN
