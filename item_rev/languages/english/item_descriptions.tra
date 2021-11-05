@@ -6447,6 +6447,7 @@ Not Usable By:
 @1774 = ~Protection from Magic~
 @1775 = ~This scroll creates a very powerful globe of anti-magic in a 3' radius around the reader. No form of magic can pass into it or out from it, and any spell effects currently affecting the target will be removed. The globe cannot be dispelled, nor breached by most anti-magic attacks, but a Spellstrike spell can destroy it. The effect is not permanent, however, and will wear off after 5 turns.
 
+Weight: 0
 Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
@@ -12482,7 +12483,7 @@ Usable By:
 @2375 = ~Protection from Alterations~
 @2376 = ~This scroll offers protection to the reader from most transmutation attacks, such as slow, polymorph, disintegration, and petrification. The effect is not permanent, however, and will wear off after 5 turns.
 
-Weight: 1
+Weight: 0
 Requires: 9 Intelligence
 Not Usable By:
  Wizard Slayer~
