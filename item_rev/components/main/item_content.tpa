@@ -42,7 +42,7 @@ COPY ~%source%/AMULET_OF_HEALTH.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/KALIGUNS_AMULET_OF_MAGIC_RESISTANCE.tpa~ ~%target%~
@@ -67,7 +67,7 @@ COPY ~%source%/KALIGUNS_AMULET_OF_MAGIC_RESISTANCE.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/AMULET_OF_SPELL_WARDING.tpa~ ~%target%~
@@ -310,8 +310,7 @@ COPY ~%source%/CLOAK_OF_THE_SEWERS.tpa~ ~%target%~
                           ~TakePartyItemNum("scrl8j",1)
                            DestroyItem("scrl8j")~
       END
-      BUT_ONLY
-
+    BUT_ONLY
     STRING_SET ~66933~ @207
     STRING_SET ~66934~ @208
   END
@@ -387,9 +386,9 @@ COPY ~%source%/RUNEHAMMER_5.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/RIFT_HAMMER_3.tpa
 ACTION_IF (FILE_EXISTS_IN_GAME ~ar0204.are~) BEGIN
   COPY_EXISTING ~ar0204.are~ ~override~
-  PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
-    LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~hamm03~ new_item = ~dvhamm01~ END
-  END
+    PATCH_IF (SOURCE_SIZE > 0x109) BEGIN
+      LAUNCH_PATCH_FUNCTION ~REPLACE_AREA_ITEM~ STR_VAR old_item = ~hamm03~ new_item = ~dvhamm01~ END
+    END
   BUT_ONLY
 END
 >>>>>>>>
@@ -438,7 +437,7 @@ COPY ~%source%/HORNED_HELM_OF_THE_ROCK.tpa~ ~%target%~
       DECOMPILE_BCS_TO_BAF
         REPLACE_TEXTUALLY CASE_INSENSITIVE ~helm19~ ~dvhelm01~
       COMPILE_BAF_TO_BCS
-  BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/IOUN_STONE_OF_GOOD_LUCK.tpa~ ~%target%~
@@ -762,7 +761,7 @@ COPY ~%source%/DOOM_PLATE_3.tpa~ ~%target%~
       PATCH_IF (SOURCE_SIZE > 0xad) BEGIN
         REPLACE_TEXTUALLY CASE_INSENSITIVE ~plat17~ ~plat16~
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/ARMOR_OF_THE_HART_3.tpa~ ~%target%~
@@ -799,7 +798,7 @@ COPY ~%source%/RING_OF_INVISIBILITY.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/RING_OF_ENERGY.tpa~ ~%target%~
@@ -904,7 +903,7 @@ COPY ~%source%/RING_OF_THE_WRAITH.tpa~ ~%target%~
         REMOVE_CRE_ITEM ring46
         ADD_CRE_ITEM ring46 #0 #0 #0 NONE INV1
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 
   COPY ~item_rev/itm/ring46a.eff~ ~override~ // Soul Stealing
@@ -957,7 +956,7 @@ COPY ~%source%/SHIELD_OF_THE_LOST.tpa~ ~%target%~
         REPLACE_TEXTUALLY ~shld26~
                           ~dvshld01~
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/NATURES_WARD_2.tpa~ ~%target%~
@@ -973,11 +972,9 @@ COPY ~%source%/NATURES_WARD_2.tpa~ ~%target%~
         REPLACE_TEXTUALLY ~DestroyItem("slng08")~
                           ~DestroyItem("slng08") DestroyItem("ring20")~
       END
-      BUT_ONLY
-
+    BUT_ONLY
     STRING_SET ~66871~ @210
     STRING_SET ~66876~ @211
-
     COMPILE ~item_rev/components/main/cespy_erinne.d~
   END
 >>>>>>>>
@@ -1005,7 +1002,7 @@ COPY ~%source%/ERINNE_SLING_4.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_COMMAND_3.tpa~ ~%target%~
@@ -1040,7 +1037,7 @@ COPY ~%source%/STAFF_OF_CURING_1.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
@@ -1066,7 +1063,7 @@ COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~chsam02.cre~) BEGIN
@@ -1083,7 +1080,7 @@ COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_POWER_3.tpa~ ~%target%~
@@ -1107,7 +1104,7 @@ COPY ~%source%/STAFF_OF_POWER_3.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 
   ACTION_IF (FILE_EXISTS_IN_GAME ~cechalle.dlg~) BEGIN
@@ -1116,7 +1113,7 @@ COPY ~%source%/STAFF_OF_POWER_3.tpa~ ~%target%~
         REPLACE_TEXTUALLY ~GiveItemCreate("STAF13",LastTalkedToBy,0,25,25)~
                           ~GiveItemCreate("STAF13",LastTalkedToBy,0,1,1)~
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
@@ -1139,7 +1136,7 @@ COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
         REPLACE_TEXTUALLY ~GiveItemCreate("staf14",Player1,20,20,20)~
                           ~GiveItemCreate("staf14",Player1,0,1,1)~
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_THE_WOODLANDS_4.tpa~ ~%target%~
@@ -1164,7 +1161,7 @@ COPY ~%source%/STAFF_OF_THE_WOODLANDS_4.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_AIR_2.tpa~ ~%target%~
@@ -1185,7 +1182,7 @@ COPY ~%source%/STAFF_OF_AIR_2.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_EARTH_2.tpa~ ~%target%~
@@ -1206,7 +1203,7 @@ COPY ~%source%/STAFF_OF_EARTH_2.tpa~ ~%target%~
           END
         END
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/STAFF_OF_FIRE_2.tpa~ ~%target%~
@@ -1439,7 +1436,7 @@ COPY ~%source%/WAND_OF_THE_HEAVENS.tpa~ ~%target%~
         REPLACE_TEXTUALLY ~CreateItem("wand15",50,0,0)~
                           ~CreateItem("wand15",1,1,1)~
       END
-      BUT_ONLY
+    BUT_ONLY
   END
 >>>>>>>>
 COPY ~%source%/ROD_OF_THE_APPRENTI.tpa~ ~%target%~
