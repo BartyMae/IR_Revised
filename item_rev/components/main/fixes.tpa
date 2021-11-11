@@ -530,6 +530,7 @@ INCLUDE ~item_rev/components/main/fixes/1pp_projectiles.tpa~
 
 /* ---------------- Miscellaneous ---------------- */
 
+INCLUDE ~item_rev/components/main/fixes/thrown_hammers.tpa~
 INCLUDE ~item_rev/components/main/fixes/stacking.tpa~
 INCLUDE ~item_rev/components/main/fixes/item_charges.tpa~
 INCLUDE ~item_rev/components/main/fixes/ee_si.tpa~

@@ -1,0 +1,117 @@
+ACTION_IF (FILE_EXISTS_IN_GAME ~pshamma.pro~) BEGIN
+
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/pshamma.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/pshammb.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/pshammn.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/pshammg.pro~
+  ADD_PROJECTILE      ~item_rev/components/1pp/projectiles/pshammo.pro~
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~aegis.itm~) BEGIN
+    COPY_EXISTING ~AEGIS.ITM~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+        READ_LONG  0x64 "abil_off" ELSE 0
+        READ_SHORT 0x68 "abil_num" ELSE 0
+        PATCH_IF (abil_off > 0x71) BEGIN
+          FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+            READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+            LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+            PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+              WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%pshammg%~
+            END
+          END
+        END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~aegis2.itm~) BEGIN
+    COPY_EXISTING ~AEGIS2.ITM~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+        READ_LONG  0x64 "abil_off" ELSE 0
+        READ_SHORT 0x68 "abil_num" ELSE 0
+        PATCH_IF (abil_off > 0x71) BEGIN
+          FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+            READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+            LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+            PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+              WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%pshammg%~
+            END
+          END
+        END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~aegis2b.itm~) BEGIN
+    COPY_EXISTING ~AEGIS2B.ITM~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+        READ_LONG  0x64 "abil_off" ELSE 0
+        READ_SHORT 0x68 "abil_num" ELSE 0
+        PATCH_IF (abil_off > 0x71) BEGIN
+          FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+            READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+            LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+            PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+              WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%pshammg%~
+            END
+          END
+        END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm06.itm~) BEGIN
+    COPY_EXISTING ~HAMM06.ITM~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+        READ_LONG  0x64 "abil_off" ELSE 0
+        READ_SHORT 0x68 "abil_num" ELSE 0
+        PATCH_IF (abil_off > 0x71) BEGIN
+          FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+            READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+            LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+            PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+              WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%pshammg%~
+            END
+          END
+        END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm06b.itm~) BEGIN
+    COPY_EXISTING ~HAMM06B.ITM~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+        READ_LONG  0x64 "abil_off" ELSE 0
+        READ_SHORT 0x68 "abil_num" ELSE 0
+        PATCH_IF (abil_off > 0x71) BEGIN
+          FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+            READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+            LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+            PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+              WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%pshammg%~
+            END
+          END
+        END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~hamm09.itm~) BEGIN
+    COPY_EXISTING ~HAMM09.ITM~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+        READ_LONG  0x64 "abil_off" ELSE 0
+        READ_SHORT 0x68 "abil_num" ELSE 0
+        PATCH_IF (abil_off > 0x71) BEGIN
+          FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+            READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+            LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+            PATCH_IF ("%projectile%" STRING_EQUAL_CASE "AXE") BEGIN
+              WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%pshammb%~
+            END
+          END
+        END
+      END
+    BUT_ONLY_IF_IT_CHANGES
+  END
+
+END
