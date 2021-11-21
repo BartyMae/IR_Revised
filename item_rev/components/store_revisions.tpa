@@ -58,13 +58,11 @@ END
 
 // 100% stock overwite
 
-// Varscona
-COPY_EXISTING ribald.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+COPY_EXISTING ribald.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Ribald of Varscona
   REMOVE_CRE_ITEM SW1H06
 END BUT_ONLY IF_EXISTS
 
-// Ring of Fire Control
-COPY_EXISTING uddwarf.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+COPY_EXISTING uddwarf.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Underdark duerger of Ring of Fire Control
   REMOVE_CRE_ITEM RING27
 END BUT_ONLY IF_EXISTS
 
@@ -395,13 +393,11 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-// Mana Bow
-COPY_EXISTING ar2602.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+COPY_EXISTING ar2602.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Mana Bow from ???
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=bow13 END
 END BUT_ONLY IF_EXISTS
 
-// Sling of Arvoreen
-COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Sling of Arvoreen from ???
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=slng06 END
 END BUT_ONLY IF_EXISTS
 
@@ -978,7 +974,7 @@ END BUT_ONLY IF_EXISTS
 
 // SHOP01 - Mira
 // 
-// Fat woman, resides near the circus tent; Aurora's Boots and Shoes mod makes an interjection here, which may result in Mira selling a unique potion, so why not to keep the direction and make her a lesser potionmistress
+// Fat woman, resides near the circus tent; Aurora's Boots and Shoes mod makes an interjection here, which may result in Mira selling a unique potion, so why not to keep the direction and make her a lesser potion mistress
 
 // 100% stock overwrite
 
@@ -1122,7 +1118,12 @@ COPY_EXISTING shop02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   SAY 0xc @200110 // Arnolinus the Armorsmith
 
   ADD_STORE_ITEM AX1H01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Battle Axe
-  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Masterwork Battle Axe
+    ADD_STORE_ITEM AX1H02_  LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END
   ADD_STORE_ITEM HAMM01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // War Hammer
   ADD_STORE_ITEM HAMM02   LAST #0 #0 #0 IDENTIFIED #1   // War Hammer +1
   ADD_STORE_ITEM AX1H04   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED  // Throwing Axe
@@ -1236,6 +1237,7 @@ COPY_EXISTING shop03.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SPER02   LAST #0 #0 #0 IDENTIFIED #1   // Spear +1
   ADD_STORE_ITEM STAF01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Quarterstaff
   ADD_STORE_ITEM STAF02   LAST #0 #0 #0 IDENTIFIED #1   // Quarterstaff +1
+
   ADD_STORE_ITEM LEAT01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Leather Armor
   ADD_STORE_ITEM LEAT02   LAST #0 #0 #0 IDENTIFIED #1   // Leather Armor +1
   ADD_STORE_ITEM LEAT04   LAST #0 #0 #0 IDENTIFIED #5   // Studded Leather Armor
@@ -1253,7 +1255,7 @@ END BUT_ONLY IF_EXISTS
 
 // SHOP04 - Enge
 // 
-// Seemingly foreign dude, give him foreign stuff - in our case, that can only be orient, some darts too
+// Seemingly foreign dude, give him foreign stuff - in our case, that can only be Kara-Tur, some darts too
 
 // 100% stock overwrite
 
@@ -1630,7 +1632,7 @@ END BUT_ONLY IF_EXISTS
 
 // SHOP08 - Galoomp the Bookkeeper
 // 
-// Map note says 'spell store'; Questpack has a quest for him, halfling stealing scrolls of 'Friends'; make him a librarian, with books and non-violent spell selection
+// Map note says 'spell store'; Quest Pack has a quest for him, halfling stealing scrolls of 'Friends', so make him a librarian, with books and non-violent spell selection
 
 // 100% stock overwrite
 
@@ -1924,7 +1926,7 @@ END BUT_ONLY IF_EXISTS
 
 // TRMER01 - Peddler
 // 
-// Jewelry
+// Jeweler
 
 // 100% stock overwrite
 
@@ -2247,7 +2249,7 @@ END BUT_ONLY IF_EXISTS
 
 // TRMER04 - Blacksmith
 // 
-// Spell scrolls go away from a BLACKSMITH
+// Spell scrolls go away from a blacksmith
 
 // 100% stock overwrite
 
@@ -2327,7 +2329,12 @@ COPY_EXISTING trmer04.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H08   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +1
   ADD_STORE_ITEM SW1H29   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +2
   ADD_STORE_ITEM AX1H01   LAST #0 #0 #0 IDENTIFIED #3 UNLIMITED  // Battle Axe
-  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #2   // Masterwork Battle Axe
+    ADD_STORE_ITEM AX1H02_  LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END
   ADD_STORE_ITEM AX1H11   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +2
   ADD_STORE_ITEM SW2H01   LAST #0 #0 #0 IDENTIFIED #3 UNLIMITED  // Two Handed Sword
   ADD_STORE_ITEM SW2H02   LAST #0 #0 #0 IDENTIFIED #1   // Two Handed Sword +1
@@ -2587,8 +2594,7 @@ END BUT_ONLY IF_EXISTS
 
 // To whoever decides to comment out a part of installer - these two guys share one block, so you better don't try to separate them or you may screw things up
 
-// Robbing Dalok of Flametongue
-COPY_EXISTING cedruid2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+COPY_EXISTING cedruid2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Dalok of Flametongue
   REMOVE_CRE_ITEM SW1H24
 END BUT_ONLY IF_EXISTS
 
@@ -3626,12 +3632,12 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING ar0811.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=staf10 END // remove Staff of Curing from the tomb in Graveyard
+COPY_EXISTING ar0811.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Staff of Curing from the Graveyard tomb
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=staf10 END
 END BUT_ONLY IF_EXISTS
 
-COPY_EXISTING ar0412.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=shld07 END // remove Shield of Falling Stars from Planar Sphere
+COPY_EXISTING ar0412.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Shield of the Falling Stars from Planar Sphere
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=shld07 END
 END BUT_ONLY IF_EXISTS
 
 COPY_EXISTING slilmat.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -3714,7 +3720,7 @@ END BUT_ONLY IF_EXISTS
 
 // WILMAT - Priestess of Ilmater
 // 
-// She apparently was supposed to be in Waukeen's Promenade instead of the abovementioned clone dude
+// She apparently was supposed to be in Waukeen's Promenade instead of the aforementioned clone dude
 
 // 100% stock overwrite
 
@@ -3734,7 +3740,7 @@ COPY_EXISTING ar0408.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
     READ_ASCII res+0x80 actor (8) NULL
     PATCH_IF ~%actor%~ STRING_EQUAL_CASE slilmat && wilmat=0 BEGIN
       WRITE_ASCII res+0x80 wilmat (8)
-      WRITE_LONG res+0x30 0x6010 // cleric female human
+      WRITE_LONG res+0x30 0x6010 // Cleric female human
     END
   END
 END BUT_ONLY IF_EXISTS
@@ -3811,8 +3817,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-// remove Horn of Valhalla from Bridge District
-COPY_EXISTING ar0528.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+COPY_EXISTING ar0528.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Horn of Valhalla from Bridge District house
   LPF REPLACE_AREA_ITEM INT_VAR charges1=1 STR_VAR old_item=misc3i new_item=potn18 END
 END BUT_ONLY IF_EXISTS
 
@@ -3864,7 +3869,12 @@ COPY_EXISTING kpchap01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   END
 
   ADD_STORE_ITEM AX1H01   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Battle Axe
-  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #2   // Masterwork Battle Axe
+    ADD_STORE_ITEM AX1H02_  LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END
   ADD_STORE_ITEM AX1H11   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +2
   ADD_STORE_ITEM AX1H04   LAST #20 #0 #0 IDENTIFIED #1 UNLIMITED  // Throwing Axe
   ADD_STORE_ITEM AX1H05   LAST #0 #0 #0 IDENTIFIED #1   // Throwing Axe +1
@@ -3931,8 +3941,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-// change Lawgiver reward from Copper Coronet quest to Katana +1 as well as Plate Mail to Full Plate Mail
-ACTION_IF comp_ir=1 BEGIN
+ACTION_IF comp_ir=1 BEGIN // Replace Lawgiver and Plate Mail reward from Copper Coronet slaver quest with Katana +1 and Full Plate Mail
   COPY_EXISTING lehtin.dlg override
                 hendak.dlg override
     DECOMPILE_DLG_TO_D
@@ -3941,8 +3950,7 @@ ACTION_IF comp_ir=1 BEGIN
     COMPILE_D_TO_DLG
 END
 
-// remove Helm of Infravision/Watcher's Helm from starting dungeon
-COPY_EXISTING ar0602.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+COPY_EXISTING ar0602.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Watcher's Helm from starting dungeon
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=helm05 END
 END BUT_ONLY IF_EXISTS
 
@@ -4074,7 +4082,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING blpool.bcs override // Put Vampire's Revenge into pool of blood instead of Mace of Disruption
+COPY_EXISTING blpool.bcs override // Replace Mace of Disruption Bodhi's pool of blood with Vampire's Revenge
   DECOMPILE_BCS_TO_BAF
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("blun12"~ ~GiveItemCreate("SW1H19"~
   COMPILE_BAF_TO_BCS
@@ -4130,7 +4138,12 @@ COPY_EXISTING temlath.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM RODS03   LAST #1 #0 #0 IDENTIFIED #1   // Rod of Resurrection
 
   ADD_STORE_ITEM BLUN04   LAST #0 #0 #0 IDENTIFIED #1 UNLIMITED  // Mace
-  ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #2   // Masterwork Mace
+    ADD_STORE_ITEM BLUN05_  LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END
   ADD_STORE_ITEM BLUN21   LAST #0 #0 #0 IDENTIFIED #1   // Mace +2
 
   ADD_STORE_ITEM STAF06   LAST #0 #0 #0 IDENTIFIED #1   // Staff Mace
@@ -4187,12 +4200,12 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING ar0904.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=potn07 END // way too powerful to be obtained for free
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=wand11 END // ditto
+COPY_EXISTING ar0904.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Potion of Storm Giant Strength and Wand of the Heavens from Temple of Talos
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=potn07 END
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=wand11 END
 END BUT_ONLY IF_EXISTS
 
-COPY_EXISTING grtomb01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // rob a skeleton of his Halcyon
+COPY_EXISTING grtomb01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob a skeleton of Halcyon
   CLEAR_ARRAY item GET_OFFSET_ARRAY item 0x2bc 4 0x2c0 4 0 0 0x14
   PHP_EACH item AS ind => res BEGIN
     READ_ASCII res item (8) NULL
@@ -4202,7 +4215,7 @@ COPY_EXISTING grtomb01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATC
   END
 END BUT_ONLY IF_EXISTS
 
-/*
+/* // Token Machine tweak
 COPY_EXISTING tokcre01.dlg override
   DECOMPILE_DLG_TO_D
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~OR(4)
@@ -4911,7 +4924,7 @@ END BUT_ONLY IF_EXISTS IF_EXISTS
 
 // ROGER - Roger the Fence
 // 
-// Sewers, Questpack has a potion quest related to him
+// Sewers, Quest Pack has a potion quest related to him
 
 // 100% stock overwrite
 
@@ -5303,8 +5316,8 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING ar0312.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=wand03 END // moving MM wand to his store
+COPY_EXISTING ar0312.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Wand of Magic Missile from Gaelan Bayle's house
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=wand03 END
 END BUT_ONLY IF_EXISTS
 
 COPY_EXISTING arled.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -5423,7 +5436,7 @@ END BUT_ONLY IF_EXISTS
 
 // SLSHOP01 - Black Market Thief
 // 
-// Slums, near Ilmater temple on roofs. Sneaky bastard, I didn't even know there was the second fence in Slums; since he's so hard to find, give him best stuff
+// Slums, near Ilmater temple on roofs; didn't even know there was the second fence in Slums - since he's so hard to find, give him best stuff
 
 // 100% stock overwrite
 
@@ -5766,12 +5779,11 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING ar0406.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // remove Gloves of Pickpocketing from Copper Coronet
+COPY_EXISTING ar0406.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Gloves of Pickpocketing from Copper Coronet
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=brac17 END
 END BUT_ONLY IF_EXISTS
 
-// Adalon gives Ring of Air Control instead of Necaradan's Crossbow
-COPY_EXISTING udsilver.dlg override
+COPY_EXISTING udsilver.dlg override // Replace Necaradan's Crossbow Adalon quest reward with Ring of Air Control
   DECOMPILE_DLG_TO_D
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~GiveItemCreate("xbow10"~
 ~GiveItemCreate("ring28"~
@@ -6112,7 +6124,7 @@ END BUT_ONLY IF_EXISTS
 
 // SCROLLS - Lady Yuth
 // 
-// We kick her out of Adenturer's Mart, where spell scrolls are now sold legally by Deidre; Temple District looks a suitable place for a noblewoman to frequent, she'll conduct her illegalities there
+// Kick her out of Adenturer's Mart, where spell scrolls are now sold legally by Deidre; Temple District looks a suitable place for a noblewoman to frequent, she'll conduct her illegalities there
 
 // 100% stock overwrite
 
@@ -6308,7 +6320,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING kalah2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // rob Kalah of his Girdle of Piercing
+COPY_EXISTING kalah2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Kalah of Girdle of Piercing
   REMOVE_CRE_ITEM belt04
 END BUT_ONLY IF_EXISTS
 
@@ -6513,7 +6525,7 @@ END BUT_ONLY IF_EXISTS
 
 // PPSTOR01 - Merchant     
 // 
-// The merchant from extortion encounter at Gates, he was a duplicate of Brynnlaw's storekeep; he may need something else beside ammo, hmm...
+// The merchant from extortion encounter at Gates, he was a duplicate of Brynnlaw's storekeep; he may need something else besides ammo
 
 // 100% stock overwrite
 
@@ -6673,10 +6685,26 @@ COPY_EXISTING trgeni01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H47   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +1
   ADD_STORE_ITEM SW1H49   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +1
   ADD_STORE_ITEM DAGG02   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +1
-  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
-  ADD_STORE_ITEM BLUN03   LAST #0 #0 #0 IDENTIFIED #1   // Flail +1
-  ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
-  ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM AX1H02_  LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN03_  LAST #0 #0 #0 IDENTIFIED #1   // Flail +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN03   LAST #0 #0 #0 IDENTIFIED #1   // Flail +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN05_  LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN07_  LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  END
   ADD_STORE_ITEM HAMM02   LAST #0 #0 #0 IDENTIFIED #1   // War Hammer +1
   ADD_STORE_ITEM SW2H02   LAST #0 #0 #0 IDENTIFIED #1   // Two Handed Sword +1
   ADD_STORE_ITEM HALB02   LAST #0 #0 #0 IDENTIFIED #1   // Halberd +1
@@ -6846,7 +6874,7 @@ END BUT_ONLY IF_EXISTS
 
 // SAHPR1 - Priestess of Sekolah
 // 
-// Sahuagin city, as you might guess
+// Sahuagin city
 
 // 100% stock overwrite
 
@@ -7008,7 +7036,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING gromnir.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+COPY_EXISTING gromnir.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Gromnir of Roranach's Horn
   REMOVE_CRE_ITEM compon05
 END BUT_ONLY IF_EXISTS
 
@@ -7194,13 +7222,11 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-// Take Psion's Blade for Yaga-Shura's temple
-COPY_EXISTING ar5201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+COPY_EXISTING ar5201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Psion's Blade from Yaga-Shura's temple
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=SW2H21 END
 END BUT_ONLY IF_EXISTS
 
-// Take Azamantes' Serpent Shaft
-COPY_EXISTING ~gorlic01.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+COPY_EXISTING ~gorlic01.cre~ ~override~ LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Azamantes of Serpent Shaft
   REMOVE_CRE_ITEM staf23
 END BUT_ONLY IF_EXISTS
 
@@ -7424,8 +7450,8 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=amul17 END // move Greenstone Amulet to store
+COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Greenstone Amulet from ???
+  LPF DELETE_AREA_ITEM STR_VAR item_to_delete=amul17 END
 END BUT_ONLY IF_EXISTS
 
 COPY_EXISTING uddrow25.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
@@ -7798,9 +7824,21 @@ COPY_EXISTING udduer02.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H05   LAST #0 #0 #0 IDENTIFIED #1   // Long Sword +1
   ADD_STORE_ITEM SW1H08   LAST #0 #0 #0 IDENTIFIED #1   // Short Sword +1
   ADD_STORE_ITEM DAGG02   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +1
-  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
-  ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
-  ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM AX1H02_  LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN05_  LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN07_  LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  END
   ADD_STORE_ITEM XBOW02   LAST #0 #0 #0 IDENTIFIED #1   // Heavy Crossbow +1
   ADD_STORE_ITEM XBOW05   LAST #0 #0 #0 IDENTIFIED #1   // Light Crossbow +1
   ADD_STORE_ITEM SLNG02   LAST #0 #0 #0 IDENTIFIED #1   // Sling +1
@@ -7877,7 +7915,7 @@ END BUT_ONLY IF_EXISTS
 
 // UDSVIR05 - Therndle Daglefodd
 // 
-// He asks to rescue his imprisoned son. Give him stuff related to illusions, stone, mining, some combat too
+// He asks to rescue his imprisoned son; give him stuff related to illusions, stone, mining, and some combat too
 
 // 100% stock overwrite
 
@@ -8703,8 +8741,7 @@ END BUT_ONLY IF_EXISTS
 
 // AMBAR01 - Zakee Rafeha
 // 
-// Amkethran bartender
-// Nobody's gonna care for his trash, move his ioun stone to smugglers nearby
+// Amkethran bartender; nobody's going to care for his trash, move his ioun stone to smugglers nearby
 
 // 100% stock overwrite
 
@@ -9001,8 +9038,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-// Trollhide Armor
-COPY_EXISTING sendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+COPY_EXISTING sendai.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN // Rob Sendai of Trollhide Armor
   REMOVE_CRE_ITEM LEAT23
 END BUT_ONLY IF_EXISTS
 
@@ -9288,8 +9324,7 @@ END BUT_ONLY IF_EXISTS
 
 // SARBAR01 - Bartender
 // 
-// Saradush bartender
-// This guy's assortiment is snafu, but so are most of ToB stores
+// Saradush bartender; this guy's assortiment is snafu, but so are most of ToB stores
 
 // 100% stock overwrite
 
@@ -9452,10 +9487,26 @@ COPY_EXISTING sarbar01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM SW1H47   LAST #0 #0 #0 IDENTIFIED #1   // Wakizashi +1
   ADD_STORE_ITEM SW1H49   LAST #0 #0 #0 IDENTIFIED #1   // Ninja-To +1
   ADD_STORE_ITEM DAGG02   LAST #0 #0 #0 IDENTIFIED #1   // Dagger +1
-  ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
-  ADD_STORE_ITEM BLUN03   LAST #0 #0 #0 IDENTIFIED #1   // Flail +1
-  ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
-  ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM AX1H02_  LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM AX1H02   LAST #0 #0 #0 IDENTIFIED #1   // Battle Axe +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN03_  LAST #0 #0 #0 IDENTIFIED #1   // Flail +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN03   LAST #0 #0 #0 IDENTIFIED #1   // Flail +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN05_  LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN05   LAST #0 #0 #0 IDENTIFIED #1   // Mace +1
+  END
+  PATCH_IF install_masterwork_weapons=1 BEGIN
+    ADD_STORE_ITEM BLUN07_  LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  END ELSE BEGIN
+    ADD_STORE_ITEM BLUN07   LAST #0 #0 #0 IDENTIFIED #1   // Morning Star +1
+  END
   ADD_STORE_ITEM HAMM02   LAST #0 #0 #0 IDENTIFIED #1   // War Hammer +1
   ADD_STORE_ITEM SW2H02   LAST #0 #0 #0 IDENTIFIED #1   // Two Handed Sword +1
   ADD_STORE_ITEM HALB02   LAST #0 #0 #0 IDENTIFIED #1   // Halberd +1
@@ -9608,7 +9659,7 @@ END BUT_ONLY IF_EXISTS
 
 // HGKAR01 - Karthis al-Hezzar
 // 
-// I think it's the fool we get to rescue from Yaga-Shura's marauders
+// The fool we get to rescue from Yaga-Shura's marauders
 
 // 100% stock overwrite
 
@@ -10074,12 +10125,9 @@ WRITE_LONG 0x34 0x9c
 WRITE_LONG 0x4c 0x9c
 WRITE_LONG 0x70 0x9c
 
-
-// Remove Wyrmcleaver from Unseeing Eye's lair
-COPY_EXISTING ar0205.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+COPY_EXISTING ar0205.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Wyrmcleaver from Unseeing Eye lair
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=halb04 END
 END BUT_ONLY IF_EXISTS
-
 
 COPY_EXISTING ag#ir01.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   LPF buy END
@@ -10152,7 +10200,7 @@ END BUT_ONLY IF_EXISTS
 
 // WMART1 - Joluv
 // 
-// Most of bonus merchant stuff is unavailable within IR v3 - due to the lack of unique BAMs and concepts - but if somebody wants them anyway, then go ahead and install Joluv with Tweakpack or similar. He'll have all the trash left untouched by us
+// Most of bonus merchant stuff is unavailable within IR (due to the lack of unique BAMs and concepts) but if somebody wants them anyway, then go ahead and install Joluv with Anthology Tweaks
 
 COPY_EXISTING wmart1.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   REMOVE_STORE_ITEM 
