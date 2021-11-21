@@ -263,7 +263,7 @@ Launcher: Bow~
 STATISTICS:
 
 Combat Abilities:
- Explosion: 6D6 fire damage to those within 30' (save vs. breath half)
+ Explosion: 6D6 fire damage to the target and those within 30' (save vs. breath half)
 
 Damage: 1D6
 Damage Type: Missile
@@ -1300,7 +1300,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Fiery: target suffers 1D6 fire damage
- Detonation: 5% chance of dealing 6D6 fire damage to those within 20' (save vs. breath half)
+ Detonation: 5% chance of dealing 6D6 fire damage to the target and those within 20' (save vs. breath half)
 
 THAC0: +4 bonus
 Damage: 1D6 + 4
