@@ -141,7 +141,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 ~plat19~   => 7   // Full Plate + 2
 ~plat20~   => 23  // Blue Dragon Plate
 ~plat21~   => 7   // Enkidu's Full Plate +3
-~plat22~   => 14  // Shuruppak's Plate
+~plat22~   => 13  // Shuruppak's Plate
 ~plat23~   => 7   // Full Plate Mail +2
 ~plat98~   => 6   // Plate Mail Armor
 ~plat99~   => 6   // Plate Mail Armor
@@ -159,7 +159,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 
 // IRR / EET armors
 ~leat07_~  => 2   // Telbar's Studded Leather +2 (Studded Leather Armor +2)
-~plat02_~  => 6   // Fallorain's Plate +1 (Plate Mail +1)
+~plat02_~  => 14  // Fallorain's Plate +1 (Plate Mail +1)
 ~plat05_~  => 7   // Plate of the Dark +1 (Full Plate Mail +1)
 ~plat06_~  => 22  // Ankheg Plate Mail +1 (Scale Plate Mail +1)
 
