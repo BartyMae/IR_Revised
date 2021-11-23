@@ -263,7 +263,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Explosion: 6d6 fire damage to those within 30 ft. (save vs. Breath for half)
+– Explosion: 6d6 fire damage to those within 15 ft. (save vs. Breath for half)
 
 Damage: 1d6 (missile)
 Launcher: Bow
@@ -790,7 +790,7 @@ STATISTICS:
 Equipped abilities:
 – Save vs. Breath: +3
 – Missile Damage Resistance: +20%
-– Inertial Barrier: opponents within 10 ft. suffer -1 to Armor Class, THAC0, damage, movement speed, and speed factor
+– Inertial Barrier: opponents within 5 ft. suffer -1 to Armor Class, THAC0, damage, movement speed, and speed factor
 
 Weight: 1
 Not Usable By:
@@ -1342,7 +1342,7 @@ Equipped abilities:
 
 Combat abilities:
 – Fiery: target suffers 1d6 fire damage
-– Detonation: 5% chance of dealing 6d6 fire damage to those within 20 ft. (save vs. Breath for half)
+– Detonation: 5% chance of dealing 6d6 fire damage to those within 10 ft. (save vs. Breath for half)
 
 THAC0: +4
 Damage: 1d6+4 (crushing)
@@ -1377,7 +1377,7 @@ Equipped abilities:
 
 Combat abilities:
 – Fiery: target suffers 1d8 fire damage
-– Detonation: 15% chance of dealing 6d6 fire damage to target and opponents within 20 ft. (save vs. Breath for half)
+– Detonation: 15% chance of dealing 6d6 fire damage to target and opponents within 10 ft. (save vs. Breath for half)
 
 THAC0: +5
 Damage: 1d6+5 (crushing)
@@ -1402,7 +1402,7 @@ Equipped abilities:
 
 Combat abilities:
 – Shocking: target suffers 1d6 electrical damage
-– Chain Lightning: 5% chance lightning leaps at the target dealing 6d6 electrical damage before arcing towards other enemies within 30 ft. who suffer 3d6 electrical damage
+– Chain Lightning: 5% chance lightning leaps at the target dealing 6d6 electrical damage before arcing towards other enemies within 15 ft. who suffer 3d6 electrical damage
 
 THAC0: +4
 Damage: 1d6+5 (crushing)
@@ -1434,7 +1434,7 @@ Equipped abilities:
 Combat abilities:
 – Shocking: target suffers 1d8 electrical damage
 – Lightning Shield: creatures who strike the wielder are struck by lightning for 1d6 electrical damage
-– Chain Lightning: 15% chance lightning leaps at the target dealing 6d6 electrical damage before arcing towards other enemies within 30 ft. who suffer 3d6 electrical damage
+– Chain Lightning: 15% chance lightning leaps at the target dealing 6d6 electrical damage before arcing towards other enemies within 15 ft. who suffer 3d6 electrical damage
 
 THAC0: +5
 Damage: 1d6+6 (crushing)
@@ -3438,7 +3438,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Blinding Beauty (once per day): blinds opponents within 20 ft. for 1 turn (save vs. Spell at -2 negates)
+– Blinding Beauty (once per day): blinds opponents within 10 ft. for 1 turn (save vs. Spell at -2 negates)
 
 Equipped abilities:
 – Save vs. Spell: +3
@@ -4746,7 +4746,7 @@ STATISTICS:
 Combat abilities:
 – Poisonous: target suffers 1d6 poison damage
 – Dooming: target suffers -1 to THAC0, damage, and Saving Throws for 5 rounds (save vs. Spell negates)
-– Terrifying Aura: opponents within 10 ft. are frozen in terror (save vs. Spell at -2 negates)
+– Terrifying Aura: opponents within 5 ft. are frozen in terror (save vs. Spell at -2 negates)
 
 THAC0: +4
 Damage: 1d10+4 (piercing)
@@ -4775,7 +4775,7 @@ STATISTICS:
 Combat abilities:
 – Poisonous: target suffers 1d8 poison damage
 – Dooming: target suffers -1 to THAC0, damage, and Saving Throws for 5 rounds (save vs. Spell negates)
-– Terrifying Aura: opponents within 10 ft. are frozen in terror (save vs. Spell at -2 negates)
+– Terrifying Aura: opponents within 5 ft. are frozen in terror (save vs. Spell at -2 negates)
 – Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. Poison at -4 negates)
 
 THAC0: +5
@@ -5649,7 +5649,7 @@ STATISTICS:
 *CURSED*
 
 Equipped abilities:
-– Missile Attraction: wearer suffers -10 to Armor Class vs. missile attacks and everyone within 20 ft. gains +4 to Armor Class vs. missile attacks
+– Missile Attraction: wearer suffers -10 to Armor Class vs. missile attacks and everyone within 10 ft. gains +4 to Armor Class vs. missile attacks
 
 Armor Class: 4
 Requires:
@@ -5766,7 +5766,7 @@ STATISTICS:
 
 Equipped abilities:
 – Save vs. Paralyzation: +5
-– Stench: opponents within 10 ft. suffer -2 to THAC0 and 25% spell failure (save vs. Death negates)
+– Stench: opponents within 5 ft. suffer -2 to THAC0 and 25% spell failure (save vs. Death negates)
 – Charisma: -1
 
 Armor Class: 4
@@ -6442,7 +6442,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Confusion (three times per day): opponents within 30 ft. are confused for 5 rounds (save vs. Spell at -2 negates)
+– Confusion (three times per day): opponents within 15 ft. are confused for 5 rounds (save vs. Spell at -2 negates)
 
 Weight: 1
 Usable By:
@@ -6457,7 +6457,7 @@ Devotees of Helm finally lashed out against Azlaer and his cruel practices, dest
 STATISTICS:
 
 Special abilities:
-– Resist Fear (three times per day): allies within 30 ft. are immune to fear for 1 turn
+– Resist Fear (three times per day): allies within 15 ft. are immune to fear for 1 turn
 
 Weight: 1
 Usable By:
@@ -6470,7 +6470,7 @@ As he played, he focussed his attention first on the king. As the song played on
 STATISTICS:
 
 Special abilities:
-– Break Enchantment (three times per day): an ally within 10 ft. is freed from enchantments and/or curses currently affecting them
+– Break Enchantment (three times per day): an ally is freed from enchantments and/or curses currently affecting them
 
 Weight: 1
 Usable By:
@@ -6738,7 +6738,7 @@ Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1774 = ~Protection from Magic~
-@1775 = ~This scroll creates a very powerful globe of anti-magic in a 3' radius around the reader. No form of magic can pass into it or out from it, and any spell effects currently affecting the target will be removed. The globe cannot be dispelled, nor breached by most anti-magic attacks, but a Spellstrike spell can destroy it. The effect is not permanent, however, and will wear off after 5 turns.
+@1775 = ~This scroll creates a very powerful globe of anti-magic around the reader. No form of magic can pass into it or out from it, and any spell effects currently affecting the target will be removed. The globe cannot be dispelled, nor breached by most anti-magic attacks, but a Spellstrike spell can destroy it. The effect is not permanent, however, and will wear off after 5 turns.
 
 Requires:
  9 Intelligence
@@ -7373,7 +7373,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Aura of Despair: opponents within 10 ft. suffer -2 to Saving Throws, THAC0, and damage
+– Aura of Despair: opponents within 5 ft. suffer -2 to Saving Throws, THAC0, and damage
 – Luck: -1 (-5% for skills)
 
 NOTE: The Aura of Despair effect is not cumulative with other Doom effects.
@@ -8328,7 +8328,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +3, an extra +1 vs. missile attacks
-– Shield Others: allies within 10 ft. gain +2 to Armor Class
+– Shield Others: allies within 5 ft. gain +2 to Armor Class
 
 Requires:
  15 Strength
@@ -9064,7 +9064,7 @@ Special abilities:
 – Domination (once per day)
 
 Equipped abilities:
-– Aura of Command: opponents within 30 ft. suffer -2 to saves vs. spell
+– Aura of Command: opponents within 15 ft. suffer -2 to saves vs. spell
 
 Combat abilities:
 – Mindbreaking: 15% chance target is feebleminded permanently (save vs. Spell at -4 negates)
@@ -9089,7 +9089,7 @@ Special abilities:
 – Mass Cure (once per day)
 
 Equipped abilities:
-– Healing Aura: wielder and allies within 20 ft. heal 1 Hit Point every 2 rounds
+– Healing Aura: wielder and allies within 10 ft. heal 1 Hit Point every 2 rounds
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -9198,7 +9198,7 @@ Equipped abilities:
 – Regeneration: 1 HP/2 rounds
 
 Combat abilities:
-– Animal Empathy: animals within 30 ft. are charmed (save vs. Spell at -2 negates)
+– Animal Empathy: animals within 15 ft. are charmed (save vs. Spell at -2 negates)
 
 THAC0: +4
 Damage: 1d6+4 (crushing)
@@ -10101,7 +10101,7 @@ Equipped abilities:
 – Wall of Silence: wielder is immune to sound-based spells or attacks such as Command, Holy Word, Unholy Word, Power Word, Wail of the Banshee, and other similar effects
 
 Combat abilities:
-– Silencing: opponents within 20 ft. are silenced for 2 rounds (save vs. Spell negates)
+– Silencing: opponents within 10 ft. are silenced for 2 rounds (save vs. Spell negates)
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -10199,7 +10199,7 @@ Equipped abilities:
 – Charisma: +1
 
 Combat abilities:
-– Singing Sword: allies within 30 ft. gain +1 to THAC0, damage, and saves vs. spell
+– Singing Sword: allies within 15 ft. gain +1 to THAC0, damage, and saves vs. spell
 
 THAC0: +1
 Damage: 1d8+1 (slashing)
@@ -11839,7 +11839,7 @@ Not Usable By:
 @2239 = ~Wand~
 @2240 = ~Wand of Fear~
 @2241 = ~Wands are 1 1/4 feet long and slender. They are made of ivory, bone, or wood and are usually tipped with something - metal, crystal, stone, etc. They are fragile and tend to break easily. Because of this, they are often kept in cases. Wands generally store one or more magical effects powered by charges, each use costing one or more charges (depending in the item). When a wand runs out of charges, it is consumed and destroyed.~
-@2242 = ~A Wand of Fear strikes terror into the heart of the target and any creatures within a 30 ft. radius. Opponents within the area must save vs. Wand or flee in terror for 5 rounds. This panic is not universal, however, as the stout of heart have been known to resist its magic.
+@2242 = ~A Wand of Fear strikes terror into the heart of the target and any creatures within a 15 foot radius. Opponents within the area must save vs. Wand or flee in terror for 5 rounds. This panic is not universal, however, as the stout of heart have been known to resist its magic.
 
 Like all wands, the Wand of Fear can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
@@ -11889,7 +11889,7 @@ Usable By:
  Bard
  Mage~
 @2247 = ~Wand of Fire~
-@2248 = ~When used, this wand will cough forth a huge, burning ball of fire that streaks out to the desired range (a maximum of 30 feet) and bursts in a fiery, violent blast of a 30 ft. radius. Creatures within the area take 6d6 fire damage, while those who successfully save vs. Wand at -2 take only half damage.
+@2248 = ~When used, this wand will cough forth a huge, burning ball of fire that streaks out to the desired range (a maximum of 30 feet) and bursts in a fiery, violent blast of a 15 foot radius. Creatures within the area take 6d6 fire damage, while those who successfully save vs. Wand at -2 take only half damage.
 
 Like all wands, the Wand of Fire can only be used a limited number of times before it is expended. Once these have been used, it dissolves into a pile of ash.
 
@@ -11940,7 +11940,7 @@ Usable By:
  Bard
  Mage~
 @2253 = ~Wand of Sleep~
-@2254 = ~When used, this wand emits a gold beam of energy at its targets up to a maximum range of 30 feet, affecting a 30 ft. radius. If the target creatures fail their save vs. Wand, they will fall into a deep, comatose sleep for 5 rounds. Creatures with more than 10 Hit Dice are unaffected. Almost anyone of moderate intelligence can learn how to use this wand.
+@2254 = ~When used, this wand emits a gold beam of energy at its targets up to a maximum range of 30 feet, affecting a 15 foot radius. If the target creatures fail their save vs. Wand, they will fall into a deep, comatose sleep for 5 rounds. Creatures with more than 10 Hit Dice are unaffected. Almost anyone of moderate intelligence can learn how to use this wand.
 
 Like all wands, the Wand of Sleep can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
@@ -12023,7 +12023,7 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @2263 = ~Wand of Cloudkill~
-@2264 = ~This wand emits a vapor bubble that travels towards the target exploding into a deadly cloud of noxious gas that expands to fill an area roughly 20 feet in radius. The cloud will instantly kill any creature with 4 HD or less with no saving throw. Any creature within 5 to 6 HD must make a save vs. Wands at -4 or be slain. Creatures with greater than 6 HD simply take 1d10 poison damage for every round that they remain within the cloud. The cloud will dissipate after approximately 1 turn.
+@2264 = ~This wand emits a vapor bubble that travels towards the target exploding into a deadly cloud of noxious gas that expands to fill an area roughly 15 feet in radius. The cloud will instantly kill any creature with 4 HD or less with no saving throw. Any creature within 5 to 6 HD must make a save vs. Wands at -4 or be slain. Creatures with greater than 6 HD simply take 1d10 poison damage for every round that they remain within the cloud. The cloud will dissipate after approximately 1 turn.
 
 Like all wands, the Wand of Cloudkill can only be used a limited number of times before it is expended. Once these have been used, it shatters.
 
@@ -13272,8 +13272,8 @@ The rod is currently untransformed.
 STATISTICS:
 
 Special abilities:
-– Terrify (once per day): opponents within 30 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (once per day): a target within 30 ft. is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Terrify (once per day): opponents within 15 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target is paralyzed for 5 rounds (save vs. Rod at -2 negates)
 – Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Equipped abilities:
@@ -13740,7 +13740,7 @@ Not Usable By:
 STATISTICS:
 
 Special abilities:
-– Pandemonium (three times per day): opponents within 30 ft. are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
+– Pandemonium (three times per day): opponents within 15 ft. are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
 
 Weight: 1
 Usable By:
@@ -14050,8 +14050,8 @@ The rod is currently transformed into a flail.
 STATISTICS:
 
 Special abilities:
-– Terrify (once per day): opponents within 30 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (once per day): a target within 30 ft. is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Terrify (once per day): opponents within 15 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target is paralyzed for 5 rounds (save vs. Rod at -2 negates)
 – Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
@@ -14080,8 +14080,8 @@ The rod is currently transformed into a long sword.
 STATISTICS:
 
 Special abilities:
-– Terrify (once per day): opponents within 30 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (once per day): a target within 30 ft. is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Terrify (once per day): opponents within 15 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target is paralyzed for 5 rounds (save vs. Rod at -2 negates)
 – Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
@@ -14109,8 +14109,8 @@ The rod is currently transformed into a battle axe.
 STATISTICS:
 
 Special abilities:
-– Terrify (once per day): opponents within 30 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (once per day): a target within 30 ft. is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Terrify (once per day): opponents within 15 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target is paralyzed for 5 rounds (save vs. Rod at -2 negates)
 – Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
@@ -14142,8 +14142,8 @@ The rod is currently transformed into a spear.
 STATISTICS:
 
 Special abilities:
-– Terrify (once per day): opponents within 30 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
-– Paralyze (once per day): a target within 30 ft. is paralyzed for 5 rounds (save vs. Rod at -2 negates)
+– Terrify (once per day): opponents within 15 ft. of the wielder flee in terror for 1 turn (save vs. Rod at -2 negates)
+– Paralyze (once per day): a target is paralyzed for 5 rounds (save vs. Rod at -2 negates)
 – Drain Life (once per day): target is drained 30 Hit Points and transfers them to the wielder (save vs. Rod at -2 for half)
 
 Combat abilities:
@@ -14755,7 +14755,7 @@ Not Usable By:
 @2582 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left, he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
 
 Combat abilities:
-– Whistling Sword: wielder and allies within 30 ft. are immune to fear
+– Whistling Sword: wielder and allies within 15 ft. are immune to fear
 
 THAC0: +2
 Damage: 1d6+2 (piercing)
