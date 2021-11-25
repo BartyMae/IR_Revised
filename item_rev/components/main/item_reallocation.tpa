@@ -179,7 +179,7 @@ END
 
 // Move Bands of Focus from Draconis to Thelynn'ss, Sendai's kensai
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bazdra02.cre~) BEGIN
+/* ACTION_IF (FILE_EXISTS_IN_GAME ~bazdra02.cre~) BEGIN
   COPY_EXISTING bazdra02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM brac26
   END BUT_ONLY
@@ -187,7 +187,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bazdra02.cre~) BEGIN
   COPY_EXISTING senken01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     ADD_CRE_ITEM brac26 #0 #0 #0 NONE GLOVES
   END BUT_ONLY
-END
+END */
 
 /////////////////////////////////////
 
