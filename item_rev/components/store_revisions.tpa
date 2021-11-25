@@ -3328,7 +3328,7 @@ END BUT_ONLY IF_EXISTS
 
 // 100% stock overwrite
 
-COPY_EXISTING ar2209.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // take Water Edge from Ust'Natha
+COPY_EXISTING ar2209.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN // Take Water Edge from Ust'Natha
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=SW1H52 END
 END BUT_ONLY IF_EXISTS
 
