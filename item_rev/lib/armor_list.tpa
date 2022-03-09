@@ -621,7 +621,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 ~bdchan05~ => 4   // Corwin's Armor
 ~bdchan06~ => 5   // Stalwart Scale
 ~bdchanca~ => 4   // Hallowed Hero
-~bdchanel~ => 4   // Elven Chain
+~bdchanel~ => 36  // Elven Chain
 ~bdchangh~ => 5   // Splint +1
 ~bdleat01~ => 3   // Cornugon Revenge
 ~bdleat02~ => 3   // Goblin Hide
