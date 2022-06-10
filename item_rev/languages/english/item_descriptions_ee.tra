@@ -263,7 +263,7 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-– Explosion: 6d6 fire damage to those within 15 ft. (save vs. Breath for half)
+– Explosion: 6d6 fire damage to the target and those within 15 ft. (save vs. Breath for half)
 
 Damage: 1d6 (missile)
 Launcher: Bow
@@ -1342,7 +1342,7 @@ Equipped abilities:
 
 Combat abilities:
 – Fiery: target suffers 1d6 fire damage
-– Detonation: 5% chance of dealing 6d6 fire damage to those within 10 ft. (save vs. Breath for half)
+– Detonation: 5% chance of dealing 6d6 fire damage to the target and those within 10 ft. (save vs. Breath for half)
 
 THAC0: +4
 Damage: 1d6+4 (crushing)
@@ -1804,8 +1804,7 @@ Weight: 2
 Usable By:
  All~
 @1208 = ~Boots of Etherealness~ // BG2: Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any mage to become intangible to attacks while devastating an opponent with offensive magic.
-@1209 = ~Boots of the Plane Strider
-Said to be sewn together from scraps of the planes themselves, these strange boots not only grant their user the ability to shift from the Material Plane to the Ethereal Plane, but allow the wearer to remain anchored to whichever Plane he wishes. Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any plane-traveling adventurer.
+@1209 = ~Said to be sewn together from scraps of the planes themselves, these strange boots not only grant their user the ability to shift from the Material Plane to the Ethereal Plane, but allow the wearer to remain anchored to whichever plane they wish. Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any plane-traveling adventurer.
 
 STATISTICS:
 

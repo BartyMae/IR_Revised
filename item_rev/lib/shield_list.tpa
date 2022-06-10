@@ -124,7 +124,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~mgvshld2~ => 2 // Shield of Fortitude
   ~newss01~  => 2
   ~newss02~  => 2
-  ~newss02~  => 2
   ~ntshld01~ => 2 // Small Shield +2, Shield of Free Action
   ~psq60~    => 2
   ~rtt020~   => 2
