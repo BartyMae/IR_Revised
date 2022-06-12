@@ -2431,9 +2431,8 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1283 = ~Gauntlets of Parrying~ // BG1/BG2: Gauntlets of Weapon Skill: Xarrnous' Second Sword Arm: Perhaps the most well-known owner of these gauntlets was a mercenary, named Xarrnous. He specialized in smuggling, and frequently loaned these gauntlets to clients if they were to travel with him. In his eyes, an extra sword arm was always handy.
-@1284 = ~Gauntlets of Swordplay
-It was the infamous swashbuckler, Eisneid Clume, who first requested magical assistance to help her parrying ability. She had been run through in seven duels before she had the gauntlets made. Once the gauntlets were in her possession, Eisneid won over thirty duels without a single scratch. Finally, word of her magical assets leaked out, and the level of swordplay in Hillsfar increased dramatically.
+@1283 = ~Gauntlets of Swordplay~ // BG1/BG2: Gauntlets of Weapon Skill: Xarrnous' Second Sword Arm: Perhaps the most well-known owner of these gauntlets was a mercenary, named Xarrnous. He specialized in smuggling, and frequently loaned these gauntlets to clients if they were to travel with him. In his eyes, an extra sword arm was always handy.
+@1284 = ~It was the infamous swashbuckler, Eisneid Clume, who first requested magical assistance to help her parrying ability. She had been run through in seven duels before she had the gauntlets made. Once the gauntlets were in her possession, Eisneid won over thirty duels without a single scratch. Finally, word of her magical assets leaked out, and the level of swordplay in Hillsfar increased dramatically.
 
 STATISTICS:
 
@@ -3114,7 +3113,7 @@ Usable By:
  Paladin
  Ranger~
 @1367 = ~Aslyferund Elven Chain +5~
-@1368 = ~While in exile from Myth Drannor, Aslyferund learned the secret of fashioning powerful elven armor by gilding and heavily enchanting normal elven chain, it is rumored with the aid of a gold dragon. Alas, his refusal to divulge the secret lead to his murder by a rival smith.
+@1368 = ~While in exile from Myth Drannor, Aslyferund learned the secret of fashioning powerful elven armor by gilding and heavily enchanting normal elven chain, it is rumored with the aid of a gold dragon. Alas, his refusal to divulge the secret led to his murder by a rival smith.
 
 How Cespenar came into possession of the secret is a mystery.
 
@@ -6240,7 +6239,7 @@ Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1741 = ~Blackrazor +4~
+@1741 = ~Blackrazor +5~
 @1742 = ~This sword radiates evil like a sour odor, and the owner never knows if he wields the weapon, or if it wields him. Its special purpose is to steal life essence, and when the sword manages to drain a victim's essence, it temporarily grants them to the wielder. In addition to its combat abilities, Blackrazor slowly regenerates its owner with the drained strength of opponents.
 
 STATISTICS:
@@ -6252,11 +6251,11 @@ Equipped Abilities:
 Combat Abilities:
  Soul Drinking: 15% chance target is drained one level, granting the wielder a +5 bonus to maximum hit points, a +1 bonus to Strength, and hasting them for 1 turn
 
-THAC0: +4 bonus
-Damage: 1D8 + 4
+THAC0: +5 bonus
+Damage: 1D8 + 5
 Damage Type: Slashing
 Weight: 4
-Speed Factor: 1
+Speed Factor: 0
 Proficiency Type: Long Sword
 Type: One-Handed
 Requires: 6 Strength
@@ -7965,9 +7964,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@1960 = ~Dwarven Shield +2~ // BG1: Pellan's Shield: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
-@1961 = ~Pellan's Shield
-This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
+@1960 = ~Pellan's Shield +2~ // BG1: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
+@1961 = ~This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
 
 Superior craftsmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
 
