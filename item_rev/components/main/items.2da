@@ -12,7 +12,7 @@ KALIGUNS_AMULET_OF_MAGIC_RESISTANCE        AMULET   amul20   1        1        0
 AMULET_OF_POWER                            AMULET   amul21   1        1        0        1        1        1        @1000    @1016    @1002    @1017    *        *        *        *
 PERIAPT_OF_PROOF_AGAINST_POISON            AMULET   amul22   1        1        0        1        1        1        @1000    @1018    @1002    @1019    *        *        *        *
 PERIAPT_OF_LIFE_PROTECTION                 AMULET   amul23   1        1        0        1        1        1        @1000    @1020    @1002    @1021    *        *        *        *
-PERIAPT_OF_FORM_STABILITY                  AMULET   amul24   1        1        0        1        1        1        @1000    @1022    @1002    @1023    *        *        *        *
+NECKLACE_OF_FORM_STABILITY                 AMULET   amul24   1        1        0        1        1        1        @1000    @1022    @1002    @1023    *        *        *        *
 AMULET_OF_SPELL_WARDING                    AMULET   amul25   1        1        0        1        1        1        @1000    @1024    @1002    @1025    @4002    *        *        *
 AMULET_OF_CHEETAH_SPEED                    AMULET   amul26   1        1        0        0        1        1        @1000    @1026    @1002    @1027    @4003    *        *        *
 AMULET_OF_SELDARINE                        AMULET   amul27   1        1        0        0        1        1        @1000    @1028    @1002    @1029    *        *        *        *
@@ -722,7 +722,7 @@ LONG_SWORD_1                               SWORDL   sw1h05   1        1        1
 VARSCONA_2                                 SWORDL   sw1h06   1        1        1        1        1        1        @1513    @2064    @1515    @2065    *        *        *        *
 SHORT_SWORD                                SWORDS   sw1h07   1        1        1        1        1        1        @2066    @2066    @2067    @2067    *        *        *        *
 SHORT_SWORD_1                              SWORDS   sw1h08   1        1        1        1        1        1        @2066    @2068    @2069    @2070    *        *        *        *
-SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h09   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
+SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h09   1        1        0        0        1        1        @2066    @2071    @2069    @2072    *        *        *        *
 SHORT_SWORD_OF_BACKSTABBING_3              SWORDS   sw1h10   1        1        1        1        1        1        @2066    @2073    @2069    @2074    *        *        *        *
 HULLS_LONG_SWORD                           SWORDL   sw1h12   1        1        1        1        1        1        @2422    @2422    @2061    @2061    *        *        *        *
 MOONBLADE_3                                SWORDL   sw1h13   1        1        1        1        1        1        @2403    @2403    @2404    @2404    *        *        *        *
@@ -739,7 +739,7 @@ KUNDANE_2                                  SWORDS   sw1h25   1        1        0
 ILBRATHA_1                                 SWORDS   sw1h26   1        1        0        0        1        1        @2066    @2088    @2069    @2089    @2088    @4067    *        *
 ARBANES_SWORD_2                            SWORDS   sw1h27   1        1        0        0        1        1        @2066    @2090    @2069    @2091    @2090    @4068    *        *
 CUTTHROAT_3                                SWORDS   sw1h28   1        1        0        0        1        1        @2066    @2092    @2069    @2093    *        *        *        *
-SHORT_SWORD_2                              SWORDS   sw1h29   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
+SHORT_SWORD_2                              SWORDS   sw1h29   1        1        0        0        1        1        @2066    @2071    @2069    @2072    *        *        *        *
 BELM_2                                     SCIMITAR sw1h30   1        1        0        0        1        1        @1509    @2095    @1511    @2096    *        *        *        *
 DAYSTAR_4                                  SWORDL   sw1h31   1        1        0        0        1        1        @1513    @2097    @1515    @2098    @2097    @4069    *        *
 DRAGONSLAYER_3                             SWORDL   sw1h32   1        1        0        0        1        1        @1513    @2099    @1515    @2100    *        *        *        *
