@@ -4,7 +4,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.806)~
+VERSION ~V4 Beta 10 (Revised V1.3.807)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -22,7 +22,7 @@ ALWAYS
   END
 
   LOAD_TRA ~item_rev/languages/english/description_updates.tra~
-  ACTION_IF ee_style_item_descriptions=1 BEGIN
+  ACTION_IF item_description_style=1 BEGIN
     LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
   END
 
@@ -61,7 +61,7 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/enhanced_editions.tra~
 END
 
-ACTION_IF ee_style_item_descriptions=1 BEGIN
+ACTION_IF item_description_style=1 BEGIN
   LOAD_TRA ~item_rev/languages/english/item_descriptions_ee.tra~
   LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
   LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_item_descriptions_ee.tra~
