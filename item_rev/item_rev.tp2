@@ -4,26 +4,30 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.831)~
+VERSION ~V4 Beta 10 (Revised V1.3.832)~
 
 ALWAYS
+
   OUTER_PATCH ~~ BEGIN
     PATCH_INCLUDE ~item_rev/settings.ini~
   END
-  
   // On EE games, convert tra files to utf-8 so that games don't crash for non-English
   ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
     OUTER_SET cd_always = 1
-    
     ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
     ACTION_DEFINE_ARRAY cdreload BEGIN description_updates END // List of tra files that contain strings used for game content that get converted in the next step
-    
     LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~item_rev/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
   END
 
-  LOAD_TRA ~item_rev/languages/english/description_updates.tra~
-  ACTION_IF item_description_style=1 BEGIN
-    LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
+  ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet~) BEGIN
+    LOAD_TRA ~item_rev/languages/english/description_updates.tra~
+    ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+      LOAD_TRA ~item_rev/languages/english/enhanced_editions.tra~
+    END
+    ACTION_IF (item_description_style=0 AND (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~)) OR item_description_style=2 BEGIN
+      LOAD_TRA ~item_rev/languages/english/item_descriptions_ee.tra~
+      LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
+    END
   END
 
 END
@@ -47,25 +51,6 @@ ACTION_IF install_tobex && (ENGINE_IS ~tob~) BEGIN
   OUTER_SPRINT ~TOBEX_MOD_DIRECTORY~ ~item_rev~
   LOAD_TRA ~item_rev/tobex_redist/TobEx.tra~
   INCLUDE ~item_rev/tobex_redist/TobEx.tpa~
-END
-
-LOAD_TRA ~item_rev/languages/english/item_descriptions.tra~
-LOAD_TRA ~item_rev/languages/english/item_upgrades.tra~
-LOAD_TRA ~item_rev/languages/english/potion_descriptions.tra~
-LOAD_TRA ~item_rev/languages/%LANGUAGE%/item_descriptions.tra~
-LOAD_TRA ~item_rev/languages/%LANGUAGE%/item_upgrades.tra~
-LOAD_TRA ~item_rev/languages/%LANGUAGE%/potion_descriptions.tra~
-
-ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
-  LOAD_TRA ~item_rev/languages/english/enhanced_editions.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/enhanced_editions.tra~
-END
-
-ACTION_IF item_description_style=1 BEGIN
-  LOAD_TRA ~item_rev/languages/english/item_descriptions_ee.tra~
-  LOAD_TRA ~item_rev/languages/english/description_updates_ee.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_item_descriptions_ee.tra~
-  LOAD_TRA ~item_rev/languages/%LANGUAGE%/ee_description_updates_ee.tra~
 END
 
 INCLUDE ~item_rev/components/main_component.tpa~
