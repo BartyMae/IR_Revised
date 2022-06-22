@@ -5452,7 +5452,7 @@ Not usable by:
  Sorcerer
  Thief~
 @1551 = ~Hammer of Corrosion +1~ // BG2: War Hammer +1, +4 vs. Giantkin: The Knee-Capper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
-@1552 = ~The Hammer of Corrosion—or "The Defiler," as it has become known in dwarven circles—is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenceless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
+@1552 = ~The Hammer of Corrosion—or "The Defiler," as it has become known in dwarven circles—is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenseless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
 
@@ -7547,7 +7547,7 @@ Weight: 0
 Only usable by:
  Edwin~
 @1782 = ~Jansen-Brand Metal-Repellant AdventureWear (pat. pending)~ //!*!*!\\ BG2: This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant a +25% resistance to all physical damage and an additional +5 bonus to Jan's armor class against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
-@1783 = ~This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
+@1783 = ~This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
 
 Note: dry clean only.
 
@@ -7564,8 +7564,25 @@ Weight: 5
 
 Only usable by:
  Jan Jansen~
+@178300000 = ~This strange armor is made of a foreign material, very supple but strong to the touch. Te armor does not give any bonuses to base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. The user may also cast spells while wearing this armor. In addition, the armor is stylish.
+
+Note: dry clean only.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 vs. missile attacks
+– Physical Resistance: +20%
+
+Requires:
+ 3 Strength
+
+Weight: 5
+
+Only usable by:
+ Thief~
 @1784 = ~Bow of Arvoreen +2~ // BG2: This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by halflings, granting a +2 bonus to hit rolls.
-@1785 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen.
+@1785 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by Mazzy.
 
 STATISTICS:
 
@@ -7578,7 +7595,25 @@ Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
- Alignment: Good
+
+Weight: 2
+
+Usable only by:
+ Mazzy~
+@178500000 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen.
+
+STATISTICS:
+
+Equipped abilities:
+– Spell: Free Action
+
+THAC0: +2
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+ Alignment: Good/Neutral
 
 Weight: 2
 
@@ -7600,7 +7635,24 @@ Weight: 1
 Only usable by:
  Imoen~
 @1788 = ~Corthala Family Armor +2~ // BG2: This armor, long in the Corthala bloodline, protects the user against all forms of attacks. The armor is enchanted so that it grants a +3 bonus to Valygar's armor class. It also adds a bonus to resisting acid, fire and magical damage. The armor also makes Valygar immune to charm while he wears it. As it is specially fitted for Valygar, few other than he may wear it.
-@1789 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. This armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages, making the wearer immune to charm and detection by magical means.
+@1789 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. This armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages, making the wearer immune to charm and detection by magical means. As it is specially fitted for Valygar, few other than he may wear it.
+
+STATISTICS:
+
+Equipped abilities:
+– Spell: Non-Detection
+– Protects Against: Charm and Domination
+– Mithral: +1 to Armor Class
+
+Armor Class: 3
+Requires:
+ 6 Strength
+
+Weight: 20
+
+Only usable by:
+ Valygar~
+@178900000 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. This armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages, making the wearer immune to charm and detection by magical means.
 
 STATISTICS:
 
@@ -7624,8 +7676,8 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@1790 = ~Cloak of the High Forest~ // BG2: Only Cernd may use this cloak.
-@1791 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature.  He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it.
+@1790 = ~Cloak of the High Forest~
+@1791 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature. He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it. Only Cernd may use this cloak.
 
 STATISTICS:
 
@@ -7637,9 +7689,22 @@ Equipped abilities:
 Weight: 3
 
 Only usable by:
- Druid (single-class)~
-@1792 = ~Jansen-Brand Micro-Macro Spectroscopes (P. B. licensed)~ //!*!*!\\
-@1793 = ~Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. They also give Jan an additional +25% to his detect and disarm traps abilities. Various lenses on the contraption increase Jan's ability to detect illusions by 20%. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
+ Cernd~
+@179100000 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature. He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it.
+
+STATISTICS:
+
+Equipped abilities:
+– Elemental Resistance: +15%
+– Regeneration: 1 HP/5 rounds
+– Spell Immunity: Summon Insects, Insect Plague, and Creeping Doom
+
+Weight: 3
+
+Only usable by:
+ Druid~
+@1792 = ~Jansen-Brand Micro-Macro Spectroscopes (P. B. licensed)~ //!*!*!\\ BG2: Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. They also give Jan an additional +25% to his detect and disarm traps abilities. Various lenses on the contraption increase Jan's ability to detect illusions by 20%. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
+@1793 = ~Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. Various lenses on the contraption increase Jan's ability to detect traps and illusions. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
 
 STATISTICS:
 
@@ -7655,6 +7720,22 @@ Weight: 1
 
 Only usable by:
  Jan Jansen~
+@179300000 = ~Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. Various lenses on the contraption increase Jan's ability to detect traps and illusions. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
+
+STATISTICS:
+
+Special abilities:
+– Detect Invisibility (once per day)
+
+Equipped abilities:
+– Find Traps: +20%
+– Detect Illusions: +20%
+– Protects against critical hits
+
+Weight: 1
+
+Only usable by:
+ Thief~
 @1794 = ~Jansen-Brand Techno-Thieving Gadgetizer Gloves (TM)~ //!*!*!\\
 @1795 = ~This set of thieving tools gives Jan an additional bonus to both his lock picking and pick pocketing. He is the only one who can use the Gloves, as no one else quite has the knack of it. Oddly, he seems to be able to actually cast spells while wearing the things. Must be because they got style.
 
@@ -7670,8 +7751,22 @@ Weight: 1
 
 Only usable by:
  Jan Jansen~
-@1796 = ~Staff of the High Forest +2~ // BG2: It has grown to fit his grip, and few others may wield it.
-@1797 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself.
+@179500000 = ~This set of thieving tools gives Jan an additional bonus to both his lock picking and pick pocketing. Oddly, he seems to be able to actually cast spells while wearing the things. Must be because they got style.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: +20%
+– Pick Pockets: +20%
+
+Armor Class: 5
+
+Weight: 1
+
+Only usable by:
+ Thief~
+@1796 = ~Staff of the High Forest +2~
+@1797 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself. It has grown to fit his grip, and few others may wield it.
 
 STATISTICS:
 
@@ -7690,9 +7785,29 @@ Requires:
 Weight: 4
 
 Only usable by:
- Druid (single-class)~
+ Cernd~
+@179700000 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Speed: +1
+
+THAC0: +2
+Damage: 1d6+2
+Damage Type: Crushing
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4
+
+Only usable by:
+ Druid~
 @1798 = ~Firecam Full Plate Mail +2~ // BG2: Full plate armor is the best armor a warrior can buy, both in appearance and protection. This armor increases the wearer's armor class by one above that of normal full plate. While equipped, the suit provides the wearer with a +1 bonus to all saving throws and grants the wearer Free Action (the ability to pass through webs and other effects). This suit was designed for Keldorn, and only he may wear it.
-@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical shield. Anyone who dares attack Torm's favored suffers proper retribution as the god's shield strikes back with its magical energy.
+@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical barrier. Anyone who dares attack Torm's favored suffers proper retribution as the barrier strikes back with its magical energy. This suit is designed for Keldorn and only he can wear it without incurring in Torm's wrath.
 
 STATISTICS:
 
@@ -7707,11 +7822,28 @@ Requires:
 Weight: 60
 
 Only usable by:
+ Keldorn~
+@179900000 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical barrier. Anyone who dares attack Torm's favored suffers proper retribution as the barrier strikes back with its magical energy.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Death: +3
+– Retribution: creatures who strike the wearer in melee suffer 1d4 magic damage
+
+Armor Class: -1
+Requires:
+ 15 Strength
+ Alignment: Good
+
+Weight: 60
+
+Only usable by:
  Paladin~
 @1800 = ~Ring~
 @1801 = ~De'Arnise Signet Ring~ // BG2: This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring may not be removed from Nalia, nor its powers used by anyone else. The ring grants a +2 bonus to all saving throws, +2 armor class bonus, and 50% resistance to fire.
 @1802 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
-@1803 = ~This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring's powers may not be used by anyone else.
+@1803 = ~This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring may not be removed from Nalia, nor its powers used by anyone else.
 
 STATISTICS:
 
@@ -7738,6 +7870,25 @@ Requires:
 
 Weight: 15
 
+Usable by:
+ Anomen~
+@180500000 = ~This is Anomen's family shield, given to him by his father. In addition to magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, they can use the shield to erect a field of protective energy around themselves.
+
+STATISTICS:
+
+Special abilities:
+– Protection from Normal Missiles (once per day): 1 turn
+
+Equipped abilities:
+– Armor Class: +3
+– Fire Resistance: +25%
+– Cold Resistance: +25%
+
+Requires:
+ 12 Strength
+
+Weight: 15
+
 Not usable by:
  Bard
  Druid
@@ -7746,8 +7897,8 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@1806 = ~Sword of Arvoreen +2~ // BG2: Another gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
-@1807 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow and weaken any opponent struck by it.
+@1806 = ~Sword of Arvoreen +2~
+@1807 = ~Another gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
 
 STATISTICS:
 
@@ -7762,7 +7913,27 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires:
  5 Strength
- Alignment: Good
+
+Weight: 3
+
+Only usable by:
+ Mazzy~
+@180700000 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow and weaken any opponent struck by it.
+
+STATISTICS:
+
+Combat abilities:
+– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d6+2
+Damage Type: Piercing
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+ Alignment: Good/Neutral
 
 Weight: 3
 
@@ -7794,9 +7965,29 @@ Weight: 5
 
 Only usable by:
  Yoshimo~
+@181000000 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
+
+STATISTICS:
+
+Combat abilities:
+– Toxins: target suffers 1 poison damage every second for 1 round (save vs. Poison negates)
+
+THAC0: +2
+Damage: 1d10+2
+Damage Type: Slashing
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5
+
+Only usable by:
+ Thief~
 @1811 = ~Usuno's Blade +3~
 @1812 = ~Hallowed Redeemer +2~ // BG2: Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. It is exceptionally accurate, but also protects him in battle with a special Fireshield, and any that strike him while he wields it suffer Torm's wrath in the form of magical damage. None but Keldorn may use this sword.
-@1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenceless while judgement falls upon them.
+@1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenseless while judgement falls upon them.
 
 STATISTICS:
 
@@ -7816,9 +8007,54 @@ Requires:
 Weight: 8
 
 Only usable by:
+ Keldorn~
+@181300000 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenseless while judgement falls upon them.
+
+STATISTICS:
+
+Combat abilities:
+– Righteous: +3 to damage against evil creatures
+– Heretic's Doom: target is silenced for 2 rounds (save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d10+2
+Damage Type: Slashing
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+ Alignment: Good
+
+Weight: 8
+
+Only usable by:
  Paladin~
-@1814 = ~Corthala Family Katana +2~ // BG2: This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins. This +2 blade causes additional bleeding damage when it strikes an opponent.
-@1815 = ~This fine katana radiates magical energy. The blade was designed to give the wielder an edge over spellcasters by disrupting their casting abilities.
+@1814 = ~Corthala Family Blade +2~ // BG2: This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins. This +2 blade causes additional bleeding damage when it strikes an opponent.
+@1815 = ~This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins, giving the wielder an edge over spellcasters by disrupting their casting abilities.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Spell: +3
+
+Combat abilities:
+– Spell Disruption: target suffers +10% cumulative chance of spell failure for 5 rounds
+
+THAC0: +2
+Damage: 1d10+2
+Damage Type: Slashing
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5
+
+Not usable by:
+ Valygar~
+@181500000 = ~This fine katana radiates magical energy, and the blade was designed to give the wielder an edge over spellcasters by disrupting their casting abilities.
 
 STATISTICS:
 
@@ -7846,7 +8082,28 @@ Not usable by:
  Mage
  Sorcerer~
 @1816 = ~Entropy +2~ // BG2: This +2 abyssal greensteel blade is one of Haer'Dalis's favorite weapons. This short sword is capable of inflicting an additional 3 points of poison damage if the target fails a Saving Throw. This blade may only be used by tieflings.
-@1817 = ~This Baatorian green steel blade is one of Haer'Dalis' favorite weapons. This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the lower planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar'ri). This metal is also known as banesteel due to the fact that weapons made of green steel strike more often and are able to penetrate armor very easily.
+@1817 = ~This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the Lower Planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar’ri). This metal is also known as banesteel because the material tends to mirror the baatezu's fondness for surgical strikes–weapons made of baatorian green steel inflict far more critical hits than their mundane counterparts. This abyssal green steel blade is one of Haer'Dalis' favorite weapons.
+
+STATISTICS:
+
+Combat abilities:
+– Poisonous: target suffers 1d4 poison damage
+– Entropy: target suffers -1 to Saving Throws for 2 rounds
+
+THAC0: +2
+Damage: 1d6+2
+Damage Type: Piercing
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3
+
+Only usable by:
+ Hear'Dalis~
+@181700000 = ~This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the Lower Planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar’ri). This metal is also known as banesteel because the material tends to mirror the baatezu's fondness for surgical strikes–weapons made of baatorian green steel inflict far more critical hits than their mundane counterparts. This abyssal green steel blade is one of Haer'Dalis' favorite weapons.
 
 STATISTICS:
 
@@ -7872,7 +8129,28 @@ Not usable by:
  Mage
  Sorcerer~
 @1818 = ~Chaos +2~ // BG2: Chaos is a +2 short sword usable only by tieflings. Every time it strikes an opponent, he or she loses 2 points of Dexterity for 5 rounds. Haer'Dalis prefers using Chaos with its partner—Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
-@1819 = ~This Tanar'ri red steel blade is one of Haer'Dalis' favorite weapons. This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar'ri. Red steel is also known as bloodsteel. Besides being the color of fresh blood, weapons made from red steel have a tendency to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual-wielding these two blades, Haer'Dalis is a dangerous opponent.
+@1819 = ~This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar’ri. Tanar'ri red steel is also known as bloodsteel - both for being the color of fresh blood as well as the tendency for weapons forged of this metal to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
+
+STATISTICS:
+
+Combat abilities:
+– Lacerating: target suffers 1 bleeding damage every round for 2 rounds
+– Confusing: 33% chance target is confused for 2 rounds (save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d6+2
+Damage Type: Piercing
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3
+
+Only usable by:
+ Hear'Dalis~
+@181900000 = ~This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar’ri. Tanar'ri red steel is also known as bloodsteel - both for being the color of fresh blood as well as the tendency for weapons forged of this metal to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
 
 STATISTICS:
 
@@ -7945,6 +8223,26 @@ Weight: 4
 
 Only usable by:
  Jan Jansen~
+@182400000 = ~This is Jan Jansen's crossbow, and only he can make the special ammunition it is capable of firing. Substantial tinkering on this launcher has made it especially accurate, and projectiles fired from this bow erupt in a flash of light that can potentially blind any opponent.
+
+STATISTICS:
+
+Combat abilities:
+– Blinding: 33% chance target blinded for 2 rounds (save vs. Breath negates)
+
+THAC0: +2
+Damage: +2
+Damage Type: Missile
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 4
+
+Only usable by:
+ Thief~
 @1825 = ~Plate Mail~
 @1826 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.
 
@@ -14634,6 +14932,26 @@ Requires:
 
 Weight: 6
 
+Only usable by:
+ Korgan~
+@2384 = ~It was the Year of Slaughter, 1090 DR, and countless victims lay slain at the Battle of the Bones. Today the site contains layers of dry white bone, but at the time it was all blood and bile, oozing from each shattered corpse and saturating the fallen equipment. No amount of polishing has been able to restore any weapon retrieved from that dread place, or even begin to remove the taint acquired there.
+
+STATISTICS:
+
+Combat abilities:
+– Bloodlust: with each hit, the wielder gains cumulative +1 to melee damage for 2 rounds
+
+THAC0: +2
+Damage: 1d8+2
+Damage Type: Slashing
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6
+
 Not usable by:
  Beast Master
  Cleric
@@ -14879,7 +15197,9 @@ Weight: 1
 Not usable by:
  Wizard Slayer~
 @2413 = ~Handmaiden's Mace +3~
-@2414 = ~This mace has been crafted finely by the drow, and specially treated to survive the glare of the sun. It is made for surface raids by the subterranean race and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
+@2414 = ~This mace has been crafted finely by the drow, and specially treated to survive the glare of the sun. It is made for surface raids by the subterranean race... and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
+
+The mace seems almost alive and warm to the touch, and slithers away from those whom it does not like... namely drow or those who are similar enough to not make a difference. In the hands of anyone else, the mace becomes mere dead weight.
 
 STATISTICS:
 
@@ -14898,13 +15218,30 @@ Requires:
 
 Weight: 8
 
-Not usable by:
- Beast Master
- Druid
- Mage
- Monk
- Sorcerer
- Thief~
+Only usable by:
+ Viconia~
+@241400000 = ~This mace has been crafted finely by the drow, and specially treated to survive the glare of the sun. It is made for surface raids by the subterranean race... and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
+
+STATISTICS:
+
+Combat abilities:
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
+– Webbing: 33% chance target is held for 2 rounds (save vs. Breath negates)
+
+THAC0: +3
+Damage: 1d6+4
+Damage Type: Crushing
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+ Alignment: Evil/Neutral
+
+Weight: 8
+
+Only usable by:
+ Cleric~
 @2415 = ~Sword of Chaos +4~
 @2416 = ~The blade of Sarevok, brother of <CHARNAME>, used in the battle they fought in faraway Baldur's Gate. <CHARNAME> prevailed, destroying Sarevok's plans and rescuing the Sword Coast from the brink of war. Now Sarevok has joined with <CHARNAME>'s cause and his blade has been restored to him. Sarevok describes the weapon as a Deathbringer blade and has restored some of the weapon's old power. Without his Bhaalspawn essence to channel through the sword, however, it cannot achieve the power it once had. Still, however, it is a formidable weapon... and one that Sarevok warns would become increasingly difficult to wield in the hands of one who was not a Deathbringer, if they could use it at all.
 
@@ -15950,7 +16287,7 @@ Not usable by:
  Mage
  Sorcerer~
 @2536 = ~Control Circlet~
-@2537 = ~A circlet of alien metal that dominates even the most powerful of minds and leaves them defenceless. Perhaps this item could be used to control a mind flayer and make him help you escape from this hellish prison.
+@2537 = ~A circlet of alien metal that dominates even the most powerful of minds and leaves them defenseless. Perhaps this item could be used to control a mind flayer and make him help you escape from this hellish prison.
 
 STATISTICS:
 

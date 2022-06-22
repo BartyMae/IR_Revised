@@ -10,7 +10,6 @@ Equipped abilities:
 – Saving Throws: +1
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell Shield. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
@@ -24,7 +23,6 @@ Equipped abilities:
 NOTE: Multiple Shield effects are not cumulative.
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1006 = ~Amulet of Metaspell Influence~
@@ -38,7 +36,6 @@ Equipped abilities:
 – Protects Against: Silence
 
 Weight: 0
-
 Not Usable By:
  Fighter
  Monk
@@ -52,7 +49,6 @@ Equipped abilities:
 – Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1010 = ~Silver Charm~ // BG1: Wolfsbane Charm: A silver amulet containing powdered wolfsbane.
@@ -64,7 +60,6 @@ Equipped abilities:
 – Silver Glow: +2 to Armor Class and Saving Throws vs. lycanthropes and vampires
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1012 = ~Amulet of Energy Shielding~ // BG2: Amulet of 5% Magic Resistance
@@ -76,7 +71,6 @@ Equipped abilities:
 – Energy Resistance: +25%
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1014 = ~Kaligun's Amulet of Magic Resistance~
@@ -91,7 +85,6 @@ Equipped abilities:
 – Magic Resistance: +10%
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!" It has seen much use, and changed hands many times through blood and battle.
@@ -108,7 +101,6 @@ Equipped abilities:
 – Spell Memorization: arcane and divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Weight: 0
-
 Not Usable By:
  Fighter
  Monk
@@ -122,7 +114,6 @@ Equipped abilities:
 – Protects Against: Poison
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1020 = ~Periapt of Life Protection~
@@ -136,7 +127,6 @@ Equipped abilities:
 – Protects Against: Death and Level Drain
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1022 = ~Necklace of Form Stability~
@@ -148,7 +138,6 @@ Equipped abilities:
 – Protects Against: Disintegration, Petrification, and Polymorph
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1024 = ~Amulet of Spell Warding~ // BG2: A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting.
@@ -163,7 +152,6 @@ Equipped abilities:
 – Saving Throws: +2
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1026 = ~Amulet of Cheetah Speed~ // BG2: This amulet grants its wearer fleetness of foot. Not surprisingly, it is popular among fleeing felons, travelers, and cowards.
@@ -183,7 +171,6 @@ Equipped abilities:
 – Speed Factor: +1
 
 Weight: 0
-
 Not Usable By:
  Monk
  Wizard Slayer~
@@ -200,7 +187,6 @@ Equipped abilities:
 NOTE: Multiple Protection from Evil effects are not cumulative.
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1030 = ~Amulet of the Master Harper~ // BG2: This medallion is highly sought after by both thieves and bards, though for different reasons. In addition to providing powerful magical protection against physical attacks, the amulet increases the wearer's proficiency in several rogue skills. But even more valuable, from the bard's perspective, is the amulet's ability to grant the wearer immunity to all forms of silence.
@@ -217,7 +203,6 @@ Equipped abilities:
 – Detect Illusions: +20%
 
 Weight: 0
-
 Usable By:
  Bard
  Thief~
@@ -230,7 +215,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -246,7 +230,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -264,7 +247,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -281,7 +263,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -298,7 +279,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -316,7 +296,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -334,7 +313,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -352,7 +330,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -370,7 +347,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -385,7 +361,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -400,7 +375,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -418,7 +392,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -441,7 +414,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -463,7 +435,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -486,7 +457,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -511,7 +481,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -541,7 +510,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -569,7 +537,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -600,7 +567,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -626,7 +592,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -652,7 +617,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -678,7 +642,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -709,7 +672,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -738,7 +700,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -760,7 +721,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -780,7 +740,6 @@ Equipped abilities:
 – Armor Class: +4 vs. slashing attacks
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1089 = ~Girdle of Bluntness~
@@ -793,7 +752,6 @@ Equipped abilities:
 – Armor Class: +4 vs. crushing attacks
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1091 = ~Girdle of Piercing~
@@ -806,7 +764,6 @@ Equipped abilities:
 – Armor Class: +4 vs. piercing attacks
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1093 = ~Girdle of Beatification~ // BG2: Girdle of Hill Giant Strength: This plain belt makes the wearer as strong as a hill giant, but does not make him or her giant size. Many a cocky warrior has been surprised by a much smaller opponent with remarkable strength. More often than not, a belt such as this is the reason.
@@ -820,7 +777,6 @@ Equipped abilities:
 NOTE: Multiple Bless effects are not cumulative.
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1095 = ~Girdle of Priestly Might~ // BG2: Girdle of Stone Giant Strength: As a young boy, Stewart Elttil was kidnapped by raiding kobolds after his family was slain. However, en route to their den, the kobolds surprised a family of stone giants. These giants rescued Stewart and raised him as their own. It soon became apparent that the boy, no matter how hard he tried, could not compete in the family rock-throwing contests. The stone giant father bartered with a local wizard for this girdle, which made Stewart as strong as his brothers and sisters. When Stewart met an untimely end, the girdle was stolen away.
@@ -833,7 +789,6 @@ Equipped abilities:
 – Strength: +2
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1097 = ~Girdle of Giant Strength~ // BG2: Girdle of Frost Giant Strength: This belt is actually the woven hair from a frost giant's beard. When worn, the belt greatly increases the wearer's strength, making him or her as strong as a frost giant.
@@ -845,7 +800,6 @@ Equipped abilities:
 – Strength: +3
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1099 = ~Girdle of Trollish Fortitude~ // BG2: Girdle of Fortitude
@@ -860,7 +814,6 @@ Equipped abilities:
 – Maximum Hit Points: +20
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1101 = ~Belt of Inertial Barrier~ // BG2: When worn, this belt creates a dense curtain of air around the wearer. This curtain, or barrier, provides superior protection against breath attacks as well as magic. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
@@ -874,7 +827,6 @@ Equipped abilities:
 – Inertial Barrier: opponents within 5 ft. suffer -1 to Armor Class, THAC0, damage, movement speed, and speed factor
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1103 = ~Girdle of the Champion~ // BG2: Girdle of Fire Giant Strength: This belt is actually the woven hair from a fire giant's beard. When worn the belt greatly increases the wearer's strength.
@@ -890,7 +842,6 @@ Equipped abilities:
 – Protects Against: Fear
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1105 = ~Club~
@@ -906,7 +857,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1107 = ~Flail~
@@ -922,7 +872,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -944,7 +893,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -964,7 +912,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -986,7 +933,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1006,7 +952,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1028,7 +973,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1055,7 +999,6 @@ Requires:
  10 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1083,7 +1026,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Usable By:
  Druid
  Ranger~
@@ -1109,7 +1051,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1130,7 +1071,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -1158,7 +1098,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -1180,7 +1119,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1204,7 +1142,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1228,7 +1165,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1256,7 +1192,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1280,7 +1215,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1304,7 +1238,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1325,7 +1258,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1350,7 +1282,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1150 = ~Bone Club +3~
@@ -1373,7 +1304,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1152 = ~Gnasher +2~
@@ -1393,7 +1323,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1154 = ~Mace of Disruption +4~
@@ -1423,7 +1352,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1459,7 +1387,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1158 = ~Club of Detonation +5~
@@ -1495,7 +1422,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1160 = ~Storm Star +4~
@@ -1521,7 +1447,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Druid
  Mage
@@ -1554,7 +1479,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Druid
  Mage
@@ -1586,7 +1510,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -1617,7 +1540,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -1647,7 +1569,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -1668,7 +1589,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1171 = ~Flail +3~
@@ -1685,7 +1605,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -1706,7 +1625,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -1727,7 +1645,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1755,7 +1672,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -1771,8 +1687,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -1787,8 +1702,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -1805,8 +1719,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -1822,8 +1735,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -1837,8 +1749,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -1852,8 +1763,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -1870,7 +1780,6 @@ Equipped abilities:
 – Movement Rate: +4
 
 Weight: 2
-
 Usable By:
  All~
 @1196 = ~Boots of Stealth~
@@ -1883,7 +1792,6 @@ Equipped abilities:
 – Move Silently: +40%
 
 Weight: 2
-
 Usable By:
  Monk
  Ranger
@@ -1898,7 +1806,6 @@ Equipped abilities:
 – Cold Resistance: +50%
 
 Weight: 2
-
 Usable By:
  All~
 @1200 = ~Boots of Avoidance~
@@ -1911,7 +1818,6 @@ Equipped abilities:
 – Armor Class: +4 vs. missile attacks
 
 Weight: 2
-
 Usable By:
  All~
 @1202 = ~Boots of Grounding~
@@ -1924,7 +1830,6 @@ Equipped abilities:
 – Electricity Resistance: +50%
 
 Weight: 2
-
 Usable By:
  All~
 @1204 = ~Boots of Elvenkind~ // BG2: These soft boots make the wearer move as silently as the woodland elves. Thieves love to get their hands on these boots, but the elves are reluctant about exporting them, fearful that they may be used for illegal purposes.
@@ -1938,7 +1843,6 @@ Equipped abilities:
 – Spell Immunity: Entangle
 
 Weight: 2
-
 Usable By:
  Monk
  Ranger
@@ -1955,7 +1859,6 @@ Equipped abilities:
 – Blink: when enemies are in sight, the wearer phases to a random opponent every 2 rounds
 
 Weight: 2
-
 Usable By:
  All~
 @1208 = ~Boots of Etherealness~ // BG2: Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any mage to become intangible to attacks while devastating an opponent with offensive magic.
@@ -1970,7 +1873,6 @@ Equipped abilities:
 – Dimensional Anchor: wearer is unaffected by Teleport Field, Maze, Imprisonment, and other similar effects
 
 Weight: 2
-
 Usable By:
  All~
 @1210 = ~Gargoyle Boots~
@@ -1985,7 +1887,6 @@ Equipped abilities:
 NOTE: Multiple Stoneskin effects are not cumulative.
 
 Weight: 2
-
 Usable By:
  All~
 @1212 = ~Composite Longbow~
@@ -2002,7 +1903,6 @@ Requires:
  16 Strength
 
 Weight: 4
-
 Not Usable By:
  Bard
  Cleric
@@ -2027,7 +1927,6 @@ Requires:
  16 Strength
 
 Weight: 4
-
 Not Usable By:
  Bard
  Cleric
@@ -2050,7 +1949,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2073,7 +1971,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2094,7 +1991,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2116,7 +2012,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2141,7 +2036,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2167,7 +2061,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2193,7 +2086,6 @@ Requires:
  18 Strength
 
 Weight: 5
-
 Not Usable By:
  Bard
  Cleric
@@ -2221,7 +2113,6 @@ Requires:
  16 Strength
 
 Weight: 4
-
 Not Usable By:
  Bard
  Cleric
@@ -2248,7 +2139,6 @@ Requires:
  19 Strength
 
 Weight: 6
-
 Not Usable By:
  Bard
  Cleric
@@ -2274,7 +2164,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2302,7 +2191,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2327,7 +2215,6 @@ Requires:
  6 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2354,7 +2241,6 @@ Requires:
  6 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2376,7 +2262,6 @@ Requires:
  16 Strength
 
 Weight: 4
-
 Not Usable By:
  Bard
  Cleric
@@ -2399,7 +2284,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2421,7 +2305,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2450,7 +2333,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2477,7 +2359,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2510,7 +2391,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2537,7 +2417,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2568,7 +2447,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2591,7 +2469,6 @@ Requires:
  16 Strength
 
 Weight: 4
-
 Not Usable By:
  Bard
  Cleric
@@ -2614,7 +2491,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -2636,7 +2512,6 @@ Requires:
  3 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -2655,7 +2530,6 @@ Equipped abilities:
 – Armor Class: 8
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2668,7 +2542,6 @@ Equipped abilities:
 – Armor Class: 7
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2681,7 +2554,6 @@ Equipped abilities:
 – Armor Class: 6
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2696,7 +2568,6 @@ Equipped abilities:
 – Damage: +2 (missile weapons only)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2712,7 +2583,6 @@ Equipped abilities:
 – Strength: +2 (+100 exceptional)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2726,7 +2596,6 @@ Equipped abilities:
 – Dexterity: +2
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2739,7 +2608,6 @@ Equipped abilities:
 – Parrying: +2 to Armor Class (none vs. missile attacks)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2754,7 +2622,6 @@ Equipped abilities:
 – Damage: +2 (melee weapons only)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2767,7 +2634,6 @@ Equipped abilities:
 – Armor Class: 5
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2779,7 +2645,6 @@ Equipped abilities:
 – Armor Class: 5 (+1)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2792,7 +2657,6 @@ Equipped abilities:
 – Armor Class: 4
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2804,7 +2668,6 @@ Equipped abilities:
 – Armor Class: 4 (+1)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2817,7 +2680,6 @@ Equipped abilities:
 – Armor Class: 3
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2829,7 +2691,6 @@ Equipped abilities:
 – Armor Class: 3 (+1)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2845,7 +2706,6 @@ Equipped abilities:
  Armor Class: 5
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2860,7 +2720,6 @@ Equipped abilities:
 – Armor Class: 5 (+1)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2876,7 +2735,6 @@ Equipped abilities:
 – Precise Strike: +5% chance to score critical hits
 
 Weight: 1
-
 Usable By:
  Thief~
 @1297 = ~Gloves of Missile Snaring~
@@ -2894,7 +2752,6 @@ Requires:
  16 Dexterity
 
 Weight: 1
-
 Usable By:
  Bard
  Monk
@@ -2909,7 +2766,6 @@ Equipped abilities:
 – Damage: +4 (fists only)
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2926,7 +2782,6 @@ Equipped abilities:
 – Regeneration: 1 HP/5 rounds
 
 Weight: 1
-
 Usable By:
  Cleric
  Paladin~
@@ -2943,7 +2798,6 @@ Equipped abilities:
 – Speed Factor: +1
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -2958,7 +2812,6 @@ Equipped abilities:
 – Maximum Hit Points: +10
 
 Weight: 1
-
 Usable By:
  Cleric
  Paladin~
@@ -2979,7 +2832,6 @@ Equipped abilities:
 – Maximum Hit Points: +10
 
 Weight: 1
-
 Usable By:
  Cleric
  Paladin~
@@ -2992,7 +2844,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Weight: 1
-
 Usable By:
  Bard~
 @1311 = ~Wondrous Gloves~ // BG2: These gem-studded leather gloves are enchanted so as to augment the skills of any bard.
@@ -3007,7 +2858,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 7th
 
 Weight: 1
-
 Usable By:
  Bard~
 @1313 = ~Bands of Focus~ // BG2: Tzu-Zan's Bracers: Although monks traditionally shun armor, these gauntlets of Grandmaster Tzu-Zan are highly sought after by the practitioners of weaponless combat.
@@ -3025,7 +2875,6 @@ Equipped abilities:
 – Physical Resistance: +10%
 
 Weight: 1
-
 Usable By:
  Fighter (true class)
  Monk
@@ -3044,7 +2893,6 @@ Equipped abilities:
 – Physical Resistance: +10%
 
 Weight: 1
-
 Usable By:
  Fighter (true class)
  Monk
@@ -3125,7 +2973,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3146,7 +2993,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3170,7 +3016,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3191,7 +3036,6 @@ Requires:
  10 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -3213,7 +3057,6 @@ Requires:
  10 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -3237,7 +3080,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Druid
  Mage
@@ -3257,7 +3099,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3277,7 +3118,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3300,7 +3140,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3330,7 +3169,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3354,7 +3192,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3374,7 +3211,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -3394,7 +3230,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -3416,7 +3251,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -3438,7 +3272,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Usable By:
  Bard~
 @1361 = ~Bladesinger Chain +4~
@@ -3454,7 +3287,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -3476,7 +3308,6 @@ Requires:
  8 Strength
 
 Weight: 35
-
 Not Usable By:
  Bard
  Mage
@@ -3499,7 +3330,6 @@ Requires:
  10 Strength
 
 Weight: 45
-
 Usable By:
  Cleric
  Paladin
@@ -3520,7 +3350,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -3542,7 +3371,6 @@ Requires:
  8 Strength
 
 Weight: 35
-
 Not Usable By:
  Bard
  Mage
@@ -3561,7 +3389,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -3583,7 +3410,6 @@ Equipped abilities:
 – Saving Throws: +1
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1376 = ~Cloak of Protection +2~
@@ -3597,7 +3423,6 @@ Equipped abilities:
 – Saving Throws: +2
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1378 = ~Cloak of Displacement~ // BG1/BG2: The Cloak of Displacement is a magical item that causes subtle shifts in the image of its wearer. It has the power to actually shift an individual's image by as much as six inches in any direction from their actual location. Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
@@ -3611,7 +3436,6 @@ Equipped abilities:
 – Displacement: wearer gains a +2 bonus to AC (+4 vs. missile weapons) and a +3 bonus to saves vs. breath and wand
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1380 = ~Cloak of the Wolf~
@@ -3637,7 +3461,6 @@ Equipped abilities:
 – Regeneration: 1 HP/round
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1382 = ~Cloak of Balduran~
@@ -3653,7 +3476,6 @@ Equipped abilities:
 – Regeneration: 1 HP/2 rounds
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1384 = ~Cloak of Non-Detection~ // BG1/BG2: Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success. No record exists of previous owners.
@@ -3666,7 +3488,6 @@ Equipped abilities:
 – Spell: Non-Detection
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1386 = ~Nymph Cloak~ // BG1/BG2: The fabled Nymph Cloak is renowned for its ability to increase the charisma of even the most surly dwarf. A Cormyrean noble hoping to make her politically convenient marriage more palatable apparently went to great expense to obtain one for herself and another for her husband.
@@ -3682,7 +3503,6 @@ Equipped abilities:
 – Charisma: +2
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1388 = ~Algernon's Cloak~
@@ -3697,7 +3517,6 @@ Equipped abilities:
 – Charisma: +1
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1390 = ~Mage Robe~
@@ -3711,7 +3530,6 @@ Equipped abilities:
 – Cold Resistance: +50%
 
 Weight: 3
-
 Usable By:
  Mage~
 @1394 = ~Robe of Fire Resistance~
@@ -3723,7 +3541,6 @@ Equipped abilities:
 – Fire Resistance: +50%
 
 Weight: 3
-
 Usable By:
  Mage~
 @1396 = ~Robe of Electricity Resistance~
@@ -3735,7 +3552,6 @@ Equipped abilities:
 – Electricity Resistance: +50%
 
 Weight: 3
-
 Usable By:
  Mage~
 @1398 = ~Knave's Robe~
@@ -3748,7 +3564,6 @@ Equipped abilities:
 – Protects Against: Backstabs
 
 Weight: 4
-
 Usable By:
  Mage~
 @1400 = ~Traveler's Robe~
@@ -3762,7 +3577,6 @@ Equipped abilities:
 – Movement Rate: +2
 
 Weight: 4
-
 Usable By:
  Mage~
 @1402 = ~Adventurer's Robe~ // BG1/BG2: This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrifying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
@@ -3775,7 +3589,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 4
-
 Usable By:
  Mage~
 @1404 = ~Robe of the Weave~ // BG1/BG2: Robe of the Good Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of good alignment.
@@ -3787,7 +3600,6 @@ Equipped abilities:
 – Magic Resistance: +20%
 
 Weight: 6
-
 Usable By:
  Mage~
 @1406 = ~Robe of the Battlemage~ // BG1/BG2: Robe of the Neutral Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of neutral alignment.
@@ -3801,7 +3613,6 @@ Equipped abilities:
 – Maximum Hit Points: +10
 
 Weight: 6
-
 Usable By:
  Mage~
 @1408 = ~Robe of Arcane Might~ // BG1/BG2: Robe of the Evil Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of evil alignment.
@@ -3815,7 +3626,6 @@ Equipped abilities:
 – Arcane Caster Level: +2
 
 Weight: 6
-
 Usable By:
  Mage~
 @1410 = ~Cloak of the Shield~ // BG1/BG2: This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
@@ -3827,7 +3637,6 @@ Equipped abilities:
 – Armor Class: +3
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1412 = ~Cloak of Elvenkind~ // BG2: This green cloak resembles a normal cloak. Wearing it makes any person able to hide in shadows with astonishing ability. As per the thief ability though, the moment the wearer attacks or otherwise makes their presence known, the wearer must leave the shadows.
@@ -3841,7 +3650,6 @@ Equipped abilities:
 – Spell Immunity: Web
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1414 = ~Stormlord's Cloak~ // BG2: Cloak of Reflection: Vorn Druidslayer crafted this cloak and used it with great success in his campaign to eliminate the druids from all the woods south of Baldur's Gate. His campaign ended abruptly when he encountered a flock of wyverns, who were attracted by the cloak's sheen. They killed Vorn and used the cloak to cover their nest, serving to protect their young during electrical storms.
@@ -3859,7 +3667,6 @@ Equipped abilities:
 – Electricity Resistance: +25%
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1416 = ~Cloak of Nature's Vengeance~ // BG2: Cloak of the Stars: Thalanta the Fair created many types of cloaks, all known as Cloaks of the Stars. This particular version is simple, with three stars down each sleeve. Once per day, each star can be removed and thrown as a dart. The star disappears, only to return the next day.
@@ -3871,7 +3678,6 @@ Equipped abilities:
 – Nature's Vengeance: 33% chance creatures who strike the wearer are struck by lightning for 6d6 electrical damage (save vs. Breath at -2 for half)
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1418 = ~Cloak of Mirroring~ // BG2: Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water." Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
@@ -3885,7 +3691,6 @@ Equipped abilities:
 NOTE: Multiple image effects are not cumulative.
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1420 = ~Cloak of the Sewers~
@@ -3924,7 +3729,6 @@ Equipped abilities:
 – Charisma: -1
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1422 = ~Cloak of Bravery~
@@ -3938,7 +3742,6 @@ Equipped abilities:
 – Protects Against: Fear
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1424 = ~Cloak of Protection +3~ // BG2: Improved Cloak of Protection +2: The abilities conferred by this powerfully enchanted cloak attest to the fact that protection can take many forms—including hiding from view and running away.
@@ -3954,7 +3757,6 @@ Equipped abilities:
 – Saving Throw: +3
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1426 = ~Montolio's Cloak~ // BG2: This is the fabled cloak of Montolio DeBrouchee—the aged, blind mentor of the dark-elf ranger Drizzt Do'urden. Like his famous pupil, Montolio was a master at wielding two blades simultaneously.
@@ -3969,7 +3771,6 @@ Equipped abilities:
 – Blind Fighting: wearer fights without penalties even if unable to see and cannot be backstabbed
 
 Weight: 3
-
 Usable By:
  Ranger~
 @1428 = ~Dagger~
@@ -3985,7 +3786,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4004,7 +3804,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4027,7 +3826,6 @@ Requires:
  6 Strength
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4044,7 +3842,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4070,7 +3867,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4095,7 +3891,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4119,7 +3914,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4141,7 +3935,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4165,7 +3958,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4183,7 +3975,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4203,7 +3994,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4225,7 +4015,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4247,7 +4036,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4269,7 +4057,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4297,7 +4084,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4318,7 +4104,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4336,7 +4121,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -4351,7 +4135,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -4369,7 +4152,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -4389,7 +4171,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -4408,7 +4189,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -4428,7 +4208,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -4449,7 +4228,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -4475,7 +4253,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -4498,8 +4275,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -4517,8 +4293,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -4535,8 +4310,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -4561,7 +4335,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -4590,7 +4363,6 @@ Requires:
  5 Strength
 
 Weight: 40
-
 Not Usable By:
  Druid
  Mage
@@ -4610,7 +4382,6 @@ Equipped abilities:
 – Hide in Shadows: +60%
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @1493 = ~Halberd~
@@ -4636,7 +4407,6 @@ Requires:
  13 Strength
 
 Weight: 15
-
 Not Usable By:
  Cleric
  Druid
@@ -4666,7 +4436,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -4697,7 +4466,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -4728,7 +4496,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -4758,7 +4525,6 @@ Requires:
  8 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Mage
@@ -4786,7 +4552,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -4816,7 +4581,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -4836,7 +4600,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -4858,7 +4621,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -4884,7 +4646,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -4913,7 +4674,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -4938,7 +4698,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -4967,7 +4726,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -4989,7 +4747,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -5014,7 +4771,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -5044,7 +4800,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -5071,7 +4826,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -5102,7 +4856,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -5125,7 +4878,6 @@ Requires:
  13 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -5146,7 +4898,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5168,7 +4919,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5192,7 +4942,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5200,7 +4949,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1551 = ~Hammer of Corrosion +1~ // BG2: War Hammer +1, +4 vs. Giantkin: The Knee-Capper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
-@1552 = ~The Hammer of Corrosion—or "The Defiler," as it has become known in dwarven circles—is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenceless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
+@1552 = ~The Hammer of Corrosion—or "The Defiler," as it has become known in dwarven circles—is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenseless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
 
@@ -5217,7 +4966,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5242,7 +4990,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5270,7 +5017,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5294,7 +5040,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5315,7 +5060,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5348,7 +5092,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5376,7 +5119,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5411,7 +5153,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5432,7 +5173,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -5448,7 +5188,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5470,7 +5209,6 @@ Equipped abilities:
 NOTE: Multiple Bless effects are not cumulative.
 
 Weight: 3
-
 Not Usable By:
  Good-aligned characters
  Bard
@@ -5493,7 +5231,6 @@ Equipped abilities:
 NOTE: Multiple Bless effects are not cumulative.
 
 Weight: 3
-
 Not Usable By:
  Evil-aligned characters
  Bard
@@ -5513,7 +5250,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5532,7 +5268,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5551,7 +5286,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5573,7 +5307,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5588,7 +5321,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5603,7 +5335,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5618,7 +5349,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5636,7 +5366,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5661,7 +5390,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5682,7 +5410,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5719,7 +5446,6 @@ Equipped abilities:
 – Acid Resistance: -25%
 
 Weight: 0
-
 Usable By:
  All~
 @1600 = ~Dusty Rose Ioun Stone~
@@ -5731,7 +5457,6 @@ Equipped abilities:
 – Armor Class: +1
 
 Weight: 0
-
 Usable By:
  All~
 @1602 = ~Trueblood's Ioun Stone~ // BG2: Pale Green Ioun Stone: On his deathbed, aged hero Rigar Trueblood begged one last request of his mage companion Spectorial: that his skill and fortitude as a warrior live on. The reluctant friend consented and transferred these traits to an item, knowing the warrior's soul would then be lacking them. This pale green ioun stone now holds these essences, and grants the owner Trueblood's health and skill.
@@ -5744,7 +5469,6 @@ Equipped abilities:
 – Maximum Hit Points: +10%
 
 Weight: 0
-
 Usable By:
  All~
 @1604 = ~Red Dragonscale Helm~ // BG2: Dragon Helm: The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
@@ -5759,7 +5483,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -5776,7 +5499,6 @@ Equipped abilities:
 – Intelligence: +1
 
 Weight: 0
-
 Usable By:
  All~
 @1608 = ~Obsidian Ioun Stone~ // BG2: The tough obsidian stone imbues its owner with a similar hardiness.
@@ -5789,7 +5511,6 @@ Equipped abilities:
 – Constitution: +1
 
 Weight: 0
-
 Usable By:
  All~
 @1610 = ~Silver Ioun Stone~ // BG2: Perhaps the silver and gray in this stone hints at the knowledge that only comes with age and experience.
@@ -5802,7 +5523,6 @@ Equipped abilities:
 – Wisdom: +1
 
 Weight: 0
-
 Usable By:
  All~
 @1612 = ~Lavender Ioun Stone~
@@ -5815,7 +5535,6 @@ Equipped abilities:
 – Dexterity: +1
 
 Weight: 0
-
 Usable By:
  All~
 @1614 = ~Bronze Ioun Stone~ // BG2: The powerful enchantments on this ioun stone make it a treasure eagerly sought after by wizards and mages.
@@ -5827,7 +5546,6 @@ Equipped abilities:
 – Magic Resistance: +10%
 
 Weight: 0
-
 Usable By:
  All~
 @1616 = ~Golden Circlet~
@@ -5842,7 +5560,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 8th to 9th
 
 Weight: 1
-
 Usable By:
  Mage~
 @1620 = ~Thieves' Hood~
@@ -5856,7 +5573,6 @@ Equipped abilities:
 – Protects Against: Poison
 
 Weight: 1
-
 Usable By:
  Bard
  Thief~
@@ -5876,7 +5592,6 @@ Equipped abilities:
 – Protects Against: Poison
 
 Weight: 1
-
 Usable By:
  Bard
  Thief~
@@ -5893,7 +5608,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Usable By:
  Fighter~
 @1627 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear—not only in the people they seek to conquer, but also in their own warriors.
@@ -5911,7 +5625,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Usable By:
  Fighter~
 @1628 = ~Gold Horned Helm~
@@ -5925,7 +5638,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -5942,7 +5654,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -5962,7 +5673,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -5979,7 +5689,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -5997,7 +5706,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6019,7 +5727,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6036,7 +5743,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6056,7 +5762,6 @@ Equipped abilities:
 Armor Class: 4
 
 Weight: 0
-
 Usable By:
  Thief~
 @1648 = ~Karajah's Leather Armor +3~ // BG1: Karajah was Calimshan's undisputed champion of pit fighting for a decade. Wearing only a thin leather armor and spiked gauntlets, he would pummel his foes to the ground, seemingly impervious to their blows. Eventually, it was revealed that his armor was heavily enchanted at which point angry spectators threw him into the pit with a club-wielding ogre. The beast managed to break all of Karajah's bones while the armor remained as good as new...
@@ -6075,7 +5780,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -6091,7 +5795,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Mage
  Monk
@@ -6107,7 +5810,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -6123,7 +5825,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -6144,7 +5845,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Mage
  Monk
@@ -6166,7 +5866,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -6186,7 +5885,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6206,7 +5904,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6231,7 +5928,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6252,7 +5948,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -6273,7 +5968,6 @@ Requires:
  8 Strength
 
 Weight: 30
-
 Not Usable By:
  Mage
  Monk
@@ -6294,9 +5988,8 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
- Good or neutral-aligned characters
+ Good/Neutral-aligned characters
  Mage
  Monk
  Kensai
@@ -6311,9 +6004,8 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
- Good or neutral-aligned characters
+ Good/Neutral-aligned characters
  Mage
  Monk
  Kensai
@@ -6332,7 +6024,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Mage
  Monk
@@ -6353,7 +6044,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -6383,7 +6073,6 @@ Requires:
  18 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -6403,7 +6092,6 @@ Requires:
  12 Strength
 
 Weight: 30
-
 Not Usable By:
  Bard
  Druid
@@ -6426,7 +6114,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -6447,7 +6134,6 @@ Requires:
  5 Strength
 
 Weight: 15
-
 Not Usable By:
  Druid
  Mage
@@ -6470,7 +6156,6 @@ Special abilities:
 – Fireball (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1692 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6485,7 +6170,6 @@ Special abilities:
 – Improved Invisibility (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1693 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6500,7 +6184,6 @@ Special abilities:
 – Stoneskin (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1694 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6515,7 +6198,6 @@ Special abilities:
 – True Seeing (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1695 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6530,7 +6212,6 @@ Special abilities:
 – Confusion (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1696 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6545,7 +6226,6 @@ Special abilities:
 – Spell Shield (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1697 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6560,7 +6240,6 @@ Special abilities:
 – Invisible Stalker (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1698 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6575,7 +6254,6 @@ Special abilities:
 – Cloudkill (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1699 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6590,7 +6268,6 @@ Special abilities:
 – Domination (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1700 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -6605,7 +6282,6 @@ Special abilities:
 – Skull Trap (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1701 = ~Bottle~
@@ -6619,7 +6295,6 @@ Special abilities:
 – Summon Efreeti (once per day): 1 turn
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1705 = ~Figurine~
@@ -6645,7 +6320,6 @@ Special Characteristics:
 – Protected Against: Normal Weapons
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1709 = ~Black Spider Figurine~
@@ -6675,7 +6349,6 @@ Special Characteristics:
 – Web Tangle (three times per day): target is held for 2 rounds (save vs. Breath negates)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1711 = ~Horn~
@@ -6689,7 +6362,6 @@ Special abilities:
 – Sonic Blast (three times per day): an area of 10 ft. around the user is blasted with a powerful sonic wave, dealing 4d4 crushing and stunning opponents for 1 round (save vs. Breath neg. stun)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1715 = ~Gloves~
@@ -6713,7 +6385,6 @@ Special Characteristics:
 – Enrage (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @171700000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a fifth level warrior who will fight for the summoner for five turns.
@@ -6735,7 +6406,6 @@ Special Characteristics:
 – Enrage (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1718 = ~Bronze Horn of Valhalla~
@@ -6758,7 +6428,6 @@ Special Characteristics:
 – Enrage (twice per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @171900000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a seventh level warrior who will fight for the summoner for five turns.
@@ -6780,7 +6449,6 @@ Special Characteristics:
 – Enrage (twice per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1720 = ~Iron Horn of Valhalla~
@@ -6803,7 +6471,6 @@ Special Characteristics:
 – Enrage (three times per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @172100000 = ~In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service, these warriors must offer their abilities to any who blow one of these sacred horns. This horn will summon forth a ninth level warrior who will fight for the summoner for five turns.
@@ -6825,7 +6492,6 @@ Special Characteristics:
 – Enrage (three times per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1722 = ~Horn of Silence~
@@ -6837,7 +6503,6 @@ Special abilities:
 – Silence 15' Radius (three times per day): opponents within 15 ft. are silenced for 1 turn (save vs. Spell at -4 negates)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1724 = ~Harp~
@@ -6851,7 +6516,6 @@ Special abilities:
 – Confusion (three times per day): opponents within 15 ft. are confused for 5 rounds (save vs. Spell at -2 negates)
 
 Weight: 1
-
 Usable By:
  Bard~
 @1728 = ~Azlaer's Harp~
@@ -6867,7 +6531,6 @@ Special abilities:
 – Resist Fear (three times per day): allies within 15 ft. are immune to fear for 1 turn
 
 Weight: 1
-
 Usable By:
  Bard~
 @1730 = ~Methild's Harp~
@@ -6881,7 +6544,6 @@ Special abilities:
 – Break Enchantment (three times per day): an ally is freed from enchantments and/or curses currently affecting them
 
 Weight: 1
-
 Usable By:
  Bard~
 @1732 = ~Glasses of Identification~
@@ -6893,7 +6555,6 @@ Special abilities:
 – Identify (three times per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @1734 = ~Harper Pin~
@@ -6909,7 +6570,6 @@ Equipped abilities:
 – Spell Immunity: Magic Missile
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1737 = ~Wooden Stake~
@@ -6931,7 +6591,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -6956,7 +6615,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -6981,9 +6639,8 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
- Good or neutral-aligned characters
+ Good/Neutral-aligned characters
  Cleric
  Beast Master~
 @1745 = ~Quiver~
@@ -7007,7 +6664,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -7025,8 +6681,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 2
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -7051,7 +6706,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 2
-
 Not Usable By:
  Cleric
  Druid
@@ -7071,8 +6725,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 2
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -7131,9 +6784,8 @@ Requires:
  16 Strength
 
 Weight: 10
-
 Usable By:
- Neutral or evil-aligned paladins~
+ Evil/Neutral-aligned Paladin~
 @1764 = ~Protection Scroll~
 @1765 = ~Protection from Acid~
 @1766 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud the protective magic is released upon the reader. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
@@ -7143,7 +6795,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1768 = ~Protection from Cold~
@@ -7153,7 +6804,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1770 = ~Protection from Electricity~
@@ -7163,7 +6813,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1772 = ~Protection from Fire~
@@ -7173,7 +6822,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1774 = ~Protection from Magic~
@@ -7183,7 +6831,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1776 = ~Protection from Ailments~
@@ -7193,7 +6840,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1778 = ~Protection from Undead~
@@ -7203,7 +6849,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1780 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -7214,7 +6859,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize two extra spells of each level from 1st to 9th
 
 Weight: 0
-
 Usable By:
  Edwin~
 @178000000 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -7226,7 +6870,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 9th
 
 Weight: 0
-
 Usable By:
  Edwin~
 @1781 = ~This is Edwin's birthright, inlaid with his family stone.
@@ -7237,13 +6880,12 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 9th
 
 Weight: 0
-
 Usable By:
  Edwin~
 @1782 = ~Jansen AdventureWear~ // BG2: This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant a +25% resistance to all physical damage and an additional +5 bonus to Jan's armor class against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
 @1783 = ~Jansen-Brand Metal-Repellant AdventureWear - (patent pending)
 
-This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to the base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
+This strange armor is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armor does not give any bonuses to base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
 
 Note: dry clean only.
 
@@ -7257,11 +6899,28 @@ Requires:
  3 Strength
 
 Weight: 5
-
 Usable By:
  Jan Jansen~
+@1783 = ~Jansen-Brand Metal-Repellant AdventureWear - (patent pending)
+
+This strange armor is made of a foreign material, very supple but strong to the touch. Te armor does not give any bonuses to base armor class, but it does grant resistance to all physical damage and additional protection against missile weapons. The user may also cast spells while wearing this armor. In addition, the armor is stylish.
+
+Note: dry clean only.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4 vs. missile attacks
+– Physical Resistance: +20%
+
+Requires:
+ 3 Strength
+
+Weight: 5
+Usable By:
+ Thief~
 @1784 = ~Bow of Arvoreen +2~ // BG2: This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by halflings, granting a +2 bonus to hit rolls.
-@1785 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen.
+@1785 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by Mazzy.
 
 STATISTICS:
 
@@ -7276,9 +6935,25 @@ Requires:
  3 Strength
 
 Weight: 2
+Usable By:
+ Mazzy~
+@178500000 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen.
 
+STATISTICS:
+
+Equipped abilities:
+– Spell: Free Action
+
+THAC0: +2
+Speed Factor: 4
+Proficiency Type: Shortbow
+Type: Two-handed
+Requires:
+ 3 Strength
+
+Weight: 2
 Not Usable By:
- Neutral or evil-aligned characters
+ Evil/Neutral-aligned characters
  Cleric
  Druid
  Mage
@@ -7291,10 +6966,25 @@ Not Usable By:
 STATISTICS:
 
 Weight: 1
-
 Usable By:
  Imoen~
 @1788 = ~Corthala Family Armor +2~ // BG2: This armor, long in the Corthala bloodline, protects the user against all forms of attacks. The armor is enchanted so that it grants a +3 bonus to Valygar's armor class. It also adds a bonus to resisting acid, fire and magical damage. The armor also makes Valygar immune to charm while he wears it. As it is specially fitted for Valygar, few other than he may wear it.
+@1789 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. This armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages, making the wearer immune to charm and detection by magical means. As it is specially fitted for Valygar, few other than he may wear it.
+
+STATISTICS:
+
+Equipped abilities:
+– Spell: Non-Detection
+– Protects Against: Charm and Domination
+– Mithral: +1 to Armor Class
+
+Armor Class: 3
+Requires:
+ 6 Strength
+
+Weight: 20
+Usable By:
+ Valygar~
 @1789 = ~This armor, long in the Corthala bloodline, is a heavily enchanted mithral chain mail. This armor has been crafted by powerful mages of the Corthala family in order to effectively fight other mages, making the wearer immune to charm and detection by magical means.
 
 STATISTICS:
@@ -7309,7 +6999,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Druid
  Mage
@@ -7318,8 +7007,8 @@ Not Usable By:
  Archer
  Beast Master
  Kensai~
-@1790 = ~Cloak of the High Forest~ // BG2: Only Cernd may use this cloak.
-@1791 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature.  He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it.
+@1790 = ~Cloak of the High Forest~
+@1791 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature. He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it. Only Cernd may use this cloak.
 
 STATISTICS:
 
@@ -7329,13 +7018,24 @@ Equipped abilities:
 – Spell Immunity: Summon Insects, Insect Plague, and Creeping Doom
 
 Weight: 3
-
 Usable By:
- Druid (single-class)~
-@1792 = ~Jansen Spectroscopes~
+ Cenrd~
+@179100000 = ~When he was younger, Cernd spent a cycle of seasons meditating on his role within nature. He made no shelter, wanting to feel the land unhindered. Nature may have appreciated the intent; she also knows that, for all their dedication, at times her children can be foolish. Cernd found this cloak before the cold season set in, seemingly woven to fit him from the very undergrowth. The message was clear: he can appreciate the rain while still seeking shelter from it.
+
+STATISTICS:
+
+Equipped abilities:
+– Elemental Resistance: +15%
+– Regeneration: 1 HP/5 rounds
+– Spell Immunity: Summon Insects, Insect Plague, and Creeping Doom
+
+Weight: 3
+Usable By:
+ Druid~
+@1792 = ~Jansen Spectroscopes~ // BG2: Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. They also give Jan an additional +25% to his detect and disarm traps abilities. Various lenses on the contraption increase Jan's ability to detect illusions by 20%. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
 @1793 = ~Jansen-Brand Micro-Macro Spectroscopes (Official Spectroscopes of the Purple Brotherhood)
 
-Another one of Jan Jansen's inventions, these glasses allow Jan to detect invisibility once per day. They also give Jan an additional +25% to his detect and disarm traps abilities. Various lenses on the contraption increase Jan's ability to detect illusions by 20%. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
+Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. Various lenses on the contraption increase Jan's ability to detect traps and illusions. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
 
 STATISTICS:
 
@@ -7348,9 +7048,25 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 1
-
 Usable By:
  Jan Jansen~
+@179300000 = ~Jansen-Brand Micro-Macro Spectroscopes (Official Spectroscopes of the Purple Brotherhood)
+
+Another one of Jan Jansen's inventions, these glasses are the official spectroscopes of the Purple Brotherhood and allow Jan to detect invisibility once per day. Various lenses on the contraption increase Jan's ability to detect traps and illusions. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
+
+STATISTICS:
+
+Special abilities:
+– Detect Invisibility (once per day)
+
+Equipped abilities:
+– Find Traps: +20%
+– Detect Illusions: +20%
+– Protects against critical hits
+
+Weight: 1
+Usable By:
+ Thief~
 @1794 = ~Jansen Techno-Gloves~
 @1795 = ~Jansen-Brand Techno-Thieving Gadgetizer Gloves (TM)
 
@@ -7365,11 +7081,25 @@ Equipped abilities:
 Armor Class: 5
 
 Weight: 1
-
 Usable By:
  Jan Jansen~
-@1796 = ~Staff of the High Forest +2~ // BG2: It has grown to fit his grip, and few others may wield it.
-@1797 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself.
+@1795 = ~Jansen-Brand Techno-Thieving Gadgetizer Gloves (TM)
+
+This set of thieving tools gives Jan an additional bonus to both his lock picking and pick pocketing. Oddly, he seems to be able to actually cast spells while wearing the things. Must be because they got style.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: +20%
+– Pick Pockets: +20%
+
+Armor Class: 5
+
+Weight: 1
+Usable By:
+ Thief~
+@1796 = ~Staff of the High Forest +2~
+@1797 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself. It has grown to fit his grip, and few others may wield it.
 
 STATISTICS:
 
@@ -7385,11 +7115,28 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
- Druid (single-class)~
+ Cernd~
+@179700000 = ~This staff was the culmination of a cycle of seasons in which Cernd meditated on his role within nature. His perch for this personal journey was next to a sapling, a young oak that was a particular interest of study; it seemed odd, and yet somehow wonderfully ordered. At the coming of spring Cernd examined it one last time, and it came loose in his hands, a living staff, granted as boon from nature herself.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Speed: +1
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4
+Usable By:
+ Druid~
 @1798 = ~Firecam Full Plate Mail +2~ // BG2: Full plate armor is the best armor a warrior can buy, both in appearance and protection. This armor increases the wearer's armor class by one above that of normal full plate. While equipped, the suit provides the wearer with a +1 bonus to all saving throws and grants the wearer Free Action (the ability to pass through webs and other effects). This suit was designed for Keldorn, and only he may wear it.
-@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical shield. Anyone who dares attack Torm's favored suffers proper retribution as the god's shield strikes back with its magical energy.
+@1799 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical barrier. Anyone who dares attack Torm's favored suffers proper retribution as the barrier strikes back with its magical energy. This suit is designed for Keldorn and only he can wear it without incurring in Torm's wrath.
 
 STATISTICS:
 
@@ -7402,19 +7149,32 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Usable By:
- Paladin~
+ Keldorn~
+@179900000 = ~This armor belonged to the Firecam House for generations, but it never had seen such glory before being passed on to Keldorn. Keldorn had proven himself to be one of the mightiest and most devoted champions of Torm, and the god himself blessed the suit, bestowing his protection in the form of a magical barrier. Anyone who dares attack Torm's favored suffers proper retribution as the barrier strikes back with its magical energy.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Death: +3
+– Retribution: creatures who strike the wearer in melee suffer 1d4 magic damage
+
+Armor Class: -1
+Requires:
+ 15 Strength
+
+Weight: 60
+Usable By:
+ Good-aligned Paladin~
 @1800 = ~Ring~
 @1801 = ~De'Arnise Signet Ring~ // BG2: This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring may not be removed from Nalia, nor its powers used by anyone else. The ring grants a +2 bonus to all saving throws, +2 armor class bonus, and 50% resistance to fire.
 @1802 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
-@1803 = ~This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring's powers may not be used by anyone else.
+@1803 = ~This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring may not be removed from Nalia, nor its powers used by anyone else.
 
 STATISTICS:
 
 Equipped abilities:
 – Luck: +2 (+10% for skills)
-
 Usable By:
  Nalia~
 @1804 = ~Delryn Family Shield +2~ // BG2: This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy. This protection from normal missiles can be used three times per day.
@@ -7434,7 +7194,24 @@ Requires:
  12 Strength
 
 Weight: 15
+Usable By:
+ Anomen~
+@180500000 = ~This is Anomen's family shield, given to him by his father. In addition to magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, they can use the shield to erect a field of protective energy around themselves.
 
+STATISTICS:
+
+Special abilities:
+– Protection from Normal Missiles (once per day): 1 turn
+
+Equipped abilities:
+– Armor Class: +3
+– Fire Resistance: +25%
+– Cold Resistance: +25%
+
+Requires:
+ 12 Strength
+
+Weight: 15
 Not Usable By:
  Bard
  Druid
@@ -7442,8 +7219,8 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1806 = ~Sword of Arvoreen +2~ // BG2: Another gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
-@1807 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow and weaken any opponent struck by it.
+@1806 = ~Sword of Arvoreen +2~
+@1807 = ~Another gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
 
 STATISTICS:
 
@@ -7459,9 +7236,26 @@ Requires:
  5 Strength
 
 Weight: 3
+Usable By:
+ Mazzy~
+@180700000 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow and weaken any opponent struck by it.
 
+STATISTICS:
+
+Combat abilities:
+– Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3
 Not Usable By:
- Neutral or evil-aligned characters
+ Evil-aligned characters
  Cleric
  Druid
  Mage
@@ -7484,12 +7278,29 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Usable By:
  Yoshimo~
+@181000000 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
+
+STATISTICS:
+
+Combat abilities:
+– Toxins: target suffers 1 poison damage every second for 1 round (save vs. Poison negates)
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5
+Usable By:
+ Thief~
 @1811 = ~Usuno's Blade +3~
 @1812 = ~Hallowed Redeemer +2~ // BG2: Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. It is exceptionally accurate, but also protects him in battle with a special Fireshield, and any that strike him while he wields it suffer Torm's wrath in the form of magical damage. None but Keldorn may use this sword.
-@1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenceless while judgement falls upon them.
+@1813 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenseless while judgement falls upon them.
 
 STATISTICS:
 
@@ -7506,11 +7317,30 @@ Requires:
  14 Strength
 
 Weight: 8
+Usable By:
+ Keldorn~
+@181300000 = ~Keldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. The blessed weapon is imbued with holy power, and it has been forged to eradicate any source of evil wherever it lies. Furthermore, the inquisitor's blade is the bane of evil practitioners of magic because of its power to silence, leaving spellcasters defenseless while judgement falls upon them.
 
+STATISTICS:
+
+Combat abilities:
+– Righteous: +3 to damage against evil creatures
+– Heretic's Doom: target is silenced for 2 rounds (save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+ Alignment: Good
+
+Weight: 8
 Usable By:
  Paladin~
-@1814 = ~Corthala Family Katana +2~ // BG2: This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins. This +2 blade causes additional bleeding damage when it strikes an opponent.
-@1815 = ~This fine katana radiates magical energy. The blade was designed to give the wielder an edge over spellcasters by disrupting their casting abilities.
+@1814 = ~Corthala Family Blade +2~ // BG2: This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins. This +2 blade causes additional bleeding damage when it strikes an opponent.
+@1815 = ~This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins, giving the wielder an edge over spellcasters by disrupting their casting abilities.
 
 STATISTICS:
 
@@ -7529,14 +7359,34 @@ Requires:
  6 Strength
 
 Weight: 5
+Usable By:
+ Valygar~
+@181500000 = ~This fine katana radiates magical energy, and the blade was designed to give the wielder an edge over spellcasters by disrupting their casting abilities.
 
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Spell: +3
+
+Combat abilities:
+– Spell Disruption: target suffers +10% cumulative chance of spell failure for 5 rounds
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5
 Not Usable By:
  Cleric
  Druid
  Mage
  Beast Master~
 @1816 = ~Entropy +2~ // BG2: This +2 abyssal greensteel blade is one of Haer'Dalis's favorite weapons. This short sword is capable of inflicting an additional 3 points of poison damage if the target fails a Saving Throw. This blade may only be used by tieflings.
-@1817 = ~This Baatorian green steel blade is one of Haer'Dalis' favorite weapons. This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the lower planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar'ri). This metal is also known as banesteel due to the fact that weapons made of green steel strike more often and are able to penetrate armor very easily.
+@1817 = ~This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the Lower Planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar’ri). This metal is also known as banesteel because the material tends to mirror the baatezu's fondness for surgical strikes - weapons made of baatorian green steel inflict far more critical hits than their mundane counterparts. This abyssal green steel blade is one of Haer'Dalis' favorite weapons.
 
 STATISTICS:
 
@@ -7553,14 +7403,32 @@ Requires:
  5 Strength
 
 Weight: 3
+Usable By:
+ Haer'Dalis~
+@181700000 = ~This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the Lower Planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar’ri). This metal is also known as banesteel because the material tends to mirror the baatezu's fondness for surgical strikes - weapons made of baatorian green steel inflict far more critical hits than their mundane counterparts. This abyssal green steel blade is one of Haer'Dalis' favorite weapons. This abyssal green steel blade is one of Haer'Dalis' favorite weapons.
 
+STATISTICS:
+
+Combat abilities:
+– Poisonous: target suffers 1d4 poison damage
+– Entropy: target suffers -1 to Saving Throws for 2 rounds
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3
 Not Usable By:
  Cleric
  Druid
  Mage
  Beast Master~
 @1818 = ~Chaos +2~ // BG2: Chaos is a +2 short sword usable only by tieflings. Every time it strikes an opponent, he or she loses 2 points of Dexterity for 5 rounds. Haer'Dalis prefers using Chaos with its partner—Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
-@1819 = ~This Tanar'ri red steel blade is one of Haer'Dalis' favorite weapons. This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar'ri. Red steel is also known as bloodsteel. Besides being the color of fresh blood, weapons made from red steel have a tendency to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual-wielding these two blades, Haer'Dalis is a dangerous opponent.
+@1819 = ~This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar’ri. Tanar'ri red steel is also known as bloodsteel - both for being the color of fresh blood as well as the tendency for weapons forged of this metal to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
 
 STATISTICS:
 
@@ -7577,7 +7445,25 @@ Requires:
  5 Strength
 
 Weight: 3
+Usable By:
+ Hear'Dalis~
+@181900000 = ~This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar’ri. Tanar'ri red steel is also known as bloodsteel - both for being the color of fresh blood as well as the tendency for weapons forged of this metal to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
 
+STATISTICS:
+
+Combat abilities:
+– Lacerating: target suffers 1 bleeding damage every round for 2 rounds
+– Confusing: 33% chance target is confused for 2 rounds (save vs. Spell negates)
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3
 Not Usable By:
  Cleric
  Druid
@@ -7601,7 +7487,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Good-aligned characters
  Mage
@@ -7626,9 +7511,26 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Usable By:
  Jan Jansen~
+@182400000 = ~This is Jan Jansen's crossbow, and only he can make the special ammunition it is capable of firing. Substantial tinkering on this launcher has made it especially accurate, and projectiles fired from this bow erupt in a flash of light that can potentially blind any opponent.
+
+STATISTICS:
+
+Combat abilities:
+– Blinding: 33% chance target blinded for 2 rounds (save vs. Breath negates)
+
+THAC0: +2
+Damage: +2 (missile)
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type: Two-handed
+Requires:
+ 8 Strength
+
+Weight: 4
+Usable By:
+ Thief~
 @1825 = ~Plate Mail~
 @1826 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.
 
@@ -7639,7 +7541,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7662,7 +7563,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7683,7 +7583,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -7705,7 +7604,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -7730,7 +7628,6 @@ Requires:
  8 Strength
 
 Weight: 25
-
 Not Usable By:
  Bard
  Mage
@@ -7758,7 +7655,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7782,7 +7678,6 @@ Requires:
  12 Strength
 
 Weight: 30
-
 Not Usable By:
  Bard
  Druid
@@ -7804,7 +7699,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7829,7 +7723,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7857,7 +7750,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7884,7 +7776,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Druid
@@ -7910,7 +7801,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Evil-aligned characters
  Chaotic-aligned characters
@@ -7938,7 +7828,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -7966,7 +7855,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Good-aligned characters
  Bard
@@ -7992,7 +7880,6 @@ Requires:
  8 Strength
 
 Weight: 40
-
 Not Usable By:
  Bard
  Mage
@@ -8016,7 +7903,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -8041,7 +7927,6 @@ Requires:
  12 Strength
 
 Weight: 50
-
 Not Usable By:
  Bard
  Mage
@@ -8068,7 +7953,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -8096,7 +7980,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Bard
  Druid
@@ -8116,7 +7999,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -8138,7 +8020,6 @@ Equipped abilities:
 – Fire Resistance: +50%
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1865 = ~Band of the Forest~ // BG1/BG2: Ring of Animal Friendship
@@ -8151,7 +8032,6 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Weight: 0
-
 Usable By:
  Druid
  Ranger~
@@ -8165,7 +8045,6 @@ Special abilities:
 – Invisibility (three times per day): 5 turns
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1869 = ~Ring of Protection +1~ // BG1/BG2: Ring of the Princes: This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.
@@ -8178,7 +8057,6 @@ Equipped abilities:
 – Saving Throws: +1
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1871 = ~Ring of Protection +2~
@@ -8192,7 +8070,6 @@ Equipped abilities:
 – Saving Throws: +2
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1873 = ~Ring of Wizardry~ // BG1/BG2: Reaching Ring: This ring is masterfully enchanted, allowing the wearer to memorize more spells than normally possible. It was originally commissioned by spellcaster <CHARNAME>, apparently at great monetary and personal cost.
@@ -8205,7 +8082,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Weight: 0
-
 Usable By:
  Mage~
 @1875 = ~Ring of Free Action~
@@ -8218,7 +8094,6 @@ Equipped abilities:
 – Spell: Free Action
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1877 = ~Ring of Energy~
@@ -8234,7 +8109,6 @@ Equipped abilities:
 – Magic Damage Resistance: +25%
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1879 = ~Ring of Night's Embrace~ // BG1/BG2: Ring of Infravision: Topsider's Crutch: Merchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground.
@@ -8247,7 +8121,6 @@ Equipped abilities:
 – Spell: Infravision
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1881 = ~Ring of Holiness~ // BG1/BG2: Honorary Ring of Sune: Rings of this type were given to faithful priests of Sune who demonstrated actions of astounding integrity and kindness.
@@ -8260,7 +8133,6 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 1st to 4th
 
 Weight: 0
-
 Usable By:
  Cleric
  Paladin~
@@ -8273,7 +8145,6 @@ Special abilities:
 – Limited Wish (once per day)
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1885 = ~Ring of Fire Control~
@@ -8289,7 +8160,6 @@ Equipped abilities:
 – Fire Resistance: +50%
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1887 = ~Ring of Air Control~
@@ -8305,7 +8175,6 @@ Equipped abilities:
 – Spell Immunity: Stinking Cloud, Cloudkill, Acid Fog, and Incendiary Cloud
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1889 = ~Ring of Earth Control~
@@ -8321,7 +8190,6 @@ Equipped abilities:
 – Armor Class: +2
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1891 = ~Ring of Human Influence~
@@ -8337,7 +8205,6 @@ Equipped abilities:
 – Human Influence: +2 to Armor Class and Saving Throws vs. humans
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1893 = ~Ring of Regeneration~
@@ -8349,7 +8216,6 @@ Equipped abilities:
 – Regeneration: 1 HP/round
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1895 = ~Ring of the Ram~
@@ -8364,7 +8230,6 @@ Combat Abilities (monks only):
 – Knockdown: 33% chance creatures struck by the wearer in melee are knocked unconscious for 1 round (save vs. Death negates)
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1897 = ~Ring of Spell Turning~
@@ -8379,7 +8244,6 @@ Equipped abilities:
 – Magic Resistance: +10%
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1899 = ~Ring of the Burglar~ // BG2: Ring of Lock Picks
@@ -8392,7 +8256,6 @@ Equipped abilities:
 – Open Locks: +20%
 
 Weight: 0
-
 Usable By:
  Thief~
 @1901 = ~Ring of Danger Sense~
@@ -8406,7 +8269,6 @@ Equipped abilities:
 – Protects Against: Backstabs
 
 Weight: 0
-
 Usable By:
  Monk
  Thief~
@@ -8425,7 +8287,6 @@ Equipped abilities:
 – Protects Against: Disease and Poison
 
 Weight: 0
-
 Not Usable By:
  Paladin
  Wizard Slayer~
@@ -8438,7 +8299,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 0
-
 Usable By:
  Mage~
 @1907 = ~Ring of Protection +3~
@@ -8452,7 +8312,6 @@ Equipped abilities:
 – Saving Throws: +3
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1909 = ~Ring of the Wraith~ // BG2: Ring of Improved Invisibility
@@ -8468,7 +8327,6 @@ Equipped abilities:
 – Wraith Form: the wearer moves silently and cannot be backstabbed, is vulnerable only to magical weapons or attacks, and is immune to spells and abilities that don't affect incorporeal creatures
 
 Weight: 0
-
 Usable By:
  Thief~
 @1911 = ~Heartwood Ring~
@@ -8481,7 +8339,6 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 1
-
 Usable By:
  Druid~
 @1913 = ~Ring of Larloch~ // BG2: Ring of Anti-Venom: This ring is an unadorned silver band. However, its plain appearance belies the powerful magic within. A Ring of Anti-Venom is eagerly sought after by royalty, influential political figures, and other potential assassination targets.
@@ -8497,7 +8354,6 @@ Combat abilities:
 – Vampiric: creatures struck by the wearer in melee are drained 1d4 Hit Points and transfer them to the wearer
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @1915 = ~Rod~
@@ -8522,7 +8378,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @1920 = ~Sling~
@@ -8537,7 +8392,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8556,7 +8410,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8574,7 +8427,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8592,7 +8444,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8619,7 +8470,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8642,7 +8492,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8665,7 +8514,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8693,7 +8541,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8722,7 +8569,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -8739,7 +8585,6 @@ Requires:
  4 Strength
 
 Weight: 6
-
 Not Usable By:
  Bard
  Druid
@@ -8761,7 +8606,6 @@ Requires:
  4 Strength
 
 Weight: 6
-
 Not Usable By:
  Bard
  Druid
@@ -8780,7 +8624,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -8800,7 +8643,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -8820,7 +8662,6 @@ Requires:
  15 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -8841,7 +8682,6 @@ Requires:
  15 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -8863,7 +8703,6 @@ Requires:
  15 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -8884,7 +8723,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -8903,7 +8741,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -8922,7 +8759,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -8944,7 +8780,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -8963,7 +8798,6 @@ Requires:
  10 Strength
 
 Weight: 10
-
 Not Usable By:
  Bard
  Mage
@@ -8986,7 +8820,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -9007,7 +8840,6 @@ Requires:
  15 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -9033,7 +8865,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -9052,7 +8883,6 @@ Requires:
  4 Strength
 
 Weight: 6
-
 Not Usable By:
  Bard
  Druid
@@ -9073,7 +8903,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Mage
@@ -9095,7 +8924,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -9116,7 +8944,6 @@ Requires:
  4 Strength
 
 Weight: 6
-
 Not Usable By:
  Bard
  Druid
@@ -9136,7 +8963,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -9156,7 +8982,6 @@ Requires:
  15 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -9185,7 +9010,6 @@ Requires:
  15 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -9207,7 +9031,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Usable By:
  Cleric
  Paladin~
@@ -9223,7 +9046,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9244,7 +9066,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9271,7 +9092,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9292,7 +9112,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9313,7 +9132,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9338,7 +9156,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Mage
@@ -9367,7 +9184,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9394,7 +9210,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9421,7 +9236,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9454,7 +9268,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9490,7 +9303,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -9510,7 +9322,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2011 = ~Quarterstaff +1~
@@ -9528,7 +9339,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2014 = ~Staff of Striking +3~
@@ -9548,7 +9358,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2016 = ~Staff Mace +2~
@@ -9565,7 +9374,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2018 = ~Staff Spear +2~
@@ -9582,7 +9390,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2020 = ~Martial Staff +2~ // BG1: Aule's Staff +3: This finely crafted stave was among the spoils taken from the invaders of Durlag's Tower. It is very deadly in combat, and was apparently the property of a spellcaster that enjoyed standing on the frontlines. It appears to have a core of iron, yet it is comparable in weight to a normal weapon of its type. Part of the enchantment seems to come from the hide that strengthens the grip; leather no doubt made from a battle-ready creature of some sort. With the tastes and inclinations of the attackers of the Tower well documented, the hide could be almost anything...or anyone.
@@ -9605,7 +9412,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2022 = ~Staff of Command +3~
@@ -9635,7 +9441,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Mage~
 @2024 = ~Staff of Curing +1~
@@ -9658,7 +9463,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Cleric~
 @2026 = ~Staff of the Magi +5~
@@ -9686,7 +9490,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Mage~
 @2028 = ~Staff of Power +3~
@@ -9711,7 +9514,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Mage~
 @2030 = ~Staff of Thunder and Lightning +2~
@@ -9736,7 +9538,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Druid~
 @2032 = ~Staff of the Woodlands +4~
@@ -9771,7 +9572,6 @@ Requires:
  5 Strength
 
 Weight: 2
-
 Usable By:
  Druid~
 @2034 = ~Staff of Air +2~
@@ -9795,7 +9595,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2036 = ~Staff of Earth +2~
@@ -9819,7 +9618,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2038 = ~Staff of Fire +2~
@@ -9843,7 +9641,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2040 = ~Quarterstaff +2~
@@ -9860,7 +9657,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2042 = ~Cleric's Staff +3~
@@ -9886,7 +9682,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Cleric~
 @2044 = ~Staff of Rhynn +3~
@@ -9912,7 +9707,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Cleric
  Druid
@@ -9934,7 +9728,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2048 = ~Staff of the Ram +5~
@@ -9957,7 +9750,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2050 = ~Serpent Shaft +3~
@@ -9978,7 +9770,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2052 = ~Quarterstaff +3~
@@ -9995,7 +9786,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2054 = ~Bastard Sword~
@@ -10011,7 +9801,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10034,7 +9823,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10065,7 +9853,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Chaotic-aligned characters
  Cleric
@@ -10086,7 +9873,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10107,7 +9893,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10130,7 +9915,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10149,7 +9933,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10170,7 +9953,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10190,7 +9972,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10216,7 +9997,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10243,7 +10023,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -10266,7 +10045,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -10283,7 +10061,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -10302,7 +10079,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -10324,7 +10100,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -10349,7 +10124,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10373,7 +10147,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10402,7 +10175,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10431,7 +10203,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10455,7 +10226,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10480,7 +10250,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -10508,7 +10277,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10539,7 +10307,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -10575,7 +10342,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10610,7 +10376,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10636,7 +10401,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10667,7 +10431,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10696,7 +10459,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10720,7 +10482,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10745,7 +10506,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10770,7 +10530,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10798,7 +10557,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10818,7 +10576,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -10838,7 +10595,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -10858,7 +10614,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -10879,7 +10634,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -10906,7 +10660,6 @@ Requires:
  16 Dexterity
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -10925,7 +10678,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10946,7 +10698,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10965,7 +10716,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -10986,7 +10736,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -11020,7 +10769,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -11049,7 +10797,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11073,7 +10820,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11104,10 +10850,9 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
- Lawful good or evil-aligned characters
- Chaotic good or evil-aligned characters
+ Lawful Good/Evil-aligned characters
+ Chaotic Good/Evil-aligned characters
  Cleric
  Druid
  Mage
@@ -11126,7 +10871,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -11159,7 +10903,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -11195,7 +10938,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -11222,7 +10964,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -11253,7 +10994,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -11288,7 +11028,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -11326,7 +11065,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -11361,9 +11099,8 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
- Neutral or evil-aligned characters
+ Evil/Neutral-aligned characters
  Cleric
  Druid
  Mage
@@ -11403,9 +11140,8 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
- Neutral or evil-aligned characters
+ Evil/Neutral-aligned characters
  Cleric
  Druid
  Mage
@@ -11429,7 +11165,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -11455,7 +11190,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -11495,7 +11229,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11533,7 +11266,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11578,7 +11310,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11622,7 +11353,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11652,7 +11382,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -11686,7 +11415,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -11706,7 +11434,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -11728,7 +11455,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -11748,7 +11474,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -11768,7 +11493,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Druid
@@ -11788,7 +11512,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -11814,7 +11537,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -11832,7 +11554,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -11854,7 +11575,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -11884,7 +11604,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -11909,7 +11628,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -11941,7 +11659,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -11967,7 +11684,6 @@ Requires:
  16 Strength
 
 Weight: 10
-
 Not Usable By:
  Good-aligned characters
  Cleric
@@ -11994,7 +11710,6 @@ Requires:
  18 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -12028,7 +11743,6 @@ Requires:
  16 Strength
 
 Weight: 10
-
 Usable By:
  Good-aligned paladins~
 @2201 = ~Two-handed Sword +2~
@@ -12045,7 +11759,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12071,7 +11784,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12100,7 +11812,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12126,7 +11837,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12151,7 +11861,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12181,7 +11890,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12214,7 +11922,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12251,7 +11958,6 @@ Requires:
  16 Strength
 
 Weight: 10
-
 Usable By:
  Good-aligned paladins~
 @2217 = ~Two-handed Sword +3~
@@ -12268,7 +11974,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12298,7 +12003,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12316,7 +12020,6 @@ Equipped abilities:
 – Protects Against: Hold and Stun
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2223 = ~Dak'kon's Zerth Blade +2~
@@ -12343,7 +12046,6 @@ Requires:
  6 Strength
 
 Weight: 5
-
 Usable By:
  Bard
  Fighter/Mage
@@ -12366,7 +12068,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -12390,7 +12091,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -12414,7 +12114,6 @@ Equipped abilities:
 – Set Traps: +20%
 
 Weight: 0
-
 Usable By:
  Thief~
 @2231 = ~Robe of Larloch~
@@ -12432,7 +12131,6 @@ Equipped abilities:
 – Casting Speed: +2
 
 Weight: 4
-
 Usable By:
  Mage~
 @2234 = ~A circlet is a circular band, typically made of precious metal, worn on the head as an ornament or symbol of status. Circlets carrying low-level enchantments are commonly worn by mages across Faerûn.~
@@ -12458,7 +12156,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -12479,7 +12176,6 @@ Requires:
  12 Strength
 
 Weight: 15
-
 Not Usable By:
  Bard
  Druid
@@ -12503,7 +12199,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12521,7 +12216,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2245 = ~Wand of Paralyzation~
@@ -12538,7 +12232,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12556,7 +12249,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12574,7 +12266,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12592,7 +12283,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12610,7 +12300,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2255 = ~Wand of Polymorphing~
@@ -12627,7 +12316,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Druid
@@ -12646,7 +12334,6 @@ Requires:
  9 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12665,7 +12352,6 @@ Requires:
  10 Wisdom
 
 Weight: 1
-
 Usable By:
  Cleric
  Druid~
@@ -12681,7 +12367,6 @@ Requires:
  9 Intelligence
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @2263 = ~Wand of Cloudkill~
@@ -12698,7 +12383,6 @@ Requires:
  10 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12717,7 +12401,6 @@ Requires:
  12 Intelligence
 
 Weight: 1
-
 Usable By:
  Bard
  Mage~
@@ -12735,7 +12418,6 @@ Requires:
  9 Intelligence
  
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2269 = ~Heavy Crossbow~
@@ -12751,7 +12433,6 @@ Requires:
  12 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12775,7 +12456,6 @@ Requires:
  12 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12803,7 +12483,6 @@ Requires:
  12 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12823,7 +12502,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -12845,7 +12523,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -12871,7 +12548,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -12893,7 +12569,6 @@ Requires:
  12 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -12920,7 +12595,6 @@ Requires:
  18 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -12943,7 +12617,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -12972,7 +12645,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -13000,7 +12672,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -13025,7 +12696,6 @@ Requires:
  12 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -13055,7 +12725,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -13084,7 +12753,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -13106,7 +12774,6 @@ Requires:
  12 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -13129,7 +12796,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -13157,7 +12823,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13183,7 +12848,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13209,7 +12873,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13235,7 +12898,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13260,7 +12922,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13285,7 +12946,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13303,7 +12963,6 @@ Equipped abilities:
 – Protects Against: Confusion and Feeblemindedness
 
 Weight: 0
-
 Usable By:
  Fighter
  Monk~
@@ -13326,7 +12985,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -13358,7 +13016,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13382,7 +13039,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -13411,7 +13067,6 @@ Requires:
  11 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -13430,7 +13085,6 @@ Equipped abilities:
 – Maximum Hit Points: +10
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2323 = ~Arrow of Slaying +1~ // BG1/BG2: This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
@@ -13446,7 +13100,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -13470,7 +13123,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -13491,8 +13143,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -13509,7 +13160,6 @@ Damage: 1d4+1 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
 Usable By:
  Jan Jansen~
 @2331 = ~Blessed Bolt +3~ // BG2: This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
@@ -13525,8 +13175,7 @@ Damage: 1d8 (missile)
 Launcher: Crossbow
 
 Weight: 0
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -13542,7 +13191,6 @@ Equipped abilities:
 – Spell Immunity: Earthquake
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2335 = ~Boots of Lightning Speed~
@@ -13554,7 +13202,6 @@ Equipped abilities:
 – Lightning Speed: wearer moves at triple move speed, but suffers -20 to THAC0 and 100% spell failure
 
 Weight: 2
-
 Usable By:
  All~
 @2337 = ~Gauntlets of Might~
@@ -13571,7 +13218,6 @@ Equipped abilities:
 – Dexterity: -2
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -13588,7 +13234,6 @@ Equipped abilities:
 – Exhausting: 5% chance with each hit to make the wearer exhausted and suffer -2 to Armor Class, THAC0, damage, and casting speed for 2 rounds
 
 Weight: 1
-
 Not Usable By:
  Kensai
  Wizard Slayer~
@@ -13610,7 +13255,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -13637,7 +13281,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -13655,7 +13298,6 @@ Equipped abilities:
 – Acid Resistance: +50%
 
 Weight: 3
-
 Usable By:
  Mage~
 @2347 = ~Robe of the Apprenti~
@@ -13666,7 +13308,6 @@ STATISTICS:
 Armor Class: 3
 
 Weight: 3
-
 Usable By:
  Mage~
 @2349 = ~Heart of the Golem +2~
@@ -13687,7 +13328,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -13704,7 +13344,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -13721,7 +13360,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -13743,7 +13381,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -13758,7 +13395,6 @@ Equipped abilities:
 – Protects Against: Poison
 
 Weight: 1
-
 Not Usable By:
  Good-aligned characters~
 @2359 = ~Paralytic Bolt +1~
@@ -13774,8 +13410,7 @@ Damage: 1d10 (missile)
 Launcher: Crossbow
 
 Weight: 1
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -13792,8 +13427,7 @@ Damage: 1d10 (missile)
 Launcher: Crossbow
 
 Weight: 1
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -13810,8 +13444,7 @@ Damage: 1d10 (missile)
 Launcher: Crossbow
 
 Weight: 1
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -13828,8 +13461,7 @@ Damage: 1d10 (missile)
 Launcher: Crossbow
 
 Weight: 1
-
-Not usable by:
+Not Usable By:
  Cleric
  Druid
  Mage~
@@ -13843,7 +13475,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -13866,7 +13497,6 @@ Equipped abilities:
 – Casting Speed: -1
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2373 = ~Ring of Folly~
@@ -13882,7 +13512,6 @@ Equipped abilities:
 – Wild Magic: any spell cast by the wearer is affected by wild surges
 
 Weight: 0
-
 Usable By:
  Mage~
 @2375 = ~Protection from Alterations~
@@ -13892,7 +13521,6 @@ Requires:
  9 Intelligence
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2377 = ~Sling of Seeking +1~
@@ -13912,7 +13540,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -13938,7 +13565,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -13965,7 +13591,6 @@ Requires:
  16 Dexterity
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -13988,7 +13613,24 @@ Requires:
  10 Strength
 
 Weight: 6
+Usable By:
+ Korgan~
+@2384 = ~It was the Year of Slaughter, 1090 DR, and countless victims lay slain at the Battle of the Bones. Today the site contains layers of dry white bone, but at the time it was all blood and bile, oozing from each shattered corpse and saturating the fallen equipment. No amount of polishing has been able to restore any weapon retrieved from that dread place, or even begin to remove the taint acquired there.
 
+STATISTICS:
+
+Combat abilities:
+– Bloodlust: with each hit, the wielder gains cumulative +1 to melee damage for 2 rounds
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6
 Not Usable By:
  Cleric
  Druid
@@ -14006,7 +13648,6 @@ Requires:
  9 Intelligence
 
 Weight: 3
-
 Usable By:
  Bard
  Mage~
@@ -14022,7 +13663,6 @@ Requires:
  12 Intelligence
 
 Weight: 3
-
 Usable By:
  Bard
  Mage~
@@ -14051,7 +13691,6 @@ Requires:
  9 Intelligence
 
 Weight: 10
-
 Not Usable By:
  Mage~
 @2391 = ~Rod of Resurrection~
@@ -14067,7 +13706,6 @@ Requires:
  10 Wisdom
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @2393 = ~Rod of Terror +3~
@@ -14090,7 +13728,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @2395 = ~Rod of Reversal~
@@ -14105,7 +13742,6 @@ Requires:
  9 Intelligence
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @2397 = ~Rod of the Apprenti~
@@ -14120,7 +13756,6 @@ Requires:
  10 Intelligence
 
 Weight: 3
-
 Usable By:
  Bard
  Mage~
@@ -14144,7 +13779,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
@@ -14160,7 +13794,6 @@ Equipped abilities:
 – Reverse Gender: wearer's gender is set to their opposite
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2403 = ~Moonblade +3~
@@ -14181,7 +13814,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Usable By:
  Xan~
 @2405 = ~A Claw~
@@ -14205,7 +13837,6 @@ Equipped abilities:
 – Maximum Hit Points: -15%
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2409 = ~The Horn~
@@ -14219,11 +13850,12 @@ Special abilities:
 – Globe of Power (once per day): user loses 15% of their Hit Points, but gains +2 to Armor Class and Saving Throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2413 = ~Handmaiden's Mace +3~
-@2414 = ~This mace has been crafted finely by the drow, and specially treated to survive the glare of the sun. It is made for surface raids by the subterranean race and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
+@2414 = ~This mace has been crafted finely by the drow, and specially treated to survive the glare of the sun. It is made for surface raids by the subterranean race... and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
+
+The mace seems almost alive and warm to the touch, and slithers away from those whom it does not like... namely drow or those who are similar enough to not make a difference. In the hands of anyone else, the mace becomes mere dead weight.
 
 STATISTICS:
 
@@ -14240,13 +13872,28 @@ Requires:
  10 Strength
 
 Weight: 8
+Usable By:
+ Viconia~
+@241400000 = ~This mace has been crafted finely by the drow, and specially treated to survive the glare of the sun. It is made for surface raids by the subterranean race... and its black metal glistens with a dark poison that seems to be generated from within and causes incredible damage upon a successful impact.
 
-Not Usable By:
- Druid
- Mage
- Monk
- Thief
- Beast Master~
+STATISTICS:
+
+Combat abilities:
+– Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. Poison negates)
+– Webbing: 33% chance target is held for 2 rounds (save vs. Breath negates)
+
+THAC0: +3
+Damage: 1d6+4 (crushing)
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+ Evil/Neutral alignment
+
+Weight: 8
+Usable By:
+ Cleric~
 @2415 = ~Sword of Chaos +4~
 @2416 = ~The blade of Sarevok, brother of <CHARNAME>, used in the battle they fought in faraway Baldur's Gate. <CHARNAME> prevailed, destroying Sarevok's plans and rescuing the Sword Coast from the brink of war. Now Sarevok has joined with <CHARNAME>'s cause and his blade has been restored to him. Sarevok describes the weapon as a Deathbringer blade and has restored some of the weapon's old power. Without his Bhaalspawn essence to channel through the sword, however, it cannot achieve the power it once had. Still, however, it is a formidable weapon... and one that Sarevok warns would become increasingly difficult to wield in the hands of one who was not a Deathbringer, if they could use it at all.
 
@@ -14267,7 +13914,6 @@ Requires:
  18 Strength
 
 Weight: 8
-
 Usable By:
  Sarevok~
 @2417 = ~Ring of Opportunity~
@@ -14279,7 +13925,6 @@ Equipped abilities:
 – Luck: +1 (+5% for skills)
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2419 = ~Nester's Dagger~
@@ -14297,7 +13942,6 @@ Equipped abilities:
 – Spell Memorization: arcane spellcasters can memorize twice as many 1st level spells
 
 Weight: 0
-
 Usable By:
  Mage~
 @2426 = ~The World's Edge +3~
@@ -14317,7 +13961,6 @@ Requires:
  18 Strength
 
 Weight: 12
-
 Not Usable By:
  Cleric
  Druid
@@ -14336,7 +13979,6 @@ Special abilities (consumes charge):
 – Raise Constitution: permanent
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2432 = ~Manual of Gainful Exercise~
@@ -14348,7 +13990,6 @@ Special abilities (consumes charge):
 – Raise Strength: permanent
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2434 = ~Manual of Quickness of Action~
@@ -14360,7 +14001,6 @@ Special abilities (consumes charge):
 – Raise Dexterity: permanent
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2436 = ~Tome~
@@ -14373,7 +14013,6 @@ Special abilities (consumes charge):
 – Raise Intelligence: permanent
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2439 = ~Tome of Leadership and Influence~
@@ -14385,7 +14024,6 @@ Special abilities (consumes charge):
 – Raise Charisma: permanent
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2441 = ~Tome of Understanding~
@@ -14397,7 +14035,6 @@ Special abilities (consumes charge):
 – Raise Wisdom: permanent
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2443 = ~Greagan's Harp~
@@ -14410,7 +14047,6 @@ Special abilities:
 – Domination (once per day)
 
 Weight: 1
-
 Usable By:
  Bard~
 @2445 = ~Shaman's Staff~
@@ -14429,7 +14065,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2447 = ~Jade Hound Figurine~
@@ -14454,7 +14089,6 @@ Special Characteristics:
 – Soul Drainer: 15% chance to drain one level from the target
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2449 = ~Moon Dog Figurine~
@@ -14483,7 +14117,6 @@ Special Characteristics:
 – Improved Invisibility (once per day)
 
 Weight: 1
-
 Not Usable By:
  Evil-aligned characters
  Wizard Slayer~
@@ -14496,7 +14129,6 @@ Special abilities:
 – Dire Charm (three times per day)
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2453 = ~Harmonium Halberd +3~
@@ -14516,7 +14148,6 @@ Requires:
  18 Strength
 
 Weight: 16
-
 Not Usable By:
  Cleric
  Druid
@@ -14533,7 +14164,6 @@ Special abilities:
 – Pandemonium (three times per day): opponents within 15 ft. are pushed away and confused for 5 rounds (save vs. Spell at -2 neg. confusion)
 
 Weight: 1
-
 Usable By:
  Bard~
 @2457 = ~Axe of Hrothgar +3~
@@ -14554,7 +14184,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -14582,7 +14211,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -14607,7 +14235,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -14631,7 +14258,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -14656,7 +14282,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -14677,7 +14302,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -14702,7 +14326,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Usable By:
  Druid~
 @2471 = ~Everard's Morning Star +3~
@@ -14725,7 +14348,6 @@ Requires:
  11 Strength
 
 Weight: 9
-
 Not Usable By:
  Druid
  Mage
@@ -14757,7 +14379,6 @@ Requires:
  16 Intelligence
 
 Weight: 1
-
 Usable By:
  Mage~
 @2475 = ~Clay Golem Manual~
@@ -14786,7 +14407,6 @@ Requires:
  16 Intelligence
 
 Weight: 1
-
 Usable By:
  Mage~
 @2477 = ~Stone Golem Manual~
@@ -14814,7 +14434,6 @@ Requires:
  16 Intelligence
 
 Weight: 1
-
 Usable By:
  Mage~
 @2479 = ~Juggernaut Golem Manual~
@@ -14843,7 +14462,6 @@ Requires:
  16 Intelligence
 
 Weight: 1
-
 Usable By:
  Mage~
 @2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
@@ -14870,7 +14488,6 @@ Requires:
  9 Intelligence
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -14901,7 +14518,6 @@ Requires:
  9 Intelligence
 
 Weight: 10
-
 Not Usable By:
  Cleric
  Druid
@@ -14933,7 +14549,6 @@ Requires:
  9 Intelligence
 
 Weight: 10
-
 Not Usable By:
  Cleric
  Druid
@@ -14968,7 +14583,6 @@ Requires:
  9 Intelligence
 
 Weight: 10
-
 Not Usable By:
  Cleric
  Mage
@@ -14984,7 +14598,6 @@ Equipped abilities:
 – Elemental Resistance: +15%
 
 Weight: 1
-
 Usable By:
  Druid~
 @2487 = ~Storm Ring~
@@ -14993,7 +14606,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2489 = ~Dawn Ring~
@@ -15002,7 +14614,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2491 = ~Delryn Family Ring~
@@ -15011,7 +14622,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2493 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
@@ -15019,7 +14629,6 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-
 Usable By:
  All~
 @2494 = ~Worn Out Boots~
@@ -15028,7 +14637,6 @@ Usable By:
 STATISTICS:
 
 Weight: 2
-
 Usable By:
  All~
 @2496 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.
@@ -15036,7 +14644,6 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-
 Usable By:
  All~
 @2497 = ~This is a small figurine depicting an eastern style warrior with two swords.~
@@ -15057,7 +14664,6 @@ Gladiator (11 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @249900000 = ~This statue is a replica of a fierce gladiator, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue armored warrior wielding magical short swords.
@@ -15076,7 +14682,6 @@ Gladiator (11 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2500 = ~Shadow Thief Cloak~
@@ -15085,7 +14690,6 @@ Not Usable By:
 STATISTICS:
 
 Weight: 3
-
 Usable By:
  All~
 @2502 = ~Embarl's Dagger~
@@ -15101,7 +14705,6 @@ Requires:
  3 Strength
 
 Weight: 1
-
 Not Usable By:
  Cleric
  Beast Master~
@@ -15117,7 +14720,6 @@ Equipped abilities:
 – Saving Throws: +2
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @2507 = ~Poisoned Arrow~ // BG1: These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows. He is the only person who can safely handle them.
@@ -15132,7 +14734,6 @@ Damage: 1d6 (missile)
 Launcher: Bow
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Druid
@@ -15148,7 +14749,6 @@ Equipped abilities:
 – Hide in Shadows: +60%
 
 Weight: 3
-
 Not Usable By:
  Wizard Slayer~
 @2511 = ~Rabbit's Foot~
@@ -15160,7 +14760,6 @@ Equipped abilities:
 – Luck: +2 (+10% for skills)
 
 Weight: 0
-
 Usable By:
  Alora~
 @2513 = ~Necklace of Talos~
@@ -15169,7 +14768,6 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-
 Usable By:
  All~
 @2515 = ~Lover's Ring~
@@ -15178,7 +14776,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2517 = ~Keepsake Locket~
@@ -15187,7 +14784,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2519 = ~Mask of King Strohm III~
@@ -15199,7 +14795,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 1
-
 Usable By:
  All~
 @2521 = ~Mithral Medallion~
@@ -15208,7 +14803,6 @@ Usable By:
 STATISTICS:
 
 Weight: 5
-
 Usable By:
  All~
 @2523 = ~Collar~
@@ -15224,7 +14818,6 @@ Equipped abilities:
 – Enslavement: wearer is dominated
 
 Weight: 0
-
 Usable By:
  All~
 @2527 = ~Mantle of Waukeen~
@@ -15233,7 +14826,6 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-
 Usable By:
  All~
 @2529 = ~Isaea's Signet Ring~
@@ -15242,7 +14834,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2531 = ~Pendant~
@@ -15251,7 +14842,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2533 = ~This is a long staff made of thick, sturdy oak. It is crawling with a strange, black radiance and feels quite warm and tingly to the touch. Small runes of arcane origin have been carved in various places at both ends.
@@ -15266,7 +14856,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @2534 = ~This helmet is black and lustrous, its metal brought to a shine that nearly matches the small gems that have been placed around the faceplate. A black veil hangs down the open front of the helmet, obviously meant to completely obscure the face of whomever wears the item.
@@ -15277,7 +14866,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -15296,13 +14884,12 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
  Beast Master~
 @2536 = ~Control Circlet~
-@2537 = ~A circlet of alien metal that dominates even the most powerful of minds and leaves them defenceless. Perhaps this item could be used to control a mind flayer and make him help you escape from this hellish prison.
+@2537 = ~A circlet of alien metal that dominates even the most powerful of minds and leaves them defenseless. Perhaps this item could be used to control a mind flayer and make him help you escape from this hellish prison.
 
 STATISTICS:
 
@@ -15310,14 +14897,12 @@ Special abilities:
 – Domination (consumes charges): permanent
 
 Weight: 0
-
 Usable By:
  All~
 @2538 = ~Brine Potion~
 @2539 = ~A potion obtained from a briny pool in which young illithids, tadpole like creatures, live and grow. When used, the potion will temporarily make the user immune to psionics.
 
 Weight: 1
-
 Usable By:
  All~
 @2540 = ~Patrol Leader's Helm~
@@ -15329,7 +14914,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -15342,7 +14926,6 @@ Not Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2544 = ~Golden Circlet~
@@ -15353,7 +14936,6 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2548 = ~Sword Medallion~
@@ -15362,14 +14944,12 @@ Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2550 = ~Tree of Life Fruit~
 @2551 = ~A beautiful glittering fruit taken from the section of the Tree of Life that grows through the palace. The fruit has a tantalizing smell and looks ripe enough to eat. When consumed, this fruit restores 50 Hit Points to the user.
 
 Weight: 0
-
 Usable By:
  All~
 @2552 = ~Big Metal Rod +5~
@@ -15386,7 +14966,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Usable By:
  All~
 @2554 = ~Ammunition~
@@ -15404,7 +14983,6 @@ Damage: 1d4+1 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0
-
 Usable By:
  All~
 @2558 = ~Frag Grenade~
@@ -15420,7 +14998,6 @@ Damage: 6d6 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0
-
 Usable By:
  All~
 @2560 = ~Scorcher Ammunition~
@@ -15436,7 +15013,6 @@ Damage: 3d6 (magic)
 Launcher: Big Metal Rod
 
 Weight: 0
-
 Usable By:
  All~
 @2562 = ~Combined Pantaloons~
@@ -15461,7 +15037,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Usable By:
  All~
 @2566 = ~These are the boots that were once owned by the famous woodsman, Randy of the West.
@@ -15473,7 +15048,6 @@ Equipped abilities:
 – Protects Against: Disease
 
 Weight: 2
-
 Not Usable By:
  Wizard Slayer~
 @2567 = ~Harper Amulet~
@@ -15482,7 +15056,6 @@ Not Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2569 = ~Battle Axe of Mauletar +2~
@@ -15502,7 +15075,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -15524,7 +15096,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -15541,7 +15112,6 @@ Requires:
  6 Strength
 
 Weight: 20
-
 Not Usable By:
  Mage
  Monk
@@ -15558,7 +15128,6 @@ Requires:
  10 Strength
 
 Weight: 30
-
 Not Usable By:
  Bard
  Druid
@@ -15583,7 +15152,6 @@ Requires:
  15 Strength
 
 Weight: 60
-
 Not Usable By:
  Bard
  Druid
@@ -15608,7 +15176,6 @@ Requires:
  8 Strength
 
 Weight: 25
-
 Not Usable By:
  Bard
  Mage
@@ -15636,7 +15203,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -15653,9 +15219,8 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 0
-
 Usable By:
- Good-aligned clerics~
+ Good-aligned Cleric~
 @2585 = ~Holy Symbol of Helm~
 @2586 = ~Only the most worthy and devoted servants of the Watcher are granted these powerful holy symbols.
 
@@ -15667,9 +15232,8 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 0
-
 Usable By:
- Neutral-aligned clerics~
+ Neutral-aligned Cleric~
 @2587 = ~Holy Symbol of Talos~
 @2588 = ~Only the most worthy and devoted servants of the Storm Lord are granted these powerful holy symbols.
 
@@ -15681,9 +15245,8 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 0
-
 Usable By:
- Evil-aligned clerics~
+ Evil-aligned Cleric~
 @2589 = ~Holy Symbol of Baervan~
 @2590 = ~Only the most worthy and devoted servants of the Masked Leaf are granted these powerful holy symbols.
 
@@ -15695,9 +15258,8 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 0
-
 Usable By:
- Good-aligned clerics~
+ Good-aligned Cleric~
 @2591 = ~Holy Symbol of Shar~
 @2592 = ~Only the most worthy and devoted servants of the Nightsinger are granted these powerful holy symbols.
 
@@ -15709,9 +15271,8 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Weight: 0
-
 Usable By:
- Evil-aligned clerics~
+ Evil-aligned Cleric~
 @2593 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
@@ -15724,7 +15285,6 @@ Special abilities:
 – Vocalize (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2594 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15739,7 +15299,6 @@ Special abilities:
 – Cone of Cold (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2595 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15754,7 +15313,6 @@ Special abilities:
 – Animate Dead (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2596 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15769,7 +15327,6 @@ Special abilities:
 – Lower Resistance (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2597 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15784,7 +15341,6 @@ Special abilities:
 – Greater Malison (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2598 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15799,7 +15355,6 @@ Special abilities:
 – Mirror Image (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2599 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15814,7 +15369,6 @@ Special abilities:
 – Breach (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2600 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15829,7 +15383,6 @@ Special abilities:
 – Haste (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2601 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15844,7 +15397,6 @@ Special abilities:
 – Hold Monster (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2602 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
@@ -15859,7 +15411,6 @@ Special abilities:
 – Pierce Magic (once per day)
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @2603 = ~Nature's Ward +2~
@@ -15876,7 +15427,6 @@ Requires:
  4 Strength
 
 Weight: 6
-
 Not Usable By:
  Bard
  Druid
@@ -15893,7 +15443,6 @@ Equipped abilities:
 – Pick Pockets: +20%
 
 Weight: 1
-
 Usable By:
  Bard
  Thief~
@@ -15906,7 +15455,6 @@ Equipped abilities:
 – Luck: +1 (+5% for skills)
 
 Weight: 0
-
 Usable By:
  All~
 @2609 = ~Circlet~
@@ -15915,7 +15463,6 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-
 Usable By:
  All~
 @2611 = ~Silver Circlet~
@@ -15927,7 +15474,6 @@ Equipped abilities:
 – Saving Throws: +1
 
 Weight: 1
-
 Usable By:
  All~
 @2613 = ~Eilistraee's Boon~
@@ -15939,9 +15485,8 @@ Special abilities:
 – Shield of the Archon (once per day): 1 turn
 
 Weight: 1
-
 Usable By:
- Good or neutral-aligned characters~
+ Good/Neutral-aligned characters~
 @2615 = ~Circlet of the Archmagi~
 @2616 = ~This powerful circlet was enchanted to complement the powerful robes customarily worn by archmages, building even further upon their magical protections. Due to the nature of its enchantment, it can only be worn by mages.
 
@@ -15953,7 +15498,6 @@ Equipped abilities:
 – Magic Resistance: +5%
 
 Weight: 1
-
 Usable By:
  Mage~
 @2617 = ~Javelin~
@@ -15971,7 +15515,6 @@ Requires:
  5 Strength
 
 Weight: 5
-
 Not Usable By:
  Cleric
  Mage
@@ -15995,7 +15538,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -16008,7 +15550,6 @@ Not Usable By:
 STATISTICS:
 
 Weight: 0
-
 Usable By:
  All~
 @2623 = ~Helm of Opposite Alignment~
@@ -16024,7 +15565,6 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 3
-
 Not Usable By:
  Bard
  Mage
@@ -16298,7 +15838,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -16322,7 +15861,6 @@ Requires:
  4 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -16347,7 +15885,6 @@ Requires:
  10 Strength
 
 Weight: 6
-
 Not Usable By:
  Cleric
  Druid
@@ -16368,7 +15905,6 @@ Equipped abilities:
 – Intelligence: -4
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @6008 = ~Belt of Antipode~
@@ -16381,7 +15917,6 @@ Equipped abilities:
 – Fire Resistance: -100%
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @6010 = ~Club +1~
@@ -16398,7 +15933,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @6012 = ~Mighty Oak +2~
@@ -16418,7 +15952,6 @@ Requires:
  8 Strength
 
 Weight: 5
-
 Not Usable By:
  Mage~
 @6014 = ~Night Club +1~
@@ -16438,7 +15971,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Mage~
 @6016 = ~The Thresher +2~
@@ -16455,7 +15987,6 @@ Requires:
  13 Strength
 
 Weight: 10
-
 Not Usable By:
  Druid
  Mage
@@ -16479,7 +16010,6 @@ Requires:
  5 Strength
 
 Weight: 2
-
 Not Usable By:
  Mage~
 @6020 = ~The Stupefier +1~
@@ -16500,7 +16030,6 @@ Requires:
  10 Strength
 
 Weight: 8
-
 Not Usable By:
  Druid
  Mage
@@ -16526,7 +16055,6 @@ Requires:
  16 Strength
 
 Weight: 14
-
 Not Usable By:
  Cleric
  Druid
@@ -16554,7 +16082,6 @@ Requires:
  10 Strength
 
 Weight: 5
-
 Not Usable By:
  Druid
  Mage
@@ -16575,7 +16102,6 @@ Requires:
  4 Strength
 
 Weight: 15
-
 Not Usable By:
  Mage
  Monk
@@ -16590,7 +16116,6 @@ Equipped abilities:
 – Save vs. Polymorph: +5
 
 Weight: 1
-
 Not Usable By:
  Wizard Slayer~
 @6030 = ~The Magma Bulwark +2~
@@ -16603,7 +16128,6 @@ Requires:
  10 Strength
 
 Weight: 30
-
 Not Usable By:
  Bard
  Druid
@@ -16629,7 +16153,6 @@ Equipped abilities:
 – Charisma: -4
 
 Weight: 0
-
 Not Usable By:
  Wizard Slayer~
 @6034 = ~Moonlight Walkers~
@@ -16641,7 +16164,6 @@ Equipped abilities:
 – Armor Class: +2
 
 Weight: 2
-
 Usable By:
  Rasaad yn Bashir~
 @6036 = ~Glimmering Bands~
@@ -16653,7 +16175,6 @@ Equipped abilities:
 – THAC0: +2
 
 Weight: 1
-
 Usable By:
  Rasaad yn Bashir~
 @6038 = ~Buckley's Buckler~
@@ -16670,7 +16191,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -16692,7 +16212,6 @@ Requires:
  3 Strength
 
 Weight: 0
-
 Not Usable By:
  Cavalier
  Kensai~
@@ -16716,7 +16235,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @6044 = ~Neera's Staff +1~
@@ -16736,7 +16254,6 @@ Requires:
  5 Strength
 
 Weight: 4
-
 Not Usable By:
  Monk~
 @6046 = ~The Harrower +1~
@@ -16757,7 +16274,6 @@ Requires:
  6 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Druid
@@ -16781,7 +16297,6 @@ Requires:
  16 Strength
 
 Weight: 10
-
 Not Usable By:
  Cleric
  Druid
@@ -16806,7 +16321,6 @@ Requires:
  14 Strength
 
 Weight: 8
-
 Not Usable By:
  Cleric
  Druid
@@ -16824,7 +16338,6 @@ Requires:
  10 Strength
 
 Weight: 45
-
 Not Usable By:
  Bard
  Druid
@@ -16847,7 +16360,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -16864,7 +16376,6 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0
-
 Not Usable By:
  Cleric
  Cavalier
@@ -16879,7 +16390,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Mage
  Monk
@@ -16895,7 +16405,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Mage
  Monk
@@ -16911,7 +16420,6 @@ Requires:
  6 Strength
 
 Weight: 25
-
 Not Usable By:
  Mage
  Monk
@@ -16930,7 +16438,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -16948,7 +16455,6 @@ Requires:
  4 Strength
 
 Weight: 4
-
 Not Usable By:
  Mage
  Monk
@@ -16967,7 +16473,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -16987,7 +16492,6 @@ Requires:
  5 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -17007,7 +16511,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -17027,7 +16530,6 @@ Requires:
  6 Strength
 
 Weight: 3
-
 Not Usable By:
  Cleric
  Druid
@@ -17047,7 +16549,6 @@ Requires:
  8 Strength
 
 Weight: 4
-
 Not Usable By:
  Cleric
  Mage
