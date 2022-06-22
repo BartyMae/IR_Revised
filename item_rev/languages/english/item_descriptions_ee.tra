@@ -1,5 +1,5 @@
 @1000 = ~Amulet~
-@1001 = ~Amulet of Protection +1~ // BG1/BG2: The Protector: The royal guard of King Pyronan, ruler of Impiltur, were given 'The Protector' as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
+@1001 = ~Amulet of Protection +1~ // BG1/BG2: The Protector: The royal guard of King Pyronan, ruler of Impiltur, were given "The Protector" as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
 @1002 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
 @1003 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
 
@@ -13,7 +13,7 @@ Weight: 0
 
 Not Usable By:
  Wizard Slayer~
-@1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell 'Shield'. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
+@1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell Shield. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
 @1005 = ~Made by the Harpell clan of wizards in Longsaddle, these simple but elegant amulets generate a shield-sized invisible wall of force that stays with the amulet and can be wielded by the wearer as if it were a normal shield. This sphere of energy is particularly effective against missile weapons and the barrier also protects the wearer from the spell Magic Missile.
 
 STATISTICS:
@@ -39,14 +39,11 @@ Equipped abilities:
 
 Weight: 0
 
-Usable By:
- Bard
- Cleric
- Druid
- Mage
- Paladin
- Ranger~
-@1008 = ~Greenstone Amulet~
+Not Usable By:
+ Fighter
+ Monk
+ Thief~
+@1008 = ~Greenstone Amulet~ // BG2: This amulet contains a greenstone embedded within a gold setting. When activated, the greenstone protects the wearer from all forms of mind attacks, including psionics.
 @1009 = ~The deep green stone at the center of the amulet seems to shimmer with an iridescent light, almost as if it has a life of its own. Even without the powerful magics that are bestowed upon the amulet, it would be an extremely valuable addition to any collection.
 
 STATISTICS:
@@ -70,7 +67,7 @@ Weight: 0
 
 Not Usable By:
  Wizard Slayer~
-@1012 = ~Amulet of Energy Shielding~
+@1012 = ~Amulet of Energy Shielding~ // BG2: Amulet of 5% Magic Resistance
 @1013 = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist any efforts at being imprisoned or killed.
 
 STATISTICS:
@@ -98,11 +95,11 @@ Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!" It has seen much use, and changed hands many times through blood and battle.
-@1017 = ~Arduelth, a young witch, had spent her life living under the shadow of Thay, and wished to study for a magical means to empower Rashemen, so she left on a dajemma - the customary Rashemi journey of self-discovery. Years later she returned, a haunted look in her eyes. Around her neck she wore an amulet that glowed with power - only the first of the artifacts she claimed to have learned how to create. She spoke long and passionately of how they could make use of such items - to not only bring peace to Rashemen, but break the back of Thay. The hathrans narrowed their eyes behind their masks as she spoke, fearing the young woman's intensity: but they listened, and gravely made her one of them.
+@1017 = ~Arduelth, a young witch, had spent her life living under the shadow of Thay, and wished to study for a magical means to empower Rashemen, so she left on a dajemma—the customary Rashemi journey of self-discovery. Years later she returned, a haunted look in her eyes. Around her neck she wore an amulet that glowed with power—only the first of the artifacts she claimed to have learned how to create. She spoke long and passionately of how they could make use of such items—to not only bring peace to Rashemen, but break the back of Thay. The hathrans narrowed their eyes behind their masks as she spoke, fearing the young woman's intensity: but they listened, and gravely made her one of them.
 
-Before long, the witches began to regret their decision. The young woman seemed obsessed with the idea of creating more items of greater and more sinister properties... and her plans grew more and more elaborate, from freeing the slaves of Thay to enslaving the Red Wizards in their place, sapping them of their power for her own devices. It was suspected that Arduelth had become a durthan, eternal enemy of the hathrans - but another witch saw once that she communed with something far darker. Though the young woman still dreamed of peace and freedom for her people, she had given herself over to a dark entity - her pure intentions savaged by the lengths she would dare go to achieve them.
+Before long, the witches began to regret their decision. The young woman seemed obsessed with the idea of creating more items of greater and more sinister properties... and her plans grew more and more elaborate, from freeing the slaves of Thay to enslaving the Red Wizards in their place, sapping them of their power for her own devices. It was suspected that Arduelth had become a durthan, eternal enemy of the hathrans—but another witch saw once that she communed with something far darker. Though the young woman still dreamed of peace and freedom for her people, she had given herself over to a dark entity—her pure intentions savaged by the lengths she would dare go to achieve them.
 
-Though it seems Arduelth's life has come to an end, the amulet still glows with a same promising light... as if it carried a fraction of its former wearer's soul, and the determination to see her plans come to fruition - whatever the cost.
+Though it seems Arduelth's life has come to an end, the amulet still glows with a same promising light... as if it carried a fraction of its former wearer's soul, and the determination to see her plans come to fruition—whatever the cost.
 
 STATISTICS:
 
@@ -112,13 +109,10 @@ Equipped abilities:
 
 Weight: 0
 
-Usable By:
- Bard
- Cleric
- Druid
- Mage
- Paladin
- Ranger~
+Not Usable By:
+ Fighter
+ Monk
+ Thief~
 @1018 = ~Periapt of Proof Against Poison~ // BG2: This periapt is a large gemstone hanging on a thick golden chain. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food.
 @1019 = ~This periapt is a large gemstone hanging on a thick golden chain; worn next to the skin, it makes the wearer immune to all poisons. Items with similar functions are in common circulation, created for nobles or merchants fearing poison. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food, and The Purple Dragons use rings with similar powers to protect the Obarskyr royal family from assassination attempts.
 
@@ -145,7 +139,7 @@ Weight: 0
 
 Not Usable By:
  Wizard Slayer~
-@1022 = ~Periapt of Form Stability~ // BG2: Necklace of Form Stability
+@1022 = ~Necklace of Form Stability~
 @1023 = ~Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often this meant several weeks transformed into some form of wild beast, which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return he had prepared this necklace, designed to prevent her changing his form, but he could not shield those around him as well. Apparently, an impromptu army of farmers-turned-bears eventually overwhelmed him.
 
 STATISTICS:
@@ -157,8 +151,8 @@ Weight: 0
 
 Not Usable By:
  Wizard Slayer~
-@1024 = ~Amulet of Spell Warding~
-@1025 = ~A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting. These potent defensive amulets are high in demand in areas where duels between rival spellcasters are common. Armed with one of these items, even a relatively inexperienced caster can withstand the attack of an archmage - albeit briefly.
+@1024 = ~Amulet of Spell Warding~ // BG2: A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting.
+@1025 = ~A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting. These potent defensive amulets are high in demand in areas where duels between rival spellcasters are common. Armed with one of these items, even a relatively inexperienced caster can withstand the attack of an archmage—albeit briefly.
 
 STATISTICS:
 
@@ -193,7 +187,7 @@ Weight: 0
 Not Usable By:
  Monk
  Wizard Slayer~
-@1028 = ~Amulet of the Seldarine~
+@1028 = ~Amulet of the Seldarine~ // BG2: A reward from the elven queen Ellesime for saving the Tree of Life, this amulet protects the wearer against all forms of enchantments and spells.
 @1029 = ~A reward from the Elven Queen Ellesime for saving the Tree of Life, this holy talisman borders on the power of artifacts.
 
 STATISTICS:
@@ -207,8 +201,8 @@ NOTE: Multiple Protection from Evil effects are not cumulative.
 
 Weight: 0
 
-Usable By:
- All~
+Not Usable By:
+ Wizard Slayer~
 @1030 = ~Amulet of the Master Harper~ // BG2: This medallion is highly sought after by both thieves and bards, though for different reasons. In addition to providing powerful magical protection against physical attacks, the amulet increases the wearer's proficiency in several rogue skills. But even more valuable, from the bard's perspective, is the amulet's ability to grant the wearer immunity to all forms of silence.
 @1031 = ~Ciressa Gind'ra was a cunning arcane trickster who infiltrated the Night Masks for the Harpers, before she was found drowned in a two-inch puddle outside her residence. To infiltrate them, Ciressa created an amulet that allowed her to boost her abilities to that of a master thief. One night she used it to break into the Night King's private quarters. Unfortunately, she didn't anticipate the Night King's Faithful Hound, who was summoned to guard the room. The phantom watchdog immediately commenced a loud barking, revealing her presence to the Night King himself. When he was finished with her, he took the amulet, and since it had qualities useful for many adventurers, he made copies of it, which he sold throughout the land.
 
@@ -235,7 +229,12 @@ STATISTICS:
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1034 = ~Arrow +1~ // BG1: The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. These enchanted arrows will fly truer, thus having a greater chance of striking their target and doing more damage, and have the ability to strike opponents that are immune to normal weapons.
 @1035 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long.~
 @1036 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. Magical enchantments guarantee these arrows improved accuracy and damage.
@@ -246,7 +245,12 @@ THAC0: +1
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1037 = ~Arrow of Acid +2~ // BG1: This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
 @1038 = ~This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
 
@@ -259,7 +263,12 @@ THAC0: +2
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1039 = ~Arrow of Biting~ // BG1: The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
 @1040 = ~The Arrow of Biting was designed as a deadly compliment to the archer. Poison smeared on the barbed arrowhead infiltrates the bloodstream of its victims, causing agony and often death.
 
@@ -271,7 +280,12 @@ Combat abilities:
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1041 = ~Arrow of Detonation~
 @1042 = ~This arrow has a particularly debilitating effect on its victims as, upon impact, it explodes into a huge ball of fire and shrapnel, affecting all within the area. This explosion occurs even if the target is immune to the arrow's damage.
 
@@ -283,7 +297,12 @@ Combat abilities:
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1043 = ~Arrow of Dispelling +1~ // BG1: The arrow of dispelling will remove the magical enchantments that its victim is surrounded by. // BG2: This arrow will remove the magical enchantments that its victim is surrounded by.
 @1044 = ~The Arrow of Dispelling will remove all magical enchantments affecting its target.
 
@@ -296,7 +315,12 @@ THAC0: +1
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1045 = ~Arrow of Fire +1~ // BG2: This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
 @1046 = ~The Arrow of Fire is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set aflame.
 
@@ -309,7 +333,12 @@ THAC0: +1
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1047 = ~Arrow of Ice +1~ // BG2: This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 @1048 = ~The Arrow of Ice is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 
@@ -322,9 +351,14 @@ THAC0: +1
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
-@1049 = ~Arrow of Piercing +3~ // BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
-@1050 = ~This arrow is long and thin, imbued with magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
+@1049 = ~Arrow of Piercing +3~ // BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to "push" itself through armor, striking out towards the heart of the victim.
+@1050 = ~This arrow is long and thin, imbued with magical properties that allow it to "push" itself through armor, striking out towards the heart of the victim.
 
 STATISTICS:
 
@@ -335,7 +369,12 @@ THAC0: +3
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1051 = ~Arrow +2~
 @1052 = ~This arrow was enhanced through magical means when it was created. It appears slightly straighter than the average arrow, and almost alive as it effortlessly leaves your bow and streaks towards its target with deadly accuracy.
 
@@ -345,7 +384,12 @@ THAC0: +2
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1053 = ~Arrow +3~
 @1054 = ~This enchanted missile far surpasses the craftsmanship of any arrow, magical or otherwise, you have ever seen.
 
@@ -355,7 +399,12 @@ THAC0: +3
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1055 = ~Battle Axe~
 @1056 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
 
@@ -377,7 +426,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1057 = ~Battle Axe +1~
+@1057 = ~Battle Axe +1~ // BG2: The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. This is a magical axe.
 @1058 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.~
 @1059 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. This axe is particularly good at its job, as it has been enchanted with a few magical properties.
 
@@ -470,12 +519,10 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1066 = ~Hangard's Axe +1~
+@1066 = ~Hangard's Axe +1~ // BG2: If this weapon had a lofty beginning, it has been overshadowed by the exploits of its most famous owner, Hangard the dwarf. Hangard made a habit of trying to knock melons and apples off the heads of comrades. He missed more often than not, due in part to an unfortunate fondness for ale.
 @1067 = ~The hand axe, or throwing axe, is also known as a hatchet. The axe's blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.~
 @1068 = ~Axe of Hurling
-Originally part of a set and named "Axe of the Coming Storm", this axe has seen battle countless times and it was the pride of the Thunderkind Corps until their dissolution in 1095 DR.
-
-Unfortunately, any individual acts of heroism accomplished with these weapons have been forgotten, forever overshadowed by the exploits of its most famous owner, Hangard the dwarf. Hangard's Axe is the only one of the lot individually remembered, losing its original name because of the dwarf habit of trying to knock melons and apples off the heads of comrades. He missed more often than not, due in part to an unfortunate fondness for ale.
+The pride of the Thunderkind Corps until their dissolution in 1095 DR, these axes have seen battle countless times. Unfortunately, any individual acts of heroism accomplished with these weapons have been forgotten, forever overshadowed by a more dubious honor. Hangard's Axe is the only one of the lot individually remembered, losing its original name because of the dwarf habit of trying to knock melons and apples off the heads of comrades. He missed more often than not, due in part to an unfortunate fondness for ale.
 
 STATISTICS:
 
@@ -502,8 +549,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1069 = ~Rifthome Axe +2~
-@1070 = ~These items are vexing to modern sages, since their creator remains completely unknown. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the mysterious smith, and further investigations are met with gruff explanations and eventually stony silence. This has caused some to speculate that it may not be the product of a terrestrial dwarven hand, but rather of some extraplanar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosey scholars.
+@1069 = ~Rifthome Axe +2~ // BG2: This axe of hurling is one of the most heavily enchanted weapons of its type. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the maker. This causes some to speculate that it may not be the product of a terrestrial dwarven hand, but rather of some extraplanar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosy scholars.
+@1070 = ~These items are vexing to modern sages, since their creator remains completely unknown. Its markings are vaguely dwarven, but no dwarf yet encountered on Faerûn has claimed a kinship with the mysterious smith, and further investigations are met with gruff explanations and eventually stony silence. This has caused some to speculate that it may not be the product of a terrestrial dwarven hand, but rather of some extraplanar variant. Dwarves laugh this off, of course, claiming the maker likely has no time for nosy scholars.
 
 STATISTICS:
 
@@ -562,7 +609,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1073 = ~Stonefire +2~
-@1074 = ~The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, the Stonefires were decimated in 1150DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in the hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
+@1074 = ~The Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance. Unfortunately, they were decimated in 1150 DR, falling in a mere two years to a mysterious plague. Ulgan, keeper of the axe, fled in the hopes of escaping the inevitable, but he died several weeks later. His body was found in the Cloakwood Forest, but the axe was missing.
 
 STATISTICS:
 
@@ -588,7 +635,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1075 = ~Frostreaver +1~
-@1076 = ~This was the axe of Illgarth, a mighty and deranged warrior that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon his unfortunate victims. With its icy blade he maimed those not killed, and the berserker would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims Frostreaver was buried with him.
+@1076 = ~This was the axe of Illgarth, a frost giant that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings. Ice and acid maimed those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims Frostreaver was buried with him.
 
 STATISTICS:
 
@@ -614,8 +661,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1077 = ~Axe of the Unyielding +4~
-@1078 = ~Lonesome Road
-This was the weapon of a cursed soul, doomed to wander the length and breadth of Faerûn for his crimes against the elves of Myth Drannor. Denell Harband was a human involved with the creation of the "Halfaxe Trail." Under the orders of his commander, Halvan the Dark, he forged ahead through elven forests despite protests and repeated attacks. When he was finally captured by the elves, he stated emphatically that he was free of guilt because he was just following his orders. The elven council deemed that Denell be placed under a High Geas to carry his axe from the Sword Coast of Faerûn to its borders in the east, and from the Great Glacier to Lurien. It took Denell thirty years to complete his task. When he finished, he was an accomplished warrior, weathered and beaten by years on foreign roads. On his way back to his home, he passed by Harrowdale and saw a wooden statue of Halvan the Dark raised proudly in a small town square. With a single-handed blow, he lodged his huge axe into Halvan's forehead. Never breaking stride, he decided to extend his never ending journey indefinitely, and he was last seen disappearing in the deepest caverns beneath the Marching Mountains.
+@1078 = ~This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.
 
 STATISTICS:
 
@@ -641,10 +687,9 @@ Not Usable By:
  Thief
  Beast Master~
 @1079 = ~Axe of the Unyielding +5~
-@1080 = ~Lonesome Road
-This was the weapon of a cursed soul, doomed to wander the length and breadth of Faerûn for his crimes against the elves of Myth Drannor. Denell Harband was a human involved with the creation of the "Halfaxe Trail." Under the orders of his commander, Halvan the Dark, he forged ahead through elven forests despite protests and repeated attacks. When he was finally captured by the elves, he stated emphatically that he was free of guilt because he was just following his orders. The elven council deemed that Denell be placed under a High Geas to carry his axe from the Sword Coast of Faerûn to its borders in the east, and from the Great Glacier to Lurien. It took Denell thirty years to complete his task. When he finished, he was an accomplished warrior, weathered and beaten by years on foreign roads. On his way back to his home, he passed by Harrowdale and saw a wooden statue of Halvan the Dark raised proudly in a small town square. With a single-handed blow, he lodged his huge axe into Halvan's forehead. Never breaking stride, he decided to extend his never ending journey indefinitely, and he was last seen disappearing in the deepest caverns beneath the Marching Mountains.
+@1080 = ~This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.
 
-Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now a most fearsome weapon - a vorpal-edged axe capable of severing an opponent's head with a single blow.
+Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now the most fearsome of weapons—a vorpal edged axe capable of severing an opponent's head with a single blow.
 
 STATISTICS:
 
@@ -1093,7 +1138,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1131 = ~Flail of Ages +3~
-@1132 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1132 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, "losing" it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 STATISTICS:
 
@@ -1456,7 +1501,7 @@ Not Usable By:
 @1160 = ~Storm Star +4~
 @1161 = ~This magical weapon is of ancient design, which scholars have linked to Netheril itself. Though such electrum plated maces as Storm Star are usually found in the North, there are whispered rumors of this particularly powerful specimen being lost in the Southern reaches of the Realms.
 
-Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular, though harmless, arcs of lightning when wielded - a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
+Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular, though harmless, arcs of lightning when wielded—a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
 
 STATISTICS:
 
@@ -1486,7 +1531,7 @@ Not Usable By:
 @1162 = ~Storm Star +5~
 @1163 = ~This magical weapon is of ancient design, which scholars have linked to Netheril itself. Though such electrum plated maces as Storm Star are usually found in the North, there are whispered rumors of this particularly powerful specimen being lost in the Southern reaches of the Realms.
 
-Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular, though harmless, arcs of lightning when wielded - a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
+Despite its massive size, Storm Star is surprisingly light, making it particularly easy to wield in combat. It crackles with spectacular, though harmless, arcs of lightning when wielded—a visible manifestation of the powerful electrical enchantments infused within the weapon's head.
 
 Storm Star's already formidable abilities have been further enhanced by the addition of the otherworldly Starfall Ore. This strange material comes from the core of a meteorite, which fell from the heavens. The malleable ore is surprisingly strong, and radiates an inner heat. Any item forged from the alien matter would undoubtedly possess mysterious and unearthly properties.
 
@@ -1517,7 +1562,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1164 = ~Flail of Ages +5~
-@1165 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1165 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, "losing" it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 With the addition of the fifth and final head, the true potential of the Flail of Ages is finally realized.
 
@@ -1549,7 +1594,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1166 = ~Flail of Ages +4~
-@1167 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1167 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, "losing" it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
 
@@ -1579,7 +1624,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1168 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+@1168 = ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord de'Arnise was likely concerned about the powerful magic that the weapon radiates when assembled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, "losing" it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 If the fifth head for the Flail of Ages could be found, it would make this awesome weapon even more powerful.
 
@@ -1725,7 +1770,12 @@ STATISTICS:
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1181 = ~Bolt +1~
 @1182 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size.~
 @1183 = ~Quarrels, or bolts, are the ammunition fired by crossbows, regardless of the weapon's size. However, this bolt has been imbued with a small amount of magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
@@ -1736,7 +1786,12 @@ THAC0: +1
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1184 = ~Bolt of Lightning +1~
 @1185 = ~This bolt seems to crackle with energy as it is held in the hand. When shot from the crossbow, it seems to leap towards its target leaving behind an electrical sulfuric smell. As it hits there is a crackle as the energy stored is released into the target's wound.
 
@@ -1749,7 +1804,12 @@ THAC0: +1
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1186 = ~Bolt of Biting~ // BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. // BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
 @1187 = ~The Bolt of Biting was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death.
 
@@ -1761,7 +1821,12 @@ Combat abilities:
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1188 = ~Bolt +2~ // BG1: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. // BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. It will strike its target more easily and do more damage, and can strike opponents that are immune to normal weapons.
 @1189 = ~This bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
 
@@ -1771,7 +1836,12 @@ THAC0: +2
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1190 = ~Bolt +3~
 @1191 = ~This enchanted missile far surpasses the craftsmanship of any bolt, magical or otherwise, you have ever seen.
 
@@ -1781,12 +1851,17 @@ THAC0: +3
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1192 = ~Boots~
 @1193 = ~Boots of Speed~ // BG1/BG2: These enchanted boots were once the property of a deadly assassin fond of chasing down his prey. He moved with such speed that his targets often didn't have the opportunity to respond, even on horseback. Over time, the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!"
 @1194 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.~
 @1195 = ~The Paws of the Cheetah
-These enchanted boots were once the property of a deadly Sword Coast assassin who purportedly moved with such speed that his targets often didn't have the opportunity to respond, even if on horseback. Over time the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!". These boots were the source of his ability, though it is also believed that he formed an elite guild wherein each member was equipped identically, thus explaining why he was not just fast, but could seemingly appear in several places at once.
+These enchanted boots were once the property of a deadly Sword Coast assassin who purportedly moved with such speed that his targets often didn't have the opportunity to respond, even if on horseback. Over time the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!" These boots were the source of his ability, though it is also believed that he formed an elite guild wherein each member was equipped identically, thus explaining why he was not just fast, but could seemingly appear in several places at once.
 
 STATISTICS:
 
@@ -1828,7 +1903,7 @@ Usable By:
  All~
 @1200 = ~Boots of Avoidance~
 @1201 = ~Senses of the Cat
-The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy, who had tired of suffering 'accidents' at the hands of his inexperienced students.
+The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy, who had tired of suffering "accidents" at the hands of his inexperienced students.
 
 STATISTICS:
 
@@ -1899,7 +1974,7 @@ Weight: 2
 Usable By:
  All~
 @1210 = ~Gargoyle Boots~
-@1211 = ~Legend holds that the mage who created this magical footwear trapped the spirit of an actual gargoyle within these boots. Unfortunately, they couldn't protect the nameless wizard from the vengeance of the gargoyle's mate. As there are multiple variations on the Gargolyle Boots, it is assumed that the tale is, though entertaining, a mere fabrication - an interesting way to explain the magical toughness that the boots provide.
+@1211 = ~Legend holds that the mage who created this magical footwear trapped the spirit of an actual gargoyle within these boots. Unfortunately, they couldn't protect the nameless wizard from the vengeance of the gargoyle's mate. As there are multiple variations on the Gargolyle Boots, it is assumed that the tale is, though entertaining, a mere fabrication—an interesting way to explain the magical toughness that the boots provide.
 
 STATISTICS:
 
@@ -2008,7 +2083,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1222 = ~Shortbow~
-@1223 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow.
+@1223 = ~Shortbows were the first bows to be developed, although they were not called such. "Shortbow" is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow.
 
 STATISTICS:
 
@@ -2028,8 +2103,8 @@ Not Usable By:
  Cavalier
  Kensai~
 @1224 = ~Shortbow +1~
-@1225 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow.~
-@1226 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow is enchanted.
+@1225 = ~Shortbows were the first bows to be developed, although they were not called such. "Shortbow" is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow.~
+@1226 = ~Shortbows were the first bows to be developed, although they were not called such. "Shortbow" is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow is enchanted.
 
 STATISTICS:
 
@@ -2334,7 +2409,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1249 = ~Shortbow +2~
-@1250 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
+@1250 = ~Shortbows were the first bows to be developed, although they were not called such. "Shortbow" is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
 
 STATISTICS:
 
@@ -2549,7 +2624,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1265 = ~Shortbow +3~
-@1266 = ~Shortbows were the first bows to be developed, although they were not called such. 'Shortbow' is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
+@1266 = ~Shortbows were the first bows to be developed, although they were not called such. "Shortbow" is more of a default term that refers to anything which is not a longbow. Shortbow staves are about 5 feet long on average. As the years passed, attempts were made to increase bow ranges, either by giving them longer staves or by increasing flexibility with no change to the length. The former resulted in what is now called the longbow. This particular bow rivals any of its larger cousins: the magic inherent within it, whether a property of the wood itself or the result of a mage's enchantment, makes it more accurate than a normal bow.
 
 STATISTICS:
 
@@ -2684,7 +2759,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1287 = ~Bracers of Defense AC 5~
-@1288 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
+@1288 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits—thinking them easy targets for they wore no armor—would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
 
 STATISTICS:
 
@@ -2696,7 +2771,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@128800000 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
+@128800000 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits—thinking them easy targets for they wore no armor—would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
 
 STATISTICS:
 
@@ -2734,7 +2809,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1291 = ~Bracers of Defense AC 3~
-@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
+@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado—no man other than he would joust without armor—he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2746,7 +2821,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
+@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado—no man other than he would joust without armor—he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2758,7 +2833,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1293 = ~Bracers of the Blinding Strike~ // BG2: Knight Wesic of the Most Noble Order of the Radiant Heart often said, "attack swiftly and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in righteous battle, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@1293 = ~Bracers of the Blinding Strike~ // BG2: Knight Wesic of the Most Noble Order of the Radiant Heart often said, "Attack swiftly and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in righteous battle, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 @1294 = ~Ardulia the Agile often said, "Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
@@ -2790,7 +2865,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1295 = ~Gloves of the Rogue~ // BG2: Gloves of Pickpocketing: A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle, and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.
-@1296 = ~The elderly Oghmanyte Milladolin found that age was affecting her and her fellows quite rapidly, causing their hands to shake and preventing them from performing many of their priestly duties. With Oghma's blessings, Milladolin created magical gloves that steadied their hands and heightened their muscle control. Years later, a young Oghmanyte was caught for thievery - guilty of using the gloves. Word spread, and soon the gloves themselves were stolen away.
+@1296 = ~The elderly Oghmanyte Milladolin found that age was affecting her and her fellows quite rapidly, causing their hands to shake and preventing them from performing many of their priestly duties. With Oghma's blessings, Milladolin created magical gloves that steadied their hands and heightened their muscle control. Years later, a young Oghmanyte was caught for thievery—guilty of using the gloves. Word spread, and soon the gloves themselves were stolen away.
 
 STATISTICS:
 
@@ -2909,7 +2984,7 @@ Usable By:
  Cleric
  Paladin~
 @1309 = ~Bard's Gloves~ // BG2: These leather gloves do not appear to have any special properties, though they are quite fashionable.
-@1310 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves - over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
+@1310 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves—over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
 
 STATISTICS:
 
@@ -2921,7 +2996,7 @@ Weight: 1
 Usable By:
  Bard~
 @1311 = ~Wondrous Gloves~ // BG2: These gem-studded leather gloves are enchanted so as to augment the skills of any bard.
-@1312 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves - over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
+@1312 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves—over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
 
 These gem-studded leather gloves have been further echanted so as to augment the skills of any bard.
 
@@ -2939,7 +3014,7 @@ Usable By:
 @1314 = ~Bands of the Master
 When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
 
-In the surviving teachings of the Kamjin-Doh of Kara-Tur, it is written that a true weapon master relies not on leather, chain, or plate, but on honing their skills so that they are never struck at all... and this means a weapon master must know their enemy's movements like the movements of their own hand. But such mastery lies in staying focused upon your enemy even in the heat of battle... and these simple leather armbands are intended to do just that. While worn, they exert a slight calming influence on the mind of the sword saint that wields them, heightening the warrior's perceptions and senses, and allowing them to read the movements of their opponents easier. On the rare occasion when an enemy strikes a sword saint, these bands allow the wielder to shrug off pain (which in the teachings of Kamjin-Doh are called "distractions") and keep the pain where it belongs - on one's opponent.
+In the surviving teachings of the Kamjin-Doh of Kara-Tur, it is written that a true weapon master relies not on leather, chain, or plate, but on honing their skills so that they are never struck at all... and this means a weapon master must know their enemy's movements like the movements of their own hand. But such mastery lies in staying focused upon your enemy even in the heat of battle... and these simple leather armbands are intended to do just that. While worn, they exert a slight calming influence on the mind of the sword saint that wields them, heightening the warrior's perceptions and senses, and allowing them to read the movements of their opponents easier. On the rare occasion when an enemy strikes a sword saint, these bands allow the wielder to shrug off pain (which in the teachings of Kamjin-Doh are called "distractions") and keep the pain where it belongs—on one's opponent.
 
 If you wear these bands, never forget their purpose, never forget your focus, and never forget the reach of your enemy. Keep these three things in your heart, and they will serve you well in battle.
 
@@ -2958,7 +3033,7 @@ Usable By:
 @131400000 = ~Bands of the Master
 When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
 
-In the surviving teachings of the Kamjin-Doh of Kara-Tur, it is written that a true weapon master relies not on leather, chain, or plate, but on honing their skills so that they are never struck at all... and this means a weapon master must know their enemy's movements like the movements of their own hand. But such mastery lies in staying focused upon your enemy even in the heat of battle... and these simple leather armbands are intended to do just that. While worn, they exert a slight calming influence on the mind of the sword saint that wields them, heightening the warrior's perceptions and senses, and allowing them to read the movements of their opponents easier. On the rare occasion when an enemy strikes a sword saint, these bands allow the wielder to shrug off pain (which in the teachings of Kamjin-Doh are called "distractions") and keep the pain where it belongs - on one's opponent.
+In the surviving teachings of the Kamjin-Doh of Kara-Tur, it is written that a true weapon master relies not on leather, chain, or plate, but on honing their skills so that they are never struck at all... and this means a weapon master must know their enemy's movements like the movements of their own hand. But such mastery lies in staying focused upon your enemy even in the heat of battle... and these simple leather armbands are intended to do just that. While worn, they exert a slight calming influence on the mind of the sword saint that wields them, heightening the warrior's perceptions and senses, and allowing them to read the movements of their opponents easier. On the rare occasion when an enemy strikes a sword saint, these bands allow the wielder to shrug off pain (which in the teachings of Kamjin-Doh are called "distractions") and keep the pain where it belongs—on one's opponent.
 
 If you wear these bands, never forget their purpose, never forget your focus, and never forget the reach of your enemy. Keep these three things in your heart, and they will serve you well in battle.
 
@@ -3237,7 +3312,7 @@ Not Usable By:
  Stalker~
 @1348 = ~Prismatic Chain +4~
 @1349 = ~Rainbow Armor
-Armor of this type is not for those who wish to remain anonymous. More often it is associated with tales of the vain, and bards have even crafted songs about the appearance of 'rainbow warriors' on a battlefield. The protective quality of the multihued surface is undeniable, but it is unfortunate that the mage who crafted these items was colorblind.
+Armor of this type is not for those who wish to remain anonymous. More often it is associated with tales of the vain, and bards have even crafted songs about the appearance of "rainbow warriors" on a battlefield. The protective quality of the multihued surface is undeniable, but it is unfortunate that the mage who crafted these items was colorblind.
 
 This multicolored armor is infused with the wizard's spell Prismatic Spray. Every so often, the wearer can release the magic of the spell at will, and the suit will then slowly absorb energy from the Weave to regain its magical power.
 
@@ -3290,7 +3365,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1352 = ~Elven Chain~
-@1353 = ~The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by thieves and fighter-mages with few restrictions.
+@1353 = ~The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allow it to be worn by thieves and multi-class mages with few restrictions.
 
 STATISTICS:
 
@@ -3309,8 +3384,8 @@ Not Usable By:
  Kensai
  Stalker~
 @1354 = ~Elven Chain +1~
-@1355 = ~The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by thieves and fighter-mages with few restrictions.~
-@1356 = ~This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by fighter-mages without removing their spellcasting ability. This variety of mail is woven in almost exactly the same form by both elves and the drow; its design has changed little since the drow's elven past and is used for surface forays, where adamantine drow chain would decay.
+@1355 = ~The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allow it to be worn by thieves and multi-class mages with few restrictions.~
+@1356 = ~This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by multi-class mages without removing their spellcasting ability. This variety of mail is woven in almost exactly the same form by both elves and the drow; its design has changed little since the drow's elven past and is used for surface forays, where adamantine drow chain would decay.
 
 STATISTICS:
 
@@ -3351,7 +3426,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1359 = ~Melodic Chain +2~
-@1360 = ~The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately, the Bards of Melody were disbanded hundreds of years ago, and the secret of 'playing' the armor faded with them.
+@1360 = ~The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately, the Bards of Melody were disbanded hundreds of years ago, and the secret of "playing" the armor faded with them.
 
 STATISTICS:
 
@@ -3469,8 +3544,10 @@ Requires:
 Weight: 35
 
 Not Usable By:
+ Bard
  Mage
  Monk
+ Thief
  Avenger
  Kensai
  Shapeshifter
@@ -3797,8 +3874,8 @@ Weight: 3
 
 Not Usable By:
  Wizard Slayer~
-@1418 = ~Cloak of Mirroring~ // BG2: Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water". Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
-@1419 = ~Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water". Its true enchantment becomes apparent in battle when the mantle makes a reflected image of the wearer to appear alongside him. Unable to discern which one is real, an attacker has a 50% chance that he will attack the image and a 50% chance that he will attack the wearer, in either case risking to trigger again another image. Whenever an attacker successfully hits the wearer the cloak dazzles foes with sparkling lights for an instant and causes another image to appear.
+@1418 = ~Cloak of Mirroring~ // BG2: Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water." Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
+@1419 = ~Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water." Its true enchantment becomes apparent in battle when the mantle makes a reflected image of the wearer to appear alongside him. Unable to discern which one is real, an attacker has a 50% chance that he will attack the image and a 50% chance that he will attack the wearer, in either case risking to trigger again another image. Whenever an attacker successfully hits the wearer the cloak dazzles foes with sparkling lights for an instant and causes another image to appear.
 
 STATISTICS:
 
@@ -3863,9 +3940,8 @@ Equipped abilities:
 Weight: 3
 
 Not Usable By:
- Paladin
  Wizard Slayer~
-@1424 = ~Cloak of Protection +3~ // BG2: Improved Cloak of Protection +2: The abilities conferred by this powerfully enchanted cloak attest to the fact that protection can take many forms - including hiding from view and running away.
+@1424 = ~Cloak of Protection +3~ // BG2: Improved Cloak of Protection +2: The abilities conferred by this powerfully enchanted cloak attest to the fact that protection can take many forms—including hiding from view and running away.
 @1425 = ~The Spirit's Shield
 This cloak is said to focus the energies of one's spirit into a force that protects him or her. Rumors of a vampire enslaved in the magical item are ever-present, but they are impossible to prove without destroying the cloak.
 
@@ -3881,8 +3957,8 @@ Weight: 3
 
 Not Usable By:
  Wizard Slayer~
-@1426 = ~Montolio's Cloak~ // BG2: This is the fabled cloak of Montolio DeBrouchee - the aged, blind mentor of the dark-elf ranger Drizzt Do'urden. Like his famous pupil, Montolio was a master at wielding two blades simultaneously.
-@1427 = ~Montolio Debrouchee, better known as "Mooshie", was a ranger of great renown, having dedicated himself to the defense of all living things not evil in nature, and total dedication to the goddess of the forest, Mielikki, at an early age. He served as a ranger for many years, often as a scout for large armies, or working with small groups of rangers or by himself. Montolio was a good friend and a mentor of the dark elf Drizzt Do'Urden. He became blinded five years before he met Drizzt while serving with a ranger group known as the Range Watchers, when they encountered and came into battle against a vicious red dragon, which killed three rangers and melted Montolio's face. His face was healed by clerics, but his eyes were beyond repair. Being pitied even by the Range Watchers and thinking his life meaningless, he fell into despair and came to the grove later known as Mooshie's Grove to die there. Instead, he learned to survive by using his other senses to their fullest extent. He befriended the animals and made it a personal goal to keep watch on, and protect the caravans going near the grove from Graul, an orc leader, and his raiding band. Mooshie eventually died of natural causes in his sleep.
+@1426 = ~Montolio's Cloak~ // BG2: This is the fabled cloak of Montolio DeBrouchee—the aged, blind mentor of the dark-elf ranger Drizzt Do'urden. Like his famous pupil, Montolio was a master at wielding two blades simultaneously.
+@1427 = ~Montolio Debrouchee, better known as "Mooshie," was a ranger of great renown, having dedicated himself to the defense of all living things not evil in nature, and total dedication to the goddess of the forest, Mielikki, at an early age. He served as a ranger for many years, often as a scout for large armies, or working with small groups of rangers or by himself. Montolio was a good friend and a mentor of the dark elf Drizzt Do'Urden. He became blinded five years before he met Drizzt while serving with a ranger group known as the Range Watchers, when they encountered and came into battle against a vicious red dragon, which killed three rangers and melted Montolio's face. His face was healed by clerics, but his eyes were beyond repair. Being pitied even by the Range Watchers and thinking his life meaningless, he fell into despair and came to the grove later known as Mooshie's Grove to die there. Instead, he learned to survive by using his other senses to their fullest extent. He befriended the animals and made it a personal goal to keep watch on, and protect the caravans going near the grove from Graul, an orc leader, and his raiding band. Mooshie eventually died of natural causes in his sleep.
 
 STATISTICS:
 
@@ -4048,7 +4124,7 @@ Not Usable By:
  Cleric
  Beast Master~
 @1446 = ~Pixie Prick +2~
-@1447 = ~The Pixie Prick almost appears to be a toy, so fine and delicate is the workmanship of the blade and handle. Yet when the command word 'Sleep' is intoned, the tiny dagger glows with a blue nimbus. Upon striking an opponent, the Pixie Prick releases a surge of powerful magic, potentially inducing a deep slumber, and can toss into the air a small amount of pixie dust sufficient to conceal the wielder. Legends say that the ancient sprite knight, Alfonso de Noble, wielded the Pixie Prick not as a dagger but as a two-handed sword.
+@1447 = ~The Pixie Prick almost appears to be a toy, so fine and delicate is the workmanship of the blade and handle. Yet when the command word "Sleep" is intoned, the tiny dagger glows with a blue nimbus. Upon striking an opponent, the Pixie Prick releases a surge of powerful magic, potentially inducing a deep slumber, and can toss into the air a small amount of pixie dust sufficient to conceal the wielder. Legends say that the ancient sprite knight, Alfonso de Noble, wielded the Pixie Prick not as a dagger but as a two-handed sword.
 
 STATISTICS:
 
@@ -4172,8 +4248,9 @@ Requires:
 
 Weight: 1
 
-Usable By:
- Mage~
+Not Usable By:
+ Cleric
+ Beast Master~
 @1458 = ~Dagger of the Star +4~
 @1459 = ~Rumored to have been dropped from the Heavens by a careless lesser deity, this dagger is made of starmetal, an extremely rare and precious ore infused with mighty magical power. Fallen stars are the only known source of starmetal, and this superior alloy made from meteoric iron is extraordinarily hard, equaling adamantite for all purposes. Starmetal also possesses an inherent magical connection to the Material Plane, meaning that weapons made of this alloy are especially effective against creatures from other planes.
 
@@ -4225,7 +4302,7 @@ Not Usable By:
  Cleric
  Beast Master~
 @1462 = ~Ixil's Spike +3~
-@1463 = ~This "dagger" is actually the tip of Ixil's Nail - an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
+@1463 = ~This "dagger" is actually the tip of Ixil's Nail—an artifact of almost unimaginable power. Even this small piece of the legendary spear is a fierce weapon.
 
 STATISTICS:
 
@@ -4337,7 +4414,7 @@ Not Usable By:
  Cavalier
  Kensai~
 @1475 = ~Asp's Nest +2~
-@1476 = ~While working for the Shadow Thieves, Fargon Fol collected thousands of small poisonous snakes to create the Asp's Nest. Fargon took each snake and with her powerful magic she made a dart of each. She made the dart so that when it strikes its opponent, the snake returns to life, biting and inflicting poison damage on the target. The title Asp's Nest refers to the entire collection of darts, most of which have vanished, either destroyed in use or lost on a long forgotten battlefield.
+@1476 = ~While working for the Shadow Thieves, Fargon Fol collected thousands of small poisonous snakes to create the Asp's Nest. Fargon took each snake and with her powerful magic she made a dart of each. She made the dart so that when it strikes its opponent, the snake returns to life, biting and inflicting poison damage on the target. The title "Asp's Nest" refers to the entire collection of darts, most of which have vanished, either destroyed in use or lost on a long forgotten battlefield.
 
 STATISTICS:
 
@@ -4400,14 +4477,13 @@ Requires:
 Weight: 10
 
 Not Usable By:
- Cleric
  Druid
  Mage
  Monk
  Thief
  Beast Master~
 @1481 = ~Drowcraft Bolt of Sleep +1~
-@1482 = ~The dark elves are renowned for their use of unconsciousness inducing poison. They carefully guard the secret of their venom, and it is difficult to find outside of drow realms and outposts. Bolts coated in this poison are aften used by drows when capturing slaves.
+@1482 = ~The dark elves are renowned for their use of unconsciousness inducing poison. They carefully guard the secret of their venom, and it is difficult to find outside of drow realms and outposts. Bolts coated in this poison are aften used by drow when capturing slaves.
 
 Drowcraft ammunition will dissolve to dust if exposed to sunlight and shouldn't be removed from the Underdark.
 
@@ -4421,7 +4497,12 @@ THAC0: +1
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1483 = ~Drowcraft Bolt of Stunning +2~
 @1484 = ~Drowcraft ammunition will dissolve to dust if exposed to sunlight and shouldn't be removed from the Underdark.
 
@@ -4435,7 +4516,12 @@ THAC0: +2
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1485 = ~Drowcraft Bolt +3~
 @1486 = ~Drowcraft ammunition will dissolve to dust if exposed to sunlight and shouldn't be removed from the Underdark.
 
@@ -4448,7 +4534,12 @@ THAC0: +3
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1487 = ~Drowcraft Adamantine Spellchain +1~
 @1488 = ~Many parts of the Underdark of Faerûn are suffused with a magical radiation that the drow call faerzress. A remnant of the mighty forces that originally shaped the terrain of the Underdark, faerzress distorts and interferes with certain types of magic.
 
@@ -4456,7 +4547,7 @@ The drow have long sought out places of powerful faerzress in which to raise the
 
 A drowcraft armor is energized by local earth nodes and the surrounding aura of faerzress. As long as it remains within an earth node or a zone of faerzress, it grants its wearer exceptional protection. Drowcraft armor will dissolve to dust if exposed to sunlight and shouldn't be removed from the Underdark.
 
-This magical drow chain mail, much like their cousins' elven chain is so finely wrought that it can be worn under normal clothing without revealing its presence, and allows it to be worn with few restrictions. This powerful drow armor also increases the wearer's magic resistance, and casting speed factor.
+This magical drow chain mail, much like their cousins' elven chain is so finely wrought that it can be worn under normal clothing without revealing its presence, and allows it to be worn with few restrictions. This powerful drow armor also increases the wearer's magic resistance and casting speed.
 
 STATISTICS:
 
@@ -4509,7 +4600,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1491 = ~Drow Piwafwi Cloak~
-@1492 = ~The magically enhanced drow piwafwi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafwi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
+@1492 = ~The magically enhanced drow piwafwi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafwi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light—the effect of which will turn the cloak to dust.
 
 STATISTICS:
 
@@ -4589,7 +4680,7 @@ Not Usable By:
  Stalker~
 @1501 = ~Medium Shield~
 @1502 = ~Drowcraft Shield +3~
-@1503 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.~
+@1503 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.~
 @1504 = ~Many parts of the Underdark of Faerûn are suffused with a magical radiation that the drow call faerzress. A remnant of the mighty forces that originally shaped the terrain of the Underdark, faerzress distorts and interferes with certain types of magic.
 
 The drow have long sought out places of powerful faerzress in which to raise their cities, since the magical radiation helps to frustrate spying and protect against enemy assaults. The magical energy can also be used in the construction of various powerful magic items.
@@ -4933,7 +5024,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1536 = ~The Wave +4~
-@1537 = ~Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving an even more powerful holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately, The Wave disappeared along with them. It was eventually found by the adventurer Arganon of the Long Reach, who found it extremely useful during his planar travels, and The Wave soon became known on the Elemental Plane of Fire as "Clisirick", or "Fire Eater". Whether The Bitch Queen was hungry to retrieve the holy weapon or just took pleasure in unleashing her wrath, Arganon's ship was sunk during a great storm in the Sea of Swords and The Wave has been lost ever since.
+@1537 = ~Forged in antiquity by a cult devoted to the goddess Umberlee, this weapon of vengeance was designed to aid the cult's champion in retrieving an even more powerful holy artifact from the fire giants of the Storm Horn Mountains. That was a lot of hope to place in one champion, and unfortunately, The Wave disappeared along with them. It was eventually found by the adventurer Arganon of the Long Reach, who found it extremely useful during his planar travels, and The Wave soon became known on the Elemental Plane of Fire as "Clisirick," or "Fire Eater." Whether The Bitch Queen was hungry to retrieve the holy weapon or just took pleasure in unleashing her wrath, Arganon's ship was sunk during a great storm in the Sea of Swords and The Wave has been lost ever since.
 
 STATISTICS:
 
@@ -4992,7 +5083,7 @@ Not Usable By:
 @1540 = ~Ravager +5~
 @1541 = ~The guards upon the walls of the evil fortress, Darkhold, carry halberds of ancient, demonic creation. The halberds were purchased from the forges of hell in trade for the souls of captured heroes, so each halberd is a valued possession. Those who wield these weapons outside the walls of Darkhold do so at their own peril, for the master of the hold is said to be linked to each one. Only taking the blood-soaked shaft of this weapon in hand brings a sudden chill along the spine and the very sight of this cursed halberd has been known to strike terror into the heart of an opponent.
 
-Combined with the Serpent Shaft, this dark halberd has the ability to slay an opponent with a single blow - unless they can survive its lethal poison.
+Combined with the Serpent Shaft, this dark halberd has the ability to slay an opponent with a single blow—unless they can survive its lethal poison.
 
 STATISTICS:
 
@@ -5043,7 +5134,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1544 = ~War Hammer~
-@1545 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.
+@1545 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this—the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.
 
 STATISTICS:
 
@@ -5063,7 +5154,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1546 = ~War Hammer +1~
-@1547 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.~
+@1547 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this—the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long.~
 @1548 = ~Like others of its type, this war hammer is made entirely of steel, with a bone-crushing hammer mounted upon an 18" shaft. This war hammer is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -5085,7 +5176,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1549 = ~Ashideena +2~
-@1550 = ~Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
+@1550 = ~Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon—the warrior that wielded this weapon—when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
 
 STATISTICS:
 
@@ -5109,7 +5200,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1551 = ~Hammer of Corrosion +1~ // BG2: War Hammer +1, +4 vs. Giantkin: The Knee-Capper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
-@1552 = ~The Hammer of Corrosion, or "The Defiler", as it has become known in dwarven circles, is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenceless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
+@1552 = ~The Hammer of Corrosion—or "The Defiler," as it has become known in dwarven circles—is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenceless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
 
@@ -5211,7 +5302,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1559 = ~War Hammer +2~
-@1560 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
+@1560 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this—the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
 
 STATISTICS:
 
@@ -5328,7 +5419,7 @@ Not Usable By:
  Thief
  Beast Master~
 @1567 = ~War Hammer +3~
-@1568 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this - the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
+@1568 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this—the war hammer is another. The horseman's war hammer is a descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. Rondels are small disks of metal, often shaped into decorative designs. The shaft is about 18 inches long. Powerful magical energy flows through this weapon, though its origins are unknown.
 
 STATISTICS:
 
@@ -5431,7 +5522,7 @@ Not Usable By:
  Kensai~
 @1578 = ~Helm of the Watcher~ // BG1/2: Helm of Infravision: The Eyes of Truth: Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.
 @1579 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.~
-@1580 = ~It is unclear if these magic headpieces were created by clerics of Helm, god of guardians, or if they acquired their name by a more convenient circumstance. Whatever the case, they are highly prized by guards and sentries. Needless to say, bandits have also taken to wearing them, proving the old proverb that 'what's good for the goose is good for the gander'.
+@1580 = ~It is unclear if these magic headpieces were created by clerics of Helm, god of guardians, or if they acquired their name by a more convenient circumstance. Whatever the case, they are highly prized by guards and sentries. Needless to say, bandits have also taken to wearing them, proving the old proverb that "what's good for the goose is good for the gander."
 
 STATISTICS:
 
@@ -5676,7 +5767,7 @@ Not Usable By:
  Thief
  Kensai~
 @1606 = ~Golden Ioun Stone~ // BG2: Highly sought out by wizards and mages, this ioun stone raises the intelligence of those who possess it.
-@1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of their spells. Considered 'cheating' by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
+@1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of their spells. Considered "cheating" by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
 
 STATISTICS:
 
@@ -5756,7 +5847,7 @@ Usable By:
  Mage~
 @1620 = ~Thieves' Hood~
 @1621 = ~Although this hood does not confer any noticeable advantages on its wearer, it does have an aura of latent magic.~
-@1622 = ~Bards and rogues alike are known to reminisce on "the glory days", and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
+@1622 = ~Bards and rogues alike are known to reminisce on "the glory days," and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
 
 STATISTICS:
 
@@ -5769,8 +5860,10 @@ Weight: 1
 Usable By:
  Bard
  Thief~
-@1623 = ~Master Thief's Hood~ // BG2: There is no honor among thieves. Perhaps that is why the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
-@1624 = ~Bards and rogues alike are known to reminisce on "the glory days", and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
+@1623 = ~Master Thief's Hood~ // BG2: Improved Thieves' Hood: There is no honor among thieves. Perhaps that is why the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
+@1624 = ~Bards and rogues alike are known to reminisce on "the glory days," and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
+
+Combined with the power of the Ring of Invisibility, the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
 
 STATISTICS:
 
@@ -5788,7 +5881,7 @@ Usable By:
  Bard
  Thief~
 @1625 = ~Helm of the Rock~
-@1626 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear - not only in the people they seek to conquer, but also in their own warriors.
+@1626 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear—not only in the people they seek to conquer, but also in their own warriors.
 
 This helm grants a warrior immunities far beyond mere physical protections. It is obvious there once used to be a set of horns protruding from the metal cap, though the horns and any magic associated with them have long since disappeared.
 
@@ -5803,7 +5896,7 @@ Weight: 3
 
 Usable By:
  Fighter~
-@1627 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear - not only in the people they seek to conquer, but also in their own warriors.
+@1627 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear—not only in the people they seek to conquer, but also in their own warriors.
 
 With the addition of the horns, the Helm of the Rock is even more powerful. Generals and military leaders can command both fear and respect simply by wearing this helm.
 
@@ -6123,7 +6216,7 @@ Not Usable By:
 @1665 = ~Armor of the Viper +4~
 @1666 = ~This armor's namesake is a serpent only in manner, referring to the drow assassin Raroh. Poison was his trademark, and he had this suit enchanted consequently without revealing its properties to anyone.
 
-Raroh taught everything he knew about the art of killing and the secrets to create the most lethal of poisons to Avlorm, the most promising novice assassin within his own guild. But when Avlorm's power eventually threatened his own, Raroh had to teach his pupil the last lesson of his life. Avlorm and a few trained assassins planned to kill their master within his own house, with the aid of the night and the best poison they could brew. Unfortunately for them, Raroh was well aware of this, and thanks to this suit's immunity to venom, their poisoned darts and blades couldn't harm him. Subsequentely he easily dispatched all of them entwisting them in a poisonous cloud of ghastly, green vapors, and landing the killing blows with bare hands.
+Raroh taught everything he knew about the art of killing and the secrets to create the most lethal of poisons to Avlorm, the most promising novice assassin within his own guild. But when Avlorm's power eventually threatened his own, Raroh had to teach his pupil the last lesson of his life. Avlorm and a few trained assassins planned to kill their master within his own house, with the aid of the night and the best poison they could brew. Unfortunately for them, Raroh was well aware of this, and thanks to this suit's immunity to venom, their poisoned darts and blades couldn't harm him. Subsequentely, he easily dispatched all of them entwisting them in a poisonous cloud of ghastly, green vapors, and landing the killing blows with bare hands.
 
 STATISTICS:
 
@@ -6145,9 +6238,9 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
-@1667 = ~Shadow Dragonhide Armor +5~
+@1667 = ~Shadow Dragonhide Armor +5~ // BG2: Shadow Dragon Scale: This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer extra protection from acid.
 @1668 = ~Boots of the West~
-@1669 = ~This suit of hide armor is formed from interlocking shadow dragon scales. Lighter and less encumbrant than most hide armors, shadow dragonhide armor also protects the wearer from negative energy attacks. Suits such as this are much sought after, but few smiths are willing to craft them. The necessary materials are rare and dangerous to acquire, and dragons have long memories where their kin are concerned. Most smiths would prefer not to even risk association with the trade in dragon hide.
+@1669 = ~This suit of armor is formed from interlocking shadow dragon scales. Lighter and less cumbersome than most hide armors, shadow dragonhide also protects the wearer from negative energy attacks. Suits such as this are much sought after, but few smiths are willing to craft them. The necessary materials are rare and dangerous to acquire, and dragons have long memories where their kin are concerned. Most smiths would prefer not to even risk association with the trade in dragon hide.
 
 STATISTICS:
 
@@ -6269,7 +6362,7 @@ Not Usable By:
 @1681 = ~Aegis-fang +3~
 @1682 = ~Aegis-fang is a mighty battlehammer forged by King Bruenor Battlehammer, and is considered his masterwork. Crafted for Wulfgar, the gods imbued it, making it unbreakable and able to return on command.
 
-The hammer's head was forged of mithral while the handle is made of adamantite. Upon the hammer's head there are three dwarven symbols edged in diamond dust. On one side is a set of crossed axes, the symbol of Clangeddin, the dwarven god of battle. On the other side is an anvil and hammer, the symbol of Moradin the Soulforger. Carefully detailed and layed upon both sides is also the symbol of Dumathoin, the keeper of Secrets.
+The hammer's head was forged of mithral while the handle is made of adamantite. Upon the hammer's head, there are three dwarven symbols edged in diamond dust. On one side is a set of crossed axes, the symbol of Clangeddin, the dwarven god of battle. On the other side is an anvil and hammer, the symbol of Moradin the Soulforger. Carefully detailed and layed upon both sides is also the symbol of Dumathoin, the Keeper of Secrets.
 
 This weapon was made specifically for Wulfgar by Bruenor Battlehammer, and the strongest of its enchantments only functions while in the young warrior's hands.
 
@@ -6340,8 +6433,8 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1687 = ~Dark Elven Spellchain +3~
-@1688 = ~This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by fighter-mages without impairing their spellcasting ability. This variety of mail is woven in almost exactly the same form by both elves and drows; its design has changed little since the drow's elven past and is used for surface forays, where drowcrafted chain would decay.
+@1687 = ~Dark Elven Spellchain +3~ // BG2: Woven by the finest of elven craftsmen, this mail feels more akin to cloth than to metal. The armor may be worn by thieves with few penalties and by fighter-mages without removing their spellcasting ability.
+@1688 = ~This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by multi-class mages without impairing their spellcasting ability. This variety of mail is woven in almost exactly the same form by both elves and drow; its design has changed little since the drow's elven past and is used for surface forays, where drowcrafted chain would decay.
 
 STATISTICS:
 
@@ -6588,7 +6681,7 @@ Not Usable By:
 @1711 = ~Horn~
 @1712 = ~Horn of Blasting~
 @1713 = ~This is a small horn. Horns are typically made of bone or metal and can produce a large variety of sounds.~
-@1714 = ~While many army engineers spent their time perfecting siege equipment, Julius Baggar delved into magical tomes for his engineering insights. Therein he found ancient scriptures that detailed how to make, control, and wield sound waves. The Horn of Blasting was his first and only attempt at applying the theoretical magical knowledge to the creation of a practical new technology. An apprentice blew through the horn while it was aimed in the direction of Julius, who had insisted on a 'useful experiment.' The resulting shockwave that emanated from the horn first stunned poor Julius, and then tore him apart.
+@1714 = ~While many army engineers spent their time perfecting siege equipment, Julius Baggar delved into magical tomes for his engineering insights. Therein he found ancient scriptures that detailed how to make, control, and wield sound waves. The Horn of Blasting was his first and only attempt at applying the theoretical magical knowledge to the creation of a practical new technology. An apprentice blew through the horn while it was aimed in the direction of Julius, who had insisted on a "useful experiment." The resulting shock wave that emanated from the horn first stunned poor Julius, and then tore him apart.
 
 STATISTICS:
 
@@ -6792,7 +6885,7 @@ Weight: 1
 Usable By:
  Bard~
 @1732 = ~Glasses of Identification~
-@1733 = ~Wearing these glasses allows the user to see magical items as they truly are. The proper instructions to activate the object appear like floating words before the wearer of these glasses. The glasses may be used three times per day. The glasses act much like a scroll of identify, in that to identify an item you right-click on that item. A menu will appear and from here you choose the 'scroll' option. The item will now be identified.
+@1733 = ~Wearing these glasses allows the user to see magical items as they truly are. The proper instructions to activate the object appear like floating words before the wearer of these glasses. The glasses may be used three times per day. The glasses act much like a scroll of identify, in that to identify an item you right-click on that item. A menu will appear and from here you choose the "scroll" option. The item will now be identified.
 
 STATISTICS:
 
@@ -6801,8 +6894,8 @@ Special abilities:
 
 Weight: 1
 
-Usable By:
- All~
+Not Usable By:
+ Wizard Slayer~
 @1734 = ~Harper Pin~
 @1735 = ~Amulet of a Harper Pin~
 @1736 = ~A Harper Pin is a treasured item, signifying that the bearer is an honored and trusted member of the Harpers. It grants the wearer exceptional protection against many different kinds of attacks. They are not attuned to any particular person, but you would be hard pressed to find someone that would lend such an item or even let it out of their sight. It is quite literally a badge of honor.
@@ -6913,7 +7006,12 @@ THAC0: +1
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 2~
+Weight: 2
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1749 = ~Case of Plenty +1~
 @1750 = ~The history of this magical case has been long forgotten, though it likely had something to do with the inexplicable but well-documented shortage of competent fletchers during the Time of Troubles.
 
@@ -6926,7 +7024,12 @@ THAC0: +1
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 2~
+Weight: 2
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1751 = ~Quiver of Plenty +3~
 @1752 = ~One often repeated, though never substantiated, legend holds that the quiver was once given as a gift to Duke Orin Gastlecate. Orin cared little for politics and the day to day duties of his fiefdom, and would often vanish for weeks at a time into the thick forests that covered much of his land where he would live the life of a solitary hunter.
 
@@ -6936,7 +7039,7 @@ If the stories can be believed, Orin was eventually approached by an unscrupulou
 
 Of course the merchant quickly established himself as a cruel and insufferable tyrant, and within a month Orin's subjects had deposed their new ruler, dragged Orin from his beloved forest and imprisoned him in his own castle, forcing him to be their lord once more. To insure he never escaped to the woods again Orin's precious quiver was forever hidden away, and mere mention of it became an offense punishable by death.
 
-The money and resources you invested in the Quiver of Plenty have resulted in an item of even greater magical properties.
+Resources invested in the Quiver of Plenty have resulted in arrows of even greater magical properties.
 
 STATISTICS:
 
@@ -6947,11 +7050,16 @@ THAC0: +3
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 2~
+Weight: 2
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @1753 = ~Case of Plenty +3~
 @1754 = ~The history of this magical case has been long forgotten, though it likely had something to do with the inexplicable but well-documented shortage of competent fletchers during the Time of Troubles.
 
-The money and resources you invested in the Case of Plenty have resulted in an item of even greater magical properties.
+Resources invested in the Case of Plenty have resulted in bolts of even greater magical properties.
 
 STATISTICS:
 
@@ -6962,7 +7070,12 @@ THAC0: +3
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 2~
+Weight: 2
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @1755 = ~Bag~
 @1756 = ~Bag of Plenty +1~
 @1757 = ~A simple cloth bag may be used for holding any number of items.~
@@ -6981,7 +7094,7 @@ Weight: 2~
 @999 = ~Bag of Plenty +3~
 @1759 = ~Although this soft cloth pouch seems empty right now, there is still a powerful aura of magic surrounding it.
 
-The money and resources you invested in the Bag of Plenty have resulted in an item of even greater magical properties.
+Resources invested in the Bag of Plenty have resulted in bullets of even greater magical properties.
 
 STATISTICS:
 
@@ -7147,7 +7260,7 @@ Weight: 5
 
 Usable By:
  Jan Jansen~
-@1784 = ~Bow of Arvoreen +2~ // This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by halflings, granting a +2 bonus to hit rolls.
+@1784 = ~Bow of Arvoreen +2~ // BG2: This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen. It is usable only by halflings, granting a +2 bonus to hit rolls.
 @1785 = ~This enchanted bow has been in Mazzy Fentan's possession for several years, given to her by her god Arvoreen.
 
 STATISTICS:
@@ -7302,10 +7415,9 @@ STATISTICS:
 Equipped abilities:
 – Luck: +2 (+10% for skills)
 
-
 Usable By:
  Nalia~
-@1804 = ~Delryn Family Shield +2~ // This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy. This protection from normal missiles can be used three times per day.
+@1804 = ~Delryn Family Shield +2~ // BG2: This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy. This protection from normal missiles can be used three times per day.
 @1805 = ~This is Anomen's family shield, given to him by his father. In addition to magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, they can use the shield to erect a field of protective energy around themselves.
 
 STATISTICS:
@@ -7622,14 +7734,16 @@ Weight: 25
 Not Usable By:
  Bard
  Mage
- Thief
  Monk
+ Thief
  Avenger
+ Archer
  Barbarian
+ Beast Master
  Kensai
  Shapeshifter
  Stalker~
-@1835 = ~Radiant Plate +2~ // BG1: The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
+@1835 = ~Radiant Plate +2~ // BG1: The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur "Thunderaxe" at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur "Thunderaxe" neglected his armors—to say as such would get your ears boxed—but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
 @1836 = ~This brilliant golden armor has a short history. A priestess of Lathander named Iraeni of Suzail had it constructed for the champion of her church, a warrior-priest named Beldan Miller. Beldan employed the armor frequently, as Iraeni was often attacked by agents of Myrkul. After twenty years of serving Lathander, Iraeni decided to step down from her office, as did Beldan. They were married shortly after. Beldan gave the armor to an errant paladin of Lathander, who is believed to have died fighting a powerful undead creature in Amn.
 
 STATISTICS:
@@ -7884,8 +7998,10 @@ Not Usable By:
  Mage
  Monk
  Thief
+ Archer
  Avenger
  Barbarian
+ Beast Master
  Beast Master
  Kensai
  Shapeshifter
@@ -7931,6 +8047,7 @@ Not Usable By:
  Mage
  Monk
  Thief
+ Archer
  Avenger
  Barbarian
  Beast Master
@@ -8026,7 +8143,7 @@ Not Usable By:
  Wizard Slayer~
 @1865 = ~Band of the Forest~ // BG1/BG2: Ring of Animal Friendship
 @1866 = ~Druid's Ring
-This slender band of green metal has a strange, organic warmth to it - more like a vine than a circle of steel. A druid order in Cormanthor is said to cautiously guard the secret to the construction of these rings, which have never been seen in the possession of anyone outside their immediate membership. How this particular ring escaped the protection of their forest is unknown, but there are rumors that an outcast could have brought it into exile with him.
+This slender band of green metal has a strange, organic warmth to it—more like a vine than a circle of steel. A druid order in Cormanthor is said to cautiously guard the secret to the construction of these rings, which have never been seen in the possession of anyone outside their immediate membership. How this particular ring escaped the protection of their forest is unknown, but there are rumors that an outcast could have brought it into exile with him.
 
 STATISTICS:
 
@@ -8279,7 +8396,7 @@ Weight: 0
 Usable By:
  Thief~
 @1901 = ~Ring of Danger Sense~
-@1902 = ~Nizzuf's Maze was a grand hedge maze created by the arch-mage Nizzuf for his amusement. The maze boasted hundreds of magical traps, most of them extremely lethal. Nizzuf posted a reward big enough to buy a kingdom for the man or woman brave enough to enter the maze and reach its core. Thousands tried and died. But one, Oteg Verm, completed the maze, thanks mainly to this ring which let him 'see' where the traps were hidden.
+@1902 = ~Nizzuf's Maze was a grand hedge maze created by the arch-mage Nizzuf for his amusement. The maze boasted hundreds of magical traps, most of them extremely lethal. Nizzuf posted a reward big enough to buy a kingdom for the man or woman brave enough to enter the maze and reach its core. Thousands tried and died. But one, Oteg Verm, completed the maze, thanks mainly to this ring which let him "see" where the traps were hidden.
 
 STATISTICS:
 
@@ -8366,8 +8483,7 @@ Equipped abilities:
 Weight: 1
 
 Usable By:
- Druid
- Ranger~
+ Druid~
 @1913 = ~Ring of Larloch~ // BG2: Ring of Anti-Venom: This ring is an unadorned silver band. However, its plain appearance belies the powerful magic within. A Ring of Anti-Venom is eagerly sought after by royalty, influential political figures, and other potential assassination targets.
 @1914 = ~Soul Stealer
 Larloch, the infamous necromancer turned lich, had an insatiable need for new souls for his research. The means he used to tear them from their living bodies and capture them are as myriad as they are terrifying. The uninitiated dabble with Larloch's artifacts at their own peril.
@@ -8653,7 +8769,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1944 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.
+@1944 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.
 
 STATISTICS:
 
@@ -8673,7 +8789,7 @@ Not Usable By:
  Thief
  Kensai~
 @1945 = ~Medium Shield +1~
-@1946 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward. This magical shield grants an extra bonus of +1 against attacks.
+@1946 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using his shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward. This magical shield grants an extra bonus of +1 against attacks.
 
 STATISTICS:
 
@@ -8833,8 +8949,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@1964 = ~Red Dragonscale Shield +2~
-@1965 = ~Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a heavy shield frame. The red background is adorned in a pattern that, when looked in the right way, reveals the face of an ancient dragon. Crafted to withstand a mighty red dragon's breath the shield is able to drop off its effects as well as absorbing and nullifying shock waves of any kind of source (wing buffets, physical blows, telekinesis, etc.).
+@1964 = ~Red Dragonscale Shield +2~ // BG2: Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a steel frame. Green and white dragon scales adorn the red background in a pattern that, when looked in the right way, reveals the face of an ancient dragon.
+@1965 = ~Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a heavy shield frame. The red background is adorned in a pattern that, when looked in the right way, reveals the face of an ancient dragon. Crafted to withstand a mighty red dragon's breath, the shield is also able to absorb shock waves of any kind of source (wing buffets, physical attacks, telekinesis, etc.).
 
 STATISTICS:
 
@@ -9057,7 +9173,7 @@ Desperate as he was to avenge his sons, Argeld could not send more of his people
 
 But Glimred was impatient, his lust for vengeance could not be deferred, and he disappeared into the bowels of the Marching Mountains before the work was completed, never to be seen again. The disappearance and presumed death of his sole surviving son proved too much for Argeld, who died from the grief of a broken heart.
 
-With their leader dead and their hero Glimred gone, the dwarves knew it was only a matter of time before their clan was overrun by their Underdark enemies. Before dispersing across the face of Faerûn, the clan sold the shield to the highest bidder - though the dwarven smiths to this day have refused to divulge the mysterious buyer's identity.
+With their leader dead and their hero Glimred gone, the dwarves knew it was only a matter of time before their clan was overrun by their Underdark enemies. Before dispersing across the face of Faerûn, the clan sold the shield to the highest bidder—though the dwarven smiths to this day have refused to divulge the mysterious buyer's identity.
 
 STATISTICS:
 
@@ -9092,14 +9208,9 @@ Requires:
 
 Weight: 15
 
-Not Usable By:
- Bard
- Druid
- Fighter
- Mage
- Monk
- Thief
- Kensai~
+Usable By:
+ Cleric
+ Paladin~
 @1988 = ~Among mankind's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks that had been sharpened at one end. Upon mastering the use of metals, weaponsmiths forged spear heads from iron and steel, and began experimenting with different types of spear heads, thus leading to the development of certain types of polearms.
 
 STATISTICS:
@@ -10026,7 +10137,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2066 = ~Short Sword~
-@2067 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term 'short sword' does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+@2067 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
 STATISTICS:
 
@@ -10045,8 +10156,8 @@ Not Usable By:
  Mage
  Beast Master~
 @2068 = ~Short Sword +1~
-@2069 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.~
-@2070 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term 'short sword' does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. This short sword is particularly good at its job, as it has been enchanted with a few magical properties.
+@2069 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.~
+@2070 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. This short sword is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -10066,7 +10177,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2071 = ~Short Sword +2~
-@2072 = ~This short sword was forged by hands both magical and highly skilled. Neither nick nor stain mar the flawless blade. When used in battle, the blade radiates magic and gifts the wielder with increased skill.
+@2072 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term 'short sword' does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
 
 STATISTICS:
 
@@ -10218,7 +10329,7 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
-@2084 = ~Flame Tongue +3~
+@2084 = ~Flame Tongue +3~ // BG1/2: 
 @2085 = ~Blades of this type hail from the workshop of Raegik Hammerhold, a Rashemar smith who refused to reveal the secrets of his craft to any but his chosen apprentice. It is unknown how many of Flame Tongue blades may exist, but it is certain there are no more being produced. Raegik discovered his student dealing with the Red Wizards of Thay, and is believed to have died in the ensuing battle.
 
 NOTE: Flame Tongue is always considered to be of +3 enchantment when determining what it can hit.
@@ -10350,32 +10461,15 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2094 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term 'short sword' does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
-
-STATISTICS:
-
-THAC0: +2
-Damage: 1d6+2 (piercing)
-Speed Factor: 1
-Proficiency Type: Short Sword
-Type: One-handed
-Requires:
- 5 Strength
-
-Weight: 3
-
-Not Usable By:
- Cleric
- Druid
- Mage
- Beast Master~
+@2094 = ~Unused~
 @2095 = ~Belm +2~
-@2096 = ~This legendary blade was wielded for a short time by the Tempest warrior Ilban of Elturel. It is from his exploits in Calimshan that the weapon gained its fame. Before Ilban, however, Belm was in the possession of a holy slayer from distant Zakhara. According to sages, the light sword was crafted to serve an order of assassins. Belm's owners survived through many incredible ordeals, mostly because of the magic of the weapon. The weapon was lost in Calimshan when a holy slayer pursued a pasha's blasphemous agents to Calimport. The scimitar remained in the hands of Baris Cabal for about a dozen years before the band was broken up by Ilban and his companions. Ilban's exploits took Belm into battle against sandmen, giant scorpions, desert raiders, evil sorcerers and the demonic servants of Celan Harad.
+@2096 = ~Sword of Speed
+This enchanted scimitar bears the mark of Taka Kobe, an honored swordsmith of Kara-Tur, though how it came to be here is unknown. Perfectly balanced, it affords quick recovery in combat and even allows the wielder time for an additional attack.
 
 STATISTICS:
 
 Combat abilities:
-– Quickness: 1/2 extra attack per round
+– Speed: 1 extra attack per round
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -10581,7 +10675,7 @@ Not Usable By:
  Beast Master~
 @2107 = ~Namarra +2~
 @2108 = ~The Sword That Never Sleeps
-On one side of the blade is etched in Common "Namarra", and on the other face "Never Sleep". Namarra appears in many legends and tall tales, but the designation the "Neversleep Sword" appears to be derived only from the inscription on the blade and does not refer to any specific property of the sword. Its origin is unknown; Namarra appears to have existed for long as tales have survived, wielded by such mythic heroes as Eth and Brensyl the Tall. Even the most critical of sages (Kurmur the Skeptic, First Speaker of Evernoster) cannot determine Namarra's probable time of origin or find any references in the tales of a word to a time "before Namarra was forged".
+On one side of the blade is etched in Common "Namarra," and on the other face "Never Sleep." Namarra appears in many legends and tall tales, but the designation the "Neversleep Sword" appears to be derived only from the inscription on the blade and does not refer to any specific property of the sword. Its origin is unknown; Namarra appears to have existed for long as tales have survived, wielded by such mythic heroes as Eth and Brensyl the Tall. Even the most critical of sages (Kurmur the Skeptic, First Speaker of Evernoster) cannot determine Namarra's probable time of origin or find any references in the tales of a word to a time "before Namarra was forged."
 
 This ancient blade is thought to have been present at some of the most influential conflicts in Faerûn's history. Sightings have been noted as far north as Thay and as far south as the jungles of Chult, though documentation is oddly lacking regarding the details. This is perhaps a result of the sword's ability to silence all sound within a large radius, removing the effectiveness of attacking mages, but also preventing any discussion that might have followed.
 
@@ -10792,7 +10886,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2125 = ~Malakar +2~
-@2126 = ~Malakar, or 'Dueling Steel', is a finely craft katana belonged to the renowed swordsman Viromoto, a weapon master from the East who fought a hundred duels before finally dying. The keen blade shatters through any opponents's defenses and, as if of its own volition, it will swoop down and deflect the incoming attacks of other weapons. This radiant katana is perfect for the warrior concerned about defense as well as offense but it is so sharp and light that it is difficult for even a master to wield. Viromoto gradually became overconfident, and for his final duel, he favored a different weapon - only to fall in battle, his first and only defeat.
+@2126 = ~Malakar, or "Dueling Steel," is a finely craft katana belonged to the renowed swordsman Viromoto, a weapon master from the East who fought a hundred duels before finally dying. The keen blade shatters through any opponents's defenses and, as if of its own volition, it will swoop down and deflect the incoming attacks of other weapons. This radiant katana is perfect for the warrior concerned about defense as well as offense but it is so sharp and light that it is difficult for even a master to wield. Viromoto gradually became overconfident, and for his final duel, he favored a different weapon—only to fall in battle, his first and only defeat.
 
 STATISTICS:
 
@@ -10877,7 +10971,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2134 = ~Ninjato +1~ // BG2: Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@2134 = ~Ninjato +1~ // BG2: Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 @2135 = ~The sword of the ninja, the ninjato, is of lower quality than other Kara-Tur blades such as the katana. The ninjato is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninjato is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.~
 @2136 = ~The sword of the ninja, the ninjato, is of lower quality than other Kara-Tur blades such as the katana. The ninjato is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninjato is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used. This particular ninjato has been enhanced magically to complement the skill of the wielder.
 
@@ -11107,9 +11201,9 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2151 = ~Angurvadal +4~
-@2152 = ~The Burning Earth
-There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough - it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself - but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
+@2151 = ~Angurvadal +4~ // BG2:
+@2152 = ~Burning Earth
+There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "Burning Earth" seems straightforward enough—it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself—but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
 
 STATISTICS:
 
@@ -11134,9 +11228,9 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2153 = ~Angurvadal +5~
-@2154 = ~The Burning Earth
-There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough - it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself - but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
+@2153 = ~Angurvadal +5~ // BG2: 
+@2154 = ~Burning Earth
+There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "Burning Earth" seems straightforward enough—it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself—but whoever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It shouldn't hurt a warrior's performance, aside from the nagging suspicion that the blade was not made for him... or any other humanoid.
 
 The true power of this burning sword has been unleashed by the Liquid Mercury.
 
@@ -11168,7 +11262,7 @@ Not Usable By:
 @2155 = ~Foebane +4~
 @2156 = ~The Archmage Demron crafted this magical bastard sword for the elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
 
-Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death - though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
+Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death—though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
 
 Yet even the power of Foebane was not enough to withstand the dark hordes which overran Myth Drannor. When the elven city fell, Captain Fflar met a grisly, gruesome end and the sword itself was lost beneath the rubble of the once great metropolis.
 
@@ -11205,7 +11299,7 @@ Not Usable By:
 @2157 = ~Foebane +5~
 @2158 = ~The Archmage Demron crafted this magical bastard sword for the elven hero Fflar, Captain of Myth Drannor. The most powerful of six such enchanted blades Demron fashioned, Foebane can drain the very essence of life from its opponents with every blow, and bestow that life energy on the wielder. There are those who believe soul stealing capability has cursed the blade, for though fashioned as a weapon of right and justice, Foebane's dark history is one of murder and death.
 
-Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death - though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
+Demron's own blood christened the blade, as a would be thief used the newly fashioned sword to bring about the Archmage's untimely death—though the thief did not survive the encounter, either. In the aftermath of Demron's murder, Foebane was recovered and presented to the hero Fflar to use in the defense of Myth Drannor, greatest of the elven cities.
 
 Yet even the power of Foebane was not enough to withstand the dark hordes which overran Myth Drannor. When the elven city fell, Captain Fflar met a grisly, gruesome end and the sword itself was lost beneath the rubble of the once great metropolis.
 
@@ -11319,7 +11413,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2163 = ~Yamato +3~
-@2164 = ~The name of the mighty Wu Jen who fashioned this "companion sword" is long forgotten. However, the name Yamato, loosely translated, means "Guardian" or "Defender".
+@2164 = ~The name of the mighty Wu Jen who fashioned this "companion sword" is long forgotten. However, the name Yamato, loosely translated, means "Guardian" or "Defender."
 
 STATISTICS:
 
@@ -11569,7 +11663,7 @@ Not Usable By:
 
 "... in the night there came the rain of fire, which crashed as though an avalanche of stone. There were craters in the square, and inside were the stars, from which we forged our vengeance and took back the land of our fathers." The writings of Kaa Mihnd, explaining how a poor fishing village could possess the weapon to challenge their wealthy overlord. The account has never been verified, though this blade is the supposed outcome, as well as Hindo's deeds which have passed into legend.
 
-Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of the greatest of Samurai.
+Reunited with the hand of its original owner, Hindo's Doom is a katana worthy of the greatest of samurai.
 
 STATISTICS:
 
@@ -11986,11 +12080,11 @@ Not Usable By:
  Thief
  Beast Master~
 @2205 = ~Lilarcor +3~
-@2206 = ~Lawrence Lilarcor was well known, not for being brave, but as an idiot. As the tale goes, the boastful Lilarcor left his village at the urging of his friends so that the "great hero" could do battle with a devious Treant. He walked for days in the dead of winter until, feverish, he found his target and began an epic wrestling match. Unfortunately (or perhaps luckily), the "Treant" was nothing more than a craggy old normal oak. His friends had been jesting, not actually expecting that Lilarcor would go fight the fictitiously dangerous tree. That might have been the end of it, but Lilarcor, not really knowing what a Treant was in the first, didn't realize the truth. He eventually uprooted the oak and, marching proudly home, he declared himself a hero. Thus was born a laughing stock of epic proportions, and over time the name of Lilarcor became the sacrificial fool in many tales of "less than brilliance".
+@2206 = ~Lawrence Lilarcor was well known, not for being brave, but as an idiot. As the tale goes, the boastful Lilarcor left his village at the urging of his friends so that the "great hero" could do battle with a devious Treant. He walked for days in the dead of winter until, feverish, he found his target and began an epic wrestling match. Unfortunately (or perhaps luckily), the "Treant" was nothing more than a craggy old normal oak. His friends had been jesting, not actually expecting that Lilarcor would go fight the fictitiously dangerous tree. That might have been the end of it, but Lilarcor, not really knowing what a Treant was in the first, didn't realize the truth. He eventually uprooted the oak and, marching proudly home, he declared himself a hero. Thus was born a laughing stock of epic proportions, and over time the name of Lilarcor became the sacrificial fool in many tales of "less than brilliance."
 
 It is not known whether this enchanted weapon is Lilarcor himself, perhaps imprisoned by an evil mage or some other odd coincidence of fate, but it certainly acts in a manner consistent with his level of competence. If it is he, he has never bemoaned his captivity. He might not realize, or care, that he is no longer a human.
 
-As a weapon, Lilarcor has its uses, but many a warrior has eventually given it away. Banter such as "Ouch, that musta hurt", "Oh yeah! Got 'im good," and "Beware my bite for it might... might... might really hurt or something," is a constant barrage on a warrior's psyche.
+As a weapon, Lilarcor has its uses, but many a warrior has eventually given it away. Banter such as, "Ouch, that musta hurt," "Oh yeah! Got 'im good," and "Beware my bite for it might... might... might really hurt or something," is a constant barrage on a warrior's psyche.
 
 STATISTICS:
 
@@ -12015,7 +12109,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2207 = ~Silver Sword +4~
-@2208 = ~This vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened, it could likely sever a head in a single blow. These swords are highly sought after, and a cult of githyanki knights called the 'Sword Stalkers' is tasked with recovering any swords that fall into the hands of the unworthy, i.e. non githyanki.
+@2208 = ~This vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened, it could likely sever a head in a single blow. These swords are highly sought after, and a cult of githyanki knights called the "Sword Stalkers" is tasked with recovering any swords that fall into the hands of the unworthy, i.e. non githyanki.
 
 STATISTICS:
 
@@ -12133,7 +12227,7 @@ Not Usable By:
 @2216 = ~The Holy Avenger
 Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerûn, though its origin and history is thought purposefully forgotten, so that the sword itself will never overshadow the importance of the struggles that must be fought today. It is infused with the very essence of virtue, and requires as much from any paladin that would hope to wield it. The evils of the Realms must truly stand aside when this weapon is brought to bear, for their magic is dispelled with a word, and steadfastly resisted with ease. Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
 
-Even a Holy Relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
+Even a holy relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
 
 STATISTICS:
 
@@ -12255,10 +12349,10 @@ Usable By:
  Fighter/Mage
  Fighter/Mage/Thief
  Mage/Thief~
-@2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as 'The Nameless One'.
+@2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as "The Nameless One."
 @2226 = ~Made of blackened silver and dark blue steel, this helm is rumored to slowly corrupt its wearer to bend to Shar's whim, so that ultimately the Dark Goddess gains a powerful follower by greatly warding the victim in what her clerics often refer to as the subject's "infancy."
 
-The helm is capable of absorbing significant amounts of cold damage, and with a command word, it can create a shadow clone of the wearer to fight alongside him. Those who possess it inevitably become creatures of the night themselves, operating as easily in the dark as they would during the day - and under the watchful eye of Shar.
+The helm is capable of absorbing significant amounts of cold damage, and with a command word, it can create a shadow clone of the wearer to fight alongside him. Those who possess it inevitably become creatures of the night themselves, operating as easily in the dark as they would during the day—and under the watchful eye of Shar.
 
 STATISTICS:
 
@@ -12283,7 +12377,7 @@ Not Usable By:
 @2227 = ~Plate of Balduran +2~
 @2228 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
-This plate was worn by the famous hero Balduran. It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate. No one really knows what fate befell Balduran, the founder of Baldur's Gate, but people never grow tired of speculating. When his personal armor was found on the Sword Coast - supposedly recovered and sold by a group of adventurers - it only served to spark interest in him once again, and several copies of the suit were made to accommodate collectors and historians. In this way, it could be said, Balduran obtained a measure of immortality.
+This plate was worn by the famous hero Balduran. It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate. No one really knows what fate befell Balduran, the founder of Baldur's Gate, but people never grow tired of speculating. When his personal armor was found on the Sword Coast—supposedly recovered and sold by a group of adventurers—it only served to spark interest in him once again, and several copies of the suit were made to accommodate collectors and historians. In this way, it could be said, Balduran obtained a measure of immortality.
 
 STATISTICS:
 
@@ -12395,7 +12489,7 @@ Not Usable By:
  Kensai~
 @2239 = ~Wand~
 @2240 = ~Wand of Fear~
-@2241 = ~Wands are 1 1/4 feet long and slender. They are made of ivory, bone, or wood and are usually tipped with something - metal, crystal, stone, etc. They are fragile and tend to break easily. Because of this, they are often kept in cases. Wands generally store one or more magical effects powered by charges, each use costing one or more charges (depending in the item). When a wand runs out of charges, it is consumed and destroyed.~
+@2241 = ~Wands are 1 1/4 feet long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, etc. They are fragile and tend to break easily. Because of this, they are often kept in cases. Wands generally store one or more magical effects powered by charges, each use costing one or more charges (depending in the item). When a wand runs out of charges, it is consumed and destroyed.~
 @2242 = ~A Wand of Fear strikes terror into the heart of the target and any creatures within a 15 foot radius. Opponents within the area must save vs. Wand or flee in terror for 5 rounds. This panic is not universal, however, as the stout of heart have been known to resist its magic.
 
 Like all wands, the Wand of Fear can only be used a limited number of times before it is expended. Once these have been used, it shatters.
@@ -13244,7 +13338,7 @@ Not Usable By:
 @2314 = ~Flurry's End
 This flail was created a century ago to commemorate the defeat of the demon Belhifet. It was meant to remain within the town of Easthaven to remind the people of the great evil that had barely been defeated, but it was stolen, only to reappear years later on the northernmost reaches of the Sword Coast, in the City of Sails.
 
-For a brief but bloody time, the fighting pits of Luskan were home to a particularly vicious halfling who called herself "Flurry." Though her opponents were swift to underestimate her, they were quickly surprised by the speed of her attacks and the effectiveness of her strikes. As her reputation grew, Flurry grew reckless, allowing her opponents one free hit on her small frame - showing off to the crowd that she seemed to be unharmed by the blow - before viciously bludgeoning her opponent to death. In the end, it was Flurry's own ego that did her in: in a match where her speed and cunning could have bested her adversary easily, the free hit she allowed him with his scythe proved to be more effective than she had planned, and send her head tumbling into the dust.
+For a brief but bloody time, the fighting pits of Luskan were home to a particularly vicious halfling who called herself "Flurry." Though her opponents were swift to underestimate her, they were quickly surprised by the speed of her attacks and the effectiveness of her strikes. As her reputation grew, Flurry grew reckless, allowing her opponents one free hit on her small frame—showing off to the crowd that she seemed to be unharmed by the blow—before viciously bludgeoning her opponent to death. In the end, it was Flurry's own ego that did her in: in a match where her speed and cunning could have bested her adversary easily, the free hit she allowed him with his scythe proved to be more effective than she had planned, and send her head tumbling into the dust.
 
 STATISTICS:
 
@@ -13351,7 +13445,12 @@ THAC0: +1
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @2325 = ~Throwing Axe +2~
 @2326 = ~This throwing axe has not only been finely balanced for use as a missile weapon, but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style.
 
@@ -13370,7 +13469,15 @@ Type: One-handed
 Requires:
  4 Strength
 
-Weight: 3~
+Weight: 3
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
 @2327 = ~Bolt of Polymorphing +2~
 @2328 = ~This bolt has been enchanted with powerful magic, glowing slightly with almost a green inner light. If the bolt finds its target once it is fired, the target may be transformed into a squirrel.
 
@@ -13383,7 +13490,12 @@ THAC0: +2
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @2329 = ~Flasher Master Bruiser Mate +1~
 @2330 = ~This is the ammunition for Jan's crossbow (the Flasher Master Bruiser). The skulls are filled with a special powder that does a little bit of damage and has a chance to stun an opponent.
 
@@ -13396,7 +13508,10 @@ THAC0: +1
 Damage: 1d4+1 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Usable By:
+ Jan Jansen~
 @2331 = ~Blessed Bolt +3~ // BG2: This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
 @2332 = ~This is a crossbow bolt that has been permanently enchanted with a powerful blessing. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade.
 
@@ -13409,7 +13524,12 @@ THAC0: +3
 Damage: 1d8 (missile)
 Launcher: Crossbow
 
-Weight: 0~
+Weight: 0
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @2333 = ~Boots of the Shifting Sands~
 @2334 = ~The most infamous halfling bard in Faerûn, Stompin' Con Tommers, claimed that entire tribes of goblins would quiver in fear when they heard he was coming. Strangely enough, the boasts of this halfling might have had some basis in truth, as the magical boots he wore really could cause earthquakes. He claimed to have pilfered the boots from an extraplanar bard whose voice could destroy entire cities. Con's career was cut short when he miscalculated a leap over a gorge he created and the earth swallowed him.
 
@@ -13426,7 +13546,7 @@ Weight: 2
 Not Usable By:
  Wizard Slayer~
 @2335 = ~Boots of Lightning Speed~
-@2336 = ~These modified boots of speed were originally intended to boost the wearer's speed rating even more so than would normal boots of speed. When used, the wearer's movement rate increases as if under the effect of normal Boots of Speed combined with a Haste spell. Unfortunately, it makes attacking all but impossible, and the strain of rushing around so fast quickly tires even the most stalwart of heroes. Their nickname is 'Heel of the Coward,' for that summarizes their most obvious use: running away.
+@2336 = ~These modified boots of speed were originally intended to boost the wearer's speed rating even more so than would normal boots of speed. When used, the wearer's movement rate increases as if under the effect of normal Boots of Speed combined with a Haste spell. Unfortunately, it makes attacking all but impossible, and the strain of rushing around so fast quickly tires even the most stalwart of heroes. Their nickname is "Heel of the Coward," for that summarizes their most obvious use: running away.
 
 STATISTICS:
 
@@ -13653,7 +13773,12 @@ THAC0: +1
 Damage: 1d10 (missile)
 Launcher: Crossbow
 
-Weight: 1~
+Weight: 1
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @2361 = ~Kuo-Toa Bolt +1~
 @2362 = ~This slender bolt is coated with a special poison, developed by Kuo-Toa alchemists, which can quickly paralyze any living creature.
 
@@ -13666,7 +13791,12 @@ THAC0: +1
 Damage: 1d10 (missile)
 Launcher: Crossbow
 
-Weight: 1~
+Weight: 1
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @2363 = ~Kuo-Toa Bolt +2~
 @2364 = ~This slender bolt is coated with a special poison, developed by Kuo-Toa alchemists, which can quickly paralyze any living creature.
 
@@ -13679,7 +13809,12 @@ THAC0: +2
 Damage: 1d10 (missile)
 Launcher: Crossbow
 
-Weight: 1~
+Weight: 1
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @2365 = ~Kuo-Toa Bolt +3~
 @2366 = ~This slender bolt is coated with a special poison, developed by Kuo-Toa alchemists, which can quickly paralyze any living creature.
 
@@ -13692,7 +13827,12 @@ THAC0: +3
 Damage: 1d10 (missile)
 Launcher: Crossbow
 
-Weight: 1~
+Weight: 1
+
+Not usable by:
+ Cleric
+ Druid
+ Mage~
 @2367 = ~Studded Leather Armor +3~
 @2368 = ~This armor is the standard armor given out to griffin riders and other elite warriors who use mounted steeds. It is lightweight but offers good protection, especially with the extra magical protections crafted upon it.
 
@@ -13887,7 +14027,7 @@ Usable By:
  Bard
  Mage~
 @2389 = ~Rod of Lordly Might +3~
-@2390 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2390 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently untransformed.
 
@@ -14313,6 +14453,7 @@ Special Characteristics:
 – Enfeebling: target suffers -2 to THAC0, damage, and movement speed for 1 round (save vs. Spell negates)
 – Soul Drainer: 15% chance to drain one level from the target
 
+Weight: 1
 
 Not Usable By:
  Wizard Slayer~
@@ -14359,7 +14500,7 @@ Weight: 0
 Not Usable By:
  Wizard Slayer~
 @2453 = ~Harmonium Halberd +3~
-@2454 = ~This is an incredible weapon usually given out to the most important of Harmonium captains. The Harmonium is a faction based out of the planar city known as 'Sigil'.
+@2454 = ~This is an incredible weapon usually given out to the most important of Harmonium captains. The Harmonium is a faction based out of the planar city known as "Sigil."
 
 STATISTICS:
 
@@ -14449,7 +14590,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2461 = ~Scarlet Ninjato +3~
-@2462 = ~When a member of the Scarlet Brotherhood kills one of that organization's 'great enemies', they are often rewarded with this sword. How this sword made its way from the world of Greyhawk (where the Brotherhood is based) to Faerûn is a mystery. When unsheathed, the ninjato will glow blood red.
+@2462 = ~When a member of the Scarlet Brotherhood kills one of that organization's "great enemies," they are often rewarded with this sword. How this sword made its way from the world of Greyhawk (where the Brotherhood is based) to Faerûn is a mystery. When unsheathed, the ninjato will glow blood red.
 
 STATISTICS:
 
@@ -14705,7 +14846,7 @@ Weight: 1
 
 Usable By:
  Mage~
-@2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a flail.
 
@@ -14736,7 +14877,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a long sword.
 
@@ -14766,7 +14907,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a battle axe.
 
@@ -14800,7 +14941,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a spear.
 
@@ -14845,8 +14986,7 @@ Equipped abilities:
 Weight: 1
 
 Usable By:
- Druid
- Ranger~
+ Druid~
 @2487 = ~Storm Ring~
 @2488 = ~This ring is worn by followers of the Storm Lord Talos, whose disciples await their god's wrath and welcome it eagerly. The ability to wreak havoc and ruin are the principle ideals that Talos desires to see in his subjects.
 
@@ -14949,7 +15089,7 @@ Weight: 3
 Usable By:
  All~
 @2502 = ~Embarl's Dagger~
-@2503 = ~This dagger will prove to Mae'Var that Embarl has been 'dealt with.'
+@2503 = ~This dagger will prove to Mae'Var that Embarl has been "dealt with."
 
 STATISTICS:
 
@@ -14968,7 +15108,7 @@ Not Usable By:
 @2504 = ~Melee/Thrown Switch~
 @2505 = ~Amulet of Protection +2~
 @2506 = ~The Protector
-The royal guard of King Pyronan, ruler of Impiltur, were given 'The Protector' as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
+The royal guard of King Pyronan, ruler of Impiltur, were given "The Protector" as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
 
 STATISTICS:
 
@@ -14991,9 +15131,14 @@ Combat abilities:
 Damage: 1d6 (missile)
 Launcher: Bow
 
-Weight: 0~
+Weight: 0
+
+Not Usable By:
+ Cleric
+ Druid
+ Mage~
 @2509 = ~Solaufein's Piwafwi Cloak~
-@2510 = ~This cloak belongs to Solaufein, the drow warrior. It increases the wearer's hide in shadows and move silently abilities. Talented drow weavers have woven strands of adamantine into this cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
+@2510 = ~This cloak belongs to Solaufein, the drow warrior. It increases the wearer's hide in shadows and move silently abilities. Talented drow weavers have woven strands of adamantine into this cloak, thus rendering it useless if exposed to the light—the effect of which will turn the cloak to dust.
 
 STATISTICS:
 
@@ -15073,8 +15218,10 @@ Usable By:
 
 STATISTICS:
 
+*CURSED*
+
 Equipped abilities:
-– Domination
+– Enslavement: wearer is dominated
 
 Weight: 0
 
@@ -15152,7 +15299,8 @@ Weight: 4
 
 Not Usable By:
  Cleric
- Mage~
+ Mage
+ Beast Master~
 @2536 = ~Control Circlet~
 @2537 = ~A circlet of alien metal that dominates even the most powerful of minds and leaves them defenceless. Perhaps this item could be used to control a mind flayer and make him help you escape from this hellish prison.
 
@@ -15255,7 +15403,10 @@ THAC0: +5
 Damage: 1d4+1 (magic)
 Launcher: Big Metal Rod
 
-Weight: 0~
+Weight: 0
+
+Usable By:
+ All~
 @2558 = ~Frag Grenade~
 @2559 = ~This skull can be launched at your enemies via the Big Metal Rod. It will explode into fragments when an enemy approaches it and damage everyone within the radius of the explosion.
 
@@ -15268,7 +15419,10 @@ THAC0: +5
 Damage: 6d6 (magic)
 Launcher: Big Metal Rod
 
-Weight: 0~
+Weight: 0
+
+Usable By:
+ All~
 @2560 = ~Scorcher Ammunition~
 @2561 = ~This ammunition for the Big Metal Rod will allow you to shoot a jet of flame at an enemy.
 
@@ -15281,17 +15435,20 @@ THAC0: +5
 Damage: 3d6 (magic)
 Launcher: Big Metal Rod
 
-Weight: 0~
+Weight: 0
+
+Usable By:
+ All~
 @2562 = ~Combined Pantaloons~
 @2563 = ~Long has the world marveled at the Golden Pantaloons, the Silver Pantaloons, and to a lesser extent, the Bronze Pantalettes. Revealed here for the first time are the secrets of their gregariously girding gussets that so softly shield your shanks. Ye gods! Get to identifyin' already! Now it can be told!~
 @2564 = ~Big Metal Unit +5~
-@2565 = ~Found within a long forgotten pocket of our collected pantology, herein tales the lie of the Metal "Unit".
+@2565 = ~Found within a long forgotten pocket of our collected pantology, herein tales the lie of the Metal "Unit."
 
 Gargantua was self-proclaimed lord of his immeasurable lower regions until his son, Pantagruel, questioned the accuracy of the ruler. With his shortcomings exposed, great Gargantua lay prostrate upon the ground while Pantagruel sought to cover his cuirass in case his now governing body lost its sway. He was warned that the people would cut him no slacks, but he never listened, and had burned his britches behind him. Undaunted, he fulfilled his animus with the robes of his father, as uncomfortable as that might sound, and shaped the Metal "Unit" with his own hands.
 
 The rule of Pantagruel was a discommoding morass, his armor eventually suffering a breach in the breech that proved his undoing. As his basket left the pantry, so to speak, his regime fell to insurrection, and so complete was the sacking that not even his Metal "Unit" could be found. The component pieces, a pantaloon triumvirate, were lost in the annals of time.
 
-You now bear the awesome responsibility of the Metal "Unit". Gussets of wind, seams like reality, pockets of resistance, the seat of power, and legs as flared as your temper. Polish it well; the onus is now on you.
+You now bear the awesome responsibility of the Metal "Unit." Gussets of wind, seams like reality, pockets of resistance, the seat of power, and legs as flared as your temper. Polish it well; the onus is now on you.
 
 STATISTICS:
 
@@ -15394,6 +15551,8 @@ Not Usable By:
 @2575 = ~Fallorain's Plate +1~
 @2576 = ~Captain Fallorain, leader of Calimshan's 12th cavalry brigade, wore this enchanted armor for the last time during the Battle of the Spider Swamp. There he lost his life and army trying to rid an unrecorded evil from the area.
 
+STATISTICS:
+
 Armor Class: 2
 Requires:
  10 Strength
@@ -15453,10 +15612,12 @@ Weight: 25
 Not Usable By:
  Bard
  Mage
- Thief
  Monk
+ Thief
+ Archer
  Avenger
  Barbarian
+ Beast Master
  Kensai
  Shapeshifter
  Stalker~
@@ -15702,7 +15863,7 @@ Weight: 1
 Not Usable By:
  Wizard Slayer~
 @2603 = ~Nature's Ward +2~
-@2604 = ~In the ancient days when the Ashenwood was young, and there were those who still called them 'green elves' - shields like these were worn by an order of wild elven druids and rangers dedicated to protecting the forest and its inhabitants. Now little is left of the order but their memory, and replicas of their gear... and the knowledge of how the Ashenwood has grown and flourished in the ages that have followed.
+@2604 = ~In the ancient days when the Ashenwood was young—and there were those who still called them "green elves"—shields like these were worn by an order of wild elven druids and rangers dedicated to protecting the forest and its inhabitants. Now little is left of the order but their memory, and replicas of their gear... and the knowledge of how the Ashenwood has grown and flourished in the ages that have followed.
 
 STATISTICS:
 
@@ -16467,6 +16628,7 @@ Equipped abilities:
 – Zombification: wearer's appearance is set to that of a zombie
 – Charisma: -4
 
+Weight: 0
 
 Not Usable By:
  Wizard Slayer~
@@ -16602,7 +16764,7 @@ Not Usable By:
  Mage
  Beast Master~
 @6048 = ~The Gold Digger +1~
-@6049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows - for the impoverished, the Gold Digger is no better than a mundane greatsword.
+@6049 = ~Crafted by dwarves in service to the temple of Waukeen in Amn, this two-handed sword draws power from the gold in its wielder's purse. For the wealthy, it deals mighty blows—for the impoverished, the Gold Digger is no better than a mundane greatsword.
 
 STATISTICS:
 
@@ -16832,7 +16994,7 @@ Not Usable By:
  Mage
  Beast Master~
 @70020 = ~Ninjato +2~
-@70021 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@70021 = ~Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 
@@ -16852,7 +17014,7 @@ Not Usable By:
  Mage
  Beast Master~
 @70022 = ~Ninjato +3~
-@70023 = ~Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@70023 = ~Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 

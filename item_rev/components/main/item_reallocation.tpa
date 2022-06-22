@@ -320,7 +320,7 @@ END
 /////////////////////////////////////
 
 // Equip Shadow Druid Adherent in Druid's Grove with Spear of Unicorn and Protector of the Second
-// Place Dalok's Gnasher in Troll's Mound
+// Place Dalok's Gnasher +2 in Troll's Mound
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~cefgt01.cre~) BEGIN
   COPY_EXISTING ar0420.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
@@ -487,7 +487,7 @@ END
 
 /////////////////////////////////////
 
-// Replaces Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard
+// Replace Cloak of the Good Archmagi with Cloak of Acid Resistance on Errard
 ACTION_IF (FILE_EXISTS_IN_GAME ~sarmag01.cre~) BEGIN // Errard
   COPY_EXISTING sarmag01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM ~clck15~
@@ -498,7 +498,7 @@ END
 
 /////////////////////////////////////
 
-// Replaces Angurvadal +4 with Unholy Reaver on Watcher's Keep Githyanki Captain
+// Replace Angurvadal +4 with Unholy Reaver +5 on Watcher's Keep Githyanki Captain
 ACTION_IF (FILE_EXISTS_IN_GAME ~gorgit.cre~) BEGIN
   COPY_EXISTING gorgit.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
     REMOVE_CRE_ITEM ~sw1h60~
@@ -560,7 +560,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
     BUT_ONLY
 END
 
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // Place Battle Axe of Mauletar +2 on Gretek
   ACTION_IF (FILE_EXISTS_IN_GAME ~gretek.cre~) BEGIN // Gretek in BG1
     COPY_EXISTING gretek.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
       REMOVE_CRE_ITEM ~ax1h03~
@@ -635,7 +635,7 @@ BEGIN
   END
 END
 
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN // Place Plate of the Dark +1 on Tamoko
   ACTION_FOR_EACH resource IN
     ~tamoko~
     ~tamoko2~
@@ -730,7 +730,7 @@ BEGIN
   END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Place Whistling Sword on Zargal in BG1
+ACTION_IF (FILE_EXISTS_IN_GAME ~zargal.cre~) BEGIN // Place The Whistling Sword +2 on Zargal in BG1
   COPY_EXISTING zargal.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM ~sw1h09~
     REMOVE_CRE_ITEM ~sw1h09_~
@@ -749,7 +749,7 @@ END
 
 // Various fixes
 
-// Place Krotan's Skullcrusher in BG1
+// Place Krotan's Skullcrusher +2 in BG1
 ACTION_FOR_EACH resource IN
   ~ard014~
   ~bg0514~
