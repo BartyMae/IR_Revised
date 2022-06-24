@@ -226,7 +226,7 @@ COPY ~%source%/BRACERS_OF_THE_BLINDING_STRIKE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/BANDS_OF_FOCUS.tpa
   ACTION_IF bracers_of_defense_mixed_ac = 1 BEGIN
     COPY ~item_rev/components/main/alternatives/brac26.itm~ ~override~
-    SAY NAME1 @1267    SAY NAME2 @1289
+    SAY NAME1 @1267    SAY NAME2 @1313
     SAY UNIDENTIFIED_DESC @1269 SAY IDENTIFIED_DESC @131400000
   END
 >>>>>>>>
