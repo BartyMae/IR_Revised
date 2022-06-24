@@ -7,7 +7,7 @@ DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
 
   PATCH_IF (item_description_style=0 AND (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~)) OR item_description_style=2 BEGIN // EE
 
-  PATCH_IF is_helmet BEGIN // Helmet
+  PATCH_IF is_helmet BEGIN // Is a helmet
 
     PATCH_IF add_ac || ident=0 BEGIN // Add AC bonus to it or it's an unidentified description
       ac_added=0
