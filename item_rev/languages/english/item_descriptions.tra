@@ -2418,7 +2418,7 @@ Not Usable By:
 @1267 = ~Bracers~
 @1268 = ~Bracers of Defense AC 8~
 @1269 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.~
-@1270 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 8, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
+@1270 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting them AC 8, just as though they were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
 
@@ -2428,7 +2428,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1271 = ~Bracers of Defense AC 7~
-@1272 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 7, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
+@1272 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting them AC 7, just as though they were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
 
@@ -2438,7 +2438,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1273 = ~Bracers of Defense AC 6~ // BG1: Bracers to the Death: These bracers were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of this magical item, but rumors persist that they are used to this day in competitive combat across the lands.
-@1274 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 6, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
+@1274 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting them AC 6, just as though they were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
 
@@ -7438,12 +7438,12 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Protection from Chaos: +2 bonus to AC and saving throws vs. chaotic creatures
+ Protection from Chaos: +2 bonus to AC and saving throws vs. Chaotic creatures
  Protects Against: Berserk and Confusion
 
 Armor Class: -1
 Weight: 60
-Requires: 15 Strength, Lawful/Neutral Good alignment
+Requires: 15 Strength, Lawful Good alignment
 Not Usable By:
  Bard
  Druid

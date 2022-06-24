@@ -93,7 +93,7 @@ Weight: 0
 
 Not usable by:
  Wizard Slayer~
-@1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!" It has seen much use, and changed hands many times through blood and battle.
+@1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied," "I will be heard!", "Defeat comes swiftly!", "Take nothing from me!". It has seen much use, and changed hands many times through blood and battle.
 @1017 = ~Arduelth, a young witch, had spent her life living under the shadow of Thay, and wished to study for a magical means to empower Rashemen, so she left on a dajemma—the customary Rashemi journey of self-discovery. Years later she returned, a haunted look in her eyes. Around her neck she wore an amulet that glowed with power—only the first of the artifacts she claimed to have learned how to create. She spoke long and passionately of how they could make use of such items—to not only bring peace to Rashemen, but break the back of Thay. The hathrans narrowed their eyes behind their masks as she spoke, fearing the young woman's intensity: but they listened, and gravely made her one of them.
 
 Before long, the witches began to regret their decision. The young woman seemed obsessed with the idea of creating more items of greater and more sinister properties... and her plans grew more and more elaborate, from freeing the slaves of Thay to enslaving the Red Wizards in their place, sapping them of their power for her own devices. It was suspected that Arduelth had become a durthan, eternal enemy of the hathrans—but another witch saw once that she communed with something far darker. Though the young woman still dreamed of peace and freedom for her people, she had given herself over to a dark entity—her pure intentions savaged by the lengths she would dare go to achieve them.
@@ -2773,7 +2773,7 @@ Not usable by:
 @1267 = ~Bracers~
 @1268 = ~Bracers of Defense AC 8~
 @1269 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.~
-@1270 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 8, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
+@1270 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting them AC 8, just as though they were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
 
@@ -2786,7 +2786,7 @@ Not usable by:
  Kensai
  Wizard Slayer~
 @1271 = ~Bracers of Defense AC 7~
-@1272 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 7, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
+@1272 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting them AC 7, just as though they were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
 
@@ -2799,7 +2799,7 @@ Not usable by:
  Kensai
  Wizard Slayer~
 @1273 = ~Bracers of Defense AC 6~ // BG1: Bracers to the Death: These bracers were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of this magical item, but rumors persist that they are used to this day in competitive combat across the lands.
-@1274 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 6, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
+@1274 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting them AC 6, just as though they were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
 
@@ -4120,7 +4120,7 @@ Equipped abilities:
 – Protects Against: Fear
 
 Requires:
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 3
 
@@ -5738,7 +5738,7 @@ Equipped abilities:
 NOTE: Multiple Bless effects are not cumulative.
 
 Requires:
- Alignment: Good/Neutral
+ Alignment: Non-Evil
 
 Weight: 3
 
@@ -5763,7 +5763,7 @@ Equipped abilities:
 NOTE: Multiple Bless effects are not cumulative.
 
 Requires:
- Alignment: Good/Neutral
+ Alignment: Non-Evil
 
 Weight: 3
 
@@ -7434,7 +7434,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires:
  16 Strength
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 10
 
@@ -7613,7 +7613,7 @@ Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  3 Strength
- Alignment: Good/Neutral
+ Alignment: Non-Evil
 
 Weight: 2
 
@@ -7933,7 +7933,7 @@ Proficiency Type: Short Sword
 Type: One-handed
 Requires:
  5 Strength
- Alignment: Good/Neutral
+ Alignment: Non-Evil
 
 Weight: 3
 
@@ -8191,7 +8191,7 @@ Equipped abilities:
 Armor Class: 4
 Requires:
  6 Strength
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 20
 
@@ -8527,13 +8527,13 @@ Not usable by:
 STATISTICS:
 
 Equipped abilities:
-– Protection from Chaos: +2 to Armor Class and Saving Throws vs. chaotic creatures
+– Protection from Chaos: +2 to Armor Class and Saving Throws vs. Chaotic creatures
 – Protects Against: Berserk and Confusion
 
 Armor Class: -1
 Requires:
  15 Strength
- Alignment: Lawful/Neutral Good
+ Alignment: Lawful Good
 
 Weight: 60
 
@@ -8590,7 +8590,7 @@ Equipped abilities:
 Armor Class: -2
 Requires:
  15 Strength
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 60
 
@@ -12796,7 +12796,7 @@ Proficiency Type: Two-handed Sword
 Type: Two-handed
 Requires:
  16 Strength
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 10
 
@@ -14687,7 +14687,7 @@ Equipped abilities:
 – Protects Against: Poison
 
 Requires:
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 1~
 @2359 = ~Paralytic Bolt +1~
@@ -15236,7 +15236,7 @@ Proficiency Type: Mace
 Type: One-handed
 Requires:
  10 Strength
- Alignment: Evil/Neutral
+ Alignment: Non-Good
 
 Weight: 8
 
@@ -15481,7 +15481,7 @@ Special Characteristics:
 – Improved Invisibility (once per day)
 
 Requires:
- Alignment: Good/Neutral
+ Alignment: Non-Evil
 
 Weight: 1
 
@@ -16907,7 +16907,7 @@ Special abilities:
 – Shield of the Archon (once per day): 1 turn
 
 Requires:
- Alignment: Good/Neutral
+ Alignment: Non-Evil
 
 Weight: 1~
 @2615 = ~Circlet of the Archmagi~
