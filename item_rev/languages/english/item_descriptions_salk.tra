@@ -26,7 +26,7 @@ NOTE: Multiple Shield effects are not cumulative.
 Weight: 0
 
 Not usable by:
- Wizard Slayer
+ Wizard Slayer~
 @1006 = ~Amulet of Metaspell Influence: The Amplifier~
 @1007 = ~Known for its ability to enhance spellcasting, the Amulet of Metaspell Influence is highly sought after by magic practitioners. It was created by Elairdrin Mellwith who resided in the Star Mountains. His reasons for fabricating such an item stemmed from his womanizing habits, and to this extent the Amplifier served his purpose well. It was later taken from him by a mage with a more destructive intent, but records detailing the change of hands vary widely.
 
@@ -2041,7 +2041,7 @@ Equipped abilities:
 
 Weight: 2
 
-Usable by:
+Only usable by:
  Monk
  Ranger
  Thief~
@@ -3790,7 +3790,7 @@ Weight: 3
 Not usable by:
  Wizard Slayer~
 @1380 = ~Cloak of the Wolf: Relair's Mistake~
-@1381 = ~A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever he wishes. Relair was not so lucky.
+@1381 = ~A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever they wish. Relair was not so lucky.
 
 STATISTICS:
 
@@ -5738,7 +5738,7 @@ Equipped abilities:
 NOTE: Multiple Bless effects are not cumulative.
 
 Requires:
- Alignment: Non-Evil
+ Alignment: Non-Good
 
 Weight: 3
 
@@ -7228,7 +7228,7 @@ Not usable by:
  Beast Master
  Cleric~
 @1741 = ~Blackrazor +5~
-@1742 = ~This sword radiates evil like a sour odor, and the owner never knows if he wields the weapon, or if it wields him. Its special purpose is to steal life essence, and when the sword manages to drain a victim's essence, it temporarily grants them to the wielder. In addition to its combat abilities, Blackrazor slowly regenerates its owner with the drained strength of opponents.
+@1742 = ~This sword radiates evil like a sour odor, and the owner never knows if they wield the weapon, or if it wields them. Its special purpose is to steal life essence, and when the sword manages to drain a victim's essence, it temporarily grants them to the wielder. In addition to its combat abilities, Blackrazor slowly regenerates its owner with the drained strength of opponents.
 
 STATISTICS:
 
@@ -7852,8 +7852,8 @@ Equipped abilities:
 
 Only usable by:
  Nalia~
-@1804 = ~Delryn Family Shield +2~ // BG2: This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy. This protection from normal missiles can be used three times per day.
-@1805 = ~This is Anomen's family shield, given to him by his father. In addition to magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, they can use the shield to erect a field of protective energy around themselves.
+@1804 = ~Delryn Family Shield +2~ //*!*!*\\ BG2: This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy. This protection from normal missiles can be used three times per day.
+@1805 = ~This is Anomen's family shield, given to him by his father. In addition to magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, they can use the shield to erect a field of protective energy around themselves. Anomen is the only one who can use this shield.
 
 STATISTICS:
 
@@ -8052,7 +8052,7 @@ Requires:
 
 Weight: 5
 
-Not usable by:
+Only usable by:
  Valygar~
 @181500000 = ~This fine katana radiates magical energy, and the blade was designed to give the wielder an edge over spellcasters by disrupting their casting abilities.
 
@@ -9528,7 +9528,7 @@ Not usable by:
  Kensai
  Mage
  Monk
- Sorcerer
+ Sorcerer~
 @1957 = ~Buckler +1~
 @1958 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement.~
 @1959 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
@@ -10893,7 +10893,7 @@ Not usable by:
  Mage
  Sorcerer~
 @2071 = ~Short Sword +2~
-@2072 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term 'short sword' does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
+@2072 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
 
 STATISTICS:
 
@@ -14854,8 +14854,8 @@ Weight: 0
 Not usable by:
  Cavalier
  Kensai~
-@2379 = ~The Vampire's Revenge +3~
-@2380 = ~It would seem that the very speculation of this weapon's existence has conspired to pull it from the realm of fantasy and into the everyday, though, as with all things that come from dreams, it is not as it truly seems. The blade is indeed vampiric, as the name would suggest; but not only in the manner the finder might have hoped. This semi-sentient blade performs as one might think a vampiric blade would, but it was crafted by vampires for their exclusive use, and any living being wielding it will slowly bleed to death in order to feed its unending thirst for blood. Were this not enough, the weapon's will is loyal only to vampires, and it curses anyone else so as to prevent its removal.
+@2379 = ~The Vampire's Revenge +3~ //*!*!*\\
+@2380 = ~It would seem that the very speculation of this weapon's existence has conspired to pull it from the realm of fantasy and into the everyday, though, as with all things that come from dreams, it is not as it truly seems. The sword is indeed vampiric, as the name suggests, but not in the manner the wielder might have hoped. This semi-sentient blade was crafted by vampires for their exclusive use, so any living being wielding it will slowly bleed to death in order to feed its unending thirst for blood. Were this not enough, its loyalty lies with its original creators, cursing anyone else to prevent its removal.
 
 STATISTICS:
 
@@ -16631,7 +16631,7 @@ Equipped abilities:
 – Spell Memorization: divine spellcasters can memorize one extra spell of each level from 5th to 7th
 
 Requires:
- Alignment: Neutral
+ Alignment: Non-Good and non-Evil
 
 Weight: 0
 
@@ -17329,7 +17329,7 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@6006 = ~Cursed Girdle of Giant Strength: Big-Fisted Belt~
+@6006 = ~Girdle of Giant Strength: Big-Fisted Belt~ //*!*!*\\
 @6007 = ~A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodstains on the leather hint at unspeakable carnage, but the misspelled graffiti scratched into its surface suggests that the girdle's former owners were none too bright.
 
 STATISTICS:
@@ -17603,7 +17603,7 @@ Not usable by:
  Sorcerer
  Stalker
  Thief~
-@6032 = ~Cursed Ring of Slight Monsterism: Iron Thorn Ring~
+@6032 = ~Ring of Slight Monsterism: Iron Thorn Ring~ //*!*!*\\
 @6033 = ~This wrought-iron band is pitted and stained as if by acid. Between the two thorns formed by the band, a crude lump of silver on its head suggests the image of a skull against a black field, perhaps the symbol of Myrkul, Lord of Bones.
 
 STATISTICS:
@@ -17685,7 +17685,7 @@ Weight: 0
 Not usable by:
  Cavalier
  Kensai~
-@6042 = ~Cursed Staff of Petrification +1: The Ossifier~
+@6042 = ~Staff of Petrification +1: The Ossifier~ //*!*!*\\
 @6043 = ~The surface of this seven-foot shaft more resembles stone than wood, but in the hands of a skilled wielder it weighs little more than a staff of oak. Along its length appear the ghost-like images of various foes caught in defensive postures, appearing almost as thought they had been suddenly turned to stone.
 
 STATISTICS:
