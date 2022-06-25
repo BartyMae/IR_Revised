@@ -179,6 +179,7 @@ COPY - ~item_rev/components/main/items.2da~ ~item_rev/components/main~
     END
   END
 
+/*
 // Install items by looping through our array
 COPY - ~item_rev/components/main/items_extra.2da~ ~item_rev/components/main~
   READ_2DA_ENTRIES_NOW ~r2en_items~ 17
@@ -264,7 +265,7 @@ COPY - ~item_rev/components/main/items_extra.2da~ ~item_rev/components/main~
       END
     END
   END
-
+*/
 
 /* ---------------- Iron Crisis ---------------- */
 INCLUDE ~item_rev/lib/iron_crisis.tpa~

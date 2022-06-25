@@ -4,7 +4,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.836)~
+VERSION ~V4 Beta 10 (Revised V1.3.837)~
 
 ALWAYS
 
@@ -20,6 +20,9 @@ ALWAYS
   END
 
   ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet~) BEGIN
+    LOAD_TRA ~item_rev/languages/english/item_descriptions.tra~
+    LOAD_TRA ~item_rev/languages/english/potion_descriptions.tra~
+    LOAD_TRA ~item_rev/languages/english/item_upgrades.tra~
     LOAD_TRA ~item_rev/languages/english/description_updates.tra~
     ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
       LOAD_TRA ~item_rev/languages/english/enhanced_editions.tra~
