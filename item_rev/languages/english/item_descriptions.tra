@@ -5378,8 +5378,16 @@ Equipped Abilities:
 Armor Class Bonus: 1
 Protects Against Critical Hits
 Weight: 3
-Usable By:
- Fighter~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Paladin
+ Ranger
+ Thief
+ Kensai~
 @1627 = ~While most barbarians of the Tuigan tribes go to war wearing fur caps or helms taken from the enemy dead, a few select war leaders wear enchanted helms such as this one. In addition to the protection they provide the Tuigan leaders, the helms are useful for inspiring a sense of fear - not only in the people they seek to conquer, but also in their own warriors.
 
 With the addition of the horns, the Helm of the Rock is even more powerful. Generals and military leaders can command both fear and respect simply by wearing this helm.
@@ -5395,8 +5403,16 @@ Equipped Abilities:
 Armor Class Bonus: 1
 Protects Against Critical Hits
 Weight: 3
-Usable By:
- Fighter~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Paladin
+ Ranger
+ Thief
+ Kensai~
 @1628 = ~Gold Horned Helm~
 @1629 = ~Leather Armor~
 @1630 = ~Basic armor made of thick, wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing.
