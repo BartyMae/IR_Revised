@@ -667,8 +667,8 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@1075 = ~Frostreaver +1~
-@1076 = ~This was the axe of Illgarth, a frost giant that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings. Ice and acid maimed those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims Frostreaver was buried with him.
+@1075 = ~Frostreaver +1~ //*!*!*\\
+@1076 = ~This was the axe of Illgarth, a frost giant that terrorized northern communities long ago. It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings. Ice scarred those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit. Ultimately a group did manage to kill him, and at the request of his victims Frostreaver was buried with him.
 
 STATISTICS:
 
@@ -3146,7 +3146,7 @@ Equipped abilities:
 Weight: 1
 
 Only usable by:
- Fighter (true class)
+ Fighter (single true class)
  Kensai
  Monk~
 @131400000 = ~When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
@@ -3164,7 +3164,7 @@ Equipped abilities:
 Weight: 1
 
 Only usable by:
- Fighter (true class)
+ Fighter (single true class)
  Kensai
  Monk~
 @1315 = ~Bullet~
@@ -9359,7 +9359,7 @@ Not usable by:
  Cavalier
  Kensai~
 @1939 = ~Small Shield~
-@1940 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although he cannot wield or carry another weapon.
+@1940 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although they cannot wield or carry another weapon.
 
 STATISTICS:
 
@@ -9381,8 +9381,8 @@ Not usable by:
  Sorcerer
  Thief~
 @1941 = ~Small Shield +1~
-@1942 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although he cannot wield or carry another weapon.~
-@1943 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although he cannot wield or carry another weapon. This magical shield grants an extra bonus of +1 against attacks.
+@1942 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although they cannot wield or carry another weapon.~
+@1943 = ~A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although they cannot wield or carry another weapon. This magical shield grants an extra bonus of +1 against attacks.
 
 STATISTICS:
 
@@ -12918,12 +12918,12 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@2205 = ~Lilarcor +3~
+@2205 = ~Lilarcor +3~ //*!*!*\\
 @2206 = ~Lawrence Lilarcor was well known, not for being brave, but as an idiot. As the tale goes, the boastful Lilarcor left his village at the urging of his friends so that the "great hero" could do battle with a devious Treant. He walked for days in the dead of winter until, feverish, he found his target and began an epic wrestling match. Unfortunately (or perhaps luckily), the "Treant" was nothing more than a craggy old normal oak. His friends had been jesting, not actually expecting that Lilarcor would go fight the fictitiously dangerous tree. That might have been the end of it, but Lilarcor, not really knowing what a Treant was in the first, didn't realize the truth. He eventually uprooted the oak and, marching proudly home, he declared himself a hero. Thus was born a laughing stock of epic proportions, and over time the name of Lilarcor became the sacrificial fool in many tales of "less than brilliance."
 
 It is not known whether this enchanted weapon is Lilarcor himself, perhaps imprisoned by an evil mage or some other odd coincidence of fate, but it certainly acts in a manner consistent with his level of competence. If it is he, he has never bemoaned his captivity. He might not realize, or care, that he is no longer a human.
 
-As a weapon, Lilarcor has its uses, but many a warrior has eventually given it away. Banter such as, "Ouch, that musta hurt," "Oh yeah! Got 'im good," and "Beware my bite for it might... might... might really hurt or something," is a constant barrage on a warrior's psyche.
+As a weapon, Lilarcor has its uses, but many a warrior has eventually given it away. Banter such as, "Ouch, that musta hurt!", "Oh yeah! Got 'im good!", and "Beware my bite for it might... might... might really hurt or something!" is a constant barrage on a warrior's psyche.
 
 STATISTICS:
 

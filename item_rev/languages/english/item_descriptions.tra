@@ -2748,7 +2748,7 @@ Equipped Abilities:
 Armor Class: 2
 Weight: 1
 Usable By:
- Fighter (true class)
+ Fighter (single true class)
  Monk
  Kensai~
 @131400000 = ~Bands of the Master
@@ -2766,7 +2766,7 @@ Equipped Abilities:
 Armor Class: 2 (+2 bonus)
 Weight: 1
 Usable By:
- Fighter (true class)
+ Fighter (single true class)
  Monk
  Kensai~
 @1315 = ~Bullet~
