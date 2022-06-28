@@ -4,7 +4,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 Beta 10 (Revised V1.3.838)~
+VERSION ~V4 Beta 10 (Revised V1.3.839)~
 
 ALWAYS
 
@@ -64,7 +64,7 @@ INCLUDE ~item_rev/components/main_component.tpa~
 
 BEGIN @33
 DESIGNATED 1030
-REQUIRE_PREDICATE (GAME_IS ~tob bgt bg2ee eet~) @9002
+REQUIRE_PREDICATE (GAME_IS ~tob bgt bgee bg2ee eet~) @9002
 
 ACTION_IF (GAME_IS ~tob bgt bg2ee eet~) BEGIN
   LOAD_TRA ~item_rev/languages/english/store_revisions.tra~

@@ -236,7 +236,7 @@ END
 END // EE fixes
 
 
-/* ---------------- BG1EE Fixes ---------------- */
+/* ---------------- BG1 Fixes ---------------- */
 
 // Item resource fixes
 ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet~) BEGIN
@@ -296,6 +296,14 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
     LPF update_item_descriptions_to_bgee END
 END
 
+
+/* ---------------- BG1EE Fixes ---------------- */
+
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
+  COPY_EXISTING ~blun41.itm~ override
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1280 parameter1 = 26050 END
+  BUT_ONLY
+END
 
 /* ---------------- EET Fixes ---------------- */
 
