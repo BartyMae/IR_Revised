@@ -3358,7 +3358,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1369 = ~White Dragonscale Armor +5~
+@1369 = ~White Dragonscale Mail +5~
 @1370 = ~White dragon hide is lightweight, strong, and highly resistant to cold. These suits are much sought after, but few smiths are willing to craft them. The necessary materials are rare and dangerous to acquire, and dragons have long memories where their kin are concerned. Most smiths would prefer not to even risk association with the trade in dragon hide. This splint mail of natural-source can be worn by more classes than other similarly protective armors.
 
 STATISTICS:
@@ -4321,7 +4321,7 @@ The drow have long sought out places of powerful faerzress in which to raise the
 
 A drowcraft armor is energized by local earth nodes and the surrounding aura of faerzress. As long as it remains within an earth node or a zone of faerzress, it grants its wearer exceptional protection. Drowcraft armor will dissolve to dust if exposed to sunlight and shouldn't be removed from the Underdark.
 
-This magical drow chain mail, much like their cousins' elven chain is so finely wrought that it can be worn under normal clothing without revealing its presence, and allows it to be worn with few restrictions. This powerful drow armor also increases the wearer's magic resistance and casting speed.
+The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Much like their cousins' elven chain, this magical drow chain mail is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allow it to be worn by thieves and multi-class mages with few restrictions. 
 
 STATISTICS:
 
@@ -5934,7 +5934,7 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
-@1667 = ~Shadow Dragonhide Armor +5~ // BG2: Shadow Dragon Scale: This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer extra protection from acid.
+@1667 = ~Shadow Dragonscale Hide +5~ // BG2: Shadow Dragon Scale: This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer extra protection from acid.
 @1668 = ~Boots of the West~
 @1669 = ~This suit of armor is formed from interlocking shadow dragon scales. Lighter and less cumbersome than most hide armors, shadow dragonhide also protects the wearer from negative energy attacks. Suits such as this are much sought after, but few smiths are willing to craft them. The necessary materials are rare and dangerous to acquire, and dragons have long memories where their kin are concerned. Most smiths would prefer not to even risk association with the trade in dragon hide.
 
@@ -7866,7 +7866,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1852 = ~Red Dragonplate Armor +5~ // BG2: Red Dragon Scale: Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
+@1852 = ~Red Dragonscale Plate +5~ // BG2: Red Dragon Scale: Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 @1853 = ~Red dragon hide is light of weight, strong, and resistant to fire. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 
 STATISTICS:
@@ -7913,7 +7913,7 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@1856 = ~Blue Dragonplate Armor +5~ // BG2: Blue Dragon Plate: The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
+@1856 = ~Blue Dragonscale Plate +5~ // BG2: Blue Dragon Plate: The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
 @1857 = ~Blue dragon hide is lightweight, strong, and highly resistant to electricity. These suits are much sought after, but few smiths are willing to craft them. The necessary materials are rare and dangerous to acquire, and dragons have long memories where their kin are concerned. Most smiths would prefer not to even risk association with the trade in dragon hide. This full plate mail of natural-source can be worn by more classes than other similarly protective armors.
 
 STATISTICS:
