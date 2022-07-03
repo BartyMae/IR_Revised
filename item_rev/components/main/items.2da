@@ -186,7 +186,7 @@ BRACERS                                    BRACER   brac05   1        1        1
 GAUNTLETS_OF_OGRE_POWER                    GAUNTLET brac06   1        1        1        1        1        1        @1277    @1278    @1279    @1280    *        *        *        *
 GAUNTLETS_OF_DEXTERITY                     GAUNTLET brac07   1        1        1        1        1        1        @1277    @1281    @1279    @1282    *        *        *        *
 GAUNTLETS_OF_MIGHT                         GAUNTLET brac08   1        1        1        1        1        1        @1277    @2337    @1279    @2338    *        *        *        cursed
-GAUNTLETS_OF_PARRYING                      GAUNTLET brac09   1        1        1        1        1        1        @1277    @1283    @1279    @1284    *        *        *        *
+GAUNTLETS_OF_SWORDPLAY                     GAUNTLET brac09   1        1        1        1        1        1        @1277    @1283    @1279    @1284    *        *        *        *
 GAUNTLETS_OF_WEAPON_EXPERTISE              GAUNTLET brac10   1        1        1        1        1        1        @1277    @1285    @1279    @1286    *        *        *        *
 BRACERS_OF_SPEED                           BRACER   brac11   1        1        1        1        1        1        @1267    @2339    @1269    @2340    *        *        *        cursed
 BRACERS#2                                  BRACER   brac12   1        1        0        0        1        1        @1267    @1267    @2496    @2496    *        *        *        *

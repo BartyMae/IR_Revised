@@ -8,7 +8,7 @@ DEFINE_PATCH_FUNCTION itemdesc BEGIN
 		READ_LONG 0x50 desc_strref
 	END
 	PATCH_IF desc_strref<=0 BEGIN
-		PATCH_WARN "itemdesc: Unable to update the description for %SOURCE_RES%.itm as it doesn't have one"
+		PATCH_PRINT "itemdesc: Unable to update the description for %SOURCE_RES%.itm as it doesn't have one"
 	END ELSE BEGIN
 		GET_STRREF desc_strref desc
 		INNER_PATCH "%desc%" BEGIN

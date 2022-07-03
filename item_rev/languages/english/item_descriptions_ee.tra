@@ -8274,7 +8274,7 @@ Weight: 0
 Usable By:
  Thief~
 @1901 = ~Ring of Danger Sense~
-@1902 = ~Nizzuf's Maze was a grand hedge maze created by the arch-mage Nizzuf for his amusement. The maze boasted hundreds of magical traps, most of them extremely lethal. Nizzuf posted a reward big enough to buy a kingdom for the man or woman brave enough to enter the maze and reach its core. Thousands tried and died. But one, Oteg Verm, completed the maze, thanks mainly to this ring which let him "see" where the traps were hidden.
+@1902 = ~Nizzuf's Maze was a grand hedge maze created by the archmage Nizzuf for his amusement. The maze boasted hundreds of magical traps, most of them extremely lethal. Nizzuf posted a reward big enough to buy a kingdom for the man or woman brave enough to enter the maze and reach its core. Thousands tried and died. But one, Oteg Verm, completed the maze, thanks mainly to this ring which let him "see" where the traps were hidden.
 
 STATISTICS:
 
@@ -14324,7 +14324,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2469 = ~Quarterstaff of Arundel +3~
-@2470 = ~This staff was created by Arundel, an arch druid that lived in the city of Kuldahar before he was killed by the demon Belhifet.
+@2470 = ~This staff was created by Arundel, an archdruid that lived in the city of Kuldahar before he was killed by the demon Belhifet.
 
 STATISTICS:
 
@@ -16343,8 +16343,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@70000 = ~Splint Mail +2~
-@70001 = ~Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the human body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. Extra protection is given by magical enchantments placed on this armor.
+@7000 = ~Splint Mail +2~
+@7001 = ~Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the human body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle. Extra protection is given by magical enchantments placed on this armor.
 
 STATISTICS:
 
@@ -16363,8 +16363,8 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@70002 = ~Dart +2~
-@70003 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+@7002 = ~Dart +2~
+@7003 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
 
 STATISTICS:
 
@@ -16379,8 +16379,8 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@70004 = ~Dart +3~
-@70005 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
+@7004 = ~Dart +3~
+@7005 = ~The dart is a small, easily concealable missile weapon that is thrown, rather than fired from a launcher. Magical darts such as these are sought after by thieves and mages.
 
 STATISTICS:
 
@@ -16395,8 +16395,8 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@70006 = ~Hide Armor +1~
-@70007 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@7006 = ~Hide Armor +1~
+@7007 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -16410,8 +16410,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@70008 = ~Hide Armor +2~
-@70009 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@7008 = ~Hide Armor +2~
+@7009 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -16425,8 +16425,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@70010 = ~Hide Armor +3~
-@70011 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
+@7010 = ~Hide Armor +3~
+@7011 = ~Hide armor is made from the thick skin of large animals (elephants, for example) or layers of thinner, more common leather. It is considered too cumbersome for use in advanced human cultures, but is common among more barbaric humanoids. It offers better protection than normal leather, but can be hard to maintain, often resulting in an offensive odor or shoddy appearance that prevents effective use. Thieves can wear this armor, but it has a negative effect on their abilities. Magical enchantments have improved the protective abilities of this particular suit.
 
 STATISTICS:
 
@@ -16440,8 +16440,8 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@70012 = ~Buckler +2~
-@70013 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+@7012 = ~Buckler +2~
+@7013 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
 
 STATISTICS:
 
@@ -16457,8 +16457,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@70014 = ~Buckler +3~
-@70015 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
+@7014 = ~Buckler +3~
+@7015 = ~A buckler, also known as a target shield, is a small shield of wood or metal that fastens to the forearm. Because of its size, it is light and can be worn with very little restriction to movement. This buckler has some form of generic enchantment, making it more resistant to blows.
 
 STATISTICS:
 
@@ -16474,8 +16474,8 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@70016 = ~Wakizashi +2~
-@70017 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
+@7016 = ~Wakizashi +2~
+@7017 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
 
 STATISTICS:
 
@@ -16493,8 +16493,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70018 = ~Wakizashi +3~
-@70019 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
+@7018 = ~Wakizashi +3~
+@7019 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi is a shorter sword with a length between 12 and 24 inches, and is a dangerous weapon in the hands of a skilled user. Wu Jen masters have concealed within this wakizashi great power, unleashed only when the wielder is in the thick of battle. How or why this wakizashi made it to Faerûn is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.
 
 STATISTICS:
 
@@ -16512,8 +16512,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70020 = ~Ninjato +2~
-@70021 = ~Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@7020 = ~Ninjato +2~
+@7021 = ~Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 
@@ -16531,8 +16531,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70022 = ~Ninjato +3~
-@70023 = ~Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@7022 = ~Ninjato +3~
+@7023 = ~Saito Kagizu, or "Cat of the East" as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninjato that he either "collected" from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 
 STATISTICS:
 
@@ -16550,8 +16550,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@70024 = ~Scimitar +2~
-@70025 = ~The long, curved, single-edged blade is characteristic of both the sabre and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the sabre was intended mainly for horsemen due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. Thus, it is slightly slower, but tends to be more effective and deadly in combat. This scimitar is particularly good at its job, as it has been enchanted with a few magical properties.
+@7024 = ~Scimitar +2~
+@7025 = ~The long, curved, single-edged blade is characteristic of both the sabre and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the sabre was intended mainly for horsemen due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, has a greater curve to it, and is tapered to an elongated, sharp point. Thus, it is slightly slower, but tends to be more effective and deadly in combat. This scimitar is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 

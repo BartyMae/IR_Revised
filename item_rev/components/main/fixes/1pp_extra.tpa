@@ -2209,7 +2209,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~wqlc3a1.bam~) BEGIN // C3 (BG2 medium) shields
   ACTION_IF (FILE_EXISTS_IN_GAME ~shld22.itm~) BEGIN
 COPY_EXISTING ~shld22.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~C3~
+  WRITE_ASCII 0x22 ~C3~
   LAUNCH_PATCH_MACRO ~clear~
   SET gradient = 203    // colour index
   SET location = sgrey    // location
