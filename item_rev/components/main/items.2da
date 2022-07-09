@@ -565,6 +565,10 @@ ENKIDUS_FULL_PLATE_4                       PLATEF   plat21   1        1        0
 SHURUPPAKS_MAIL_5                          SPLINT   plat22   1        1        0        0        1        1        @1335    @1860    @1338    @1861    *        *        *        *
 FULL_PLATE_MAIL_3                          PLATEF   plat23   1        1        0        0        1        1        @1497    @2370    @1499    @1862    *        *        *        *
 
+EDWINS_AMULET#BGT                          AMULET   bgmisc89 1        1        0        0        1        1        @1649    @1649    @1781    @1781    *        *        *        *
+RING_OF_SORCERY#BGT                        RING     bgring08 1        1        1        1        1        1        @1800    @2424    @1802    @2425    *        *        *        *
+THE_WORLDS_EDGE_3#BGT                      SWORD2H  bgsw2h07 1        1        0        0        1        1        @1760    @2426    @1762    @2427    *        *        *        *
+WAND_OF_MAGIC_MISSILES#BGT                 WAND     bgwand12 1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
 BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03_  1        1        0        0        1        1        @1055    @2569    @1058    @2570    *        *        *        *
 KROTANS_SKULLCRUSHER_2                     MACE     blun11_  1        1        0        0        1        1        @1112    @2571    @1115    @2572    *        *        *        *
 HELM_OF_OPPOSITE_ALIGNMENT                 HELM     helm02_  1        1        0        0        1        1        @1569    @2623    @1572    @2624    *        *        *        cursed
@@ -572,6 +576,7 @@ TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0
 FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        0        0        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 PLATE_OF_THE_DARK_1                        PLATEF   plat05_  1        1        0        0        1        1        @1497    @2577    @1499    @2578    *        *        *        *
 ANKHEG_PLATE_MAIL_1                        PLATE    plat06_  1        1        0        0        1        1        @1825    @2579    @1828    @2580    *        *        *        *
+AULES_STAFF_3                              STAFF    staf08_  1        1        0        0        1        1        @2012    @2625    @2012    @2627    *        *        *        *
 THE_WHISTLING_SWORD_2                      SWORDS   sw1h09_  1        1        0        0        1        1        @2066    @2581    @2069    @2582    *        *        *        *
 
 RING_OF_FIRE_RESISTANCE                    RING     ring02   1        1        1        1        1        1        @1800    @1863    @1802    @1864    *        *        *        *
@@ -915,11 +920,6 @@ POTION_OF_EXTRA_HEALING                    POTION   potn52   1        1        1
 FESTULE_THE_ALCHEMISTS_POTION              POTION   potn53   1        1        0        0        1        1        #6976    @3096    #16264   @3097    *        *        *        *
 POTION_OF_SUPERIOR_HEALING                 POTION   potn55   1        1        0        0        1        1        #6976    @3098    #16264   @3099    *        *        *        *
 ROGUES_POTION_OF_FROST_GIANT_STRENGTH      POTION   potn56   1        1        0        0        1        1        #6976    @3100    #16264   @3101    *        *        *        *
-
-EDWINS_AMULET#BGT                          AMULET   bgmisc89 1        1        0        0        1        1        @1649    @1649    @1781    @1781    *        *        *        *
-RING_OF_SORCERY#BGT                        RING     bgring08 1        1        1        1        1        1        @1800    @2424    @1802    @2425    *        *        *        *
-THE_WORLDS_EDGE_3#BGT                      SWORD2H  bgsw2h07 1        1        0        0        1        1        @1760    @2426    @1762    @2427    *        *        *        *
-WAND_OF_MAGIC_MISSILES#BGT                 WAND     bgwand12 1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
 
 RHYTES_LAST_ARROW_2                        AXEH     ax1h06   0        0        0        0        0        0        @1062    @6000    @1067    @6001    @4052    @4051    @2504    *
 BERUELS_RETORT_1                           AXEH     ax1h18   0        0        0        1        1        1        @1062    @6002    @1067    @6003    @4052    @4051    *        *
