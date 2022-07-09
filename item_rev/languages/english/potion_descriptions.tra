@@ -223,7 +223,7 @@ Weight: 1
 Usable By:
  All~
 @3052=~Potion of Fortitude~
-@3053=~Once consumed, this potion will cause a surge of energy to travel through the body of the user, providing a +20% bonus to hit points. These bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
+@3053=~Once consumed, this potion will cause a surge of energy to travel through the body of the user, making them immune to disease and providing a +20% bonus to hit points. These bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
@@ -278,7 +278,7 @@ STATISTICS:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@3066=~Potion of Energy Shielding~
+@3066=~Potion of Resilience~
 @3067=~The drinker of this powerful elixir is guaranteed to always be successful when rolling saving throws against spells and abilities. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
