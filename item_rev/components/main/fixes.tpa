@@ -309,20 +309,11 @@ END
 
 // Item resource fixes
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee~) BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm15_.itm~) BEGIN
-    COPY_EXISTING ~helm15.itm~ ~override/helm15_.itm~
-  END
   ACTION_IF (FILE_EXISTS_IN_GAME ~misc89_.itm~) BEGIN
     COPY_EXISTING ~bgmisc89.itm~ ~override/misc89_.itm~
   END
   ACTION_IF (FILE_EXISTS_IN_GAME ~ring08_.itm~) BEGIN
     COPY_EXISTING ~bgring08.itm~ ~override/ring08_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~staf08_.itm~) BEGIN
-    COPY_EXISTING ~staf08.itm~ ~override/staf08_.itm~
-  END
-  ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h09_.itm~) BEGIN
-    COPY_EXISTING ~sw1h09.itm~ ~override/sw1h09_.itm~
   END
   ACTION_IF (FILE_EXISTS_IN_GAME ~sw2h07_.itm~) BEGIN
     COPY_EXISTING ~bgsw2h07.itm~ ~override/sw2h07_.itm~
