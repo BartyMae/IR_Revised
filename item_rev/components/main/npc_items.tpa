@@ -1,0 +1,59 @@
+ACTION_IF npc_items_are_usable=1 BEGIN
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Jansen Adventurewear
+    SAY NAME1 @1782    SAY NAME2 @1782
+    SAY IDENTIFIED_DESC @178300000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Bow of Arvoreen +2
+    SAY NAME1 @1784    SAY NAME2 @1784
+    SAY IDENTIFIED_DESC @178500000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Corthala Family Armor +2
+    SAY NAME1 @1788    SAY NAME2 @1788
+    SAY IDENTIFIED_DESC @178900000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Cloak of the High Forest
+    SAY NAME1 @1790    SAY NAME2 @1790
+    SAY IDENTIFIED_DESC @179100000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Jansen Spectroscopes
+    SAY NAME1 @1792    SAY NAME2 @1792
+    SAY IDENTIFIED_DESC @179300000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Jansen Techno-Gloves
+    SAY NAME1 @1794    SAY NAME2 @1794
+    SAY IDENTIFIED_DESC @179500000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Staff of the High Forest +2
+    SAY NAME1 @1796    SAY NAME2 @1796
+    SAY IDENTIFIED_DESC @179700000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Firecam Full Plate Mail +2
+    SAY NAME1 @1798    SAY NAME2 @1798
+    SAY IDENTIFIED_DESC @179900000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Delryn Family Shield +2
+    SAY NAME1 @1804    SAY NAME2 @1804
+    SAY IDENTIFIED_DESC @180500000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Sword of Arvoreen +2
+    SAY NAME1 @1806    SAY NAME2 @1806
+    SAY IDENTIFIED_DESC @180700000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Yoshimo's Katana +2
+    SAY NAME1 @1809    SAY NAME2 @1809
+    SAY IDENTIFIED_DESC @181000000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Hallowed Redeemer +2
+    SAY NAME1 @1812    SAY NAME2 @1812
+    SAY IDENTIFIED_DESC @181300000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Corthala Family Blade +2
+    SAY NAME1 @1814    SAY NAME2 @1814
+    SAY IDENTIFIED_DESC @181500000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Entropy +2
+    SAY NAME1 @1816    SAY NAME2 @1816
+    SAY IDENTIFIED_DESC @181700000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Chaos +2
+    SAY NAME1 @1818    SAY NAME2 @1818
+    SAY IDENTIFIED_DESC @181900000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Handmaiden's Mace +3
+    SAY NAME1 @2413    SAY NAME2 @2413
+    SAY IDENTIFIED_DESC @241400000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Blood Axe +2
+    SAY NAME1 @2383    SAY NAME2 @2383
+    SAY IDENTIFIED_DESC @238400000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Shar's Blessing +3
+    SAY NAME1 @1821    SAY NAME2 @1821
+    SAY IDENTIFIED_DESC @182200000
+  COPY ~item_rev/components/main/alternatives/nparm.itm~ ~override~  // Flasher Launcher +2
+    SAY NAME1 @1823    SAY NAME2 @1823
+    SAY IDENTIFIED_DESC @182400000
+END

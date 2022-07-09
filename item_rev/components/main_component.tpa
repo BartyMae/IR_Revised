@@ -270,6 +270,9 @@ COPY - ~item_rev/components/main/items_extra.2da~ ~item_rev/components/main~
 /* ---------------- Iron Crisis ---------------- */
 INCLUDE ~item_rev/lib/iron_crisis.tpa~
 
+/* ---------------- NPC Items Are Usable ---------------- */
+INCLUDE ~item_rev/components/main/npc_items.tpa~
+
 /* ---------------- IRR Fixes ---------------- */
 INCLUDE ~item_rev/components/main/fixes.tpa~
 
