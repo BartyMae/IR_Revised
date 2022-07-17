@@ -1,7 +1,7 @@
 @1000 = ~Amulet~
 @1001 = ~Amulet of Protection +1~ // BG1/BG2: The Protector: The royal guard of King Pyronan, ruler of Impiltur, were given "The Protector" as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
-@1002 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
-@1003 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
+@1002 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~ // BG2: Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.
+@1003 = ~Amulets, cloaks, and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
 
 STATISTICS:
 
@@ -4981,9 +4981,9 @@ Not usable by:
  Cleric
  Mage
  Sorcerer~
-@1513 = ~Long Sword~
-@1514 = ~Drowcraft Long Sword +3~
-@1515 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.~
+@1513 = ~Longsword~
+@1514 = ~Drowcraft Longsword +3~
+@1515 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the longsword has a single-edged blade. There is no single version of the longsword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all longswords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most longswords have a double-edged blade and a sharp point at the tip. Despite the tip, the longsword is designed for slashing, not thrusting.~
 @1516 = ~Many parts of the Underdark of Faerûn are suffused with a magical radiation that the drow call faerzress. A remnant of the mighty forces that originally shaped the terrain of the Underdark, faerzress distorts and interferes with certain types of magic.
 
 The drow have long sought out places of powerful faerzress in which to raise their cities, since the magical radiation helps to frustrate spying and protect against enemy assaults. The magical energy can also be used in the construction of various powerful magic items.
@@ -4999,7 +4999,7 @@ THAC0: +3
 Damage: 1d8+3
 Damage Type: Slashing
 Speed Factor: 2
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -7013,7 +7013,7 @@ Special abilities:
 Berserker (5 HD):
  ST18, DE16, CO16, IN10, WI10, CH10
  HP 60, AC 3, THAC0 12, APR 3/2
- 1d8+4 Slashing (Long Sword +1)
+ 1d8+4 Slashing (Longsword +1)
  Saving Throws 11/15/11/13/15, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -7035,7 +7035,7 @@ Special abilities:
 Berserker (5 HD):
  ST18, DE16, CO16, IN10, WI10, CH10
  HP 60, AC 3, THAC0 12, APR 3/2
- 1d8+4 Slashing (Long Sword +1)
+ 1d8+4 Slashing (Longsword +1)
  Saving Throws 11/13/12/13/14, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -7261,7 +7261,7 @@ THAC0: +5
 Damage: 1d8+5
 Damage Type: Slashing
 Speed Factor: 0
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -7431,7 +7431,7 @@ Launcher: Sling
 Weight: 2~
 @1760 = ~Two-handed Sword~
 @1761 = ~Unholy Reaver +5: Ir'revrykal~ // BG2: This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
-@1762 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
+@1762 = ~The two-handed sword is a derivative of the longsword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the longsword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
 @1763 = ~This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god know only as "the One in the Void." To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possess such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as "Pain-Servant."
 
 STATISTICS:
@@ -7916,7 +7916,7 @@ Not usable by:
  Sorcerer
  Thief~
 @1806 = ~Sword of Arvoreen +2~
-@1807 = ~Another gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
+@1807 = ~Another gift to Mazzy from Arvoreen, this shortsword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.
 
 STATISTICS:
 
@@ -7927,7 +7927,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -7936,7 +7936,7 @@ Weight: 3
 
 Only usable by:
  Mazzy~
-@180700000 = ~Another gift to Mazzy from Arvoreen, this short sword's enchantments give it the ability to slow and weaken any opponent struck by it.
+@180700000 = ~Another gift to Mazzy from Arvoreen, this shortsword's enchantments give it the ability to slow and weaken any opponent struck by it.
 
 STATISTICS:
 
@@ -7947,7 +7947,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -8099,7 +8099,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@1816 = ~Entropy +2~ // BG2: This +2 abyssal greensteel blade is one of Haer'Dalis's favorite weapons. This short sword is capable of inflicting an additional 3 points of poison damage if the target fails a Saving Throw. This blade may only be used by tieflings.
+@1816 = ~Entropy +2~ // BG2: This +2 abyssal greensteel blade is one of Haer'Dalis's favorite weapons. This shortsword is capable of inflicting an additional 3 points of poison damage if the target fails a Saving Throw. This blade may only be used by tieflings.
 @1817 = ~This sickly green metal is very rarely found outside of the Outer Planes. This is because the ore needed to make the metal is only found on the Lower Planes, specifically the Nine Hells of Baator. The most common users of baatorian green steel are the baatezu themselves, who use weapons and armors made of this metal in the Blood War (their eternal fight against the tanar’ri). This metal is also known as banesteel because the material tends to mirror the baatezu's fondness for surgical strikes–weapons made of baatorian green steel inflict far more critical hits than their mundane counterparts. This abyssal green steel blade is one of Haer'Dalis' favorite weapons.
 
 STATISTICS:
@@ -8112,7 +8112,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -8133,7 +8133,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -8146,7 +8146,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@1818 = ~Chaos +2~ // BG2: Chaos is a +2 short sword usable only by tieflings. Every time it strikes an opponent, he or she loses 2 points of Dexterity for 5 rounds. Haer'Dalis prefers using Chaos with its partner—Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
+@1818 = ~Chaos +2~ // BG2: Chaos is a +2 shortsword usable only by tieflings. Every time it strikes an opponent, he or she loses 2 points of Dexterity for 5 rounds. Haer'Dalis prefers using Chaos with its partner—Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
 @1819 = ~This rare metal is another product of the Blood War and the Lower Planes. In this case, the metal is crafted in the infinite layers of the Abyss and is used primarily by the tanar’ri. Tanar'ri red steel is also known as bloodsteel - both for being the color of fresh blood as well as the tendency for weapons forged of this metal to cause horrific wounds. Haer'Dalis prefers using Chaos with its partner, Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.
 
 STATISTICS:
@@ -8159,7 +8159,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -8180,7 +8180,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -8817,7 +8817,7 @@ Weight: 0
 Not usable by:
  Wizard Slayer~
 @1869 = ~Ring of Protection +1~ // BG1/BG2: Ring of the Princes: This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least 13 generations, though they were all apparently lost within the space of one. Enmity between the King and the family of the creator may be to blame.
-@1870 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this ring.
+@1870 = ~Amulets, cloaks, and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this ring.
 
 STATISTICS:
 
@@ -10717,7 +10717,7 @@ Weight: 4
 Not usable by:
  Monk~
 @2054 = ~Bastard Sword~
-@2055 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+@2055 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the longsword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
 STATISTICS:
 
@@ -10740,8 +10740,8 @@ Not usable by:
  Sorcerer
  Thief~
 @2056 = ~Bastard Sword +1~
-@2057 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.~
-@2058 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches. This bastard sword is particularly good at its job, as it has been enchanted with a few magical properties.
+@2057 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the longsword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.~
+@2058 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the longsword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches. This bastard sword is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -10798,14 +10798,14 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@2061 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+@2061 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the longsword has a single-edged blade. There is no single version of the longsword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all longswords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most longswords have a double-edged blade and a sharp point at the tip. Despite the tip, the longsword is designed for slashing, not thrusting.
 
 STATISTICS:
 
 Damage: 1d8
 Damage Type: Slashing
 Speed Factor: 5
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -10818,8 +10818,8 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2062 = ~Long Sword +1~ // BG2: These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
-@2063 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting. This long sword is particularly good at its job, as it has been enchanted with a few magical properties.
+@2062 = ~Longsword +1~ // BG2: These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the longsword has a single-edged blade. There is no single version of the longsword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all longswords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most longswords have a double-edged blade and a sharp point at the tip. Despite the tip, the longsword is designed for slashing, not thrusting. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
+@2063 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. In many cases, the longsword has a single-edged blade. There is no single version of the longsword; the design and length vary from culture to culture, and may vary within the same culture depending on the era. Among the most common characteristics of all longswords is their length, which ranges from 35 to 47 inches. In the latter case, the blade is known to take up 40 inches of the total length. Most longswords have a double-edged blade and a sharp point at the tip. Despite the tip, the longsword is designed for slashing, not thrusting. This longsword is particularly good at its job, as it has been enchanted with a few magical properties.
 
 
 STATISTICS:
@@ -10828,7 +10828,7 @@ THAC0: +1
 Damage: 1d8+1
 Damage Type: Slashing
 Speed Factor: 4
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -10853,7 +10853,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -10866,15 +10866,15 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2066 = ~Short Sword~
-@2067 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
+@2066 = ~Shortsword~
+@2067 = ~The shortsword is the first type of sword to come into existence. In the simplest of terms, a shortsword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "shortsword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
 STATISTICS:
 
 Damage: 1d6
 Damage Type: Piercing
 Speed Factor: 3
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -10887,9 +10887,9 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2068 = ~Short Sword +1~
-@2069 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.~
-@2070 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. This short sword is particularly good at its job, as it has been enchanted with a few magical properties.
+@2068 = ~Shortsword +1~
+@2069 = ~The shortsword is the first type of sword to come into existence. In the simplest of terms, a shortsword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "shortsword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.~
+@2070 = ~The shortsword is the first type of sword to come into existence. In the simplest of terms, a shortsword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "shortsword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. This shortsword is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -10897,7 +10897,7 @@ THAC0: +1
 Damage: 1d6+1
 Damage Type: Piercing
 Speed Factor: 2
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -10910,8 +10910,8 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2071 = ~Short Sword +2~
-@2072 = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "short sword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
+@2071 = ~Shortsword +2~
+@2072 = ~The shortsword is the first type of sword to come into existence. In the simplest of terms, a shortsword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term "shortsword" does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting. There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be found.
 
 STATISTICS:
 
@@ -10919,7 +10919,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -10932,7 +10932,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2073 = ~Short Sword of Backstabbing +3: The Shadow's Blade~
+@2073 = ~Shortsword of Backstabbing +3: The Shadow's Blade~
 @2074 = ~A rogue's dream, these weapons were commissioned by the Shadow Thieves to bolster their fledgling guild chapter in Baldur's Gate. Seen as a threat to local interests, they now face stiff resistance from the existing thieves' guild and law enforcement for the city, the Flaming Fist. Deaths have occurred, so a few of these items are beginning to surface on the black market.
 
 The Shadow's Blade was created to be the perfect assassin's tool. It is highly sought after by any who settle differences with a blade, and many that possess it do not do so for long.
@@ -10946,7 +10946,7 @@ THAC0: +3
 Damage: 1d6+3
 Damage Type: Piercing
 Speed Factor: 0
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11089,7 +11089,7 @@ THAC0: +1
 Damage: 1d8+1
 Damage Type: Slashing
 Speed Factor: 4
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11114,7 +11114,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11144,7 +11144,7 @@ THAC0: +1
 Damage: 1d6+1
 Damage Type: Piercing
 Speed Factor: 2
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11174,7 +11174,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11200,7 +11200,7 @@ THAC0: +3
 Damage: 1d6+3
 Damage Type: Piercing
 Speed Factor: 0
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11256,7 +11256,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11289,7 +11289,7 @@ THAC0: +1
 Damage: 1d8+1
 Damage Type: Slashing
 Speed Factor: 4
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  10 Strength
@@ -11326,7 +11326,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11363,7 +11363,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: 1-handed
 Requires:
  6 Strength
@@ -11424,7 +11424,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11454,7 +11454,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11563,7 +11563,7 @@ THAC0: +1
 Damage: 1d8+1
 Damage Type: Slashing
 Speed Factor: 4
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11576,7 +11576,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2117 = ~Long Sword +2~
+@2117 = ~Longsword +2~
 @2118 = ~A sword of standardized enchantment, powerful though it is. The great southern nations are said to have once had legions of their soldiers armed in such a fashion, a force that must have appeared truly imposing on the battlefield. The days of such extravagance are long past though.
 
 STATISTICS:
@@ -11585,7 +11585,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11894,7 +11894,7 @@ THAC0: +4
 Damage: 1d8+4
 Damage Type: Slashing
 Speed Factor: 1
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -11930,7 +11930,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2147 = ~Short Sword of Mask +4: Godsbane Legacy~
+@2147 = ~Shortsword of Mask +4: Godsbane Legacy~
 @2148 = ~This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
 
 Godsbane was the sword form assumed by Mask during the Time of Troubles. He would eventually come to be wielded by the then-mortal Cyric, who acquired the sword by murdering a halfling named Sneakabout, who in turn killed the former wielder of the sword.
@@ -11951,7 +11951,7 @@ THAC0: +4
 Damage: 1d6+4
 Damage Type: Piercing
 Speed Factor: 0
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -11964,7 +11964,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2149 = ~Short Sword of Mask +5: Godsbane Legacy~
+@2149 = ~Shortsword of Mask +5: Godsbane Legacy~
 @2150 = ~This blade is highly prized by those who serve the Shadowlord, as well as any who engage in shadowy business.
 
 Godsbane was the sword form assumed by Mask during the Time of Troubles. He would eventually come to be wielded by the then-mortal Cyric, who acquired the sword by murdering a halfling named Sneakabout, who in turn killed the former wielder of the sword.
@@ -11988,7 +11988,7 @@ THAC0: +5
 Damage: 1d6+5
 Damage Type: Piercing
 Speed Factor: 0
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -12016,7 +12016,7 @@ THAC0: +4
 Damage: 1d8+4
 Damage Type: Slashing
 Speed Factor: 1
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -12048,7 +12048,7 @@ THAC0: +5
 Damage: 1d8+5
 Damage Type: Slashing
 Speed Factor: 0
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -12519,7 +12519,7 @@ Not usable by:
  Mage
  Sorcerer~
 @2174 = ~Bastard Sword +3~
-@2175 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches. This is a magical bastard sword.
+@2175 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the longsword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches. This is a magical bastard sword.
 
 STATISTICS:
 
@@ -12542,7 +12542,7 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@2176 = ~Long Sword +3~
+@2176 = ~Longsword +3~
 @2177 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords. The blade hums slightly in your hand, the only overt evidence that magic runs through it.
 
 STATISTICS:
@@ -12551,7 +12551,7 @@ THAC0: +3
 Damage: 1d8+3
 Damage Type: Slashing
 Speed Factor: 2
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -12564,8 +12564,8 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2178 = ~Short Sword +3~
-@2179 = ~This short sword has been forged by hands both magical and highly skilled. Neither nick nor stain mar the flawless blade. When used in battle the blade radiates magic and gifts the wielder with increased skill.
+@2178 = ~Shortsword +3~
+@2179 = ~This shortsword has been forged by hands both magical and highly skilled. Neither nick nor stain mar the flawless blade. When used in battle the blade radiates magic and gifts the wielder with increased skill.
 
 STATISTICS:
 
@@ -12573,7 +12573,7 @@ THAC0: +3
 Damage: 1d6+3
 Damage Type: Piercing
 Speed Factor: 0
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -12645,7 +12645,7 @@ THAC0: +4
 Damage: 1d8+4
 Damage Type: Slashing
 Speed Factor: 1
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -12658,7 +12658,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2186 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+@2186 = ~The two-handed sword is a derivative of the longsword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the longsword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
 STATISTICS:
 
@@ -12681,7 +12681,7 @@ Not usable by:
  Sorcerer
  Thief~
 @2187 = ~Two-handed Sword +1~
-@2188 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This sword is particularly good at its job, as it has been enchanted with a few magical properties.
+@2188 = ~The two-handed sword is a derivative of the longsword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the longsword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This sword is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
 
@@ -12885,7 +12885,7 @@ Weight: 10
 Only usable by:
  Paladin~
 @2201 = ~Two-handed Sword +2~
-@2202 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
+@2202 = ~The two-handed sword is a derivative of the longsword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the longsword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
 
 STATISTICS:
 
@@ -12942,6 +12942,8 @@ Not usable by:
 It is not known whether this enchanted weapon is Lilarcor himself, perhaps imprisoned by an evil mage or some other odd coincidence of fate, but it certainly acts in a manner consistent with his level of competence. If it is he, he has never bemoaned his captivity. He might not realize, or care, that he is no longer a human.
 
 As a weapon, Lilarcor has its uses, but many a warrior has eventually given it away. Banter such as, "Ouch, that musta hurt!", "Oh yeah! Got 'im good!", and "Beware my bite for it might... might... might really hurt or something!" is a constant barrage on a warrior's psyche.
+
+"Banter such as "ouch, that musta hurt", 
 
 STATISTICS:
 
@@ -13123,7 +13125,7 @@ Weight: 10
 Only usable by:
  Paladin~
 @2217 = ~Two-handed Sword +3~
-@2218 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
+@2218 = ~The two-handed sword is a derivative of the longsword. Weaponsmiths have always looked for ways to improve existing weapons, and in an effort to improve the longsword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This particular sword is even more capable of such functions, serving as a fearful reminder of what comes of the union between weaponsmithing and sorcery.
 
 STATISTICS:
 
@@ -13329,7 +13331,7 @@ THAC0: +2
 Damage: 1d8+2
 Damage Type: Piercing
 Speed Factor: 3
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -14889,7 +14891,7 @@ THAC0: +3
 Damage: 1d8+3
 Damage Type: Slashing
 Speed Factor: 2
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -15011,7 +15013,7 @@ Only usable by:
  Mage
  Sorcerer~
 @2389 = ~Rod of Lordly Might +3~
-@2390 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2390 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming longsword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently untransformed.
 
@@ -15167,7 +15169,7 @@ THAC0: +3
 Damage: 1d8+3
 Damage Type: Slashing
 Speed Factor: 2
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -15299,8 +15301,8 @@ Not usable by:
 @2419 = ~Nester's Dagger~
 @2420 = ~Kylee's Dagger~
 @2421 = ~Hentold's Dagger~
-@2422 = ~Hull's Long Sword~
-@2423 = ~Perdue's Short Sword~
+@2422 = ~Hull's Longsword~
+@2423 = ~Perdue's Shortsword~
 @2424 = ~Ring of Sorcery: Evermemory~
 @2425 = ~Long ago, a grand wizard from Amn was rumored to have defied Mystra's limitations on the magical arts. Legends spoke of this wizard being able to cast spells without the limitation of memorization. In the end, it was found that his powers stemmed from the several magical rings that he had made for himself. His proclaimed "everlasting memory" was a hoax, though his rings continue to be one of the most sought after items.
 
@@ -15884,7 +15886,7 @@ Weight: 1
 Only usable by:
  Mage
  Sorcerer~
-@2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2481 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming longsword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a flail.
 
@@ -15917,9 +15919,9 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2482 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming longsword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
-The rod is currently transformed into a long sword.
+The rod is currently transformed into a longsword.
 
 STATISTICS:
 
@@ -15935,7 +15937,7 @@ THAC0: +3
 Damage: 1d8+3
 Damage Type: Slashing
 Speed Factor: 2
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
@@ -15949,7 +15951,7 @@ Not usable by:
  Druid
  Mage
  Sorcerer~
-@2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2483 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming longsword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a battle axe.
 
@@ -15985,7 +15987,7 @@ Not usable by:
  Monk
  Sorcerer
  Thief~
-@2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming long sword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
+@2484 = ~Also called the Wrath of Three Kings, though not associated with any named king in particular, this rod was likely made in 1090 DR. It saw use during the Battle of the Bones, but for which side is uncertain as it was found amongst the dead after a larger skirmish. Untransformed, the rod may serve as a powerful club with defensive enchantments, but its true power lies in the seven studlike buttons along its length that unlock the rod's magic. The first four of these buttons extend and transform the rod into alternative forms: a flail of disruption, a flaming longsword, a hypnotic axe, and a spear of speed. The final three buttons, rather than transforming the rod itself, instead activate powerful abilities: the first creates a ghastly spectre of the wielder, terrifying all those who see it; the second completely paralyzes another creature, rendering them helpess when pointed at; and lastly, the third directly sucks at the life of the target, healing the wielder of the rod.
 
 The rod is currently transformed into a spear.
 
@@ -16068,7 +16070,7 @@ STATISTICS:
 Weight: 1~
 @2497 = ~This is a small figurine depicting an eastern style warrior with two swords.~
 @2498 = ~Shakti Figurine~
-@2499 = ~There is strong evidence this item was fashioned by a powerful Wu Jen in the mysterious lands to the East of Faerûn, as the figurine is an intricately detailed replica of a fierce Kara-Tur warrior in full battle dress, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue-armored warrior wielding magical short swords.
+@2499 = ~There is strong evidence this item was fashioned by a powerful Wu Jen in the mysterious lands to the East of Faerûn, as the figurine is an intricately detailed replica of a fierce Kara-Tur warrior in full battle dress, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue-armored warrior wielding magical shortswords.
 
 STATISTICS:
 
@@ -16078,7 +16080,7 @@ Special abilities:
 Gladiator (11 HD):
  ST16, DE18, CO18, IN14, WI16, CH14
  HP 128, AC -2, THAC0 3, APR 4
- 1d6+8 Slashing (Short Sword +3)
+ 1d6+8 Slashing (Shortsword +3)
  Saving Throws 8/12/8/10/12, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -16087,7 +16089,7 @@ Weight: 1
 
 Not usable by:
  Wizard Slayer~
-@249900000 = ~This statue is a replica of a fierce gladiator, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue armored warrior wielding magical short swords.
+@249900000 = ~This statue is a replica of a fierce gladiator, wielding a blade in each hand. By invoking this figurine, the user temporarily summons a blue armored warrior wielding magical shortswords.
 
 STATISTICS:
 
@@ -16097,7 +16099,7 @@ Special abilities:
 Gladiator (11 HD):
  ST16, DE18, CO18, IN14, WI16, CH14
  HP 128, AC -2, THAC0 3, APR 4
- 1d6+8 Slashing (Short Sword +3)
+ 1d6+8 Slashing (Shortsword +3)
  Saving Throws 7/9/8/8/10, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -16608,7 +16610,7 @@ THAC0: +2
 Damage: 1d6+2
 Damage Type: Piercing
 Speed Factor: 1
-Proficiency Type: Short Sword
+Proficiency Type: Shortsword
 Type: One-handed
 Requires:
  5 Strength
@@ -17769,7 +17771,7 @@ Weight: 4
 Not usable by:
  Monk~
 @6046 = ~The Harrower +1~
-@6047 = ~This double-edged long sword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
+@6047 = ~This double-edged longsword gleams white even in the reddest of torchlight. The Dethek runes along its sides name the blade "Harrower," a weapon once wielded by Ariabel, a Waterdhavian Paladin of Lathander who carried the weapon into combat against the vampire Zerafex and her host of unholy spawn. Ariabel did not survive the contest, but decades later a gang of Tethyrian tomb robbers recovered her sword from the crypt where she fell.
 
 STATISTICS:
 
@@ -17781,7 +17783,7 @@ THAC0: +1
 Damage: 1d8+1
 Damage Type: Slashing
 Speed Factor: 4
-Proficiency Type: Long Sword
+Proficiency Type: Longsword
 Type: One-handed
 Requires:
  6 Strength
