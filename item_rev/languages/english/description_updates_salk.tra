@@ -120,22 +120,22 @@ Speed Factor\1~
 @100132 = ~Damage[ %tab%]+[Tt]ype:[ %tab%]+[Ss]lashing~
 
 // Replace @100132 with piercing
-@100133 = ~Damage type: piercing~
+@100133 = ~Damage Type: Piercing~
 
 // Catch ~Damage type: piercing~
 @100134 = ~Damage[ %tab%]+[Tt]ype:[ %tab%]+[Pp]iercing~
 
 // Replace @100134 with slashing
-@100135 = ~Damage type: slashing~
+@100135 = ~Damage Type: Slashing~
 
 // Catch ~Damage type: crushing~
 @100136 = ~Damage[ %tab%]+[Tt]ype:[ %tab%]+\([Cc]rushing\|[Bb]ludgeon\(ing\)?\)~
 
 // Replace @100136 with crushing and piercing
-@100137 = ~Damage type: crushing and piercing~
+@100137 = ~Damage Type: Crushing and piercing~
 
 // Replace @100132 or @100134 with slashing and piercing
-@1001370 = ~Damage type: slashing and piercing~
+@1001370 = ~Damage Type: Slashing and piercing~
 
 /* ---------------- Fixes ---------------- */
 
