@@ -3795,17 +3795,14 @@ Not usable by:
 STATISTICS:
 
 Special abilities:
-– Shapeshifts Wolfwere (once per day): 5 turns
+– Shapeshifts Werewolf (once per day): 5 turns
 
-Wolfwere (7 HD):
+Werewolf (7 HD):
  STR 19, DEX 16, CON 15
- AC 3, THAC0 13, APR 2
+ AC 3, THAC0 14, APR 2
  1d12 Slashing (Claws & Bite +1)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
-
-Special Characteristics:
-– Protected Against: Normal Weapons
 
 Equipped abilities:
 – Regeneration: 1 HP/round
@@ -17057,7 +17054,7 @@ Not usable by:
 @4012 = ~Righteous Magic~
 @4013 = ~Resurrection~
 @4014 = ~Prismatic Explosion~
-@4015 = ~Shapeshifts Wolfwere~
+@4015 = ~Shapeshifts Werewolf~
 @4016 = ~Blinding Beauty~
 @4017 = ~Charm Person~
 @4018 = ~Shapeshifts Rat~
@@ -17174,7 +17171,7 @@ Not usable by:
 @4129 = ~Hold Monster~
 @4130 = ~Pierce Magic~
 
-@4500 = ~Shapeshifts Wolfwere~
+@4500 = ~Shapeshifts Werewolf~
 @4501 = ~Claws & Bite +1~
 @4502 = ~Shapeshifts Rat~
 @4503 = ~Paws~
