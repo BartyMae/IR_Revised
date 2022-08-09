@@ -5,7 +5,7 @@ INCLUDE ~item_rev/lib/descriptions.tpa~
 
 DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
 
-  PATCH_IF (item_description_style=0 AND (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~)) OR item_description_style=2 BEGIN // EE
+  PATCH_IF (item_description_style=0 AND (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~)) OR item_description_style=2 OR item_description_style=3 BEGIN // EE or Salk
 
   PATCH_IF is_helmet BEGIN // Is a helmet
 
@@ -18,7 +18,7 @@ DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
         ac_added=1
       END ~%t2%~
 
-      SPRINT t1 @100423 //
+      SPRINT t1 @100423
       PATCH_IF ac_added=0 BEGIN
         REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
           ac_added=1
