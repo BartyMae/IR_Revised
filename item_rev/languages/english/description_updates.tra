@@ -275,6 +275,10 @@ Speed Factor (Slashing)\1~
 // New (default?) string, needed for halberds somewhere deep within Mike's code
 @100207 = ~Halberd~
 
+// Empty return
+@100208 = ~
+~
+
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
@@ -286,20 +290,23 @@ Speed Factor (Slashing)\1~
 
 /* ---------------- Spellcasting ---------------- */
 
-// Catch ~ Miscast Arcane Magic:\(anything\)~
+// Catch ~Miscast Arcane Magic:\(anything\)~
 @100300 = ~[%lnl%%mnl%%wnl%][ %tab%]*Miscast[ %tab%]*\([Aa]rcane[ %tab%]*\)?[Mm]agic:.*~
 
-// Catch ~ Arcane Spell Failure:\(anything\)~
+// Catch ~Arcane Spell Failure:\(anything\)~
 @100301 = ~[%lnl%%mnl%%wnl%][ %tab%]*Arcane[ %tab%]*[Ss]pell[ %tab%]*[Ff]ailure:.*~
 
-// Catch ~ Spellcasting Time:\(anything\)~
+// Catch ~Spellcasting Time:\(anything\)~
 @100302 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spellcasting[ %tab%]*[Tt]ime:.*~
 
-// Catch ~ Spell Failure:\(anything\)~
+// Catch ~Spell Failure:\(anything\)~
 @100303 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spell[ %tab%]*[Ff]ailure:.*~
 
-// Catch ~ Allows arcane spellcasting without penalties\(anything\)~
+// Catch ~Allows arcane spellcasting without penalties\(anything\)~
 @100304 = ~[%lnl%%mnl%%wnl%][ %tab%]*Allows arcane spellcasting without penalties.*~
+
+// Catch empty ~Equipped Abilities:~
+@1003040 = ~[%lnl%%mnl%%wnl%][Ee]quipped[ %tab%][Aa]bilities:.*[%lnl%%mnl%%wnl%][%lnl%%mnl%%wnl%]~
 
 // Add spellcasting failure line to @100114
 @100305 = ~
@@ -560,7 +567,7 @@ Weight:~
 
 // 
 @100419 = ~
-Shield Bash Damage:  1D%size%%bon%
+Shield Bash Damage: 1D%size%%bon%
 Weight:~
 
 // 

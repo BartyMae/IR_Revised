@@ -27,6 +27,12 @@ DEFINE_PATCH_MACRO ~stealth~ BEGIN
   REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 END
 
+DEFINE_PATCH_MACRO ~remove_empty_equipped_abilities~ BEGIN
+  SPRINT t1 @1003040
+  SPRINT t2 @100208
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
 //////////////////////////////////////////////
 // Reading table
 
@@ -139,3 +145,14 @@ END
 STRING_SET 9572 ~%ft%~
 STRING_SET 9576 ~%fmt%~
 STRING_SET 9578 ~%tc%~
+
+//////////////////////////////////////////////
+// Remove empty equipped abilities
+ACTION_PHP_EACH armor AS ind => res BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%ind%.itm~ BEGIN
+    COPY_EXISTING ~%ind%.itm~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
+      SPRINT text_update remove_empty_equipped_abilities
+      LPM update_item_descriptions
+    END
+  END
+END

@@ -3,14 +3,16 @@
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3002=~Potion of Hill Giant Strength~
 @3003=~When this potion is consumed, the user temporarily gains the strength of a hill giant (19), and the consequent bonuses to THAC0 and damage while using melee and throwing weapons. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Ranger~
@@ -20,7 +22,7 @@ Usable by:
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Ranger~
@@ -30,7 +32,7 @@ Usable by:
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Ranger~
@@ -40,7 +42,7 @@ Usable by:
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Ranger~
@@ -50,7 +52,7 @@ Usable by:
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Ranger~
@@ -59,26 +61,32 @@ Usable by:
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3014=~Potion of Heroism~
 @3015=~This potion is imbued with a powerful enchantment that blesses the user with great bravery and morale in battle. The drinker of this potion gains a +2 bonus to THAC0, damage, and morale, and also provides the user a +10% bonus to hit points. These bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3016=~Potion of Invisibility~
 @3017=~The crutch of shoddy thieves and cowardly adventures, but also a powerful tool in the hands of trained assassins and scouting rangers, these potions are known well across the face of Faerun. This potion confers invisibility similar to the second level wizard spell of the same name. Any actions other than movement will cause termination of the invisible state. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3018=~Potion of Invulnerability~
 @3019=~This potion confers immunity to non-magical weapons and the non-magical attacks of certain creatures. It also provides enhanced protection against other forms of attack, granting the user a +2 bonus to AC and saving throws. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Monk
@@ -89,7 +97,7 @@ Usable by:
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Fighter
  Paladin
  Ranger~
@@ -98,46 +106,56 @@ Usable by:
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3024=~Potion of Speed~
 @3025=~Useful for that extra mile or a quick escape, these potions are in common usage among scouts and heralds. The drinker of this potion gains a +6 bonus to their normal movement rate and receives an extra half attack per round. Spellcasting and spell effects are not affected, though this potion negates and counters the effects of a Slow spell. Multiple uses of this potion are not cumulative with itself or other similar magic. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Not usable by:
+Not Usable By:
  Monk~
 @3026=~Red Potion~
 @3027=~Close examination reveals this liquid to be very peculiar in nature. It could be a sorcerer's dream, but that would depend entirely on whom you asked. After ingesting the mixture, the drinker of this potion becomes the weakest, most unwise, yet incredibly intelligent person to have ever lived. The user's Intelligence is set to 25, while their Wisdom and Strength are reduced to 3, so think carefully before unplugging the cork. The effects last for 8 hours and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3028=~Violet Potion~
 @3029=~This is one of the oddest potions you have ever examined. Once consumed, this mixture causes the drinker of this potion's muscles to bulge to completely inhuman proportions, while dexterity and constitution are both reduced to that of a slug. The user's Strength is set to 25, while their Dexterity and Constitution are reduced to 3, so think carefully before quaffing this suspect drink. The effects last for 8 hours and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3030=~Elixir of Health~
 @3031=~The Elixir of Health is a powerful healing mixture designed to cleanse the body of all impurities. It first cures the user of all diseases and poisons, and then it also restores 20 hit points to speed the recovery process. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3032=~Potion of Absorption~
 @3033=~There exist terrifying creatures in the wilderness that are a match for even the fiercest Rashemi berserker, so the Witches of Rashemen create these magical flasks to bolster their warriors' endurance. The drinker of this potion will be cushioned from physical attacks made against them, so that only the strongest will be felt. The user gains a +25% bonus to to their physical resistances. Multiple uses of this potion are not cumulative. The effect lasts for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3034=~Potion of Agility~
 @3035=~This potion bestows extraordinary reflexes upon the user, who, through nearly superhuman effort, can position themselves out of harm's way a mere instant before an energy discharge reaches them. After drinking this potion, the user can evade the effects of the following spells: Burning Hands, Fireball, Lightning Bolt, Call Lightning, Flame Strike, Cone of Cold, Sunfire, Chain Lightning, and Delayed Blast Fireball, as well as all forms of dragon breath. The effect lasts for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Monk
  Thief~
 @3036=~Potion of Antidote~
@@ -145,108 +163,136 @@ Usable by:
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3038=~Potion of Clarity~
 @3039=~This potion will allow the user to maintain clarity and order in the face of encroaching chaos and insanity. The drinker of this potion will feel an overwhelming feeling of calm and purpose, such that he or she will be unaffected by harmful mental influences such as fear, feeblemindedness, charm, or confusion. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3040=~Potion of Cold Resistance~
 @3041=~The drinker of this potion gains a +50% bonus to cold resistance, protecting against such attacks whether magical or non-magical in origin. This is in addition to any other cold resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3042=~Strange Potion of Speed~
 @3043=~This oddly murky potion would appear to increase the movement and combat capabilities of the user. The drinker of this potion should be able to move twice as fast and make an extra half attack per round. This potion does not reduce spellcasting time, however. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3044=~Potion of Defense~
 @3045=~This thick concoction has a metallic smell, like that of iron. When this potion is consumed, the user's skin becomes as tough as chain mail, gaining a +4 bonus to AC. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3046=~Strange Potion of Healing~
 @3047=~When consumed, this oddly murky potion would appear to restore 10 hit points to the user. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3048=~Potion of Explosions~
 @3049=~This potion can be hurled up to 30 feet, and once exposed to air, this alchemical mixture will immediately burst into flame, dealing 6D6 fire damage to those within 30' of the point of impact, though a save vs. breath at -2 penalty will reduce the damage by half. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3050=~Potion of Firebreath~
 @3051=~This potion transforms the throat of the user so that they are capable of breathing fire. The resulting fire breath does 6D6 damage to one target, though a save vs. breath at -2 penalty will reduce the damage by half. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3052=~Potion of Fortitude~
 @3053=~Once consumed, this potion will cause a surge of energy to travel through the body of the user, making them immune to disease and providing a +20% bonus to hit points. These bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3054=~Potion of Vocalize~
 @3055=~The drinker of this potion can cast spells with a verbal component without needing to speak. This potion effectively cures the user of the effect of silence and makes them immune to it. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3056=~Potion of Sight~
 @3057=~The drinker of this potion is able to see in darkness as easily as in daylight, as well as detect traps and see invisible creatures. This potion also cures the user from all forms of blindness and makes them immune to it. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3058=~Potion of Insulation~
 @3059=~The drinker of this potion gains a +50% bonus to electricity resistance, protecting against such attacks whether magical or non-magical in origin. This is in addition to any other electricity resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Not usable by:
+Not Usable By:
  Wizard Slayer~
 @3060=~Strange Potion of Antidote~
 @3061=~As the name implies, this strangely colored potion should neutralize any poison currently affecting the user. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3062=~Potion of Energy Protection~
 @3063=~The drinker of this potion gains a +50% bonus to energy resistance, protecting against such attacks whether magical or non-magical in origin. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3064=~Potion of Magic Blocking~
 @3065=~The drinker of this potion gains a +20% bonus to magic resistance. This is in addition to any other magic resistance the user might have already had. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Not usable by:
+Not Usable By:
  Wizard Slayer~
 @3066=~Potion of Resilience~
 @3067=~The drinker of this powerful elixir is guaranteed to always be successful when rolling saving throws against spells and abilities. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3068=~Potion of Master Thievery~
 @3069=~This potion will temporarily transform the user into a master thief, granting them a +20% bonus to their Open Locks, Pick Pockets, Move Silently, Hide in Shadow, and Set Traps skills. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Bard
  Thief~
 @3070=~Potion of Restoration~
@@ -254,46 +300,56 @@ Usable by:
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3072=~Potion of Mirrored Eyes~
 @3073=~This potion will protect the user from all forms of gaze attacks, such as those of umber hulks, basilisks, and vampires. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3074=~Potion of Perception~
 @3075=~This potion heightens the perception of the user, gaining a +2 bonus to Intelligence and Wisdom as well as a +20% bonus to Find Traps and Detect Illusions. The drinker of this potion also cannot be backstabbed. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3076=~Strange Potion of Invulnerability~
 @3077=~This strangely murky potion would seem confer immunity to non-magical weapons and the non-magical attacks of certain creatures. It also apparently provides enhanced protection against other forms of attack, granting the user a +2 bonus to AC and saving throws. Multiple uses of this potion are not cumulative. The effects last for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Warrior~
 @3078=~Potion of Power~
 @3079=~This elixir is a more powerful version of the Potion of Heroism. This potion is desired by adventurers everywhere, whether they be wizards or warriors, as it blesses the user with a +2 bonus to THAC0, damage, and morale, as well as a +20% bonus to thieving skills. Additionally, any spells cast after drinking this potion will be cast as if the caster were two levels higher. Finally, the potion also provides the user a +20% bonus to hit points, and these bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3080=~Potion of Regeneration~
 @3081=~This powerful elixir imbues the user with the regenerative ability of a troll. Any wounds sustained by the drinker of this potion will literally close over and heal as they watch, regenerating 1 hit point per second. Multiple uses of this potion are not cumulative. The effect lasts for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3082=~Potion of Memory~
 @3083=~Also known as "mage wine", this potion is highly sought after by wizards and bards. When consumed, the user can immediately bring back into memory two spells that have been previously cast. If no spells have been cast yet, then nothing happens. The recalled spells must be of 4th level or lower. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Bard
  Mage~
 @3084=~Potion of Rage~
@@ -301,37 +357,49 @@ Usable by:
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3086=~Potion of Freedom~
 @3087=~When consumed, the user is conferred protection like that of a Free Action spell. The drinker of this potion becomes completely immune to any effects which hinder action or movement, whether magical or non-magical in origin. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3088=~Potion of Stone Form~
 @3089=~The effects experienced after drinking this potion are much like the effects of a Stoneskin spell. The user's skin is partially turned into stone without causing any actual hindrance, protecting them from physical attacks such as melee weapons and projectiles. The first 5 attacks made against the user are stopped, and the skins will disappear thereafter. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3090=~Marek's Potion of Antidote~
 @3091=~More powerful than a normal potion of antidote, a small dose of this potion can neutralize even the most lethal of poisons. Marek's potion looks to have 10 doses.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3092=~Vial of Mysterious Liquid~
 @3093=~This potion contains a strange green substance similar to the residue you have seen in some of the mining carts. The liquid inside appears to very slightly discolor any iron that it comes in contact with, and is likely related to the mysterious "plague" that renders smelted weapons and tools brittle. The kobolds you killed must have tainted all the ore leaving the mine, though it is unlikely they would have concocted this plan themselves.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3094=~Potion of Extra Healing~
 @3095=~These curative potions are too expensive for most civilians, and are used almost exclusively by soldiers and adventurers. When consumed, this potion restores 30 hit points to the user. The effect is instantaneous and the potion is destroyed in the process.
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3096=~Festule the Alchemist's Potion~
 @3097=~This potion will supposedly incapacitate an ogre. The small handwritten label warns against feeding it to anything other than an ogre, as the taste has been perfectly designed to appeal to said race. In other words, the potion is disgusting and will induce vomiting in anyone other than an ogre.~
 @3098=~Potion of Superior Healing~
@@ -339,13 +407,15 @@ Weight: 1~
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+Usable By:
+ All~
 @3100=~Rogue's Potion of Frost Giant Strength~
 @3101=~When this potion is consumed, the user temporarily gains the strength of a frost giant (21), and the consequent bonuses to THAC0 and damage while using any melee or throwing weapons. The effect lasts for 1 turn and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable by:
+Usable By:
  Bard
  Thief~

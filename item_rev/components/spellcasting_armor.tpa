@@ -38,6 +38,12 @@ DEFINE_PATCH_MACRO ~casting_penalty~ BEGIN
   END
 END
 
+DEFINE_PATCH_MACRO ~remove_empty_equipped_abilities~ BEGIN
+  SPRINT t1 @1003040
+  SPRINT t2 @100208
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
 //////////////////////////////////////////////
 // Reading table and other precautions
 
@@ -356,3 +362,14 @@ STRING_SET 9578 ~%tc%~
 STRING_SET 9579 ~%fd%~
 STRING_SET 9580 ~%cr%~
 STRING_SET 9581 ~%fmc%~
+
+//////////////////////////////////////////////
+// Remove empty equipped abilities
+ACTION_PHP_EACH armor AS ind => res BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%ind%.itm~ BEGIN
+    COPY_EXISTING ~%ind%.itm~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
+      SPRINT text_update remove_empty_equipped_abilities
+      LPM update_item_descriptions
+    END
+  END
+END

@@ -263,13 +263,11 @@ Damage (slashing)\1~
 @100202 = ~[%lnl%%mnl%%wnl%]Speed[ %tab%]+[Ff]actor\(:.*\)~
 
 // Replace @100202
-@100203 = ~
-Speed Factor (piercing)\1
+@100203 = ~Speed Factor (piercing)\1
 Speed Factor (slashing)\1~
 
 // Replace @100134
-@100204 = ~
-~
+@100204 = ~~
 
 // Tooltip for piercing mode
 @100205 = ~Piercing~
@@ -279,6 +277,10 @@ Speed Factor (slashing)\1~
 
 // New (default?) string, needed for halberds somewhere deep within Mike's code
 @100207 = ~Halberd~
+
+// Empty return
+@100208 = ~
+~
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
@@ -291,20 +293,23 @@ Speed Factor (slashing)\1~
 
 /* ---------------- Spellcasting ---------------- */
 
-// Catch ~ Miscast Arcane Magic:\(anything\)~
+// Catch ~Miscast Arcane Magic:\(anything\)~
 @100300 = ~[%lnl%%mnl%%wnl%][ %tab%]*Miscast[ %tab%]*\([Aa]rcane[ %tab%]*\)?[Mm]agic:.*~
 
-// Catch ~ Arcane Spell Failure:\(anything\)~
+// Catch ~Arcane Spell Failure:\(anything\)~
 @100301 = ~[%lnl%%mnl%%wnl%][ %tab%]*Arcane[ %tab%]*[Ss]pell[ %tab%]*[Ff]ailure:.*~
 
-// Catch ~ Spellcasting Time:\(anything\)~
+// Catch ~Spellcasting Time:\(anything\)~
 @100302 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spellcasting[ %tab%]*[Tt]ime:.*~
 
-// Catch ~ Spell Failure:\(anything\)~
+// Catch ~Spell Failure:\(anything\)~
 @100303 = ~[%lnl%%mnl%%wnl%][ %tab%]*Spell[ %tab%]*[Ff]ailure:.*~
 
-// Catch ~ Spellcasting is not disabled\(anything\)~
+// Catch ~Spellcasting is not disabled\(anything\)~
 @100304 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Spellcasting is not disabled*~
+
+// Catch empty ~Equipped abilities:~
+@1003040 = ~[%lnl%%mnl%%wnl%][Ee]quipped[ %tab%][Aa]bilities:.*[%lnl%%mnl%%wnl%][%lnl%%mnl%%wnl%]~
 
 // Add spellcasting failure line to @100114
 @100305 = ~
@@ -571,7 +576,7 @@ Requires:~
 
 // 
 @100419 = ~
-Shield Bash Damage:  1D%size%%bon%
+Shield Bash Damage: 1d%size%%bon%
 Weight:~
 
 // 
