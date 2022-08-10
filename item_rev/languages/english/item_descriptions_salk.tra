@@ -6178,7 +6178,7 @@ Equipped abilities:
 
 Weight: 3
 
-Only usable by:
+Not usable by:
  Bard
  Cleric
  Druid
@@ -12940,8 +12940,6 @@ It is not known whether this enchanted weapon is Lilarcor himself, perhaps impri
 
 As a weapon, Lilarcor has its uses, but many a warrior has eventually given it away. Banter such as, "Ouch, that musta hurt!", "Oh yeah! Got 'im good!", and "Beware my bite for it might... might... might really hurt or something!" is a constant barrage on a warrior's psyche.
 
-"Banter such as "ouch, that musta hurt", 
-
 STATISTICS:
 
 Equipped abilities:
@@ -17023,7 +17021,7 @@ Not usable by:
 
 STATISTICS:
 
-Combat Abilities:
+Combat abilities:
 – Powerful Weapon: +2 to damage
 
 THAC0: +3
