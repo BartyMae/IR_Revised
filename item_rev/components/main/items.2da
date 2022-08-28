@@ -504,6 +504,7 @@ TOME_OF_CLEAR_THOUGHT                      *        book06   1        1        1
 TOME_OF_LEADERSHIP_AND_INFLUENCE           *        book07   1        1        1        1        1        1        @2436    @2439    @2429    @2440    *        *        *        *
 TOME_OF_UNDERSTANDING                      *        book08   1        1        1        1        1        1        @2436    @2441    @2429    @2442    *        *        *        *
 SHAKTI_WARRIOR_FIGURINE                    MISC     figure01 1        1        0        0        1        1        @1705    @2498    @2497    @2499    *        *        *        *
+IMOENS_BELT                                BELT     imoenhp1 1        1        0        0        1        1        @1786    @1786    @1787    @1787    *        *        *        *
 MASK_OF_KING_STROHM_III                    *        key20    1        1        0        0        1        1        @2519    @2519    @2520    @2520    *        *        *        *
 GOLEM_MANUAL_FLESH                         MISC     tome01   1        1        0        0        1        1        @2428    @2473    @2429    @2474    *        *        *        *
 GOLEM_MANUAL_CLAY                          MISC     tome02   1        1        0        0        1        1        @2475    @2475    @2476    @2476    *        *        *        *
@@ -539,7 +540,6 @@ DARK_ELVEN_CHAIN_3                         CHAINELV clolth   1        1        0
 SWORD_OF_CHAOS_4                           SWORD2H  finsarev 1        1        0        0        1        1        @2415    @2415    #-1      @2416    *        *        *        *
 HANDMAIDENS_MACE_3                         MACE     hlolth   1        1        0        0        1        1        @1112    @2413    @1113    @2414    *        *        *        *
 BLOOD_AXE_2                                AXE      korax01  1        1        0        0        1        1        @2383    @2383    #-1      @2384    *        *        *        *
-IMOENS_BELT                                BELT     imoenhp1 1        1        0        0        1        1        @1786    @1786    #-1      @1787    *        *        *        *
 SHARS_BLESSING_3                           LEATHERS vicarm   0        0        0        0        0        0        @1821    @1821    #-1      @1822    @4034    *        *        *
 FLASHER_LAUNCHER_2                         XBOWLITE xbow12   1        1        0        0        1        1        @1823    @1823    #-1      @1824    *        *        *        *
 
@@ -576,7 +576,6 @@ TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0
 FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        0        0        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 PLATE_OF_THE_DARK_1                        PLATEF   plat05_  1        1        0        0        1        1        @1497    @2577    @1499    @2578    *        *        *        *
 ANKHEG_PLATE_MAIL_1                        PLATE    plat06_  1        1        0        0        1        1        @1825    @2579    @1828    @2580    *        *        *        *
-AULES_STAFF_3                              STAFF    staf08_  1        1        0        0        1        1        @2012    @2625    @2012    @2626    *        *        *        *
 THE_WHISTLING_SWORD_2                      SWORDS   sw1h09_  1        1        0        0        1        1        @2066    @2581    @2069    @2582    *        *        *        *
 
 RING_OF_FIRE_RESISTANCE                    RING     ring02   1        1        1        1        1        1        @1800    @1863    @1802    @1864    *        *        *        *
@@ -920,6 +919,11 @@ POTION_OF_EXTRA_HEALING                    POTION   potn52   1        1        1
 FESTULE_THE_ALCHEMISTS_POTION              POTION   potn53   1        1        0        0        1        1        #6976    @3096    #16264   @3097    *        *        *        *
 POTION_OF_SUPERIOR_HEALING                 POTION   potn55   1        1        0        0        1        1        #6976    @3098    #16264   @3099    *        *        *        *
 ROGUES_POTION_OF_FROST_GIANT_STRENGTH      POTION   potn56   1        1        0        0        1        1        #6976    @3100    #16264   @3101    *        *        *        *
+
+EDWINS_AMULET#BGT                          AMULET   bgmisc89 1        1        0        0        1        1        @1649    @1649    @1781    @1781    *        *        *        *
+RING_OF_SORCERY#BGT                        RING     bgring08 1        1        1        1        1        1        @1800    @2424    @1802    @2425    *        *        *        *
+THE_WORLDS_EDGE_3#BGT                      SWORD2H  bgsw2h07 1        1        0        0        1        1        @1760    @2426    @1762    @2427    *        *        *        *
+WAND_OF_MAGIC_MISSILES#BGT                 WAND     bgwand12 1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
 
 RHYTES_LAST_ARROW_2                        AXEH     ax1h06   0        0        0        0        0        0        @1062    @6000    @1067    @6001    @4052    @4051    @2504    *
 BERUELS_RETORT_1                           AXEH     ax1h18   0        0        0        1        1        1        @1062    @6002    @1067    @6003    @4052    @4051    *        *

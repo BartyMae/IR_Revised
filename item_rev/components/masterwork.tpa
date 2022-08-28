@@ -292,7 +292,7 @@ COPY_EXISTING ~arow02.itm~ ~override~
       WRITE_LONG  0x3E 0
       WRITE_ASCII 0x3A ~mwarow01~
       WRITE_LONG  0x7A 0
-      WRITE_ASCII 0x76 ~mwwarow01~
+      WRITE_ASCII 0x76 ~mwarow01~
     END
   END
   BUT_ONLY_IF_IT_CHANGES
