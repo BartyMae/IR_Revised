@@ -4,7 +4,7 @@ README ~item_rev/readme-item_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~V4 (Revised V1.3.856)~
+VERSION ~V4 (Revised V1.3.857)~
 
 ALWAYS
 
@@ -16,7 +16,7 @@ ALWAYS
     OUTER_SET cd_always = 1
     ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
     ACTION_DEFINE_ARRAY cdreload BEGIN description_updates END // List of tra files that contain strings used for game content that get converted in the next step
-    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~item_rev/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
+    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~item_rev/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
   END
 
   ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet~) BEGIN
