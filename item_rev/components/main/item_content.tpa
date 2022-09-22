@@ -6,7 +6,7 @@
 OUTER_TEXT_SPRINT source ~.../item_rev-inlined/item~
 OUTER_TEXT_SPRINT target ~item_rev/components/main/item_content~
 
-ACTION_BASH_FOR ~%target%~ ~^.+\.tpa$~ BEGIN // Remove any existing .tpa files that may be left over from an incomplete uninstallation
+ACTION_BASH_FOR ~%target%~ ~^.+/.tpa$~ BEGIN // Remove any existing .tpa files that may be left over from an incomplete uninstallation
   DELETE ~%BASH_FOR_FILESPEC%~
 END
 
@@ -412,12 +412,14 @@ COPY ~%source%/PEARLY_WHITE_IOUN_STONE.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/MASTER_THIEFS_HOOD.tpa
-  ADD_PROJECTILE ~item_rev/itm/helm30.pro~ // Shadow Door
+  ADD_PROJECTILE ~item_rev/itm/dvsdoor.pro~ // Shadow Door
   COPY ~item_rev/itm/helm30.spl~ ~override~
     SAY NAME1 @4029
   COPY ~item_rev/itm/helm30d.spl~ ~override~
-    WRITE_SHORT 0x98 %helm30%
+    WRITE_SHORT 0x98 %dvsdoor%
   COPY ~item_rev/itm/helm30d.eff~ ~override~
+  COPY ~item_rev/itm/dvsdoor.bam~ ~override~
+  COPY ~item_rev/itm/dvsdoor.vvc~ ~override~
 >>>>>>>>
 COPY ~%source%/MASTER_THIEFS_HOOD.tpa~ ~%target%~
 
