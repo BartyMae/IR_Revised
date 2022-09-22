@@ -331,6 +331,7 @@ COPY ~item_rev/itm/dvthclap.spl~ ~override~
 
 COPY ~item_rev/itm/dvtrusee.spl~ ~override~ // True Seeing
 COPY ~item_rev/itm/dvtrusee.eff~ ~override~
+COPY ~item_rev/itm/dvtruehl.spl~ ~override~
 
 COPY ~item_rev/itm/dvvampir.spl~ ~override~ // Vampiric
 COPY ~item_rev/itm/dvvampir.eff~ ~override~
