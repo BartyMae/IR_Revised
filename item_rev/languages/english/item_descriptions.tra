@@ -13850,8 +13850,7 @@ Combat Abilities:
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
-Damage Type (Melee): Piercing
-Damage Type (Thrown): Missile
+Damage Type: Missile
 Weight: 10
 Speed Factor: 3
 Proficiency Type: Spear

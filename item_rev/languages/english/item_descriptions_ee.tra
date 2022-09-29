@@ -14584,9 +14584,7 @@ Combat abilities:
 – Speed: 1 extra attack per round
 
 THAC0: +3
-Damage: 1d6+3
-Damage Type (melee): Piercing
-Damage Type (thrown): Missile
+Damage: 1d6+3 (missile)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
