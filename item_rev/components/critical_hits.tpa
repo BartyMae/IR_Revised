@@ -114,7 +114,7 @@ ACTION_IF tobex || GAME_IS "eet bgee bg2ee iwdee" BEGIN
     READ_ASCII 0x22 anim (2) NULL
     PATCH_IF item=7 BEGIN
       READ_BYTE 0x18 flags
-      PATCH_IF ( (flags & 4) = 4 ) BEGIN // movable
+      PATCH_IF ( (flags & 4) = 4 ) OR ~%SOURCE_RES%~ STRING_EQUAL_CASE ~GV#HELM~ BEGIN // movable
         WRITE_BYTE 0x1b THIS | 2 // disable critical protection
 
         add_ac=0
