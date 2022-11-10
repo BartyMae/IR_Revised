@@ -360,6 +360,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~tzshld01~ => 4
   ~ushld3b~  => 4 // Storming Shield +3
   ~x#fash01~ => 4
+  ~gv#shld~  => 4 // Tower Shield
 
 END
 
