@@ -1313,8 +1313,6 @@ COPY ~%source%/YAMATO_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/SPECTRAL_BRAND_4.tpa
-  COPY ~item_rev/itm/sw1h68a.itm~ ~override~
-    SAY NAME2 @2166
   COPY ~item_rev/itm/sword68.cre~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
     COPY_EXISTING sw1h68.itm override
@@ -1327,8 +1325,6 @@ COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/SPECTRAL_BRAND_5.tpa
-  COPY ~item_rev/itm/sw1h69a.itm~ ~override~
-    SAY NAME2 @2168
   COPY ~item_rev/itm/sword69.cre~ ~override~
   COPY ~item_rev/itm/sw1h69.spl~ ~override~
     SAY NAME2 @4089
