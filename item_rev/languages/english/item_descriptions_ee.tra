@@ -8327,8 +8327,8 @@ Weight: 0
 Not Usable By:
  Wizard Slayer~
 @1909 = ~Ring of the Wraith~ // BG2: Ring of Improved Invisibility
-@1910 = ~The Specter's Ring
-A ruthless assassin of Tethyr known only as the Specter used this ring to great effect many years ago. Striking completely unseen, his victims' demises were often attributed to angry ghosts and spirits. The wearer of this ring assumes a dark incorporeal form like that of a wraith, gaining many of its characteristics as well.
+@1910 = ~The Spectre's Ring
+A ruthless assassin of Tethyr known only as the Spectre used this ring to great effect many years ago. Striking completely unseen, his victims' demises were often attributed to angry ghosts and spirits. The wearer of this ring assumes a dark incorporeal form like that of a wraith, gaining many of its characteristics as well.
 
 STATISTICS:
 
@@ -11215,7 +11215,7 @@ Legend has it that the souls of those who fall beneath this dark blade are forev
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (once per day): the sword can attack on its own for 1 turn
+– Spectral Blade (1x per day): a clone of the sword attacks on its own for 1 turn
 
 Spectral Brand (10 HD):
  HP 48, AC 0, THAC0 4, APR 2
@@ -11252,7 +11252,7 @@ Legend has it that the souls of those who fall beneath this dark blade are forev
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (once per day): the sword can attack on its own for 1 turn
+– Spectral Blade (1x per day): a clone of the sword attacks on its own for 1 turn
 
 Spectral Brand (10 HD):
  HP 48, AC 0, THAC0 4, APR 2
@@ -11292,7 +11292,7 @@ Drawing upon the necromancy of the Skull of the Lich the seal has been broken, a
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (once per day): the sword can attack on its own for 1 turn
+– Spectral Blade (1x per day): a clone of the sword attacks on its own for 1 turn
 – Dark Swarm (once per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
 
 Spectral Brand (12 HD):
@@ -11335,7 +11335,7 @@ Drawing upon the necromancy of the Skull of the Lich the seal has been broken, a
 STATISTICS:
 
 Special abilities:
-– Spectral Blade (once per day): the sword can attack on its own for 1 turn
+– Spectral Blade (1x per day): a clone of the sword attacks on its own for 1 turn
 – Dark Swarm (once per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
 
 Spectral Brand (12 HD):
