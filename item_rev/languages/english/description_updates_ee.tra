@@ -595,7 +595,7 @@ Weight:~
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 // Catch ~Protects against critical hits~
-@100422 = ~[%lnl%%mnl%%wnl%]...[ %tab%]Protects against critical hits~
+@100422 = ~[%lnl%%mnl%%wnl%]...[ %TAB%]Protects[ %TAB%]+\([Aa]gainst\|[Ff]rom\)[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
 
 // Catch "Equipped abilities"
 @100423 = ~Equipped abilities:~
