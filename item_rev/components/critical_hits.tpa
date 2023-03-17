@@ -25,11 +25,15 @@ DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
           END ~%t2%~
         END
 
-        PATCH_IF ac_added=0 BEGIN // Add AC
+        PATCH_IF ac_added=0 BEGIN
           SPRINT t1 @100423
           SPRINT t2 @100425
-          REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+          REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // Add AC
         END
+
+        SPRINT t1 @100426 // Duplicate removal
+		SPRINT t2 @100427
+        REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 
         SPRINT t1 @100422 // Clean critical hit protection
         REPLACE_TEXTUALLY ~%t1%~ ~~
@@ -56,30 +60,34 @@ DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
         ac_added=0
         SPRINT t2 @100424
 
-        SPRINT t1 @100422 // AC added
-        REPLACE_EVALUATE ~%t1%~ BEGIN
+        SPRINT t1 @100422
+        REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
           ac_added=1
         END ~%t2%~
 
-        SPRINT t1 @100423 // AC added
-        REPLACE_EVALUATE ~%t1%~ BEGIN
+        SPRINT t1 @100423
+        REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
           ac_added=1
         END ~%t2%~
 
-        SPRINT t1 @100422 // AC added
+        SPRINT t1 @100422
         PATCH_IF ac_added=0 BEGIN
-          REPLACE_EVALUATE ~%t1%~ BEGIN
+          REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
             ac_added=1
           END ~%t2%~
         END ELSE BEGIN
           REPLACE_TEXTUALLY ~%t1%~ ~~
         END
 
-        PATCH_IF ac_added=0 BEGIN // AC added
+        PATCH_IF ac_added=0 BEGIN
           SPRINT t1 @100114
           SPRINT t2 @100425
-          REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+          REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // AC added
         END
+
+        SPRINT t1 @100426 // Duplicate removal
+		SPRINT t2 @100427
+        REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
 
       END ELSE BEGIN // Identified description, no AC added
 
@@ -110,7 +118,7 @@ ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
   END
 END
 
-ACTION_IF tobex || GAME_IS "eet bgee bg2ee iwdee" BEGIN
+ACTION_IF tobex || GAME_IS "bgee bg2ee eet iwdee" BEGIN
   STRING_SET 20696 @48
 
   COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
@@ -119,13 +127,13 @@ ACTION_IF tobex || GAME_IS "eet bgee bg2ee iwdee" BEGIN
     READ_ASCII 0x22 anim (2) NULL
     PATCH_IF item=7 BEGIN
       READ_BYTE 0x18 flags
-      PATCH_IF ( (flags & 4) = 4 ) OR ~%SOURCE_RES%~ STRING_EQUAL_CASE ~gv#helm~ BEGIN // movable
+      PATCH_IF ( (flags & 4) = 4 ) OR ~%SOURCE_RES%~ STRING_EQUAL_CASE ~gv#helm~ BEGIN // Movable
         WRITE_BYTE 0x1b THIS | 2 // disable critical protection
 
         add_ac=0
         is_helmet=0
 
-        // add +1 AC bonus
+        // Add +1 AC bonus
         PATCH_IF ~%anim%~ STR_CMP "" && ~%anim%~ STR_CMP "  " && ~%anim%~ STR_CMP ~JB~ BEGIN // Has animation and not a circlet
           is_helmet=1
           ac_exists=0

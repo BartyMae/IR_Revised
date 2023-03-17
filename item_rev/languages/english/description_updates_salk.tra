@@ -606,6 +606,13 @@ Weight:~
 @100425 = ~Equipped abilities:
 – Armor Class: +1~
 
+// Remove double "Armor Class Bonus: 1" from helms
+@100426 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass:[ %TAB%]+1[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass:[ %TAB%]+1~
+
+// Replace @100427 with just one
+@100427 = ~
+– Armor Class: +1~
+
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
