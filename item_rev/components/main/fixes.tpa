@@ -254,10 +254,6 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet
     SAY NAME1 @1112    SAY NAME2 @2571
     SAY UNIDENTIFIED_DESC @1115 SAY IDENTIFIED_DESC @2572
     LPF update_item_descriptions_to_bgee END
-  COPY ~item_rev/itm/helm02_.itm~ ~override/helm02.itm~  // Helm of Opposite Alignment
-    SAY NAME1 @1569    SAY NAME2 @1572
-    SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2624
-    LPF update_item_descriptions_to_bgee END
   COPY ~item_rev/itm/leat07_.itm~ ~override/leat07.itm~  // Telbar's Armor
     SAY NAME1 @1636    SAY NAME2 @2573
     SAY UNIDENTIFIED_DESC @1640 SAY IDENTIFIED_DESC @2574

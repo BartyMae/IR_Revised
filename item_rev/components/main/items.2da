@@ -353,8 +353,8 @@ WAR_HAMMER_3                               HAMMER   hamm12   1        1        0
 RIFT_HAMMER_3                              HAMMER   dvhamm01 1        1        0        0        1        1        @1544    @2619    @1545    @2620    *        *        *        *
 
 HELMET                                     HELMET   helm01   1        1        1        1        1        1        @1569    @1569    @1570    @1570    *        *        *        *
-HELM_OF_DESPAIR                            HELMET   helm02   1        1        1        1        1        1        @1569    @1571    @1572    @1573    *        *        *        cursed
 HELM_OF_GLORY                              HELMET   helm03   1        1        1        1        1        1        @1569    @1574    @1572    @1575    *        *        *        *
+HELM_OF_OPPOSITE_ALIGNMENT                 HELM     helm02   1        1        0        0        1        1        @1569    @2623    @1572    @2624    *        *        *        cursed
 HELM_OF_DEFENSE                            HELMET   helm04   1        1        1        1        1        1        @1569    @1576    @1572    @1577    *        *        *        *
 HELM_OF_THE_WATCHER                        HELMET   helm05   1        1        1        1        1        1        @1569    @1578    @1579    @1580    *        *        *        *
 HELM_OF_CHARM_PROTECTION                   HELMET   helm06   1        1        1        1        1        1        @1569    @1581    @1582    @1583    *        *        *        *
@@ -389,6 +389,7 @@ WONG_FEIS_IOUN_STONE                       IOUN     helm34   1        1        0
 MALLAS_SOUL_STONE                          IOUN     amsoul01 1        1        0        0        1        1        @1596    @2357    @1598    @2358    *        *        *        *
 RORANACHS_HORN                             HELMET   compon05 1        1        0        0        1        1        @1569    @1685    @1579    @1686    *        *        *        *
 IOUN_STONE_OF_GOOD_LUCK                    IOUN     dvhelm01 1        1        0        1        1        1        @1596    @2607    @1598    @2608    *        *        *        *
+HELM_OF_DESPAIR                            HELMET   dvhelm02 1        1        1        1        1        1        @1569    @1571    @1572    @1573    *        *        *        *
 CIRCLET                                    CIRCLET  xoband01 1        1        0        0        1        1        @2609    @2609    @2610    @2610    *        *        *        *
 SILVER_CIRCLET                             CIRCLET  xoband02 1        1        0        0        1        1        @2609    @2611    @2234    @2612    *        *        *        *
 EILISTRAEES_BOON                           CIRCLET  xoband03 1        1        0        0        1        1        @2609    @2613    @2234    @2614    @4047    *        *        *
@@ -571,7 +572,6 @@ THE_WORLDS_EDGE_3#BGT                      SWORD2H  bgsw2h07 1        1        0
 WAND_OF_MAGIC_MISSILES#BGT                 WAND     bgwand12 1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
 BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03_  1        1        0        0        1        1        @1055    @2569    @1058    @2570    *        *        *        *
 KROTANS_SKULLCRUSHER_2                     MACE     blun11_  1        1        0        0        1        1        @1112    @2571    @1115    @2572    *        *        *        *
-HELM_OF_OPPOSITE_ALIGNMENT                 HELM     helm02_  1        1        0        0        1        1        @1569    @2623    @1572    @2624    *        *        *        cursed
 TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0        0        1        1        @1636    @2573    @1640    @2574    *        *        *        *
 FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        0        0        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 PLATE_OF_THE_DARK_1                        PLATEF   plat05_  1        1        0        0        1        1        @1497    @2577    @1499    @2578    *        *        *        *

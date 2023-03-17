@@ -930,36 +930,6 @@ COPY_EXISTING ~helm02.itm~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     WRITE_ASCII 0x22 ~J3~
     WRITE_LONG  0x3E 0
-    WRITE_ASCII 0x3A ~1HELM26~
-    WRITE_LONG  0x5C 0
-    WRITE_ASCII 0x58 ~CHELM04~
-  LAUNCH_PATCH_MACRO ~clear~
-  SET gradient = 14    // colour index
-  SET location = hgrey    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 21    // colour index
-  SET location = hpink    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 21  // colour index
-  SET location = hblue    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  SET gradient = 90  // colour index
-  SET location = hred    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  // PATCH_IF (%pcolour% = 2) BEGIN
-  SET gradient = 21    // colour index
-  SET location = hteal    // location
-  LAUNCH_PATCH_MACRO ~colour~
-  // END
-  END
-  BUT_ONLY_IF_IT_CHANGES
-  END
-
-  ACTION_IF (FILE_EXISTS_IN_GAME ~helm02_.itm~) BEGIN
-COPY_EXISTING ~helm02_.itm~ ~override~
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-    WRITE_ASCII 0x22 ~J3~
-    WRITE_LONG  0x3E 0
     WRITE_ASCII 0x3A ~1HELM25~
     WRITE_LONG  0x5C 0
     WRITE_ASCII 0x58 ~CHELM04~
@@ -1112,6 +1082,36 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   // PATCH_IF (%pcolour% = 2) BEGIN
   SET gradient = 0      // colour index
   SET location = hpink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  // END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dvhelm02.itm~) BEGIN
+COPY_EXISTING ~dvhelm02.itm~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    WRITE_ASCII 0x22 ~J3~
+    WRITE_LONG  0x3E 0
+    WRITE_ASCII 0x3A ~1HELM26~
+    WRITE_LONG  0x5C 0
+    WRITE_ASCII 0x58 ~CHELM04~
+  LAUNCH_PATCH_MACRO ~clear~
+  SET gradient = 14    // colour index
+  SET location = hgrey    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 21    // colour index
+  SET location = hpink    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 21  // colour index
+  SET location = hblue    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  SET gradient = 90  // colour index
+  SET location = hred    // location
+  LAUNCH_PATCH_MACRO ~colour~
+  // PATCH_IF (%pcolour% = 2) BEGIN
+  SET gradient = 21    // colour index
+  SET location = hteal    // location
   LAUNCH_PATCH_MACRO ~colour~
   // END
   END

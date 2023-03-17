@@ -35,8 +35,8 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~uddeath2.cre~) BEGIN
   COPY_EXISTING uddeath2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM plat16 sw2h08 belt08
-    PATCH_IF comp_ir=1 && comp_cursed=0 BEGIN
-      ADD_CRE_ITEM helm02 #0 #0 #0 NONE HELMET
+    PATCH_IF comp_ir=1 BEGIN
+      ADD_CRE_ITEM dvhelm02 #0 #0 #0 NONE HELMET
     END
     ADD_CRE_ITEM plat17 #0 #0 #0 NONE ARMOR
     ADD_CRE_ITEM sw2h08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
@@ -774,11 +774,7 @@ BEGIN
       REMOVE_CRE_ITEM ~helm02~
       REMOVE_CRE_ITEM ~helm02_~
       REMOVE_CRE_ITEM ~helm15~
-      PATCH_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-        ADD_CRE_ITEM ~helm02_~ #0 #0 #0 ~unstealable~ HELMET
-      END ELSE BEGIN
-        ADD_CRE_ITEM ~helm02~ #0 #0 #0 ~unstealable~ HELMET
-      END
+      ADD_CRE_ITEM ~helm02~ #0 #0 #0 ~unstealable~ HELMET
     END
     BUT_ONLY
   END
