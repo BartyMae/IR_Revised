@@ -585,28 +585,35 @@ Weight:~
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-// Remove ~Protects Against Critical Hits~ from helms
+// Catch and remove line 'Protects...'
 @100422 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)\(Special:[ %TAB%]+\)?Protects[ %TAB%]+\([Aa]gainst\|[Ff]rom\)[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
 
-// Remove ~Armor Class Bonus: None~ remove helms
-@100423 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass[ %TAB%]+[Bb]onus:[ %TAB%]+[Nn]one~
+// Catch and remove line 'Armor Class...'
+@100423 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass\([ %TAB%]+[Bb]onus\)?:.*~
+@1004231 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\).*[Bb]onus[ %TAB%]+[Tt]o[ %TAB%]+[Aa][Cc].*~
 
-// Replace @100422 or @100423, \1 matches [ %TAB%%emdash%]*
+// Add line 'Protects Against Critical Hits' to @100114~
 @100424 = ~
-\1Armor Class Bonus: 1~
-
-// Add AC line to @100114
-@100425 = ~
-Armor Class Bonus: 1
+Protects Against Critical Hits
 Weight:~
 
-// Remove double "Armor Class Bonus: 1" from helms
-@100426 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass[ %TAB%]+[Bb]onus:[ %TAB%]+1[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass[ %TAB%]+[Bb]onus:[ %TAB%]+1~
+// Add line 'Armor Class:...'to @100427
+@100425 = ~
+STATISTICS:
 
-// Replace @100427 with just one
-@100427 = ~
-Armor Class Bonus: 1~
+Armor Class Bonus: %bonus%\3~
 
+// For @100425
+@100426 = ~None~
+
+// Catch section 'STATISTICS:' for @100428
+@100427 = ~[%LNL%%MNL%%WNL%]\(STATISTICS\|[Ss]tatistics]\):.*\([%LNL%%MNL%%WNL%]*\)\(\([%LNL%%MNL%%WNL%].+\)*[%LNL%%MNL%%WNL%]\)~
+
+// Add line 'Armor Class:...'to @100427
+@100428 = ~
+STATISTICS:
+
+Armor Class Bonus: %bonus%\3~
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\

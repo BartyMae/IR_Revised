@@ -5,161 +5,144 @@ INCLUDE ~item_rev/lib/descriptions.tpa~
 
 DEFINE_PATCH_MACRO ~revised_crit_aversion~ BEGIN
 
-  PATCH_IF (item_description_style=0 AND (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~)) OR item_description_style=2 OR item_description_style=3 BEGIN // EE or Salk
-
-    PATCH_IF is_helmet BEGIN // Is a helmet
-
-      PATCH_IF add_ac || ident=0 BEGIN // Add AC bonus to it or it's an unidentified description
-        ac_added=0
-        SPRINT t2 @100424
-
-        SPRINT t1 @100423
-        REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
-          ac_added=1
-        END ~%t2%~
-
-        SPRINT t1 @100423
-        PATCH_IF ac_added=0 BEGIN
-          REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
-            ac_added=1
-          END ~%t2%~
-        END
-
-        PATCH_IF ac_added=0 BEGIN
-          SPRINT t1 @100423
-          SPRINT t2 @100425
-          REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // Add AC
-        END
-
-        SPRINT t1 @100426 // Duplicate removal
-		SPRINT t2 @100427
-        REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
-
-        SPRINT t1 @100422 // Clean critical hit protection
-        REPLACE_TEXTUALLY ~%t1%~ ~~
-
-      END ELSE BEGIN // Identified description, no AC added
-
-        SPRINT t1 @100422 // Clean critical hit protection
-        REPLACE_TEXTUALLY ~%t1%~ ~~
-
-      END
-
-    END ELSE BEGIN // Not a helmet
-
-      SPRINT t1 @100422
-      REPLACE_TEXTUALLY ~%t1%~ ~~
-
-    END // EE
+  SPRINT t1 @100422
+  REPLACE_TEXTUALLY ~%t1%~ ~~ // Remove line 'Protects...'
   
-  END ELSE BEGIN // Non-EE
-
-    PATCH_IF is_helmet BEGIN // Is a helmet
-
-      PATCH_IF add_ac || ident=0 BEGIN // Add AC bonus to it or it's an unidentified description
-        ac_added=0
-        SPRINT t2 @100424
-
-        SPRINT t1 @100422
-        REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
-          ac_added=1
-        END ~%t2%~
-
-        SPRINT t1 @100423
-        REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
-          ac_added=1
-        END ~%t2%~
-
-        SPRINT t1 @100422
-        PATCH_IF ac_added=0 BEGIN
-          REPLACE_EVALUATE ~%t1%~ BEGIN // Add AC
-            ac_added=1
-          END ~%t2%~
-        END ELSE BEGIN
-          REPLACE_TEXTUALLY ~%t1%~ ~~
-        END
-
-        PATCH_IF ac_added=0 BEGIN
-          SPRINT t1 @100114
-          SPRINT t2 @100425
-          REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // AC added
-        END
-
-        SPRINT t1 @100426 // Duplicate removal
-		SPRINT t2 @100427
-        REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
-
-      END ELSE BEGIN // Identified description, no AC added
-
-        SPRINT t1 @100422 // Clean critical hit protection
-        REPLACE_TEXTUALLY ~%t1%~ ~~
-
-      END
-
-    END ELSE BEGIN // Not a helmet
-
-      SPRINT t1 @100422
-      REPLACE_TEXTUALLY ~%t1%~ ~~
-
-    END // Non-EE
-
+  SPRINT t1 @100423
+  REPLACE_TEXTUALLY ~%t1%~ ~~ // Remove line 'Armor Class...'
+  
+  SPRINT t1 @1004231
+  REPLACE_TEXTUALLY ~%t1%~ ~~ // Remove line '...bonus to AC...'
+  
+  bonus = ac_bonus
+  
+  PATCH_IF 
+        item_description_style == 0
+    && !GAME_IS ~bgee bg2ee eet~
+    ||  item_description_style == 1
+  BEGIN // non EE
+  
+    PATCH_IF bonus > 0 BEGIN
+      PATCH_IF !(ident || crit_hit_prot) BEGIN bonus = 1 END
+    END ELSE BEGIN
+      SPRINT bonus @100426 // 0 -> none
+    END
+    catch = 0
+    
+    PATCH_IF !catch BEGIN
+      SPRINT t1 @100114
+      SPRINT t2 @100425
+      REPLACE_EVALUATE ~%t1%~ BEGIN catch = 1 END ~%t2%~ // Try to catch 'Weight:' line
+    END
+    
+    PATCH_IF !catch BEGIN
+      SPRINT t1 @100427
+      SPRINT t2 @100428
+      REPLACE_EVALUATE ~%t1%~ BEGIN catch = 1 END ~%t2%~ // Try to catch 'STATISTICS:' line
+    END
+    
+    PATCH_IF crit_hit_prot BEGIN
+      SPRINT t1 @100114
+      SPRINT t2 @100424
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // Add line 'Protects...'
+    END
+    
+  END ELSE BEGIN // EE or Salk
+  
+    PATCH_IF bonus > 0 BEGIN
+      PATCH_IF !(ident || crit_hit_prot) BEGIN bonus = 1 END
+      SPRINT t1 @100427
+      SPRINT t2 @100425
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // Add line 'Armor Class Bonus:...'
+    END
+    
+    PATCH_IF crit_hit_prot BEGIN
+      SPRINT t1 @100427
+      SPRINT t2 @100424
+      REPLACE_TEXTUALLY ~%t1%~ ~%t2%~ // Add line 'Protects...'
+    END
+    
   END
-
+  
 END
-
 
 //////////////////////////////////////////////
 // Patching
 
-OUTER_SET tobex=0
+OUTER_SET tobex = 0
+OUTER_SPRINT hack ~Configurable Critical Hit Aversion~
 ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
-  ACTION_IF FILE_CONTAINS_EVALUATED (~tobex_ini/tobexcore.ini~ ~Configurable Critical Hit Aversion=1~) BEGIN
-    OUTER_SET tobex=1
-  END
+  COPY ~TobEx_ini/TobExCore.ini~ ~TobEx_ini/TobExCore.ini~
+    PATCH_IF FILE_CONTAINS_EVALUATED (~tobex_ini/tobexcore.ini~ ~%hack%~) BEGIN
+      tobex = 1
+      REPLACE_TEXTUALLY ~%hack%=0~ ~%hack%=1~
+    END
+  BUT_ONLY
 END
 
-ACTION_IF tobex || GAME_IS "bgee bg2ee eet iwdee" BEGIN
-  STRING_SET 20696 @48
+ACTION_IF tobex || GAME_IS ~eet bgee bg2ee iwdee~ BEGIN
 
-  COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override PATCH_IF SOURCE_SIZE>0x71 BEGIN
-  PATCH_IF NOT ~%SOURCE_RES%~ STRING_EQUAL_CASE ~helm04~ BEGIN
-    READ_SHORT 0x1c item
-    READ_ASCII 0x22 anim (2) NULL
-    PATCH_IF item=7 BEGIN
-      READ_BYTE 0x18 flags
-      PATCH_IF ( (flags & 4) = 4 ) OR ~%SOURCE_RES%~ STRING_EQUAL_CASE ~gv#helm~ BEGIN // Movable
-        WRITE_BYTE 0x1b THIS | 2 // disable critical protection
-
-        add_ac=0
-        is_helmet=0
-
-        // Add +1 AC bonus
-        PATCH_IF ~%anim%~ STR_CMP "" && ~%anim%~ STR_CMP "  " && ~%anim%~ STR_CMP ~JB~ BEGIN // Has animation and not a circlet
-          is_helmet=1
-          ac_exists=0
-          READ_LONG 0x6a fx_of
-          READ_SHORT 0x70 fx_co
-          WHILE (fx_co >= 0 && ac_exists == 0) BEGIN
-            fx_co -= 1
-            READ_SHORT (fx_of + 0x30 * fx_co) op
-            READ_LONG (fx_of + 0x30 * fx_co + 0x8) par2
-            PATCH_IF par2 = 0 && op = 0 BEGIN
-              ac_exists=1
-            END
-          END
-          PATCH_IF ac_exists=0 BEGIN
-            add_ac=1
-            LPF ADD_ITEM_EQEFFECT INT_VAR opcode=0 timing=2 target=1 parameter1=1 END
-          END
-        END
-
-        SPRINT text_update revised_crit_aversion
-        LPM update_item_descriptions
-
+  STRING_SET 20696 @48 // Remove 'By Helmet' from 'Critical Hit Averted...'
+  
+  COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ override
+  
+  PATCH_IF SOURCE_SIZE > 0x71 BEGIN
+    READ_SHORT 0x1c item // Category
+    READ_ASCII 0x22 anim (2) NULL // Equipped appearance
+    
+    PATCH_IF item == 7 BEGIN // Headgear
+      READ_LONG 0x18 flags // Flags
+      crit_hit_prot = !((flags & BIT25) == BIT25) // Critical Hit Aversion enabled (=1)?
+      
+      PATCH_IF // items to disable Critical Hit Aversion
+            (flags & BIT2) == BIT2                     // droppable
+//        && !~%SOURCE_RES%~ STRING_EQUAL_CASE ~helm01~  // Standard Helm
+        && !~%SOURCE_RES%~ STRING_EQUAL_CASE ~helm04~  // Helm of Defense
+        ||  ~%SOURCE_RES%~ STRING_EQUAL_CASE ~gv#helm~ // ?
+      BEGIN // Disable Critical Hit Aversion
+        WRITE_LONG 0x18 THIS | BIT25
+        crit_hit_prot = 0 // Critical Hit Aversion disabled
       END
+      
+      ac_bonus = 0
+      READ_LONG  0x6a fx_off
+      READ_SHORT 0x70 fx_num
+      FOR (i = 0; i < fx_num; ++i) BEGIN // Search for existing AC bonus
+        READ_SHORT (fx_off +        i * 0x30) opcode
+        READ_LONG  (fx_off + 0x04 + i * 0x30) param1
+        READ_LONG  (fx_off + 0x08 + i * 0x30) param2
+        PATCH_IF opcode == 0 && param2 == 0 BEGIN // AC bonus to all weapon?
+          i = fx_num // End search after first find
+          ac_bonus = param1 // Save AC bonus
+        END
+      END
+      
+      PATCH_IF // items to receive replacment AC bonus
+            ac_bonus == 0                   // No AC bonus, yet
+        && !crit_hit_prot                   // Critical Hit Aversion disabled
+        &&  (
+           !~%anim%~ STRING_EQUAL_CASE ~~   // No valid Equipped Appearance
+        && !~%anim%~ STRING_EQUAL_CASE ~  ~ // No Equipped Appearance
+        && !~%anim%~ STRING_EQUAL_CASE ~JB~ // No Circlet
+//        ||  ~%SOURCE_RES%~ STRING_EQUAL_CASE ~helm24~ // Obsidian Ioun Stone
+            )
+      BEGIN // Add AC bonus +1
+        ac_bonus = 1
+        LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 timing = 2 target = 1 parameter1 = ac_bonus END
+      END
+      
+      SPRINT text_update revised_crit_aversion
+      LPM update_item_descriptions
+      
     END
-    END
-  END BUT_ONLY
+    
+  END
+  
+  BUT_ONLY
+  
 END ELSE BEGIN
+
   FAIL ~This component requires ToBEx installed or an Enhanced Edition game.~
+  
 END
+
