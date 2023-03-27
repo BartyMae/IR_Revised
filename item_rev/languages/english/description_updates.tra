@@ -597,11 +597,10 @@ Weight:~
 Protects Against Critical Hits
 Weight:~
 
-// Add line 'Armor Class:...'to @100427
+// Add line 'Armor Class:...'to @100114
 @100425 = ~
-STATISTICS:
-
-Armor Class Bonus: %bonus%\3~
+Armor Class Bonus: %bonus%
+Weight:~
 
 // For @100425
 @100426 = ~None~
