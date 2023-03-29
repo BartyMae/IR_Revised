@@ -289,7 +289,7 @@ INCLUDE ~item_rev/components/backstabbing.tpa~
 BEGIN @47
 DESIGNATED 1200
 REQUIRE_PREDICATE (ENGINE_IS ~bgee bg2ee iwdee~ || FILE_EXISTS ~TobEx_ini/TobExVer.txt~) @9007
-REQUIRE_COMPONENT ~setup-item_rev.tp2~ 0 @9017 // ~This component requires that the main Item Revisions component be installed.~
+//REQUIRE_COMPONENT ~setup-item_rev.tp2~ 0 @9017 // ~This component requires that the main Item Revisions component be installed.~
 
 INCLUDE ~item_rev/components/critical_hits.tpa~
 

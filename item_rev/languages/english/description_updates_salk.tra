@@ -592,27 +592,27 @@ Weight:~
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-// Catch ~Protects against critical hits~
+// Catch and remove line 'Protects...'
 @100422 = ~[%lnl%%mnl%%wnl%]..?.?[ %TAB%]Protects[ %TAB%]+\([Aa]gainst\|[Ff]rom\)[ %TAB%]+[Cc]ritical[ %TAB%]+[Hh]its~
 
-// Catch "Equipped abilities"
-@100423 = ~Equipped abilities:~
+// Catch and remove line 'Armor Class...'
+@100423 = ~[%lnl%%mnl%%wnl%]..?.?[ %TAB%]Armou?r[ %TAB%]+[Cc]lass\([ %TAB%]+[Bb]onus\)?:.*~
 
-// Replace @100422
-@100424 = ~Equipped abilities:
-– Armor Class: +1~
+// Add line 'Protects Against Critical Hits' to @100427~
+@100424 = ~
+Equipped abilities:\1- Protects Against Critical Hits
+~
 
-// Add AC line to @100423
-@100425 = ~Equipped abilities:
-– Armor Class: +1~
+// Add line 'Armor Class:...'to @100427
+@100425 = ~
+Equipped abilities:
+– Armor Class: +%bonus%\1~
 
-// Remove double "Armor Class Bonus: 1" from helms
-@100426 = ~[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass:[ %TAB%]+1[%LNL%%MNL%%WNL%]\([ %TAB%%emdash%]*\)Armou?r[ %TAB%]+[Cc]lass:[ %TAB%]+1~
+// For @100425
+@100426 = ~None~
 
-// Replace @100427 with just one
-@100427 = ~
-– Armor Class: +1~
-
+// Catch section 'Equipped abilities:' for @100424 and @100425
+@100427 = ~[%lnl%%mnl%%wnl%][Ee]quipped[ %tab%][Aa]bilities:.*\(\([%lnl%%mnl%%wnl%].+\)*[%lnl%%mnl%%wnl%]\)~
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
