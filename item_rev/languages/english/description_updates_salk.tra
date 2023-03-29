@@ -600,7 +600,7 @@ Weight:~
 
 // Add line 'Protects Against Critical Hits' to @100427~
 @100424 = ~
-Equipped abilities:\1- Protects Against Critical Hits
+Equipped abilities:\1– Protects Against Critical Hits
 ~
 
 // Add line 'Armor Class:...'to @100427
