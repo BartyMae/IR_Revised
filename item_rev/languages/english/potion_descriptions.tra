@@ -12,50 +12,75 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3004=~Potion of Frost Giant Strength~
 @3005=~When this potion is consumed, the user temporarily gains the strength of a frost giant (21), and the consequent bonuses to THAC0 and damage while using melee and throwing weapons. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3006=~Potion of Fire Giant Strength~
 @3007=~When this potion is consumed, the user temporarily gains the strength of a fire giant (22), and the consequent bonuses to THAC0 and damage while using melee and throwing weapons. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3008=~Potion of Cloud Giant Strength~
 @3009=~When this potion is consumed, the user temporarily gains the strength of a cloud giant (23), and the consequent bonuses to THAC0 and damage while using melee and throwing weapons. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3010=~Potion of Storm Giant Strength~
 @3011=~When this potion is consumed, the user temporarily gains the strength of a storm giant (24), and the consequent bonuses to THAC0 and damage while using melee and throwing weapons. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3012=~Potion of Healing~
 @3013=~Used as often in the peasant's home as the dungeon's dark, these simple concoctions are common throughout Faerun. When consumed, this potion restores 10 hit points to the user. The effect is instantaneous and the potion is destroyed in the process.
 
@@ -86,21 +111,29 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Monk
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3020=~Potion of Stone Giant Strength~
 @3021=~When this potion is consumed, the user temporarily gains the strength of a stone giant (20), and the consequent bonuses to THAC0 and damage while using melee and throwing weapons. The effect lasts for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1
-Usable By:
- Fighter
- Paladin
- Ranger~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3022=~Oil of Fiery Burning~
 @3023=~This oil is applied on melee and ranged weapons and sets them aflame without harming the wielder. Weapons coated with this oil of fiery burning deal an additional 1D6 fire damage upon contact. Multiple uses of this potion are not cumulative. The effect lasts for 1 turn and cannot be dispelled.
 
@@ -325,8 +358,15 @@ Usable By:
 STATISTICS:
 
 Weight: 1
-Usable By:
- Warrior~
+Not Usable By:
+ Bard
+ Cleric
+ Druid
+ Mage
+ Monk
+ Sorcerer
+ Thief
+ Wizard Slayer~
 @3078=~Potion of Power~
 @3079=~This elixir is a more powerful version of the Potion of Heroism. This potion is desired by adventurers everywhere, whether they be wizards or warriors, as it blesses the user with a +2 bonus to THAC0, damage, and morale, as well as a +20% bonus to thieving skills. Additionally, any spells cast after drinking this potion will be cast as if the caster were two levels higher. Finally, the potion also provides the user a +20% bonus to hit points, and these bonus hit points are lost first when the recipient takes damage. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 

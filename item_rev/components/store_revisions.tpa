@@ -654,7 +654,7 @@ COPY_EXISTING ribald3.sto override PATCH_IF SOURCE_SIZE>0x9b BEGIN
   ADD_STORE_ITEM CHAN11   LAST #0 #0 #0 IDENTIFIED #1   // Crimson Chain +5
   PATCH_IF comp_ir=1 BEGIN
     ADD_STORE_ITEM PLAT16   LAST #0 #0 #0 IDENTIFIED #1   // Armor of the Hart +3
-  END ELSE BEGIN
+  END ELSE PATCH_IF comp_cursed=0 BEGIN
     ADD_STORE_ITEM PLAT17   LAST #0 #0 #0 IDENTIFIED #1   // T'rachie's Plate +5 / Casiel's Soul +3
   END
   ADD_STORE_ITEM HELM16   LAST #1 #1 #1 IDENTIFIED #1   // Helm of Brilliance
