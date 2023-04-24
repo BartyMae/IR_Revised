@@ -890,7 +890,7 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~lothan.cre~) BEGIN // Lothander
   COPY_EXISTING lothan.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
     REMOVE_CRE_ITEM boot01
-    ADD_CRE_ITEM bootdriz #1 #0 #0 IDENTIFIED BOOTS
+    ADD_CRE_ITEM ~boot01~ #0 #0 #0 ~unstealable~ BOOTS
   END
   BUT_ONLY
 END
