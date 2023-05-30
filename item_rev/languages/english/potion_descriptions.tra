@@ -320,7 +320,7 @@ Weight: 1
 Usable By:
  All~
 @3068=~Potion of Master Thievery~
-@3069=~This potion will temporarily transform the user into a master thief, granting them a +20% bonus to their Open Locks, Pick Pockets, Move Silently, Hide in Shadow, and Set Traps skills. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
+@3069=~This potion will temporarily transform the user into a master thief, granting them a +20% bonus to their Open Locks, Pick Pockets, Move Silently, Hide in Shadows, and Set Traps skills. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
@@ -363,7 +363,6 @@ Not Usable By:
  Cleric
  Druid
  Mage
- Monk
  Sorcerer
  Thief
  Wizard Slayer~

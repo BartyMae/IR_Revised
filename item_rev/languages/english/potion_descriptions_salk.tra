@@ -145,16 +145,17 @@ Weight: 1~
 STATISTICS:
 
 Weight: 1
+
 Not usable by:
  Monk~
 @3026=~Red Potion~
-@3027=~Close examination reveals this liquid to be very peculiar in nature. It could be a sorcerer's dream, but that would depend entirely on whom you asked. After ingesting the mixture, the drinker of this potion becomes the weakest, most unwise, yet incredibly intelligent person to have ever lived. The user's Intelligence is set to 25, while their Wisdom and Strength are reduced to 3, so think carefully before unplugging the cork. The effects last for 8 hours and cannot be dispelled.
+@3027=~Close examination reveals this liquid to be very peculiar in nature. It could be a sorcerer's dream, but that would depend entirely on whom you asked. After ingesting the mixture, the drinker of this potion becomes the weakest, most unwise, yet incredibly intelligent person to have ever lived. The user's intelligence is set to 25, while their wisdom and strength are reduced to 3, so think carefully before unplugging the cork. The effects last for 8 hours and cannot be dispelled.
 
 STATISTICS:
 
 Weight: 1~
 @3028=~Violet Potion~
-@3029=~This is one of the oddest potions you have ever examined. Once consumed, this mixture causes the drinker of this potion's muscles to bulge to completely inhuman proportions, while dexterity and constitution are both reduced to that of a slug. The user's Strength is set to 25, while their Dexterity and Constitution are reduced to 3, so think carefully before quaffing this suspect drink. The effects last for 8 hours and cannot be dispelled.
+@3029=~This is one of the oddest potions you have ever examined. Once consumed, this mixture causes the drinker of this potion's muscles to bulge to completely inhuman proportions, while dexterity and constitution are both reduced to that of a slug. The user's Strength is set to 25, while their dexterity and constitution are reduced to 3, so think carefully before quaffing this suspect drink. The effects last for 8 hours and cannot be dispelled.
 
 STATISTICS:
 
@@ -252,6 +253,7 @@ Weight: 1~
 STATISTICS:
 
 Weight: 1
+
 Not usable by:
  Wizard Slayer~
 @3060=~Strange Potion of Antidote~
@@ -272,6 +274,7 @@ Weight: 1~
 STATISTICS:
 
 Weight: 1
+
 Not usable by:
  Wizard Slayer~
 @3066=~Potion of Resilience~
@@ -302,7 +305,7 @@ STATISTICS:
 
 Weight: 1~
 @3074=~Potion of Perception~
-@3075=~This potion heightens the perception of the user, gaining a +2 bonus to Intelligence and Wisdom as well as a +20% bonus to Find Traps and Detect Illusions. The drinker of this potion also cannot be backstabbed. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
+@3075=~This potion heightens the perception of the user, gaining a +2 bonus to intelligence and wisdom as well as a +20% bonus to Find Traps and Detect Illusions. The drinker of this potion also cannot be backstabbed. Multiple uses of this potion are not cumulative. The effects last for 5 turns and cannot be dispelled.
 
 STATISTICS:
 
@@ -319,7 +322,6 @@ Not usable by:
  Cleric
  Druid
  Mage
- Monk
  Sorcerer
  Thief
  Wizard Slayer~

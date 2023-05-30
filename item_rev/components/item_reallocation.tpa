@@ -113,7 +113,7 @@ COPY_EXISTING ar0302.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl1z END // Minor Globe of Invulnerability
 END BUT_ONLY
 
-// Rayic Gethras's House, 1st Floor - infested with mephits
+// Rayic Gethras's House, 1st floor - Mephits
 COPY_EXISTING ar0315.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl1d END // Clairvoyance
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl7j END // Protection From Magic Energy
@@ -121,7 +121,7 @@ COPY_EXISTING ar0315.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF ADD_AREA_ITEM INT_VAR charges1=1 container_to_add_to=1 STR_VAR item_to_add=scrl6j END // Spell Thrust
 END BUT_ONLY
 
-// Rayic Gethras's House, 3rd Floor - infested with himself
+// Rayic Gethras's House, 3rd floor
 COPY_EXISTING ar0317.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl7K END // Mislead
 
@@ -146,7 +146,7 @@ COPY_EXISTING ar0411.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF ADD_AREA_ITEM INT_VAR charges1=1 container_to_add_to=8 STR_VAR item_to_add=scrl9a END // Pierce Shield
 END BUT_ONLY
 
-// Planar Sphere, floor with Tolgerias
+// Planar Sphere, Tolgerias
 COPY_EXISTING ar0412.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5j END // Otiluke's Resilient Sphere
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl7f END // Globe of Invulnerability
@@ -167,7 +167,7 @@ COPY_EXISTING ar0407.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF ADD_AREA_ITEM INT_VAR charges1=1 container_to_add_to=3 STR_VAR item_to_add=scrl1e END // Dispel Magic
 END BUT_ONLY
 
-// Bridge District, Valeria and party hang out here
+// Bridge District, Valeria and party
 COPY_EXISTING ar0530.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5k END // Spirit Armor
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6u END // Breach
@@ -176,7 +176,7 @@ COPY_EXISTING ar0530.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
 END BUT_ONLY
 
 // Merkath's Hideout, entrance from the Sewers
-// also has Agannazar's Scorcher
+// Agannazar's Scorcher
 COPY_EXISTING ar0705.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl1c END // Ghoul Touch
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl7u END // Contingency
@@ -189,7 +189,7 @@ COPY_EXISTING ar0705.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
 END BUT_ONLY
 
 // Cowled Wizard's house in Immensville
-// also has Contingency
+// Contingency
 COPY_EXISTING ar1103.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6e END // Power Word Sleep
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6t END // Protection From Normal Weapons
@@ -200,12 +200,12 @@ COPY_EXISTING ar1103.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF ADD_AREA_ITEM INT_VAR charges1=1 container_to_add_to=3 STR_VAR item_to_add=scrl1d END // Clairvoyance
 END BUT_ONLY
 
-// De'Arnise keep, Dungeon
+// De'Arnise Keep, dungeon
 COPY_EXISTING ar1301.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5q END // Feeblemind
 END BUT_ONLY
 
-// De'Arnise Keep, 1st Floor - here's the entrance
+// De'Arnise Keep, 1st floor, entrance
 COPY_EXISTING ar1302.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6d END // Find Familiar
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6t END // Protection From Normal Weapons
@@ -213,7 +213,7 @@ COPY_EXISTING ar1302.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6u END // Breach
 END BUT_ONLY
 
-// De'Arnise Keep, 2nd Floor - here's the library
+// De'Arnise Keep, 2nd floor, library
 // Collect scrolls to where they belong, the selection should correspond to what Nalia knows
 COPY_EXISTING ar1303.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl6j END // Spell Thrust
@@ -232,7 +232,7 @@ COPY_EXISTING ar1303.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF ADD_AREA_ITEM INT_VAR charges1=1 container_to_add_to=9 STR_VAR item_to_add=scrl8c END // Stone to Flesh
 END BUT_ONLY
 
-// Spellhold Maze, 1st level - here we start
+// Spellhold Maze, 1st level, entrance
 // lets leave Project Image be, it's one of the more rare occasions when this spell may really come in handy (lich guarding the library)
 COPY_EXISTING ar1512.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl8p END // Prismatic Spray
@@ -240,7 +240,7 @@ COPY_EXISTING ar1512.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl8n END // Delayed Blast Fireball
 END BUT_ONLY
 
-// Spellhold Maze, 2nd level - here's the library
+// Spellhold Maze, 2nd level, library
 // collect scrolls to where they belong, change Simulacrum to Pierce Shield
 COPY_EXISTING ar1513.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
  // LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5k END // Spirit Armor
@@ -263,7 +263,7 @@ COPY_EXISTING ar1513.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF ADD_AREA_ITEM INT_VAR charges1=1 container_to_add_to=7 STR_VAR item_to_add=scrl9g END // Abi-Dalzim
 END BUT_ONLY
 
-// Spellhold Maze, 3rd level - here's the exit
+// Spellhold Maze, 3rd level, exit
 COPY_EXISTING ar1514.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrla4 END // Limited Wish
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl7s END // Chain Lightning
@@ -290,17 +290,17 @@ COPY_EXISTING ar2810.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
   LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl9r END // Time Stop
 END BUT_ONLY
 
-// actors
+// Actors
 
 // Chapter 6 outdoors party
-// also has Timestop
+// Timestop
 COPY_EXISTING ar18mage.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   ADD_CRE_ITEM scrl7u #1 #0 #0 IDENTIFIED INV // Contingency
   ADD_CRE_ITEM scrl1q #1 #0 #0 IDENTIFIED INV // Vampiric Touch
   ADD_CRE_ITEM scrl7j #1 #0 #0 IDENTIFIED INV // Protection From Magic Energy
 END BUT_ONLY
 
-// Copper Coronet Beastmaster
+// Copper Coronet, Beastmaster
 COPY_EXISTING beast.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl8c // Stone to Flesh
@@ -312,7 +312,7 @@ COPY_EXISTING dcowl1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_
   ADD_CRE_ITEM scrl95 #1 #0 #0 IDENTIFIED INV // Melf's Acid Arrow
 END BUT_ONLY
 
-// Gaius, sewers party
+// Sewers, Gaius and party
 COPY_EXISTING gaius.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   ADD_CRE_ITEM scrl7r #1 #0 #0 IDENTIFIED INV // Death Fog
   ADD_CRE_ITEM scrl8b #1 #0 #0 IDENTIFIED INV // Summon Nishru
@@ -321,8 +321,8 @@ COPY_EXISTING gaius.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_I
   ADD_CRE_ITEM scrl1g #1 #0 #0 IDENTIFIED INV // Fireball
 END BUT_ONLY
 
-// Nastar, Underdark ambush party
-// also has Abi-Dalzim
+// Underdark, Nastar from ambush party
+// Horrid Wilting
 COPY_EXISTING gpmage1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   ADD_CRE_ITEM scrl6u #1 #0 #0 IDENTIFIED INV // Breach
   ADD_CRE_ITEM scrl6t #1 #0 #0 IDENTIFIED INV // Protection From Normal Weapons
@@ -342,7 +342,7 @@ COPY_EXISTING kalah2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_
   ADD_CRE_ITEM scrl96 #1 #0 #0 IDENTIFIED INV // Mirror Image
 END BUT_ONLY
 
-// Lehtinan
+// Copper Cornet, Lehtinan
 COPY_EXISTING lehtin.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl8b // Summon Nishru
@@ -365,7 +365,7 @@ COPY_EXISTING mekrat.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_
   ADD_CRE_ITEM scrl2b #1 #0 #0 IDENTIFIED INV // Stoneskin
 END BUT_ONLY
 
-// Slaver wizard, Suna Seni random encounter
+// Slaver wizard from Suna Seni party random encounter
 COPY_EXISTING remage01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl1z // Minor Globe of Invulnerability
@@ -378,7 +378,7 @@ COPY_EXISTING remage01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATC
   ADD_CRE_ITEM scrl6e #1 #0 #0 IDENTIFIED INV // Power Word Sleep
 END BUT_ONLY
 
-// Mage, Renfeld the Harper random encounter
+// Mage from Renfeld Harper party random encounter
 COPY_EXISTING rethug02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl98 // Strength
@@ -392,7 +392,7 @@ COPY_EXISTING rethug02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATC
   ADD_CRE_ITEM scrl81 #1 #0 #0 IDENTIFIED INV // Sleep
 END BUT_ONLY
 
-// Sorcerous Amon, Mencar Pubblecrusher's party
+// Sorcerous Amon from Mencar Pubblecrusher's party
 COPY_EXISTING sevpat02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   ADD_CRE_ITEM scrl6d #1 #0 #0 IDENTIFIED INV // Find Familiar
   ADD_CRE_ITEM scrl2f #1 #0 #0 IDENTIFIED INV // Cone of Cold
@@ -401,19 +401,19 @@ COPY_EXISTING sevpat02.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATC
   ADD_CRE_ITEM scrl7v #1 #0 #0 IDENTIFIED INV // Spell Deflection
 END BUT_ONLY
 
-// Raamilat the drow, Suldanessellar
+// Suldanessellar, Raamilat
 COPY_EXISTING suraam.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   ADD_CRE_ITEM scrl9n #1 #0 #0 IDENTIFIED INV // Gate
   ADD_CRE_ITEM scrl9t #1 #0 #0 IDENTIFIED INV // Meteor Swarm
 END BUT_ONLY
 
-// Suneer the wizard, Temple of Rillifane, Suldanessellar
+// Temple of Rillifane, Suneer
 COPY_EXISTING susuneer.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   ADD_CRE_ITEM scrl9p #1 #0 #0 IDENTIFIED INV // Absolute Immunity
   ADD_CRE_ITEM scrl9r #1 #0 #0 IDENTIFIED INV // Time Stop
 END BUT_ONLY
 
-// Shadow Thief, guild war encounter
+// Shadow Thief from guild war encounter
 COPY_EXISTING vvshad1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl7u // Contingency
@@ -421,14 +421,14 @@ COPY_EXISTING vvshad1.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH
   ADD_CRE_ITEM scrl77 #1 #0 #0 IDENTIFIED INV // Magic Missile
 END BUT_ONLY
 
-// Shadow Thief, guild war encounter
+// Shadow Thief from guild war encounter
 COPY_EXISTING vvshad2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl6j // Spell Thrust
     scrl2b // Stoneskin
 END BUT_ONLY
 
-// Shadow Thief, guild war encounter
+// Shadow Thief from guild war encounter
 COPY_EXISTING vvshad4.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl7t // Disintegrate
@@ -436,7 +436,7 @@ COPY_EXISTING vvshad4.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH
   ADD_CRE_ITEM Scrl72 #1 #0 #0 IDENTIFIED INV // Friends
 END BUT_ONLY
 
-// Shadow Thief, guild war encounter
+// Shadow Thief from guild war encounter
 COPY_EXISTING vvshad5.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
   REMOVE_CRE_ITEM
     scrl6d // Find Familiar
@@ -475,6 +475,33 @@ COPY_EXISTING xzar.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF
 END BUT_ONLY
 
 END // BG2 files check
+
+/////////////////////////////////////
+
+// Remove Girdle of Frost Giant Strength from Death Knight and properly equip him, also give him Helm of Despair
+// Give Girdle to Shadow Dragon and remove Scroll of Crom Faeyr
+// Place Scroll of Crom Faeyr in Underdark Beholder Lair
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~uddeath2.cre~) BEGIN
+  COPY_EXISTING uddeath2.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM plat16 sw2h08 belt08
+    PATCH_IF comp_ir=1 BEGIN
+      ADD_CRE_ITEM dvhelm02 #0 #0 #0 NONE HELMET
+    END
+    ADD_CRE_ITEM plat17 #0 #0 #0 NONE ARMOR
+    ADD_CRE_ITEM sw2h08 #0 #0 #0 NONE WEAPON1 EQUIP TWOHANDED
+    LPF ADD_CRE_EFFECT INT_VAR opcode=233 target=0 timing=1 power=0 parameter1=3 parameter2=93 END
+  END BUT_ONLY
+
+  COPY_EXISTING shadra01.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+    REMOVE_CRE_ITEM scrlag
+    ADD_CRE_ITEM belt08 #0 #0 #0 NONE INV
+  END BUT_ONLY
+
+  COPY_EXISTING ar2101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=7 STR_VAR item_to_add=scrlag END
+  END BUT_ONLY
+END
 
 /////////////////////////////////////
 
