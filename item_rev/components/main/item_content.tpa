@@ -730,6 +730,12 @@ COPY ~%source%/PROTECTION_FROM_UNDEAD.tpa~ ~%target%~
 COPY ~%source%/PROTECTION_FROM_ALTERATIONS.tpa~ ~%target%~
 
 
+<<<<<<<< .../item_rev-inlined/item/JANSEN_SPECTROSCOPES.tpa
+  COPY ~item_rev/itm/npmisc1.spl~ ~override~ // Detect Invisibility
+>>>>>>>>
+COPY ~%source%/JANSEN_SPECTROSCOPES.tpa~ ~%target%~
+
+
 <<<<<<<< .../item_rev-inlined/item/FIRECAM_FULL_PLATE_MAIL_2.tpa
   COPY ~item_rev/itm/npplat.spl~ ~override~ // Retribution
   COPY ~item_rev/itm/npplat1.spl~ ~override~
