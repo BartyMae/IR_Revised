@@ -3477,7 +3477,7 @@ Not Usable By:
  Wizard Slayer~
 @1384 = ~Cloak of Non-Detection~ // BG1/BG2: Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success. No record exists of previous owners.
 @1385 = ~Whispers of Silence
-Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success, allowing the wearer to become non-detectable by magical means such as Detect Invisibility and True Sight. No record exists of previous owners.
+Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success, allowing the wearer to become non-detectable by magical means such as Detect Invisibility and True Seeing. No record exists of previous owners.
 
 STATISTICS:
 
@@ -16097,7 +16097,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped abilities:
-– Spell: Non-Detection
+– Protection from Undead: +2 to Armor Class and Saving Throws vs. undead creatures
 
 Combat abilities:
 – Knockdown: 33% chance target is knocked unconscious for 1 round (save vs. death neg.)

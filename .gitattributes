@@ -1,2 +1,12 @@
-*.bcs eol=lf
+*.2DA eol=crlf
+*.2da eol=crlf
 *.BCS eol=lf
+*.bcs eol=lf
+*.INI eol=crlf
+*.ini eol=crlf
+*.TPA eol=crlf
+*.tpa eol=crlf
+*.TPH eol=crlf
+*.tph eol=crlf
+*.TRA eol=crlf
+*.tra eol=crlf

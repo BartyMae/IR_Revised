@@ -204,7 +204,10 @@ Weight: 1~
 
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+
+Not usable by:
+ Monk~
 @3044=~Potion of Defense~
 @3045=~This thick concoction has a metallic smell, like that of iron. When this potion is consumed, the user's skin becomes as tough as chain mail, gaining a +4 bonus to AC. Multiple uses of this potion are not cumulative. The effect lasts for 5 turns and cannot be dispelled.
 
@@ -345,7 +348,8 @@ STATISTICS:
 Weight: 1
 Usable by:
  Bard
- Mage~
+ Mage
+ Sorcerer~
 @3084=~Potion of Rage~
 @3085=~When consumed, this potion will give the user a surge of energy such that their muscles will seem to ripple and bulge, coursing with adrenaline and rage. The user gains a +1 bonus to THAC0 and a +2 bonus to damage and saves vs. spell. However, the enraged character is also unable to perform actions that require concentration, like casting spells or using thieving skills. The effects last for 5 turns and cannot be dispelled.
 
