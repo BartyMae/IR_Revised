@@ -92,9 +92,9 @@ ACTION_PHP_EACH armor AS ind => res BEGIN
             xres=value
             GET_OFFSET_ARRAY effects ITM_V10_GEN_EFFECTS
             FOR (opcode=86;opcode<90;++opcode) BEGIN
+              exists=0
               PHP_EACH effects AS i => r BEGIN // Check if the resistance opcode already exists
                 READ_SHORT r op
-                exists=0
                 PATCH_IF op=opcode BEGIN
                   WRITE_LONG r+4 (THIS+value)>100 ? 100 : (THIS+value) // Don't go over 100
                   exists=1
@@ -297,50 +297,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~s!plat02.itm~) BEGIN
   BUT_ONLY
 END
 
-ACTION_IF armor_physical_resistance BEGIN
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~dwplat01.itm~) BEGIN
-  COPY_EXISTING ~dwplat01.itm~ override // Drowcraft Plate Mail +3
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 86 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 87 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 88 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 89 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=86 target=1 timing=2 parameter1=30 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=87 target=1 timing=2 parameter1=30 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=88 target=1 timing=2 parameter1=30 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=89 target=1 timing=2 parameter1=30 END
-  BUT_ONLY
 END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~dwchan02.itm~) BEGIN
-  COPY_EXISTING ~dwchan02.itm~ override // Drowcraft Chain +3
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 86 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 87 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 88 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 89 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=86 target=1 timing=2 parameter1=20 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=87 target=1 timing=2 parameter1=20 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=88 target=1 timing=2 parameter1=20 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=89 target=1 timing=2 parameter1=20 END
-  BUT_ONLY
-END
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~leat16.itm~) BEGIN
-  COPY_EXISTING ~leat16.itm~ override // Orc Leather +2
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 86 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 87 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 88 END
-    LPF DELETE_ITEM_EQEFFECT INT_VAR opcode_to_delete = 89 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=86 target=1 timing=2 parameter1=15 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=87 target=1 timing=2 parameter1=15 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=88 target=1 timing=2 parameter1=15 END
-    LPF ADD_ITEM_EQEFFECT INT_VAR opcode=89 target=1 timing=2 parameter1=15 END
-  BUT_ONLY
-END
-
-END
-
-END // armor_ac_mod
 
 /*----------------DavidW's itemdesc----------------*/
 INCLUDE ~item_rev/components/itemdesc.tpa~
