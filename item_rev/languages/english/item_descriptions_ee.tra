@@ -15600,6 +15600,16 @@ Requires:
 Weight: 5
 Not Usable By:
  Monk~
+@2627 = ~Blood-filled Goblet~
+@2628 = ~Dark and rancid blood lurks within this pewter goblet. The lip is black and caked where it appears others have tasted from it. Scratched deep into the pewter are the words "Taste My Fear."~
+@2629 = ~Durlag's Goblet~
+@2630 = ~Scratched deep into the side of this cursed goblet are the words "Taste My Fear." It is said that one can regain lost health from the dark blood that lurks within its pewter depths. This comes with a price, however, as all who drink of the blood become cursed with the fear it brings. This effect will last up to 8 hours or until dispelled.
+
+STATISTICS:
+
+Weight: 2
+Usable By:
+ All~
 @4000 = ~Globe of Power~
 @4001 = ~Magic Resistance~
 @4002 = ~Spell Deflection~
