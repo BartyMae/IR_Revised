@@ -685,7 +685,7 @@ COPY ~%source%/GOLEM_MANUAL_JUGGERNAUT.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ACID.tpa
   COPY ~item_rev/itm/scrl03.spl~ ~override~
     SAY NAME1 @1766
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@1766) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7566 parameter1 = RESOLVE_STR_REF(@1766) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_ACID.tpa~ ~%target%~
 
@@ -693,7 +693,7 @@ COPY ~%source%/PROTECTION_FROM_ACID.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_COLD.tpa
   COPY ~item_rev/itm/scrl04.spl~ ~override~
     SAY NAME1 @1768
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@1768) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7565 parameter1 = RESOLVE_STR_REF(@1768) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_COLD.tpa~ ~%target%~
 
@@ -701,7 +701,7 @@ COPY ~%source%/PROTECTION_FROM_COLD.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ELECTRICITY.tpa
   COPY ~item_rev/itm/scrl05.spl~ ~override~
     SAY NAME1 @1770
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@1770) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7567 parameter1 = RESOLVE_STR_REF(@1770) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_ELECTRICITY.tpa~ ~%target%~
 
@@ -717,7 +717,7 @@ COPY ~%source%/PROTECTION_FROM_FIRE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_MAGIC.tpa
   COPY ~item_rev/itm/scrl07.spl~ ~override~
     SAY NAME1 @1774
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@1774) END
+    // LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@1774) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_MAGIC.tpa~ ~%target%~
 
@@ -725,7 +725,7 @@ COPY ~%source%/PROTECTION_FROM_MAGIC.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_AILMENTS.tpa
   COPY ~item_rev/itm/scrl08.spl~ ~override~
     SAY NAME1 @1776
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@1776) END
+    // LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@1776) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_AILMENTS.tpa~ ~%target%~
 
@@ -733,7 +733,7 @@ COPY ~%source%/PROTECTION_FROM_AILMENTS.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_UNDEAD.tpa
   COPY ~item_rev/itm/scrl09.spl~ ~override~
     SAY NAME1 @1778
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@1778) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@1778) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_UNDEAD.tpa~ ~%target%~
 
@@ -741,7 +741,7 @@ COPY ~%source%/PROTECTION_FROM_UNDEAD.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ALTERATIONS.tpa
   COPY ~item_rev/itm/scrl15.spl~ ~override~
     SAY NAME1 @2375
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14789 parameter1 = RESOLVE_STR_REF(@2375) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@2375) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_ALTERATIONS.tpa~ ~%target%~
 
