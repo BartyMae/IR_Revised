@@ -10034,7 +10034,7 @@ The Impaler has a palpable aura of magic that hints at the nature of the weapon 
 STATISTICS:
 
 Combat abilities:
-– Impaling: target suffers 1d10 piercing damage, 15% chance target dies (save vs. Death negates)
+– Impaling: target suffers 1d10 piercing damage and 15% chance target dies (save vs. Death negates)
 – Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +3
@@ -12364,7 +12364,7 @@ STATISTICS:
 
 Special abilities:
 – Spectral Blade (1x per day): a clone of the sword attacks on its own for 1 turn
-– Dark Swarm (once per day): releases enslaved souls in the form of shadows, summoning one every round for 1 turn
+– Dark Swarm (once per day): releases enslaved souls in the form of wraiths, summoning one every round for 1 turn
 
 Spectral Brand (12 HD):
  HP 54, AC 0, THAC0 1, APR 3

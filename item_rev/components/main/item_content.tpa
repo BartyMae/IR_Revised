@@ -1350,12 +1350,14 @@ COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
   COPY ~item_rev/itm/sword69.cre~ ~override~
   COPY ~item_rev/itm/sw1h69.spl~ ~override~
     SAY NAME2 @4089
+  COPY ~item_rev/itm/sw1h69.cre~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
     COPY_EXISTING sw1h69.itm override
       SAY IDENTIFIED_DESC @216900000
     COPY ~item_rev/components/main/alternatives/sword69.cre~ ~override~
       SAY NAME1 @4524   SAY NAME2 @4524
   END
+  
 >>>>>>>>
 COPY ~%source%/SPECTRAL_BRAND_5.tpa~ ~%target%~
 
