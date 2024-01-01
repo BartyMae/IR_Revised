@@ -1110,7 +1110,7 @@ COPY ~%source%/STAFF_OF_THE_MAGI_5.tpa~ ~%target%~
 COPY ~%source%/STAFF_OF_POWER_3.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa
+<<<<<<<< .../item_rev-inlined/item/STAFF_OF_THUNDER_AND_LIGHTNING_3.tpa
   COPY ~item_rev/itm/staf13.spl~ ~override~ // Thunder and Lightning
     SAY NAME1 @4060
 
@@ -1140,7 +1140,7 @@ COPY ~%source%/STAFF_OF_POWER_3.tpa~ ~%target%~
     BUT_ONLY
   END
 >>>>>>>>
-COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_2.tpa~ ~%target%~
+COPY ~%source%/STAFF_OF_THUNDER_AND_LIGHTNING_3.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/STAFF_OF_THE_WOODLANDS_4.tpa
