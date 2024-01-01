@@ -665,56 +665,57 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY armor BEGIN
 
 // Weasel Mods
  // *Bloodied Stings Of Barovia*
- ~l#rvvpla.itm~ => 6 // Dark Amused Skeleton +3
- ~l#rvcu3.itm~ => 4  // Chained Misfortune +1
- ~L#RVBGH2.itm~ => 6 // Dead Blacksmith's Plate +1
- ~L#RVFLEA.itm~ => 2 // Vallakian Shadow +3
+ ~l#rvvpla~ => 6 // Dark Amused Skeleton +3
+ ~l#rvcu3~ => 4  // Chained Misfortune +1
+ ~L#RVBGH2~ => 6 // Dead Blacksmith's Plate +1
+ ~L#RVFLEA~ => 2 // Vallakian Shadow +3
  // *I Shall Never Forget*
- ~ISNFXY7.itm~ => 196 // Plate 'Ilthasthia'
+ ~ISNFXY7~ => 196 // Plate 'Ilthasthia'
  // *In Love Undeath*
- ~L#XZEANA.itm~ => 22 // Zombie Ankheg Plate
+ ~L#XZEANA~ => 22 // Zombie Ankheg Plate
  // *Juniper And The Stone Leech*
- ~L#JNAR.itm~ => 130 // Vistani's Intuition
- ~L#JNCHA1.itm~ => 132  // Singing Plasma +5
+ ~L#JNAR~ => 130 // Vistani's Intuition
+ ~L#JNCHA1~ => 132  // Singing Plasma +5
  // *Oozes Lounge*
- ~L#NSarm.itm~ => 1 // Skeleton's Sack +4
+ ~L#NSarm~ => 1 // Skeleton's Sack +4
  // *Skie Cost*
- ~L#2SDE1.itm~ => 130 // Studded Leather 'Dirty Trick'
- ~L#2SDSJA.itm~ => 2 // Skie's Jacket
- ~L#2SDS08.itm~ => 2 // Crusade's Distant Ally
+ ~L#2SDE1~ => 130 // Studded Leather 'Dirty Trick'
+ ~L#2SDSJA~ => 2 // Skie's Jacket
+ ~L#2SDS08~ => 2 // Crusade's Distant Ally
+ ~l#2EDDUR~ => 129 // Ursa's Fur Armor
  // *SotSC*
- ~l#ULCAR.itm~ => 6 // Plate of a Wise Fighter
- ~l#ULCLA.itm~ => 129 // Ghost-Feeding Spider's Armor
- ~l#SHOUA.itm~ => 129 // Ursa's Fur Armor
- ~l#harha.itm~ => 193 // Leather Harness
- ~l#CURSS2.itm~ => 6 // Plate Mail of Oblivion
+ ~l#ULCAR~ => 6 // Plate of a Wise Fighter
+ ~l#ULCLA~ => 129 // Ghost-Feeding Spider's Armor
+ ~l#SHOUA~ => 129 // Ursa's Fur Armor
+ ~l#harha~ => 193 // Leather Harness
+ ~l#CURSS2~ => 6 // Plate Mail of Oblivion
  // *The Tangled Oak Isle*
- ~L#NINI1.ITM~ => 132 // Chains of Purple Scout
+ ~L#NINI1~ => 132 // Chains of Purple Scout
  // *THE VANISHING OF SKIE SILVERSHIELD*
- ~l#sssja.itm~ => 2 // Skie's Jacket
+ ~l#sssja~ => 2 // Skie's Jacket
  // The Journey to the Whin Hill
- ~L#AFCHN.itm~ => 4 // Big Heart's Chain
- ~L#AFPLA.itm~ => 23 // Copper Dragon Scale
+ ~L#AFCHN~ => 4 // Big Heart's Chain
+ ~L#AFPLA~ => 23 // Copper Dragon Scale
  // *Will of the Wisps - the Shamanic enhancements*
- ~L0skin2.itm~ => 129 // Naga Skin
- ~L0unarm.itm~ => 1 // Leather of the Dead
+ ~L0skin2~ => 129 // Naga Skin
+ ~L0unarm~ => 1 // Leather of the Dead
 
  // Black Hearts
- ~WIARMO01.itm~ => 1 // Arachnid's Breast
- ~WIARMO02.itm~ => 4 // Charred Scales
+ ~WIARMO01~ => 1 // Arachnid's Breast
+ ~WIARMO02~ => 4 // Charred Scales
 
  // Call of the Lost Goddless 
- ~AC#WPTBD.ITM~ => 22 // Tarterian dragon scales
- ~AC#WMGLT.ITM~ => 2 // Maggot Hide
- ~AC#WSOPL.ITM~ => 7 // Cry of Despair
- ~AC#WHARN.itm~ => 2 // Scanty Stride Suit
- ~AC#WTRSU.itm~ => 1 // Trousers and Suspenders of the Bare-Chested Brute +1
+ ~AC#WPTBD~ => 22 // Tarterian dragon scales
+ ~AC#WMGLT~ => 2 // Maggot Hide
+ ~AC#WSOPL~ => 7 // Cry of Despair
+ ~AC#WHARN~ => 2 // Scanty Stride Suit
+ ~AC#WTRSU~ => 1 // Trousers and Suspenders of the Bare-Chested Brute +1
 
  // Crucible
- ~mobha57e.itm~ => 22 // Pyroclastic Dragon Plate
+ ~mobha57e~ => 22 // Pyroclastic Dragon Plate
 
  // Gorgon
- ~h_leat01.itm~ => 2 // Isla Darkcloak's Shadowweave Armor 
+ ~h_leat01~ => 2 // Isla Darkcloak's Shadowweave Armor 
 
 
 /////////////////////////////////////////////////
