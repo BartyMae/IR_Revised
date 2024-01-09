@@ -717,7 +717,7 @@ COPY ~%source%/PROTECTION_FROM_FIRE.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_MAGIC.tpa
   COPY ~item_rev/itm/scrl07.spl~ ~override~
     SAY NAME1 @1774
-    // LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@1774) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7226 parameter1 = RESOLVE_STR_REF(@1774) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_MAGIC.tpa~ ~%target%~
 
@@ -725,7 +725,7 @@ COPY ~%source%/PROTECTION_FROM_MAGIC.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_AILMENTS.tpa
   COPY ~item_rev/itm/scrl08.spl~ ~override~
     SAY NAME1 @1776
-    // LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@1776) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7226 parameter1 = RESOLVE_STR_REF(@1776) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_AILMENTS.tpa~ ~%target%~
 
@@ -733,7 +733,7 @@ COPY ~%source%/PROTECTION_FROM_AILMENTS.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_UNDEAD.tpa
   COPY ~item_rev/itm/scrl09.spl~ ~override~
     SAY NAME1 @1778
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@1778) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7226 parameter1 = RESOLVE_STR_REF(@1778) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_UNDEAD.tpa~ ~%target%~
 
@@ -741,7 +741,7 @@ COPY ~%source%/PROTECTION_FROM_UNDEAD.tpa~ ~%target%~
 <<<<<<<< .../item_rev-inlined/item/PROTECTION_FROM_ALTERATIONS.tpa
   COPY ~item_rev/itm/scrl15.spl~ ~override~
     SAY NAME1 @2375
-    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 0 parameter1 = RESOLVE_STR_REF(@2375) END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7226 parameter1 = RESOLVE_STR_REF(@2375) END
 >>>>>>>>
 COPY ~%source%/PROTECTION_FROM_ALTERATIONS.tpa~ ~%target%~
 
@@ -1350,6 +1350,7 @@ COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
   COPY ~item_rev/itm/sword69.cre~ ~override~
   COPY ~item_rev/itm/sw1h69.spl~ ~override~
     SAY NAME2 @4089
+  COPY ~item_rev/itm/sw1h69.eff~ ~override~
   COPY ~item_rev/itm/sw1h69.cre~ ~override~
   ACTION_IF standard_saving_throws = 1 BEGIN
     COPY_EXISTING sw1h69.itm override
