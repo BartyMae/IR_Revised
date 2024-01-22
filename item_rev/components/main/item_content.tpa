@@ -1729,11 +1729,11 @@ COPY ~%source%/POTION_OF_ENERGY_PROTECTION.tpa~ ~%target%~
 COPY ~%source%/POTION_OF_MAGIC_BLOCKING.tpa~ ~%target%~
 
 
-<<<<<<<< .../item_rev-inlined/item/POTION_OF_ENERGY_SHIELDING.tpa
+<<<<<<<< .../item_rev-inlined/item/POTION_OF_RESILIENCE.tpa
   COPY ~item_rev/itm/potn35.spl~ ~override~
     SAY NAME1 @3066
 >>>>>>>>
-COPY ~%source%/POTION_OF_ENERGY_SHIELDING.tpa~ ~%target%~
+COPY ~%source%/POTION_OF_RESILIENCE.tpa~ ~%target%~
 
 
 <<<<<<<< .../item_rev-inlined/item/POTION_OF_MASTER_THIEVERY.tpa

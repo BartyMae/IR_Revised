@@ -276,5 +276,8 @@ INCLUDE ~item_rev/components/main/npc_items.tpa~
 /* ---------------- IRR Fixes ---------------- */
 INCLUDE ~item_rev/components/main/fixes.tpa~
 
+/* ---------------- Dispellable Potions ---------------- */
+INCLUDE ~item_rev/components/main/dispellable_potions.tpa~
+
 /* ---------------- DavidW's itemdesc ---------------- */
 INCLUDE ~item_rev/components/itemdesc.tpa~

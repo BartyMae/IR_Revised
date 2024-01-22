@@ -1,0 +1,50 @@
+ACTION_IF dispellable_potions=1 BEGIN
+  ACTION_FOR_EACH resource IN
+    ~potn02~ // Potion of Fire Resistance
+    ~potn03~ // Potion of Hill Giant Strength
+    ~potn04~ // Potion of Frost Giant Strength
+    ~potn05~ // Potion of Fire Giant Strength
+    ~potn06~ // Potion of Cloud Giant Strength
+    ~potn07~ // Potion of Storm Giant Strength
+    ~potn09~ // Potion of Heroism
+    ~potn10~ // Potion of Invisibility
+    ~potn11~ // Potion of Invulnerability
+    ~potn12~ // Potion of Stone Giant Strength
+    ~potn13~ // Oil of Fiery Burning
+    ~potn14~ // Potion of Speed
+    ~potn15~ // Red Potion
+    ~potn16~ // Violet Potion
+    ~potn18~ // Potion of Absorption
+    ~potn19~ // Potion of Agility
+    ~potn21~ // Potion of Clarity
+    ~potn22~ // Potion of Cold Resistance
+    ~potn23~ // Strange Potion of Speed
+    ~potn24~ // Potion of Defense
+    ~potn25~ // Strange Potion of Healing
+    ~potn28~ // Potion of Fortitude
+    ~potn29~ // Potion of Vocalize
+    ~potn30~ // Potion of Sight
+    ~potn31~ // Potion of Insulation
+    ~potn32~ // Strange Potion of Antidote
+    ~potn33~ // Potion of Energy Protection
+    ~potn34~ // Potion of Magic Blocking
+    ~potn35~ // Potion of Resilience
+    ~potn36~ // Potion of Master Thievery
+    ~potn38~ // Potion of Mirrored Eyes
+    ~potn39~ // Potion of Perception
+    ~potn40~ // Strange Potion of Invulnerability
+    ~potn41~ // Potion of Power
+    ~potn42~ // Potion of Regeneration
+    ~potn44~ // Potion of Rage
+    ~potn45~ // Potion of Freedom
+    ~potn46~ // Potion of Stone Form
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        LPF ALTER_EFFECT INT_VAR silent = 1 resist_dispel = 3 END
+      END
+      BUT_ONLY
+    END
+  END
+END

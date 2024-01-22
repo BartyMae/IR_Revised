@@ -902,7 +902,7 @@ POTION_OF_INSULATION                       POTION   potn31   1        1        1
 STRANGE_POTION_OF_ANTIDOTE                 POTION   potn32   1        1        1        1        1        1        #6976    @3060    #16264   @3061    *        *        *        cursed
 POTION_OF_ENERGY_PROTECTION                POTION   potn33   1        1        1        1        1        1        #6976    @3062    #16264   @3063    *        *        *        *
 POTION_OF_MAGIC_BLOCKING                   POTION   potn34   1        1        1        1        1        1        #6976    @3064    #16264   @3065    *        *        *        *
-POTION_OF_ENERGY_SHIELDING                 POTION   potn35   1        1        1        1        1        1        #6976    @3066    #16264   @3067    *        *        *        *
+POTION_OF_RESILIENCE                       POTION   potn35   1        1        1        1        1        1        #6976    @3066    #16264   @3067    *        *        *        *
 POTION_OF_MASTER_THIEVERY                  POTION   potn36   1        1        1        1        1        1        #6976    @3068    #16264   @3069    *        *        *        *
 POTION_OF_RESTORATION                      POTION   potn37   1        1        1        1        1        1        #6976    @3070    #16264   @3071    *        *        *        *
 POTION_OF_MIRRORED_EYES                    POTION   potn38   1        1        1        1        1        1        #6976    @3072    #16264   @3073    *        *        *        *
