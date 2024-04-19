@@ -9528,7 +9528,7 @@ Requires:
 Weight: 4
 Usable By:
  Mage~
-@2030 = ~Staff of Thunder and Lightning +2~
+@2030 = ~Staff of Thunder and Lightning +3~
 @2031 = ~There are stories that tell of such staves sprouting in the undergrowth around druid groves when the forest is threatened. Fanciful tales, but whether they are true or not, this staff is a powerful tool indeed. It draws energy from storms, and there is a chance that any blow may trigger a deafening thunderclap that knocks enemies down. It can also casts lightning bolts capable of paralyzing the target, and if circumstances warrant it, it can summon a lighting storm to blast enemies to dust.
 
 STATISTICS:
@@ -9538,12 +9538,12 @@ Special abilities:
 – Thunder & Lightning (once per day): each lightning bolt deals 6d6 electrical damage (save vs. Breath at -2 for half) and stuns for 1 round (save vs. Polymorph at -2 negates)
 
 Combat abilities:
-– Shocking: target suffers 1d6 electrical damage
+– Shocking: target suffers 1d8 electrical damage
 – Thunderclap: 50% chance target and opponents within 5 ft. are stunned for 1 round (save vs. Breath negates)
 
-THAC0: +2
-Damage: 1d6+2 (crushing)
-Speed Factor: 2
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires:
