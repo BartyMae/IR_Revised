@@ -4423,7 +4423,7 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Slashing: target suffers 1D4 slashing damage
+ Slashing: target suffers 1D6 slashing damage
  Staggering: target suffers a -1/2 penalty to APR and a -2 penalty to movement and casting speed for 1 round (save vs. breath neg.)
 
 Damage: 1D10 + 2
@@ -4451,7 +4451,7 @@ STATISTICS:
 Combat Abilities:
  Dragon Bane: +3 bonus to THAC0 and +5 bonus to damage against dragons
  Very Keen: +10% chance to score critical hits
- Cleaving: 33% chance upon each successful hit of gaining an extra attack per round in the next round
+ Cleaving: 50% chance upon each successful hit of gaining an extra attack per round in the next round
 
 THAC0: +1 bonus
 Damage: 1D10 + 1
@@ -4595,7 +4595,7 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Poisonous: target suffers 1D6 poison damage
+ Poisonous: target suffers 1D8 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
  Terrifying Aura: opponents within 5' are frozen in terror (save vs. spell at -2 neg.)
 
@@ -4623,7 +4623,7 @@ Combined with the Serpent Shaft, this dark halberd has the ability to slay an op
 STATISTICS:
 
 Combat Abilities:
- Poisonous: target suffers 1D8 poison damage
+ Poisonous: target suffers 1D10 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
  Terrifying Aura: opponents within 5' are frozen in terror (save vs. spell at -2 neg.)
  Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
@@ -8622,7 +8622,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1991 = ~Backbiter +3~
+@1991 = ~Backbiter +3~ // BG2: This cursed weapon will appear as a magical spear; however when a combat situation arises, the wielder will attack an enemy and Backbiter will attack the wielder. For every attack made, Backbiter will attack the foe and also the wielder. This is a powerful spear, but one must ask if it is worth it in the end. The only way that Backbiter can be removed is by a Remove Curse spell.
 @1992 = ~This cursed spear has the appearance of a magical barbed spear. However, when a combat situation arises, Backbiter will attack the wielder once for every attack made against the wielder's foe. This is a powerful spear, but one must ask if such power is worth using in the end. Backbiter can only be removed through the use of magic.
 
 STATISTICS:
@@ -8708,7 +8708,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1999 = ~Impaler +3~
+@1999 = ~Impaler +3~ // BG2: The Impaler has a palpable aura of magic that hints at the vicious nature of the weapon and why it has been a favorite of several powerful orc chieftains in the past. When a victim is struck they are, as one would guess, very nearly impaled, run through as the massive enchantment does its dirty work. 
 @2000 = ~Pergad the Red-Handed was a famous barbarian warrior near Silverymoon in the 11th century, Dale Reckoning. His tribe's battles against hordes of orcs, goblins, and hill giants are legendary throughout the north. Unfortunately for Pergad, the other tribes of the region decided to move south or settle in the cities of the north rather than fight against the seemingly endless waves of foes. Pergad's tribe, the Tribe of Dead Trees, was the last to make a stand. Though Pergad emerged victorious in a series of difficult battles, his tribe dwindled as quickly as the horde grew. At the Battle of Surbrin Shallows in 1014 DR, Pergad's tribe finally came to its end under cruel ogre clubs and giant-hurled rocks. Legend states that when Pergad finally realized that his tribe was doomed, he drove his trusted spear into the Surbrin riverbed, cursing all the goblins who crossed over the water that his people once thrived on. Orcish shamans claim that the spot where his spear penetrated the rock bled for days. A year later, two tribes of goblins were wiped out by a plague that spread among them after they settled in the Surbrin river valley. The spear subsequently disappeared in the river's currents, and was supposedly dragged into the open sea.
 
 The Impaler has a palpable aura of magic that hints at the nature of the weapon and why it has been the bane of several powerful orc chieftains in the past. As one would guess, when a victim is struck, they are very nearly impaled as the massive enchantment does its dirty work.
@@ -8734,13 +8734,13 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2001 = ~Talos' Fury +2~
-@2002 = ~Talos, the god of storms, occasionally grants his followers spears such as this as symbols of his power and authority. The electrum plated shaft of this weapon hums with magical power and blue bolts of energy run down the length of the spear, charging it. In battle, when it hits an opponent, it strikes for additional electrical damage. When hurled the lightning bolt like spear magically reappears in the wielder's hand after reaching the target. These weapons are highly sought after by adventurers for their great power.
+@2001 = ~Talos' Fury +2~ // BG2: Halcyon +1: The electrum-plated shaft of this weapon hums with magical power. Occasionally, blue bolts of energy run down the length of the spear, charging it. In battle when it hits an opponent, it strikes for additional electricity damage.
+@2002 = ~Talos, the god of storms, occasionally grants his followers spears such as this as symbols of his power and authority. The electrum-plated shaft of this weapon hums with magical power and blue bolts of energy run down the length of the spear, charging it. In battle, when it hits an opponent, it strikes for additional electrical damage. When hurled, the lightning bolt-like spear magically reappears in the wielder's hand after reaching the target. These weapons are highly sought after by adventurers for their great power.
 
 STATISTICS:
 
 Combat Abilities:
- Shocking: target suffers 1D4 electrical damage
+ Shocking: target suffers 1D6 electrical damage
  Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +2 bonus
@@ -8758,7 +8758,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2003 = ~Spear of Withering +3~
+@2003 = ~Spear of Withering +3~ // BG2: Carved from the heart of a rotten treant, this spear smells of death. When held in your hands, it groans a little, as if reluctant to allow a living thing to touch it. In battle, the Spear of Withering spits a foul poison into its target upon each successful hit.
 @2004 = ~The Year of the Awakening, 1001 DR, saw the re-emergence of many ancient evils as treasure-hungry explorers unearthed ruins in several locations. One such breach freed Sek'co Tul, a lich imprisoned beneath the Forest of Mir. He left for some unknown hold, but his opened tomb quickly tainted trees in the area. Druids cleansed the area with fire, but some of the wood was taken by a local mage and made into this spear.
 
 Carved from the heart of a rotten Treant, this spear reeks of death. When held in your hands it groans a little, as if reluctant to allow a living thing to touch it. In battle, the Spear of Withering spits a foul poison into its target upon each successful hit.
@@ -8766,7 +8766,7 @@ Carved from the heart of a rotten Treant, this spear reeks of death. When held i
 STATISTICS:
 
 Combat Abilities:
- Poisonous: target suffers 1D6 poison damage
+ Poisonous: target suffers 1D8 poison damage
  Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
 
 THAC0: +3 bonus
@@ -8784,7 +8784,7 @@ Not Usable By:
  Paladin
  Thief
  Beast Master~
-@2005 = ~Ixil's Nail +4~
+@2005 = ~Ixil's Nail +4~ // BG2: For many generations, this magical shaft has been separated from Ixil's Spike, the enchanted head of the legendary spear. However, even incomplete, this artifact is still a weapon of great power.
 @2006 = ~Shortly after the Time of Troubles began the nomadic bandit tribes of the Calimshan desert were united under a single leader; a cruel and brutal giant of a man, the warlord Ixil Xaxsha. From their outposts in the forbidding desert waste, the nomads raided merchant caravans and terrorized travelers who dared journey over the road from Calimport to Myratma.
 
 Rumors and legends quickly spread about the invincible Ixil, who rode at the head of every raiding party brandishing his infamous magical spear. Some believe he was not truly a man, but a demon in human form, drawn to Faerûn by the chaos and confusion of the Time of Troubles.
@@ -8814,7 +8814,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2007 = ~Ixil's Spike +5~
+@2007 = ~Ixil's Spike +5~ // BG2: With shaft and tip reunited, Ixil's Spike is a fearsome weapon. During the battle, the head can detach to pin opponents to the ground even as a new head magically reforms on the end of the spear.
 @2008 = ~Shortly after the Time of Troubles began the nomadic bandit tribes of the Calimshan desert were united under a single leader; a cruel and brutal giant of a man, the warlord Ixil Xaxsha. From their outposts in the forbidding desert waste, the nomads raided merchant caravans and terrorized travelers who dared journey over the road from Calimport to Myratma.
 
 Rumors and legends quickly spread about the invincible Ixil, who rode at the head of every raiding party brandishing his infamous magical spear. Some believe he was not truly a man, but a demon in human form, drawn to Faerûn by the chaos and confusion of the Time of Troubles.
@@ -9045,7 +9045,7 @@ Type: Two-Handed
 Requires: 5 Strength
 Usable By:
  Mage~
-@2030 = ~Staff of Thunder and Lightning +2~
+@2030 = ~Staff of Thunder and Lightning +3~
 @2031 = ~There are stories that tell of such staves sprouting in the undergrowth around druid groves when the forest is threatened. Fanciful tales, but whether they are true or not, this staff is a powerful tool indeed. It draws energy from storms, and there is a chance that any blow may trigger a deafening thunderclap that knocks enemies down. It can also casts lightning bolts capable of paralyzing the target, and if circumstances warrant it, it can summon a lighting storm to blast enemies to dust.
 
 STATISTICS:
@@ -9055,14 +9055,14 @@ Special Abilities:
  Thunder & Lightning (1x per day): each lightning bolt deals 6D6 electrical damage (save vs. breath at -2 half) and stuns for 1 round (save vs. polymorph at -2 neg.)
 
 Combat Abilities:
- Shocking: target suffers 1D4 electrical damage
- Thunderclap: 33% chance target and opponents within 5' are stunned for 1 round (save vs. breath neg.)
+ Shocking: target suffers 1D8 electrical damage
+ Thunderclap: 50% chance target and opponents within 5' are stunned for 1 round (save vs. breath neg.)
 
-THAC0: +2 bonus
-Damage: 1D6 + 2
+THAC0: +3 bonus
+Damage: 1D6 + 3
 Damage Type: Crushing
 Weight: 4
-Speed Factor: 2
+Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
@@ -9277,7 +9277,7 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Poisonous: target suffers 1D6 poison damage
+ Poisonous: target suffers 1D8 poison damage
  Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
 
 THAC0: +3 bonus
@@ -9726,7 +9726,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2094 = ~Unused~
+@2094 = ~Ornate Bastard Sword~
 @2095 = ~Belm +2~
 @2096 = ~Sword of Speed
 This enchanted scimitar bears the mark of Taka Kobe, an honored swordsmith of Kara-Tur, though how it came to be here is unknown. Perfectly balanced, it affords quick recovery in combat and even allows the wielder time for an additional attack.
@@ -10818,7 +10818,7 @@ Special Abilities:
  Lesser Restoration (1x per day)
 
 Equipped Abilities:
- Magic Resistance: +5% bonus
+ Magic Resistance: +10% bonus
 
 Combat Abilities:
  Tenchu: 5% chance of casting Holy Smite upon the target
@@ -10849,7 +10849,7 @@ Special Abilities:
  Greater Restoration (1x per day)
 
 Equipped Abilities:
- Magic Resistance: +10% bonus
+ Magic Resistance: +15% bonus
  Spell: Death Ward
 
 Combat Abilities:
@@ -11133,7 +11133,7 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Crushing: target suffers 1D6 crushing damage
+ Crushing: target suffers 1D8 crushing damage
  Oversized: +4 bonus to damage, -2 penalty to THAC0
 
 THAC0: +3 bonus
@@ -11204,8 +11204,8 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities
- Icy: target suffers 1D4 cold damage
- Freezing: 33% chance target is held for 1 round (save vs. polymorph neg.)
+ Icy: target suffers 1D6 cold damage
+ Freezing: 50% chance target is held for 1 round (save vs. polymorph neg.)
 
 THAC0: +2 bonus
 Damage: 1D10 + 2
@@ -13543,8 +13543,8 @@ Not Usable By:
 STATISTICS:
 
 Combat Abilities:
- Fiery: target suffers 1D6 fire damage
- Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Fiery: target suffers 1D8 fire damage
+ Confusing: 50% chance target is confused for 2 rounds (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D10 + 3

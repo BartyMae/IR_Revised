@@ -706,7 +706,7 @@ STAFF_OF_COMMAND_3                         STAFF    staf09   1        1        0
 STAFF_OF_CURING_1                          STAFF    staf10   1        1        0        0        1        1        @2009    @2024    @2012    @2025    @2024    @4054    *        *
 STAFF_OF_THE_MAGI_5                        STAFF    staf11   1        1        0        0        1        1        @2009    @2026    @2012    @2027    @2026    @4055    @4056    *
 STAFF_OF_POWER_3                           STAFF    staf12   1        1        0        0        1        1        @2009    @2028    @2012    @2029    @2028    @4057    @4058    *
-STAFF_OF_THUNDER_AND_LIGHTNING_2           STAFF    staf13   1        1        0        0        1        1        @2009    @2030    @2012    @2031    @2030    @4059    @4060    *
+STAFF_OF_THUNDER_AND_LIGHTNING_3           STAFF    staf13   1        1        0        0        1        1        @2009    @2030    @2012    @2031    @2030    @4059    @4060    *
 STAFF_OF_THE_WOODLANDS_4                   STAFF    staf14   1        1        0        0        1        1        @2009    @2032    @2012    @2033    @2032    @4061    @4062    *
 STAFF_OF_AIR_2                             STAFF    staf15   1        1        0        0        1        1        @2009    @2034    @2012    @2035    @2034    @4063    *        *
 STAFF_OF_EARTH_2                           STAFF    staf16   1        1        0        0        1        1        @2009    @2036    @2012    @2037    @2036    @4064    *        *
@@ -734,7 +734,7 @@ MOONBLADE_3                                SWORDL   sw1h13   1        1        1
 ICINGDEATH_3                               SCIMITAR sw1h15   1        1        1        1        1        1        @1509    @2075    @1511    @2076    *        *        *        *
 TWINKLE_3                                  SCIMITAR sw1h16   1        1        1        1        1        1        @1509    @2077    @1511    @2078    *        *        *        *
 PERDUES_SHORT_SWORD                        SWORDS   sw1h17   1        1        1        1        1        1        @2423    @2423    @2067    @2067    *        *        *        *
-SWORD_OF_BALDURAN_2                        SWORDB   sw1h18   1        1        1        1        1        1        @2054    @2317    @2057    @2318    *        *        *        *
+SWORD_OF_BALDURAN_2                        SWORDB   sw1h18   1        1        1        1        1        1        @2094    @2317    @2057    @2318    *        *        *        *
 THE_VAMPIRES_REVENGE_3                     SWORDL   sw1h19   1        1        1        1        1        1        @1513    @2379    @1515    @2380    *        *        *        cursed
 SCIMITAR                                   SCIMITAR sw1h20   1        1        1        1        1        1        @1509    @1509    @2079    @2079    *        *        *        *
 SCIMITAR_1                                 SCIMITAR sw1h22   1        1        1        1        1        1        @1509    @2080    @1511    @2081    *        *        *        *
