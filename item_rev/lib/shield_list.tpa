@@ -362,6 +362,38 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY shield BEGIN
   ~x#fash01~ => 4
   ~gv#shld~  => 4 // Tower Shield
 
+// Weasel Mods
+ // *Bloodied Stings Of Barovia*
+ ~L#RVBGH3.itm~ => 4 // Dead Blacksmith's Large Shield +1
+ // *In Love Undeath*
+ ~L#XZEBUC.itm~ => 1 // Evening Buckler
+ // *Juniper And The Stone Leech
+ ~L#JNSH1.itm~ => 2 // Scorched Small Shield +3
+ // *Oozes Lounge*
+ ~L#NSsh1.itm~ => 1 // Buckler of the Spider Queen +3
+ // *SotSC*
+ ~l#faibu.itm~ => 1 // Buckler of the Dark Lore +1
+ ~l#ORMBUS.itm~ => 1 // Hook-and-Glow +1
+ ~l#ORMBUC.itm~ => 1 // Hook-and-Glow +2
+ ~L#ZSOD2.itm~ => 4 // Dragonsbane Shield +1
+ // *Will of the Wisps - the Shamanic enhancements*
+ ~l0buck.itm~ => 1 // Oozegaze
+ ~L0buc2.spl~ => 1 // Arsonist's Spirit
+
+// Black Hearts
+ ~WISHLD01.itm~ => 2 // Tempest Targe
+
+// Call of the Lost Goddless 
+ ~AC#DTSHF.itm~ => 3 // Shield of the Faithless +4
+ ~AC#DTSH2.itm~ => 3 // Shield of the Faithless -4
+ ~AC#W4BSH.itm~ => 3 // Fed-on-Blood +2
+ ~AC#WCTBU.itm~ => 1 // Clot Buckler
+ ~AC#WCOHD.itm~ => 4 // The Colors of His Dreams +2
+ ~AC#WWSHL.itm~ => 3 // Waukeen's Defender +2
+
+// Loretakers
+ ~AC#FPSH1.itm~ => 2 // Dawn Shield 
+
 END
 
 
