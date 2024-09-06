@@ -1348,6 +1348,7 @@ COPY ~%source%/SPECTRAL_BRAND_4.tpa~ ~%target%~
 
 <<<<<<<< .../item_rev-inlined/item/SPECTRAL_BRAND_5.tpa
   COPY ~item_rev/itm/sword69.cre~ ~override~
+  COPY ~item_rev/itm/sw1h69a.itm~ ~override~
   COPY ~item_rev/itm/sw1h69.spl~ ~override~
     SAY NAME2 @4089
   COPY ~item_rev/itm/sw1h69.eff~ ~override~
